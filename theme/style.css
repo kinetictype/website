@@ -1,13 +1,13 @@
 /* kierawestphal.com — theme
-   The background color is set in content/site.md (background: #F9F5E0)
+   The background color is set in content/site.md (background: #F2F5F7)
    and copied into --bg below when the site is built. */
 
 :root {
-  --bg: #F9F5E0;
-  --ink: #1f1d17;
-  --muted: #6b6553;
-  --rule: #d9d2b4;
-  --card: #fffdf3;
+  --bg: #F2F5F7;
+  --ink: #1b2026;
+  --muted: #5d6870;
+  --rule: #d4dce2;
+  --card: #ffffff;
   --accent: #b5452b;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, "Bitstream Charter", Georgia, serif;
   --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

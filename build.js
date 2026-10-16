@@ -113,7 +113,7 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <meta name="description" content="${escapeHtml(desc)}">
 <meta name="author" content="${escapeHtml(SITE.name)}">
 <link rel="canonical" href="${canonical}">
-<meta name="theme-color" content="${SITE.background || "#F9F5E0"}">
+<meta name="theme-color" content="${SITE.background || "#F2F5F7"}">
 <meta property="og:type" content="${type}">
 <meta property="og:site_name" content="${escapeHtml(SITE.name)}">
 <meta property="og:title" content="${escapeHtml(fullTitle)}">

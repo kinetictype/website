@@ -29,7 +29,7 @@ og_image: /images/og-image.png
 favicon: /images/favicon.svg
 
 # Page background color
-background: "#F9F5E0"
+background: "#F2F5F7"
 
 # Language for search engines (en = English, de = German)
 language: en

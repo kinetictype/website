@@ -2,7 +2,7 @@
 # HOMEPAGE
 # greeting and headline accept *italic* and **bold**.
 greeting: "**Kiera Westphal** · Product and UX Designer · Berlin"
-headline: Tell Visual Data Stories That Function Well And Reveal Beauty In The Process.
+headline: Tell Visual Data Stories That Function Well and Reveal Beauty In The Process.
 recent_heading: Recent work
 archive_heading: More projects
 ---

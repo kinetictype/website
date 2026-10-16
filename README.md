@@ -46,7 +46,7 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 **Site settings & SEO**
 
 Your name, domain (`kierawestphal.com`), email (`k@kierawestphal.com`), the Google description,
-link-preview image, profile links, and background color (`#F9F5E0`) are all set here.
+link-preview image, profile links, and background color (`#F2F5F7`) are all set here.
 Every page title, meta description, canonical link, Open Graph/Twitter tag, structured data, sitemap, and email link
 is generated from these values, so change them in this one place only.
 
