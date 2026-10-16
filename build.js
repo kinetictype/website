@@ -175,12 +175,25 @@ const personSchema = {
 
 /* ---------- reusable pieces ---------- */
 
-function card(p) {
+// Categories: a list in the CMS, or "A, B, C" typed by hand
+function categories(p) {
+  const c = p.categories;
+  const list = Array.isArray(c) ? c : typeof c === "string" ? c.split(",") : [];
+  return list.map((x) => String(x).trim()).filter(Boolean);
+}
+function tags(p) {
+  const list = categories(p);
+  if (!list.length) return "";
+  return `<ul class="tags" aria-label="Categories">${list.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`;
+}
+
+function card(p, withTags = false) {
   return `<a class="card" href="${projectUrl(p)}">
     <div class="card-media"><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></div>
     <div class="card-text">
       <h3>${escapeHtml(p.title)}</h3>
       <p>${escapeHtml(p.tagline || "")}</p>
+      ${withTags ? tags(p) : ""}
       <p class="meta"><span>${escapeHtml(p.client || "")}</span><span>${escapeHtml(p.years || "")}</span></p>
     </div>
   </a>`;
@@ -195,7 +208,7 @@ function row(p) {
     <summary>
       <span class="row-years">${escapeHtml(String(p.years || ""))}</span>
       <span class="row-title">${escapeHtml(p.title)}</span>
-      <span class="row-client">${escapeHtml(p.client || "")}</span>
+      <span class="row-tags">${tags(p)}</span>
       <span class="row-toggle" aria-hidden="true"></span>
     </summary>
     <div class="drawer">
@@ -253,7 +266,7 @@ writeFile(
     <a href="/work/">All work →</a>
   </div>
   <div class="cards">
-    ${featured.map(card).join("\n    ")}
+    ${featured.map((p) => card(p, true)).join("\n    ")}
   </div>
 </section>
 
@@ -299,7 +312,7 @@ writeFile(
   <h1>${inline(work.data.title || "Work")}</h1>
   <div class="lede">${markdown(work.body)}</div>
 </section>
-<section class="recent"><div class="cards">${featured.map(card).join("\n")}</div></section>
+<section class="recent"><div class="cards">${featured.map((p) => card(p, true)).join("\n")}</div></section>
 ${passion.length ? `<section class="recent passion"><div class="section-head"><h2>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2></div><div class="cards">${passion.map(card).join("\n")}</div></section>` : ""}
 <section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>`,
   })

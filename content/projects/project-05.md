@@ -4,6 +4,9 @@ title: Project Title 05
 tagline: One-line summary of project 05.
 client: Client Name
 role: Your Role
+
+# Category tags shown on the card and in the project list
+categories: [UX/UI, Enterprise, Design Systems]
 years: 2017–2019
 
 # work = Recent work / More projects; passion = Passion projects

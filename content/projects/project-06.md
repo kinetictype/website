@@ -4,6 +4,9 @@ title: Project Title 06
 tagline: One-line summary of project 06.
 client: Client Name
 role: Your Role
+
+# Category tags shown on the card and in the project list
+categories: [Mobile, Prototyping]
 years: 2016–2017
 
 # work = Recent work / More projects; passion = Passion projects

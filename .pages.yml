@@ -29,6 +29,7 @@ content:
       - { name: tagline, label: One-line summary, type: string }
       - { name: client, label: Client, type: string }
       - { name: role, label: Role, type: string }
+      - { name: categories, label: Category tags (shown on cards and in the project list), type: string, list: true }
       - { name: years, label: Years shown on the site (e.g. 2016–2018), type: string }
       - name: section
         label: Section

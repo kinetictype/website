@@ -4,6 +4,9 @@ title: Project Title 11
 tagline: One-line summary of project 11.
 client: Client Name
 role: Your Role
+
+# Category tags shown on the card and in the project list
+categories: [Information Graphics, Print]
 years: 2007–2009
 
 # work = Recent work / More projects; passion = Passion projects
