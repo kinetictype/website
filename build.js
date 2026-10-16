@@ -82,11 +82,15 @@ const projects = fs
   .filter((p) => p.hidden !== true)
   .sort((a, b) => Number(b.start_year || 0) - Number(a.start_year || 0));
 
-const featured = projects
+// Passion projects have "section: passion"; everything else is work
+const passion = projects.filter((p) => p.section === "passion");
+const workProjects = projects.filter((p) => p.section !== "passion");
+
+const featured = workProjects
   .filter((p) => p.featured === true)
   .sort((a, b) => Number(a.featured_order || 99) - Number(b.featured_order || 99))
   .slice(0, 3);
-const archive = projects.filter((p) => !featured.includes(p));
+const archive = workProjects.filter((p) => !featured.includes(p));
 
 const projectUrl = (p) => `/work/${p.slug}/`;
 const imageUrl = (f) => (!f ? "" : /^(https?:)?\//.test(f) ? f : `/images/${f}`);
@@ -265,6 +269,18 @@ ${
   </ol>
 </section>`
     : ""
+}
+${
+  passion.length
+    ? `<section class="recent passion" aria-labelledby="passion-h">
+  <div class="section-head">
+    <h2 id="passion-h">${escapeHtml(home.data.passion_heading || "Passion projects")}</h2>
+  </div>
+  <div class="cards">
+    ${passion.map(card).join("\n    ")}
+  </div>
+</section>`
+    : ""
 }`,
   })
 );
@@ -283,7 +299,8 @@ writeFile(
   <div class="lede">${markdown(work.body)}</div>
 </section>
 <section class="recent"><div class="cards">${featured.map(card).join("\n")}</div></section>
-<section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>`,
+<section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>
+${passion.length ? `<section class="recent passion"><div class="section-head"><h2>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2></div><div class="cards">${passion.map(card).join("\n")}</div></section>` : ""}`,
   })
 );
 
@@ -380,3 +397,4 @@ writeFile(".nojekyll", "");
 console.log(`Built ${urls.length} pages for ${SITE.url} → dist/`);
 console.log(`  Recent work: ${featured.map((p) => p.slug).join(", ")}`);
 console.log(`  Project list: ${archive.length} projects (${yearSpan(archive)})`);
+console.log(`  Passion projects: ${passion.map((p) => p.slug).join(", ") || "none"}`);

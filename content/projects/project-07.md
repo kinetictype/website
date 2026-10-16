@@ -6,6 +6,9 @@ client: Client Name
 role: Your Role
 years: 2014–2016
 
+# work = Recent work / More projects; passion = Passion projects
+section: work
+
 # Used to sort projects, newest first (the year the project started)
 start_year: 2014
 

@@ -19,7 +19,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: title
-      fields: [title, years, featured]
+      fields: [title, section, years, featured]
       sort: [start_year, title]
       default:
         sort: start_year
@@ -30,6 +30,14 @@ content:
       - { name: client, label: Client, type: string }
       - { name: role, label: Role, type: string }
       - { name: years, label: Years shown on the site (e.g. 2016–2018), type: string }
+      - name: section
+        label: Section
+        type: select
+        default: work
+        options:
+          values:
+            - { value: work, label: Work (Recent work / More projects) }
+            - { value: passion, label: Passion projects }
       - { name: start_year, label: Start year (sorts the list, newest first), type: number, required: true }
       - { name: featured, label: Show in Recent work (top three), type: boolean, default: false }
       - { name: featured_order, label: Recent work position (1, 2 or 3), type: number }
@@ -56,6 +64,7 @@ content:
       - { name: headline, label: Headline, type: string }
       - { name: recent_heading, label: Recent work heading, type: string }
       - { name: archive_heading, label: Project list heading, type: string }
+      - { name: passion_heading, label: Passion projects heading, type: string }
       - { name: body, label: Intro paragraph, type: rich-text, options: { format: markdown } }
 
   - name: about

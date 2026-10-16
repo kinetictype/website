@@ -203,3 +203,6 @@ h1 em { font-style: italic; color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* ---------- passion projects ---------- */
+.passion { margin-top: 80px; }
