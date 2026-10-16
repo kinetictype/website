@@ -183,12 +183,26 @@ function card(p) {
 }
 
 function row(p) {
-  return `<li><a class="row" href="${projectUrl(p)}">
-    <span class="row-years">${escapeHtml(p.years || "")}</span>
-    <span class="row-title">${escapeHtml(p.title)}</span>
-    <span class="row-client">${escapeHtml(p.client || "")}</span>
-    <span class="row-arrow" aria-hidden="true">→</span>
-  </a></li>`;
+  const facts = [
+    p.client ? `<div><dt>Client</dt><dd>${escapeHtml(p.client)}</dd></div>` : "",
+    p.role ? `<div><dt>Role</dt><dd>${escapeHtml(p.role)}</dd></div>` : "",
+  ].join("");
+  return `<li><details class="row">
+    <summary>
+      <span class="row-years">${escapeHtml(String(p.years || ""))}</span>
+      <span class="row-title">${escapeHtml(p.title)}</span>
+      <span class="row-client">${escapeHtml(p.client || "")}</span>
+      <span class="row-toggle" aria-hidden="true"></span>
+    </summary>
+    <div class="drawer">
+      ${p.cover ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></a>` : ""}
+      <div class="drawer-text">
+        ${p.tagline ? `<p class="drawer-tagline">${escapeHtml(p.tagline)}</p>` : ""}
+        ${facts ? `<dl class="facts">${facts}</dl>` : ""}
+        <a class="drawer-link" href="${projectUrl(p)}">View project →</a>
+      </div>
+    </div>
+  </details></li>`;
 }
 
 function yearSpan(list) {
