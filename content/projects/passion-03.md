@@ -4,8 +4,6 @@ tagline: One-line summary of passion project 03.
 client: Personal project
 role: Your Role
 
-# Category tags
-categories: [Print, Illustration]
 years: 2021–2022
 
 # work = Recent work / More projects; passion = Passion projects

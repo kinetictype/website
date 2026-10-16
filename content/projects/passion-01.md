@@ -4,8 +4,6 @@ tagline: One-line summary of passion project 01.
 client: Personal project
 role: Your Role
 
-# Category tags
-categories: [Generative Art]
 years: 2025–Today
 
 # work = Recent work / More projects; passion = Passion projects
