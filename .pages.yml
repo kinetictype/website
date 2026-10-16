@@ -1,0 +1,139 @@
+# Pages CMS configuration — https://pagescms.org
+# Edit this site at https://app.pagescms.org (sign in with GitHub, open kinetictype/website).
+# Every "Save" in the CMS is a commit to this repository, which republishes the site.
+
+media:
+  - name: images
+    label: Images
+    input: content/images
+    output: /images
+    categories: [image]
+
+content:
+  # ------------------------------------------------------------
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, years, featured]
+      sort: [start_year, title]
+      default:
+        sort: start_year
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: tagline, label: One-line summary, type: string }
+      - { name: client, label: Client, type: string }
+      - { name: role, label: Role, type: string }
+      - { name: years, label: Years shown on the site (e.g. 2016–2018), type: string }
+      - { name: start_year, label: Start year (sorts the list, newest first), type: number, required: true }
+      - { name: featured, label: Show in Recent work (top three), type: boolean, default: false }
+      - { name: featured_order, label: Recent work position (1, 2 or 3), type: number }
+      - { name: hidden, label: Hide this project, type: boolean, default: false }
+      - { name: description, label: SEO description (120–160 characters), type: text }
+      - name: cover
+        label: Cover image (1600 × 1000)
+        type: image
+        options: { media: images, path: content/images/projects }
+      - { name: cover_alt, label: Cover image description (alt text), type: string }
+      - name: body
+        label: Case study
+        type: rich-text
+        options: { format: markdown, media: images, path: content/images/projects }
+
+  # ------------------------------------------------------------
+  - name: home
+    label: Homepage
+    type: file
+    path: content/pages/home.md
+    format: yaml-frontmatter
+    fields:
+      - { name: greeting, label: Greeting (small line above the headline), type: string }
+      - { name: headline, label: Headline, type: string }
+      - { name: recent_heading, label: Recent work heading, type: string }
+      - { name: archive_heading, label: Project list heading, type: string }
+      - { name: body, label: Intro paragraph, type: rich-text, options: { format: markdown } }
+
+  - name: about
+    label: About page
+    type: file
+    path: content/pages/about.md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: SEO description, type: text }
+      - name: body
+        label: Text
+        type: rich-text
+        options: { format: markdown, media: images, path: content/images }
+
+  - name: work
+    label: Work page
+    type: file
+    path: content/pages/work.md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: SEO description, type: text }
+      - { name: body, label: Intro, type: rich-text, options: { format: markdown } }
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: content/pages/contact.md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: SEO description, type: text }
+      - { name: body, label: Text, type: rich-text, options: { format: markdown } }
+
+  - name: imprint
+    label: Imprint (Impressum)
+    type: file
+    path: content/pages/imprint.md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: SEO description, type: text }
+      - { name: body, label: Text, type: rich-text, options: { format: markdown } }
+
+  - name: privacy
+    label: Privacy (Datenschutz)
+    type: file
+    path: content/pages/privacy.md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: SEO description, type: text }
+      - { name: body, label: Text, type: rich-text, options: { format: markdown } }
+
+  # ------------------------------------------------------------
+  - name: settings
+    label: Site settings & SEO
+    type: file
+    path: content/site.md
+    format: yaml-frontmatter
+    fields:
+      - { name: name, label: Your name, type: string, required: true }
+      - { name: domain, label: Domain (no https://), type: string, required: true }
+      - { name: email, label: Email address, type: string, required: true }
+      - { name: site_title, label: Homepage title (browser tab and Google), type: string }
+      - { name: description, label: Site description for Google and link previews, type: text }
+      - { name: tagline, label: Footer tagline, type: string }
+      - { name: job_title, label: Job title (for search engines), type: string }
+      - { name: location, label: Location, type: string }
+      - { name: portrait, label: Portrait (square), type: image, options: { media: images, path: content/images } }
+      - { name: portrait_alt, label: Portrait description, type: string }
+      - { name: og_image, label: Link-preview image (1200 × 630), type: image, options: { media: images, path: content/images } }
+      - { name: favicon, label: Favicon, type: image, options: { media: images, path: content/images } }
+      - { name: background, label: Background color, type: string }
+      - { name: language, label: Language code (en or de), type: string }
+      - { name: locale, label: Locale (en_US or de_DE), type: string }
+      - { name: linkedin, label: LinkedIn URL, type: string }
+      - { name: instagram, label: Instagram URL, type: string }
+      - { name: github, label: GitHub URL, type: string }
+      - { name: other_profile, label: Other profile URL, type: string }
