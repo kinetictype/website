@@ -2,6 +2,18 @@
    The background color is set in content/site.md (background: #F2F5F7)
    and copied into --bg below when the site is built. */
 
+/* ---------- Whitney web fonts ----------
+   Whitney is a licensed typeface (Hoefler&Co / Typography.com). It shows on visitors' screens only once
+   the licensed web-font files are added. To turn it on:
+   1. Put your licensed .woff2 files in theme/fonts/ with these names.
+   2. Delete the two comment lines marked START and END below, then push.
+START
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-book.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-bookitalic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-semibold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+END */
+
 :root {
   --bg: #F2F5F7;
   --ink: #1b2026;
@@ -9,8 +21,9 @@
   --rule: #d4dce2;
   --card: #ffffff;
   --accent: #b5452b;
-  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, "Bitstream Charter", Georgia, serif;
-  --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* All text uses Whitney. Sizes are unchanged; the names below are kept so the layout code stays the same. */
+  --serif: "Whitney", "Whitney A", "Whitney B", "Whitney SSm A", "Whitney SSm B", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sans: "Whitney", "Whitney A", "Whitney B", "Whitney SSm A", "Whitney SSm B", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --max: 1120px;
   --gutter: 16px; /* padding around text on every side, at every screen size */
 }
@@ -64,7 +77,14 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
 /* ---------- home intro ---------- */
 .intro { padding: 56px var(--gutter) 72px; max-width: 980px; }
-.portrait { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; background: var(--card); }
+.portrait { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; background: var(--card); cursor: pointer; }
+/* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
+.portrait:hover { animation: shake .45s ease-in-out infinite; }
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-20deg); }
+}
 .greeting { margin: 0 0 12px; font-size: 18px; color: var(--muted); }
 .greeting strong { color: var(--ink); }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02em; line-height: 1.08; }
@@ -181,5 +201,5 @@ h1 em { font-style: italic; color: var(--accent); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; }
 }

@@ -217,6 +217,7 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 fs.copyFileSync(path.join(THEME, "style.css"), path.join(OUT, "style.css"));
 copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
+copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
 
 // Background color from site.md is injected into the stylesheet
 if (SITE.background) {
