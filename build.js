@@ -258,6 +258,19 @@ writeFile(
 </section>
 
 ${
+  passion.length
+    ? `<section class="recent passion" aria-labelledby="passion-h">
+  <div class="section-head">
+    <h2 id="passion-h">${escapeHtml(home.data.passion_heading || "Passion projects")}</h2>
+  </div>
+  <div class="cards">
+    ${passion.map(card).join("\n    ")}
+  </div>
+</section>`
+    : ""
+}
+
+${
   archive.length
     ? `<section class="archive" aria-labelledby="archive-h">
   <div class="section-head">
@@ -267,18 +280,6 @@ ${
   <ol class="rows">
     ${archive.map(row).join("\n    ")}
   </ol>
-</section>`
-    : ""
-}
-${
-  passion.length
-    ? `<section class="recent passion" aria-labelledby="passion-h">
-  <div class="section-head">
-    <h2 id="passion-h">${escapeHtml(home.data.passion_heading || "Passion projects")}</h2>
-  </div>
-  <div class="cards">
-    ${passion.map(card).join("\n    ")}
-  </div>
 </section>`
     : ""
 }`,
@@ -299,8 +300,8 @@ writeFile(
   <div class="lede">${markdown(work.body)}</div>
 </section>
 <section class="recent"><div class="cards">${featured.map(card).join("\n")}</div></section>
-<section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>
-${passion.length ? `<section class="recent passion"><div class="section-head"><h2>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2></div><div class="cards">${passion.map(card).join("\n")}</div></section>` : ""}`,
+${passion.length ? `<section class="recent passion"><div class="section-head"><h2>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2></div><div class="cards">${passion.map(card).join("\n")}</div></section>` : ""}
+<section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>`,
   })
 );
 
