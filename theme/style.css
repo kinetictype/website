@@ -30,7 +30,7 @@ END */
   --muted: #5d6870;
   --rule: #d4dce2;
   --card: #ffffff;
-  --accent: #b5452b;
+  --accent: #159AB3;
   /* All text uses Whitney. Sizes are unchanged; the names below are kept so the layout code stays the same. */
   --serif: "Whitney", "Whitney A", "Whitney B", "Whitney SSm A", "Whitney SSm B", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --sans: "Whitney", "Whitney A", "Whitney B", "Whitney SSm A", "Whitney SSm B", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
