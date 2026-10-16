@@ -1,6 +1,6 @@
 ---
 title: About
-description: About Kiera Westphal, product and UX designer based in Berlin.
+description: About Kiera Westphal, visualization designer based in Berlin.
 ---
 Placeholder biography. Write a few paragraphs about your background, how you work, and what you care about.
 

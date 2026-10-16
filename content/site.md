@@ -10,16 +10,16 @@ domain: kierawestphal.com
 email: k@kierawestphal.com
 
 # Shown in browser tabs and Google results for the homepage
-site_title: Kiera Westphal — Product and UX Designer
+site_title: Kiera Westphal — Visualization Designer
 
 # Google / link-preview description (aim for 120–160 characters)
-description: Kiera Westphal is a product and UX designer in Berlin, working across information design, data visualization, and design systems.
+description: Kiera Westphal is a visualization designer in Berlin, working across information design, data visualization, and design systems.
 
 # Short line under your name in the footer
-tagline: Product and UX Designer
+tagline: Visualization Designer
 
 # Used in structured data so search engines know who you are
-job_title: Product and UX Designer
+job_title: Visualization Designer
 location: Berlin, Germany
 
 # Images live in content/images/ (shown on the site as /images/...)
