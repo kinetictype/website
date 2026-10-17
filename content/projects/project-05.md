@@ -1,6 +1,6 @@
 ---
 # ---- Card and list text ----
-title: Fitbit
+title: Interaction Design Consultant
 tagline: One-line summary of project 05.
 client: Client Name
 role: Your Role
