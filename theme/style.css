@@ -35,8 +35,8 @@ END */
   --accent: #159AB3;
   --h1: #2A3F4D; /* color of H1 headings */
   --h1-size: 42px; /* H1 size on desktop; smaller screens below */
-  --subhead: #7A909E; /* color of the line under the headline */
-  --greeting: #09596B; /* color of the greeting shown when hovering the portrait */
+  --subhead: #961574; /* color of the line under the headline */
+  --greeting: #961574; /* color of the greeting shown when hovering the portrait */
   /* Sans-serif text uses Case; Fira Sans shows until licensed Case web fonts are added. The --serif name is kept so the layout code stays the same. */
   --serif: "Case", "ABC Case", "Case Text", "Fira Sans", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --sans: "Case", "ABC Case", "Case Text", "Fira Sans", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
