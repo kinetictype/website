@@ -149,6 +149,19 @@ const featured = workProjects
   .slice(0, 3);
 const archive = workProjects.filter((p) => !featured.includes(p));
 
+
+/* ---------- journal ---------- */
+const JOURNAL_DIR = path.join(CONTENT, "journal");
+const isoDate = (d) => (d instanceof Date ? d.toISOString().slice(0, 10) : String(d || "").slice(0, 10));
+const dotDate = (d) => { const [y, m, day] = isoDate(d).split("-"); return y && m && day ? `${day}.${m}.${y}` : ""; };
+const entries = (exists(JOURNAL_DIR) ? fs.readdirSync(JOURNAL_DIR) : [])
+  .filter((f) => f.endsWith(".md"))
+  .map((f) => { const { data, body } = parseFile(path.join(JOURNAL_DIR, f)); return { ...data, slug: f.replace(/\.md$/, ""), body, iso: isoDate(data.date) }; })
+  .filter((e) => e.hidden !== true)
+  .sort((a, b) => b.iso.localeCompare(a.iso));
+const entryUrl = (e) => `/journal/${e.slug}/`;
+const slugify = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 const projectUrl = (p) => `/work/${p.slug}/`;
 const imageUrl = (f) => (!f ? "" : /^(https?:)?\//.test(f) ? f : `/images/${f}`);
 const assetUrl = (p, file) => imageUrl(file);
@@ -167,6 +180,7 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
   const nav = [
     ["/about/", "About"],
     ["/work/", "Work"],
+    ["/journal/", "Journal"],
     ["/contact/", "Contact"],
   ];
   return `<!doctype html>
@@ -539,6 +553,116 @@ projects.forEach((p, i) => {
 });
 
 
+
+/* ---------- journal: list page (filter by category, load more) and one page per entry ---------- */
+const JOURNAL_PAGE_SIZE = 9;
+{
+  const jp = page("journal");
+  const cats = [...new Set(entries.map((e) => e.category).filter(Boolean))];
+  const item = (e, i) => `<li class="entry" data-cat="${slugify(e.category)}"${i >= JOURNAL_PAGE_SIZE ? " data-later" : ""}>
+    <a href="${entryUrl(e)}">
+      <span class="entry-media">${e.cover ? `<img src="${imageUrl(e.cover)}" alt="" loading="lazy">` : ""}</span>
+      <span class="entry-meta"><time datetime="${e.iso}">${dotDate(e.date)}</time>${e.category ? `<span class="entry-cat">${escapeHtml(e.category)}</span>` : ""}</span>
+      <span class="entry-title">${escapeHtml(e.title)}</span>
+    </a>
+  </li>`;
+  writeFile(
+    "journal/index.html",
+    layout({
+      title: jp.data.title || "Journal",
+      description: jp.data.description,
+      urlPath: "/journal/",
+      bodyClass: "journal",
+      body: `
+<section class="page-head">
+  <h1>${inline(jp.data.title || "Journal")}</h1>
+  <div class="lede">${markdown(jp.body)}</div>
+</section>
+${cats.length > 1 ? `<div class="journal-filter" role="group" aria-label="Filter journal entries">
+  <span class="filter-label">${escapeHtml(jp.data.filter_label || "Filter by:")}</span>
+  <button type="button" class="chip" aria-pressed="true" data-filter="">All</button>
+  ${cats.map((c) => `<button type="button" class="chip" aria-pressed="false" data-filter="${slugify(c)}">${escapeHtml(c)}</button>`).join("\n  ")}
+</div>` : ""}
+<ol class="entries">
+${entries.map(item).join("\n")}
+</ol>
+<p class="entries-empty" hidden>No entries in this category yet.</p>
+${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type="button" class="load-more">Load more</button></div>` : ""}
+<script>
+  // filter by category and reveal entries a page at a time; without JavaScript every entry simply shows
+  (() => {
+    const list = document.querySelector(".entries"); if (!list) return;
+    const items = [...list.children], step = ${JOURNAL_PAGE_SIZE};
+    const more = document.querySelector(".load-more"), empty = document.querySelector(".entries-empty");
+    let filter = "", shown = step;
+    const render = () => {
+      const match = items.filter((li) => !filter || li.dataset.cat === filter);
+      items.forEach((li) => (li.hidden = true));
+      match.slice(0, shown).forEach((li) => (li.hidden = false));
+      if (more) more.parentElement.hidden = match.length <= shown;
+      empty.hidden = match.length > 0;
+    };
+    document.querySelectorAll(".journal-filter .chip").forEach((b) => b.addEventListener("click", () => {
+      document.querySelectorAll(".journal-filter .chip").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      filter = b.dataset.filter; shown = step; render();
+    }));
+    if (more) more.addEventListener("click", () => {
+      const first = items.filter((li) => li.hidden && (!filter || li.dataset.cat === filter))[0];
+      shown += step; render();
+      first && first.querySelector("a").focus({ preventScroll: true });
+    });
+    items.forEach((li) => li.removeAttribute("data-later"));
+    render();
+  })();
+</script>`,
+    })
+  );
+
+  entries.forEach((e, k) => {
+    const newer = entries[k - 1], older = entries[k + 1] || entries[0];
+    writeFile(
+      `journal/${e.slug}/index.html`,
+      layout({
+        title: e.title,
+        description: e.description || e.excerpt,
+        urlPath: entryUrl(e),
+        image: e.cover && !e.cover.endsWith(".svg") ? imageUrl(e.cover) : undefined,
+        type: "article",
+        bodyClass: "project journal-entry",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: e.title,
+          description: e.description || e.excerpt,
+          datePublished: e.iso || undefined,
+          url: SITE.url + entryUrl(e),
+          author: { "@type": "Person", name: SITE.name, url: SITE.url + "/" },
+        },
+        body: `
+<article class="case">
+  <a class="back" href="/journal/">${ARROW_BACK} Journal</a>
+  <header class="case-head">
+    <p class="case-meta"><time datetime="${e.iso}">${dotDate(e.date)}</time>${e.category ? ` · ${escapeHtml(e.category)}` : ""}</p>
+    <h1>${escapeHtml(e.title)}</h1>
+    ${e.excerpt ? `<p class="case-lede">${escapeHtml(e.excerpt)}</p>` : ""}
+  </header>
+  ${e.cover ? `<div class="media media-1 case-hero"><figure><img src="${imageUrl(e.cover)}" alt="${escapeHtml(e.cover_alt || "")}"></figure></div>` : ""}
+  <div class="case-body">${markdown(e.body)}</div>
+</article>
+${entries.length > 1 ? `<nav class="next-project" aria-label="Next journal entry">
+  <a href="${entryUrl(older)}">
+    <span class="next-label">Next entry ${ARROW}</span>
+    <span class="next-title">${escapeHtml(older.title)}</span>
+    ${older.cover ? `<span class="next-thumb"><img src="${imageUrl(older.cover)}" alt="" loading="lazy"></span>` : ""}
+  </a>
+  ${newer ? `<a class="prev-link" href="${entryUrl(newer)}">${ARROW_BACK} Newer: ${escapeHtml(newer.title)}</a>` : ""}
+</nav>` : ""}`,
+      })
+    );
+  });
+}
+
+
 /* About and Contact use the homepage's three-column layout: the text before the first
    "## heading" is column one, and each "## heading" starts the next column. */
 const COLUMN_PAGES = ["about", "contact"];
@@ -579,7 +703,7 @@ writeFile(
 );
 
 // SEO files
-const urls = ["/", "/about/", "/work/", "/contact/", ...projects.map(projectUrl), "/imprint/", "/privacy/"];
+const urls = ["/", "/about/", "/work/", "/journal/", "/contact/", ...projects.map(projectUrl), ...entries.map(entryUrl), "/imprint/", "/privacy/"];
 const today = new Date().toISOString().slice(0, 10);
 writeFile(
   "sitemap.xml",

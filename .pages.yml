@@ -60,6 +60,37 @@ content:
         options: { format: markdown, media: images, path: content/images/projects }
 
   # ------------------------------------------------------------
+  - name: journal
+    label: Journal
+    type: collection
+    path: content/journal
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, date, category]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Date (shown as DD.MM.YYYY; newest first), type: date, required: true }
+      - { name: category, label: Category (used by the filter on the Journal page), type: string }
+      - { name: excerpt, label: Intro line under the title on the entry page, type: text }
+      - { name: hidden, label: Hide this entry, type: boolean, default: false }
+      - { name: description, label: SEO description (120–160 characters), type: text }
+      - name: cover
+        label: Image (shown 4:3 in the list; 1600 × 1200 works well)
+        type: image
+        options: { media: images, path: content/images/journal }
+      - { name: cover_alt, label: Image description (alt text), type: string }
+      - name: body
+        label: Entry text
+        type: rich-text
+        options: { format: markdown, media: images, path: content/images/journal }
+
+  # ------------------------------------------------------------
   - name: home
     label: Homepage
     type: file
@@ -97,6 +128,17 @@ content:
       - { name: title, label: Page title, type: string }
       - { name: description, label: SEO description, type: text }
       - { name: body, label: Intro, type: rich-text, options: { format: markdown } }
+
+  - name: journal_page
+    label: Journal page
+    type: file
+    path: content/pages/journal.md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: description, label: SEO description, type: text }
+      - { name: filter_label, label: Text before the category filter, type: string }
+      - { name: body, label: Intro line, type: rich-text, options: { format: markdown } }
 
   - name: contact
     label: Contact page

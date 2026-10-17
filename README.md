@@ -12,7 +12,7 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 1. Go to **https://app.pagescms.org** and click **Sign in with GitHub**.
 2. When asked, install the Pages CMS GitHub app and give it access to **kinetictype/website** (you can limit it to just this repository).
 3. Open **kinetictype/website** from your project list. The left sidebar shows:
-   **Projects · Homepage · About page · Work page · Contact page · Imprint · Privacy · Site settings & SEO**.
+   **Projects · Journal · Homepage · About page · Work page · Journal page · Contact page · Imprint · Privacy · Site settings & SEO**.
 
 **Editing text**
 
@@ -58,6 +58,16 @@ In the **Case study** text:
 
 Placeholder images (`placeholder-wide.svg`, `placeholder-detail-1.svg`, …) are shared by every project,
 so upload your own image for each project instead of replacing those files.
+
+### Journal
+
+The **Journal** page (`kierawestphal.com/journal/`) lists entries newest first, like a news page:
+an image, the date (shown as DD.MM.YYYY), and the title, with a **Filter by** row and a **Load more** button after nine entries.
+
+- **Add an entry:** Journal → **Add an entry**. Fill in Title, Date, Category, an image and its description, then write the entry.
+- **Categories** are free text. Every category you use appears as a filter button automatically (use the same spelling each time).
+- **Intro line and page title:** edit **Journal page**.
+- The 12 "Journal Entry Title" files are placeholders: edit them, or delete the ones you don't need.
 
 **Site settings & SEO**
 
