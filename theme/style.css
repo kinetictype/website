@@ -94,7 +94,8 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; }
 
 /* ---------- home intro ---------- */
-.intro { padding: 56px var(--gutter) 72px; max-width: 980px; }
+.intro { padding: 56px var(--gutter) 72px; }
+.intro h1, .intro .subhead { max-width: 980px; }
 .portrait-wrap { position: relative; display: inline-block; margin-bottom: 20px; }
 .portrait { display: block; width: 320px; max-width: 100%; height: auto;
   mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
@@ -376,3 +377,15 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 /* line break in the homepage headline that only applies on desktop (wider than 900px) */
 .desktop-break { display: none; }
 @media (min-width: 901px) { .desktop-break { display: inline; } }
+
+/* ---------- introduction in three columns, lined up with the Recent work cards ----------
+   Each paragraph is one column. Same column widths and 24px gaps as the card grid; text sits
+   16px inside each column, like the text inside the cards. 2 columns on tablets, 1 on phones. */
+.intro .lede {
+  max-width: none;
+  margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter));
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 24px;
+}
+.intro .lede p { padding: 0 var(--gutter); margin: 0 0 14px; }
+@media (max-width: 900px) { .intro .lede { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .intro .lede { grid-template-columns: 1fr; } }

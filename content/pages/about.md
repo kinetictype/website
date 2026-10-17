@@ -13,7 +13,3 @@ Placeholder biography. Write a few paragraphs about your background, how you wor
 ## Education
 
 - Placeholder degree, School — Year
-
-## Get in touch
-
-Write to me at [{{email}}](mailto:{{email}}).

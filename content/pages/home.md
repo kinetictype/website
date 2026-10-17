@@ -10,6 +10,8 @@ recent_heading: Recent work
 archive_heading: More projects
 passion_heading: Passion projects
 ---
-Placeholder introduction. Two or three sentences about the kind of work you do, who you do it for, and what you're focused on now.
+Placeholder introduction, column one. Two or three sentences about the kind of work you do and who you do it for.
 
-A second short paragraph about what you enjoy most in your work.
+Placeholder, column two. What you're focused on now: the problems, teams, or industries you want to work with.
+
+Placeholder, column three. What you enjoy most in your work, or how people can get in touch.
