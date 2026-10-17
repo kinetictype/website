@@ -408,23 +408,6 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .about .page-head, .contact .page-head { padding-bottom: 0; }
 .about .page-head h1, .contact .page-head h1 { margin-bottom: 16px; }
 
-/* ---------- icon field across the top of the homepage ----------
-   Icons in #45BCD1 spread left to right in random order (placed by a small script),
-   each fading and scaling in and out at random times. Behind the content; never block clicks. */
-.intro { position: relative; }
-.icon-field { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
-.intro > *:not(.icon-field) { position: relative; z-index: 1; }
-.float-icon {
-  position: absolute; color: #45BCD1;
-  opacity: 0; transform: scale(.4);
-  transition: opacity 2.4s cubic-bezier(.45, 0, .55, 1), transform 2.4s cubic-bezier(.45, 0, .55, 1);
-}
-.float-icon.on { opacity: 1; transform: scale(1); }
-@media (prefers-reduced-motion: reduce) {
-  .float-icon, .float-icon.on { opacity: .9; transform: none; transition: none; }
-}
-
-
 /* ---------- magic wand pointer with a trail of stars (mouse and trackpad only) ---------- */
 @media (pointer: fine) {
   html, body, a, button, summary, [role="button"], .portrait, .media img, .media svg { cursor: var(--wand), auto; }
