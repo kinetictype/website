@@ -109,14 +109,20 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 @media (hover: hover) {
   .portrait-wrap:hover .bubble { opacity: 1; transform: scale(1); }
 }
-/* touch screens (phones, tablets): tap the portrait and the greeting appears on one line above the head */
-@media (hover: none) {
+/* phones and narrow windows: the greeting sits on one line, centered above the head */
+@media (max-width: 640px), (hover: none) {
   .portrait-wrap { margin-top: 44px; -webkit-tap-highlight-color: transparent; }
   .bubble {
     left: 52%; top: auto; bottom: calc(100% + 6px);
     max-width: none; white-space: nowrap; font-size: min(26px, 6.4vw);
     transform-origin: center bottom; transform: translateX(-50%) scale(.85);
   }
+  .portrait-wrap:hover .bubble,
+  .portrait-wrap.show-greeting .bubble { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+/* touch screens have no hover, so only a tap shows it there */
+@media (hover: none) {
+  .portrait-wrap:hover .bubble { opacity: 0; transform: translateX(-50%) scale(.85); }
   .portrait-wrap.show-greeting .bubble { opacity: 1; transform: translateX(-50%) scale(1); }
 }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
