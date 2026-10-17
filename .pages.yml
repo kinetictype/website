@@ -61,7 +61,7 @@ content:
     path: content/pages/home.md
     format: yaml-frontmatter
     fields:
-      - { name: greeting, label: Greeting (small line above the headline), type: string }
+      - { name: greeting, label: Greeting (small line above the headline; leave empty to hide), type: string }
       - { name: headline, label: Headline, type: string }
       - { name: recent_heading, label: Recent work heading, type: string }
       - { name: archive_heading, label: Project list heading, type: string }
