@@ -389,3 +389,16 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .intro .lede p { padding: 0 var(--gutter); margin: 0 0 14px; }
 @media (max-width: 900px) { .intro .lede { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .intro .lede { grid-template-columns: 1fr; } }
+
+/* ---------- About and Contact: three columns lined up with the homepage grid ---------- */
+.cols3 {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 24px; align-items: start;
+}
+.cols3 .col { padding: 0 var(--gutter); min-width: 0; }
+.cols3 .col > :first-child { margin-top: 0; }
+.cols3 h2 { font-size: 26px; margin: 0 0 12px; }
+.cols3 p, .cols3 li { font-size: 18px; }
+.cols3 ul { padding-left: 1.1em; margin: 0 0 14px; }
+.cols3 .big-mail { margin-top: 0; padding: 0; }
+@media (max-width: 900px) { .cols3 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .cols3 { grid-template-columns: 1fr; } .cols3 .col + .col { margin-top: 24px; } }

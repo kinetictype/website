@@ -510,6 +510,17 @@ projects.forEach((p, i) => {
   );
 });
 
+
+/* About and Contact use the homepage's three-column layout: the text before the first
+   "## heading" is column one, and each "## heading" starts the next column. */
+const COLUMN_PAGES = ["about", "contact"];
+function columns(md, name) {
+  const parts = md.split(/\n(?=##\s)/).map((x) => x.trim()).filter(Boolean);
+  const cols = parts.map((part) => `<div class="col">${markdown(part)}</div>`);
+  if (name === "contact") cols.push(`<div class="col"><p class="big-mail"><a href="mailto:${SITE.email}">${SITE.email}</a></p></div>`);
+  return `<div class="cols3">${cols.join("\n")}</div>`;
+}
+
 // Simple text pages
 for (const name of ["about", "contact", "imprint", "privacy"]) {
   const { data, body } = page(name);
@@ -524,8 +535,7 @@ for (const name of ["about", "contact", "imprint", "privacy"]) {
       bodyClass: `text ${name}`,
       body: `
 <section class="page-head"><h1>${inline(data.title || name)}</h1></section>
-<div class="prose">${markdown(withEmail)}</div>
-${name === "contact" ? `<p class="big-mail"><a href="mailto:${SITE.email}">${SITE.email}</a></p>` : ""}`,
+${COLUMN_PAGES.includes(name) ? columns(withEmail, name) : `<div class="prose">${markdown(withEmail)}</div>`}`,
     })
   );
 }
