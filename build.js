@@ -255,6 +255,22 @@ function yearSpan(list) {
   return `${Math.min(...years)}–${Math.max(...years)}`;
 }
 
+
+/* The homepage portrait: an SVG file is placed directly in the page (inline);
+   any other image type falls back to a normal <img>. */
+function portraitMarkup() {
+  const alt = escapeHtml(SITE.portrait_alt || SITE.name);
+  const file = path.join(CONTENT, String(SITE.portrait || "").replace(/^\//, ""));
+  if (/\.svg$/i.test(file) && exists(file)) {
+    return read(file)
+      .replace(/<\?xml[\s\S]*?\?>\s*/, "")
+      .replace(/\s(width|height|role|aria-label|class)="[^"]*"/g, "")
+      .replace("<svg", `<svg class="portrait" width="320" height="238" role="img" aria-label="${alt}"`)
+      .trim();
+  }
+  return `<img class="portrait" src="${imageUrl(SITE.portrait)}" alt="${alt}" width="320" height="238">`;
+}
+
 /* ---------- build ---------- */
 
 fs.rmSync(OUT, { recursive: true, force: true });
@@ -283,7 +299,7 @@ writeFile(
     body: `
 <section class="intro">
   <span class="portrait-wrap">
-    <img class="portrait" src="${imageUrl(SITE.portrait)}" alt="${escapeHtml(SITE.portrait_alt || SITE.name)}" width="320" height="238">
+    ${portraitMarkup()}
     ${home.data.bubble ? `<span class="bubble" aria-hidden="true"><span class="bubble-text">${inline(home.data.bubble)}</span></span>` : ""}
   </span>
   <script>
