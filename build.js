@@ -193,8 +193,7 @@ ${body}
 </main>
 <footer class="site-footer">
   <div>
-    <a class="footer-name" href="/about/">${escapeHtml(SITE.name)}</a>
-    <span>${escapeHtml(SITE.tagline || "")}</span>
+    <a class="footer-tagline" href="/">${escapeHtml(SITE.tagline || "")}</a>
   </div>
   <nav aria-label="Footer">
     <a href="mailto:${SITE.email}">${SITE.email}</a>

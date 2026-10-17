@@ -90,7 +90,9 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted);
 }
 .site-footer div { display: flex; flex-direction: column; gap: 2px; }
-.footer-name { color: var(--ink); font: 500 26px/1.08 var(--display); letter-spacing: 0.01em; text-decoration: none; }
+/* footer tagline links to the homepage; no underline, turns the accent color on hover (like the name did) */
+.footer-tagline { color: var(--muted); text-decoration: none; }
+.footer-tagline:hover { color: var(--accent); }
 .site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; }
 
 /* ---------- home intro ---------- */
@@ -135,11 +137,11 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
 .greeting { margin: 0 0 12px; font-size: 18px; color: var(--muted); }
 .greeting strong { color: var(--ink); }
-/* The name in the header and footer uses the H2 style (Concorde, 26px like the section headings) */
+/* The name in the header uses the H2 style (Concorde, 26px like the section headings) */
 h1, h2, h3, h4 { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; line-height: 1.08; }
 h1 { color: var(--h1); }
 /* serif (Concorde) text stays dark; zero-specificity so link hover colors still apply */
-:where(h2, h3, h4, .wordmark, .footer-name, .row-title, .next-title, .pager a, .case-body > blockquote, .prose blockquote) { color: var(--ink); }
+:where(h2, h3, h4, .wordmark, .row-title, .next-title, .pager a, .case-body > blockquote, .prose blockquote) { color: var(--ink); }
 .intro h1 { font-size: var(--h1-size); margin: 0 0 28px; }
 .subhead { margin: -12px 0 28px; font-size: clamp(18px, 2vw, 22px); color: var(--subhead); }
 h1 em { font-style: italic; color: var(--accent); }
