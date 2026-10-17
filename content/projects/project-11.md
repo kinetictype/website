@@ -1,6 +1,6 @@
 ---
 # ---- Card and list text ----
-title: Project Title 11
+title: Visual Journalist
 tagline: One-line summary of project 11.
 client: Client Name
 role: Your Role
