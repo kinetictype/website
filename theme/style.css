@@ -110,12 +110,12 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   .portrait-wrap:hover .bubble { opacity: 1; transform: scale(1); }
 }
 /* Not enough room beside the illustration (narrower than 520px), and touch screens:
-   the greeting sits on one line, centered above the head. Text size never changes. */
+   the greeting sits centered above the head. Size and line breaks match the side greeting. */
 @media (max-width: 520px), (hover: none) {
-  .portrait-wrap { margin-top: 44px; -webkit-tap-highlight-color: transparent; }
+  .portrait-wrap { margin-top: 72px; -webkit-tap-highlight-color: transparent; }
   .bubble {
     left: 52%; top: auto; bottom: calc(100% + 6px);
-    max-width: none; white-space: nowrap;
+    text-align: center; /* same two-line shape and size as the side greeting */
     transform-origin: center bottom; transform: translateX(-50%) scale(.85);
   }
   .portrait-wrap:hover .bubble,
