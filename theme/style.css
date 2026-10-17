@@ -2,17 +2,16 @@
    The background color is set in content/site.md (background: #F2F5F7)
    and copied into --bg below when the site is built. */
 
-/* ---------- Whitney web fonts ----------
-   Whitney is a licensed typeface (Hoefler&Co / Typography.com). It shows on visitors' screens only once
-   the licensed web-font files are added. To turn it on:
-   1. Put your licensed .woff2 files in theme/fonts/ with these names.
-   2. Delete the two comment lines marked START and END below, then push.
-START
-@font-face { font-family: "Whitney"; src: url("/fonts/whitney-book.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Whitney"; src: url("/fonts/whitney-bookitalic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Whitney"; src: url("/fonts/whitney-medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: "Whitney"; src: url("/fonts/whitney-semibold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
-END */
+/* ---------- Whitney web fonts (sans-serif text) ----------
+   Licensed Whitney small-caps files, self-hosted from theme/fonts/.
+   These cuts are small caps, so all sans-serif text sets in small caps.
+   Regular text uses the SC Bold file; italic text uses Semibold SC Italic,
+   and anything set heavier than bold in italic uses Black SC Italic.
+   To add more weights (for example Book or Medium), drop the files in
+   theme/fonts/ and add a matching @font-face rule here. */
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-sc-bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-semibold-sc-italic.woff") format("woff"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Whitney"; src: url("/fonts/whitney-black-sc-italic.woff") format("woff"); font-weight: 900; font-style: italic; font-display: swap; }
 
 /* ---------- Concorde web fonts (headings) ----------
    Concorde is a licensed typeface. To turn it on:
