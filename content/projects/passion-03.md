@@ -18,20 +18,36 @@ hidden: false
 description: Placeholder description of passion project 03 for search engines and link previews.
 
 cover: /images/projects/passion-03-cover.svg
+# Optional client logo shown under the title on the project page (leave blank to hide)
+logo:
+
 cover_alt: Placeholder cover image for passion project 03
 ---
-Placeholder overview. What this project is, why you made it, and what you explored.
+Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
-## The idea
+## The challenge
 
-Placeholder text about where the idea came from.
+Placeholder text describing the problem, the constraints, and what success looked like.
 
-## Process
+![Placeholder: wide overview image](/images/projects/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
 
-Placeholder text about how you made it.
+## Approach
 
-![Placeholder caption for a project image](/images/projects/passion-03-cover.svg)
+Placeholder text describing your research, process, and the key design decisions.
+
+![Placeholder: first detail image](/images/projects/placeholder-detail-1.svg)
+![Placeholder: second detail image](/images/projects/placeholder-detail-2.svg)
+
+Placeholder text explaining the two images above.
+
+> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
+
+## Outcome
+
+Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
+
+![Placeholder: final result](/images/projects/placeholder-wide-2.svg "Placeholder caption: the final design.")
 
 ## What I learned
 
-Placeholder text about what you took away from it.
+Placeholder text with a short reflection.

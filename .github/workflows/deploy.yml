@@ -23,8 +23,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - id: pages
+        uses: actions/configure-pages@v5
       - run: npm ci
+      # base_path is "/website" while the site lives at kinetictype.github.io/website/,
+      # and empty once the custom domain kierawestphal.com is connected
       - run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

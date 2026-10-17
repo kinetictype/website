@@ -43,6 +43,22 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 - **Remove a project:** delete it, or tick **Hide this project** to keep it for later.
 - Only three projects appear in Recent work. If more than three are ticked, positions 1, 2, 3 win; the rest go in the list.
 
+### Laying out a case study
+
+Each project page follows the same template: a "Work" back link, the title, an optional client logo,
+a line with role, years and client, the one-line summary, tags, the cover image, then your case study,
+a "Next project" link, and a small author card.
+
+In the **Case study** text:
+- **One image on its own line** shows full width.
+- **Two or three images on consecutive lines** (no blank line between them) sit side by side.
+- To add a caption, put it in quotes after the image address:
+  `![Description for screen readers](/images/projects/my-image.jpg "Caption shown under the image")`
+- Visitors can click any image to see it larger and use the arrow keys to move between images.
+
+Placeholder images (`placeholder-wide.svg`, `placeholder-detail-1.svg`, …) are shared by every project,
+so upload your own image for each project instead of replacing those files.
+
 **Site settings & SEO**
 
 Your name, domain (`kierawestphal.com`), email (`k@kierawestphal.com`), the Google description,

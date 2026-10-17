@@ -27,20 +27,36 @@ description: Placeholder description of project 08 for search engines and link p
 
 # ---- Images (upload to content/images/projects/) ----
 cover: /images/projects/project-08-cover.svg
+# Optional client logo shown under the title on the project page (leave blank to hide)
+logo:
+
 cover_alt: Placeholder cover image for project 08
 ---
-Placeholder overview. Two or three sentences on what the project was, who it was for, and why it mattered.
+Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
 ## The challenge
 
-Placeholder text describing the problem you set out to solve.
+Placeholder text describing the problem, the constraints, and what success looked like.
 
-## What I did
+![Placeholder: wide overview image](/images/projects/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
 
-Placeholder text describing your role, process, and key decisions.
+## Approach
 
-![Placeholder caption for a project image](/images/projects/project-08-cover.svg)
+Placeholder text describing your research, process, and the key design decisions.
+
+![Placeholder: first detail image](/images/projects/placeholder-detail-1.svg)
+![Placeholder: second detail image](/images/projects/placeholder-detail-2.svg)
+
+Placeholder text explaining the two images above.
+
+> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
 
 ## Outcome
 
-Placeholder text describing results, impact, or what you learned.
+Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
+
+![Placeholder: final result](/images/projects/placeholder-wide-2.svg "Placeholder caption: the final design.")
+
+## What I learned
+
+Placeholder text with a short reflection.

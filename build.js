@@ -44,7 +44,14 @@ function copyDir(src, dest) {
   }
 }
 
+// When the site is served from a sub-folder (e.g. username.github.io/website/ before the custom
+// domain is connected), BASE_PATH is "/website" and every internal link is prefixed with it.
+const BASE = (process.env.BASE_PATH || "").replace(/\/$/, "");
+const withBase = (html) =>
+  BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
+
 function writeFile(rel, content) {
+  if (/\.(html|css)$/.test(rel)) content = withBase(content);
   const p = path.join(OUT, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(p, content);
@@ -59,7 +66,22 @@ function parseFile(file) {
   return { data: yaml.load(m[1]) || {}, body: m[2].trim() };
 }
 
-marked.use({ gfm: true });
+marked.use({
+  gfm: true,
+  renderer: {
+    paragraph(text) {
+      const imgs = text.trim().split(/\s*(?:<br>)?\s*\n\s*|\s+(?=<img)/).filter(Boolean);
+      if (!imgs.length || !imgs.every((t) => /^<img [^>]*>$/.test(t))) return false; // normal paragraph
+      const fig = (img) => {
+        const cap = (img.match(/ title="([^"]*)"/) || [])[1];
+        const clean = img.replace(/ title="[^"]*"/, "").replace("<img ", '<img loading="lazy" ');
+        return `<figure>${clean}${cap ? `<figcaption>${cap}</figcaption>` : ""}</figure>`;
+      };
+      if (imgs.length === 1) return `<div class="media media-1">${fig(imgs[0])}</div>\n`;
+      return `<div class="media media-${Math.min(imgs.length, 3)}">${imgs.map(fig).join("")}</div>\n`;
+    },
+  },
+});
 const markdown = (src = "") => marked.parse(src);
 const inline = (src = "") => marked.parseInline(String(src));
 
@@ -242,9 +264,10 @@ copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
 
 // Background color from site.md is injected into the stylesheet
-if (SITE.background) {
-  const css = read(path.join(OUT, "style.css")).replace(/--bg:\s*#[0-9a-fA-F]{3,8};/, `--bg: ${SITE.background};`);
-  fs.writeFileSync(path.join(OUT, "style.css"), css);
+{
+  let css = read(path.join(OUT, "style.css"));
+  if (SITE.background) css = css.replace(/--bg:\s*#[0-9a-fA-F]{3,8};/, `--bg: ${SITE.background};`);
+  writeFile("style.css", css);
 }
 
 // Home
@@ -340,6 +363,83 @@ ${passion.length ? `<section class="recent passion"><div class="section-head"><h
   })
 );
 
+
+/* ---------- case-study page template ---------- */
+function caseStudy(p) {
+  // next / previous stay within the same section (work or passion), newest to oldest, looping at the end
+  const group = p.section === "passion" ? passion : workProjects;
+  const k = group.indexOf(p);
+  const next = group[(k + 1) % group.length];
+  const prev = k > 0 ? group[k - 1] : null;
+  const meta = [p.role, p.years, p.client].filter(Boolean).map((x) => escapeHtml(String(x))).join(" · ");
+  return `
+<article class="case">
+  <a class="back" href="/work/">${ARROW_BACK} Work</a>
+  <header class="case-head">
+    <h1>${escapeHtml(p.title)}</h1>
+    ${p.logo ? `<img class="case-logo" src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
+    ${meta ? `<p class="case-meta">${meta}</p>` : ""}
+    ${p.tagline ? `<p class="case-lede">${escapeHtml(p.tagline)}</p>` : ""}
+    ${tags(p)}
+  </header>
+  ${p.cover ? `<div class="media media-1 case-hero"><figure><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}"></figure></div>` : ""}
+  <div class="case-body">${markdown(p.body)}</div>
+</article>
+
+<nav class="next-project" aria-label="Next project">
+  <a href="${projectUrl(next)}">
+    <span class="next-label">Next project ${ARROW}</span>
+    <span class="next-title">${escapeHtml(next.title)}</span>
+    ${next.cover ? `<span class="next-thumb"><img src="${assetUrl(next, next.cover)}" alt="" loading="lazy"></span>` : ""}
+  </a>
+  ${prev ? `<a class="prev-link" href="${projectUrl(prev)}">${ARROW_BACK} Previous: ${escapeHtml(prev.title)}</a>` : ""}
+</nav>
+
+<aside class="author-card">
+  <img src="${imageUrl(SITE.portrait)}" alt="" width="72" height="54">
+  <div>
+    <a class="author-name" href="/about/">${escapeHtml(SITE.name)}</a>
+    <span>${escapeHtml(SITE.tagline || "")}</span>
+  </div>
+</aside>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" type="button" aria-label="Close">×</button>
+  <button class="lb-prev" type="button" aria-label="Previous image">${ARROW_BACK}</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" type="button" aria-label="Next image">${ARROW}</button>
+</div>
+<script>
+  // click any image in the case study to see it large; arrow keys move between images, Esc closes
+  (() => {
+    const imgs = [...document.querySelectorAll(".case .media img")];
+    const lb = document.querySelector(".lightbox"); if (!lb || !imgs.length) return;
+    const big = lb.querySelector("img"), cap = lb.querySelector("figcaption");
+    let at = 0, opener = null;
+    const show = (n) => {
+      at = (n + imgs.length) % imgs.length; const im = imgs[at];
+      big.src = im.currentSrc || im.src; big.alt = im.alt;
+      cap.textContent = im.closest("figure")?.querySelector("figcaption")?.textContent || "";
+    };
+    const open = (n) => { opener = document.activeElement; show(n); lb.hidden = false; document.body.style.overflow = "hidden"; lb.querySelector(".lb-close").focus(); };
+    const close = () => { lb.hidden = true; document.body.style.overflow = ""; opener && opener.focus(); };
+    imgs.forEach((im, n) => {
+      im.tabIndex = 0; im.setAttribute("role", "button"); im.setAttribute("aria-label", (im.alt || "Image") + " — open larger");
+      im.addEventListener("click", () => open(n));
+      im.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(n); } });
+    });
+    lb.querySelector(".lb-close").onclick = close;
+    lb.querySelector(".lb-prev").onclick = () => show(at - 1);
+    lb.querySelector(".lb-next").onclick = () => show(at + 1);
+    lb.addEventListener("click", (e) => { if (e.target === lb) close(); });
+    addEventListener("keydown", (e) => {
+      if (lb.hidden) return;
+      if (e.key === "Escape") close(); else if (e.key === "ArrowLeft") show(at - 1); else if (e.key === "ArrowRight") show(at + 1);
+    });
+  })();
+</script>`;
+}
+
 // Project pages
 projects.forEach((p, i) => {
   const prev = projects[i - 1];
@@ -362,25 +462,7 @@ projects.forEach((p, i) => {
         author: { "@type": "Person", name: SITE.name, url: SITE.url + "/" },
         dateCreated: p.start_year ? String(p.start_year) : undefined,
       },
-      body: `
-<article>
-  <header class="page-head">
-    <p class="eyebrow"><a href="/work/">Work</a> / ${escapeHtml(String(p.years || ""))}</p>
-    <h1>${escapeHtml(p.title)}</h1>
-    <p class="lede">${escapeHtml(p.tagline || "")}</p>
-    <dl class="facts">
-      ${p.client ? `<div><dt>Client</dt><dd>${escapeHtml(p.client)}</dd></div>` : ""}
-      ${p.role ? `<div><dt>Role</dt><dd>${escapeHtml(p.role)}</dd></div>` : ""}
-      ${p.years ? `<div><dt>Years</dt><dd>${escapeHtml(String(p.years))}</dd></div>` : ""}
-    </dl>
-  </header>
-  ${p.cover ? `<figure class="hero"><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}"></figure>` : ""}
-  <div class="prose">${markdown(p.body)}</div>
-</article>
-<nav class="pager" aria-label="More projects">
-  ${prev ? `<a href="${projectUrl(prev)}"><span>${ARROW_BACK} Newer</span>${escapeHtml(prev.title)}</a>` : "<span></span>"}
-  ${next ? `<a class="next" href="${projectUrl(next)}"><span>Older ${ARROW}</span>${escapeHtml(next.title)}</a>` : "<span></span>"}
-</nav>`,
+      body: caseStudy(p),
     })
   );
 });

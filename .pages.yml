@@ -49,6 +49,10 @@ content:
         type: image
         options: { media: images, path: content/images/projects }
       - { name: cover_alt, label: Cover image description (alt text), type: string }
+      - name: logo
+        label: Client logo on the project page (optional)
+        type: image
+        options: { media: images, path: content/images/projects }
       - name: body
         label: Case study
         type: rich-text
