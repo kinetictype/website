@@ -81,7 +81,8 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .wordmark { color: var(--ink); font: 500 26px/1.08 var(--display); text-decoration: none; letter-spacing: 0.01em; }
 .site-header nav { display: flex; gap: 22px; font-size: 16px; }
 .site-header nav a { text-decoration: none; color: var(--muted); }
-.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--ink); }
+.site-header nav a[aria-current] { color: var(--ink); }
+.site-header nav a:hover { color: var(--accent); }  /* same hover as the name */
 .site-header nav a[aria-current] { box-shadow: inset 0 -2px 0 var(--accent); }
 
 .site-footer {
