@@ -4,7 +4,7 @@
 greeting: ""
 headline: Visual storyteller with a passion for revealing order and beauty in the process.
 subhead: Working from Berlin, Germany.
-bubble: Hi, I'm glad you are here.
+bubble: Hi! I'm glad you are here.
 recent_heading: Recent work
 archive_heading: More projects
 passion_heading: Passion projects
