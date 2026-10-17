@@ -1,12 +1,12 @@
 ---
 # ---- Card and list text ----
-title: Project Title 05
+title: Fitbit
 tagline: One-line summary of project 05.
 client: Client Name
 role: Your Role
 
 # Category tags shown on the card and in the project list
-categories: [UX/UI, Enterprise, Design Systems]
+categories: [UX, Service Blueprint, Stakeholder Management, Responsive Design]
 years: 2017–2019
 
 # work = Recent work / More projects; passion = Passion projects
@@ -30,7 +30,7 @@ cover: /images/projects/project-05-cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
 logo:
 
-cover_alt: Placeholder cover image for project 05
+cover_alt: Fitbit logo
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 

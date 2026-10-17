@@ -62,10 +62,12 @@ function inlineSvgImages(html) {
     const cls = (attrs.match(/\bclass="([^"]*)"/) || [])[1];
     const alt = (attrs.match(/\balt="([^"]*)"/) || [])[1] || "";
     const a11y = alt ? `role="img" aria-label="${alt}"` : `aria-hidden="true"`;
-    return svg
-      .replace(/(<svg\b[^>]*?)\s(width|height)="[^"]*"/g, "$1")
-      .replace(/(<svg\b[^>]*?)\s(width|height)="[^"]*"/g, "$1")
-      .replace("<svg", `<svg${cls ? ` class="${cls}"` : ""} ${a11y} preserveAspectRatio="xMidYMid slice" focusable="false"`);
+    // only the outermost <svg> loses its fixed size (nested <svg> frames inside it keep theirs)
+    const end = svg.indexOf(">") + 1;
+    const outer = svg.slice(0, end).replace(/\s(width|height)="[^"]*"/g, "");
+    // logos (data-fit="contain") are scaled to fit without cropping; images fill their box like a photo
+    const fit = /data-fit="contain"/.test(outer) ? "meet" : "slice";
+    return outer.replace("<svg", `<svg${cls ? ` class="${cls}"` : ""} ${a11y} preserveAspectRatio="xMidYMid ${fit}" focusable="false"`) + svg.slice(end);
   });
 }
 

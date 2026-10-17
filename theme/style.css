@@ -162,7 +162,7 @@ h1 em { font-style: italic; color: var(--accent); }
 .card { display: flex; flex-direction: column; text-decoration: none; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; overflow: visible; transition: transform .2s, box-shadow .2s; }
 .card:hover { color: inherit; transform: translateY(-3px); box-shadow: 0 10px 24px -14px rgba(15, 24, 26, .35); }
 .card-media { aspect-ratio: 16 / 10; position: relative; z-index: 1; }
-.card-media img, .card-media svg { width: 100%; height: 100%; object-fit: cover; border-radius: 6px 6px 0 0; background: var(--rule); }
+.card-media img, .card-media > svg { width: 100%; height: 100%; object-fit: cover; border-radius: 6px 6px 0 0; background: var(--rule); }
 .card-text { padding: var(--gutter); display: flex; flex-direction: column; flex: 1; }
 .card h3 { font-size: 22px; margin: 0 0 6px; }
 .card p { margin: 0 0 16px; color: var(--muted); font-size: 15px; line-height: 1.45; }
@@ -182,7 +182,7 @@ h1 em { font-style: italic; color: var(--accent); }
 .row-title { font: 500 20px/1.25 var(--display); }
 /* small cover image between the years and the title (16:10, same shape as the cards) */
 .row-thumb { width: 80px; aspect-ratio: 16 / 10; border-radius: 3px; overflow: hidden; background: var(--rule); }
-.row-thumb img, .row-thumb svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+.row-thumb img, .row-thumb > svg { width: 100%; height: 100%; object-fit: cover; display: block; }
 .row-tags { justify-self: end; }
 
 /* category tags */
@@ -214,14 +214,14 @@ h1 em { font-style: italic; color: var(--accent); }
 .row[open] .drawer { animation: drawer-in .25s ease; }
 @keyframes drawer-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 .drawer-media { display: block; aspect-ratio: 16 / 10; position: relative; z-index: 1; }
-.drawer-media img, .drawer-media svg { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; border: 1px solid var(--rule); }
+.drawer-media img, .drawer-media > svg { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; border: 1px solid var(--rule); }
 
 /* photo hover: the photo lifts straight up, both corners evenly, with a soft shadow.
    The hover area stays put while the photo moves, so it doesn't flicker. */
-.card-media img, .card-media svg, .drawer-media img, .drawer-media svg {
+.card-media img, .card-media > svg, .drawer-media img, .drawer-media > svg {
   transition: transform .45s cubic-bezier(.22, 1, .36, 1), box-shadow .45s ease;
 }
-.card-media:hover img, .card-media:hover svg, .drawer-media:hover img, .drawer-media:hover svg {
+.card-media:hover img, .card-media:hover > svg, .drawer-media:hover img, .drawer-media:hover > svg {
   transform: translateY(-10px);
   box-shadow: 0 18px 30px -18px rgba(15, 24, 26, .45);
 }
@@ -239,7 +239,7 @@ h1 em { font-style: italic; color: var(--accent); }
 .facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .facts dd { margin: 2px 0 0; }
 .hero { margin: 0 0 56px; border-radius: 6px; overflow: hidden; border: 1px solid var(--rule); }
-.hero img, .hero svg { width: 100%; }
+.hero img, .hero > svg { width: 100%; }
 
 .prose { max-width: 680px; }
 .prose h2 { font-size: 30px; margin: 48px 0 12px; }
@@ -325,7 +325,7 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .media-2 { grid-template-columns: 1fr 1fr; }
 .media-3 { grid-template-columns: repeat(3, 1fr); }
 .media figure { margin: 0; }
-.media img, .media svg { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--rule); background: var(--card); cursor: zoom-in; }
+.media img, .media figure > svg { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--rule); background: var(--card); cursor: zoom-in; }
 .media figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; padding: 0 var(--gutter); }
 .case-hero { margin-top: 0; }
 
@@ -338,9 +338,9 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .next-label { grid-column: 1; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
 .next-title { grid-column: 1; font: 500 clamp(28px, 4vw, 44px)/1.1 var(--display); letter-spacing: -0.02em; margin-top: 6px; }
 .next-thumb { grid-column: 2; grid-row: 1 / span 2; width: 160px; aspect-ratio: 16 / 10; border-radius: 4px; overflow: hidden; border: 1px solid var(--rule); }
-.next-thumb img, .next-thumb svg { width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.22, 1, .36, 1); }
+.next-thumb img, .next-thumb > svg { width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.22, 1, .36, 1); }
 .next-project > a:first-child:hover .next-title { color: var(--accent); }
-.next-project > a:first-child:hover .next-thumb img, .next-project > a:first-child:hover .next-thumb svg { transform: scale(1.04); }
+.next-project > a:first-child:hover .next-thumb img, .next-project > a:first-child:hover .next-thumb > svg { transform: scale(1.04); }
 .prev-link { display: inline-flex; gap: 6px; align-items: center; margin: 0 var(--gutter); font-size: 15px; color: var(--muted); text-decoration: none; }
 .prev-link:hover { color: var(--accent); }
 
@@ -349,8 +349,8 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .lightbox[hidden] { display: none; }
 .lightbox figure { margin: 0; text-align: center; }
 .lb-stage { display: flex; justify-content: center; }
-.lightbox img, .lightbox svg { max-width: 100%; max-height: 82vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; }
-.lightbox svg { width: min(100%, 1200px); height: auto; }
+.lightbox img, .lb-stage > svg { max-width: 100%; max-height: 82vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; }
+.lb-stage > svg { width: min(100%, 1200px); height: auto; }
 .lightbox figcaption { color: #F2F5F7; font-size: 14px; margin-top: 10px; }
 .lightbox button { background: none; border: 0; color: #F2F5F7; font-size: 28px; cursor: pointer; padding: 12px; border-radius: 6px; }
 .lightbox button:hover { background: rgba(255, 255, 255, .1); }
@@ -363,8 +363,8 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 }
 
 /* inline SVG placeholders fill their box the way a cropped image would */
-.card-media svg, .row-thumb svg, .drawer-media svg, .next-thumb svg, .media svg, .hero svg { display: block; }
-.media svg { aspect-ratio: auto; }
+.card-media > svg, .row-thumb > svg, .drawer-media > svg, .next-thumb > svg, .media figure > svg, .hero > svg { display: block; }
+.media figure > svg { aspect-ratio: auto; }
 
 /* ---------- H1 size by screen width ---------- */
 @media (max-width: 900px) { :root { --h1-size: 38px; } }  /* tablets */
@@ -407,7 +407,7 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 
 /* ---------- magic wand pointer (white star tip) with a trail of stars (mouse and trackpad only) ---------- */
 @media (pointer: fine) {
-  html, body, a, button, summary, [role="button"], .portrait, .media img, .media svg { cursor: var(--wand), auto; }
+  html, body, a, button, summary, [role="button"], .portrait, .media img, .media figure > svg { cursor: var(--wand), auto; }
 }
 .sparkles { position: fixed; inset: 0; pointer-events: none; z-index: 60; overflow: hidden; }
 .sparkle {
@@ -421,3 +421,12 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
   30%  { opacity: 1; transform: translate(calc(-50% + var(--dx) * .3), calc(-50% + var(--dy) * .3)) scale(1) rotate(calc(var(--r) * .3)); }
   100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(.2) rotate(var(--r)); }
 }
+
+/* ---------- logo covers (an SVG marked data-fit="contain"): just the logo, no image box ---------- */
+svg[data-fit="contain"] { background: none !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.row-thumb:has(> svg[data-fit="contain"]),
+.next-thumb:has(> svg[data-fit="contain"]),
+.card-media:has(> svg[data-fit="contain"]) { background: none; border: 0; border-radius: 0; }
+.media figure > svg[data-fit="contain"] { cursor: default; }
+/* on the project page the logo sits at a modest size, lined up with the text */
+.case-hero:has(svg[data-fit="contain"]) figure > svg { width: min(360px, 70%); height: auto; margin-left: var(--gutter); }
