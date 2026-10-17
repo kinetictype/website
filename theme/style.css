@@ -143,6 +143,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .greeting strong { color: var(--ink); }
 h1, h2, h3, h4 { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; line-height: 1.08; }
 .intro h1 { font-size: clamp(38px, 6vw, 68px); margin: 0 0 28px; }
+.subhead { margin: -12px 0 28px; font-size: clamp(18px, 2vw, 22px); color: var(--muted); }
 h1 em { font-style: italic; color: var(--accent); }
 .lede { font-size: 19px; max-width: 640px; }
 .lede p { margin: 0 0 14px; }

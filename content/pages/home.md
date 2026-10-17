@@ -2,7 +2,8 @@
 # HOMEPAGE
 # greeting and headline accept *italic* and **bold**.
 greeting: ""
-headline: Tell Visual Data Stories That Function Well and Reveal Beauty In The Process.
+headline: Visual storyteller with a passion for revealing order and beauty in the process.
+subhead: Working from Berlin, Germany.
 recent_heading: Recent work
 archive_heading: More projects
 passion_heading: Passion projects

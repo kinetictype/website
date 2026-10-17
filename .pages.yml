@@ -63,6 +63,7 @@ content:
     fields:
       - { name: greeting, label: Greeting (small line above the headline; leave empty to hide), type: string }
       - { name: headline, label: Headline, type: string }
+      - { name: subhead, label: Line under the headline (leave empty to hide), type: string }
       - { name: recent_heading, label: Recent work heading, type: string }
       - { name: archive_heading, label: Project list heading, type: string }
       - { name: passion_heading, label: Passion projects heading, type: string }
