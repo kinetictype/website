@@ -33,6 +33,7 @@ END */
   --card: #ffffff;
   --accent: #159AB3;
   --h1: #2A3F4D; /* color of H1 headings */
+  --greeting: #A1160A; /* color of the greeting shown when hovering the portrait */
   /* Sans-serif text uses Case; Fira Sans shows until licensed Case web fonts are added. The --serif name is kept so the layout code stays the same. */
   --serif: "Case", "ABC Case", "Case Text", "Fira Sans", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --sans: "Case", "ABC Case", "Case Text", "Fira Sans", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -101,7 +102,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   position: absolute; left: 286px; top: 76px; transform-origin: left center;
   width: max-content; max-width: 6.2em;
   font-family: var(--display); font-weight: 500; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em;
-  color: var(--ink); text-wrap: balance;
+  color: var(--greeting); text-wrap: balance;
   opacity: 0; transform: scale(.85);
   transition: opacity .6s cubic-bezier(.22, 1, .36, 1), transform .6s cubic-bezier(.22, 1, .36, 1);
   pointer-events: none;
