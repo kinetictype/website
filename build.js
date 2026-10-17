@@ -262,6 +262,19 @@ writeFile(
     <img class="portrait" src="${imageUrl(SITE.portrait)}" alt="${escapeHtml(SITE.portrait_alt || SITE.name)}" width="320" height="238">
     ${home.data.bubble ? `<span class="bubble" aria-hidden="true"><span class="bubble-text">${inline(home.data.bubble)}</span></span>` : ""}
   </span>
+  <script>
+  // touch screens have no hover: tapping the portrait shows or hides the greeting; tapping elsewhere hides it
+  (() => {
+    const w = document.querySelector(".portrait-wrap");
+    if (!w || !w.querySelector(".bubble")) return;
+    w.addEventListener("click", (e) => {
+      if (!matchMedia("(hover: none)").matches) return;
+      e.stopPropagation();
+      w.classList.toggle("show-greeting");
+    });
+    document.addEventListener("click", () => w.classList.remove("show-greeting"));
+  })();
+  </script>
   ${home.data.greeting ? `<p class="greeting">${inline(home.data.greeting)}</p>` : ""}
   <h1>${inline(home.data.headline || "")}</h1>
   ${home.data.subhead ? `<p class="subhead">${inline(home.data.subhead)}</p>` : ""}
