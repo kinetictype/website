@@ -407,3 +407,55 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
    headline and "Working from Berlin, Germany." (16px) */
 .about .page-head, .contact .page-head { padding-bottom: 0; }
 .about .page-head h1, .contact .page-head h1 { margin-bottom: 16px; }
+
+/* ---------- floating icons around the portrait ----------
+   75px squares in #45BCD1, placed around the illustration. A small script fades and scales
+   each one in and out at random times. Hidden from screen readers; never block clicks. */
+.float-icons { position: absolute; inset: 0; pointer-events: none; }
+.float-icon {
+  position: absolute; width: var(--fi-size, 75px); height: var(--fi-size, 75px); color: #45BCD1;
+  opacity: 0; transform: scale(.4);
+  transition: opacity 2.4s cubic-bezier(.45, 0, .55, 1), transform 2.4s cubic-bezier(.45, 0, .55, 1);
+}
+.float-icon.on { opacity: 1; transform: scale(1); }
+/* medium screens (701–1359px): clustered to the right of the illustration, clear of the greeting */
+.fi-1 { left: 330px; top: -44px; }
+.fi-2 { left: 476px; top: 30px; }
+.fi-3 { left: 340px; top: 150px; }
+.fi-4 { left: 486px; top: 140px; }
+/* wide screens (1360px and up): around both sides of the illustration */
+@media (min-width: 1360px) {
+  .fi-1 { left: -104px; top: -8px; }
+  .fi-2 { left: -116px; top: 140px; }
+  .fi-3 { left: 330px; top: -44px; }
+  .fi-4 { left: 340px; top: 150px; }
+}
+/* phones and touch screens: smaller and tucked into the corners so nothing runs off the screen */
+@media (max-width: 700px), (hover: none) {
+  .portrait-wrap { margin-top: 72px; }
+  .float-icon { --fi-size: 48px; }
+  .fi-1 { left: -6px; top: -64px; }
+  .fi-2 { left: -10px; top: 150px; }
+  .fi-3 { left: auto; right: -6px; top: -64px; }
+  .fi-4 { left: auto; right: -8px; top: 150px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .float-icon { opacity: .9; transform: none; }
+}
+
+/* ---------- magic wand pointer with a trail of stars (mouse and trackpad only) ---------- */
+@media (pointer: fine) {
+  html, body, a, button, summary, [role="button"], .portrait, .media img, .media svg { cursor: var(--wand), auto; }
+}
+.sparkles { position: fixed; inset: 0; pointer-events: none; z-index: 60; overflow: hidden; }
+.sparkle {
+  position: absolute; transform: translate(-50%, -50%);
+  background: currentColor;
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+  animation: sparkle 900ms cubic-bezier(.22, 1, .36, 1) forwards;
+}
+@keyframes sparkle {
+  0%   { opacity: 1; transform: translate(-50%, -50%) scale(.4) rotate(0deg); }
+  30%  { opacity: 1; transform: translate(calc(-50% + var(--dx) * .3), calc(-50% + var(--dy) * .3)) scale(1) rotate(calc(var(--r) * .3)); }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(.2) rotate(var(--r)); }
+}

@@ -177,6 +177,7 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <meta name="twitter:image" content="${ogImage}">
 <link rel="icon" href="${imageUrl(SITE.favicon || "favicon.svg")}" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
+<style>:root{--wand:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%220%2022%206%2099%22/%3E%3Cpath%20d%3D%22M7%201.5%20L8.6%205.4%20L12.8%205.6%20L9.6%208.2%20L10.7%2012.3%20L7%2010%20L3.3%2012.3%20L4.4%208.2%20L1.2%205.6%20L5.4%205.4%20Z%22%20fill%3D%22%2345BCD1%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E") 7 6}</style>
 ${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
 </head>
 <body class="${bodyClass}">
@@ -202,6 +203,30 @@ ${body}
     <a href="/privacy/">Privacy</a>
   </nav>
 </footer>
+<div class="sparkles" aria-hidden="true"></div>
+<script>
+  // magic wand: little stars drift off the pointer as it moves (mouse/trackpad only; off for reduced motion)
+  (() => {
+    if (!matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const layer = document.querySelector(".sparkles");
+    const colors = ["#45BCD1", "#159AB3", "#961574", "#F2C14E"];
+    let last = 0, lx = 0, ly = 0;
+    addEventListener("pointermove", (e) => {
+      const now = performance.now();
+      const dist = Math.hypot(e.clientX - lx, e.clientY - ly);
+      if (now - last < 28 || dist < 6) return;          // a few stars per movement, not a flood
+      last = now; lx = e.clientX; ly = e.clientY;
+      const star = document.createElement("span");
+      star.className = "sparkle";
+      const size = 6 + Math.random() * 9;
+      star.style.cssText = "left:" + (e.clientX - 1) + "px;top:" + e.clientY + "px;width:" + size + "px;height:" + size + "px;" +
+        "color:" + colors[(Math.random() * colors.length) | 0] + ";" +
+        "--dx:" + ((Math.random() - .5) * 60) + "px;--dy:" + (18 + Math.random() * 40) + "px;--r:" + ((Math.random() - .5) * 220) + "deg";
+      layer.appendChild(star);
+      star.addEventListener("animationend", () => star.remove());
+    }, { passive: true });
+  })();
+</script>
 </body>
 </html>
 `;
@@ -320,8 +345,26 @@ writeFile(
 <section class="intro">
   <span class="portrait-wrap">
     ${portraitMarkup()}
+    <span class="float-icons" aria-hidden="true"><svg class="float-icon fi-1" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M2.68675 15.6451L4.59494 14.5435C4.6983 14.4839 4.8196 14.4631 4.9369 14.4851L8.6914 15.1878C8.99995 15.2455 9.28478 15.008 9.28338 14.6941L9.26876 11.4045C9.26836 11.3151 9.29193 11.2272 9.33701 11.15L11.2317 7.90621C11.3303 7.73739 11.3215 7.52658 11.2091 7.3666L8.01892 2.82568M19.0002 4.85905C13.5002 7.50004 16.5 11 17.5002 11.5C19.3773 12.4384 21.9876 12.5 21.9876 12.5C21.9958 12.3344 22 12.1677 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C12.1677 22 12.3344 21.9959 12.5 21.9877M16.7578 21.9398L13.591 13.591L21.9398 16.7578L18.2376 18.2376L16.7578 21.9398Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="float-icon fi-2" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M2.66113 18.3391L7.25499 13.7452M18.2175 2.78271C21.9275 6.4927 21.9275 12.5078 18.2175 16.2177C14.5075 19.9277 8.49243 19.9277 4.78245 16.2177M17 22.0002H6.99997M12 22.0002V19.0002M17.5 9.50023C17.5 12.8139 14.8137 15.5002 11.5 15.5002C8.18626 15.5002 5.49997 12.8139 5.49997 9.50023C5.49997 6.18652 8.18626 3.50023 11.5 3.50023C14.8137 3.50023 17.5 6.18652 17.5 9.50023Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="float-icon fi-3" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="float-icon fi-4" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M12 15C8.68629 15 6 12.3137 6 9V3.44444C6 3.0306 6 2.82367 6.06031 2.65798C6.16141 2.38021 6.38021 2.16141 6.65798 2.06031C6.82367 2 7.0306 2 7.44444 2H16.5556C16.9694 2 17.1763 2 17.342 2.06031C17.6198 2.16141 17.8386 2.38021 17.9397 2.65798C18 2.82367 18 3.0306 18 3.44444V9C18 12.3137 15.3137 15 12 15ZM12 15V18M18 4H20.5C20.9659 4 21.1989 4 21.3827 4.07612C21.6277 4.17761 21.8224 4.37229 21.9239 4.61732C22 4.80109 22 5.03406 22 5.5V6C22 6.92997 22 7.39496 21.8978 7.77646C21.6204 8.81173 20.8117 9.62038 19.7765 9.89778C19.395 10 18.93 10 18 10M6 4H3.5C3.03406 4 2.80109 4 2.61732 4.07612C2.37229 4.17761 2.17761 4.37229 2.07612 4.61732C2 4.80109 2 5.03406 2 5.5V6C2 6.92997 2 7.39496 2.10222 7.77646C2.37962 8.81173 3.18827 9.62038 4.22354 9.89778C4.60504 10 5.07003 10 6 10M7.44444 22H16.5556C16.801 22 17 21.801 17 21.5556C17 19.5919 15.4081 18 13.4444 18H10.5556C8.59188 18 7 19.5919 7 21.5556C7 21.801 7.19898 22 7.44444 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     ${home.data.bubble ? `<span class="bubble" aria-hidden="true"><span class="bubble-text">${inline(home.data.bubble)}</span></span>` : ""}
   </span>
+  <script>
+  // floating icons around the portrait: each one eases in, holds, and eases out at random times, forever
+  (() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const rand = (a, b) => a + Math.random() * (b - a);
+    document.querySelectorAll(".float-icon").forEach((icon) => {
+      const cycle = () => {
+        icon.classList.add("on");                                   // fade + scale in (2.4s)
+        setTimeout(() => {
+          icon.classList.remove("on");                              // fade + scale out (2.4s)
+          setTimeout(cycle, rand(1500, 6000) + 2400);               // rest, then again
+        }, 2400 + rand(1500, 4500));                                // stay visible a while
+      };
+      setTimeout(cycle, rand(200, 5000));                           // staggered first appearance
+    });
+  })();
+  </script>
   <script>
   // touch screens have no hover: tapping the portrait shows or hides the greeting; tapping elsewhere hides it
   (() => {
