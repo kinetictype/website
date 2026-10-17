@@ -254,7 +254,7 @@ writeFile(
     bodyClass: "home",
     body: `
 <section class="intro">
-  <img class="portrait" src="${imageUrl(SITE.portrait)}" alt="${escapeHtml(SITE.portrait_alt || SITE.name)}" width="96" height="96">
+  <img class="portrait" src="${imageUrl(SITE.portrait)}" alt="${escapeHtml(SITE.portrait_alt || SITE.name)}" width="320" height="238">
   <p class="greeting">${inline(home.data.greeting || "")}</p>
   <h1>${inline(home.data.headline || "")}</h1>
   <div class="lede">${markdown(home.body)}</div>

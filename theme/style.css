@@ -89,9 +89,10 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
 /* ---------- home intro ---------- */
 .intro { padding: 56px var(--gutter) 72px; max-width: 980px; }
-.portrait { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; background: var(--card); cursor: pointer; }
+.portrait { width: 320px; max-width: 100%; height: auto; margin-bottom: 20px; cursor: pointer;
+  mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
-.portrait:hover { animation: shake .45s ease-in-out infinite; }
+.portrait:hover { animation: shake .45s ease-in-out infinite; transform-origin: 50% 60%; }
 @keyframes shake {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(20deg); }

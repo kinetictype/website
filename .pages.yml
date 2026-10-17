@@ -136,7 +136,7 @@ content:
       - { name: tagline, label: Footer tagline, type: string }
       - { name: job_title, label: Job title (for search engines), type: string }
       - { name: location, label: Location, type: string }
-      - { name: portrait, label: Portrait (square), type: image, options: { media: images, path: content/images } }
+      - { name: portrait, label: Portrait (any shape, shown 320px wide), type: image, options: { media: images, path: content/images } }
       - { name: portrait_alt, label: Portrait description, type: string }
       - { name: og_image, label: Link-preview image (1200 × 630), type: image, options: { media: images, path: content/images } }
       - { name: favicon, label: Favicon, type: image, options: { media: images, path: content/images } }

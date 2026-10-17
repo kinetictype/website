@@ -23,7 +23,7 @@ job_title: Visualization Designer
 location: Berlin, Germany
 
 # Images live in content/images/ (shown on the site as /images/...)
-portrait: /images/portrait-illustration.png
+portrait: /images/kiera-westphal-illustration.png
 portrait_alt: Illustrated portrait of Kiera Westphal
 og_image: /images/og-image.png
 favicon: /images/favicon.svg
