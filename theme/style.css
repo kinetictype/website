@@ -92,11 +92,12 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .portrait { width: 320px; max-width: 100%; height: auto; margin-bottom: 20px; cursor: pointer;
   mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
-.portrait:hover { animation: shake .45s ease-in-out infinite; transform-origin: 50% 60%; }
-@keyframes shake {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(20deg); }
-  75% { transform: rotate(-20deg); }
+/* hover: the illustration drifts slowly around a small circle, easing in and out.
+   When the pointer leaves, a small script lets it finish the loop so it settles instead of jumping back. */
+.portrait:hover, .portrait.orbit { animation: orbit 3.2s cubic-bezier(.45, 0, .55, 1) infinite; }
+@keyframes orbit {
+  from { transform: translate(-14px, 0) rotate(0deg) translate(14px, 0) rotate(0deg); }
+  to   { transform: translate(-14px, 0) rotate(360deg) translate(14px, 0) rotate(-360deg); }
 }
 .greeting { margin: 0 0 12px; font-size: 18px; color: var(--muted); }
 .greeting strong { color: var(--ink); }
