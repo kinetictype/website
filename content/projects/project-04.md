@@ -7,7 +7,7 @@ role: Your Role
 
 # Category tags shown on the card and in the project list
 categories: [Data Visualization, Web]
-years: 2019–2020
+years: 2019–2021
 
 # work = Recent work / More projects; passion = Passion projects
 section: work
