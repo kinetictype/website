@@ -92,12 +92,52 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .portrait { width: 320px; max-width: 100%; height: auto; margin-bottom: 20px; cursor: pointer;
   mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
-/* hover: the illustration drifts slowly around a small circle, easing in and out.
+/* hover: the illustration drifts around an oval that stretches 120px to the right and 44px tall,
+   easing in and out over 4 seconds.
    When the pointer leaves, a small script lets it finish the loop so it settles instead of jumping back. */
-.portrait:hover, .portrait.orbit { animation: orbit 2s cubic-bezier(.45, 0, .55, 1) infinite; }
+.portrait:hover, .portrait.orbit { animation: orbit 4s linear infinite; /* easing is built into the keyframes */ }
 @keyframes orbit {
-  from { transform: translate(-32px, 0) rotate(0deg) translate(32px, 0) rotate(0deg); }
-  to   { transform: translate(-32px, 0) rotate(360deg) translate(32px, 0) rotate(-360deg); }
+  0.0% { transform: translate(0.0px, -0.0px); }
+  2.5% { transform: translate(0.0px, -0.2px); }
+  5.0% { transform: translate(0.0px, -0.9px); }
+  7.5% { transform: translate(0.2px, -1.9px); }
+  10.0% { transform: translate(0.7px, -3.4px); }
+  12.5% { transform: translate(1.7px, -5.2px); }
+  15.0% { transform: translate(3.5px, -7.4px); }
+  17.5% { transform: translate(6.3px, -9.8px); }
+  20.0% { transform: translate(10.5px, -12.4px); }
+  22.5% { transform: translate(16.2px, -15.0px); }
+  25.0% { transform: translate(23.7px, -17.5px); }
+  27.5% { transform: translate(32.9px, -19.6px); }
+  30.0% { transform: translate(43.7px, -21.2px); }
+  32.5% { transform: translate(55.8px, -21.9px); }
+  35.0% { transform: translate(68.6px, -21.8px); }
+  37.5% { transform: translate(81.6px, -20.5px); }
+  40.0% { transform: translate(93.9px, -18.2px); }
+  42.5% { transform: translate(104.6px, -14.7px); }
+  45.0% { transform: translate(112.9px, -10.4px); }
+  47.5% { transform: translate(118.2px, -5.4px); }
+  50.0% { transform: translate(120.0px, -0.0px); }
+  52.5% { transform: translate(118.2px, 5.4px); }
+  55.0% { transform: translate(112.9px, 10.4px); }
+  57.5% { transform: translate(104.6px, 14.7px); }
+  60.0% { transform: translate(93.9px, 18.2px); }
+  62.5% { transform: translate(81.6px, 20.5px); }
+  65.0% { transform: translate(68.6px, 21.8px); }
+  67.5% { transform: translate(55.8px, 21.9px); }
+  70.0% { transform: translate(43.7px, 21.2px); }
+  72.5% { transform: translate(32.9px, 19.6px); }
+  75.0% { transform: translate(23.7px, 17.5px); }
+  77.5% { transform: translate(16.2px, 15.0px); }
+  80.0% { transform: translate(10.5px, 12.4px); }
+  82.5% { transform: translate(6.3px, 9.8px); }
+  85.0% { transform: translate(3.5px, 7.4px); }
+  87.5% { transform: translate(1.7px, 5.2px); }
+  90.0% { transform: translate(0.7px, 3.4px); }
+  92.5% { transform: translate(0.2px, 1.9px); }
+  95.0% { transform: translate(0.0px, 0.9px); }
+  97.5% { transform: translate(0.0px, 0.2px); }
+  100.0% { transform: translate(0.0px, 0.0px); }
 }
 .greeting { margin: 0 0 12px; font-size: 18px; color: var(--muted); }
 .greeting strong { color: var(--ink); }
