@@ -96,7 +96,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 /* ---------- greeting on portrait hover ----------
    Text beside the illustration, level with the face. It fades and scales in on hover. */
 .bubble {
-  position: absolute; left: 276px; top: 96px; transform-origin: left center;
+  position: absolute; left: 281px; top: 86px; transform-origin: left center;
   width: max-content; max-width: 6.2em;
   font-family: var(--display); font-weight: 500; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em;
   color: var(--ink); text-wrap: balance;
