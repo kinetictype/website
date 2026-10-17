@@ -336,7 +336,7 @@ writeFile(
   })();
   </script>
   ${home.data.greeting ? `<p class="greeting">${inline(home.data.greeting)}</p>` : ""}
-  <h1>${inline(home.data.headline || "")}</h1>
+  <h1>${inline(home.data.headline || "").replace(/\s*\|\s*/g, '<br class="desktop-break"> ')}</h1>
   ${home.data.subhead ? `<p class="subhead">${inline(home.data.subhead)}</p>` : ""}
   <div class="lede">${markdown(home.body)}</div>
 </section>

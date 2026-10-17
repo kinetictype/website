@@ -1,8 +1,9 @@
 ---
 # HOMEPAGE
 # greeting and headline accept *italic* and **bold**.
+# In the headline, | marks a line break that only shows on desktop screens.
 greeting: ""
-headline: I'm a visual storyteller with a passion for revealing order and beauty in the process.
+headline: I'm a visual storyteller with a passion | for revealing order and beauty in the process.
 subhead: Working from Berlin, Germany.
 bubble: Hi! I'm glad you are here.
 recent_heading: Recent work

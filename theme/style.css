@@ -372,3 +372,7 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 @media (max-width: 900px) { :root { --h1-size: 38px; } }  /* tablets */
 @media (max-width: 640px) { :root { --h1-size: 34px; } }  /* large phones */
 @media (max-width: 400px) { :root { --h1-size: 30px; } }  /* small phones */
+
+/* line break in the homepage headline that only applies on desktop (wider than 900px) */
+.desktop-break { display: none; }
+@media (min-width: 901px) { .desktop-break { display: inline; } }

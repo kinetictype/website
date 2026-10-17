@@ -66,7 +66,7 @@ content:
     format: yaml-frontmatter
     fields:
       - { name: greeting, label: Greeting (small line above the headline; leave empty to hide), type: string }
-      - { name: headline, label: Headline, type: string }
+      - { name: headline, label: Headline (type | where the line should break on desktop), type: string }
       - { name: subhead, label: Line under the headline (leave empty to hide), type: string }
       - { name: bubble, label: Greeting shown beside the portrait on hover (leave empty to hide), type: string }
       - { name: recent_heading, label: Recent work heading, type: string }
