@@ -109,8 +109,13 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 @media (hover: hover) {
   .portrait-wrap:hover .bubble { opacity: 1; transform: scale(1); }
 }
-/* phones and narrow windows: the greeting sits on one line, centered above the head */
-@media (max-width: 640px), (hover: none) {
+/* 401–520px: not enough room beside a 320px illustration, so the illustration and greeting shrink a little */
+@media (min-width: 401px) and (max-width: 520px) {
+  .portrait { width: 240px; }
+  .bubble { left: 215px; top: 52px; font-size: 22px; }
+}
+/* 400px and narrower, and touch screens: the greeting sits on one line, centered above the head */
+@media (max-width: 400px), (hover: none) {
   .portrait-wrap { margin-top: 44px; -webkit-tap-highlight-color: transparent; }
   .bubble {
     left: 52%; top: auto; bottom: calc(100% + 6px);
