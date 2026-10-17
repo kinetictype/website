@@ -50,7 +50,27 @@ const BASE = (process.env.BASE_PATH || "").replace(/\/$/, "");
 const withBase = (html) =>
   BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
 
+// Placeholder and other small SVG images are written straight into the page instead of <img>,
+// so they always show (no separate file to load). Large SVGs (the portrait) stay as <img>.
+const svgCache = {};
+function inlineSvgImages(html) {
+  return html.replace(/<img\b([^>]*?)\bsrc="(\/images\/[^"]+\.svg)"([^>]*)>/g, (tag, before, src, after) => {
+    const file = path.join(CONTENT, src);
+    if (!exists(file) || fs.statSync(file).size > 50000) return tag;
+    const svg = (svgCache[file] ||= read(file).replace(/<\?xml[\s\S]*?\?>\s*/, "").trim());
+    const attrs = before + " " + after;
+    const cls = (attrs.match(/\bclass="([^"]*)"/) || [])[1];
+    const alt = (attrs.match(/\balt="([^"]*)"/) || [])[1] || "";
+    const a11y = alt ? `role="img" aria-label="${alt}"` : `aria-hidden="true"`;
+    return svg
+      .replace(/(<svg\b[^>]*?)\s(width|height)="[^"]*"/g, "$1")
+      .replace(/(<svg\b[^>]*?)\s(width|height)="[^"]*"/g, "$1")
+      .replace("<svg", `<svg${cls ? ` class="${cls}"` : ""} ${a11y} preserveAspectRatio="xMidYMid slice" focusable="false"`);
+  });
+}
+
 function writeFile(rel, content) {
+  if (/\.html$/.test(rel)) content = inlineSvgImages(content);
   if (/\.(html|css)$/.test(rel)) content = withBase(content);
   const p = path.join(OUT, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
@@ -422,25 +442,32 @@ function caseStudy(p) {
 <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-close" type="button" aria-label="Close">×</button>
   <button class="lb-prev" type="button" aria-label="Previous image">${ARROW_BACK}</button>
-  <figure><img alt=""><figcaption></figcaption></figure>
+  <figure><div class="lb-stage"></div><figcaption></figcaption></figure>
   <button class="lb-next" type="button" aria-label="Next image">${ARROW}</button>
 </div>
 <script>
   // click any image in the case study to see it large; arrow keys move between images, Esc closes
   (() => {
-    const imgs = [...document.querySelectorAll(".case .media img")];
+    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg")];
     const lb = document.querySelector(".lightbox"); if (!lb || !imgs.length) return;
-    const big = lb.querySelector("img"), cap = lb.querySelector("figcaption");
+    const stage = lb.querySelector(".lb-stage"), cap = lb.querySelector("figcaption");
     let at = 0, opener = null;
+    const label = (im) => im.getAttribute("alt") || im.getAttribute("aria-label") || "Image";
     const show = (n) => {
       at = (n + imgs.length) % imgs.length; const im = imgs[at];
-      big.src = im.currentSrc || im.src; big.alt = im.alt;
+      stage.innerHTML = "";
+      if (im.tagName.toLowerCase() === "img") {
+        const big = new Image(); big.src = im.currentSrc || im.src; big.alt = im.alt; stage.appendChild(big);
+      } else {
+        const big = im.cloneNode(true); big.removeAttribute("tabindex"); big.removeAttribute("role"); big.setAttribute("aria-label", label(im).replace(/ — open larger$/, "")); big.setAttribute("role", "img"); big.setAttribute("preserveAspectRatio", "xMidYMid meet"); stage.appendChild(big);
+      }
       cap.textContent = im.closest("figure")?.querySelector("figcaption")?.textContent || "";
     };
     const open = (n) => { opener = document.activeElement; show(n); lb.hidden = false; document.body.style.overflow = "hidden"; lb.querySelector(".lb-close").focus(); };
     const close = () => { lb.hidden = true; document.body.style.overflow = ""; opener && opener.focus(); };
     imgs.forEach((im, n) => {
-      im.tabIndex = 0; im.setAttribute("role", "button"); im.setAttribute("aria-label", (im.alt || "Image") + " — open larger");
+      im.setAttribute("tabindex", "0"); im.setAttribute("role", "button"); im.setAttribute("aria-label", label(im) + " — open larger");
+      im.removeAttribute("aria-hidden");
       im.addEventListener("click", () => open(n));
       im.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(n); } });
     });
