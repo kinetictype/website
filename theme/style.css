@@ -93,51 +93,131 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
 /* hover: the illustration drifts around an oval that stretches 120px to the right and 44px tall,
-   easing in and out over 4 seconds.
+   easing in and out over 6 seconds.
    When the pointer leaves, a small script lets it finish the loop so it settles instead of jumping back. */
-.portrait:hover, .portrait.orbit { animation: orbit 4s linear infinite; /* easing is built into the keyframes */ }
+.portrait:hover, .portrait.orbit { animation: orbit 6s linear infinite; /* easing is built into the keyframes */ }
 @keyframes orbit {
-  0.0% { transform: translate(0.0px, -0.0px); }
-  2.5% { transform: translate(0.0px, -0.2px); }
-  5.0% { transform: translate(0.0px, -0.9px); }
-  7.5% { transform: translate(0.2px, -1.9px); }
-  10.0% { transform: translate(0.7px, -3.4px); }
-  12.5% { transform: translate(1.7px, -5.2px); }
-  15.0% { transform: translate(3.5px, -7.4px); }
-  17.5% { transform: translate(6.3px, -9.8px); }
-  20.0% { transform: translate(10.5px, -12.4px); }
-  22.5% { transform: translate(16.2px, -15.0px); }
-  25.0% { transform: translate(23.7px, -17.5px); }
-  27.5% { transform: translate(32.9px, -19.6px); }
-  30.0% { transform: translate(43.7px, -21.2px); }
-  32.5% { transform: translate(55.8px, -21.9px); }
-  35.0% { transform: translate(68.6px, -21.8px); }
-  37.5% { transform: translate(81.6px, -20.5px); }
-  40.0% { transform: translate(93.9px, -18.2px); }
-  42.5% { transform: translate(104.6px, -14.7px); }
-  45.0% { transform: translate(112.9px, -10.4px); }
-  47.5% { transform: translate(118.2px, -5.4px); }
-  50.0% { transform: translate(120.0px, -0.0px); }
-  52.5% { transform: translate(118.2px, 5.4px); }
-  55.0% { transform: translate(112.9px, 10.4px); }
-  57.5% { transform: translate(104.6px, 14.7px); }
-  60.0% { transform: translate(93.9px, 18.2px); }
-  62.5% { transform: translate(81.6px, 20.5px); }
-  65.0% { transform: translate(68.6px, 21.8px); }
-  67.5% { transform: translate(55.8px, 21.9px); }
-  70.0% { transform: translate(43.7px, 21.2px); }
-  72.5% { transform: translate(32.9px, 19.6px); }
-  75.0% { transform: translate(23.7px, 17.5px); }
-  77.5% { transform: translate(16.2px, 15.0px); }
-  80.0% { transform: translate(10.5px, 12.4px); }
-  82.5% { transform: translate(6.3px, 9.8px); }
-  85.0% { transform: translate(3.5px, 7.4px); }
-  87.5% { transform: translate(1.7px, 5.2px); }
-  90.0% { transform: translate(0.7px, 3.4px); }
-  92.5% { transform: translate(0.2px, 1.9px); }
-  95.0% { transform: translate(0.0px, 0.9px); }
-  97.5% { transform: translate(0.0px, 0.2px); }
-  100.0% { transform: translate(0.0px, 0.0px); }
+  0.0% { transform: translate(0.00px, -0.00px); }
+  0.833% { transform: translate(0.00px, -0.02px); }
+  1.667% { transform: translate(0.00px, -0.09px); }
+  2.5% { transform: translate(0.00px, -0.21px); }
+  3.333% { transform: translate(0.01px, -0.38px); }
+  4.167% { transform: translate(0.02px, -0.59px); }
+  5.0% { transform: translate(0.04px, -0.85px); }
+  5.833% { transform: translate(0.08px, -1.16px); }
+  6.667% { transform: translate(0.14px, -1.51px); }
+  7.5% { transform: translate(0.23px, -1.91px); }
+  8.333% { transform: translate(0.34px, -2.35px); }
+  9.167% { transform: translate(0.50px, -2.84px); }
+  10.0% { transform: translate(0.71px, -3.37px); }
+  10.833% { transform: translate(0.97px, -3.94px); }
+  11.667% { transform: translate(1.30px, -4.56px); }
+  12.5% { transform: translate(1.71px, -5.21px); }
+  13.333% { transform: translate(2.20px, -5.90px); }
+  14.167% { transform: translate(2.79px, -6.63px); }
+  15.0% { transform: translate(3.48px, -7.39px); }
+  15.833% { transform: translate(4.30px, -8.17px); }
+  16.667% { transform: translate(5.24px, -8.99px); }
+  17.5% { transform: translate(6.32px, -9.82px); }
+  18.333% { transform: translate(7.54px, -10.68px); }
+  19.167% { transform: translate(8.93px, -11.55px); }
+  20.0% { transform: translate(10.48px, -12.42px); }
+  20.833% { transform: translate(12.21px, -13.30px); }
+  21.667% { transform: translate(14.11px, -14.17px); }
+  22.5% { transform: translate(16.21px, -15.04px); }
+  23.333% { transform: translate(18.50px, -15.89px); }
+  24.167% { transform: translate(20.98px, -16.71px); }
+  25.0% { transform: translate(23.66px, -17.51px); }
+  25.833% { transform: translate(26.53px, -18.26px); }
+  26.667% { transform: translate(29.60px, -18.97px); }
+  27.5% { transform: translate(32.85px, -19.62px); }
+  28.333% { transform: translate(36.29px, -20.21px); }
+  29.167% { transform: translate(39.90px, -20.73px); }
+  30.0% { transform: translate(43.66px, -21.17px); }
+  30.833% { transform: translate(47.57px, -21.52px); }
+  31.667% { transform: translate(51.61px, -21.78px); }
+  32.5% { transform: translate(55.76px, -21.95px); }
+  33.333% { transform: translate(60.00px, -22.00px); }
+  34.167% { transform: translate(64.30px, -21.94px); }
+  35.0% { transform: translate(68.64px, -21.77px); }
+  35.833% { transform: translate(72.99px, -21.48px); }
+  36.667% { transform: translate(77.33px, -21.06px); }
+  37.5% { transform: translate(81.62px, -20.52px); }
+  38.333% { transform: translate(85.82px, -19.86px); }
+  39.167% { transform: translate(89.92px, -19.07px); }
+  40.0% { transform: translate(93.88px, -18.16px); }
+  40.833% { transform: translate(97.66px, -17.13px); }
+  41.667% { transform: translate(101.23px, -15.98px); }
+  42.5% { transform: translate(104.57px, -14.73px); }
+  43.333% { transform: translate(107.65px, -13.37px); }
+  44.167% { transform: translate(110.43px, -11.92px); }
+  45.0% { transform: translate(112.90px, -10.38px); }
+  45.833% { transform: translate(115.03px, -8.77px); }
+  46.667% { transform: translate(116.79px, -7.10px); }
+  47.5% { transform: translate(118.19px, -5.37px); }
+  48.333% { transform: translate(119.19px, -3.60px); }
+  49.167% { transform: translate(119.80px, -1.81px); }
+  50.0% { transform: translate(120.00px, -0.00px); }
+  50.833% { transform: translate(119.80px, 1.81px); }
+  51.667% { transform: translate(119.19px, 3.60px); }
+  52.5% { transform: translate(118.19px, 5.37px); }
+  53.333% { transform: translate(116.79px, 7.10px); }
+  54.167% { transform: translate(115.03px, 8.77px); }
+  55.0% { transform: translate(112.90px, 10.38px); }
+  55.833% { transform: translate(110.43px, 11.92px); }
+  56.667% { transform: translate(107.65px, 13.37px); }
+  57.5% { transform: translate(104.57px, 14.73px); }
+  58.333% { transform: translate(101.23px, 15.98px); }
+  59.167% { transform: translate(97.66px, 17.13px); }
+  60.0% { transform: translate(93.88px, 18.16px); }
+  60.833% { transform: translate(89.92px, 19.07px); }
+  61.667% { transform: translate(85.82px, 19.86px); }
+  62.5% { transform: translate(81.62px, 20.52px); }
+  63.333% { transform: translate(77.33px, 21.06px); }
+  64.167% { transform: translate(72.99px, 21.48px); }
+  65.0% { transform: translate(68.64px, 21.77px); }
+  65.833% { transform: translate(64.30px, 21.94px); }
+  66.667% { transform: translate(60.00px, 22.00px); }
+  67.5% { transform: translate(55.76px, 21.95px); }
+  68.333% { transform: translate(51.61px, 21.78px); }
+  69.167% { transform: translate(47.57px, 21.52px); }
+  70.0% { transform: translate(43.66px, 21.17px); }
+  70.833% { transform: translate(39.90px, 20.73px); }
+  71.667% { transform: translate(36.29px, 20.21px); }
+  72.5% { transform: translate(32.85px, 19.62px); }
+  73.333% { transform: translate(29.60px, 18.97px); }
+  74.167% { transform: translate(26.53px, 18.26px); }
+  75.0% { transform: translate(23.66px, 17.51px); }
+  75.833% { transform: translate(20.98px, 16.71px); }
+  76.667% { transform: translate(18.50px, 15.89px); }
+  77.5% { transform: translate(16.21px, 15.04px); }
+  78.333% { transform: translate(14.11px, 14.17px); }
+  79.167% { transform: translate(12.21px, 13.30px); }
+  80.0% { transform: translate(10.48px, 12.42px); }
+  80.833% { transform: translate(8.93px, 11.55px); }
+  81.667% { transform: translate(7.54px, 10.68px); }
+  82.5% { transform: translate(6.32px, 9.82px); }
+  83.333% { transform: translate(5.24px, 8.99px); }
+  84.167% { transform: translate(4.30px, 8.17px); }
+  85.0% { transform: translate(3.48px, 7.39px); }
+  85.833% { transform: translate(2.79px, 6.63px); }
+  86.667% { transform: translate(2.20px, 5.90px); }
+  87.5% { transform: translate(1.71px, 5.21px); }
+  88.333% { transform: translate(1.30px, 4.56px); }
+  89.167% { transform: translate(0.97px, 3.94px); }
+  90.0% { transform: translate(0.71px, 3.37px); }
+  90.833% { transform: translate(0.50px, 2.84px); }
+  91.667% { transform: translate(0.34px, 2.35px); }
+  92.5% { transform: translate(0.23px, 1.91px); }
+  93.333% { transform: translate(0.14px, 1.51px); }
+  94.167% { transform: translate(0.08px, 1.16px); }
+  95.0% { transform: translate(0.04px, 0.85px); }
+  95.833% { transform: translate(0.02px, 0.59px); }
+  96.667% { transform: translate(0.01px, 0.38px); }
+  97.5% { transform: translate(0.00px, 0.21px); }
+  98.333% { transform: translate(0.00px, 0.09px); }
+  99.167% { transform: translate(0.00px, 0.02px); }
+  100.0% { transform: translate(0.00px, 0.00px); }
 }
 .greeting { margin: 0 0 12px; font-size: 18px; color: var(--muted); }
 .greeting strong { color: var(--ink); }
@@ -213,15 +293,14 @@ h1 em { font-style: italic; color: var(--accent); }
 .drawer-media { display: block; aspect-ratio: 16 / 10; position: relative; z-index: 1; }
 .drawer-media img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; border: 1px solid var(--rule); }
 
-/* photo tilt: hovering a project photo lifts its left side 3 degrees, pivoting on the bottom-right corner.
+/* photo hover: the photo lifts straight up, both corners evenly, with a soft shadow.
    The hover area stays put while the photo moves, so it doesn't flicker. */
 .card-media img, .drawer-media img {
-  transform-origin: right bottom;
-  transition: transform .35s cubic-bezier(.2, .8, .2, 1), box-shadow .35s ease;
+  transition: transform .45s cubic-bezier(.22, 1, .36, 1), box-shadow .45s ease;
 }
 .card-media:hover img, .drawer-media:hover img {
-  transform: rotate(3deg);
-  box-shadow: 0 14px 28px -16px rgba(27, 32, 38, .45);
+  transform: translateY(-10px);
+  box-shadow: 0 18px 30px -18px rgba(27, 32, 38, .45);
 }
 .drawer-tagline { margin: 0 0 16px; font-size: 17px; }
 .drawer .facts { margin: 0 0 16px; padding-top: 0; border-top: 0; }
