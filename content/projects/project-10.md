@@ -30,7 +30,7 @@ cover: /images/projects/project-10-cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
 logo:
 
-cover_alt: Placeholder cover image for project 10
+cover_alt: Chase logo
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 

@@ -435,4 +435,5 @@ svg[data-fit="contain"] { background: none !important; border: 0 !important; bor
 .card-media:has(> svg[data-fit="contain"]) { background: none; border: 0; border-radius: 0; }
 .media figure > svg[data-fit="contain"] { cursor: default; }
 /* on the project page the logo sits at a modest size, lined up with the text */
-.case-hero:has(svg[data-fit="contain"]) figure > svg { width: min(360px, 70%); height: auto; margin-left: var(--gutter); }
+/* logo covers on a project page: up to 360px wide or 180px tall, whichever comes first */
+.case-hero:has(svg[data-fit="contain"]) figure > svg { width: min(360px, 70%, calc(180px * var(--ar, 2))); height: auto; aspect-ratio: var(--ar, 2); margin-left: var(--gutter); }

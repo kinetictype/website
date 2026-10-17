@@ -74,7 +74,13 @@ function inlineSvgImages(html) {
     const outer = svg.slice(0, end).replace(/\s(width|height)="[^"]*"/g, "");
     // logos (data-fit="contain") are scaled to fit without cropping; images fill their box like a photo
     const fit = /data-fit="contain"/.test(outer) ? "meet" : "slice";
-    return outer.replace("<svg", `<svg${cls ? ` class="${cls}"` : ""} ${a11y} preserveAspectRatio="xMidYMid ${fit}" focusable="false"`) + svg.slice(end);
+    // logos carry their width-to-height ratio so CSS can size them without distortion
+    const vb = (outer.match(/viewBox="([^"]+)"/) || [])[1];
+    const [, , vw, vh] = vb ? vb.trim().split(/[\s,]+/).map(Number) : [];
+    const ar = fit === "meet" && vw && vh ? `--ar:${(vw / vh).toFixed(3)}` : "";
+    let head = outer;
+    if (ar) head = /\sstyle="/.test(head) ? head.replace(/\sstyle="([^"]*)"/, (m, s) => ` style="${s.replace(/;?\s*$/, ";")}${ar}"`) : head.replace("<svg", `<svg style="${ar}"`);
+    return head.replace("<svg", `<svg${cls ? ` class="${cls}"` : ""} ${a11y} preserveAspectRatio="xMidYMid ${fit}" focusable="false"`) + svg.slice(end);
   });
 }
 
