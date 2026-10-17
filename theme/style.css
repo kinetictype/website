@@ -179,7 +179,7 @@ h1 em { font-style: italic; color: var(--accent); }
 .row summary::-webkit-details-marker { display: none; }
 .row summary:hover, .row[open] summary { background: var(--card); }
 .row-years { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 15px; }
-.row-title { font: 500 20px/1.25 var(--display); }
+.row-title { font: 500 var(--row-title-size, 18px)/1.25 var(--display); }
 /* small cover image between the years and the title (16:10, same shape as the cards) */
 .row-thumb { width: 80px; aspect-ratio: 16 / 10; border-radius: 3px; overflow: hidden; background: var(--rule); }
 .row-thumb img, .row-thumb > svg { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -372,6 +372,10 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 @media (max-width: 900px) { :root { --h1-size: 38px; } }  /* tablets */
 @media (max-width: 640px) { :root { --h1-size: 34px; } }  /* large phones */
 @media (max-width: 400px) { :root { --h1-size: 30px; } }  /* small phones */
+/* More projects row titles: 18px on desktop, scaling down with the headline */
+@media (max-width: 900px) { :root { --row-title-size: 17px; } }
+@media (max-width: 640px) { :root { --row-title-size: 16px; } }
+@media (max-width: 400px) { :root { --row-title-size: 15px; } }
 
 /* line break in the homepage headline that only applies on desktop (wider than 900px) */
 .desktop-break { display: none; }
