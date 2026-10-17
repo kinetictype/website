@@ -7,13 +7,13 @@ role: Your Role
 
 # Category tags shown on the card and in the project list
 categories: [Mobile, Prototyping]
-years: 2016–2017
+years: 2019–2020
 
 # work = Recent work / More projects; passion = Passion projects
 section: work
 
 # Used to sort projects, newest first (the year the project started)
-start_year: 2016
+start_year: 2019
 
 # Recent work on the homepage: set featured to true and give an order (1, 2, 3)
 featured: false
@@ -30,7 +30,7 @@ cover: /images/projects/project-06-cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
 logo:
 
-cover_alt: Placeholder cover image for project 06
+cover_alt: Cisco logo
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 

@@ -54,10 +54,17 @@ const withBase = (html) =>
 // so they always show (no separate file to load). Large SVGs (the portrait) stay as <img>.
 const svgCache = {};
 function inlineSvgImages(html) {
+  let copy = 0;
   return html.replace(/<img\b([^>]*?)\bsrc="(\/images\/[^"]+\.svg)"([^>]*)>/g, (tag, before, src, after) => {
     const file = path.join(CONTENT, src);
     if (!exists(file) || fs.statSync(file).size > 50000) return tag;
-    const svg = (svgCache[file] ||= read(file).replace(/<\?xml[\s\S]*?\?>\s*/, "").trim());
+    let svg = (svgCache[file] ||= read(file).replace(/<\?xml[\s\S]*?\?>\s*/, "").trim());
+    // the same logo can appear more than once on a page, so give each copy its own internal ids
+    const ids = [...svg.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
+    if (ids.length) {
+      const n = ++copy;
+      for (const id of ids) svg = svg.split(`"${id}"`).join(`"${id}-${n}"`).split(`#${id}"`).join(`#${id}-${n}"`).split(`#${id})`).join(`#${id}-${n})`);
+    }
     const attrs = before + " " + after;
     const cls = (attrs.match(/\bclass="([^"]*)"/) || [])[1];
     const alt = (attrs.match(/\balt="([^"]*)"/) || [])[1] || "";
