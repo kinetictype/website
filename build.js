@@ -456,13 +456,6 @@ function caseStudy(p) {
   ${prev ? `<a class="prev-link" href="${projectUrl(prev)}">${ARROW_BACK} Previous: ${escapeHtml(prev.title)}</a>` : ""}
 </nav>
 
-<aside class="author-card">
-  <img src="${imageUrl(SITE.portrait)}" alt="" width="72" height="54">
-  <div>
-    <a class="author-name" href="/about/">${escapeHtml(SITE.name)}</a>
-    <span>${escapeHtml(SITE.tagline || "")}</span>
-  </div>
-</aside>
 
 <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-close" type="button" aria-label="Close">×</button>
