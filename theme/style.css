@@ -34,6 +34,7 @@ END */
   --accent: #159AB3;
   --h1: #2A3F4D; /* color of H1 headings */
   --h1-size: 42px; /* H1 size on desktop; smaller screens below */
+  --subhead: #7A909E; /* color of the line under the headline */
   --greeting: #09596B; /* color of the greeting shown when hovering the portrait */
   /* Sans-serif text uses Case; Fira Sans shows until licensed Case web fonts are added. The --serif name is kept so the layout code stays the same. */
   --serif: "Case", "ABC Case", "Case Text", "Fira Sans", ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -136,7 +137,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 h1, h2, h3, h4 { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; line-height: 1.08; }
 h1 { color: var(--h1); }
 .intro h1 { font-size: var(--h1-size); margin: 0 0 28px; }
-.subhead { margin: -12px 0 28px; font-size: clamp(18px, 2vw, 22px); color: var(--muted); }
+.subhead { margin: -12px 0 28px; font-size: clamp(18px, 2vw, 22px); color: var(--subhead); }
 h1 em { font-style: italic; color: var(--accent); }
 .lede { font-size: 19px; max-width: 640px; }
 .lede p { margin: 0 0 14px; }
