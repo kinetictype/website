@@ -272,10 +272,6 @@ function card(p, withTags = false) {
 }
 
 function row(p) {
-  const facts = [
-    p.client ? `<div><dt>Client</dt><dd>${escapeHtml(p.client)}</dd></div>` : "",
-    p.role ? `<div><dt>Role</dt><dd>${escapeHtml(p.role)}</dd></div>` : "",
-  ].join("");
   return `<li><details class="row">
     <summary>
       <span class="row-years">${escapeHtml(String(p.years || ""))}</span>
@@ -288,7 +284,7 @@ function row(p) {
       ${p.cover ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></a>` : ""}
       <div class="drawer-text">
         ${p.tagline ? `<p class="drawer-tagline">${escapeHtml(p.tagline)}</p>` : ""}
-        ${facts ? `<dl class="facts">${facts}</dl>` : ""}
+        ${p.summary ? `<p class="drawer-summary">${escapeHtml(String(p.summary).trim())}</p>` : ""}
         <a class="drawer-link" href="${projectUrl(p)}">View project ${ARROW}</a>
       </div>
     </div>

@@ -1,7 +1,13 @@
 ---
 # ---- Card and list text ----
 title: Interaction Design Consultant
-tagline: One-line summary of project 05.
+tagline: Redesign of Help to Self-Service
+# Paragraph shown under the summary when the project is opened in More projects
+summary: >-
+  The mission of the project was to move customers from calling into Fitbit to self service.
+  I met with Stakeholders, agreed on priorities to improve on the platform, created a site audit,
+  and proposed a new navigation approach based on metric data. Management chose not to move
+  forward during competing priorities. Later that year, Fitbit was acquired by Google.
 client: Client Name
 role: Your Role
 
