@@ -96,6 +96,10 @@ const projectUrl = (p) => `/work/${p.slug}/`;
 const imageUrl = (f) => (!f ? "" : /^(https?:)?\//.test(f) ? f : `/images/${f}`);
 const assetUrl = (p, file) => imageUrl(file);
 
+// Arrow icon used in links (aria-hidden: the link text already says where it goes)
+const ARROW = `<svg class="icon-arrow" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const ARROW_BACK = ARROW.replace('class="icon-arrow"', 'class="icon-arrow flip"');
+
 /* ---------- shared layout ---------- */
 
 function layout({ title, description, urlPath, body, image, type = "website", schema, bodyClass = "" }) {
@@ -216,7 +220,7 @@ function row(p) {
       <div class="drawer-text">
         ${p.tagline ? `<p class="drawer-tagline">${escapeHtml(p.tagline)}</p>` : ""}
         ${facts ? `<dl class="facts">${facts}</dl>` : ""}
-        <a class="drawer-link" href="${projectUrl(p)}">View project →</a>
+        <a class="drawer-link" href="${projectUrl(p)}">View project ${ARROW}</a>
       </div>
     </div>
   </details></li>`;
@@ -274,7 +278,7 @@ writeFile(
 <section class="recent" aria-labelledby="recent-h">
   <div class="section-head">
     <h2 id="recent-h">${escapeHtml(home.data.recent_heading || "Recent work")}</h2>
-    <a href="/work/">All work →</a>
+    <a href="/work/">All work ${ARROW}</a>
   </div>
   <div class="cards">
     ${featured.map((p) => card(p, true)).join("\n    ")}
@@ -367,8 +371,8 @@ projects.forEach((p, i) => {
   <div class="prose">${markdown(p.body)}</div>
 </article>
 <nav class="pager" aria-label="More projects">
-  ${prev ? `<a href="${projectUrl(prev)}"><span>← Newer</span>${escapeHtml(prev.title)}</a>` : "<span></span>"}
-  ${next ? `<a class="next" href="${projectUrl(next)}"><span>Older →</span>${escapeHtml(next.title)}</a>` : "<span></span>"}
+  ${prev ? `<a href="${projectUrl(prev)}"><span>${ARROW_BACK} Newer</span>${escapeHtml(prev.title)}</a>` : "<span></span>"}
+  ${next ? `<a class="next" href="${projectUrl(next)}"><span>Older ${ARROW}</span>${escapeHtml(next.title)}</a>` : "<span></span>"}
 </nav>`,
     })
   );
@@ -400,7 +404,7 @@ writeFile(
   layout({
     title: "Page not found",
     urlPath: "/404.html",
-    body: `<section class="page-head"><h1>Page not found</h1><p class="lede">That page doesn't exist. <a href="/">Back to the homepage →</a></p></section>`,
+    body: `<section class="page-head"><h1>Page not found</h1><p class="lede">That page doesn't exist. <a href="/">Back to the homepage ${ARROW}</a></p></section>`,
   })
 );
 

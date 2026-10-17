@@ -362,3 +362,9 @@ h1 em { font-style: italic; color: var(--accent); }
 
 /* ---------- passion projects ---------- */
 .passion { margin-top: 80px; }
+
+/* ---------- arrow icon ---------- */
+.icon-arrow { display: inline-block; width: 1em; height: 1em; vertical-align: -0.14em; transition: transform .2s ease; }
+.icon-arrow.flip { transform: scaleX(-1); }
+a:hover .icon-arrow { transform: translateX(3px); }
+a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
