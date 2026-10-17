@@ -28,8 +28,8 @@ END */
 :root {
   --bg: #F2F5F7;
   --ink: #0F181A;   /* headings and the name (Concorde) */
-  --text: #7A909E;  /* all sans-serif text */
-  --muted: #7A909E; /* secondary sans-serif text (dates, labels, nav) */
+  --text: #3E5463;  /* all sans-serif text */
+  --muted: #3E5463; /* secondary sans-serif text (dates, labels, nav) */
   --rule: #d4dce2;
   --card: #ffffff;
   --accent: #159AB3;
