@@ -402,3 +402,8 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .cols3 .big-mail { margin-top: 0; padding: 0; }
 @media (max-width: 900px) { .cols3 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .cols3 { grid-template-columns: 1fr; } .cols3 .col + .col { margin-top: 24px; } }
+
+/* About and Contact: same space between the H1 and the first text as the homepage
+   headline and "Working from Berlin, Germany." (16px) */
+.about .page-head, .contact .page-head { padding-bottom: 0; }
+.about .page-head h1, .contact .page-head h1 { margin-bottom: 16px; }
