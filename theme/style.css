@@ -93,31 +93,20 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .portrait { display: block; width: 320px; max-width: 100%; height: auto;
   mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
 
-/* ---------- speech bubble on portrait hover ----------
-   The icon is scaled proportionally (never stretched). It sits beside the illustration,
-   with the tip of its tail level with the mouth. The text sits in the round part of the
-   bubble with at least 8px between the text and the outline. */
-.portrait-wrap { --bubble: 264px; --tip-x: 270px; --tip-y: 124px; }
+/* ---------- greeting on portrait hover ----------
+   Text beside the illustration, level with the face. It fades and scales in on hover. */
 .bubble {
-  position: absolute; width: var(--bubble); height: var(--bubble);
-  /* place the tail tip (at 10% / 82.5% of the icon) on the tip point */
-  left: calc(var(--tip-x) - var(--bubble) * .10);
-  top: calc(var(--tip-y) - var(--bubble) * .825);
-  color: var(--ink);
-  opacity: 0; transform: translateY(8px) scale(.86); transform-origin: 10% 82.5%; /* grows out of the tail */
-  transition: opacity .55s cubic-bezier(.22, 1, .36, 1), transform .55s cubic-bezier(.22, 1, .36, 1);
+  position: absolute; left: 276px; top: 96px; transform-origin: left center;
+  width: max-content; max-width: 6.2em;
+  font-family: var(--display); font-weight: 500; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em;
+  color: var(--ink); text-wrap: balance;
+  opacity: 0; transform: scale(.85);
+  transition: opacity .6s cubic-bezier(.22, 1, .36, 1), transform .6s cubic-bezier(.22, 1, .36, 1);
   pointer-events: none;
 }
-.bubble-shape { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.bubble-shape path { fill: var(--card); }
-.bubble-text {
-  position: absolute; left: 52.08%; top: 47.92%; transform: translate(-50%, -50%); /* center of the round part */
-  padding: 8px; width: max-content; max-width: 6.2em;
-  font-family: var(--display); font-weight: 500; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em;
-  text-align: center; text-wrap: balance;
-}
+.bubble-text { display: block; }
 @media (hover: hover) {
-  .portrait-wrap:hover .bubble { opacity: 1; transform: none; }
+  .portrait-wrap:hover .bubble { opacity: 1; transform: scale(1); }
 }
 /* shake: swings up to 20 degrees each way while the pointer is over the photo, stops when it leaves */
 .greeting { margin: 0 0 12px; font-size: 18px; color: var(--muted); }

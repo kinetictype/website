@@ -64,7 +64,7 @@ content:
       - { name: greeting, label: Greeting (small line above the headline; leave empty to hide), type: string }
       - { name: headline, label: Headline, type: string }
       - { name: subhead, label: Line under the headline (leave empty to hide), type: string }
-      - { name: bubble, label: Speech bubble on portrait hover (leave empty to hide), type: string }
+      - { name: bubble, label: Greeting shown beside the portrait on hover (leave empty to hide), type: string }
       - { name: recent_heading, label: Recent work heading, type: string }
       - { name: archive_heading, label: Project list heading, type: string }
       - { name: passion_heading, label: Passion projects heading, type: string }
