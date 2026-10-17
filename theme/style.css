@@ -74,7 +74,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;
   padding-top: 28px; padding-bottom: 28px;
 }
-.wordmark { font: 500 26px/1.08 var(--display); text-decoration: none; letter-spacing: -0.02em; }
+.wordmark { font: 500 26px/1.08 var(--display); text-decoration: none; letter-spacing: -0.03em; }
 .site-header nav { display: flex; gap: 22px; font-size: 16px; }
 .site-header nav a { text-decoration: none; color: var(--muted); }
 .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--ink); }
@@ -86,7 +86,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted);
 }
 .site-footer div { display: flex; flex-direction: column; gap: 2px; }
-.footer-name { color: var(--ink); font: 500 26px/1.08 var(--display); letter-spacing: -0.02em; text-decoration: none; }
+.footer-name { color: var(--ink); font: 500 26px/1.08 var(--display); letter-spacing: -0.03em; text-decoration: none; }
 .site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; }
 
 /* ---------- home intro ---------- */
@@ -337,7 +337,7 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .author-card { display: flex; gap: 16px; align-items: center; margin: 56px var(--gutter) 0; padding-top: 24px; border-top: 1px solid var(--rule); }
 .author-card img { width: 72px; height: auto; mix-blend-mode: multiply; }
 .author-card div { display: flex; flex-direction: column; }
-.author-name { font: 500 26px/1.08 var(--display); letter-spacing: -0.02em; text-decoration: none; }
+.author-name { font: 500 26px/1.08 var(--display); letter-spacing: -0.03em; text-decoration: none; }
 .author-card span { font-size: 15px; color: var(--muted); }
 
 /* lightbox */
