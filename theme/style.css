@@ -27,8 +27,9 @@ END */
 
 :root {
   --bg: #F2F5F7;
-  --ink: #0F181A;
-  --muted: #5d6870;
+  --ink: #0F181A;   /* headings and the name (Concorde) */
+  --text: #7A909E;  /* all sans-serif text */
+  --muted: #7A909E; /* secondary sans-serif text (dates, labels, nav) */
   --rule: #d4dce2;
   --card: #ffffff;
   --accent: #159AB3;
@@ -50,7 +51,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--ink);
+  color: var(--text);
   font: 17px/1.6 var(--sans);
   -webkit-font-smoothing: antialiased;
   padding: var(--gutter); /* 16px frame around every side of the page */
@@ -77,7 +78,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;
   padding-top: 28px; padding-bottom: 28px;
 }
-.wordmark { font: 500 26px/1.08 var(--display); text-decoration: none; letter-spacing: 0.02em; }
+.wordmark { color: var(--ink); font: 500 26px/1.08 var(--display); text-decoration: none; letter-spacing: 0.02em; }
 .site-header nav { display: flex; gap: 22px; font-size: 16px; }
 .site-header nav a { text-decoration: none; color: var(--muted); }
 .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--ink); }
@@ -136,6 +137,8 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 /* The name in the header, footer and author card uses the H2 style (Concorde, 26px like the section headings) */
 h1, h2, h3, h4 { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; line-height: 1.08; }
 h1 { color: var(--h1); }
+/* serif (Concorde) text stays dark; zero-specificity so link hover colors still apply */
+:where(h2, h3, h4, .wordmark, .footer-name, .author-name, .row-title, .next-title, .pager a, .case-body > blockquote, .prose blockquote) { color: var(--ink); }
 .intro h1 { font-size: var(--h1-size); margin: 0 0 28px; }
 .subhead { margin: -12px 0 28px; font-size: clamp(18px, 2vw, 22px); color: var(--subhead); }
 h1 em { font-style: italic; color: var(--accent); }
@@ -340,7 +343,7 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .author-card { display: flex; gap: 16px; align-items: center; margin: 56px var(--gutter) 0; padding-top: 24px; border-top: 1px solid var(--rule); }
 .author-card img { width: 72px; height: auto; mix-blend-mode: multiply; }
 .author-card div { display: flex; flex-direction: column; }
-.author-name { font: 500 26px/1.08 var(--display); letter-spacing: 0.02em; text-decoration: none; }
+.author-name { color: var(--ink); font: 500 26px/1.08 var(--display); letter-spacing: 0.02em; text-decoration: none; }
 .author-card span { font-size: 15px; color: var(--muted); }
 
 /* lightbox */
