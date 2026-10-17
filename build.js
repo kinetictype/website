@@ -211,6 +211,7 @@ function row(p) {
   return `<li><details class="row">
     <summary>
       <span class="row-years">${escapeHtml(String(p.years || ""))}</span>
+      <span class="row-thumb">${p.cover ? `<img src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
       <span class="row-title">${escapeHtml(p.title)}</span>
       <span class="row-tags">${tags(p)}</span>
       <span class="row-toggle" aria-hidden="true"></span>
