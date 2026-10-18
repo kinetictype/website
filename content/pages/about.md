@@ -6,10 +6,11 @@ Placeholder biography. Write a few paragraphs about your background, how you wor
 
 ## Experience
 
-- Placeholder role, Company — Years
-- Placeholder role, Company — Years
-- Placeholder role, Company — Years
+- Apiture Consumer Banking, 2024-2025
+- JPMorgan Chase, 2021-2023
+- Goldman Sachs, 2019-2021
 
 ## Education
 
-- Placeholder degree, School — Year
+- Carnegie Mellon University, BFA, Human Computer Interaction and Communication Design
+
