@@ -299,6 +299,9 @@ function card(p, withTags = false) {
 }
 
 function row(p) {
+  // the row shows the logo/cover; the opened drop-down shows its own image (falls back to the cover)
+  const drawerImg = p.drawer_image || p.cover;
+  const drawerAlt = p.drawer_image ? p.drawer_image_alt || "" : p.cover_alt || "";
   return `<li><details class="row">
     <summary>
       <span class="row-years">${escapeHtml(String(p.years || ""))}</span>
@@ -308,7 +311,7 @@ function row(p) {
       <span class="row-toggle" aria-hidden="true"></span>
     </summary>
     <div class="drawer">
-      ${p.cover ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></a>` : ""}
+      ${drawerImg ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
       <div class="drawer-text">
         ${p.tagline ? `<p class="drawer-tagline">${escapeHtml(p.tagline)}</p>` : ""}
         ${p.summary ? `<p class="drawer-summary">${escapeHtml(String(p.summary).trim())}</p>` : ""}

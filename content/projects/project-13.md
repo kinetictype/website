@@ -31,6 +31,11 @@ cover: /images/projects/project-13-cover.svg
 logo:
 
 cover_alt: Placeholder cover image for project 13
+
+# Image inside the More projects drop-down (shown when the row is opened).
+# The logo/cover above stays in the row itself. Upload to content/images/projects/.
+drawer_image: /images/projects/placeholder-drawer.svg
+drawer_image_alt: Placeholder image for project 13
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 

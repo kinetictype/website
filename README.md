@@ -35,6 +35,8 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 | Show in Recent work + position 1/2/3 | Puts the project in the three cards at the top of the homepage |
 | Hide this project | Keeps it off the site without deleting it |
 | SEO description | What Google and link previews show for this project |
+| Logo / cover | The small image in the More projects row, the Recent work card, and the top of the project page (logos: SVG, transparent) |
+| Drop-down image | A separate photo or screenshot shown only when the row is opened in More projects (1600 × 1000) |
 | Case study | The body of the project page |
 
 - **Add a project:** Projects → **Add an entry**. The title becomes the filename and the web address

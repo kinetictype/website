@@ -46,10 +46,15 @@ content:
       - { name: hidden, label: Hide this project, type: boolean, default: false }
       - { name: description, label: SEO description (120–160 characters), type: text }
       - name: cover
-        label: Cover image (1600 × 1000)
+        label: "Logo / cover — small image in the More projects row, the Recent work card, and the top of the project page"
         type: image
         options: { media: images, path: content/images/projects }
-      - { name: cover_alt, label: Cover image description (alt text), type: string }
+      - { name: cover_alt, label: Logo / cover description (alt text), type: string }
+      - name: drawer_image
+        label: "Drop-down image — shown only when the row is opened in More projects (photo or screenshot, 1600 × 1000)"
+        type: image
+        options: { media: images, path: content/images/projects }
+      - { name: drawer_image_alt, label: Drop-down image description (alt text), type: string }
       - name: logo
         label: Client logo on the project page (optional)
         type: image
