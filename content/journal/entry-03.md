@@ -1,23 +1,18 @@
 ---
-# ---- List text ----
-title: Journal Entry Title 03
-date: 2026-07-02
+title: Talk for SF on Charts and Graphs
+date: 2017-02-22
 category: Talks
-excerpt: One or two sentences that introduce entry 03. Shown under the title on the entry page.
-
-# Set to true to keep this entry off the site without deleting it
+excerpt: I gave a talk to over 100 attendees in Downtown San Francisco on charts
+  and Graphs.
 hidden: false
-
-# ---- SEO ----
-description: Placeholder description of journal entry 03 for search engines and link previews.
-
-# ---- Image (upload to content/images/journal/) ----
+description: Placeholder description of journal entry 03 for search engines and
+  link previews.
 cover: /images/journal/entry-03-cover.svg
 cover_alt: Placeholder image for journal entry 03
 ---
 Placeholder opening paragraph. Set up what this entry is about: a talk you gave, a class you taught, a process note, or something you noticed.
 
-## A section heading
+## Charts and Graphs
 
 Placeholder text. Write as much or as little as you like. Images work the same way as in a case study.
 
