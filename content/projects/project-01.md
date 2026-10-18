@@ -12,7 +12,7 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 01 for search engines and link previews.
-cover: /images/projects/project-01/Service_Poster.png
+cover: /images/projects/project-01/Service_Poster_4-3.png
 logo: ''
 cover_alt: Service Design JPMC
 drawer_image: /images/projects/project-01/Service_Poster.png
