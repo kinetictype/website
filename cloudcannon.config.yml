@@ -1,0 +1,20 @@
+paths:
+  static: ''
+  uploads: uploads
+timezone: Europe/Berlin
+markdown:
+  engine: commonmark
+  options: {}
+collections_config:
+  pages:
+    path: content/pages
+    icon: wysiwyg
+  content:
+    path: content
+    icon: wysiwyg
+  journal:
+    path: content/journal
+    icon: equal
+  projects:
+    path: content/projects
+    icon: eject
