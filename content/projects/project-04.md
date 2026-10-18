@@ -15,6 +15,7 @@ hidden: false
 description: Placeholder description of project 04 for search engines and link previews.
 cover: /images/projects/streamingTVService_LGwebpage_mock.png
 cover_alt: Goldman Sachs logo
+logo: /images/projects/project-04-goldman-sachs/Construction.svg
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
