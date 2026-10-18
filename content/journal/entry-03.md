@@ -4,7 +4,7 @@ date: 2017-02-22
 category: Talks
 excerpt: I gave a talk to over 100 attendees in Downtown San Francisco on charts
   and Graphs.
-hidden: false
+hidden: true
 description: Placeholder description of journal entry 03 for search engines and
   link previews.
 cover: /images/journal/entry-03-cover.svg
