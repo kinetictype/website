@@ -1,17 +1,12 @@
 ---
-# ---- List text ----
 title: Journal Entry Title 09
 date: 2025-08-09
 category: Process
-excerpt: One or two sentences that introduce entry 09. Shown under the title on the entry page.
-
-# Set to true to keep this entry off the site without deleting it
-hidden: false
-
-# ---- SEO ----
-description: Placeholder description of journal entry 09 for search engines and link previews.
-
-# ---- Image (upload to content/images/journal/) ----
+excerpt: One or two sentences that introduce entry 09. Shown under the title on
+  the entry page.
+hidden: true
+description: Placeholder description of journal entry 09 for search engines and
+  link previews.
 cover: /images/journal/entry-09-cover.svg
 cover_alt: Placeholder image for journal entry 09
 ---
