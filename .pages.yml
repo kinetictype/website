@@ -59,39 +59,34 @@ content:
         label: Client logo on the project page (optional)
         type: image
         options: { media: images, path: content/images/logos }
-      - name: page_images
-        label: Project page images
-        description: "Images on this project's own page. Upload into this project's folder in images/projects."
+      - name: top_image
+        label: Top image (large, under the title; leave empty to show the logo/cover)
+        type: image
+        options: { media: images, path: content/images/projects }
+      - { name: top_image_alt, label: Top image description (alt text), type: string }
+      - name: gallery
+        label: Gallery (shown after the case-study text, in this order; drag to reorder)
         type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {alt}"
         fields:
-          - name: top_image
-            label: Top image (large, under the title; leave empty to show the logo/cover)
+          - name: image
+            label: Image
             type: image
             options: { media: images, path: content/images/projects }
-          - { name: top_image_alt, label: Top image description (alt text), type: string }
-          - name: gallery
-            label: Gallery (shown after the case-study text, in this order; drag to reorder)
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{index}. {alt}"
-            fields:
-              - name: image
-                label: Image
-                type: image
-                options: { media: images, path: content/images/projects }
-              - { name: alt, label: Description for screen readers (alt text), type: string }
-              - { name: caption, label: Caption under the image (optional), type: string }
-              - name: size
-                label: Size
-                type: select
-                default: full
-                options:
-                  values:
-                    - { name: full, label: Full width }
-                    - { name: half, label: Half (two side by side) }
-                    - { name: third, label: Third (three side by side) }
+          - { name: alt, label: Description for screen readers (alt text), type: string }
+          - { name: caption, label: Caption under the image (optional), type: string }
+          - name: size
+            label: Size
+            type: select
+            default: full
+            options:
+              values:
+                - { name: full, label: Full width }
+                - { name: half, label: Half (two side by side) }
+                - { name: third, label: Third (three side by side) }
       - name: body
         label: Case study
         type: rich-text

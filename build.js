@@ -484,18 +484,36 @@ ${passion.length ? `<section class="recent passion"><div class="section-head"><h
 /* Project page images, edited in the CMS under "Project page images":
    a top image (falls back to the logo/cover) and a gallery shown after the case-study text.
    Gallery sizes: full = full width, half = two side by side, third = three side by side. */
+// Top image and gallery live at the top level of each project file (older files may still
+// have them grouped under page_images; both work).
+const topImage = (p) => ({ ...(p.page_images || {}), ...("top_image" in p ? { top_image: p.top_image, top_image_alt: p.top_image_alt } : {}) });
+const galleryOf = (p) => ("gallery" in p ? p.gallery : (p.page_images || {}).gallery) || [];
 function pageHero(p) {
-  const pi = p.page_images || {};
+  const pi = topImage(p);
   const src = pi.top_image || p.cover;
   if (!src) return "";
   const alt = pi.top_image ? pi.top_image_alt || "" : p.cover_alt || "";
   // in the editor, swapping this image always sets the Top image (even while it shows the logo/cover)
-  return `<div class="media media-1 case-hero"><figure><img${edImage(p, "page_images.top_image", "page_images.top_image_alt")} src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
+  return `<div class="media media-1 case-hero"><figure><img${edImage(p, "top_image", "top_image_alt")} src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
+}
+/* Editor only: the gallery as one CloudCannon array, so images can be replaced, added, removed and
+   reordered on the page. Each item keeps its width (full / half / third). */
+function editableGallery(p) {
+  const list = Array.isArray(p.gallery) ? p.gallery : [];
+  if (!list.length) return "";
+  const width = { half: "calc(50% - 8px)", third: "calc(33.333% - 11px)" };
+  const item = (g = {}) => {
+    const w = width[String(g.size || "full").toLowerCase()] || "100%";
+    const img = `<img${edImage(g, "image", "alt")} loading="lazy" src="${imageUrl(g.image || "/images/placeholders/placeholder-wide.svg")}" alt="${escapeHtml(g.alt || "")}">`;
+    const cap = typeof g.caption === "string" ? `<figcaption${edText("caption")}>${escapeHtml(g.caption)}</figcaption>` : "";
+    return `<figure data-editable="array-item" style="flex:0 0 ${w};margin:0">${img}${cap}</figure>`;
+  };
+  return `<div class="media" data-editable="array" data-prop="gallery" data-direction="row" style="display:flex;flex-wrap:wrap;gap:16px">${list.map(item).join("")}</div>`;
 }
 function pageGallery(p) {
-  const items = ((p.page_images || {}).gallery || []).map((g, n) => g && { ...g, n }).filter((g) => g && g.image);
+  const items = galleryOf(p).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure><img${edImage(p, `page_images.gallery.${g.n}.image`, `page_images.gallery.${g.n}.alt`)} loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption${edText(`page_images.gallery.${g.n}.caption`)}>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -543,7 +561,7 @@ function caseStudy(p) {
   </header>
   ${pageHero(p)}${listImages(p)}
   ${EDIT
-    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pageGallery(p)}</div>`
+    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${editableGallery(p)}</div>`
     : `<div class="case-body">${markdown(p.body)}${pageGallery(p)}</div>`}
 </article>
 
