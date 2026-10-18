@@ -26,7 +26,7 @@ location: Berlin, Germany
 portrait: /images/kiera-westphal-portrait.webp
 portrait_alt: Illustrated portrait of Kiera Westphal
 og_image: /images/og-image.png
-favicon: /images/favicon.svg
+favicon: /images/favicon.png
 
 # Page background color
 background: "#F2F5F7"

@@ -204,7 +204,7 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <meta name="twitter:title" content="${escapeHtml(fullTitle)}">
 <meta name="twitter:description" content="${escapeHtml(desc)}">
 <meta name="twitter:image" content="${ogImage}">
-<link rel="icon" href="${imageUrl(SITE.favicon || "favicon.svg")}" type="image/svg+xml">
+<link rel="icon" href="${imageUrl(SITE.favicon || "favicon.png")}"${/\.svg$/i.test(SITE.favicon || "") ? ' type="image/svg+xml"' : /\.png$/i.test(SITE.favicon || "favicon.png") ? ' type="image/png"' : ""}>
 <link rel="stylesheet" href="/style.css">
 <style>:root{--wand:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%220%2022%206%2099%22/%3E%3Cpath%20d%3D%22M7%201.5%20L8.6%205.4%20L12.8%205.6%20L9.6%208.2%20L10.7%2012.3%20L7%2010%20L3.3%2012.3%20L4.4%208.2%20L1.2%205.6%20L5.4%205.4%20Z%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E") 7 6}</style>
 ${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
