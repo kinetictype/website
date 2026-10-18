@@ -13,13 +13,13 @@ start_year: 2019
 featured: false
 hidden: false
 description: Placeholder description of project 04 for search engines and link previews.
-cover: /images/projects/project-04-cover.svg
+cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 
 # Image inside the More projects drop-down (shown when the row is opened).
-# The logo/cover above stays in the row itself. Upload to content/images/projects/.
-drawer_image: /images/projects/placeholder-drawer.svg
-drawer_image_alt: Placeholder image for project 04
+# The logo/cover above stays in the row itself. Upload to images/projects/project-04-goldman-sachs/.
+drawer_image: /images/projects/project-04-goldman-sachs/streaming-video-options.webp
+drawer_image_alt: Goldman Sachs Equity Research interactive, Streaming Video Options Overwhelm Consumers, with service bubbles filtered by category
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
@@ -27,14 +27,14 @@ Placeholder introduction. Two or three sentences that set up the project: the pr
 
 Placeholder text describing the problem, the constraints, and what success looked like.
 
-![Placeholder: wide overview image](/images/projects/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
+![Placeholder: wide overview image](/images/placeholders/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
 
 ## Approach
 
 Placeholder text describing your research, process, and the key design decisions.
 
-![Placeholder: first detail image](/images/projects/placeholder-detail-1.svg)
-![Placeholder: second detail image](/images/projects/placeholder-detail-2.svg)
+![Placeholder: first detail image](/images/placeholders/placeholder-detail-1.svg)
+![Placeholder: second detail image](/images/placeholders/placeholder-detail-2.svg)
 
 Placeholder text explaining the two images above.
 
@@ -44,7 +44,7 @@ Placeholder text explaining the two images above.
 
 Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
 
-![Placeholder: final result](/images/projects/placeholder-wide-2.svg "Placeholder caption: the final design.")
+![Placeholder: final result](/images/placeholders/placeholder-wide-2.svg "Placeholder caption: the final design.")
 
 ## What I learned
 

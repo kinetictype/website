@@ -25,15 +25,15 @@ hidden: false
 # ---- SEO ----
 description: Placeholder description of project 03 for search engines and link previews.
 
-# ---- Images (upload to content/images/projects/) ----
-cover: /images/projects/project-03-cover.svg
+# ---- Images: logos go in images/logos/, this project's other images in images/projects/project-03/ ----
+cover: /images/projects/project-03/cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
 logo:
 
 cover_alt: Placeholder cover image for project 03
 
 # Image inside the More projects drop-down (shown when the row is opened).
-# The logo/cover above stays in the row itself. Upload to content/images/projects/.
+# The logo/cover above stays in the row itself. Upload to images/projects/project-03/.
 drawer_image: 
 drawer_image_alt: 
 ---
@@ -43,14 +43,14 @@ Placeholder introduction. Two or three sentences that set up the project: the pr
 
 Placeholder text describing the problem, the constraints, and what success looked like.
 
-![Placeholder: wide overview image](/images/projects/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
+![Placeholder: wide overview image](/images/placeholders/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
 
 ## Approach
 
 Placeholder text describing your research, process, and the key design decisions.
 
-![Placeholder: first detail image](/images/projects/placeholder-detail-1.svg)
-![Placeholder: second detail image](/images/projects/placeholder-detail-2.svg)
+![Placeholder: first detail image](/images/placeholders/placeholder-detail-1.svg)
+![Placeholder: second detail image](/images/placeholders/placeholder-detail-2.svg)
 
 Placeholder text explaining the two images above.
 
@@ -60,7 +60,7 @@ Placeholder text explaining the two images above.
 
 Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
 
-![Placeholder: final result](/images/projects/placeholder-wide-2.svg "Placeholder caption: the final design.")
+![Placeholder: final result](/images/placeholders/placeholder-wide-2.svg "Placeholder caption: the final design.")
 
 ## What I learned
 

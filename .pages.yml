@@ -46,19 +46,19 @@ content:
       - { name: hidden, label: Hide this project, type: boolean, default: false }
       - { name: description, label: SEO description (120–160 characters), type: text }
       - name: cover
-        label: "Logo / cover — small image in the More projects row, the Recent work card, and the top of the project page"
+        label: "Logo / cover — small image in the More projects row, the Recent work card, and the top of the project page (logos live in images/logos)"
         type: image
-        options: { media: images, path: content/images/projects }
+        options: { media: images, path: content/images/logos }
       - { name: cover_alt, label: Logo / cover description (alt text), type: string }
       - name: drawer_image
-        label: "Drop-down image — shown only when the row is opened in More projects (photo or screenshot, 1600 × 1000)"
+        label: "Drop-down image — shown only when the row is opened in More projects (photo or screenshot, 1600 × 1000; keep it in this project's folder in images/projects)"
         type: image
         options: { media: images, path: content/images/projects }
       - { name: drawer_image_alt, label: Drop-down image description (alt text), type: string }
       - name: logo
         label: Client logo on the project page (optional)
         type: image
-        options: { media: images, path: content/images/projects }
+        options: { media: images, path: content/images/logos }
       - name: body
         label: Case study
         type: rich-text

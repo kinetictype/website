@@ -58,8 +58,16 @@ In the **Case study** text:
   `![Description for screen readers](/images/projects/my-image.jpg "Caption shown under the image")`
 - Visitors can click any image to see it larger and use the arrow keys to move between images.
 
-Placeholder images (`placeholder-wide.svg`, `placeholder-detail-1.svg`, …) are shared by every project,
-so upload your own image for each project instead of replacing those files.
+**Where images live** (Media in Pages CMS):
+
+| Folder | What goes in it |
+|---|---|
+| `images/logos/` | Every client logo (SVG, transparent background) |
+| `images/projects/<project>/` | One folder per project (e.g. `project-04-goldman-sachs`): drop-down image, case-study images, cover photos |
+| `images/journal/` | Journal entry images |
+| `images/placeholders/` | Shared stand-in images; upload your own instead of replacing these |
+
+When you upload, open the right folder first in the image picker so files stay grouped.
 
 ### Journal
 
