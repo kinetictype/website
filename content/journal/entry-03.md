@@ -16,9 +16,7 @@ Placeholder opening paragraph. Set up what this entry is about: a talk you gave,
 
 Placeholder text. Write as much or as little as you like. Images work the same way as in a case study.
 
-![Placeholder: wide image](/images/projects/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
-
-Placeholder text after the image.
+[Charts and Graphs Talk](https://vimeo.com/1236996792?share=copy&fl=sv&fe=ci)
 
 > Placeholder pull quote.
 
