@@ -20,6 +20,32 @@ cover_alt: Goldman Sachs logo
 # The logo/cover above stays in the row itself. Upload to images/projects/project-04-goldman-sachs/.
 drawer_image: /images/projects/project-04-goldman-sachs/streaming-video-options.webp
 drawer_image_alt: Goldman Sachs Equity Research interactive, Streaming Video Options Overwhelm Consumers, with service bubbles filtered by category
+
+# ---- Project page images (Pages CMS: "Project page images") ----
+# top_image: large image at the top of the project page (leave empty to show the logo/cover there)
+# gallery: images shown on the project page after the case-study text, in this order.
+#   size: full = full width · half = two side by side · third = three side by side
+# Upload to images/projects/project-04-goldman-sachs/
+page_images:
+  top_image:
+  top_image_alt:
+  gallery:
+    - image: /images/placeholders/placeholder-wide.svg
+      alt: "Placeholder: wide overview image"
+      caption: "Placeholder caption: describe what this image shows."
+      size: full
+    - image: /images/placeholders/placeholder-detail-1.svg
+      alt: "Placeholder: first detail image"
+      caption: ""
+      size: half
+    - image: /images/placeholders/placeholder-detail-2.svg
+      alt: "Placeholder: second detail image"
+      caption: ""
+      size: half
+    - image: /images/placeholders/placeholder-wide-2.svg
+      alt: "Placeholder: final result"
+      caption: "Placeholder caption: the final design."
+      size: full
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
@@ -27,24 +53,15 @@ Placeholder introduction. Two or three sentences that set up the project: the pr
 
 Placeholder text describing the problem, the constraints, and what success looked like.
 
-![Placeholder: wide overview image](/images/placeholders/placeholder-wide.svg "Placeholder caption: describe what this image shows.")
-
 ## Approach
 
 Placeholder text describing your research, process, and the key design decisions.
-
-![Placeholder: first detail image](/images/placeholders/placeholder-detail-1.svg)
-![Placeholder: second detail image](/images/placeholders/placeholder-detail-2.svg)
-
-Placeholder text explaining the two images above.
 
 > Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
 
 ## Outcome
 
 Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
-
-![Placeholder: final result](/images/placeholders/placeholder-wide-2.svg "Placeholder caption: the final design.")
 
 ## What I learned
 

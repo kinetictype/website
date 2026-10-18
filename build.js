@@ -452,6 +452,32 @@ ${passion.length ? `<section class="recent passion"><div class="section-head"><h
 );
 
 
+
+/* Project page images, edited in the CMS under "Project page images":
+   a top image (falls back to the logo/cover) and a gallery shown after the case-study text.
+   Gallery sizes: full = full width, half = two side by side, third = three side by side. */
+function pageHero(p) {
+  const pi = p.page_images || {};
+  const src = pi.top_image || p.cover;
+  if (!src) return "";
+  const alt = pi.top_image ? pi.top_image_alt || "" : p.cover_alt || "";
+  return `<div class="media media-1 case-hero"><figure><img src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
+}
+function pageGallery(p) {
+  const items = ((p.page_images || {}).gallery || []).filter((g) => g && g.image);
+  if (!items.length) return "";
+  const fig = (g) => `<figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const per = { half: 2, third: 3 };
+  const out = [];
+  for (let i = 0; i < items.length; ) {
+    const n = per[String(items[i].size || "full").toLowerCase()] || 1;
+    const run = [];
+    while (i < items.length && run.length < n && (per[String(items[i].size || "full").toLowerCase()] || 1) === n) run.push(items[i++]);
+    out.push(`<div class="media media-${run.length}">${run.map(fig).join("")}</div>`);
+  }
+  return `\n${out.join("\n")}`;
+}
+
 /* ---------- case-study page template ---------- */
 function caseStudy(p) {
   // next / previous stay within the same section (work or passion), newest to oldest, looping at the end
@@ -470,8 +496,8 @@ function caseStudy(p) {
     ${p.tagline ? `<p class="case-lede">${escapeHtml(p.tagline)}</p>` : ""}
     ${tags(p)}
   </header>
-  ${p.cover ? `<div class="media media-1 case-hero"><figure><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}"></figure></div>` : ""}
-  <div class="case-body">${markdown(p.body)}</div>
+  ${pageHero(p)}
+  <div class="case-body">${markdown(p.body)}${pageGallery(p)}</div>
 </article>
 
 <nav class="next-project" aria-label="Next project">

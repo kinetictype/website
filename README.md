@@ -45,18 +45,18 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 - **Remove a project:** delete it, or tick **Hide this project** to keep it for later.
 - Only three projects appear in Recent work. If more than three are ticked, positions 1, 2, 3 win; the rest go in the list.
 
-### Laying out a case study
+### Project page images
 
-Each project page follows the same template: a "Work" back link, the title, an optional client logo,
-a line with role, years and client, the one-line summary, tags, the cover image, then your case study,
-a "Next project" link, and a small author card.
+Open a project and scroll to **Project page images**:
 
-In the **Case study** text:
-- **One image on its own line** shows full width.
-- **Two or three images on consecutive lines** (no blank line between them) sit side by side.
-- To add a caption, put it in quotes after the image address:
-  `![Description for screen readers](/images/projects/my-image.jpg "Caption shown under the image")`
+- **Top image** — the large image under the title. Leave it empty to show the logo/cover there instead.
+- **Gallery** — the images shown after the case-study text, in order. Click **Add an entry** for each image, upload it,
+  write a description (alt text) and an optional caption, and choose a **Size**:
+  **Full width**, **Half** (two in a row sit side by side) or **Third** (three in a row sit side by side).
+  Drag entries to reorder them; delete an entry to remove that image.
 - Visitors can click any image to see it larger and use the arrow keys to move between images.
+
+You can still drop an image into the **Case study** text itself if you want it between two paragraphs.
 
 **Where images live** (Media in Pages CMS):
 
