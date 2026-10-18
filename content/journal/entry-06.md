@@ -1,17 +1,12 @@
 ---
-# ---- List text ----
 title: Journal Entry Title 06
 date: 2026-02-11
 category: Teaching
-excerpt: One or two sentences that introduce entry 06. Shown under the title on the entry page.
-
-# Set to true to keep this entry off the site without deleting it
-hidden: false
-
-# ---- SEO ----
-description: Placeholder description of journal entry 06 for search engines and link previews.
-
-# ---- Image (upload to content/images/journal/) ----
+excerpt: One or two sentences that introduce entry 06. Shown under the title on
+  the entry page.
+hidden: true
+description: Placeholder description of journal entry 06 for search engines and
+  link previews.
 cover: /images/journal/entry-06-cover.svg
 cover_alt: Placeholder image for journal entry 06
 ---
