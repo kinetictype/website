@@ -16,6 +16,11 @@ description: Placeholder description of project 04 for search engines and link p
 cover: /images/projects/goldmansachsColor.svg
 cover_alt: Goldman Sachs logo
 logo: /images/projects/project-04-goldman-sachs/Construction.svg
+drawer_image: ""
+drawer_image_alt: ""
+page_images:
+  top_image: ""
+  top_image_alt: ""
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 

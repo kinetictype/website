@@ -29,8 +29,8 @@ cover_alt: Placeholder cover image for passion project 03
 #   size: full = full width · half = two side by side · third = three side by side
 # Upload to images/projects/passion-03/
 page_images:
-  top_image:
-  top_image_alt:
+  top_image: ""
+  top_image_alt: ""
   gallery:
     - image: /images/placeholders/placeholder-wide.svg
       alt: "Placeholder: wide overview image"

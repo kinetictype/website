@@ -43,8 +43,8 @@ drawer_image_alt: Placeholder image for project 07
 #   size: full = full width · half = two side by side · third = three side by side
 # Upload to images/projects/project-07-google-shopping/
 page_images:
-  top_image:
-  top_image_alt:
+  top_image: ""
+  top_image_alt: ""
   gallery:
     - image: /images/placeholders/placeholder-wide.svg
       alt: "Placeholder: wide overview image"

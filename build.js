@@ -56,7 +56,16 @@ const attr = (s) => escapeHtml(String(s));
 // a field in another content file, e.g. a project card on the homepage
 const fileProp = (dir, slug, key) => `@file[/content/${dir}/${slug}.md].${key}`;
 const edText = (prop, type = "span") => ed(`data-editable="text" data-type="${type}" data-prop="${attr(prop)}"`);
-const edImage = (src, alt) => ed(`data-editable="image" data-prop-src="${attr(src)}"${alt ? ` data-prop-alt="${attr(alt)}"` : ""}`);
+// CloudCannon only edits image fields that hold text, so a marker is added only when the field
+// exists in the file (an empty "" is fine); otherwise the image is left as plain, unmarked HTML.
+const valueAt = (obj, key) => String(key).split(".").reduce((o, k) => (o == null ? undefined : o[k]), obj);
+const isText = (obj, key) => typeof valueAt(obj, key) === "string";
+// obj = the content file's data; srcKey/altKey = keys inside it; prefix = "" or an @file[...] prefix
+function edImage(obj, srcKey, altKey, prefix = "") {
+  if (!EDIT || !isText(obj, srcKey)) return "";
+  const alt = altKey && isText(obj, altKey) ? ` data-prop-alt="${attr(prefix + altKey)}"` : "";
+  return ` data-editable="image" data-prop-src="${attr(prefix + srcKey)}"${alt}`;
+}
 
 const withBase = (html) =>
   BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
@@ -301,7 +310,7 @@ function tags(p) {
 function card(p, withTags = false) {
   const f = (key) => fileProp("projects", p.slug, key);
   return `<a class="card" href="${projectUrl(p)}">
-    <div class="card-media"><img${edImage(f("cover"), f("cover_alt"))} src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></div>
+    <div class="card-media"><img${edImage(p, "cover", "cover_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></div>
     <div class="card-text">
       <h3${edText(f("title"))}>${escapeHtml(p.title)}</h3>
       <p${edText(f("tagline"))}>${escapeHtml(p.tagline || "")}</p>
@@ -319,13 +328,13 @@ function row(p) {
   return `<li><details class="row"${EDIT ? " open" : ""}>
     <summary>
       <span class="row-years"${edText(f("years"))}>${escapeHtml(String(p.years || ""))}</span>
-      <span class="row-thumb">${p.cover ? `<img${edImage(f("cover"), f("cover_alt"))} src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
+      <span class="row-thumb">${p.cover ? `<img${edImage(p, "cover", "cover_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
       <span class="row-title"${edText(f("title"))}>${escapeHtml(p.title)}</span>
       <span class="row-tags">${tags(p)}</span>
       <span class="row-toggle" aria-hidden="true"></span>
     </summary>
     <div class="drawer">
-      ${drawerImg ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img${edImage(f("drawer_image"), f("drawer_image_alt"))} src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
+      ${drawerImg ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img${edImage(p, "drawer_image", "drawer_image_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
       <div class="drawer-text">
         ${p.tagline ? `<p class="drawer-tagline"${edText(f("tagline"))}>${escapeHtml(p.tagline)}</p>` : ""}
         ${p.summary ? `<p class="drawer-summary"${edText(f("summary"))}>${escapeHtml(String(p.summary).trim())}</p>` : ""}
@@ -348,7 +357,7 @@ function portraitMarkup() {
   const alt = escapeHtml(SITE.portrait_alt || SITE.name);
   const file = path.join(CONTENT, String(SITE.portrait || "").replace(/^\//, ""));
   if (EDIT) {
-    return `<img class="portrait"${edImage("@file[/content/site.md].portrait", "@file[/content/site.md].portrait_alt")} src="${imageUrl(SITE.portrait)}" alt="${alt}" width="320" height="238">`;
+    return `<img class="portrait"${edImage(SITE, "portrait", "portrait_alt", "@file[/content/site.md].")} src="${imageUrl(SITE.portrait)}" alt="${alt}" width="320" height="238">`;
   }
   if (/\.svg$/i.test(file) && exists(file)) {
     return read(file)
@@ -479,12 +488,12 @@ function pageHero(p) {
   if (!src) return "";
   const alt = pi.top_image ? pi.top_image_alt || "" : p.cover_alt || "";
   // in the editor, swapping this image always sets the Top image (even while it shows the logo/cover)
-  return `<div class="media media-1 case-hero"><figure><img${edImage("page_images.top_image", "page_images.top_image_alt")} src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
+  return `<div class="media media-1 case-hero"><figure><img${edImage(p, "page_images.top_image", "page_images.top_image_alt")} src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
 }
 function pageGallery(p) {
   const items = ((p.page_images || {}).gallery || []).map((g, n) => g && { ...g, n }).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure><img${edImage(`page_images.gallery.${g.n}.image`, `page_images.gallery.${g.n}.alt`)} loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption${edText(`page_images.gallery.${g.n}.caption`)}>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure><img${edImage(p, `page_images.gallery.${g.n}.image`, `page_images.gallery.${g.n}.alt`)} loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption${edText(`page_images.gallery.${g.n}.caption`)}>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -509,7 +518,7 @@ function caseStudy(p) {
   <a class="back" href="/work/">${ARROW_BACK} Work</a>
   <header class="case-head">
     <h1${edText("title")}>${escapeHtml(p.title)}</h1>
-    ${p.logo ? `<img class="case-logo"${edImage("logo")} src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
+    ${p.logo ? `<img class="case-logo"${edImage(p, "logo")} src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
     ${meta ? `<p class="case-meta">${meta}</p>` : ""}
     ${p.tagline ? `<p class="case-lede"${edText("tagline")}>${escapeHtml(p.tagline)}</p>` : ""}
     ${tags(p)}
@@ -610,7 +619,7 @@ const JOURNAL_PAGE_SIZE = 9;
   const cats = [...new Set(entries.map((e) => e.category).filter(Boolean))];
   const item = (e, i) => `<li class="entry" data-cat="${slugify(e.category)}"${i >= JOURNAL_PAGE_SIZE ? " data-later" : ""}>
     <a href="${entryUrl(e)}">
-      <span class="entry-media">${e.cover ? `<img${edImage(fileProp("journal", e.slug, "cover"), fileProp("journal", e.slug, "cover_alt"))} src="${imageUrl(e.cover)}" alt="" loading="lazy">` : ""}</span>
+      <span class="entry-media">${e.cover ? `<img${edImage(e, "cover", "cover_alt", `@file[/content/journal/${e.slug}.md].`)} src="${imageUrl(e.cover)}" alt="" loading="lazy">` : ""}</span>
       <span class="entry-meta"><time datetime="${e.iso}">${dotDate(e.date)}</time>${e.category ? `<span class="entry-cat">${escapeHtml(e.category)}</span>` : ""}</span>
       <span class="entry-title"${edText(fileProp("journal", e.slug, "title"))}>${escapeHtml(e.title)}</span>
     </a>
@@ -695,7 +704,7 @@ ${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type
     <h1${edText("title")}>${escapeHtml(e.title)}</h1>
     ${e.excerpt ? `<p class="case-lede"${edText("excerpt")}>${escapeHtml(e.excerpt)}</p>` : ""}
   </header>
-  ${e.cover ? `<div class="media media-1 case-hero"><figure><img${edImage("cover", "cover_alt")} src="${imageUrl(e.cover)}" alt="${escapeHtml(e.cover_alt || "")}"></figure></div>` : ""}
+  ${e.cover ? `<div class="media media-1 case-hero"><figure><img${edImage(e, "cover", "cover_alt")} src="${imageUrl(e.cover)}" alt="${escapeHtml(e.cover_alt || "")}"></figure></div>` : ""}
   <div class="case-body"${edText("@content", "block")}>${markdown(e.body)}</div>
 </article>
 ${entries.length > 1 ? `<nav class="next-project" aria-label="Next journal entry">
