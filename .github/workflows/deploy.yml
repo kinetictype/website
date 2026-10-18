@@ -1,4 +1,4 @@
-# Builds the site and publishes it to GitHub Pages every time you push to main.
+# Builds the site and publishes it to GitHub Pages every time you (or Pages CMS) save a change to main.
 name: Deploy site
 
 on:
@@ -17,12 +17,23 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
+
+      # Plain-language check: publishing needs GitHub Pages switched on for this repository.
+      - name: Check that GitHub Pages is turned on
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh api "repos/${{ github.repository }}/pages" --silent 2>/dev/null; then
+            echo "::error title=GitHub Pages is not turned on::Open Settings → Pages in this repository and set Source to 'GitHub Actions'. On a free GitHub account the repository must be Public (Settings → General → Danger Zone → Change visibility). Then run this workflow again from the Actions tab."
+            exit 1
+          fi
+
       - id: pages
         uses: actions/configure-pages@v5
       - run: npm ci
@@ -37,7 +48,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
