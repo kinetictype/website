@@ -47,6 +47,17 @@ function copyDir(src, dest) {
 // When the site is served from a sub-folder (e.g. username.github.io/website/ before the custom
 // domain is connected), BASE_PATH is "/website" and every internal link is prefixed with it.
 const BASE = (process.env.BASE_PATH || "").replace(/\/$/, "");
+// CloudCannon on-page editing. "npm run build:cloudcannon" sets CLOUDCANNON_EDIT=1, which adds
+// data-editable markers so text and images can be clicked and edited in CloudCannon's Visual Editor.
+// The normal build (GitHub Pages, the live site) leaves EDIT off and its HTML is unchanged.
+const EDIT = process.env.CLOUDCANNON_EDIT === "1";
+const ed = (attrs) => (EDIT ? " " + attrs : "");
+const attr = (s) => escapeHtml(String(s));
+// a field in another content file, e.g. a project card on the homepage
+const fileProp = (dir, slug, key) => `@file[/content/${dir}/${slug}.md].${key}`;
+const edText = (prop, type = "span") => ed(`data-editable="text" data-type="${type}" data-prop="${attr(prop)}"`);
+const edImage = (src, alt) => ed(`data-editable="image" data-prop-src="${attr(src)}"${alt ? ` data-prop-alt="${attr(alt)}"` : ""}`);
+
 const withBase = (html) =>
   BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
 
@@ -54,6 +65,7 @@ const withBase = (html) =>
 // so they always show (no separate file to load). Large SVGs (the portrait) stay as <img>.
 const svgCache = {};
 function inlineSvgImages(html) {
+  if (EDIT) return html; // the Visual Editor needs real <img> tags to swap images
   let copy = 0;
   return html.replace(/<img\b([^>]*?)\bsrc="(\/images\/[^"]+\.svg)"([^>]*)>/g, (tag, before, src, after) => {
     const file = path.join(CONTENT, src);
@@ -207,7 +219,7 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <link rel="icon" href="${imageUrl(SITE.favicon || "favicon.png")}"${/\.svg$/i.test(SITE.favicon || "") ? ' type="image/svg+xml"' : /\.png$/i.test(SITE.favicon || "favicon.png") ? ' type="image/png"' : ""}>
 <link rel="stylesheet" href="/style.css">
 <style>:root{--wand:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%220%2022%206%2099%22/%3E%3Cpath%20d%3D%22M7%201.5%20L8.6%205.4%20L12.8%205.6%20L9.6%208.2%20L10.7%2012.3%20L7%2010%20L3.3%2012.3%20L4.4%208.2%20L1.2%205.6%20L5.4%205.4%20Z%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E") 7 6}</style>
-${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
+${EDIT ? `<style>/* editor preview only: SVG logos are not inlined here, so keep them uncropped */img[src$=".svg"]{object-fit:contain}</style>\n` : ""}${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
 </head>
 <body class="${bodyClass}">
 <a class="skip" href="#main">Skip to content</a>
@@ -287,11 +299,12 @@ function tags(p) {
 }
 
 function card(p, withTags = false) {
+  const f = (key) => fileProp("projects", p.slug, key);
   return `<a class="card" href="${projectUrl(p)}">
-    <div class="card-media"><img src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></div>
+    <div class="card-media"><img${edImage(f("cover"), f("cover_alt"))} src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></div>
     <div class="card-text">
-      <h3>${escapeHtml(p.title)}</h3>
-      <p>${escapeHtml(p.tagline || "")}</p>
+      <h3${edText(f("title"))}>${escapeHtml(p.title)}</h3>
+      <p${edText(f("tagline"))}>${escapeHtml(p.tagline || "")}</p>
       ${withTags ? tags(p) : ""}
       <p class="meta"><span>${escapeHtml(p.client || "")}</span><span>${escapeHtml(p.years || "")}</span></p>
     </div>
@@ -302,19 +315,20 @@ function row(p) {
   // the row shows the logo/cover; the opened drop-down shows its own image (falls back to the cover)
   const drawerImg = p.drawer_image || p.cover;
   const drawerAlt = p.drawer_image ? p.drawer_image_alt || "" : p.cover_alt || "";
-  return `<li><details class="row">
+  const f = (key) => fileProp("projects", p.slug, key);
+  return `<li><details class="row"${EDIT ? " open" : ""}>
     <summary>
-      <span class="row-years">${escapeHtml(String(p.years || ""))}</span>
-      <span class="row-thumb">${p.cover ? `<img src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
-      <span class="row-title">${escapeHtml(p.title)}</span>
+      <span class="row-years"${edText(f("years"))}>${escapeHtml(String(p.years || ""))}</span>
+      <span class="row-thumb">${p.cover ? `<img${edImage(f("cover"), f("cover_alt"))} src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
+      <span class="row-title"${edText(f("title"))}>${escapeHtml(p.title)}</span>
       <span class="row-tags">${tags(p)}</span>
       <span class="row-toggle" aria-hidden="true"></span>
     </summary>
     <div class="drawer">
-      ${drawerImg ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
+      ${drawerImg ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img${edImage(f("drawer_image"), f("drawer_image_alt"))} src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
       <div class="drawer-text">
-        ${p.tagline ? `<p class="drawer-tagline">${escapeHtml(p.tagline)}</p>` : ""}
-        ${p.summary ? `<p class="drawer-summary">${escapeHtml(String(p.summary).trim())}</p>` : ""}
+        ${p.tagline ? `<p class="drawer-tagline"${edText(f("tagline"))}>${escapeHtml(p.tagline)}</p>` : ""}
+        ${p.summary ? `<p class="drawer-summary"${edText(f("summary"))}>${escapeHtml(String(p.summary).trim())}</p>` : ""}
         <a class="drawer-link" href="${projectUrl(p)}">View project ${ARROW}</a>
       </div>
     </div>
@@ -333,6 +347,9 @@ function yearSpan(list) {
 function portraitMarkup() {
   const alt = escapeHtml(SITE.portrait_alt || SITE.name);
   const file = path.join(CONTENT, String(SITE.portrait || "").replace(/^\//, ""));
+  if (EDIT) {
+    return `<img class="portrait"${edImage("@file[/content/site.md].portrait", "@file[/content/site.md].portrait_alt")} src="${imageUrl(SITE.portrait)}" alt="${alt}" width="320" height="238">`;
+  }
   if (/\.svg$/i.test(file) && exists(file)) {
     return read(file)
       .replace(/<\?xml[\s\S]*?\?>\s*/, "")
@@ -387,15 +404,15 @@ writeFile(
     document.addEventListener("click", () => w.classList.remove("show-greeting"));
   })();
   </script>
-  ${home.data.greeting ? `<p class="greeting">${inline(home.data.greeting)}</p>` : ""}
+  ${home.data.greeting ? `<p class="greeting"${edText("greeting")}>${inline(home.data.greeting)}</p>` : ""}
   <h1>${inline(home.data.headline || "").replace(/\s*\|\s*/g, '<br class="desktop-break"> ')}</h1>
-  ${home.data.subhead ? `<p class="subhead">${inline(home.data.subhead)}</p>` : ""}
-  <div class="lede">${markdown(home.body)}</div>
+  ${home.data.subhead ? `<p class="subhead"${edText("subhead")}>${inline(home.data.subhead)}</p>` : ""}
+  <div class="lede"${edText("@content", "block")}>${markdown(home.body)}</div>
 </section>
 
 <section class="recent" aria-labelledby="recent-h">
   <div class="section-head">
-    <h2 id="recent-h">${escapeHtml(home.data.recent_heading || "Recent work")}</h2>
+    <h2 id="recent-h"${home.data.recent_heading ? edText("recent_heading") : ""}>${escapeHtml(home.data.recent_heading || "Recent work")}</h2>
     <a href="/work/">All work ${ARROW}</a>
   </div>
   <div class="cards">
@@ -407,7 +424,7 @@ ${
   passion.length
     ? `<section class="recent passion" aria-labelledby="passion-h">
   <div class="section-head">
-    <h2 id="passion-h">${escapeHtml(home.data.passion_heading || "Passion projects")}</h2>
+    <h2 id="passion-h"${home.data.passion_heading ? edText("passion_heading") : ""}>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2>
   </div>
   <div class="cards">
     ${passion.map((p) => card(p, false)).join("\n    ")}
@@ -420,7 +437,7 @@ ${
   archive.length
     ? `<section class="archive" aria-labelledby="archive-h">
   <div class="section-head">
-    <h2 id="archive-h">${escapeHtml(home.data.archive_heading || "More projects")}</h2>
+    <h2 id="archive-h"${home.data.archive_heading ? edText("archive_heading") : ""}>${escapeHtml(home.data.archive_heading || "More projects")}</h2>
     <span class="span">${yearSpan(archive)}</span>
   </div>
   <ol class="rows">
@@ -442,8 +459,8 @@ writeFile(
     urlPath: "/work/",
     body: `
 <section class="page-head">
-  <h1>${inline(work.data.title || "Work")}</h1>
-  <div class="lede">${markdown(work.body)}</div>
+  <h1${work.data.title ? edText("title") : ""}>${inline(work.data.title || "Work")}</h1>
+  <div class="lede"${edText("@content", "block")}>${markdown(work.body)}</div>
 </section>
 <section class="recent"><div class="cards">${featured.map((p) => card(p, true)).join("\n")}</div></section>
 ${passion.length ? `<section class="recent passion"><div class="section-head"><h2>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2></div><div class="cards">${passion.map((p) => card(p, false)).join("\n")}</div></section>` : ""}
@@ -461,12 +478,13 @@ function pageHero(p) {
   const src = pi.top_image || p.cover;
   if (!src) return "";
   const alt = pi.top_image ? pi.top_image_alt || "" : p.cover_alt || "";
-  return `<div class="media media-1 case-hero"><figure><img src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
+  // in the editor, swapping this image always sets the Top image (even while it shows the logo/cover)
+  return `<div class="media media-1 case-hero"><figure><img${edImage("page_images.top_image", "page_images.top_image_alt")} src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
 }
 function pageGallery(p) {
-  const items = ((p.page_images || {}).gallery || []).filter((g) => g && g.image);
+  const items = ((p.page_images || {}).gallery || []).map((g, n) => g && { ...g, n }).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure><img${edImage(`page_images.gallery.${g.n}.image`, `page_images.gallery.${g.n}.alt`)} loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption${edText(`page_images.gallery.${g.n}.caption`)}>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -490,14 +508,16 @@ function caseStudy(p) {
 <article class="case">
   <a class="back" href="/work/">${ARROW_BACK} Work</a>
   <header class="case-head">
-    <h1>${escapeHtml(p.title)}</h1>
-    ${p.logo ? `<img class="case-logo" src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
+    <h1${edText("title")}>${escapeHtml(p.title)}</h1>
+    ${p.logo ? `<img class="case-logo"${edImage("logo")} src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
     ${meta ? `<p class="case-meta">${meta}</p>` : ""}
-    ${p.tagline ? `<p class="case-lede">${escapeHtml(p.tagline)}</p>` : ""}
+    ${p.tagline ? `<p class="case-lede"${edText("tagline")}>${escapeHtml(p.tagline)}</p>` : ""}
     ${tags(p)}
   </header>
   ${pageHero(p)}
-  <div class="case-body">${markdown(p.body)}${pageGallery(p)}</div>
+  ${EDIT
+    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pageGallery(p)}</div>`
+    : `<div class="case-body">${markdown(p.body)}${pageGallery(p)}</div>`}
 </article>
 
 <nav class="next-project" aria-label="Next project">
@@ -590,9 +610,9 @@ const JOURNAL_PAGE_SIZE = 9;
   const cats = [...new Set(entries.map((e) => e.category).filter(Boolean))];
   const item = (e, i) => `<li class="entry" data-cat="${slugify(e.category)}"${i >= JOURNAL_PAGE_SIZE ? " data-later" : ""}>
     <a href="${entryUrl(e)}">
-      <span class="entry-media">${e.cover ? `<img src="${imageUrl(e.cover)}" alt="" loading="lazy">` : ""}</span>
+      <span class="entry-media">${e.cover ? `<img${edImage(fileProp("journal", e.slug, "cover"), fileProp("journal", e.slug, "cover_alt"))} src="${imageUrl(e.cover)}" alt="" loading="lazy">` : ""}</span>
       <span class="entry-meta"><time datetime="${e.iso}">${dotDate(e.date)}</time>${e.category ? `<span class="entry-cat">${escapeHtml(e.category)}</span>` : ""}</span>
-      <span class="entry-title">${escapeHtml(e.title)}</span>
+      <span class="entry-title"${edText(fileProp("journal", e.slug, "title"))}>${escapeHtml(e.title)}</span>
     </a>
   </li>`;
   writeFile(
@@ -604,8 +624,8 @@ const JOURNAL_PAGE_SIZE = 9;
       bodyClass: "journal",
       body: `
 <section class="page-head">
-  <h1>${inline(jp.data.title || "Journal")}</h1>
-  <div class="lede">${markdown(jp.body)}</div>
+  <h1${jp.data.title ? edText("title") : ""}>${inline(jp.data.title || "Journal")}</h1>
+  <div class="lede"${edText("@content", "block")}>${markdown(jp.body)}</div>
 </section>
 ${cats.length > 1 ? `<div class="journal-filter" role="group" aria-label="Filter journal entries">
   <span class="filter-label">${escapeHtml(jp.data.filter_label || "Filter by:")}</span>
@@ -672,11 +692,11 @@ ${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type
   <a class="back" href="/journal/">${ARROW_BACK} Journal</a>
   <header class="case-head">
     <p class="case-meta"><time datetime="${e.iso}">${dotDate(e.date)}</time>${e.category ? ` · ${escapeHtml(e.category)}` : ""}</p>
-    <h1>${escapeHtml(e.title)}</h1>
-    ${e.excerpt ? `<p class="case-lede">${escapeHtml(e.excerpt)}</p>` : ""}
+    <h1${edText("title")}>${escapeHtml(e.title)}</h1>
+    ${e.excerpt ? `<p class="case-lede"${edText("excerpt")}>${escapeHtml(e.excerpt)}</p>` : ""}
   </header>
-  ${e.cover ? `<div class="media media-1 case-hero"><figure><img src="${imageUrl(e.cover)}" alt="${escapeHtml(e.cover_alt || "")}"></figure></div>` : ""}
-  <div class="case-body">${markdown(e.body)}</div>
+  ${e.cover ? `<div class="media media-1 case-hero"><figure><img${edImage("cover", "cover_alt")} src="${imageUrl(e.cover)}" alt="${escapeHtml(e.cover_alt || "")}"></figure></div>` : ""}
+  <div class="case-body"${edText("@content", "block")}>${markdown(e.body)}</div>
 </article>
 ${entries.length > 1 ? `<nav class="next-project" aria-label="Next journal entry">
   <a href="${entryUrl(older)}">
@@ -715,7 +735,7 @@ for (const name of ["about", "contact", "imprint", "privacy"]) {
       schema: name === "about" ? personSchema : undefined,
       bodyClass: `text ${name}`,
       body: `
-<section class="page-head"><h1>${inline(data.title || name)}</h1></section>
+<section class="page-head"><h1${data.title ? edText("title") : ""}>${inline(data.title || name)}</h1></section>
 ${COLUMN_PAGES.includes(name) ? columns(withEmail, name) : `<div class="prose">${markdown(withEmail)}</div>`}`,
     })
   );
