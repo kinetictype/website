@@ -121,7 +121,8 @@ function parseFile(file) {
   const raw = read(file).replace(/\r\n/g, "\n");
   const m = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
   if (!m) return { data: {}, body: raw.trim() };
-  return { data: yaml.load(m[1]) || {}, body: m[2].trim() };
+  // <!-- notes --> in the text are guidance for editors and never appear on the site
+  return { data: yaml.load(m[1]) || {}, body: m[2].replace(/<!--[\s\S]*?-->/g, "").trim() };
 }
 
 marked.use({
