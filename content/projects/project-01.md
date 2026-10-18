@@ -40,7 +40,7 @@ page_images:
       caption: 'Placeholder caption: the final design.'
       size: full
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+![](/uploads/service-poster.png)Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
 ## The challenge
 
