@@ -237,7 +237,7 @@ ${body}
   (() => {
     if (!matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const layer = document.querySelector(".sparkles");
-    const colors = ["#45BCD1", "#155C5E", "#961574", "#F2C14E"];
+    const colors = ["#45BCD1", "#067A91", "#961574", "#F2C14E"];
     let last = 0, lx = 0, ly = 0;
     addEventListener("pointermove", (e) => {
       const now = performance.now();
