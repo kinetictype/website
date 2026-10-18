@@ -167,6 +167,7 @@ h1 em { font-style: italic; color: var(--accent); }
 .card-text { padding: var(--gutter); display: flex; flex-direction: column; flex: 1; }
 .card h3 { font-size: 22px; margin: 0 0 6px; }
 .card p { margin: 0 0 16px; color: var(--muted); font-size: 15px; line-height: 1.45; }
+.card-text > :last-child { margin-bottom: 0; }
 .card .meta { margin: auto 0 0; display: flex; justify-content: space-between; font-size: 13px; letter-spacing: .02em; text-transform: uppercase; }
 
 /* ---------- project list ---------- */
@@ -475,3 +476,6 @@ svg[data-fit="contain"] { background: none !important; border: 0 !important; bor
 .journal-entry .case-head .case-meta { margin-bottom: 14px; }
 @media (max-width: 900px) { .entries { grid-template-columns: 1fr 1fr; } .entry-title { font-size: 20px; } }
 @media (max-width: 640px) { .entries { grid-template-columns: 1fr; gap: 40px; } .journal-filter { margin-top: 24px; margin-bottom: 28px; } }
+
+/* image frames keep their shape whatever the photo's proportions: the photo fills the frame and is cropped */
+.card-media > img, .card-media > svg, .drawer-media > img, .drawer-media > svg, .entry-media > img, .entry-media > svg { position: absolute; inset: 0; }
