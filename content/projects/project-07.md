@@ -28,7 +28,7 @@ description: Placeholder description of project 07 for search engines and link p
 # ---- Images: logos go in images/logos/, this project's other images in images/projects/project-07-google-shopping/ ----
 cover: /images/logos/google-shopping.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: Google Shopping logo
 

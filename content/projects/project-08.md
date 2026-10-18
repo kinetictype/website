@@ -28,7 +28,7 @@ description: Placeholder description of project 08 for search engines and link p
 # ---- Images: logos go in images/logos/, this project's other images in images/projects/project-08-tivo/ ----
 cover: /images/logos/tivo.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: TiVo logo
 

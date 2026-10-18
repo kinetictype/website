@@ -28,14 +28,14 @@ description: Placeholder description of project 03 for search engines and link p
 # ---- Images: logos go in images/logos/, this project's other images in images/projects/project-03/ ----
 cover: /images/projects/project-03/cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: Placeholder cover image for project 03
 
 # Image inside the More projects drop-down (shown when the row is opened).
 # The logo/cover above stays in the row itself. Upload to images/projects/project-03/.
-drawer_image: 
-drawer_image_alt:
+drawer_image: ""
+drawer_image_alt: ""
 
 # ---- Project page images (Pages CMS: "Project page images") ----
 # top_image: large image at the top of the project page (leave empty to show the logo/cover there)

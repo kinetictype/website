@@ -55,14 +55,16 @@ const ed = (attrs) => (EDIT ? " " + attrs : "");
 const attr = (s) => escapeHtml(String(s));
 // a field in another content file, e.g. a project card on the homepage
 const fileProp = (dir, slug, key) => `@file[/content/${dir}/${slug}.md].${key}`;
-const edText = (prop, type = "span") => ed(`data-editable="text" data-type="${type}" data-prop="${attr(prop)}"`);
+// Cross-file bindings (@file[...]) don't resolve in CloudCannon for this site, so list pages
+// (homepage, Work, Journal) carry no markers; each item is edited on its own page instead.
+const edText = (prop, type = "span") => (String(prop).startsWith("@file") ? "" : ed(`data-editable="text" data-type="${type}" data-prop="${attr(prop)}"`));
 // CloudCannon only edits image fields that hold text, so a marker is added only when the field
 // exists in the file (an empty "" is fine); otherwise the image is left as plain, unmarked HTML.
 const valueAt = (obj, key) => String(key).split(".").reduce((o, k) => (o == null ? undefined : o[k]), obj);
 const isText = (obj, key) => typeof valueAt(obj, key) === "string";
 // obj = the content file's data; srcKey/altKey = keys inside it; prefix = "" or an @file[...] prefix
 function edImage(obj, srcKey, altKey, prefix = "") {
-  if (!EDIT || !isText(obj, srcKey)) return "";
+  if (!EDIT || prefix || !isText(obj, srcKey)) return "";
   const alt = altKey && isText(obj, altKey) ? ` data-prop-alt="${attr(prefix + altKey)}"` : "";
   return ` data-editable="image" data-prop-src="${attr(prefix + srcKey)}"${alt}`;
 }
@@ -325,7 +327,7 @@ function row(p) {
   const drawerImg = p.drawer_image || p.cover;
   const drawerAlt = p.drawer_image ? p.drawer_image_alt || "" : p.cover_alt || "";
   const f = (key) => fileProp("projects", p.slug, key);
-  return `<li><details class="row"${EDIT ? " open" : ""}>
+  return `<li><details class="row">
     <summary>
       <span class="row-years"${edText(f("years"))}>${escapeHtml(String(p.years || ""))}</span>
       <span class="row-thumb">${p.cover ? `<img${edImage(p, "cover", "cover_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
@@ -505,6 +507,22 @@ function pageGallery(p) {
   return `\n${out.join("\n")}`;
 }
 
+/* Editor only (never on the live site): the images this project shows on the homepage cards and in
+   the More projects list, so they can be replaced in CloudCannon's Visual Editor from this page. */
+function listImages(p) {
+  if (!EDIT) return "";
+  const slot = (label, note, key, altKey, fallback) =>
+    `<figure style="margin:0;flex:1 1 240px"><figcaption style="font:600 13px/1.3 var(--sans,sans-serif);margin:0 0 6px">${label}</figcaption>` +
+    `<img${edImage(p, key, altKey)} src="${imageUrl(p[key] || fallback || "/images/placeholders/placeholder-drawer.svg")}" alt="${escapeHtml(p[altKey] || "")}" style="width:100%;aspect-ratio:16/10;object-fit:contain;background:var(--card,#fff);border:1px dashed var(--rule,#ccc);border-radius:6px">` +
+    `<p style="font-size:12px;opacity:.7;margin:6px 0 0">${note}</p></figure>`;
+  const slots = [slot("Logo / cover", "Shown on the homepage cards, in the project list and as Next project.", "cover", "cover_alt")];
+  if (p.section !== "passion") slots.push(slot("Drop-down image", "Shown when this project's row is opened in More projects.", "drawer_image", "drawer_image_alt", p.cover));
+  return `<section aria-label="Images used on other pages (editor only)" style="margin:32px var(--gutter,20px);padding:16px;border:2px dashed #961574;border-radius:8px">
+    <p style="margin:0 0 12px;font-weight:600">Images used on other pages <span style="font-weight:400;opacity:.7">(only visible in the editor)</span></p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">${slots.join("")}</div>
+  </section>`;
+}
+
 /* ---------- case-study page template ---------- */
 function caseStudy(p) {
   // next / previous stay within the same section (work or passion), newest to oldest, looping at the end
@@ -523,7 +541,7 @@ function caseStudy(p) {
     ${p.tagline ? `<p class="case-lede"${edText("tagline")}>${escapeHtml(p.tagline)}</p>` : ""}
     ${tags(p)}
   </header>
-  ${pageHero(p)}
+  ${pageHero(p)}${listImages(p)}
   ${EDIT
     ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pageGallery(p)}</div>`
     : `<div class="case-body">${markdown(p.body)}${pageGallery(p)}</div>`}

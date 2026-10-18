@@ -34,7 +34,7 @@ description: Placeholder description of project 05 for search engines and link p
 # ---- Images: logos go in images/logos/, this project's other images in images/projects/project-05-fitbit/ ----
 cover: /images/logos/fitbit.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: Fitbit logo
 

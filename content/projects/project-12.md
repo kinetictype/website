@@ -28,7 +28,7 @@ description: Placeholder description of project 12 for search engines and link p
 # ---- Images: logos go in images/logos/, this project's other images in images/projects/project-12/ ----
 cover: /images/projects/project-12/cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: Placeholder cover image for project 12
 

@@ -28,7 +28,7 @@ description: Placeholder description of project 06 for search engines and link p
 # ---- Images: logos go in images/logos/, this project's other images in images/projects/project-06-cisco/ ----
 cover: /images/logos/cisco.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: Cisco logo
 

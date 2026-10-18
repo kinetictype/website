@@ -19,7 +19,7 @@ description: Placeholder description of passion project 03 for search engines an
 
 cover: /images/projects/passion-03/cover.svg
 # Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
+logo: ""
 
 cover_alt: Placeholder cover image for passion project 03
 
