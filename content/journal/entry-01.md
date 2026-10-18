@@ -1,5 +1,5 @@
 ---
-title: Journal Entry Title 01
+title: Teaching at Media University
 date: 2026-09-28
 category: Process
 excerpt: One or two sentences that introduce entry 01. Shown under the title on
