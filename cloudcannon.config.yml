@@ -1,138 +1,259 @@
-# CloudCannon configuration — https://cloudcannon.com/documentation/
-# Open any page in the Visual Editor, click a highlighted text or image, edit, then Save.
-# Every Save is a commit to this repository, which republishes the live site (same as Pages CMS).
-#
-# Build settings to enter in CloudCannon (Site settings > Build):
-#   Install command: npm ci
-#   Build command:   npm run build:cloudcannon
-#   Output path:     dist
-
 paths:
-  # content/images/x.png is served on the site as /images/x.png
-  static: content
   uploads: content/images
-
+  uploads_use_relative_path: false
+  static: content
+collections_config:
+  home:
+    path: content/pages
+    glob:
+      - home.md
+    name: Homepage
+    icon: home
+    url: /
+    disable_url: false
+    include_developer_files: false
+    disable_add: true
+    disable_add_folder: false
+    disable_file_actions: true
+  pages:
+    path: content/pages
+    glob:
+      - '!home.md'
+    name: Pages
+    icon: article
+    url: /[slug]/
+    disable_url: false
+    include_developer_files: false
+    disable_add: true
+    disable_add_folder: false
+    disable_file_actions: false
+  projects:
+    path: content/projects
+    name: Projects
+    singular_name: Project
+    icon: work
+    url: /work/[slug]/
+    disable_url: false
+    include_developer_files: false
+    _inputs:
+      $.categories:
+        cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  journal:
+    path: content/journal
+    name: Journal
+    singular_name: Journal entry
+    icon: post_add
+    url: /journal/[slug]/
+    disable_url: false
+    include_developer_files: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  settings:
+    path: content
+    glob:
+      - site.md
+    name: Site settings & SEO
+    icon: settings
+    disable_url: true
+    include_developer_files: false
+    disable_add: true
+    disable_add_folder: false
+    disable_file_actions: true
 _enabled_editors:
   - visual
   - content
   - data
-
-collections_config:
-  home:
-    name: Homepage
-    icon: home
-    path: content/pages
-    glob:
-      - home.md
-    url: /
-    disable_add: true
-    disable_file_actions: true
-
-  pages:
-    name: Pages
-    icon: article
-    path: content/pages
-    glob:
-      - '!home.md'
-    url: /[slug]/
-    disable_add: true
-
-  projects:
-    name: Projects
-    singular_name: Project
-    icon: work
-    path: content/projects
-    url: /work/[slug]/
-    sort:
-      key: start_year
-      order: desc
-    paths:
-      uploads: content/images/projects
-
-  journal:
-    name: Journal
-    singular_name: Journal entry
-    icon: post_add
-    path: content/journal
-    url: /journal/[slug]/
-    sort:
-      key: date
-      order: desc
-    paths:
-      uploads: content/images/journal
-
-  settings:
-    name: Site settings & SEO
-    icon: settings
-    path: content
-    glob:
-      - site.md
-    disable_url: true
-    disable_add: true
-    disable_file_actions: true
-
-_editables:
-  content:
-    bold: true
-    italic: true
-    link: true
-    format: p h2 h3 blockquote
-    bulletedlist: true
-    numberedlist: true
-    image: true
-    undo: true
-    redo: true
-
-# Labels and help text for the side panel (same fields as Pages CMS)
 _inputs:
-  title: { type: text, label: Title }
-  tagline: { type: text, label: One-line summary }
-  summary: { type: textarea, label: Paragraph shown when the project is opened in More projects }
-  client: { type: text }
-  role: { type: text }
-  years: { type: text, label: Years shown on the site, comment: "e.g. 2016–2018" }
-  start_year: { type: number, label: Start year, comment: Sorts the project list, newest first }
+  title:
+    type: text
+    label: Title
+    cascade: true
+  tagline:
+    type: text
+    label: One-line summary
+    cascade: true
+  summary:
+    type: textarea
+    label: Paragraph shown when the project is opened in More projects
+    cascade: true
+  client:
+    type: text
+    cascade: true
+  role:
+    type: text
+    cascade: true
+  years:
+    type: text
+    label: Years shown on the site
+    comment: e.g. 2016–2018
+    cascade: true
+  start_year:
+    type: number
+    label: Start year
+    comment: Sorts the project list
+    cascade: true
   section:
     type: select
     options:
-      values: [work, passion]
-    comment: "work = Recent work / More projects · passion = Passion projects"
-  featured: { type: switch, label: Show in Recent work (top three) }
-  featured_order: { type: number, label: Recent work position (1, 2 or 3) }
-  hidden: { type: switch, label: Hide this from the site }
-  description: { type: textarea, label: SEO description, comment: 120–160 characters }
-  categories: { type: multiselect, label: Category tags, options: { allow_create: true } }
+      allow_empty: true
+      values:
+        - work
+        - passion
+      required: false
+    comment: work = Recent work / More projects · passion = Passion projects
+    cascade: true
+  featured:
+    type: switch
+    label: Show in Recent work (top three)
+    cascade: true
+  featured_order:
+    type: number
+    label: Recent work position (1
+    cascade: true
+  hidden:
+    type: switch
+    label: Hide this from the site
+    cascade: true
+  description:
+    type: textarea
+    label: SEO description
+    comment: 120–160 characters
+    cascade: true
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      allow_empty: true
+      required: false
+    label: Category tags
+    cascade: true
   cover:
     type: image
     label: Logo / cover
     comment: Small image in the project rows, the Recent work cards and the journal list
-  cover_alt: { type: text, label: Logo / cover description (alt text) }
+    cascade: true
+  cover_alt:
+    type: text
+    label: Logo / cover description (alt text)
+    cascade: true
   drawer_image:
     type: image
     label: Drop-down image
     comment: Shown when the row is opened in More projects (1600 × 1000)
-  drawer_image_alt: { type: text, label: Drop-down image description (alt text) }
+    cascade: true
+  drawer_image_alt:
+    type: text
+    label: Drop-down image description (alt text)
+    cascade: true
   logo:
     type: image
-    label: Client logo on the project page (optional)
     options:
       paths:
         uploads: content/images/logos
-  top_image: { type: image, label: Top image, comment: Large image under the title; leave empty to show the logo/cover }
-  top_image_alt: { type: text, label: Top image description (alt text) }
-  gallery: { type: array, label: Gallery, comment: Images after the case-study text, in this order }
-  image: { type: image }
-  alt: { type: text, label: Description for screen readers (alt text) }
-  caption: { type: text, label: Caption (optional) }
+        uploads_use_relative_path: false
+      disable_upload_file: false
+      disable_direct_input: false
+      disable_upload_file_in_file_browser: false
+      resize_style: contain
+      expandable: false
+      prevent_resize_existing_files: false
+      required: false
+    label: Client logo on the project page (optional)
+    cascade: true
+  top_image:
+    type: image
+    label: Top image
+    comment: Large image under the title; leave empty to show the logo/cover
+    cascade: true
+  top_image_alt:
+    type: text
+    label: Top image description (alt text)
+    cascade: true
+  gallery:
+    type: array
+    label: Gallery
+    comment: Images after the case-study text
+    cascade: true
+  image:
+    type: image
+    cascade: true
+  alt:
+    type: text
+    label: Description for screen readers (alt text)
+    cascade: true
+  caption:
+    type: text
+    label: Caption (optional)
+    cascade: true
   size:
     type: select
     options:
-      values: [full, half, third]
-    comment: "full = full width · half = two side by side · third = three side by side"
-  date: { type: date }
-  category: { type: text, comment: Used by the filter on the Journal page }
-  excerpt: { type: textarea, label: Intro line under the title }
-  headline: { type: text, comment: "Type | where the line should break on desktop" }
-  portrait: { type: image, label: Portrait }
-  og_image: { type: image, label: Link-preview image (1200 × 630) }
-  favicon: { type: image }
+      allow_empty: true
+      values:
+        - full
+        - half
+        - third
+      required: false
+    comment: full = full width · half = two side by side · third = three side by side
+    cascade: true
+  date:
+    type: date
+    cascade: true
+  category:
+    type: text
+    comment: Used by the filter on the Journal page
+    cascade: true
+  excerpt:
+    type: textarea
+    label: Intro line under the title
+    cascade: true
+  headline:
+    type: text
+    comment: Type | where the line should break on desktop
+    cascade: true
+  portrait:
+    type: image
+    label: Portrait
+    cascade: true
+  og_image:
+    type: image
+    label: Link-preview image (1200 × 630)
+    cascade: true
+  favicon:
+    type: image
+    cascade: true
+_editables:
+  content:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    code: false
+    copyformatting: false
+    embed: false
+    expandable: false
+    format: p h2 h3 blockquote
+    horizontalrule: false
+    image: true
+    image_size_attributes: false
+    indent: false
+    italic: true
+    link: true
+    numberedlist: true
+    outdent: false
+    redo: true
+    removeformat: true
+    resize_style: contain
+    snippet: true
+    strike: false
+    subscript: false
+    superscript: false
+    table: false
+    underline: false
+    undo: true
+timezone: Etc/UTC
