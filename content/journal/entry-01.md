@@ -4,7 +4,7 @@ date: 2026-09-28
 category: Process
 excerpt: One or two sentences that introduce entry 01. Shown under the title on
   the entry page.
-hidden: false
+hidden: true
 description: Placeholder description of journal entry 01 for search engines and
   link previews.
 cover: /images/journal/entry-01-cover.svg
