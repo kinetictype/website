@@ -1,4 +1,5 @@
-# Builds the site and publishes it to GitHub Pages every time you (or Pages CMS) save a change to main.
+# Builds the site and publishes it to GitHub Pages every time you push to main
+# (every "Save" in Pages CMS is a push to main).
 name: Deploy site
 
 on:
@@ -23,26 +24,21 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-
-      # Plain-language check: publishing needs GitHub Pages switched on for this repository.
-      - name: Check that GitHub Pages is turned on
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if ! gh api "repos/${{ github.repository }}/pages" --silent 2>/dev/null; then
-            echo "::error title=GitHub Pages is not turned on::Open Settings → Pages in this repository and set Source to 'GitHub Actions'. On a free GitHub account the repository must be Public (Settings → General → Danger Zone → Change visibility). Then run this workflow again from the Actions tab."
-            exit 1
-          fi
-
       - id: pages
         uses: actions/configure-pages@v5
+        continue-on-error: true
+      - name: Check that GitHub Pages is turned on
+        if: steps.pages.outcome == 'failure'
+        run: |
+          echo "::error title=GitHub Pages is not turned on::Open the repository on github.com > Settings > Pages, and under 'Build and deployment' set Source to 'GitHub Actions'. On a free GitHub account the repository must be public first (Settings > General > Danger Zone > Change visibility). Then open Actions > Deploy site > Run workflow."
+          exit 1
       - run: npm ci
       # base_path is "/website" while the site lives at kinetictype.github.io/website/,
       # and empty once the custom domain kierawestphal.com is connected
       - run: npm run build
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
