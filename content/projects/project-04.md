@@ -1,35 +1,19 @@
 ---
-# ---- Card and list text ----
-title: Project Title 04
-tagline: One-line summary of project 04.
+title: Interactive Visualization Designer
+tagline: Created interactive graphic displays to help Analysts visualize stories
+  for the Goldman Sachs Research Portal.
 client: Client Name
 role: Your Role
-
-# Category tags shown on the card and in the project list
-categories: [Data Visualization, Web]
+categories:
+  - Data Visualization
+  - Web
 years: 2019–2021
-
-# work = Recent work / More projects; passion = Passion projects
 section: work
-
-# Used to sort projects, newest first (the year the project started)
 start_year: 2019
-
-# Recent work on the homepage: set featured to true and give an order (1, 2, 3)
 featured: false
-featured_order: 
-
-# Set to true to keep this project off the site without deleting it
 hidden: false
-
-# ---- SEO ----
 description: Placeholder description of project 04 for search engines and link previews.
-
-# ---- Images (upload to content/images/projects/) ----
 cover: /images/projects/project-04-cover.svg
-# Optional client logo shown under the title on the project page (leave blank to hide)
-logo:
-
 cover_alt: Goldman Sachs logo
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
