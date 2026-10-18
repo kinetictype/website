@@ -1,14 +1,13 @@
 ---
-title: Journal Entry Title 06
+title: Teaching Visualization Design
 date: 2026-02-11
 category: Teaching
-excerpt: One or two sentences that introduce entry 06. Shown under the title on
-  the entry page.
+excerpt: I am thrilled to be part of the staff of Media University this
+  semester, teaching students about the basics of data storytelling.
 hidden: true
-description: Placeholder description of journal entry 06 for search engines and
-  link previews.
+description: Data Visualization Teaching, Media University Staff
 cover: /images/journal/entry-06-cover.svg
-cover_alt: Placeholder image for journal entry 06
+cover_alt: Visualization Design
 ---
 Placeholder opening paragraph. Set up what this entry is about: a talk you gave, a class you taught, a process note, or something you noticed.
 
