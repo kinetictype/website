@@ -13,7 +13,7 @@ start_year: 2019
 featured: false
 hidden: false
 description: Placeholder description of project 04 for search engines and link previews.
-cover: /images/projects/streamingTVService_LGwebpage_mock.png
+cover: /images/projects/goldmansachsColor.svg
 cover_alt: Goldman Sachs logo
 logo: /images/projects/project-04-goldman-sachs/Construction.svg
 ---
