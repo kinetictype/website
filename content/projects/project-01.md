@@ -19,8 +19,8 @@ drawer_image_alt: ''
 top_image: ''
 top_image_alt: ''
 gallery:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: 'Placeholder: wide overview image'
+  - image: /images/projects/project-01/image-asset.png
+    alt: Questions
     caption: 'Placeholder caption: describe what this image shows.'
     size: full
   - image: /images/placeholders/placeholder-detail-1.svg

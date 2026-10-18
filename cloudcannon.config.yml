@@ -37,6 +37,23 @@ collections_config:
     include_developer_files: false
     _inputs:
       $.categories:
+        type: choice
+        options:
+          allow_empty: true
+          values:
+          value_key: Service Design
+          preview:
+            text:
+            subtext:
+            icon:
+            icon_color:
+            icon_background_color:
+            image:
+            metadata:
+            gallery:
+          required: false
+          required_message:
+          empty_type:
         cascade: true
     disable_add: false
     disable_add_folder: false
@@ -225,6 +242,8 @@ _inputs:
     cascade: true
   favicon:
     type: image
+    cascade: true
+  $.categories:
     cascade: true
 _editables:
   content:
