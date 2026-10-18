@@ -3,7 +3,8 @@ title: Project Title 01
 tagline: One-line summary of project 01.
 client: Client Name
 role: Your Role
-categories: []
+categories:
+  - Service Design
 years: 2024–Today
 section: work
 start_year: 2024
