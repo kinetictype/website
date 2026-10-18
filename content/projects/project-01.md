@@ -1,5 +1,5 @@
 ---
-title: Project Title 01
+title: Designing engagement through Service Design
 tagline: Revealing the Onboarding Process through Service Design
 client: JPMorgen Chase
 role: Your Role
