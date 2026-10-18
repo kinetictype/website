@@ -92,8 +92,8 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 }
 .site-footer div { display: flex; flex-direction: column; gap: 2px; }
 /* footer tagline links to the homepage; no underline, turns the accent color on hover (like the name did) */
-.footer-tagline { color: var(--muted); text-decoration: none; }
-.footer-tagline:hover { color: var(--accent); }
+.footer-tagline, .footer-email { color: var(--muted); text-decoration: none; }
+.footer-tagline:hover, .footer-email:hover { color: var(--accent); }
 .site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; }
 
 /* ---------- home intro ---------- */

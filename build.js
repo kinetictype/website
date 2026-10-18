@@ -223,9 +223,9 @@ ${body}
 <footer class="site-footer">
   <div>
     <a class="footer-tagline" href="/">${escapeHtml(SITE.tagline || "")}</a>
+    <a class="footer-email" href="mailto:${SITE.email}">${SITE.email}</a>
   </div>
   <nav aria-label="Footer">
-    <a href="mailto:${SITE.email}">${SITE.email}</a>
     <a href="/contact/">Contact</a>
     <a href="/imprint/">Imprint</a>
     <a href="/privacy/">Privacy</a>
