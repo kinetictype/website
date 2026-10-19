@@ -16,7 +16,8 @@ cover: /images/projects/project-01/Service_Poster_4-3.png
 cover_alt: Service Design JPMC
 drawer_image: /images/projects/project-01/Service_Poster.png
 ---
-Enrollment for the Business sign-up on the Chase Offers program was not increasing. I was asked to work with the Marketing team to better understand the process. 
+Enrollment for the Business sign-up on the Chase Offers program was not increasing. 
+I was asked to work with the Marketing team to better understand the process. 
 
 ## The challenge
 
