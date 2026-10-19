@@ -4,9 +4,9 @@ tagline: In 2003, I began creating Bizart Cards for the National Art-o-mat
   machines in the US.
 client: Personal project
 role: Your Role
-years: 2023–2024
+years: 2002–present
 section: passion
-start_year: 2023
+start_year: 2002
 featured: false
 hidden: true
 description: Placeholder description of passion project 02 for search engines
