@@ -1,20 +1,20 @@
 ---
-title: Talk for SF on Charts and Graphs
+title: Charts and Graphs Talk
 date: 2017-02-22
 category: Talks
-excerpt: I gave a talk to over 100 attendees in Downtown San Francisco on charts
-  and Graphs.
+excerpt: I gave a talk on charts and graphs to over 100 attendees in Downtown
+  San Francisco at the Cascade SF event.
 hidden: false
-description: Placeholder description of journal entry 03 for search engines and
-  link previews.
-cover: /images/journal/entry-03-cover.svg
-cover_alt: Placeholder image for journal entry 03
+description: Talk, lecture, Data Storytelling, Data Design, Information
+  Graphics, Challenger Space Shuttle explosion
+cover: /images/journal/Screenshot 2026-10-19 at 13.07.25.png
+cover_alt: Slide from Charts and Graphs talk
 ---
 Cascade SF is an organization that mentors junior designers and provides inspirational talks about the industry.
 
 ## Charts and Graphs
 
-Placeholder text. Write as much or as little as you like. Images work the same way as in a case study.
+Gives people an overview of the world of charts and graphs and how to begin exploring the topic.
 
 [Charts and Graphs Talk](https://vimeo.com/1236996792?share=copy&fl=sv&fe=ci)
 
