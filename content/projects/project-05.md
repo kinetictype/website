@@ -21,7 +21,7 @@ hidden: false
 description: Placeholder description of project 05 for search engines and link previews.
 cover: /images/logos/fitbit.svg
 cover_alt: Fitbit logo
-drawer_image: /images/placeholders/placeholder-drawer.svg
+drawer_image: /images/projects/desktop_mobile.png
 drawer_image_alt: Placeholder image for project 05
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
