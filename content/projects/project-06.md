@@ -14,7 +14,7 @@ years: 2019–2020
 section: work
 start_year: 2019
 featured: false
-hidden: false
+hidden: true
 description: Placeholder description of project 06 for search engines and link previews.
 cover: /images/logos/cisco.svg
 cover_alt: Cisco logo
