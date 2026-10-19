@@ -6,8 +6,8 @@ summary: Redesign of customer support from calling Fitbit to self-service. I met
   proposed a new navigation approach based on metrics. Unfortunately, competing
   priorities meant this new system did not move forward. Later that year, Google
   acquired Fitbit.
-client: Client Name
-role: Your Role
+client: Fitbit
+role: UX Design Lead
 categories:
   - UX
   - Service Blueprint
