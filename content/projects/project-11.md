@@ -16,7 +16,7 @@ hidden: false
 description: Visual Journalist, early interactive visualization
 cover: /images/logos/chicago-tribune.svg
 cover_alt: Chicago Tribune logo
-drawer_image: /images/projects/Lalapalooza.png
+drawer_image: /images/projects/CELLLOTS.png
 drawer_image_alt: Hand drawn map of Lalapalooza festival map.
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
