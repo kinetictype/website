@@ -2,10 +2,11 @@
 title: Improved accessibility and unity in Business Banking
 tagline: Arranged a new structure to the platform that resulted in 400% engagement.
 client: "JPMorgan Chase "
-role: Your Role
+role: UX Design Lead
 categories:
-  - Information Design
+  - "UX Design "
   - Mobile
+  - "Design System "
 years: 2020–2023
 section: work
 start_year: 2021
