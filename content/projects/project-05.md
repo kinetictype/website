@@ -1,11 +1,11 @@
 ---
 title: Interaction Design Consultant
 tagline: Redesign of Help to Self-Service
-summary: The mission of the project was to move customers from calling into
-  Fitbit to self service. I met with Stakeholders, agreed on priorities to
-  improve on the platform, created a site audit, and proposed a new navigation
-  approach based on metric data. Management chose not to move forward during
-  competing priorities. Later that year, Fitbit was acquired by Google.
+summary: Redesign of customer support from calling Fitbit to self-service. I met
+  with Stakeholders, drew a service blueprint, conducted a site audit, and
+  proposed a new navigation approach based on metrics. Unfortunately, competing
+  priorities meant this new system did not move forward. Later that year, Google
+  acquired Fitbit.
 client: Client Name
 role: Your Role
 categories:
