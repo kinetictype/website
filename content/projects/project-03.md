@@ -6,14 +6,14 @@ role: Your Role
 categories:
   - Information Design
   - Mobile
-years: 2020–2022
+years: 2020–2023
 section: work
-start_year: 2020
+start_year: 2021
 featured: true
 featured_order: 3
 hidden: false
-description: Placeholder description of project 03 for search engines and link previews.
-cover: /images/projects/project-03/cover.svg
+description: Increase Engagement, Dashboard Design, Design system
+cover: /images/logos/MapInsightsJourney.png
 cover_alt: Placeholder cover image for project 03
 logo: /images/logos/Chase_logo_2007.svg
 ---
