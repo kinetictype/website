@@ -318,6 +318,7 @@ function card(p, withTags = false) {
       <h3${edText(f("title"))}>${escapeHtml(p.title)}</h3>
       <p${edText(f("tagline"))}>${escapeHtml(p.tagline || "")}</p>
       ${withTags ? tags(p) : ""}
+      ${p.client ? `<p class="meta"><span${edText(f("client"))}>${escapeHtml(p.client)}</span></p>` : ""}
     </div>
   </a>`;
 }
