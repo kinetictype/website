@@ -1,66 +1,25 @@
 ---
-# ---- Card and list text ----
-title: Project Title 06
-tagline: One-line summary of project 06.
-client: Client Name
+title: Cisco MSX
+tagline: Built features to support the MSX Platform.
+summary: "Cisco MSX is a platform that enables service providers to create and
+  manage services across physical and virtual network elements. It lets service
+  providers offer customers a flexible selection of services that they can
+  easily customize through a self-service portal. "
+client: Cisco
 role: Your Role
-
-# Category tags shown on the card and in the project list
-categories: [Mobile, Prototyping]
+categories:
+  - UX Design
+  - Prototyping
 years: 2019–2020
-
-# work = Recent work / More projects; passion = Passion projects
 section: work
-
-# Used to sort projects, newest first (the year the project started)
 start_year: 2019
-
-# Recent work on the homepage: set featured to true and give an order (1, 2, 3)
 featured: false
-featured_order: 
-
-# Set to true to keep this project off the site without deleting it
 hidden: false
-
-# ---- SEO ----
 description: Placeholder description of project 06 for search engines and link previews.
-
-# ---- Images: logos go in images/logos/, this project's other images in images/projects/project-06-cisco/ ----
 cover: /images/logos/cisco.svg
-# Optional client logo shown under the title on the project page (leave blank to hide)
-logo: ""
-
 cover_alt: Cisco logo
-
-# Image inside the More projects drop-down (shown when the row is opened).
-# The logo/cover above stays in the row itself. Upload to images/projects/project-06-cisco/.
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 06
-
-# ---- Project page images (Pages CMS: Top image and Gallery) ----
-# top_image: large image at the top of the project page (leave empty to show the logo/cover there)
-# gallery: images shown on the project page after the case-study text, in this order.
-#   size: full = full width · half = two side by side · third = three side by side
-# Upload to images/projects/project-06-cisco/
-top_image: ""
-top_image_alt: ""
-gallery:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: "Placeholder: wide overview image"
-    caption: "Placeholder caption: describe what this image shows."
-    size: full
-  - image: /images/placeholders/placeholder-detail-1.svg
-    alt: "Placeholder: first detail image"
-    caption: ""
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: "Placeholder: second detail image"
-    caption: ""
-    size: half
-  - image: /images/placeholders/placeholder-wide-2.svg
-    alt: "Placeholder: final result"
-    caption: "Placeholder caption: the final design."
-    size: full
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
 
