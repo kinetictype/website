@@ -4,8 +4,8 @@ tagline: Redesign of Help to Self-Service
 summary: Redesign of customer support from calling Fitbit to self-service. I met
   with Stakeholders, drew a service blueprint, conducted a site audit, and
   proposed a new navigation approach based on metrics. Unfortunately, competing
-  priorities meant this new system did not move forward. Later that year, Google
-  acquired Fitbit.
+  priorities meant this new system did not move forward. Later, Google acquired
+  Fitbit.
 client: Fitbit
 role: UX Design Lead
 categories:
