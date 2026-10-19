@@ -4,13 +4,13 @@ date: 2017-02-22
 category: Talks
 excerpt: I gave a talk to over 100 attendees in Downtown San Francisco on charts
   and Graphs.
-hidden: true
+hidden: false
 description: Placeholder description of journal entry 03 for search engines and
   link previews.
 cover: /images/journal/entry-03-cover.svg
 cover_alt: Placeholder image for journal entry 03
 ---
-Placeholder opening paragraph. Set up what this entry is about: a talk you gave, a class you taught, a process note, or something you noticed.
+Cascade SF is an organization that mentors junior designers and provides inspirational talks about the industry.
 
 ## Charts and Graphs
 
