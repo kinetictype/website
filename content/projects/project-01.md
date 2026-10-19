@@ -1,6 +1,6 @@
 ---
-title: Service Design Reveals Insights
-tagline: Service Design to increase Campaign Enrollment
+title: JPMorgan Chase
+tagline: Service Design Reveals Insights
 client: JPMorgan Chase
 role: Lead Designer
 categories:
