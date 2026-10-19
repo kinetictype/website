@@ -1,7 +1,7 @@
 ---
-title: "JPMorgan Chase "
+title: Improved accessibility and unity in Business Banking
 tagline: Arranged a new structure to the platform that resulted in 400% engagement.
-client: Client Name
+client: "JPMorgan Chase "
 role: Your Role
 categories:
   - Information Design
