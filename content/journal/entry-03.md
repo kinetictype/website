@@ -16,7 +16,7 @@ Cascade SF is an organization that mentors junior designers and provides inspira
 
 Gives people an overview of the world of charts and graphs and how to begin exploring the topic.
 
-[<iframe src="https://player.vimeo.com/video/1236996792?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="_ChartsTalk"></iframe>](https://vimeo.com/1236996792?share=copy&fl=sv&fe=ci) [Charts and Graphs Talk](https://vimeo.com/1236996792?share=copy&fl=sv&fe=ci)
+[<iframe src="https://player.vimeo.com/video/1236996792?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="800" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="_ChartsTalk"></iframe>](https://vimeo.com/1236996792?share=copy&fl=sv&fe=ci) [Charts and Graphs Talk](https://vimeo.com/1236996792?share=copy&fl=sv&fe=ci)
 
 > Placeholder pull quote.
 
