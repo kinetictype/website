@@ -2,8 +2,8 @@
 title: Interactive Visualization Designer
 tagline: Created interactive graphic displays to help Analysts visualize stories
   for the Goldman Sachs Research Portal.
-client: Client Name
-role: Your Role
+client: Goldman Sachs
+role: Interactive Visualization Designer
 categories:
   - Data Visualization
   - Web
