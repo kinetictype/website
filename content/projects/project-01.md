@@ -23,13 +23,11 @@ I was asked to work with the Marketing team to better understand the process.
 
 The Marketing team owned the Campaign Creation process. When the design stepped in, we approached the project as a learning opportunity. From hearing the team describe the process. I identified we needed a new map to describe how the Campaign Creation Process worked. 
 
-
-
 ## Approach
 
 Placeholder text describing your research, process, and the key design decisions.
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
+> ##### Kiera is a great design partner. She created a framework to help us map the merchant’s journey and identify pain points, gaps, and opportunities. We used the journey to facilitate conversations with our product partners and connect them to the merchant experience. -*S. Colwell,* **JPMorgan Chase Content Designer**
 
 ## Outcome
 
@@ -37,4 +35,4 @@ Placeholder text describing the result: what shipped, what changed, and any numb
 
 ## What I learned
 
-Placeholder text with a short reflection.
+When we began with an existing map of the Campaign Creation Process, it was clear that we did not see the big picture of how many teams were involved with the process. I represented the clarity of all the roles that were involved, 
