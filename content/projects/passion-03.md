@@ -4,9 +4,9 @@ tagline: I have created hanging sculptures and use a laser cutting machine to
   utilize cutting paper with precision.
 client: Personal project
 role: Your Role
-years: 2021–2022
+years: 2010-2015
 section: passion
-start_year: 2021
+start_year: 2010
 featured: false
 hidden: false
 description: Placeholder description of passion project 03 for search engines
