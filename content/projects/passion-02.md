@@ -7,7 +7,7 @@ role: Your Role
 years: 2002–present
 section: passion
 start_year: 2002
-featured: false
+featured: true
 hidden: true
 description: Placeholder description of passion project 02 for search engines
   and link previews.
