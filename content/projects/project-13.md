@@ -1,83 +1,40 @@
 ---
-# ---- Card and list text ----
-title: Project Title 13
-tagline: One-line summary of project 13.
-client: Client Name
+title: UserTesting Competitive Benchmarking Tool
+tagline: A visual way for executives to compare their UX scores with competitors'
+client: UserTesting.com
 role: Your Role
-
-# Category tags shown on the card and in the project list
-categories: [Graphic Design, Print]
+categories:
+  - Graphic Design
+  - Print
 years: 2003–2005
-
-# work = Recent work / More projects; passion = Passion projects
 section: work
-
-# Used to sort projects, newest first (the year the project started)
 start_year: 2003
-
-# Recent work on the homepage: set featured to true and give an order (1, 2, 3)
 featured: false
-featured_order: 
-
-# Set to true to keep this project off the site without deleting it
 hidden: false
-
-# ---- SEO ----
 description: Placeholder description of project 13 for search engines and link previews.
-
-# ---- Images: logos go in images/logos/, this project's other images in images/projects/project-13/ ----
-cover: /images/projects/project-13/cover.svg
-# Optional client logo shown under the title on the project page (leave blank to hide)
-logo: ""
-
+cover: /images/logos/user-testing-icon-svgrepo-com.svg
 cover_alt: Placeholder cover image for project 13
-
-# Image inside the More projects drop-down (shown when the row is opened).
-# The logo/cover above stays in the row itself. Upload to images/projects/project-13/.
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 13
-
-# ---- Project page images (Pages CMS: Top image and Gallery) ----
-# top_image: large image at the top of the project page (leave empty to show the logo/cover there)
-# gallery: images shown on the project page after the case-study text, in this order.
-#   size: full = full width · half = two side by side · third = three side by side
-# Upload to images/projects/project-13/
-top_image: ""
-top_image_alt: ""
-gallery:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: "Placeholder: wide overview image"
-    caption: "Placeholder caption: describe what this image shows."
-    size: full
-  - image: /images/placeholders/placeholder-detail-1.svg
-    alt: "Placeholder: first detail image"
-    caption: ""
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: "Placeholder: second detail image"
-    caption: ""
-    size: half
-  - image: /images/placeholders/placeholder-wide-2.svg
-    alt: "Placeholder: final result"
-    caption: "Placeholder caption: the final design."
-    size: full
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+The goal...Replace a static, linear PowerPoint/PDF report with an interactive tool for executives to compare their product's UX against themselves and competitors over time. Prior feedback: "It's not visual enough!"
 
-## The challenge
+TIMELINE
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+The project had been in discovery for 9 months before I joined in 2017 to bring the realize the project.
 
-## Approach
+OUTCOME: WHAT I DESIGNED
 
-Placeholder text describing your research, process, and the key design decisions.
+- A happy path built with sample data
+- Wireframes: overview, top insights, UX factors, tasks vs. competition, struggle areas
+- Video player with data overlays
+- Score breakdown explored as a heat map vs. a parallel coordinates diagram
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
+WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
-## Outcome
+Presented in your Compass deck as the "Interaction Done Wrong": users stalled on the unfamiliar parallel coordinates chart. The stakeholder critique you gathered shaped the next iterations.
 
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
+MY ROLE  
+Data Visualization UX Designer.
 
-## What I learned
-
-Placeholder text with a short reflection.
+My team included a data scientist, a researcher, and a product manager.
