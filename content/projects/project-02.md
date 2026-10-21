@@ -14,7 +14,6 @@ featured: true
 featured_order: 2
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
-cover: /images/logos/Dev Portal-API_tryit-1.png
 cover_alt: Placeholder cover image for project 02
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
