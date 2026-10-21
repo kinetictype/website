@@ -1,83 +1,38 @@
 ---
-# ---- Card and list text ----
-title: Project Title 14
-tagline: One-line summary of project 14.
-client: Client Name
+title: Ancestry Acquisition Flow
+tagline: Showing new visitors how much Ancestry knows about their family.
+client: " Ancestry.com"
 role: Your Role
-
-# Category tags shown on the card and in the project list
-categories: [Web, Graphic Design]
+categories:
+  - Web
+  - Graphic Design
 years: 2001–2003
-
-# work = Recent work / More projects; passion = Passion projects
 section: work
-
-# Used to sort projects, newest first (the year the project started)
 start_year: 2001
-
-# Recent work on the homepage: set featured to true and give an order (1, 2, 3)
 featured: false
-featured_order: 
-
-# Set to true to keep this project off the site without deleting it
 hidden: false
-
-# ---- SEO ----
 description: Placeholder description of project 14 for search engines and link previews.
-
-# ---- Images: logos go in images/logos/, this project's other images in images/projects/project-14/ ----
 cover: /images/projects/project-14/cover.svg
-# Optional client logo shown under the title on the project page (leave blank to hide)
-logo: ""
-
 cover_alt: Placeholder cover image for project 14
-
-# Image inside the More projects drop-down (shown when the row is opened).
-# The logo/cover above stays in the row itself. Upload to images/projects/project-14/.
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 14
-
-# ---- Project page images (Pages CMS: Top image and Gallery) ----
-# top_image: large image at the top of the project page (leave empty to show the logo/cover there)
-# gallery: images shown on the project page after the case-study text, in this order.
-#   size: full = full width · half = two side by side · third = three side by side
-# Upload to images/projects/project-14/
-top_image: ""
-top_image_alt: ""
-gallery:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: "Placeholder: wide overview image"
-    caption: "Placeholder caption: describe what this image shows."
-    size: full
-  - image: /images/placeholders/placeholder-detail-1.svg
-    alt: "Placeholder: first detail image"
-    caption: ""
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: "Placeholder: second detail image"
-    caption: ""
-    size: half
-  - image: /images/placeholders/placeholder-wide-2.svg
-    alt: "Placeholder: final result"
-    caption: "Placeholder caption: the final design."
-    size: full
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+Improve the SEO landing flow to reveal the breadth and depth of Ancestry's content about ancestors, and improve user acquisition in the sign-up flow.
 
-## The challenge
+TIMELINE: 2012–2013.
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+OUTCOME: WHAT I DESIGNED
 
-## Approach
+Diagrammatic flows, wireframes and visual design, including a tab structure and data visualization that gives family relationships more context.
 
-Placeholder text describing your research, process, and the key design decisions.
+WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
+Not stated in the source files.
 
-## Outcome
+MY ROLE
 
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
+Not stated in the source files.
 
-## What I learned
+MY TEAM
 
-Placeholder text with a short reflection.
+The product manager.
