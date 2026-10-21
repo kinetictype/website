@@ -1,7 +1,7 @@
 ---
 title: Improved accessibility and unity in Business Banking
 tagline: Arranged a new structure to the platform that resulted in 400% engagement.
-client: "JPMorgan Chase "
+client: "JPMorgan Chase, Consumer & Community Banking "
 role: UX Design Lead
 categories:
   - "UX Design "
@@ -14,26 +14,45 @@ featured: true
 featured_order: 3
 hidden: false
 description: Increase Engagement, Dashboard Design, Design system
-cover: /images/logos/MapInsightsJourney.png
-cover_alt: Placeholder cover image for project 03
-logo: /images/logos/Chase_logo_2007.svg
+cover: /images/logos/chase.svg
+cover_alt: JPMorgan Chase
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+400% more merchant engagement from navigation built on the design system
 
-## The challenge
+Goal
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+Increase merchant acquisition and retention through onboarding, and increase engagement with the Customer Insights portal, where merchants run offer campaigns to Chase customers and monitor results.
 
-## Approach
+Timeline
 
-Placeholder text describing your research, process, and the key design decisions.
+2022; changes went live in October 2022, with impact measured over the following 6 months.
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
+Outcome
 
-## Outcome
+• Small feature fixes to the existing developer-led backlog, aligned to the MDS design system (spacing, consistency)
 
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
+• A redesigned campaign-creation journey map that brought in merchants, external partners and Chase teams, with touchpoints and time per step
 
-## What I learned
+• Three navigation options; shipped a tab structure, a filtering drawer for business/account info, and chevrons
 
-Placeholder text with a short reflection.
+• Updated landing page, form and email template to communicate campaign progress (timeline)
+
+• A line-of-business sub-component library extending MDS
+
+Positive Outcomes
+
+• 400% increase in user engagement with the deep-dive pages
+
+•  Increase in the rate of new-user onboarding and improved retention
+
+• The timeline closed the "radio silence" merchants experienced while campaigns were built
+
+• The sub-library enabled reuse and scale across teams and faster delivery files for developers
+
+My Role
+
+Product/experience designer: synthesized existing research, ran competitive analysis, mapped the journey, designed tablet and mobile, and led the sub-library strategy.
+
+MY TEAM
+
+A new-hire designer, a content designer, and the product team; collaborated with the travel team on their sub-library approach.
