@@ -1,5 +1,5 @@
 ---
-title: Improved accessibility and unity in Business Banking
+title: Increased Engagement in Business Banking
 tagline: Arranged a new structure to the platform that resulted in 400% engagement.
 client: "JPMorgan Chase, Consumer & Community Banking "
 role: UX Design Lead
