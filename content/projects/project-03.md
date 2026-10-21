@@ -14,7 +14,6 @@ featured: true
 featured_order: 3
 hidden: false
 description: Increase Engagement, Dashboard Design, Design system
-cover: /images/logos/chase.svg
 cover_alt: JPMorgan Chase
 ---
 400% more merchant engagement from navigation built on the design system
