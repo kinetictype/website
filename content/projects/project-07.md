@@ -1,38 +1,34 @@
 ---
-title: Google Shopping Express
-tagline: one liner
-client: Client Name
+title: Wieden Kennedy Girl Effect
+tagline: Using a digital currency to fund NGOs that support girls
+client: "Nike: Girl Effect"
 role: Your Role
 categories:
   - Information Design
   - Print
-years: 2014–2016
+years: "2014"
 section: work
 start_year: 2014
 featured: false
 hidden: false
 description: Placeholder description of project 07 for search engines and link previews.
-cover: /images/logos/google-shopping.svg
 cover_alt: Google Shopping logo
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 07
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+Goal  
+Discover how Girl Effect could develop a digital currency to orchestrate funding to NGOs for girls in developing countries.
 
-## The challenge
+Timeline  
+2014  
+  
+What I designed
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+- Whiteboard discovery, service design narrative, concept diagrams and sketches
+- iPhone app concept: build a profile, select actions, sign up/add to calendar, track progress and currency (earned/spent/pending), find nearby activities, rate actions
 
-## Approach
+Positive Outcome Emerged  
+Communication with the client; they used it in their presentation to describe the touchpoints a girl would encounter. Inspired future work with Weight Watchers.
 
-Placeholder text describing your research, process, and the key design decisions.
+My Role: Service Design Team lead for a team composed of a creative technologist and a designer.
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
-
-## Outcome
-
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
-
-## What I learned
-
-Placeholder text with a short reflection.
