@@ -1,5 +1,5 @@
 ---
-title: Project Title 08
+title: Tivo Architecture
 tagline: One-line summary of project 08.
 client: Tivo
 role: Information Architect
