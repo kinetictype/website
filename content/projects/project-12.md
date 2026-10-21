@@ -8,9 +8,9 @@ role: Your Role
 categories:
   - Product Owner
   - UX/UI Designer
-years: 2005–2007
+years: 2018-2019
 section: work
-start_year: 2005
+start_year: 2018
 featured: false
 hidden: false
 description: Placeholder description of project 12 for search engines and link previews.
@@ -26,16 +26,17 @@ TIMELINE
 
 Product released in 2019 (prototype work dated November 2018).
 
-OUTCOME: WHAT I DESIGNED
+### Valuable Outcomes Emerged
 
 - Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows and a mental model
 - Screens and requirements
 - Framework selection via a proof of concept; "discovery boards" chosen
 - Competitive research (Power BI, Tableau)
 - New bi-directional drag-handle components for moving and expanding visualizations
-- A diagram documenting the Analytics team's process
+- A diagram documenting the Analytics team's process  
 
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
+
+### Valuable Outcomes Emerged
 
 - Product shipped in 2019 on the framework; became a core offering and the foundation for new products and services
 - The process diagram "became a key artifact for our team"
