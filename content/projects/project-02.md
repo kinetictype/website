@@ -16,7 +16,7 @@ hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
 cover_alt: Placeholder cover image for project 02
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+Focus on design system addition to the project as I highlight the work.
 
 ## The challenge
 
