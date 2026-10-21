@@ -1,5 +1,5 @@
 ---
-title: Wieden Kennedy Girl Effect
+title: Girl Effect iPhone App
 tagline: Using a digital currency to fund NGOs that support girls
 client: "Nike: Girl Effect"
 role: Your Role
