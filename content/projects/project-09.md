@@ -18,22 +18,40 @@ cover_alt: Workday logo
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 09
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+Workday Chart Fill Patterns
 
-## The challenge
+HEADLINE
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+Making Workday's charts readable without relying on color
 
-## Approach
+COMPANY NAME
 
-Placeholder text describing your research, process, and the key design decisions.
+Workday
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
+## Goal
 
-## Outcome
+Provide fill patterns for the charting tool that improve accessibility and work with the current design system. Existing patterns lacked logic, did not match system colors, and were hard to read at small sizes; the charting library did not offer guidance.
 
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
+TIMELINE
 
-## What I learned
+2018–2019, Shipped
 
-Placeholder text with a short reflection.
+Outcome
+
+- A pattern system built from basic elements, tuned for density in small spaces
+
+- Multiple prototypes using a CodePen tool the developer built
+
+- Recommendation to change the legend to a rectangle so patterns stay visible
+
+- Normal/reversed pattern modes; design-system colors interpolated (0.35 / 0.6) to meet contrast standards
+
+Positive Outcomes Emerged  
+Patterns shipped, complied with usability/contrast standards, and were incorporated into the design system. "Project received well and improved accessibility across platform."
+
+My Role  
+Visual/product designer: research, exploration, prototyping and recommendations.
+
+My Team  
+A charting developer and the design systems team (leveraged existing standards; no user testing).The challenge
+
