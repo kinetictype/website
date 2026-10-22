@@ -1,15 +1,15 @@
 ---
 title: Tivo Architecture
-tagline: One-line summary of project 08.
+tagline: Information architecture for the TiVo iPhone app
 client: Tivo
 role: Information Architect
 categories:
   - UX/UI
   - Web
   - Information Visualization
-years: "2013"
+years: 2011-2012
 section: work
-start_year: 2013
+start_year: 2011
 featured: false
 hidden: false
 description: Placeholder description of project 08 for search engines and link previews.
@@ -18,22 +18,18 @@ cover_alt: TiVo logo
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 08
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+GOAL  
+Define the information architecture and specification documentation for the TiVo iPhone app.
 
-## The challenge
+OUTCOME  
+I designed an application map (v1.6) and spec documentation.
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
-## Approach
+Not stated in the source files.
 
-Placeholder text describing your research, process, and the key design decisions.
+MY ROLE  
+Information architect.
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
-
-## Outcome
-
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
-
-## What I learned
-
-Placeholder text with a short reflection.
+MY TEAM  
+Product manager
