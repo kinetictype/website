@@ -1,6 +1,6 @@
 ---
-title: Fitbit Help Redesign
-tagline: Self-service help that answers questions before they turn into calls
+title: Redesign of Fitbit Help
+tagline: Self-service help that answers questions before they turn into calls.
 summary: Redesign of customer support from calling Fitbit to self-service. I met
   with Stakeholders, drew a service blueprint, conducted a site audit, and
   proposed a new navigation approach based on metrics. Unfortunately, competing
