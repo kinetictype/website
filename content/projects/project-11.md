@@ -1,9 +1,11 @@
 ---
 title: Visual Journalist
 tagline: Built explanatory visualizations on a daily basis and early interactive
-  graphics in Flash.
-client: Chicago Tribune
-role: Visual Journalist
+  graphics in Flash, connecting the print paper and the website.
+summary: Created daily graphics for news stories and led the transition to
+  interactive graphics on ChicagoTribune.com.
+client: Chicago Tribune Graphics
+role: Visual Journalist, Flash Animation
 categories:
   - Information Graphics
   - Print
@@ -18,23 +20,18 @@ cover: /images/logos/chicago-tribune.svg
 cover_alt: Chicago Tribune logo
 drawer_image: /images/projects/lollapalooza_grapic_o.png
 drawer_image_alt: Hand drawn map of Lalapalooza festival map.
+top_image: /images/projects/valuationsbyGrowth.svg
 ---
-Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
+Outcome: what I designed:  
+- Daily print infographics (e.g., Art Institute expansion, Midway runway arrester beds, AT&T mergers timeline, terror alert levels, raised bike lanes)
 
-## The challenge
+- Interactive Flash graphics (obesity in America, mortgage fraud demographics)
 
-Placeholder text describing the problem, the constraints, and what success looked like.
+- A process timeline for the editorial and interactive teams
 
-## Approach
+WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
-Placeholder text describing your research, process, and the key design decisions.
+Worked on the first interactive graphics the paper produced and brought its print and .com teams together.
 
-> Placeholder pull quote: a line from a stakeholder, a user, or your own reflection.
-
-## Outcome
-
-Placeholder text describing the result: what shipped, what changed, and any numbers that show impact.
-
-## What I learned
-
-Placeholder text with a short reflection.
+MY TEAM  
+Reporters, graphic artists, page designers and editors (co-bylines with Max Rust and Adam Zoll; worked with architecture critic Blair Kamin).
