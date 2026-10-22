@@ -1,6 +1,8 @@
 ---
 title: Girl Effect iPhone App
 tagline: Using a digital currency to fund NGOs that support girls
+summary: Discover how Girl Effect could develop a digital currency to fund NGOs
+  supporting girls in developing countries.
 client: "Nike: Girl Effect"
 role: Your Role
 categories:
@@ -33,4 +35,3 @@ Communication with the client; they used it in their presentation to describe th
 
 My Role  
 Service Design Team lead for a team composed of a creative technologist and a designer.
-
