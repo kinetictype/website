@@ -7,7 +7,7 @@ years: 2000–Today
 section: passion
 start_year: 2025
 featured: false
-hidden: false
+hidden: true
 description: Placeholder description of passion project 01 for search engines
   and link previews.
 cover: /images/projects/passion-01/cover.svg
