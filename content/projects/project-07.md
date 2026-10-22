@@ -21,7 +21,7 @@ Discover how Girl Effect could develop a digital currency to orchestrate funding
 
 Timeline  
 2014  
-  
+
 What I designed
 
 - Whiteboard discovery, service design narrative, concept diagrams and sketches
@@ -30,5 +30,6 @@ What I designed
 Positive Outcome Emerged  
 Communication with the client; they used it in their presentation to describe the touchpoints a girl would encounter. Inspired future work with Weight Watchers.
 
-My Role: Service Design Team lead for a team composed of a creative technologist and a designer.
+My Role  
+Service Design Team lead for a team composed of a creative technologist and a designer.
 
