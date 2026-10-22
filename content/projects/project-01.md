@@ -18,7 +18,21 @@ cover_alt: Service Design JPMC
 Enrollment for the Business sign-up on the Chase Offers program was not increasing. 
 I was asked to work with the Marketing team to better understand the process. 
 
-## The challenge
+## Goal
+
+Timeline
+
+Outcome: What I designed
+
+Positive Outcomes Emerged
+
+My Role
+
+My Team
+
+
+
+The challenge
 
 The Marketing team owned the Campaign Creation process. When the design stepped in, we approached the project as a learning opportunity. From hearing the team describe the process. I identified we needed a new map to describe how the Campaign Creation Process worked. 
 
