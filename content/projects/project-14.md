@@ -12,7 +12,7 @@ start_year: 2001
 featured: false
 hidden: false
 description: Placeholder description of project 14 for search engines and link previews.
-cover: /images/projects/project-14/cover.svg
+cover: /images/logos/Ancestry-logo.svg
 cover_alt: Placeholder cover image for project 14
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 14
