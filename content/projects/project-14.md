@@ -4,11 +4,10 @@ tagline: Showing new visitors how much Ancestry knows about their family.
 client: " Ancestry.com"
 role: Your Role
 categories:
-  - Web
-  - Graphic Design
-years: 2001–2003
+  - UX Design
+years: 2012–2013
 section: work
-start_year: 2001
+start_year: 2012
 featured: false
 hidden: false
 description: Placeholder description of project 14 for search engines and link previews.
@@ -19,11 +18,8 @@ drawer_image_alt: Placeholder image for project 14
 ---
 Improve the SEO landing flow to reveal the breadth and depth of Ancestry's content about ancestors, and improve user acquisition in the sign-up flow.
 
-TIMELINE: 2012–2013.
-
-OUTCOME: WHAT I DESIGNED
-
-Diagrammatic flows, wireframes and visual design, including a tab structure and data visualization that gives family relationships more context.
+OUTCOME: WHAT I DESIGNED  
+Diagrammatic flows, wireframes, and visual design. This included a tab structure and data visualization that provides more context for family relationships.
 
 WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
