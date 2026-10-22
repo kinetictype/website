@@ -7,8 +7,8 @@ role: Your Role
 years: 2010-2015
 section: passion
 start_year: 2010
-featured: false
-hidden: false
+featured: true
+hidden: true
 description: Placeholder description of passion project 03 for search engines
   and link previews.
 cover: /images/projects/passion-03/cover.svg
