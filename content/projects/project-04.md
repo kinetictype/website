@@ -6,8 +6,8 @@ client: Goldman Sachs
 role: Interactive Visualization Designer
 categories:
   - Data Visualization
-  - Web
-years: 2019–2021
+  - UX/UI Design
+years: 2019-2021
 section: work
 start_year: 2019
 featured: false
@@ -19,7 +19,7 @@ drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 ---
 ##### The Global Investment Research division of Goldman Sachs wanted to add interactivity to its research reports.
 
-## The challenge
+## Goal
 
 ##### I turned complex data into engaging, interactive stories on the Research Portal.
 
@@ -27,15 +27,11 @@ drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 
 ## Approach
 
-Placeholder text describing your research, process, and the key design decisions.
-
-> *Kiera was a pleasure to work with. She not only created innovative data visualizations (including SVGs) for data-science-literate audiences, but also helped foster a more data-centric culture among junior analysts just starting out in coding. -M. Hinds, Goldman Sachs Analyst*
-
-## Outcome
-
 I gathered content, designed, and developed interactive Scalable Vector Graphics. I added explanatory interactive graphics to the Goldman Sachs Investment Research Portal.  
 
 Beyond the scope of this work, I connected across the firm with the Core UX Design System team to standardize icons and create evergreen content that could support future data stories and ensure consistency across production.
+
+> *Kiera was a pleasure to work with. She not only created innovative data visualizations (including SVGs) for data-science-literate audiences, but also helped foster a more data-centric culture among junior analysts just starting out in coding. -M. Hinds, Goldman Sachs Analyst*
 
 ## What I learned
 
