@@ -22,7 +22,11 @@ cover_alt: Service Design JPMC
 ---
 ## Goal
 
-The Marketing team owned the Campaign Creation process. When the design stepped in, we approached the project as a learning opportunity. From hearing the team describe the process. I identified we needed a new map to describe how the Campaign Creation Process worked. 
+The Marketing team owned the Campaign Creation process. When the design team stepped in, we approached the project as a learning opportunity. From hearing the team describe the process.   
+  
+A content designer and I worked with the Marketing Team to facilitate I identified that we needed a new map to describe how the Campaign Creation Process worked. 
+
+
 
 > ##### Kiera is a great design partner. She created a framework to help us map the merchant’s journey and identify pain points, gaps, and opportunities. We used the journey to facilitate conversations with our product partners and connect them to the merchant experience. -*S. Colwell,* **JPMorgan Chase Content Designer**
 
