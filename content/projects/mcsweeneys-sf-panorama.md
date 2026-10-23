@@ -5,9 +5,8 @@ section: work
 start_year: 2003
 featured: false
 hidden: false
+cover: /images/logos/McSweeney's_logo.svg
 ---
-
-
 HEADLINE
 
 Illustrating a real-estate exposé for McSweeney's
