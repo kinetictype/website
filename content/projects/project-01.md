@@ -12,10 +12,10 @@ featured: true
 featured_order: 1
 hidden: false
 description: Service Design
-cover: /images/logos/Service_Poster.png
+cover: /images/logos/ServicePoster.png
 cover_alt: Service Design JPMC
 ---
-Enrollment for the Business sign-up on the Chase Offers program was not increasing.   
+Enrollment for the Business sign-up on the Chase Offers program was not increasing.  
 I was asked to work with the Marketing team to better understand the process. 
 
 ## Goal
