@@ -24,7 +24,7 @@ cover_alt: Service Design JPMC
 
 The Marketing team owned the Campaign Creation process. When the design team stepped in, we approached the project as a learning opportunity. From hearing the team describe the process.   
   
-A content designer and I worked with the Marketing Team to facilitate I identified that we needed a new map to describe how the Campaign Creation Process worked. 
+A content designer and I worked with the Marketing Team to facilitate content gathering sessions. I identified that we needed a new map to describe how the Campaign Creation Process worked. I created a new map showing the different teams involved and the time spent in the process. 
 
 
 
