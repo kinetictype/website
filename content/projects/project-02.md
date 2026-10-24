@@ -11,7 +11,7 @@ years: 2022–2024
 section: work
 start_year: 2022
 featured: true
-featured_order: 2
+featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
 cover_alt: Placeholder cover image for project 02

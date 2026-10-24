@@ -14,7 +14,7 @@ years: 2021-2023
 section: work
 start_year: 2022
 featured: true
-featured_order: 1
+featured_order: 2
 hidden: false
 description: Service Design, Business Banking
 cover: /images/logos/ServicePoster.png

@@ -152,6 +152,23 @@ SITE.url = `https://${SITE.domain}`;
 
 const page = (name) => parseFile(path.join(CONTENT, "pages", `${name}.md`));
 
+/* Projects are listed most recent first, using the "Years shown on the site" text:
+   newest end year first (Today / present counts as now), then newest start year, then title.
+   Start year is only a fallback when the Years box is empty. */
+function yearRange(p) {
+  const text = String(p.years || "");
+  const nums = (text.match(/\b(19|20)\d{2}\b/g) || []).map(Number);
+  const ongoing = /today|present|now|heute/i.test(text);
+  const fallback = Number(p.start_year) || 0;
+  const start = nums.length ? Math.min(...nums) : fallback;
+  const end = ongoing ? 9999 : nums.length ? Math.max(...nums) : fallback;
+  return { start, end };
+}
+function byRecency(a, b) {
+  const x = yearRange(a), y = yearRange(b);
+  return y.end - x.end || y.start - x.start || String(a.title || "").localeCompare(String(b.title || ""));
+}
+
 const PROJECT_DIR = path.join(CONTENT, "projects");
 const projects = fs
   .readdirSync(PROJECT_DIR)
@@ -161,7 +178,7 @@ const projects = fs
     return { ...data, slug: f.replace(/\.md$/, ""), body };
   })
   .filter((p) => p.hidden !== true)
-  .sort((a, b) => Number(b.start_year || 0) - Number(a.start_year || 0));
+  .sort(byRecency);
 
 // Passion projects have "section: passion"; everything else is work
 const passion = projects.filter((p) => p.section === "passion");
@@ -348,7 +365,7 @@ function row(p) {
 }
 
 function yearSpan(list) {
-  const years = list.map((p) => Number(p.start_year)).filter(Boolean);
+  const years = list.flatMap((p) => { const r = yearRange(p); return [r.start, r.end === 9999 ? new Date().getFullYear() : r.end]; }).filter(Boolean);
   if (!years.length) return "";
   return `${Math.min(...years)}–${Math.max(...years)}`;
 }

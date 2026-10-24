@@ -20,7 +20,7 @@ content:
     view:
       primary: title
       fields: [title, section, years, featured]
-      sort: [start_year, title]
+      sort: [years, start_year, title]
       default:
         sort: start_year
         order: desc
@@ -40,7 +40,7 @@ content:
           values:
             - { name: work, label: Work (Recent work / More projects) }
             - { name: passion, label: Passion projects }
-      - { name: start_year, label: Start year (sorts the list, newest first), type: number, required: true }
+      - { name: start_year, label: Start year (only used for sorting if Years is empty; the list is ordered by Years, most recent first), type: number }
       - { name: featured, label: Show in Recent work (top three), type: boolean, default: false }
       - { name: featured_order, label: Recent work position (1, 2 or 3), type: number }
       - { name: hidden, label: Hide this project, type: boolean, default: false }
