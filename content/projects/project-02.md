@@ -4,9 +4,8 @@ tagline: Designed features for the Developer Portal and created a design system.
 client: Apiture
 role: UX Designer
 categories:
-  - UX/UI
-  - Dashboards
-  - Design System
+  - UX/UI Design
+  - Design System Creation
 years: 2024-2025
 section: work
 start_year: 2024
@@ -14,6 +13,7 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
+cover: /images/logos/Dev Portal-API_tryit_sm.png
 cover_alt: Placeholder cover image for project 02
 top_image: /images/placeholders/placeholder-wide.svg
 top_image_alt: "Placeholder: hero image of the product"
