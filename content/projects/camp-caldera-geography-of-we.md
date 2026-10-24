@@ -10,6 +10,11 @@ section: work
 start_year: 0
 featured: false
 hidden: false
+cover: /images/logos/gemini-svg.svg
+top_image: /images/projects/05_audio-project-detail-pages.png
+gallery:
+  - image: /images/projects/06_project-detail-overview.png
+    size: full
 ---
 I designed a custom geography experience ("Google map not going to help with brand"), project detail pages, and textures behind audio projects.
 
