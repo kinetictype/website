@@ -8,9 +8,8 @@ summary: The goal was to enable merchant acquisition and retention through
 client: JPMorgan Chase
 role: UX Design Lead
 categories:
-  - "UX Design "
-  - Mobile
-  - "Design System "
+  - "UX/UI Design "
+  - Design System Library
 years: 2021–2023
 section: work
 start_year: 2021
