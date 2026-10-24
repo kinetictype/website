@@ -14,7 +14,7 @@ start_year: 2018
 featured: false
 hidden: false
 description: Placeholder description of project 09 for search engines and link previews.
-cover: /images/logos/workdayColor-1.svg
+cover: /images/logos/workdayColor.svg
 cover_alt: Workday logo
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 09
