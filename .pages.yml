@@ -30,6 +30,8 @@ content:
       - { name: summary, label: Paragraph shown when the project is opened in More projects, type: text }
       - { name: client, label: Client, type: string }
       - { name: role, label: Role, type: string }
+      - { name: website, label: "Website link (optional, e.g. https://www.example.com) — shown under the title", type: string }
+      - { name: website_label, label: Website link text (optional; leave empty to show the address), type: string }
       - { name: categories, label: Category tags (shown on cards and in the project list), type: string, list: true }
       - { name: years, label: Years shown on the site (e.g. 2016–2018), type: string }
       - name: section
@@ -88,10 +90,54 @@ content:
                 - { name: half, label: Half (two side by side) }
                 - { name: third, label: Third (three side by side) }
       - name: body
-        label: Case study
+        label: Intro text (opening paragraphs, shown before the sections)
         type: rich-text
         options: { format: markdown, media: images, path: content/images/projects }
-
+      - name: sections
+        label: "Sections — each one: a heading, text, then its images (like smeidu.com/clara)"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {heading}"
+        fields:
+          - { name: heading, label: Heading (e.g. Product vision, Strategy, Design system, UX), type: string }
+          - { name: text, label: Text (paragraphs and bullet lists), type: rich-text, options: { format: markdown } }
+          - name: images
+            label: Images for this section (shown under its text)
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{index}. {alt}"
+            fields:
+              - name: image
+                label: Image
+                type: image
+                options: { media: images, path: content/images/projects }
+              - { name: alt, label: Description for screen readers (alt text), type: string }
+              - { name: caption, label: Caption under the image (optional), type: string }
+              - name: size
+                label: Size
+                type: select
+                default: full
+                options:
+                  values:
+                    - { name: full, label: Full width }
+                    - { name: half, label: Half (two side by side) }
+                    - { name: third, label: Third (three side by side) }
+      - { name: credits_heading, label: "Credits heading (e.g. Team, Crew; default: Team)", type: string }
+      - name: credits
+        label: "Credits — people you worked with, shown last as Name: role"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+          - { name: link, label: Link (optional, e.g. LinkedIn), type: string }
   # ------------------------------------------------------------
   - name: journal
     label: Journal

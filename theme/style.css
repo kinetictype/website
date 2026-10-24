@@ -479,3 +479,12 @@ svg[data-fit="contain"] { background: none !important; border: 0 !important; bor
 
 /* image frames keep their shape whatever the photo's proportions: the photo fills the frame and is cropped */
 .card-media > img, .card-media > svg, .drawer-media > img, .drawer-media > svg, .entry-media > img, .entry-media > svg { position: absolute; inset: 0; }
+
+/* project page header, like smeidu.com/clara: bold subtitle, then role (years) · client, then a link to the live product */
+.case-head .case-lede { font-weight: 600; color: var(--ink); margin: 0 0 12px; }
+.case-head .case-meta { margin: 0 0 8px; }
+.case-link { margin: 0 0 20px; font-size: 15px; }
+.case-link a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.case-link a:hover { text-decoration: underline; }
+.case-body > .credits { padding-left: 1.2em; }
+.case-body > .credits li { margin: 4px 0; }

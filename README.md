@@ -45,6 +45,17 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 - **Remove a project:** delete it, or tick **Hide this project** to keep it for later.
 - Only three projects appear in Recent work. If more than three are ticked, positions 1, 2, 3 win; the rest go in the list.
 
+### Project page structure
+
+Each project page follows the same order (modeled on smeidu.com/clara):
+
+1. Title, then the **One-line summary** in bold, then **Role (Years) · Client**, an optional **Website link**, and the tags.
+2. **Top image** (large, under the title).
+3. **Intro text**: a few opening paragraphs.
+4. **Sections**: each has a Heading, Text (paragraphs or bullet lists) and its own Images (Full width, Half or Third).
+   Click **Add an entry** for each section and drag to reorder.
+5. **Credits**: people you worked with, shown last as "Name: role" under a heading such as Team.
+
 ### Project page images
 
 Open a project and scroll to **Project page images**:

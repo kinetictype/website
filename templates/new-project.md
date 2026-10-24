@@ -64,6 +64,28 @@ gallery:
   alt: ''
   caption: ''
   size: full
+# ---- Sections and credits (like smeidu.com/clara) ----
+# website: optional link to the live product, shown under the title
+website: ""
+website_label: ""
+# Each section: heading, text (Markdown: paragraphs, "- " bullets), then its images (size: full / half / third)
+sections:
+  - heading: Product vision
+    text: "Two short paragraphs: the problem and what the product set out to do."
+    images:
+      - image: ""
+        alt: ""
+        caption: ""
+        size: full
+  - heading: Strategy & process
+    text: "One lead-in sentence, then a list:\n\n- Step one\n- Step two"
+    images: []
+# Credits: shown last as "Name: role"
+credits_heading: Team
+credits:
+  - name: ""
+    role: ""
+    link: ""
 ---
 <!-- CASE STUDY TEXT below. Markdown: '## Heading', **bold**, *italic*, [link](https://...), '- ' bullets, '> ' quote. This note is not shown on the site. -->
 

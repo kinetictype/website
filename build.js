@@ -559,6 +559,41 @@ function listImages(p) {
   </section>`;
 }
 
+
+/* Sections (like smeidu.com/clara): each one is a heading, text (Markdown: paragraphs, bullet lists, links)
+   and that section's images. Images use the same sizes as the gallery: full, half (two side by side), third. */
+function mediaRows(items) {
+  items = (items || []).filter((g) => g && g.image);
+  const fig = (g) => `<figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const per = { half: 2, third: 3 };
+  const size = (g) => per[String(g.size || "full").toLowerCase()] || 1;
+  const out = [];
+  for (let i = 0; i < items.length; ) {
+    const n = size(items[i]);
+    const run = [];
+    while (i < items.length && run.length < n && size(items[i]) === n) run.push(items[i++]);
+    out.push(`<div class="media media-${run.length}">${run.map(fig).join("")}</div>`);
+  }
+  return out.join("\n");
+}
+function pageSections(p) {
+  const list = (Array.isArray(p.sections) ? p.sections : []).filter((s) => s && (s.heading || s.text || (s.images || []).length));
+  return list.map((s) => `
+${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}
+${s.text ? markdown(String(s.text)) : ""}
+${mediaRows(s.images)}`).join("\n");
+}
+/* Credits at the end, like "Clara crew": Name: role, with an optional link on the name */
+function pageCredits(p) {
+  const list = (Array.isArray(p.credits) ? p.credits : []).filter((c) => c && c.name);
+  if (!list.length) return "";
+  const item = (c) => {
+    const name = c.link ? `<a href="${escapeHtml(String(c.link))}" target="_blank" rel="noopener">${escapeHtml(String(c.name))}</a>` : escapeHtml(String(c.name));
+    return `<li>${name}${c.role ? `: ${escapeHtml(String(c.role))}` : ""}</li>`;
+  };
+  return `\n<h2>${escapeHtml(String(p.credits_heading || "Team"))}</h2>\n<ul class="credits">${list.map(item).join("")}</ul>`;
+}
+
 /* ---------- case-study page template ---------- */
 function caseStudy(p) {
   // next / previous stay within the same section (work or passion), newest to oldest, looping at the end
@@ -566,21 +601,25 @@ function caseStudy(p) {
   const k = group.indexOf(p);
   const next = group[(k + 1) % group.length];
   const prev = k > 0 ? group[k - 1] : null;
-  const meta = [p.role, p.years, p.client].filter(Boolean).map((x) => escapeHtml(String(x))).join(" · ");
+  // one meta line like "Lead Designer (2019–2021) · Goldman Sachs", then an optional link to the live product
+  const roleYears = p.role && p.years ? `${p.role} (${p.years})` : p.role || p.years || "";
+  const meta = [roleYears, p.client].filter(Boolean).map((x) => escapeHtml(String(x))).join(" · ");
+  const site = p.website ? `<p class="case-link"><a href="${escapeHtml(String(p.website))}" target="_blank" rel="noopener">${escapeHtml(String(p.website_label || String(p.website).replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")))} ${ARROW}</a></p>` : "";
   return `
 <article class="case">
   <a class="back" href="/work/">${ARROW_BACK} Work</a>
   <header class="case-head">
     <h1${edText("title")}>${escapeHtml(p.title)}</h1>
     ${p.logo ? `<img class="case-logo"${edImage(p, "logo")} src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
-    ${meta ? `<p class="case-meta">${meta}</p>` : ""}
     ${p.tagline ? `<p class="case-lede"${edText("tagline")}>${escapeHtml(p.tagline)}</p>` : ""}
+    ${meta ? `<p class="case-meta">${meta}</p>` : ""}
+    ${site}
     ${tags(p)}
   </header>
   ${pageHero(p)}${listImages(p)}
   ${EDIT
-    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${editableGallery(p)}</div>`
-    : `<div class="case-body">${markdown(p.body)}${pageGallery(p)}</div>`}
+    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
+    : `<div class="case-body">${markdown(p.body)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
 </article>
 
 <nav class="next-project" aria-label="Next project">
