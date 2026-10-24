@@ -1,6 +1,9 @@
 ---
 title: "Increased Engagement in Business Banking "
 tagline: Arranged a new structure to the platform that resulted in 400% engagement.
+summary: The goal was to enable merchant acquisition and retention through
+  onboarding and to increase engagement with the Customer Insights portal, where
+  merchants run offer campaigns to Chase customers and monitor results.
 client: JPMorgan Chase
 role: UX Design Lead
 categories:
@@ -14,17 +17,9 @@ featured: true
 featured_order: 3
 hidden: false
 description: Increase Engagement, Dashboard Design, Design system
-cover: /images/logos/Cover_BeforeScreen.png
 cover_alt: JPMorgan Chase
-drawer_image: /images/projects/Cover_EndScreen03.png
 ---
-400% more merchant engagement from navigation built on the design system
 
-Goal
-
-Increase merchant acquisition and retention through onboarding, and increase engagement with the Customer Insights portal, where merchants run offer campaigns to Chase customers and monitor results.
-
-Timeline
 
 2022; changes went live in October 2022, with impact measured over the following 6 months.
 
