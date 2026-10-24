@@ -490,11 +490,11 @@ ${passion.length ? `<section class="recent passion"><div class="section-head"><h
 const topImage = (p) => ({ ...(p.page_images || {}), ...("top_image" in p ? { top_image: p.top_image, top_image_alt: p.top_image_alt } : {}) });
 const galleryOf = (p) => ("gallery" in p ? p.gallery : (p.page_images || {}).gallery) || [];
 function pageHero(p) {
+  // the logo/cover stays on cards and list rows only; the project page shows the Top image, if one is set
   const pi = topImage(p);
-  const src = pi.top_image || p.cover;
+  const src = pi.top_image;
   if (!src) return "";
-  const alt = pi.top_image ? pi.top_image_alt || "" : p.cover_alt || "";
-  // in the editor, swapping this image always sets the Top image (even while it shows the logo/cover)
+  const alt = pi.top_image_alt || "";
   return `<div class="media media-1 case-hero"><figure><img${edImage(p, "top_image", "top_image_alt")} src="${imageUrl(src)}" alt="${escapeHtml(alt)}"></figure></div>`;
 }
 /* Editor only: the gallery as one CloudCannon array, so images can be replaced, added, removed and

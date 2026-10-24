@@ -39,7 +39,7 @@ hidden: false
 description: ''
 
 # ---- Images (upload the files first; paths start with /images/) ----
-# Logo or cover: small image in the row, the Recent work card, and the top of the project page
+# Logo or cover: small image in the row, and the Recent work card (not on the project page)
 # Logos live in /images/logos/ ; photos in /images/projects/<this project's folder>/
 cover: ''
 # Describe the logo/cover for screen readers
@@ -50,7 +50,7 @@ logo: ''
 drawer_image: ''
 # Describe that image
 drawer_image_alt: ''
-# Large image under the title on the project page (leave empty to show the logo/cover)
+# Large image under the title on the project page (leave empty for no image)
 top_image: ''
 # Describe that image
 top_image_alt: ''

@@ -35,7 +35,7 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 | Show in Recent work + position 1/2/3 | Puts the project in the three cards at the top of the homepage |
 | Hide this project | Keeps it off the site without deleting it |
 | SEO description | What Google and link previews show for this project |
-| Logo / cover | The small image in the More projects row, the Recent work card, and the top of the project page (logos: SVG, transparent) |
+| Logo / cover | The small image in the More projects row, and the Recent work card (not on the project page) (logos: SVG, transparent) |
 | Drop-down image | A separate photo or screenshot shown only when the row is opened in More projects (1600 × 1000) |
 | Case study | The body of the project page |
 
@@ -49,7 +49,7 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 
 Open a project and scroll to **Project page images**:
 
-- **Top image** — the large image under the title. Leave it empty to show the logo/cover there instead.
+- **Top image** — the large image under the title. Leave it empty and no image shows there.
 - **Gallery** — the images shown after the case-study text, in order. Click **Add an entry** for each image, upload it,
   write a description (alt text) and an optional caption, and choose a **Size**:
   **Full width**, **Half** (two in a row sit side by side) or **Third** (three in a row sit side by side).

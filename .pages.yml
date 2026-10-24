@@ -46,7 +46,7 @@ content:
       - { name: hidden, label: Hide this project, type: boolean, default: false }
       - { name: description, label: SEO description (120–160 characters), type: text }
       - name: cover
-        label: "Logo / cover — small image in the More projects row, the Recent work card, and the top of the project page (logos live in images/logos)"
+        label: "Logo / cover — small image in the More projects row and on the Recent work card (not shown on the project page; logos live in images/logos)"
         type: image
         options: { media: images, path: content/images/logos }
       - { name: cover_alt, label: Logo / cover description (alt text), type: string }
@@ -60,7 +60,7 @@ content:
         type: image
         options: { media: images, path: content/images/logos }
       - name: top_image
-        label: Top image (large, under the title; leave empty to show the logo/cover)
+        label: Top image (large, under the title on the project page; leave empty for no image)
         type: image
         options: { media: images, path: content/images/projects }
       - { name: top_image_alt, label: Top image description (alt text), type: string }
