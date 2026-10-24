@@ -6,7 +6,7 @@ summary: Define the page layout and framework for a new Analytic Application
   platform that visualizes Workday and non-Workday data and highlights the
   drivers of business performance.
 client: Workday Analytics
-role: Your Role
+role: Product designer, strategy through shipped iteration.
 categories:
   - Product Owner
   - UX/UI Designer
@@ -21,8 +21,6 @@ cover_alt: Placeholder cover image for project 12
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 12
 ---
-Product released in 2019 (prototype work dated November 2018).
-
 ### Valuable Outcomes Emerged
 
 - Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows and a mental model
@@ -35,11 +33,7 @@ Product released in 2019 (prototype work dated November 2018).
 ### Valuable Outcomes Emerged
 
 - Product shipped in 2019 on the framework; became a core offering and the foundation for new products and services
-- The process diagram "became a key artifact for our team"
-
-My Role  
-Product designer, strategy through shipped iteration.
-
-My Team  
-A product strategist, a product manager, research, and development teams.
+- The process diagram "became a key artifact for our team"  
+  
+I worked with a business analyst, a product manager, research, and development teams.
 
