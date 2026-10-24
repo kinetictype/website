@@ -1,12 +1,11 @@
 ---
-title: Workday Analytics
+title: Chart Accessibilty for Workday
 tagline: Conceptualized and built an AI platform that surfaced data
 client: Client Name
 role: Your Role
 categories:
   - Data Visualization
   - UX Design
-  - Product Owner
 years: 2018-2019
 section: work
 start_year: 2018
@@ -17,7 +16,7 @@ cover_alt: Workday logo
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 09
 ---
-Workday Chart Fill Patterns
+
 
 HEADLINE
 
@@ -38,11 +37,8 @@ TIMELINE
 Outcome
 
 - A pattern system built from basic elements, tuned for density in small spaces
-
 - Multiple prototypes using a CodePen tool the developer built
-
 - Recommendation to change the legend to a rectangle so patterns stay visible
-
 - Normal/reversed pattern modes; design-system colors interpolated (0.35 / 0.6) to meet contrast standards
 
 Positive Outcomes Emerged  
