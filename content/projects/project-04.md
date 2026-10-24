@@ -5,7 +5,7 @@ tagline: Created interactive graphic displays to help Analysts visualize stories
 client: Goldman Sachs
 role: Interactive Visualization Designer
 categories:
-  - Data Visualization
+  - Interactive Data Visualization
   - UX/UI Design
 years: 2019-2021
 section: work
