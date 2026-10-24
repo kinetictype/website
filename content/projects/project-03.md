@@ -16,6 +16,7 @@ hidden: false
 description: Increase Engagement, Dashboard Design, Design system
 cover: /images/logos/Cover_BeforeScreen.png
 cover_alt: JPMorgan Chase
+drawer_image: /images/projects/Cover_EndScreen03.png
 ---
 400% more merchant engagement from navigation built on the design system
 
