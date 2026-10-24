@@ -12,7 +12,7 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 1. Go to **https://app.pagescms.org** and click **Sign in with GitHub**.
 2. When asked, install the Pages CMS GitHub app and give it access to **kinetictype/website** (you can limit it to just this repository).
 3. Open **kinetictype/website** from your project list. The left sidebar shows:
-   **Projects · Journal · Homepage · About page · Work page · Journal page · Contact page · Imprint · Privacy · Site settings & SEO**.
+   **Projects · Journal · Homepage · Work page · Journal page · Contact page · Imprint · Privacy · Site settings & SEO**.
 
 **Editing text**
 
@@ -108,7 +108,7 @@ In page text, writing `{{email}}` or `{{name}}` inserts the value from Site sett
 ```
 content/                    ← everything the CMS edits
   site.md                   ← Site settings & SEO
-  pages/                    ← Homepage, About, Work, Contact, Imprint, Privacy
+  pages/                    ← Homepage, Work, Contact, Imprint, Privacy
   projects/                 ← one file per project (15 placeholders, 2000–today)
   images/                   ← portrait, link-preview image, favicon
     projects/               ← project covers and case-study images

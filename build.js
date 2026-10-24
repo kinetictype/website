@@ -219,7 +219,6 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
   const canonical = SITE.url + urlPath;
   const ogImage = SITE.url + (image || imageUrl(SITE.og_image));
   const nav = [
-    ["/about/", "About"],
     ["/work/", "Work"],
     ["/journal/", "Journal"],
     ["/contact/", "Contact"],
@@ -816,7 +815,7 @@ ${entries.length > 1 ? `<nav class="next-project" aria-label="Next journal entry
 
 /* About and Contact use the homepage's three-column layout: the text before the first
    "## heading" is column one, and each "## heading" starts the next column. */
-const COLUMN_PAGES = ["about", "contact"];
+const COLUMN_PAGES = ["contact"];
 function columns(md, name) {
   const parts = md.split(/\n(?=##\s)/).map((x) => x.trim()).filter(Boolean);
   const cols = parts.map((part) => `<div class="col">${markdown(part)}</div>`);
@@ -825,7 +824,7 @@ function columns(md, name) {
 }
 
 // Simple text pages
-for (const name of ["about", "contact", "imprint", "privacy"]) {
+for (const name of ["contact", "imprint", "privacy"]) {
   const { data, body } = page(name);
   const withEmail = body.replace(/\{\{email\}\}/g, SITE.email).replace(/\{\{name\}\}/g, SITE.name);
   writeFile(
@@ -834,7 +833,6 @@ for (const name of ["about", "contact", "imprint", "privacy"]) {
       title: data.title,
       description: data.description,
       urlPath: `/${name}/`,
-      schema: name === "about" ? personSchema : undefined,
       bodyClass: `text ${name}`,
       body: `
 <section class="page-head"><h1${data.title ? edText("title") : ""}>${inline(data.title || name)}</h1></section>
@@ -854,7 +852,7 @@ writeFile(
 );
 
 // SEO files
-const urls = ["/", "/about/", "/work/", "/journal/", "/contact/", ...projects.map(projectUrl), ...entries.map(entryUrl), "/imprint/", "/privacy/"];
+const urls = ["/", "/work/", "/journal/", "/contact/", ...projects.map(projectUrl), ...entries.map(entryUrl), "/imprint/", "/privacy/"];
 const today = new Date().toISOString().slice(0, 10);
 writeFile(
   "sitemap.xml",

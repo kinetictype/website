@@ -12,7 +12,6 @@ content/
   site.md             ← name, email, Google description, portrait, profile links
   pages/
     home.md           ← headline, greeting, the three intro columns
-    about.md          ← About page (each "## Heading" starts a column)
     contact.md        ← Contact page
     work.md           ← Work page intro
     journal.md        ← Journal page title and intro line
@@ -78,7 +77,7 @@ The `<!-- … -->` note under the second `---` is also ignored.
 | a blank line | a new paragraph |
 
 - **Homepage intro** (`home.md`): each paragraph becomes one of the three columns.
-- **About / Contact:** text before the first `## Heading` is column one; each `## Heading` starts the next column.
+- **Contact:** text before the first `## Heading` is column one; each `## Heading` starts the next column.
 - **Case-study images:** use the `gallery:` list in the project file. Each image has `image`, `alt`, `caption` and `size` (`full`, `half` or `third`).
 
 ## Uploading your files

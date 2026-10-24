@@ -185,19 +185,6 @@ content:
       - { name: passion_heading, label: Passion projects heading, type: string }
       - { name: body, label: Intro paragraph, type: rich-text, options: { format: markdown } }
 
-  - name: about
-    label: About page
-    type: file
-    path: content/pages/about.md
-    format: yaml-frontmatter
-    fields:
-      - { name: title, label: Page title, type: string }
-      - { name: description, label: SEO description, type: text }
-      - name: body
-        label: Text
-        type: rich-text
-        options: { format: markdown, media: images, path: content/images }
-
   - name: work
     label: Work page
     type: file
