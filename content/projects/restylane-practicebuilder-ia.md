@@ -5,6 +5,8 @@ summary: Create the site architecture for the Restylane PracticeBuilder, moving
   it from a CD into a microsite on RestylaneUSA.com.
 client: Williams-Labadie for Restylane / Medicis Aesthetics
 role: Information Architect
+categories:
+  - Information Architecture
 years: "2007"
 section: work
 start_year: 2007
