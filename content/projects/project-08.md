@@ -4,9 +4,7 @@ tagline: Information architecture for the TiVo iPhone app
 client: Tivo
 role: Information Architect
 categories:
-  - UX/UI
-  - Web
-  - Information Visualization
+  - Information Architect
 years: 2011-2012
 section: work
 start_year: 2011
