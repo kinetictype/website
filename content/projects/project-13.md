@@ -14,7 +14,7 @@ hidden: false
 description: Data Visualization for competitive Benchmarking
 cover: /images/logos/user-testing-icon-svgrepo-com.svg
 cover_alt: User Testing Logo
-drawer_image: /images/projects/01_analysis-of-current-report.png
+drawer_image: /images/projects/TeaserImage.png
 drawer_image_alt: Placeholder image for project 13
 top_image: /images/projects/05_score-breakdown-parallel-coordinates.png
 gallery:
