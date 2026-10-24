@@ -1,8 +1,10 @@
 ---
 title: AI + People Analytics
-tagline: Owned the transition of concept to design and development for an AI
+tagline: Conceptualized and built a platform that surfaced data for an AI
   powered product.
-summary: Turning a product strategy into a shipped analytics platform
+summary: Define the page layout and framework for a new Analytic Application
+  platform that visualizes Workday and non-Workday data and highlights the
+  drivers of business performance.
 client: Workday Analytics
 role: Your Role
 categories:
@@ -19,11 +21,6 @@ cover_alt: Placeholder cover image for project 12
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 12
 ---
-Goal  
-Define the page layout and framework for a new Analytic Application platform that visualizes Workday and non-Workday data and highlights the drivers of business performance.
-
-TIMELINE
-
 Product released in 2019 (prototype work dated November 2018).
 
 ### Valuable Outcomes Emerged
@@ -33,8 +30,7 @@ Product released in 2019 (prototype work dated November 2018).
 - Framework selection via a proof of concept; "discovery boards" chosen
 - Competitive research (Power BI, Tableau)
 - New bi-directional drag-handle components for moving and expanding visualizations
-- A diagram documenting the Analytics team's process  
-
+- A diagram documenting the Analytics team's process
 
 ### Valuable Outcomes Emerged
 
