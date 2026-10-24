@@ -1,8 +1,10 @@
 ---
 title: Chart Accessibilty for Workday
-tagline: Conceptualized and built an AI platform that surfaced data
-client: Client Name
-role: Your Role
+tagline: Making Workday's charts readable without relying on color.
+summary: |+
+  
+client: Workday
+role: UI Designer
 categories:
   - Data Visualization
   - UX Design
@@ -12,20 +14,11 @@ start_year: 2018
 featured: false
 hidden: false
 description: Placeholder description of project 09 for search engines and link previews.
+cover: /images/logos/workdayColor-1.svg
 cover_alt: Workday logo
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 09
 ---
-
-
-HEADLINE
-
-Making Workday's charts readable without relying on color
-
-COMPANY NAME
-
-Workday
-
 ## Goal
 
 Provide fill patterns for the charting tool that improve accessibility and work with the current design system. Existing patterns lacked logic, did not match system colors, and were hard to read at small sizes; the charting library did not offer guidance.
