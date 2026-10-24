@@ -8,7 +8,7 @@ client: Chicago Tribune Graphics
 role: Visual Journalist, Flash Animation
 categories:
   - Information Graphics
-  - Interactive Visualizations
+  - Interactive Data Visualization
 years: 2004-2007
 section: work
 start_year: 2004
