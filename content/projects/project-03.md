@@ -1,7 +1,7 @@
 ---
-title: Increased Engagement in Business Banking
+title: "Increased Engagement in Business Banking "
 tagline: Arranged a new structure to the platform that resulted in 400% engagement.
-client: "JPMorgan Chase, Consumer & Community Banking "
+client: JPMorgan Chase
 role: UX Design Lead
 categories:
   - "UX Design "
