@@ -1,6 +1,7 @@
 ---
 title: "Increased Engagement in Business Banking "
-tagline: Arranged a new structure to the platform that resulted in 400% engagement.
+tagline: Introduced a tab structure to the platform that resulted in an increase
+  of 400% engagement.
 summary: The goal was to enable merchant acquisition and retention through
   onboarding and to increase engagement with the Customer Insights portal, where
   merchants run offer campaigns to Chase customers and monitor results.
@@ -10,7 +11,7 @@ categories:
   - "UX Design "
   - Mobile
   - "Design System "
-years: 2020–2023
+years: 2021–2023
 section: work
 start_year: 2021
 featured: true
@@ -18,9 +19,9 @@ featured_order: 3
 hidden: false
 description: Increase Engagement, Dashboard Design, Design system
 cover_alt: JPMorgan Chase
+sections:
+  - {}
 ---
-
-
 2022; changes went live in October 2022, with impact measured over the following 6 months.
 
 Outcome
