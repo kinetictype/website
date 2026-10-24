@@ -10,9 +10,9 @@ client: JPMorgan Chase
 role: Lead Designer
 categories:
   - Service Design
-years: "2022"
+years: 2021-2023
 section: work
-start_year: 2024
+start_year: 2022
 featured: true
 featured_order: 1
 hidden: false
