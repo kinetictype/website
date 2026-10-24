@@ -16,8 +16,9 @@ cover: /images/logos/user-testing-icon-svgrepo-com.svg
 cover_alt: User Testing Logo
 drawer_image: /images/projects/01_analysis-of-current-report.png
 drawer_image_alt: Placeholder image for project 13
-logo: /images/logos/04_score-breakdown-heatmap.png
 top_image: /images/projects/05_score-breakdown-parallel-coordinates.png
+gallery:
+  - size: full
 ---
 The goal...Replace a static, linear PowerPoint/PDF report with an interactive tool for executives to compare their product's UX against themselves and competitors over time. Prior feedback: "It's not visual enough!"
 
