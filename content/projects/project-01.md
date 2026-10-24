@@ -16,7 +16,7 @@ start_year: 2024
 featured: true
 featured_order: 1
 hidden: false
-description: Service Design
+description: Service Design, Business Banking
 cover: /images/logos/ServicePoster.png
 cover_alt: Service Design JPMC
 ---
