@@ -17,6 +17,7 @@ featured: true
 featured_order: 3
 hidden: false
 description: Increase Engagement, Dashboard Design, Design system
+cover: /images/logos/Cover_EndScreen03.png
 cover_alt: JPMorgan Chase
 sections:
   - {}
