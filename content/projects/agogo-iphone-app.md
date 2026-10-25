@@ -4,6 +4,8 @@ tagline: Designing a streaming audio app for its beta launch.
 summary: Build an interface with features to explore for an upcoming beta
   release of a streaming audio app.
 client: Agogo Startup
+categories:
+  - UX Design
 years: "2012"
 section: work
 start_year: 2012
