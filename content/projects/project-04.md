@@ -21,8 +21,11 @@ description: Placeholder description of project 04 for search engines and link p
 cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
+sections:
+  - images:
+      - image: /images/projects/valuationsbyGrowth-1.svg
+        size: full
 ---
-
 
 ## Goal
 
