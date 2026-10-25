@@ -11,8 +11,9 @@ section: work
 start_year: 2011
 featured: false
 hidden: false
+cover: /images/logos/Intel_logo_2023.svg
 ---
-I designed   
+I designed  
 • 12-page Collections guide illustrating metadata, tagging, and modular "blades".  
 • MyIntel wireframes, including an onboarding wizard and filtering options
 
