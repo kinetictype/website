@@ -7,6 +7,7 @@ client: Agogo Startup
 categories:
   - UX Design
   - Information Architecture
+  - Mobile Application
 years: "2012"
 section: work
 start_year: 2012
