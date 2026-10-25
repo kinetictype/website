@@ -6,6 +6,7 @@ summary: Build an interface with features to explore for an upcoming beta
 client: Agogo Startup
 categories:
   - UX Design
+  - Information Architecture
 years: "2012"
 section: work
 start_year: 2012
