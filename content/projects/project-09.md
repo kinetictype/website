@@ -7,7 +7,8 @@ client: Workday
 role: UI Designer
 categories:
   - Data Visualization
-  - UX Design
+  - UI Design
+  - Design Systems
 years: 2018-2019
 section: work
 start_year: 2018
