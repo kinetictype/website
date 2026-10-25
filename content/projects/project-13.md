@@ -1,6 +1,11 @@
 ---
-title: UserTesting Competitive Benchmarking Tool
-tagline: A visual way for executives to compare their UX scores with competitors'
+title: UserTesting Competitive Benchmarking
+tagline: A visual way for executives to compare their UX scores with
+  competitors' products.
+summary: This project aimed to replace a static, linear report with an
+  interactive tool that lets executives compare their product's UX against their
+  own and competitors' over time. The project had been in discovery for 9 months
+  before I joined in 2017 to help bring it to life.
 client: UserTesting.com
 role: Your Role
 categories:
@@ -20,12 +25,6 @@ top_image: /images/projects/05_score-breakdown-parallel-coordinates.png
 gallery:
   - size: full
 ---
-The goal...Replace a static, linear PowerPoint/PDF report with an interactive tool for executives to compare their product's UX against themselves and competitors over time. Prior feedback: "It's not visual enough!"
-
-TIMELINE
-
-The project had been in discovery for 9 months before I joined in 2017 to bring the realize the project.
-
 OUTCOME: WHAT I DESIGNED
 
 - A happy path built with sample data
