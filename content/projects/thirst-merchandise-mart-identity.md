@@ -1,9 +1,9 @@
 ---
-title: Thirst Merchandise Mart Identity
+title: Merchandise Mart Identity
 tagline: A modular logo built from the letters of the name.
 summary: Develop a logo concept in which blocks represent the letters of the
   company name, conveying the company's modularity.
-client: 3st, studio of Rick Valicenti  for Merchandise Mart Properties, Inc.
+client: 3st, studio of Rick Valicenti for Merchandise Mart Properties, Inc.
 role: Brand Designer
 categories:
   - Brand Design
