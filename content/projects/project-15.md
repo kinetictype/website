@@ -13,7 +13,7 @@ start_year: 2010
 featured: false
 hidden: false
 description: Placeholder description of project 15 for search engines and link previews.
-cover: /images/projects/project-15/cover.svg
+cover: /images/logos/FlipVideo.svg
 cover_alt: Placeholder cover image for project 15
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 15
