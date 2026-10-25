@@ -1,8 +1,10 @@
 ---
 title: Flipshare for Android
 tagline: "Designing Flipshare for Android "
+summary: Develop a custom Android user interface; the earlier version was
+  outsourced and adapted from the iPhone app.
 client: "Flip Video "
-role: Your Role
+role: UX Designer
 categories:
   - UX Design
 years: "2010"
@@ -16,8 +18,6 @@ cover_alt: Placeholder cover image for project 15
 drawer_image: /images/placeholders/placeholder-drawer.svg
 drawer_image_alt: Placeholder image for project 15
 ---
-Develop a custom Android user interface; the earlier version was outsourced and adapted from the iPhone app.
-
 OUTCOME: WHAT I DESIGNED
 
 - Audit of the existing app and competing apps
@@ -28,10 +28,4 @@ WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
 The documentation fed discussions about creating a new sharing system. This project launched your UX career. After Cisco acquired the company, it later canceled Flip's projects.
 
-MY ROLE
-
-Interaction designer.
-
-MY TEAM
-
-Reported to Cisco's principal UX designer.
+Worked with the team's Principal UX designer.
