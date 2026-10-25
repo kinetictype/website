@@ -11,7 +11,7 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
-cover: /images/logos/emmi_logo.jpg
+cover: /images/logos/emmi.svg
 ---
 WHAT I DESIGNED  
 Production process diagram (recruit, review, produce, release), new labels and hierarchy for Emmi Manager, and Flash production for patient programs.
