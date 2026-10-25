@@ -13,6 +13,11 @@ start_year: 2008
 featured: false
 hidden: false
 cover: /images/logos/3rstLogo.svg
+sections:
+  - images:
+      - image: /images/projects/mmp-form-A-1.gif
+        size: full
+  - {}
 ---
 OUTCOME: WHAT I DESIGNED  
 I designed the logo concept, color palette, variations on the block theme, and an animated version of the mark.
