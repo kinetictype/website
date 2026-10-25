@@ -1,6 +1,6 @@
 ---
 title: Apiture Developer Portal
-tagline: Designed features for the Developer Portal and created a design system.
+tagline: Designed features for the Developer Portal and created a design system library.
 client: Apiture
 role: UX Designer
 categories:
