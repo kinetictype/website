@@ -11,9 +11,10 @@ section: work
 start_year: 2015
 featured: false
 hidden: false
+cover: /images/logos/epsilon-seeklogo.svg
 ---
 System diagram, review of the product owner's early documents, a UI requirements document, the administrator task flow, and wireframes.  
-  
+
 The Valuable Outcomes that Emerged  
 "Chaos among stakeholders and the engineering lead" was resolved by documenting the system model first, then designing wireframes.
 
