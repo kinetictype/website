@@ -272,6 +272,42 @@ ${body}
     <a href="/privacy/">Privacy</a>
   </nav>
 </footer>
+<div class="row-preview" aria-hidden="true"></div>
+<script>
+  // More projects: hovering a closed row shows its drop-down image beside the pointer (mouse/trackpad only)
+  (() => {
+    const rows = document.querySelectorAll(".row");
+    if (!rows.length || !matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    const box = document.querySelector(".row-preview");
+    const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let active = null, x = 0, y = 0, raf = 0;
+    const place = () => {
+      raf = 0;
+      const w = box.offsetWidth, h = box.offsetHeight, gap = 24;
+      let left = x + gap, top = y - h / 2;
+      if (left + w > innerWidth - 8) left = x - w - gap;          // flip to the left near the right edge
+      top = Math.max(8, Math.min(top, innerHeight - h - 8));
+      box.style.transform = "translate(" + left + "px," + top + "px)";
+    };
+    const show = (row) => {
+      const media = row.querySelector(".drawer-media > img, .drawer-media > svg");
+      if (!media || row.open) return hide();
+      if (active !== row) { box.innerHTML = ""; box.appendChild(media.cloneNode(true)); active = row; }
+      box.classList.toggle("is-logo", media.matches("svg[data-fit]"));
+      box.classList.add("on");
+    };
+    const hide = () => { box.classList.remove("on"); active = null; };
+    rows.forEach((row) => {
+      const s = row.querySelector("summary");
+      s.addEventListener("pointerenter", () => show(row));
+      s.addEventListener("pointerleave", hide);
+      s.addEventListener("click", hide);
+      s.addEventListener("pointermove", (e) => { x = e.clientX; y = e.clientY; if (!raf) raf = requestAnimationFrame(place); });
+    });
+    addEventListener("scroll", hide, { passive: true });
+    if (still) box.classList.add("still");
+  })();
+</script>
 <div class="sparkles" aria-hidden="true"></div>
 <script>
   // magic wand: little stars drift off the pointer as it moves (mouse/trackpad only; off for reduced motion)
