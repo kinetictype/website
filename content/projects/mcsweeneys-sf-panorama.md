@@ -5,7 +5,7 @@ section: work
 start_year: 2003
 featured: false
 hidden: false
-cover: /images/logos/McSweeney's_logo.svg
+cover: /images/logos/McSweenys-chair.svg
 ---
 HEADLINE
 
