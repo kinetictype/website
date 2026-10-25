@@ -6,6 +6,8 @@ summary: 'Design the UI for the Moment Engine: search for and view "moments,"
   flows).'
 client: Epsilon
 role: Product Designer
+categories:
+  - UX Design
 years: 2015-2016
 section: work
 start_year: 2015
