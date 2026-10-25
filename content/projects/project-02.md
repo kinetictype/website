@@ -5,7 +5,7 @@ client: Apiture
 role: UX Designer
 categories:
   - UX/UI Design
-  - Design System Creation
+  - Design System
 years: 2024-2025
 section: work
 start_year: 2024
