@@ -4,8 +4,7 @@ tagline: "Designing Flipshare for Android "
 client: "Flip Video "
 role: Your Role
 categories:
-  - Graphic Design
-  - Print
+  - UX Design
 years: "2010"
 section: work
 start_year: 2010
@@ -22,9 +21,7 @@ Develop a custom Android user interface; the earlier version was outsourced and 
 OUTCOME: WHAT I DESIGNED
 
 - Audit of the existing app and competing apps
-
 - Persona-based screens to download, share and view video
-
 - Use-case diagrams, based on interviews, of the "channel" sharing system
 
 WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
