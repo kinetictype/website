@@ -6,8 +6,8 @@ summary: Discover how Girl Effect could develop a digital currency to fund NGOs
 client: "Nike: Girl Effect"
 role: Your Role
 categories:
-  - Information Design
-  - Print
+  - Service Design
+  - Mobile App Design
 years: "2014"
 section: work
 start_year: 2014
