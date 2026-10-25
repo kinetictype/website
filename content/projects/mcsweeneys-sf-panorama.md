@@ -1,5 +1,7 @@
 ---
 title: McSweeneys SF Panorama
+categories:
+  - Illustration
 years: "2009"
 section: work
 start_year: 2003
