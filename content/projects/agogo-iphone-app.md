@@ -9,6 +9,7 @@ section: work
 start_year: 2012
 featured: false
 hidden: false
+cover: /images/logos/agogo.svg
 ---
 I designed user flows (iOS beta, success/error states) and wireframes for player, module, episodes, and related-bundles screens.
 
