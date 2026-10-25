@@ -2,6 +2,11 @@
 title: Interactive Visualization Designer
 tagline: Created interactive graphic displays to help Analysts visualize stories
   for the Goldman Sachs Research Portal.
+summary: "Goldman Sachs' Global Investment Research division wanted to add
+  interactivity to its research reports. They brought me in to design solutions
+  that would work with their content management system. I consulted with
+  Managing Directors across the department, then designed and developed several
+  interactive graphics throught the year. "
 client: Goldman Sachs
 role: Interactive Visualization Designer
 categories:
@@ -17,7 +22,7 @@ cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 ---
-##### The Global Investment Research division of Goldman Sachs wanted to add interactivity to its research reports.
+
 
 ## Goal
 
