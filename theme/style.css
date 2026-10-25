@@ -488,3 +488,10 @@ svg[data-fit="contain"] { background: none !important; border: 0 !important; bor
 .case-link a:hover { text-decoration: underline; }
 .case-body > .credits { padding-left: 1.2em; }
 .case-body > .credits li { margin: 4px 0; }
+
+/* Contact: Download CV link under the email */
+.cv-link { margin: 14px 0 0; font-size: 16px; }
+.cv-link a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.cv-link a:hover { text-decoration: underline; }
+.icon-arrow.down { transform: rotate(90deg); }
+a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }

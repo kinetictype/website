@@ -210,6 +210,7 @@ const assetUrl = (p, file) => imageUrl(file);
 // Arrow icon used in links (aria-hidden: the link text already says where it goes)
 const ARROW = `<svg class="icon-arrow" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const ARROW_BACK = ARROW.replace('class="icon-arrow"', 'class="icon-arrow flip"');
+const ARROW_DOWN = ARROW.replace('class="icon-arrow"', 'class="icon-arrow down"');
 
 /* ---------- shared layout ---------- */
 
@@ -394,6 +395,7 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 fs.copyFileSync(path.join(THEME, "style.css"), path.join(OUT, "style.css"));
 copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
+copyDir(path.join(CONTENT, "files"), path.join(OUT, "files")); // downloads such as the CV
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
 
 // Background color from site.md is injected into the stylesheet
@@ -816,10 +818,12 @@ ${entries.length > 1 ? `<nav class="next-project" aria-label="Next journal entry
 /* About and Contact use the homepage's three-column layout: the text before the first
    "## heading" is column one, and each "## heading" starts the next column. */
 const COLUMN_PAGES = ["contact"];
-function columns(md, name) {
+function columns(md, name, data = {}) {
   const parts = md.split(/\n(?=##\s)/).map((x) => x.trim()).filter(Boolean);
   const cols = parts.map((part) => `<div class="col">${markdown(part)}</div>`);
-  if (name === "contact") cols.push(`<div class="col"><p class="big-mail"><a href="mailto:${SITE.email}">${SITE.email}</a></p></div>`);
+  // Contact: email, then a "Download CV" link once a CV file is uploaded (Pages CMS: Contact page → CV file)
+  const cv = data.cv ? `<p class="cv-link"><a href="${escapeHtml(String(data.cv))}" download>${escapeHtml(String(data.cv_label || "Download CV"))} ${ARROW_DOWN}</a></p>` : "";
+  if (name === "contact") cols.push(`<div class="col"><p class="big-mail"><a href="mailto:${SITE.email}">${SITE.email}</a></p>${cv}</div>`);
   return `<div class="cols3">${cols.join("\n")}</div>`;
 }
 
@@ -836,7 +840,7 @@ for (const name of ["contact", "imprint", "privacy"]) {
       bodyClass: `text ${name}`,
       body: `
 <section class="page-head"><h1${data.title ? edText("title") : ""}>${inline(data.title || name)}</h1></section>
-${COLUMN_PAGES.includes(name) ? columns(withEmail, name) : `<div class="prose">${markdown(withEmail)}</div>`}`,
+${COLUMN_PAGES.includes(name) ? columns(withEmail, name, data) : `<div class="prose">${markdown(withEmail)}</div>`}`,
     })
   );
 }

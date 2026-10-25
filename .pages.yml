@@ -8,6 +8,11 @@ media:
     input: content/images
     output: /images
     categories: [image]
+  - name: files
+    label: Files (CV and other downloads)
+    input: content/files
+    output: /files
+    categories: [document]
 
 content:
   # ------------------------------------------------------------
@@ -215,6 +220,11 @@ content:
       - { name: title, label: Page title, type: string }
       - { name: description, label: SEO description, type: text }
       - { name: body, label: Text, type: rich-text, options: { format: markdown } }
+      - name: cv
+        label: CV file (PDF) — a "Download CV" link appears under your email once a file is chosen
+        type: file
+        options: { media: files, extensions: [pdf] }
+      - { name: cv_label, label: "Link text (default: Download CV)", type: string }
 
   - name: imprint
     label: Imprint (Impressum)

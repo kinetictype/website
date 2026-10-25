@@ -90,6 +90,12 @@ an image, the date (shown as DD.MM.YYYY), and the title, with a **Filter by** ro
 - **Intro line and page title:** edit **Journal page**.
 - The 12 "Journal Entry Title" files are placeholders: edit them, or delete the ones you don't need.
 
+### Download CV link
+
+Open **Contact page** in Pages CMS, click **CV file (PDF)**, upload your CV (it's stored in `content/files/`), and press **Save**.
+A "Download CV" link appears under your email on the Contact page. Change the wording in **Link text**.
+To update the CV later, upload the new PDF and choose it in the same box.
+
 **Site settings & SEO**
 
 Your name, domain (`kierawestphal.com`), email (`k@kierawestphal.com`), the Google description,
