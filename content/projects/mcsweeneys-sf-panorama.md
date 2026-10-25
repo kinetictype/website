@@ -8,6 +8,7 @@ start_year: 2003
 featured: false
 hidden: false
 cover: /images/logos/McSweenys-chair.svg
+drawer_image: /images/projects/01_panorama-spread.png
 ---
 HEADLINE
 
@@ -21,22 +22,8 @@ GOAL
 
 Illustrate Richard Parks's two-page article about the Lembi Group's San Francisco real-estate holdings.
 
-TIMELINE
+I illustrated over 100 of the Lembi properties from photographs.
 
-November 2009.
+A positive outcome was a mention in the Society of News Design, [snd.org, and](http://snd.org) McSweeney's: "One of the Panorama designs we're proudest of." 
 
-OUTCOME: WHAT I DESIGNED
-
-Drawings of the Lembi properties from photographs (the 2011 portfolio says over 200; the résumé and McSweeney's quote say over 100).
-
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
-
-McSweeney's: "One of the Panorama designs we're proudest of." Also cited on [snd.org](http://snd.org).
-
-MY ROLE
-
-Illustrator.
-
-MY TEAM
-
-The page designer, who placed and colored the drawings.
+I worked with the page designer and the editor of the paper for this special edition.
