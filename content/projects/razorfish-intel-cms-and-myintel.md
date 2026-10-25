@@ -1,11 +1,14 @@
 ---
-title: Razorfish Intel CMS and MyIntel
+title: MyIntel CMS
 tagline: Explaining Intel's new CMS and designing a personalized newsfeed
 summary: Explain Intel's new content management system (CQ) to content
   publishers, and design MyIntel.com, a customized newsfeed filtered to user
   needs.
 client: Razorfish for Intel
 role: UX Designer
+categories:
+  - Information Design
+  - UX Design
 years: "2011 "
 section: work
 start_year: 2011
