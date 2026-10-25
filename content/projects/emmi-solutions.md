@@ -6,6 +6,10 @@ summary: Document the production process for Emmi programs before the system's
   Manager.
 client: Emmi Solutions
 role: Interface designer / information graphics
+categories:
+  - UX Design
+  - Information Design
+  - Marketing Materials
 years: 2007 – 2008.
 section: work
 start_year: 2007
