@@ -5,6 +5,8 @@ summary: The goal was to design an addition to the website that showcases
   attendees' work, their location, the type of work, and the year.
 client: Caldera Arts
 role: UX Designer
+categories:
+  - UX/UI Design
 years: "2014"
 section: work
 start_year: 0
