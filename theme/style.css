@@ -27,13 +27,13 @@ END */
 
 :root {
   --bg: #F2F5F7;
-  --ink: #0F181A;   /* headings and the name (Concorde) */
-  --text: #3E5463;  /* all sans-serif text */
-  --muted: #3E5463; /* secondary sans-serif text (dates, labels, nav) */
+  --ink: #1C2B36;   /* headings and the name (Concorde) */
+  --text: #1C2B36;  /* all sans-serif text */
+  --muted: #1C2B36; /* secondary sans-serif text (dates, labels, nav) */
   --rule: #d4dce2;
   --card: #ffffff;
   --accent: #961574;
-  --h1: #2A3F4D; /* color of H1 headings */
+  --h1: #1C2B36; /* color of H1 headings */
   --h1-size: 42px; /* H1 size on desktop; smaller screens below */
   --subhead: #961574; /* color of the line under the headline */
   --greeting: #961574; /* color of the greeting shown when hovering the portrait */
