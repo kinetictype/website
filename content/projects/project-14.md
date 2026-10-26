@@ -2,7 +2,7 @@
 title: Ancestry Acquisition Flow
 tagline: Showing new visitors how much Ancestry knows about their family.
 client: " Ancestry.com"
-role: Your Role
+role: UX Designer
 goals: "Placeholder: the customer and business goals."
 outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
