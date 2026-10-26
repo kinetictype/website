@@ -631,6 +631,19 @@ function pageCredits(p) {
   return `\n<h2>${escapeHtml(String(p.credits_heading || "Team"))}</h2>\n<ul class="credits">${list.map(item).join("")}</ul>`;
 }
 
+
+/* Prototype embed (Figma), shown after the intro text. The CMS box accepts the Figma embed link or the whole
+   <iframe> code; only https links from figma.com are used. Size: half (half the page width) or full. */
+function pagePrototype(p) {
+  let src = String(p.prototype_url || "").trim();
+  const m = src.match(/src=["']([^"']+)["']/); if (m) src = m[1];
+  src = src.replace(/&amp;/g, "&");
+  if (!/^https:\/\/([a-z0-9-]+\.)?figma\.com\//i.test(src)) return "";
+  const size = String(p.prototype_size || "half").toLowerCase() === "full" ? "full" : "half";
+  const title = String(p.prototype_title || `${p.title} prototype`);
+  return `\n<figure class="embed embed-${size}"><div class="embed-frame"><iframe src="${escapeHtml(src)}" title="${escapeHtml(title)}" loading="lazy" allowfullscreen></iframe></div>${p.prototype_caption ? `<figcaption>${escapeHtml(String(p.prototype_caption))}</figcaption>` : ""}</figure>`;
+}
+
 /* ---------- case-study page template ---------- */
 function caseStudy(p) {
   // next / previous stay within the same section (work or passion), newest to oldest, looping at the end
@@ -655,8 +668,8 @@ function caseStudy(p) {
   </header>
   ${pageHero(p)}${listImages(p)}
   ${EDIT
-    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
-    : `<div class="case-body">${markdown(p.body)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
+    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pagePrototype(p)}${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
+    : `<div class="case-body">${markdown(p.body)}${pagePrototype(p)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
 </article>
 
 <nav class="next-project" aria-label="Next project">

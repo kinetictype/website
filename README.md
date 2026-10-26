@@ -56,6 +56,13 @@ Each project page follows the same order (modeled on smeidu.com/clara):
    Click **Add an entry** for each section and drag to reorder.
 5. **Credits**: people you worked with, shown last as "Name: role" under a heading such as Team.
 
+### Prototype embed
+
+To show a clickable Figma prototype on a project page: in Figma, click **Share → Get embed code** and copy it.
+In Pages CMS, open the project and paste it into **Prototype** (the whole `<iframe …>` code or just the link both work).
+Choose **Half the page width** or **Full width**, and press **Save**. It appears after the intro text.
+On tablets and phones it always runs full width. Only figma.com links are shown.
+
 ### Project page images
 
 Open a project and scroll to **Project page images**:

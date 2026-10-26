@@ -508,3 +508,11 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .row-preview > img, .row-preview > svg { display: block; width: 100%; height: 100%; object-fit: cover; }
 .row-preview.is-logo { padding: 28px; }
 @media (hover: none), (pointer: coarse) { .row-preview { display: none; } }
+
+/* Prototype embed on project pages: half the page width on desktop, full width on tablets and phones */
+.case-body > .embed { max-width: none; margin: 40px var(--gutter); }
+.embed-half { width: calc(50% - var(--gutter)); }
+.embed-frame { aspect-ratio: 16 / 9; border: 1px solid rgba(0, 0, 0, .1); border-radius: 6px; overflow: hidden; background: var(--card); }
+.embed-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.embed figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+@media (max-width: 900px) { .embed-half { width: auto; } }

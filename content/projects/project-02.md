@@ -65,5 +65,9 @@ credits:
     role: Product Manager
   - name: Placeholder Name
     role: Engineer
+prototype_url: "https://embed.figma.com/proto/Vy3INrOf4urG43ZIGVvsiu/DevPortal--Test-Customers?node-id=7364-60155&page-id=7364%3A59200&starting-point-node-id=7364%3A60155&embed-host=share"
+prototype_size: half
+prototype_title: Apiture Developer Portal clickable prototype
+prototype_caption: ""
 ---
 Focus on design system addition to the project as I highlight the work.

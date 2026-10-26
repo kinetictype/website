@@ -98,6 +98,17 @@ content:
         label: Intro text (opening paragraphs, shown before the sections)
         type: rich-text
         options: { format: markdown, media: images, path: content/images/projects }
+      - { name: prototype_url, label: "Prototype — paste the Figma embed code or link (shown after the intro text)", type: text }
+      - name: prototype_size
+        label: Prototype size
+        type: select
+        default: half
+        options:
+          values:
+            - { name: half, label: Half the page width }
+            - { name: full, label: Full width }
+      - { name: prototype_title, label: Prototype name for screen readers (optional), type: string }
+      - { name: prototype_caption, label: Caption under the prototype (optional), type: string }
       - name: sections
         label: "Sections — each one: a heading, text, then its images (like smeidu.com/clara)"
         type: object
