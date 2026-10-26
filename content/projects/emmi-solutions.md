@@ -10,7 +10,7 @@ categories:
   - UX Design
   - Information Design
   - Marketing Materials
-years: 2007 – 2008.
+years: 2007 – 2008
 section: work
 start_year: 2007
 featured: false
