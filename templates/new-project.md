@@ -66,9 +66,15 @@ gallery:
   size: full
 # ---- Sections and credits (like smeidu.com/clara) ----
 # website: optional link to the live product, shown under the title
+timeline: ""
+goals: ""
+outcome: ""
+responsibilities: ""
+team: ""
 website: ""
 website_label: ""
-# Each section: heading, text (Markdown: paragraphs, "- " bullets), then its images (size: full / half / third)
+# Each section: heading, text, then its images. size: full / half-text (image left, text beside) / text-half (text left) / half / third
+# Guide order: Context, Your goal, Design principles & frameworks, Challenges, Showing your designs, Results & outcomes, Learnings
 sections:
   - heading: Product vision
     text: "Two short paragraphs: the problem and what the product set out to do."

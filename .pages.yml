@@ -35,6 +35,11 @@ content:
       - { name: summary, label: Paragraph shown when the project is opened in More projects, type: text }
       - { name: client, label: Client, type: string }
       - { name: role, label: Role, type: string }
+      - { name: timeline, label: "At a glance — Timeline: how long the project ran (e.g. 6 months, 2022–2024); empty = uses Years", type: string }
+      - { name: goals, label: "At a glance — Goal(s): customer and business goals", type: text }
+      - { name: outcome, label: "At a glance — Outcome: what you eventually designed", type: text }
+      - { name: responsibilities, label: "At a glance — Responsibilities: what you worked on (visual, interaction, design system, research, concept, usability testing, content design)", type: text }
+      - { name: team, label: "At a glance — Team: the roles you worked with", type: text }
       - { name: website, label: "Website link (optional, e.g. https://www.example.com) — shown under the title", type: string }
       - { name: website_label, label: Website link text (optional; leave empty to show the address), type: string }
       - { name: categories, label: Category tags (shown on cards and in the project list), type: string, list: true }
@@ -134,14 +139,17 @@ content:
               - { name: alt, label: Description for screen readers (alt text), type: string }
               - { name: caption, label: Caption under the image (optional), type: string }
               - name: size
-                label: Size
+                label: Layout
                 type: select
                 default: full
                 options:
                   values:
                     - { name: full, label: Full width }
-                    - { name: half, label: Half (two side by side) }
-                    - { name: third, label: Third (three side by side) }
+                    - { name: half-text, label: "Half, image left with text beside it" }
+                    - { name: text-half, label: "Half, text left with image beside it" }
+                    - { name: half, label: Half (two images side by side) }
+                    - { name: third, label: Third (three images side by side) }
+              - { name: text, label: "Text beside the image (for the Half with text layouts)", type: rich-text, options: { format: markdown } }
       - { name: credits_heading, label: "Credits heading (e.g. Team, Crew; default: Team)", type: string }
       - name: credits
         label: "Credits — people you worked with, shown last as Name: role"

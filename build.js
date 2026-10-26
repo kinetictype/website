@@ -606,9 +606,17 @@ function mediaRows(items) {
   const size = (g) => per[String(g.size || "full").toLowerCase()] || 1;
   const out = [];
   for (let i = 0; i < items.length; ) {
+    // half the width with its own description beside it: "half-text" = image left, "text-half" = image right
+    const kind = String(items[i].size || "").toLowerCase();
+    if (kind === "half-text" || kind === "text-half") {
+      const g = items[i++];
+      out.push(`<div class="media-split${kind === "text-half" ? " reverse" : ""}">${fig(g)}<div class="split-text">${markdown(String(g.text || ""))}</div></div>`);
+      continue;
+    }
     const n = size(items[i]);
     const run = [];
-    while (i < items.length && run.length < n && size(items[i]) === n) run.push(items[i++]);
+    const isSplit = (g) => /^(half-text|text-half)$/i.test(String(g.size || ""));
+    while (i < items.length && run.length < n && size(items[i]) === n && !isSplit(items[i])) run.push(items[i++]);
     out.push(`<div class="media media-${run.length}">${run.map(fig).join("")}</div>`);
   }
   return out.join("\n");
@@ -631,6 +639,25 @@ function pageCredits(p) {
   return `\n<h2>${escapeHtml(String(p.credits_heading || "Team"))}</h2>\n<ul class="credits">${list.map(item).join("")}</ul>`;
 }
 
+
+
+/* "At a glance": the high-level overview at the start of every case study.
+   Company = Client, Timeline (falls back to Years), Role; then Goal(s), Outcome, Responsibilities and Team. */
+function pageOverview(p) {
+  const rows = [
+    ["Company", p.client],
+    ["Timeline", p.timeline || p.years],
+    ["Role", p.role],
+    ["Goal(s)", p.goals],
+    ["Outcome", p.outcome],
+    ["Responsibilities", p.responsibilities],
+    ["Team", p.team],
+  ].filter(([, v]) => v && String(v).trim());
+  if (!rows.length) return "";
+  return `\n<section class="glance" aria-label="At a glance"><h2 class="glance-title">At a glance</h2><dl>${rows
+    .map(([k, v]) => `<div class="glance-item${/^(Goal|Outcome|Resp|Team)/.test(k) ? " wide" : ""}"><dt>${k}</dt><dd>${markdown(String(v))}</dd></div>`)
+    .join("")}</dl></section>`;
+}
 
 /* Prototype embed (Figma), shown after the intro text. The CMS box accepts the Figma embed link or the whole
    <iframe> code; only https links from figma.com are used. Size: half (half the page width) or full. */
@@ -668,8 +695,8 @@ function caseStudy(p) {
   </header>
   ${pageHero(p)}${listImages(p)}
   ${EDIT
-    ? `<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pagePrototype(p)}${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
-    : `<div class="case-body">${markdown(p.body)}${pagePrototype(p)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
+    ? `${pageOverview(p)}<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pagePrototype(p)}${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
+    : `${pageOverview(p)}<div class="case-body">${markdown(p.body)}${pagePrototype(p)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
 </article>
 
 <nav class="next-project" aria-label="Next project">
@@ -691,7 +718,7 @@ function caseStudy(p) {
 <script>
   // click any image in the case study to see it large; arrow keys move between images, Esc closes
   (() => {
-    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg")];
+    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg, .case .media-split img, .case .media-split svg")];
     const lb = document.querySelector(".lightbox"); if (!lb || !imgs.length) return;
     const stage = lb.querySelector(".lb-stage"), cap = lb.querySelector("figcaption");
     let at = 0, opener = null;

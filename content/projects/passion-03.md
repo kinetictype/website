@@ -1,7 +1,6 @@
 ---
 title: Mystic Mobiles
-tagline: I have created hanging sculptures and use a laser cutting machine to
-  utilize cutting paper with precision.
+tagline: I have created hanging sculptures and use a laser cutting machine to utilize cutting paper with precision.
 client: Personal project
 role: Your Role
 years: 2010-2015
@@ -9,62 +8,74 @@ section: passion
 start_year: 2010
 featured: true
 hidden: true
-description: Placeholder description of passion project 03 for search engines
-  and link previews.
+description: Placeholder description of passion project 03 for search engines and link previews.
 cover: /images/projects/passion-03/cover.svg
 cover_alt: Placeholder cover image for passion project 03
-
 top_image: /images/placeholders/placeholder-wide.svg
-top_image_alt: "Placeholder: hero image of the product"
-
-# ---- Sections and credits (Pages CMS: Sections, Credits) ----
+top_image_alt: 'Placeholder: hero image of the product'
 sections:
-- heading: Product vision
-  text: 'Placeholder: the problem, who it was for, and what the product set out to do.
+- heading: Context
+  text: |-
+    Placeholder: What was the mission or goal of the project? Which customer or business problems were you and your team solving?
 
+    - Data or stats that set the context
+    - Assumptions you set out to validate or disprove
+    - The hypothesis that guided your design
+  images:
+  - image: /images/placeholders/placeholder-detail-1.svg
+    alt: 'Placeholder: image that sets the context'
+    caption: ''
+    size: half-text
+    text: 'Placeholder: describe what this image shows and why it matters to the problem.'
+- heading: Your goal
+  text: |-
+    Placeholder: What was your goal as the designer, and what did you want the design to achieve?
 
-    Placeholder: a second short paragraph on the opportunity.'
+    - "How might we…" statements
+    - Metrics the team aimed for (e.g. ARR, convert X% of customers)
+    - Research that shaped the work: competitive analysis, customer satisfaction scores (surveys, NPS), market research
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: research or workshop artifact'
+    caption: ''
+    size: text-half
+    text: 'Placeholder: describe the research, workshop or competitive analysis shown here.'
+- heading: Design principles & frameworks
+  text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
+  images: []
+- heading: Challenges
+  text: 'Placeholder: Which challenges are worth highlighting (team or org, technical, design system, capacity or scope), and how did you get through them?'
+  images: []
+- heading: Showing your designs
+  text: 'Placeholder: Show one or two iterations or alternatives you considered (flats, prototypes, videos or GIFs) and the screens that explain your decisions. Mention any AI tools you used, such as Figma Make, Lovable, Cursor or Replit.'
   images:
   - image: /images/placeholders/placeholder-wide.svg
-    alt: 'Placeholder: overview image'
+    alt: 'Placeholder: final design'
     caption: ''
     size: full
-- heading: Strategy & process
-  text: 'Placeholder lead-in sentence about your role.
+  - image: /images/placeholders/placeholder-detail-1.svg
+    alt: 'Placeholder: alternative considered'
+    caption: ''
+    size: half
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: chosen direction'
+    caption: ''
+    size: half
+- heading: Results & outcomes
+  text: |-
+    Placeholder: What data or metrics resulted from the design? If none, what positives came out of it?
 
-
-    - Placeholder responsibility or step one
-
-    - Placeholder responsibility or step two
-
-    - Placeholder responsibility or step three'
+    - Business value the design provided
+    - Customer problems the solution solved
+    - Next steps, if there are more iterations to go
   images:
   - image: /images/placeholders/placeholder-wide-2.svg
-    alt: 'Placeholder: process image'
+    alt: 'Placeholder: result or shipped product'
     caption: ''
     size: full
-- heading: Design system
-  text: 'Placeholder: the components and patterns, and how they scaled.'
-  images:
-  - image: /images/placeholders/placeholder-detail-1.svg
-    alt: 'Placeholder: design system detail one'
-    caption: ''
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: 'Placeholder: design system detail two'
-    caption: ''
-    size: half
-- heading: UX
-  text: 'Placeholder: the key screens and the decisions behind them.'
-  images:
-  - image: /images/placeholders/placeholder-detail-1.svg
-    alt: 'Placeholder: screen one'
-    caption: ''
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: 'Placeholder: screen two'
-    caption: ''
-    size: half
+- heading: Learnings
+  text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
+  images: []
 credits_heading: Team
 credits:
 - name: Placeholder Name
@@ -73,5 +84,11 @@ credits:
 - name: Placeholder Name
   role: Engineer
   link: ''
+goals: 'Placeholder: the customer and business goals.'
+outcome: 'Placeholder: what you eventually designed.'
+responsibilities: 'Placeholder: what you worked on, e.g. visual design, interaction design, design system, user research, concept design, usability testing, content design.'
+team: 'Placeholder: the roles you worked with, e.g. product manager, engineers, researcher.'
+timeline: ''
+guide_layout: true
 ---
 Placeholder introduction. Two or three sentences that set up the project: the product, who it served, and the problem worth solving.
