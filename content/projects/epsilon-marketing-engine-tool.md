@@ -14,6 +14,7 @@ start_year: 2015
 featured: false
 hidden: false
 cover: /images/logos/epsilon-seeklogo.svg
+drawer_image: /images/projects/04_search-moments.png
 ---
 System diagram, review of the product owner's early documents, a UI requirements document, the administrator task flow, and wireframes.  
 
