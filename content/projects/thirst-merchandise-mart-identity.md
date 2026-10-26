@@ -17,7 +17,9 @@ drawer_image: /images/projects/05_combination-of-options.png
 sections:
   - images:
       - image: /images/projects/mmp-form-A-1.gif
-        size: full
+        size: half
+      - image: /images/projects/mmp-form-A-2.gif
+        size: half
   - {}
 ---
 OUTCOME: WHAT I DESIGNED  
