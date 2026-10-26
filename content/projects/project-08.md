@@ -13,7 +13,7 @@ hidden: false
 description: Placeholder description of project 08 for search engines and link previews.
 cover: /images/logos/tivo.svg
 cover_alt: TiVo logo
-drawer_image: /images/placeholders/placeholder-drawer.svg
+drawer_image: /images/projects/01_application-map-page.png
 drawer_image_alt: Placeholder image for project 08
 ---
 GOAL  
