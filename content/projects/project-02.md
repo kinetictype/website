@@ -15,18 +15,24 @@ hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
 cover: /images/logos/Dev Portal-API_tryit_sm.png
 cover_alt: Placeholder cover image for project 02
-top_image: /images/placeholders/placeholder-wide.svg
 top_image_alt: "Placeholder: hero image of the product"
+prototype_url: https://embed.figma.com/proto/Vy3INrOf4urG43ZIGVvsiu/DevPortal--Test-Customers?node-id=7364-60155&page-id=7364%3A59200&starting-point-node-id=7364%3A60155&embed-host=share
+prototype_size: half
+prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Product vision
     text: >-
-      Placeholder: the problem, who it was for, and what the product set out to
-      do.
+      The Developer Portal was neglected within the Apiture ecosystem, and I
+      joined the team to clarify developers' needs. Apiture's design team was
+      small, and the Developer Portal's design system used a different tech
+      stack than the consumer-facing platform. I picked up files from the
+      designer who worked on the Developer Portal and made sense of several of
+      the elements that I needed to design the workflow.
 
 
       Placeholder: a second short paragraph on the opportunity.
     images:
-      - image: /images/placeholders/placeholder-wide.svg
+      - image: /images/projects/DevPortalWebsite_before01.png
         alt: "Placeholder: overview image"
         size: full
   - heading: Strategy & process
@@ -65,9 +71,5 @@ credits:
     role: Product Manager
   - name: Placeholder Name
     role: Engineer
-prototype_url: "https://embed.figma.com/proto/Vy3INrOf4urG43ZIGVvsiu/DevPortal--Test-Customers?node-id=7364-60155&page-id=7364%3A59200&starting-point-node-id=7364%3A60155&embed-host=share"
-prototype_size: half
-prototype_title: Apiture Developer Portal clickable prototype
-prototype_caption: ""
 ---
 Focus on design system addition to the project as I highlight the work.
