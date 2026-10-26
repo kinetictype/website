@@ -13,6 +13,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/darwill.svg
+drawer_image: /images/projects/06_process-diagram.png
 ---
 OUTCOME: WHAT I DESIGNED  
 A six-step process visualization to display how the product worked for their marketing materials.
