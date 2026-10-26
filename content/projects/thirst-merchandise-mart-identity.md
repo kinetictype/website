@@ -1,5 +1,5 @@
 ---
-title: Merchandise Mart Identity
+title: 3rst for Merchandise Mart Identity
 tagline: A modular logo built from the letters of the name.
 summary: Develop a logo concept in which blocks represent the letters of the
   company name, conveying the company's modularity.
@@ -13,6 +13,7 @@ start_year: 2008
 featured: false
 hidden: false
 cover: /images/logos/3rstLogo.svg
+drawer_image: /images/projects/05_combination-of-options.png
 sections:
   - images:
       - image: /images/projects/mmp-form-A-1.gif
