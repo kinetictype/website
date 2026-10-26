@@ -58,6 +58,12 @@ Every project page follows the same order (the case-study guide):
    Replace each "Placeholder:" prompt with your own words; delete a section you don't need.
 5. **Credits**: people you worked with, as Name: role.
 
+### Interactive SVG graphics
+
+Upload interactive SVGs (with replay buttons, hovers or animations) like any other image and pick them in a section's
+Images. The site detects them automatically and embeds them so they run in place, exactly as they would opened on their
+own. Ordinary SVGs and logos are unaffected.
+
 ### Prototype embed
 
 To show a clickable Figma prototype on a project page: in Figma, click **Share → Get embed code** and copy it.

@@ -537,3 +537,8 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .split-text { font-size: 17px; }
 .split-text > :first-child { margin-top: 0; }
 @media (max-width: 900px) { .case-body > .media-split { grid-template-columns: 1fr; gap: 16px; } .media-split.reverse figure { order: 0; } }
+
+/* Interactive SVG graphics run in place (replay buttons, hovers, animations) */
+object.svg-live { display: block; width: 100%; height: auto; border: 0; background: var(--card); border-radius: 6px; }
+.media figure > object.svg-live, .media-split figure > object.svg-live { border: 1px solid var(--rule); }
+.row-thumb > object.svg-live, .drawer-media > object.svg-live, .card-media > object.svg-live { position: absolute; inset: 0; height: 100%; pointer-events: none; }

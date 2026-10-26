@@ -70,12 +70,34 @@ function edImage(obj, srcKey, altKey, prefix = "") {
 }
 
 const withBase = (html) =>
-  BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
+  BASE ? html.replace(/(href|src|data)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
 
 // Placeholder and other small SVG images are written straight into the page instead of <img>,
 // so they always show (no separate file to load). Large SVGs (the portrait) stay as <img>.
 const svgCache = {};
+/* Interactive SVGs (scripts, click handlers, animations) can't run inside <img>. They are embedded with <object>
+   instead, so they behave exactly as they would opened on their own: replay buttons, hovers and animations all work. */
+const liveSvgCache = {};
+function isInteractiveSvg(src) {
+  const file = path.join(CONTENT, src);
+  if (!exists(file)) return false;
+  if (!(file in liveSvgCache)) liveSvgCache[file] = /<script\b|\bon(click|mouse\w+|load|pointer\w+|key\w+)\s*=|@keyframes|<animate\w*\b|<set\b/i.test(read(file));
+  return liveSvgCache[file];
+}
+function liveSvg(html) {
+  return html.replace(/<img\b([^>]*?)\bsrc="(\/images\/[^"]+\.svg)"([^>]*)>/g, (tag, before, src, after) => {
+    if (!isInteractiveSvg(src)) return tag;
+    const attrs = before + " " + after;
+    const alt = (attrs.match(/\balt="([^"]*)"/) || [])[1] || "";
+    const vb = (read(path.join(CONTENT, src)).match(/viewBox="([^"]+)"/) || [])[1];
+    const [, , w, h] = vb ? vb.trim().split(/[\s,]+/).map(Number) : [];
+    const ar = w && h ? ` style="aspect-ratio:${(w / h).toFixed(4)}"` : "";
+    return `<object class="svg-live" type="image/svg+xml" data="${src}"${ar} aria-label="${alt}"><img src="${src}" alt="${alt}"></object>`;
+  });
+}
+
 function inlineSvgImages(html) {
+  html = liveSvg(html);
   if (EDIT) return html; // the Visual Editor needs real <img> tags to swap images
   let copy = 0;
   return html.replace(/<img\b([^>]*?)\bsrc="(\/images\/[^"]+\.svg)"([^>]*)>/g, (tag, before, src, after) => {
