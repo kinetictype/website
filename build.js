@@ -619,7 +619,7 @@ function listImages(p) {
 }
 
 
-/* Sections (like smeidu.com/clara): each one is a heading, text (Markdown: paragraphs, bullet lists, links)
+/* Sections each one is a heading, text (Markdown: paragraphs, bullet lists, links)
    and that section's images. Images use the same sizes as the gallery: full, half (two side by side), third. */
 function mediaRows(items) {
   items = (items || []).filter((g) => g && g.image);

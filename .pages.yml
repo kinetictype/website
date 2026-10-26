@@ -115,7 +115,7 @@ content:
       - { name: prototype_title, label: Prototype name for screen readers (optional), type: string }
       - { name: prototype_caption, label: Caption under the prototype (optional), type: string }
       - name: sections
-        label: "Sections — each one: a heading, text, then its images (like smeidu.com/clara)"
+        label: "Sections — each one: a heading, text, then its images"
         type: object
         list:
           collapsible:

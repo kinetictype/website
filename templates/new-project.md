@@ -64,7 +64,7 @@ gallery:
   alt: ''
   caption: ''
   size: full
-# ---- Sections and credits (like smeidu.com/clara) ----
+# ---- Sections and credits ----
 # website: optional link to the live product, shown under the title
 timeline: ""
 goals: ""
