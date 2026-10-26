@@ -1,5 +1,5 @@
 ---
-title: Emmi Solutions
+title: " Software Documentation Process"
 tagline: Mapping how a healthcare software program gets made.
 summary: Document the production process for Emmi programs before the system's
   architect left, and restructure the "Schedule an Emmi" section of Emmi
