@@ -32,9 +32,9 @@ sections:
     text: 'Placeholder: describe what this image shows and why it matters to the problem.'
 - heading: Goal
   text: |-
-    ##### I turned complex data into engaging, interactive stories on the Research Portal.
+    I turned complex data into engaging, interactive stories on the Research Portal.
 
-    ##### I consulted with the firm's Managing Directors to design and develop Scalable Vector Graphics. We transformed a series of SVGs that transformed complex data into engaging, interactive stories on the Research Portal.
+    I consulted with the firm's Managing Directors to design and develop Scalable Vector Graphics. We transformed a series of SVGs that transformed complex data into engaging, interactive stories on the Research Portal.
 - heading: Design principles & frameworks
   text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
   images: []

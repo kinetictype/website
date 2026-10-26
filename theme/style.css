@@ -534,7 +534,7 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .media-split img, .media-split figure > svg { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--rule); background: var(--card); cursor: zoom-in; display: block; }
 .media-split figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
 .media-split.reverse figure { order: 2; }
-.split-text { font-size: 17px; }
+.split-text { font-size: 18px; }
 .split-text > :first-child { margin-top: 0; }
 @media (max-width: 900px) { .case-body > .media-split { grid-template-columns: 1fr; gap: 16px; } .media-split.reverse figure { order: 0; } }
 
@@ -542,3 +542,10 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 object.svg-live { display: block; width: 100%; height: auto; border: 0; background: var(--card); border-radius: 6px; }
 .media figure > object.svg-live, .media-split figure > object.svg-live { border: 1px solid var(--rule); }
 .row-thumb > object.svg-live, .drawer-media > object.svg-live, .card-media > object.svg-live { position: absolute; inset: 0; height: 100%; pointer-events: none; }
+
+/* Small headings (####, #####, ######) pasted into case-study text read as normal body text, so every page looks the same */
+.case-body > h4, .case-body > h5, .case-body > h6,
+.split-text h4, .split-text h5, .split-text h6 {
+  font: inherit; font-family: var(--sans); font-size: 18px; font-weight: 400; line-height: 1.6;
+  letter-spacing: normal; color: var(--text); margin-top: 0; margin-bottom: 1em;
+}
