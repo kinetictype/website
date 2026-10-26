@@ -56,8 +56,8 @@ sections:
 - heading: Showing your designs
   text: 'Placeholder: Show one or two iterations or alternatives you considered (flats, prototypes, videos or GIFs) and the screens that explain your decisions. Mention any AI tools you used, such as Figma Make, Lovable, Cursor or Replit.'
   images:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: 'Placeholder: final design'
+  - image: /images/projects/project-13/usertesting-browser-prototype.svg
+    alt: Scrollable prototype of the competitive benchmarking report for Verizon, shown in a browser window
     caption: ''
     size: full
   - image: /images/placeholders/placeholder-detail-1.svg
