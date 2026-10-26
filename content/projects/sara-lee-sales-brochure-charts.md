@@ -13,6 +13,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/sara-lee.svg
+drawer_image: /images/projects/SarahLee.png
 ---
 OUTCOME: WHAT I DESIGNED  
 Multiple charts in one consistent style across ten brochures.
