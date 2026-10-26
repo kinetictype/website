@@ -13,6 +13,7 @@ start_year: 0
 featured: false
 hidden: false
 cover: /images/logos/gemini-svg.svg
+drawer_image: /images/projects/02_information-architecture-flow.png
 top_image: /images/projects/05_audio-project-detail-pages.png
 gallery:
   - image: /images/projects/06_project-detail-overview.png
