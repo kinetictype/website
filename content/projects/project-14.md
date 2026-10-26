@@ -75,8 +75,8 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-wide.svg
-        alt: "Placeholder: final design"
+      - image: /images/projects/project-14/ancestry-browser-prototype-family-facts.svg
+        alt: Scrollable prototype of the Gardiner Family Facts page on Ancestry.com, shown in a browser window
         size: full
       - image: /images/placeholders/placeholder-detail-1.svg
         alt: "Placeholder: alternative considered"
