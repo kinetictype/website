@@ -102,7 +102,7 @@
       var t=Math.min(1,(now-t0)/ms); set(a+(b-a)*ease(t)); if(t<1) raf=requestAnimationFrame(step); else if(next) setTimeout(next,1200); })(t0); }
   var started=false;
   function demo(){ if(started||user) return; started=true; hint.setAttribute("opacity","1");
-    setTimeout(function(){ tween(0,MAX,5500,function(){ tween(MAX,0,3000,function(){ hint.setAttribute("opacity","0"); }); }); },900); }
+    setTimeout(function(){ var dn=Math.max(5500,MAX*4.5); tween(0,MAX,dn,function(){ tween(MAX,0,dn*.55,function(){ hint.setAttribute("opacity","0"); }); }); },900); }
   try{ new IntersectionObserver(function(es){ if(es[0].isIntersecting&&es[0].intersectionRatio>.5) demo(); },{threshold:[.5]}).observe(svg); }
   catch(_){ setTimeout(demo,600); }
   set(0);
