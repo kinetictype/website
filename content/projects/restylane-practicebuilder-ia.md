@@ -13,6 +13,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/restylane-seeklogo.svg
+drawer_image: /images/projects/06_sitemap.jpg
 ---
 I designed the site architecture, developed through card sorting and multiple iterations.
 
