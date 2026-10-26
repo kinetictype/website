@@ -678,7 +678,7 @@ function caseStudy(p) {
   const k = group.indexOf(p);
   const next = group[(k + 1) % group.length];
   const prev = k > 0 ? group[k - 1] : null;
-  // one meta line like "Lead Designer (2019–2021) · Goldman Sachs", then an optional link to the live product
+  // company, role and timeline appear once, in "At a glance"; the header keeps only an optional link to the live product
   const roleYears = p.role && p.years ? `${p.role} (${p.years})` : p.role || p.years || "";
   const meta = [roleYears, p.client].filter(Boolean).map((x) => escapeHtml(String(x))).join(" · ");
   const site = p.website ? `<p class="case-link"><a href="${escapeHtml(String(p.website))}" target="_blank" rel="noopener">${escapeHtml(String(p.website_label || String(p.website).replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")))} ${ARROW}</a></p>` : "";
@@ -689,7 +689,6 @@ function caseStudy(p) {
     <h1${edText("title")}>${escapeHtml(p.title)}</h1>
     ${p.logo ? `<img class="case-logo"${edImage(p, "logo")} src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
     ${p.tagline ? `<p class="case-lede"${edText("tagline")}>${escapeHtml(p.tagline)}</p>` : ""}
-    ${meta ? `<p class="case-meta">${meta}</p>` : ""}
     ${site}
     ${tags(p)}
   </header>
