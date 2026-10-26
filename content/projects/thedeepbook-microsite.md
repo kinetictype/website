@@ -12,6 +12,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/U_of_Chicago_Press.svg
+drawer_image: /images/projects/03_deep-book-1.png
 ---
 OUTCOME: WHAT I DESIGNED  
 A Flash microsite ([TheDeepBook.org](http://TheDeepBook.org)) using kinetic typography, moving images and sound design.
