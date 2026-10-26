@@ -17,7 +17,7 @@ hidden: true
 description: Placeholder description of project 06 for search engines and link previews.
 cover: /images/logos/cisco.svg
 cover_alt: Cisco logo
-drawer_image: /images/placeholders/placeholder-drawer.svg
+drawer_image: /images/projects/thumb_3_tenantlist.png
 drawer_image_alt: Placeholder image for project 06
 top_image: /images/placeholders/placeholder-wide.svg
 top_image_alt: "Placeholder: hero image of the product"
