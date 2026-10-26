@@ -16,7 +16,7 @@ hidden: false
 description: Placeholder description of project 07 for search engines and link previews.
 cover: /images/logos/Girl_Effect_Primary_RGB_Maroon_1_1.svg
 cover_alt: Google Shopping logo
-drawer_image: /images/placeholders/placeholder-drawer.svg
+drawer_image: /images/projects/conceptMapCurrency02.png
 drawer_image_alt: Placeholder image for project 07
 ---
 Goal  
