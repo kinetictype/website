@@ -19,7 +19,6 @@ cover: /images/logos/chicago-tribune.svg
 cover_alt: Chicago Tribune logo
 drawer_image: /images/projects/lollapalooza_grapic_o.png
 drawer_image_alt: Hand drawn map of Lalapalooza festival map.
-top_image: /images/projects/valuationsbyGrowth.svg
 ---
 Outcome: what I designed:  
 
