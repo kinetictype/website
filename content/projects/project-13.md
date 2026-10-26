@@ -50,7 +50,7 @@ sections:
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
-  - heading: Your goal
+  - heading: Goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
       design to achieve?
@@ -88,10 +88,12 @@ sections:
           shown in a browser window
         size: full
       - image: /images/projects/project-13/usertesting-browser-prototype-heatmap.svg
-        alt: Scrollable prototype of the report with the score breakdown shown as heat maps for Verizon and T-Mobile, in a browser window
+        alt: Scrollable prototype of the report with the score breakdown shown as heat
+          maps for Verizon and T-Mobile, in a browser window
         size: full
       - image: /images/projects/project-13/usertesting-browser-prototype-score.svg
-        alt: Scrollable prototype of the full report, from the overall score to common product descriptors and path directness, in a browser window
+        alt: Scrollable prototype of the full report, from the overall score to common
+          product descriptors and path directness, in a browser window
         size: full
   - heading: Results & outcomes
     text: >+
