@@ -555,6 +555,9 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .split-text { font-size: 18px; }
 .split-text > :first-child { margin-top: 0; }
 /* Section that opens with an image on the left: heading + text at the top right, the image description level with the image's bottom */
+/* an image with only a description beside it: the description sits level with the image's bottom, like the sections */
+.case-body > .media-split:not(.section-split) { align-items: end; }
+.media-split:not(.section-split) .split-text > :last-child { margin-bottom: 0; }
 .case-body > .section-split { margin-top: 56px; align-items: stretch; }
 .section-split .split-text { display: flex; flex-direction: column; }
 .section-split .split-main > h2 { font-size: 30px; margin: 0 0 12px; }
