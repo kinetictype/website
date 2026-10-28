@@ -98,18 +98,3 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-GOAL  
-Define the information architecture and specification documentation for the TiVo iPhone app.
-
-OUTCOME  
-I designed an application map (v1.6) and spec documentation.
-
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
-
-Not stated in the source files.
-
-MY ROLE  
-Information architect.
-
-MY TEAM  
-Product manager
