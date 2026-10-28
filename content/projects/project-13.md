@@ -86,9 +86,10 @@ sections:
     - Next steps, if there are more iterations to go
 
   images:
-  - image: /images/placeholders/placeholder-wide-2.svg
+  - image: /images/placeholders/placeholder-detail-2.svg
     alt: 'Placeholder: result or shipped product'
-    size: full
+    size: text-half
+    text: 'Placeholder: describe the result or shipped product shown here.'
 - heading: Learnings
   text: When I joined the team at User Testing, the project had been in discovery for nine months prior. When I joined, I realized the vision, but by the time I was brought on board, management had started looking in a different direction. They ultimately decided to pivot. It was a thrill to join a talented team with a brand new design system. It taught me how crucial it is to have a design lead involved from the beginning of a project to scope out the vision.
 ---
