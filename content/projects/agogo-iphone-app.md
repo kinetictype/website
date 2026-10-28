@@ -11,7 +11,7 @@ goals: Understand the Agogo ecosystem, propose options for playing content on
   the Agogo beta launch of the app.
 outcome: A map of the system and ideas for the iPhone app.
 responsibilities: I worked on concepting the interactions for the beta launch.
-team: The product owner and I discussed ideas, and I brought them to life.
+team: Product Owner and Engineers
 categories:
   - UX Design
   - Information Architecture
