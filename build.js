@@ -668,20 +668,22 @@ function pageCredits(p) {
 
 
 /* "At a glance": the high-level overview at the start of every case study.
-   Company = Client, Timeline (falls back to Years), Role; then Goal, Outcome, Responsibilities and Team. */
+   8-column grid: Timeline (falls back to Years), Company (= Client), Role, Team, an empty column, Responsibilities, Goal, Outcome.
+   Each item keeps its own column even when another is blank. */
 function pageOverview(p) {
   const rows = [
-    ["Company", p.client],
-    ["Timeline", p.timeline || p.years],
-    ["Role", p.role],
-    ["Goal", p.goals],
-    ["Outcome", p.outcome],
-    ["Responsibilities", p.responsibilities],
-    ["Team", p.team],
+    ["Timeline", p.timeline || p.years, 1],
+    ["Company", p.client, 2],
+    ["Role", p.role, 3],
+    ["Team", p.team, 4],
+    // column 5 stays empty
+    ["Responsibilities", p.responsibilities, 6],
+    ["Goal", p.goals, 7],
+    ["Outcome", p.outcome, 8],
   ].filter(([, v]) => v && String(v).trim());
   if (!rows.length) return "";
   return `\n<section class="glance" aria-label="At a glance"><h2 class="glance-title">At a glance</h2><dl>${rows
-    .map(([k, v]) => `<div class="glance-item"><dt>${k}</dt><dd>${markdown(String(v))}</dd></div>`)
+    .map(([k, v, col]) => `<div class="glance-item glance-${k.toLowerCase()}" style="--col:${col}"><dt>${k}</dt><dd>${markdown(String(v))}</dd></div>`)
     .join("")}</dl></section>`;
 }
 
