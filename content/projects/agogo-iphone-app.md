@@ -22,7 +22,7 @@ start_year: 2012
 featured: false
 hidden: false
 cover: /images/logos/agogo.svg
-drawer_image: /images/projects/01_beta-user-flow-1.png
+drawer_image: /images/projects/agogo.jpg
 prototype_size: half
 sections:
   - heading: Context
