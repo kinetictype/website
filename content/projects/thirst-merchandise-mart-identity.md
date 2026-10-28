@@ -3,7 +3,7 @@ title: 3rst for Merchandise Mart Identity
 tagline: A modular logo built from the letters of the name.
 summary: Develop a logo concept in which blocks represent the letters of the
   company name, conveying the company's modularity.
-client: 3st, studio of Rick Valicenti for Merchandise Mart Properties, Inc.
+client: 3st, for Merchandise Mart Properties
 role: Brand Designer
 goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
