@@ -668,19 +668,21 @@ function pageCredits(p) {
 
 
 /* "At a glance": the high-level overview at the start of every case study.
-   8-column grid: Company (= Client, with the year beneath: Timeline, or Years), Role, Team, then Responsibilities, Goal (2 columns), Outcome (2 columns) across the last five.
+   8-column grid: Company (= Client, with the year beneath: Timeline, or Years), Role, Team, then Responsibilities, Goal and Outcome in three equal widths across the last five.
    Each item keeps its own column even when another is blank. */
 function pageOverview(p) {
   const year = String(p.timeline || p.years || "").trim();
   // Company shows the client, with the year (Timeline, or Years when Timeline is empty) on the line beneath
   const company = [String(p.client || "").trim() && markdown(String(p.client).trim()), year && `<p class="glance-year">${escapeHtml(year)}</p>`].filter(Boolean).join("");
   const rows = [
-    ["Company", company, 1, true],
-    ["Role", p.role, 2],
-    ["Team", p.team, 3],
-    ["Responsibilities", p.responsibilities, 4],
-    ["Goal", p.goals, "5 / span 2"],
-    ["Outcome", p.outcome, "7 / span 2"],
+    // positions on a 24-track grid = the 8-column grid split in thirds, so columns 1–3 stay on the 8-column grid
+    // and Responsibilities, Goal and Outcome share columns 4–8 in three equal widths
+    ["Company", company, "1 / span 3", true],
+    ["Role", p.role, "4 / span 3"],
+    ["Team", p.team, "7 / span 3"],
+    ["Responsibilities", p.responsibilities, "10 / span 5"],
+    ["Goal", p.goals, "15 / span 5"],
+    ["Outcome", p.outcome, "20 / span 5"],
   ].filter(([, v]) => v && String(v).trim());
   if (!rows.length) return "";
   return `\n<section class="glance" aria-label="At a glance"><h2 class="glance-title">At a glance</h2><dl>${rows
