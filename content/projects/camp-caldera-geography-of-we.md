@@ -8,7 +8,9 @@ role: UX Designer
 timeline: "2014"
 goals: Conceptualize a new addition to the Camp Calera website to showcase
   attendees' projects.
-outcome: Wireframes, concept sketches, and visual design collaboration.
+outcome: Wireframes, concept sketches, and visual design collaboration. I
+  designed a custom geography experience,  project detail pages, and textures
+  behind audio projects.
 responsibilities: Concept design, interaction design.
 team: Visual designer
 website: caldera.com
