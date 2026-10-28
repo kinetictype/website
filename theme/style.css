@@ -525,8 +525,8 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 /* At a glance: the project's high-level overview, right under the hero */
 .glance { margin: 8px var(--gutter) 48px; padding: 24px 0 8px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
 .glance-title { font-size: 22px; margin: 0 0 16px; }
-/* 8-column grid, 16px gutters: Timeline, Company, Role, Team, (empty column), Responsibilities, Goal, Outcome.
-   Each item sits in its own column (--col). Smaller screens: 4 columns, then 2, then 1, no empty column. */
+/* 8-column grid, 16px gutters: Timeline, Company, Role, Team, Responsibilities, Goal (2 columns), Outcome.
+   Each item sits in its own column (--col). Smaller screens: 4 columns, then 2, then 1. */
 .glance dl { margin: 0; display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 24px 16px; }
 .glance-item { grid-column: var(--col, auto); grid-row: 1; }
 @media (max-width: 1100px) { .glance dl { grid-template-columns: repeat(4, minmax(0, 1fr)); } .glance-item { grid-column: auto; grid-row: auto; } }

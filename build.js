@@ -668,7 +668,7 @@ function pageCredits(p) {
 
 
 /* "At a glance": the high-level overview at the start of every case study.
-   8-column grid: Timeline (falls back to Years), Company (= Client), Role, Team, an empty column, Responsibilities, Goal, Outcome.
+   8-column grid: Timeline (falls back to Years), Company (= Client), Role, Team, Responsibilities, Goal (2 columns), Outcome.
    Each item keeps its own column even when another is blank. */
 function pageOverview(p) {
   const rows = [
@@ -676,9 +676,8 @@ function pageOverview(p) {
     ["Company", p.client, 2],
     ["Role", p.role, 3],
     ["Team", p.team, 4],
-    // column 5 stays empty
-    ["Responsibilities", p.responsibilities, 6],
-    ["Goal", p.goals, 7],
+    ["Responsibilities", p.responsibilities, 5],
+    ["Goal", p.goals, "6 / span 2"],
     ["Outcome", p.outcome, 8],
   ].filter(([, v]) => v && String(v).trim());
   if (!rows.length) return "";
