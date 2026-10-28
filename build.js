@@ -668,7 +668,7 @@ function pageCredits(p) {
 
 
 /* "At a glance": the high-level overview at the start of every case study.
-   8-column grid: Company (= Client, with the year beneath: Timeline, or Years), Role, Team, Responsibilities, Goal (2 columns), Outcome.
+   8-column grid: Company (= Client, with the year beneath: Timeline, or Years), Role, Team, then Responsibilities, Goal (2 columns), Outcome (2 columns) across the last five.
    Each item keeps its own column even when another is blank. */
 function pageOverview(p) {
   const year = String(p.timeline || p.years || "").trim();
@@ -680,7 +680,7 @@ function pageOverview(p) {
     ["Team", p.team, 3],
     ["Responsibilities", p.responsibilities, 4],
     ["Goal", p.goals, "5 / span 2"],
-    ["Outcome", p.outcome, 7],
+    ["Outcome", p.outcome, "7 / span 2"],
   ].filter(([, v]) => v && String(v).trim());
   if (!rows.length) return "";
   return `\n<section class="glance" aria-label="At a glance"><h2 class="glance-title">At a glance</h2><dl>${rows
