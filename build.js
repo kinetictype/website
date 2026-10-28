@@ -677,7 +677,7 @@ function pageOverview(p) {
   ].filter(([, v]) => v && String(v).trim());
   if (!rows.length) return "";
   return `\n<section class="glance" aria-label="At a glance"><h2 class="glance-title">At a glance</h2><dl>${rows
-    .map(([k, v]) => `<div class="glance-item${/^(Goal|Outcome|Resp|Team)/.test(k) ? " wide" : ""}"><dt>${k}</dt><dd>${markdown(String(v))}</dd></div>`)
+    .map(([k, v]) => `<div class="glance-item"><dt>${k}</dt><dd>${markdown(String(v))}</dd></div>`)
     .join("")}</dl></section>`;
 }
 

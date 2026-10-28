@@ -75,21 +75,16 @@ sections:
       (flats, prototypes, videos or GIFs) and the screens that explain your
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
-  - images:
-      - image: /images/projects/01_beta-user-flow.png
-        size: half
-      - image: /images/projects/02_player-screen.png
-        size: half
-  - images:
-      - image: /images/projects/03_related-bundles.png
-        size: half
-      - image: /images/projects/04_share-rate-save.png
-        size: half
-  - images:
-      - image: /images/projects/05_module-and-player.png
-        size: half
-      - image: /images/projects/06_episodes.png
+    images:
+      - image: /images/placeholders/placeholder-wide.svg
+        alt: "Placeholder: final design"
         size: full
+      - image: /images/placeholders/placeholder-detail-1.svg
+        alt: "Placeholder: alternative considered"
+        size: half
+      - image: /images/placeholders/placeholder-detail-2.svg
+        alt: "Placeholder: chosen direction"
+        size: half
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
