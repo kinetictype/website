@@ -559,7 +559,7 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .section-split .split-text { display: flex; flex-direction: column; }
 .section-split .split-main > h2 { font-size: 30px; margin: 0 0 12px; }
 .section-split .split-main > :last-child, .section-split .split-desc > :last-child { margin-bottom: 0; }
-.section-split .split-desc { margin-top: auto; padding-top: 24px; }
+.section-split .split-desc { margin-top: auto; padding-top: 16px; }
 @media (max-width: 900px) { .case-body > .media-split { grid-template-columns: 1fr; gap: 16px; } .media-split.reverse figure { order: 0; } }
 
 /* Interactive SVG graphics run in place (replay buttons, hovers, animations) */

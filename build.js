@@ -652,13 +652,14 @@ function pageSections(p) {
   return list.map((s) => {
     const imgs = (s.images || []).filter((g) => g && g.image);
     const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? markdown(String(s.text)) : ""}`;
-    // When a section starts with a "half-text" image (image left), the heading and text sit to the right of it,
+    // When a section starts with a "half-text" image (image left) or a "text-half" image (image right), the heading and text sit beside it,
     // and the image's own description sits at the bottom of that column, level with the bottom of the image.
-    if (head && imgs.length && String(imgs[0].size || "").toLowerCase() === "half-text") {
+    const kind = imgs.length ? String(imgs[0].size || "").toLowerCase() : "";
+    if (head && (kind === "half-text" || kind === "text-half")) {
       const g = imgs[0];
       const desc = String(g.text || "").trim();
       return `
-<div class="media-split section-split"><figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
 ${mediaRows(imgs.slice(1))}`;
     }
     return `
