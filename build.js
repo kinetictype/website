@@ -649,10 +649,23 @@ function mediaRows(items) {
 }
 function pageSections(p) {
   const list = (Array.isArray(p.sections) ? p.sections : []).filter((s) => s && (s.heading || s.text || (s.images || []).length));
-  return list.map((s) => `
+  return list.map((s) => {
+    const imgs = (s.images || []).filter((g) => g && g.image);
+    const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? markdown(String(s.text)) : ""}`;
+    // When a section starts with a "half-text" image (image left), the heading and text sit to the right of it,
+    // and the image's own description sits at the bottom of that column, level with the bottom of the image.
+    if (head && imgs.length && String(imgs[0].size || "").toLowerCase() === "half-text") {
+      const g = imgs[0];
+      const desc = String(g.text || "").trim();
+      return `
+<div class="media-split section-split"><figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+${mediaRows(imgs.slice(1))}`;
+    }
+    return `
 ${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}
 ${s.text ? markdown(String(s.text)) : ""}
-${mediaRows(s.images)}`).join("\n");
+${mediaRows(s.images)}`;
+  }).join("\n");
 }
 /* Credits at the end, like "Clara crew": Name: role, with an optional link on the name */
 function pageCredits(p) {
@@ -670,6 +683,11 @@ function pageCredits(p) {
 /* "At a glance": the high-level overview at the start of every case study.
    8-column grid: Company (= Client, with the year beneath: Timeline, or Years), Role, Team, then Responsibilities, Goal and Outcome in three equal widths across the last five.
    Each item keeps its own column even when another is blank. */
+// Intro text (the page body): paragraphs and lists get the "case-intro" style (subheading size, lighter weight)
+function introText(body) {
+  return markdown(body).replace(/<(p|ul|ol)>/g, '<$1 class="case-intro">');
+}
+
 function pageOverview(p) {
   const year = String(p.timeline || p.years || "").trim();
   // Company shows the client, with the year (Timeline, or Years when Timeline is empty) on the line beneath
@@ -725,8 +743,8 @@ function caseStudy(p) {
   </header>
   ${pageHero(p)}${listImages(p)}
   ${EDIT
-    ? `${pageOverview(p)}<div class="case-body"${edText("@content", "block")}>${markdown(p.body)}</div><div class="case-body">${pagePrototype(p)}${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
-    : `${pageOverview(p)}<div class="case-body">${markdown(p.body)}${pagePrototype(p)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
+    ? `${pageOverview(p)}<div class="case-body"${edText("@content", "block")}>${introText(p.body)}</div><div class="case-body">${pagePrototype(p)}${pageSections(p)}${editableGallery(p)}${pageCredits(p)}</div>`
+    : `${pageOverview(p)}<div class="case-body">${introText(p.body)}${pagePrototype(p)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
 </article>
 
 <nav class="next-project" aria-label="Next project">
