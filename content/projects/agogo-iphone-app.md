@@ -107,14 +107,3 @@ sections:
 credits:
   - {}
 ---
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
-
-Not stated in the source files.
-
-MY ROLE
-
-Not stated in the source files.
-
-MY TEAM
-
-The product manager.
