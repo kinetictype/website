@@ -35,25 +35,25 @@ sections:
   text: "The Marketing team owned the Campaign Creation process. When I stepped in with a content designer, we approached the project as a learning opportunity. We learned the process by hearing the team describe it. I then drew a Service Blueprint to illustrate how the teams worked together and how much time they spent in the process.  \n\n> *Kiera is a great design partner. She created a framework to help us map the merchant’s journey and identify pain points, gaps, and opportunities. We used the journey to facilitate conversations with our product partners and connect them to the merchant experience. -S. Colwell, JPMorgan Chase Content Designer*"
 - heading: Design principles & frameworks
   text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
-  images: []
+  images:
+  - image: /images/placeholders/placeholder-detail-1.svg
+    alt: 'Placeholder: framework or design principles'
+    size: half-text
+    text: 'Placeholder: describe the framework, principle or diagram shown here.'
 - heading: Challenges
   text: 'Placeholder: Which challenges are worth highlighting (team or org, technical, design system, capacity or scope), and how did you get through them?'
-  images: []
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: a challenge and how you solved it'
+    size: text-half
+    text: 'Placeholder: describe the challenge this image shows and how you got through it.'
 - heading: Showing your designs
   text: 'Placeholder: Show one or two iterations or alternatives you considered (flats, prototypes, videos or GIFs) and the screens that explain your decisions. Mention any AI tools you used, such as Figma Make, Lovable, Cursor or Replit.'
   images:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: 'Placeholder: final design'
-    caption: ''
-    size: full
   - image: /images/placeholders/placeholder-detail-1.svg
-    alt: 'Placeholder: alternative considered'
-    caption: ''
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: 'Placeholder: chosen direction'
-    caption: ''
-    size: half
+    alt: 'Placeholder: design iteration or alternative'
+    size: half-text
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
 - heading: Outcome
   text: JPMorgan Chase acquired Figg to build a two-sided commerce platform and fill the opportunity gap we illustrated in the Service Design map.
 - heading: Learnings

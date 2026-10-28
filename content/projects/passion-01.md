@@ -42,25 +42,25 @@ sections:
     text: 'Placeholder: describe the research, workshop or competitive analysis shown here.'
 - heading: Design principles & frameworks
   text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
-  images: []
+  images:
+  - image: /images/placeholders/placeholder-detail-1.svg
+    alt: 'Placeholder: framework or design principles'
+    size: half-text
+    text: 'Placeholder: describe the framework, principle or diagram shown here.'
 - heading: Challenges
   text: 'Placeholder: Which challenges are worth highlighting (team or org, technical, design system, capacity or scope), and how did you get through them?'
-  images: []
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: a challenge and how you solved it'
+    size: text-half
+    text: 'Placeholder: describe the challenge this image shows and how you got through it.'
 - heading: Showing your designs
   text: 'Placeholder: Show one or two iterations or alternatives you considered (flats, prototypes, videos or GIFs) and the screens that explain your decisions. Mention any AI tools you used, such as Figma Make, Lovable, Cursor or Replit.'
   images:
-  - image: /images/placeholders/placeholder-wide.svg
-    alt: 'Placeholder: final design'
-    caption: ''
-    size: full
   - image: /images/placeholders/placeholder-detail-1.svg
-    alt: 'Placeholder: alternative considered'
-    caption: ''
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: 'Placeholder: chosen direction'
-    caption: ''
-    size: half
+    alt: 'Placeholder: design iteration or alternative'
+    size: half-text
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
 - heading: Results & outcomes
   text: |-
     Placeholder: What data or metrics resulted from the design? If none, what positives came out of it?
