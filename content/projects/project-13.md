@@ -9,12 +9,10 @@ summary: This project aimed to replace a static, linear report with an
 client: UserTesting.com
 role: Your Role
 goals: Let customers compare their services with others.
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+outcome: "Mockups to display research data, previously in a .pdf, as a
+  storytelling visual description of different business areas. "
+responsibilities: Data analysis, led critique sessions, and delivered mockups.
+team: Product manager, researcher.
 categories:
   - Data Visualization
   - UX Design
@@ -112,8 +110,13 @@ sections:
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: When I joined the team at User Testing, the project had been in discovery
+      for nine months prior. When I joined, I realized the vision, but by the
+      time I was brought on board, management had started looking in a different
+      direction. They ultimately decided to pivot. It was a thrill to join a
+      talented team with a brand new design system. It taught me how crucial it
+      is to have a design lead involved from the beginning of a project to scope
+      out the vision.
 ---
 OUTCOME: WHAT I DESIGNED
 
