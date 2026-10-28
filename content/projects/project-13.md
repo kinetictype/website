@@ -8,7 +8,7 @@ summary: This project aimed to replace a static, linear report with an
   before I joined in 2017 to help bring it to life.
 client: UserTesting.com
 role: Your Role
-goals: "Placeholder: the customer and business goals."
+goals: Let customers compare their services with others.
 outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
