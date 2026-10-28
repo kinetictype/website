@@ -107,3 +107,4 @@ sections:
 credits:
   - {}
 ---
+It was a great experience to begin designing for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision.
