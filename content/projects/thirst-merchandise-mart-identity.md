@@ -86,9 +86,9 @@ sections:
       Cursor or Replit."
   - images:
       - image: /images/projects/mmp-form-A-1.gif
-        size: half
+        size: half-text
       - image: /images/projects/mmp-form-C.gif
-        size: half
+        size: text-half
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
