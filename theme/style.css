@@ -525,7 +525,7 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 /* At a glance: the project's high-level overview, right under the hero */
 .glance { margin: 8px var(--gutter) 48px; padding: 24px 0 8px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
 .glance-title { font-size: 22px; margin: 0 0 16px; }
-/* 8-column grid, 16px gutters: Timeline, Company, Role, Team, Responsibilities, Goal (2 columns), Outcome.
+/* 8-column grid, 16px gutters: Company (year beneath), Role, Team, Responsibilities, Goal (2 columns), Outcome.
    Each item sits in its own column (--col). Smaller screens: 4 columns, then 2, then 1. */
 .glance dl { margin: 0; display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 24px 16px; }
 .glance-item { grid-column: var(--col, auto); grid-row: 1; }
@@ -533,6 +533,7 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .glance dt { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
 .glance dd { margin: 0; font-size: 16px; line-height: 1.5; max-width: 760px; }
 .glance dd p { margin: 0 0 6px; }
+.glance-company dd p { margin: 0; } /* year sits directly under the company name */
 .glance dd ul { margin: 0; padding-left: 1.2em; }
 @media (max-width: 900px) { .glance dl { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .glance dl { grid-template-columns: 1fr; } }

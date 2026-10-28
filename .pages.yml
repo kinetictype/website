@@ -35,7 +35,7 @@ content:
       - { name: summary, label: Paragraph shown when the project is opened in More projects, type: text }
       - { name: client, label: Client, type: string }
       - { name: role, label: Role, type: string }
-      - { name: timeline, label: "At a glance — Timeline: how long the project ran (e.g. 6 months, 2022–2024); empty = uses Years", type: string }
+      - { name: timeline, label: "At a glance — Year shown under the company name (e.g. 2022–2024); empty = uses Years", type: string }
       - { name: goals, label: "At a glance — Goal: the customer and business goal", type: text }
       - { name: outcome, label: "At a glance — Outcome: what you eventually designed", type: text }
       - { name: responsibilities, label: "At a glance — Responsibilities: what you worked on (visual, interaction, design system, research, concept, usability testing, content design)", type: text }

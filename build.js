@@ -668,21 +668,23 @@ function pageCredits(p) {
 
 
 /* "At a glance": the high-level overview at the start of every case study.
-   8-column grid: Timeline (falls back to Years), Company (= Client), Role, Team, Responsibilities, Goal (2 columns), Outcome.
+   8-column grid: Company (= Client, with the year beneath: Timeline, or Years), Role, Team, Responsibilities, Goal (2 columns), Outcome.
    Each item keeps its own column even when another is blank. */
 function pageOverview(p) {
+  const year = String(p.timeline || p.years || "").trim();
+  // Company shows the client, with the year (Timeline, or Years when Timeline is empty) on the line beneath
+  const company = [String(p.client || "").trim() && markdown(String(p.client).trim()), year && `<p class="glance-year">${escapeHtml(year)}</p>`].filter(Boolean).join("");
   const rows = [
-    ["Timeline", p.timeline || p.years, 1],
-    ["Company", p.client, 2],
-    ["Role", p.role, 3],
-    ["Team", p.team, 4],
-    ["Responsibilities", p.responsibilities, 5],
-    ["Goal", p.goals, "6 / span 2"],
-    ["Outcome", p.outcome, 8],
+    ["Company", company, 1, true],
+    ["Role", p.role, 2],
+    ["Team", p.team, 3],
+    ["Responsibilities", p.responsibilities, 4],
+    ["Goal", p.goals, "5 / span 2"],
+    ["Outcome", p.outcome, 7],
   ].filter(([, v]) => v && String(v).trim());
   if (!rows.length) return "";
   return `\n<section class="glance" aria-label="At a glance"><h2 class="glance-title">At a glance</h2><dl>${rows
-    .map(([k, v, col]) => `<div class="glance-item glance-${k.toLowerCase()}" style="--col:${col}"><dt>${k}</dt><dd>${markdown(String(v))}</dd></div>`)
+    .map(([k, v, col, html]) => `<div class="glance-item glance-${k.toLowerCase()}" style="--col:${col}"><dt>${k}</dt><dd>${html ? v : markdown(String(v))}</dd></div>`)
     .join("")}</dl></section>`;
 }
 
