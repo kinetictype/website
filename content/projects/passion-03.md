@@ -84,7 +84,7 @@ credits:
 - name: Placeholder Name
   role: Engineer
   link: ''
-goals: 'Placeholder: the customer and business goals.'
+goals: 'Placeholder: the customer and business goal.'
 outcome: 'Placeholder: what you eventually designed.'
 responsibilities: 'Placeholder: what you worked on, e.g. visual design, interaction design, design system, user research, concept design, usability testing, content design.'
 team: 'Placeholder: the roles you worked with, e.g. product manager, engineers, researcher.'

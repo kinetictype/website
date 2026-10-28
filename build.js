@@ -664,13 +664,13 @@ function pageCredits(p) {
 
 
 /* "At a glance": the high-level overview at the start of every case study.
-   Company = Client, Timeline (falls back to Years), Role; then Goal(s), Outcome, Responsibilities and Team. */
+   Company = Client, Timeline (falls back to Years), Role; then Goal, Outcome, Responsibilities and Team. */
 function pageOverview(p) {
   const rows = [
     ["Company", p.client],
     ["Timeline", p.timeline || p.years],
     ["Role", p.role],
-    ["Goal(s)", p.goals],
+    ["Goal", p.goals],
     ["Outcome", p.outcome],
     ["Responsibilities", p.responsibilities],
     ["Team", p.team],

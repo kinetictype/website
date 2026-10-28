@@ -50,7 +50,7 @@ Every time you press **Save** in the CMS, the change is committed to this reposi
 Every project page follows the same order (the case-study guide):
 
 1. **Header**: Title, One-line summary (the mission), Role (Years) · Client, optional Website link, tags.
-2. **Top image**, then **At a glance**: Company (Client), Timeline (empty = Years), Role, Goal(s), Outcome, Responsibilities, Team.
+2. **Top image**, then **At a glance**: Company (Client), Timeline (empty = Years), Role, Goal, Outcome, Responsibilities, Team.
 3. **Intro text** and an optional **Prototype** (Figma embed).
 4. **Sections**, in this order: Context · Your goal · Design principles & frameworks · Challenges · Showing your designs ·
    Results & outcomes · Learnings. Each has a Heading, Text and Images. Image **Layout**: Full width ·
