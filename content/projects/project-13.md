@@ -7,7 +7,7 @@ summary: This project aimed to replace a static, linear report with an
   own and competitors' over time. The project had been in discovery for 9 months
   before I joined in 2017 to help bring it to life.
 client: UserTesting.com
-role: Your Role
+role: UX and Data Visualization Design Lead
 goals: Let customers compare their services with others.
 outcome: "Mockups to display research data, previously in a .pdf, as a
   storytelling visual description of different business areas. "
