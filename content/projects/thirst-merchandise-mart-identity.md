@@ -66,10 +66,6 @@ sections:
     alt: Merchandise Mart form design (animated)
     size: half-text
     text: 'Placeholder: describe the design shown here and the decisions behind it.'
-  - image: /images/projects/mmp-form-C.gif
-    alt: Merchandise Mart form design, second version (animated)
-    size: text-half
-    text: 'Placeholder: describe this version and what changed.'
 - heading: Results & outcomes
   text: |+
     Placeholder: What data or metrics resulted from the design? If none, what positives came out of it?
@@ -79,10 +75,10 @@ sections:
     - Next steps, if there are more iterations to go
 
   images:
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: 'Placeholder: result or shipped product'
+  - image: /images/projects/mmp-form-C.gif
+    alt: Merchandise Mart form design, second version (animated)
     size: text-half
-    text: 'Placeholder: describe the result or shipped product shown here.'
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
 - heading: Learnings
   text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
 ---
