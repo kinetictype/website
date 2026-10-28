@@ -523,8 +523,8 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 @media (max-width: 900px) { .embed-half { width: auto; } }
 
 /* At a glance: the project's high-level overview, right under the hero */
-.glance { margin: 8px var(--gutter) 48px; padding: 24px 0 8px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
-.glance-title { font-size: 22px; margin: 0 0 16px; }
+.glance { margin: 8px var(--gutter) 48px; padding: 24px 0 23px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); } /* text sits the same distance from both rules */
+.glance-title { font-size: 30px; margin: 0 0 16px; } /* same size as the section headings (Context, Goal…) */
 /* 8-column grid, 16px gutters: Company (year beneath), Role, Team, then Responsibilities, Goal and Outcome in three equal widths across the last five.
    Each item sits in its own column (--col). Smaller screens: 4 columns, then 2, then 1. */
 /* 24 tracks with 16px gaps = an 8-column grid (3 tracks per column) that can also split columns 4–8 into three equal parts */
@@ -535,6 +535,7 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 .glance dd { margin: 0; font-size: 16px; line-height: 1.5; max-width: 760px; }
 .glance dd p { margin: 0 0 6px; }
 .glance-company dd p { margin: 0; } /* year sits directly under the company name */
+.glance dd > :last-child { margin-bottom: 0; }
 .glance dd ul { margin: 0; padding-left: 1.2em; }
 @media (max-width: 900px) { .glance dl { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .glance dl { grid-template-columns: 1fr; } }
