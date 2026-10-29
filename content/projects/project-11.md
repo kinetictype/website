@@ -42,8 +42,7 @@ sections:
       and watched me work. No matter the situation that day, I was thrilled to
       contribute to the team and run with the news.
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        alt: The expansion of The Art Institute page one story.
+      - alt: The expansion of The Art Institute page one story.
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
