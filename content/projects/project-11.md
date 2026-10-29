@@ -52,15 +52,13 @@ sections:
         alt: Midway landing expansion illustration.
         caption: I illustrated the Midway airport landing expansion.
         size: text-half
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+  - heading: Design principles and frameworks
+    text: "To bridge the gap between digital and print, I worked with the paper's
+      digital team to design a workflow for moving printed graphics online. "
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
-        alt: "Placeholder: framework or design principles"
+        alt: diagram of workflow for chicagotribune.com
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
