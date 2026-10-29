@@ -30,7 +30,8 @@ sections:
       viewers to buy the book.
 
     images:
-      - sound: false
+      - image: /images/projects/DEEP.png
+        sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
   - heading: Outcome
