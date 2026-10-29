@@ -364,7 +364,11 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .project-pager .pager-prev { align-items: flex-start; text-align: left; }
 .project-pager .pager-prev .next-thumb { justify-content: flex-start; }
 @media (max-width: 640px) { .project-pager { flex-direction: column; gap: 32px; } .project-pager .pager-next, .project-pager .pager-prev { max-width: 100%; } }
-.project-pager .next-label { display: inline-flex; gap: 6px; align-items: center; }
+.project-pager .next-label { display: inline-flex; gap: 6px; align-items: center; position: relative; }
+/* the arrows hang outside, so the words "Previous project" / "Next project" line up exactly with the project title beneath */
+.project-pager .next-label .icon-arrow { position: absolute; top: 50%; margin-top: -.5em; }
+.project-pager .pager-prev .next-label .icon-arrow { right: calc(100% + 6px); }
+.project-pager .pager-next .next-label .icon-arrow { left: calc(100% + 6px); }
 .project-pager .next-title { margin-top: 0; font-size: 30px; letter-spacing: normal; line-height: 1.08; } /* same size as the section headings */
 .project-pager .next-thumb { width: auto; height: 56px; aspect-ratio: auto; border: 0; border-radius: 0; overflow: visible; display: flex; justify-content: flex-end; }
 .project-pager .next-thumb img, .project-pager .next-thumb > svg { width: auto; height: 100%; max-width: 220px; object-fit: contain; }
