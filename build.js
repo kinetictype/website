@@ -594,7 +594,7 @@ function editableGallery(p) {
 function pageGallery(p) {
   const items = galleryOf(p).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure>${mediaEl(g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -625,9 +625,34 @@ function listImages(p) {
 
 /* Sections each one is a heading, text (Markdown: paragraphs, bullet lists, links)
    and that section's images. Images use the same sizes as the gallery: full, half (two side by side), third. */
+// width and height of an .mp4 (from its track header), so the page reserves the right space before the video loads
+function mp4Size(file) {
+  if (!exists(file)) return null;
+  const b = fs.readFileSync(file);
+  for (let i = b.indexOf("tkhd"); i > 0; i = b.indexOf("tkhd", i + 4)) {
+    const size = b.readUInt32BE(i - 4), end = i - 4 + size;
+    const w = b.readUInt32BE(end - 8) / 65536, h = b.readUInt32BE(end - 4) / 65536;
+    if (w && h) return [Math.round(w), Math.round(h)];
+  }
+  return null;
+}
+// An image, or for .mp4/.webm a silent looping video that plays like a GIF (much smaller files than animated GIFs)
+function mediaEl(src, alt = "") {
+  if (/\.(mp4|webm)$/i.test(String(src))) {
+    // a .webm next to the .mp4 (same name) is offered first: smaller, and played by every current browser
+    const base = String(src).replace(/\.(mp4|webm)$/i, "");
+    const sources = [".webm", ".mp4"].filter((ext) => exists(path.join(CONTENT, base + ext)))
+      .map((ext) => `<source src="${imageUrl(base + ext)}" type="video/${ext.slice(1)}">`).join("");
+    const dims = mp4Size(path.join(CONTENT, base + ".mp4"));
+    const ratio = dims ? ` style="aspect-ratio:${dims[0]} / ${dims[1]}"` : "";
+    return `<video autoplay muted loop playsinline preload="auto"${ratio} aria-label="${escapeHtml(alt)}">${sources || `<source src="${imageUrl(src)}">`}</video>`;
+  }
+  return `<img loading="lazy" src="${imageUrl(src)}" alt="${escapeHtml(alt)}">`;
+}
+
 function mediaRows(items) {
   items = (items || []).filter((g) => g && g.image);
-  const fig = (g) => `<figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure>${mediaEl(g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const size = (g) => per[String(g.size || "full").toLowerCase()] || 1;
   const out = [];
@@ -662,7 +687,7 @@ function pageSections(p) {
       const g = imgs[0];
       const desc = String(g.text || "").trim();
       return `
-<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure>${mediaEl(g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
 ${quotes}
 ${mediaRows(imgs.slice(1))}`;
     }

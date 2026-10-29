@@ -7,7 +7,7 @@ media:
     label: Images
     input: content/images
     output: /images
-    categories: [image]
+    categories: [image, video]
   - name: files
     label: Files (CV and other downloads)
     input: content/files
