@@ -25,18 +25,18 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      The mission or goal of the project?   
 
+      Which customer or business problems were you and your team trying to
+      solve?
 
-      - Data or stats that set the context
 
       - Assumptions you set out to validate or disprove
 
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Picture 2.png
         sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
@@ -44,8 +44,8 @@ sections:
           problem."
   - heading: Your goal
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      What was your goal as the designer, and what did you want the design to
+      achieve?
 
 
       - "How might we…" statements
@@ -56,7 +56,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Picture 3.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
@@ -72,6 +72,8 @@ sections:
         alt: "Placeholder: framework or design principles"
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
+      - sound: false
+        size: full
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
