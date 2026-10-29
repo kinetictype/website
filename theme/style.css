@@ -92,7 +92,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .site-footer {
   display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
   margin-top: 96px; padding-top: 28px; padding-bottom: 32px;
-  border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted);
+  border-top: 1px solid var(--ink); font-size: 14px; color: var(--muted);
 }
 .site-footer div { display: flex; flex-direction: column; gap: 2px; }
 /* footer tagline links to the homepage; no underline, turns the accent color on hover (like the name did) */
