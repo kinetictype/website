@@ -1,5 +1,5 @@
 ---
-title: TheDeepBook Microsite
+title: The Deep Book Microsite
 tagline: Bringing deep-sea creatures to life online.
 summary: Design and develop a microsite to market a book on deep-sea creatures.
 client: "University of Chicago Press "
