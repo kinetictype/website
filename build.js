@@ -748,13 +748,17 @@ function caseStudy(p) {
     : `${pageOverview(p)}<div class="case-body">${introText(p.body)}${pagePrototype(p)}${pageSections(p)}${pageGallery(p)}${pageCredits(p)}</div>`}
 </article>
 
-<nav class="next-project" aria-label="Next project">
-  <a href="${projectUrl(next)}">
+<nav class="next-project project-pager" aria-label="More projects">
+  ${prev ? `<a class="pager-prev" href="${projectUrl(prev)}">
+    <span class="next-label">${ARROW_BACK} Previous project</span>
+    ${prev.cover ? `<span class="next-thumb"><img src="${assetUrl(prev, prev.cover)}" alt="" loading="lazy"></span>` : ""}
+    <span class="next-title">${escapeHtml(prev.title)}</span>
+  </a>` : "<span></span>"}
+  <a class="pager-next" href="${projectUrl(next)}">
     <span class="next-label">Next project ${ARROW}</span>
-    <span class="next-title">${escapeHtml(next.title)}</span>
     ${next.cover ? `<span class="next-thumb"><img src="${assetUrl(next, next.cover)}" alt="" loading="lazy"></span>` : ""}
+    <span class="next-title">${escapeHtml(next.title)}</span>
   </a>
-  ${prev ? `<a class="prev-link" href="${projectUrl(prev)}">${ARROW_BACK} Previous: ${escapeHtml(prev.title)}</a>` : ""}
 </nav>
 
 
