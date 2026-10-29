@@ -43,14 +43,14 @@ sections:
         caption: The expansion of The Art Institute of Chicago's page-one story.
         size: half-text
   - heading: My goal
-    text: Visual journalism instilled ethical practices of accuracy, checks and
-      balances, and working with an established design system, all at a rapid
-      pace. Knowing my work would be seen daily by an audience of 500,000
-      subscribers created a discipline I've held onto throughout my career.
+    text: Visual journalism instilled ethical practices of accuracy and working with
+      an established design system, all at a rapid pace. Knowing my work would
+      be seen daily by 500,000 subscribers instilled a discipline I've held onto
+      throughout my career.
     images:
-      - image: /images/projects/MIDWAY1126_MET_1181-2.png
-        alt: Midway landing expansion illustration.
-        caption: I illustrated the Midway airport landing expansion.
+      - alt: Lollapalooza festival map.
+        caption: The page designer took inspiration from my map icons for Lollapalooza
+          and it became a was a close collaboration.
         size: text-half
   - heading: Design principles and frameworks
     text: One of my favorite things about working in the newspaper business is the
