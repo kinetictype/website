@@ -109,4 +109,4 @@ sections:
     images:
       - size: full
 ---
-A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images and sound design.
+A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images, and sound design.
