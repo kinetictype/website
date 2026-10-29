@@ -109,7 +109,8 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - sound: false
+      - image: /images/projects/Gemini_Generated_Image_fnzq3xfnzq3xfnzq.jpeg
+        sound: false
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
