@@ -45,8 +45,6 @@ sections:
         alt: Newspaper image of the expansion of The Art Institute of Chicago.
         caption: The expansion of The Art Institute page one story.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
