@@ -17,6 +17,7 @@ featured: false
 hidden: false
 cover: /images/logos/U_of_Chicago_Press.svg
 drawer_image: /images/projects/03_deep-book-1.png
+drawer_image_alt: The Deep Book microsite
 prototype_size: half
 sections:
   - heading: Context
@@ -86,24 +87,15 @@ sections:
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
     images:
       - video: /images/projects/thedeepbook/thedeepbook-loop.mp4
         alt: "Animated intro of TheDeepBook.org microsite (2007): deep-sea creatures
           from the book The Deep by Claire Nouvian"
+        caption: Animated microsite of deep-sea creatures from the book The Deep by
+          Claire Nouvian
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: It was an honor to work with the largest and one of the oldest university
+      presses in North America on this creation.
 ---
 A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images, and sound design.
