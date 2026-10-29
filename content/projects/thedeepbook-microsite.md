@@ -8,6 +8,8 @@ goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
 responsibilities: Storyboard, animation, layout, and collaboration with sound design.
 team: The marketing team and  Iroro Orife, a talented sound designer.
+website: https://bit.ly/4jIWREn
+website_label: The Deep
 categories:
   - Motion Graphics Design
 years: "2007"
@@ -22,18 +24,14 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
+      The project's mission was to advertise a non-scholarly textbook from the
+      University of Chicago Press. My hypothesis led me to envision a shadow
+      puppet-like experience featuring deep-sea creatures that would entice
+      viewers to buy the book.
 
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
+        sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
@@ -53,6 +51,7 @@ sections:
 
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
+        sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
@@ -63,6 +62,7 @@ sections:
       guide the design?"
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
+        sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
@@ -72,6 +72,7 @@ sections:
       them?"
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
+        sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
         text: "Placeholder: describe the challenge this image shows and how you got
@@ -83,12 +84,14 @@ sections:
       Cursor or Replit."
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
+        sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     images:
       - video: /images/projects/thedeepbook/thedeepbook-loop.mp4
+        sound: false
         alt: "Animated intro of TheDeepBook.org microsite (2007): deep-sea creatures
           from the book The Deep by Claire Nouvian"
         caption: Animated microsite of deep-sea creatures from the book The Deep by
