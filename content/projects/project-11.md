@@ -48,7 +48,8 @@ sections:
       be seen daily by 500,000 subscribers instilled a discipline I've held onto
       throughout my career.
     images:
-      - alt: Lollapalooza festival map.
+      - image: /images/projects/lollapalooza_Fullpage.png
+        alt: Lollapalooza festival map.
         caption: The page designer took inspiration from my map icons for Lollapalooza
           and it became a was a close collaboration.
         size: text-half
