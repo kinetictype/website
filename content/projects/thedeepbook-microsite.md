@@ -106,5 +106,7 @@ sections:
   - heading: Learnings
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
+    images:
+      - size: full
 ---
-A Flash microsite ([TheDeepBook.org](http://TheDeepBook.org)) using kinetic typography, moving images and sound design.
+A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images and sound design.
