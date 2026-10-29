@@ -66,13 +66,8 @@ sections:
   images:
   - image: /images/projects/project-14/ancestry-browser-prototype-family-facts.svg
     alt: Scrollable prototype of the Gardiner Family Facts page on Ancestry.com, shown in a browser window
-    size: full
-  - image: /images/placeholders/placeholder-detail-1.svg
-    alt: 'Placeholder: alternative considered'
-    size: half
-  - image: /images/placeholders/placeholder-detail-2.svg
-    alt: 'Placeholder: chosen direction'
-    size: half
+    size: half-text
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
 - heading: Results & outcomes
   text: |+
     Placeholder: What data or metrics resulted from the design? If none, what positives came out of it?

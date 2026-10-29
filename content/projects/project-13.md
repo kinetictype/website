@@ -70,7 +70,8 @@ sections:
   images:
   - image: /images/projects/project-13/usertesting-browser-prototype.svg
     alt: Scrollable prototype of the competitive benchmarking report for Verizon, shown in a browser window
-    size: full
+    size: half-text
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
   - image: /images/projects/project-13/usertesting-browser-prototype-heatmap.svg
     alt: Scrollable prototype of the report with the score breakdown shown as heat maps for Verizon and T-Mobile, in a browser window
     size: full

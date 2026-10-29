@@ -35,6 +35,11 @@ sections:
     I turned complex data into engaging, interactive stories on the Research Portal.
 
     I consulted with the firm's Managing Directors to design and develop Scalable Vector Graphics. We transformed a series of SVGs that transformed complex data into engaging, interactive stories on the Research Portal.
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: research or workshop artifact'
+    size: text-half
+    text: 'Placeholder: describe the research, workshop or competitive analysis shown here.'
 - heading: Design principles & frameworks
   text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
   images:
@@ -51,9 +56,10 @@ sections:
     text: 'Placeholder: describe the challenge this image shows and how you got through it.'
 - heading: Approach
   text: "I gathered content, designed, and developed interactive Scalable Vector Graphics. I added explanatory interactive graphics to the Goldman Sachs Investment Research Portal.  \n\nBeyond the scope of this work, I connected across the firm with the Core UX Design System team to standardize icons and create evergreen content that could support future data stories and ensure consistency across production.\n\n> *Kiera was a pleasure to work with. She not only created innovative data visualizations (including SVGs) for data-science-literate audiences, but also helped foster a more data-centric culture among junior analysts just starting out in coding. -M. Hinds, Goldman Sachs Analyst*"
-- images:
+  images:
   - image: /images/projects/valuationsbyGrowth-1.svg
-    size: full
+    size: half-text
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
 - heading: Results & outcomes
   text: |-
     Placeholder: What data or metrics resulted from the design? If none, what positives came out of it?

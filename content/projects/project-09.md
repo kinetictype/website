@@ -36,6 +36,11 @@ sections:
 - heading: Goal
   text: "Provide fill patterns for the charting tool that improve accessibility and work with the current design system. Existing patterns lacked logic, did not match system colors, and were hard to read at small sizes; the charting library did not offer guidance.\n\nTIMELINE\n\n2018–2019, Shipped\n\nOutcome\n\n- A pattern system built from basic elements, tuned for density in small spaces\n- Multiple prototypes using a CodePen tool the developer built\n- Recommendation to change the legend to a rectangle so patterns stay visible\n- Normal/reversed pattern modes; design-system colors interpolated (0.35 / 0.6) to meet contrast standards\n\nPositive Outcomes Emerged  \nPatterns shipped, complied with usability/contrast standards, and were incorporated into the design system. \"Project received well and improved accessibility across platform.\"\n\nMy Role  \nVisual/product designer: research, exploration, prototyping and recommendations.\n\nMy Team  \nA charting developer and the design systems\
     \ team (leveraged existing standards; no user testing).The challenge"
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: research or workshop artifact'
+    size: text-half
+    text: 'Placeholder: describe the research, workshop or competitive analysis shown here.'
 - heading: Design principles & frameworks
   text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
   images:

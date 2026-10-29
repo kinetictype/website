@@ -28,7 +28,8 @@ sections:
   images:
   - image: /images/projects/DevPortalWebsite_before01.png
     alt: 'Placeholder: overview image'
-    size: full
+    size: half-text
+    text: 'Placeholder: describe what this image shows and why it matters to the problem.'
 - heading: My goal
   text: |+
     Placeholder: What was your goal as the designer, and what did you want the design to achieve?
@@ -40,7 +41,8 @@ sections:
   images:
   - image: /images/placeholders/placeholder-detail-2.svg
     alt: 'Placeholder: research or workshop artifact'
-    size: half
+    size: text-half
+    text: 'Placeholder: describe the research, workshop or competitive analysis shown here.'
 - heading: Design principles & frameworks
   text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
   images:
