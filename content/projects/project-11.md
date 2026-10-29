@@ -42,7 +42,7 @@ sections:
         alt: Newspaper image of the expansion of The Art Institute of Chicago.
         caption: The expansion of The Art Institute of Chicago's page-one story.
         size: half-text
-  - heading: Your goal
+  - heading: My goal
     text: Visual journalism instilled ethical practices of accuracy, checks and
       balances, and working with an established design system, all at a rapid
       pace. Knowing my work would be seen daily by an audience of 500,000
