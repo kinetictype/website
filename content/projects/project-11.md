@@ -77,12 +77,11 @@ sections:
           and page designers.
         size: text-half
   - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+    text: Eager to bring visual journalism to the digital realm, I learned Flash and
+      began producing feature stories and investigative journalism for
+      ChicagoTribune.com
     images:
-      - alt: "Placeholder: design iteration or alternative"
+      - alt: Tut Guide
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
