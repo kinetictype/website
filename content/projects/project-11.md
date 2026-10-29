@@ -34,13 +34,12 @@ prototype_size: half
 sections:
   - heading: Context
     text: Every day at the Chicago Tribune was a new adventure. Depending on the
-      news that day, I would work on 2-3 small visualizations after consulting a
-      graphics coordinator who gathered the data, or, if there was a breaking
-      news story, I would work with other artists to contribute to a larger data
+      news that day, I worked on 2-3 small visualizations or, if a breaking news
+      story broke, I worked with other artists to contribute to a larger data
       story that took up an entire page. At times, I worked on a page-one story,
-      designing and illustrating a visualization while editors stood behind me
-      and watched me work. No matter the situation that day, I was thrilled to
-      contribute to the team and run with the news.
+      designing and illustrating a visualization while editors watched me work.
+      No matter the situation that day, I was thrilled to contribute to the team
+      and run with the news.
     images:
       - alt: The expansion of The Art Institute page one story.
         size: half-text
