@@ -16,7 +16,6 @@ responsibilities: Daily, I created visual stories for the printed paper. To help
   team and designed a workflow to move printed graphics online. I began to
   create digital visual explanations for in-depth reporting.
 team: " Reporters, visualization artists, illustrators, page designers, and editors."
-website: chicagotribune.com
 categories:
   - Information Graphics
   - Interactive Data Visualization
