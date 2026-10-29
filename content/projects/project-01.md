@@ -62,10 +62,9 @@ sections:
 - heading: Outcome
   text: JPMorgan Chase acquired Figg to build a two-sided commerce platform and fill the opportunity gap we illustrated in the Service Design map.
   images:
-  - image: /images/placeholders/placeholder-detail-2.svg
+  - image: /images/placeholders/placeholder-wide-2.svg
     alt: 'Placeholder: result or shipped product'
-    size: text-half
-    text: 'Placeholder: describe the result or shipped product shown here.'
+    size: full
 - heading: Learnings
   text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
   images: []

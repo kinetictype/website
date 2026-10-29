@@ -68,11 +68,10 @@ sections:
     - Customer problems the solution solved
     - Next steps, if there are more iterations to go
   images:
-  - image: /images/placeholders/placeholder-detail-2.svg
+  - image: /images/placeholders/placeholder-wide-2.svg
     alt: 'Placeholder: result or shipped product'
     caption: ''
-    size: text-half
-    text: 'Placeholder: describe the result or shipped product shown here.'
+    size: full
 - heading: Learnings
   text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
   images: []

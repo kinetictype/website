@@ -77,8 +77,7 @@ sections:
   images:
   - image: /images/projects/mmp-form-C.gif
     alt: Merchandise Mart form design, second version (animated)
-    size: text-half
-    text: 'Placeholder: describe the design shown here and the decisions behind it.'
+    size: full
 - heading: Learnings
   text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
 ---
