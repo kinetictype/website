@@ -91,6 +91,7 @@ sections:
     images:
       - image: /images/projects/08-11-06_SECURITY_3542-2.png
         alt: "Placeholder: result or shipped product"
+        caption: Mapping security over time.
         size: full
   - heading: Learnings
     text: "Placeholder: What did you and your team learn? What would help you on
