@@ -33,17 +33,14 @@ drawer_image_alt: Hand drawn map of Lalapalooza festival map.
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
+    text: Every day at the Chicago Tribune was a new adventure. Depending on the
+      news that day, I would work on 2-3 small visualizations after consulting a
+      graphics coordinator who gathered the data, or, if there was a breaking
+      news story, I would work with other artists to contribute to a larger data
+      story that took up an entire page. At times, I worked on a page-one story,
+      designing and illustrating a visualization while editors stood behind me
+      and watched me work. No matter the situation that day, I was thrilled to
+      contribute to the team and run with the news.
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         alt: "Placeholder: image that sets the context"
