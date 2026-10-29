@@ -82,8 +82,7 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/projects/IntonationFest_o.png
-        alt: "Placeholder: design iteration or alternative"
+      - alt: "Placeholder: design iteration or alternative"
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
