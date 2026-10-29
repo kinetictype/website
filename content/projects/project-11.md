@@ -93,8 +93,9 @@ sections:
         alt: "Placeholder: result or shipped product"
         caption: Mapping security over time.
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+  - heading: Working at the Chicago Tribune
+    text: I loved working at a large news organization. Not only was I surrounded by
+      a brilliant visualization team, but it was also an honor to speak with
+      critics and writers daily.
 ---
 To be part of a great newspaper like the Chicago Tribune was an exciting journey and an honor to work in an iconic building just below its famous buttresses. Highlights of my experience included daily print infographics describing the Art Institute expansion (worked with esteemed architecture critic Blair Kamin), Midway runway arrester beds, and the AT&T mergers timeline.
