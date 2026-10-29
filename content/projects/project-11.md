@@ -54,8 +54,6 @@ sections:
         alt: Midway landing expansion illustration.
         caption: I illustrated the Midway airport landing expansion.
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
