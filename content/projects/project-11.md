@@ -45,18 +45,10 @@ sections:
         caption: The expansion of The Art Institute of Chicago's page-one story.
         size: half-text
   - heading: Your goal
-    text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
+    text: Visual journalism instilled ethical practices of accuracy, checks and
+      balances, and working with an established design system, all at a rapid
+      pace. Knowing my work would be seen daily by an audience of 500,000
+      subscribers created a discipline I've held onto throughout my career.
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
         alt: "Placeholder: research or workshop artifact"
