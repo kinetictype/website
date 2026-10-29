@@ -25,7 +25,7 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      The mission or goal of the project?   
+      The mission or goal of the project?  
 
       Which customer or business problems were you and your team trying to
       solve?
@@ -36,13 +36,13 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/projects/Picture 2.png
+      - image: /images/projects/Artboard 1 copy 2@2x.png
         sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
-  - heading: Your goal
+  - heading: The Goal
     text: >+
       What was your goal as the designer, and what did you want the design to
       achieve?
@@ -67,7 +67,7 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Artboard 1@2x.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
@@ -79,7 +79,7 @@ sections:
       technical, design system, capacity or scope), and how did you get through
       them?"
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Picture 2-1.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
@@ -91,7 +91,7 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Artboard 1 copy@2x.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
@@ -109,8 +109,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
-        sound: false
+      - sound: false
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
