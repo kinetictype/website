@@ -42,7 +42,8 @@ sections:
       and run with the news.
     images:
       - image: /images/projects/artInstitute_o-2.png
-        alt: The expansion of The Art Institute page one story.
+        alt: Newspaper image of the expansion of The Art Institute of Chicago.
+        caption: The expansion of The Art Institute page one story.
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
