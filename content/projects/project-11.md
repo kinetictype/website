@@ -91,7 +91,7 @@ sections:
     images:
       - image: /images/projects/08-11-06_SECURITY_3542-2.png
         alt: "Placeholder: result or shipped product"
-        caption: Mapping security over time.
+        caption: Mapping security risks over time.
         size: full
   - heading: Working at the Chicago Tribune
     text: I loved working at a large news organization. Not only was I surrounded by
