@@ -594,7 +594,7 @@ function editableGallery(p) {
 function pageGallery(p) {
   const items = galleryOf(p).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure>${mediaEl(g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -651,8 +651,8 @@ function mediaEl(src, alt = "") {
 }
 
 function mediaRows(items) {
-  items = (items || []).filter((g) => g && g.image);
-  const fig = (g) => `<figure>${mediaEl(g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  items = (items || []).filter((g) => g && (g.image || g.video));
+  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const size = (g) => per[String(g.size || "full").toLowerCase()] || 1;
   const out = [];
@@ -675,7 +675,7 @@ function mediaRows(items) {
 function pageSections(p) {
   const list = (Array.isArray(p.sections) ? p.sections : []).filter((s) => s && (s.heading || s.text || (s.images || []).length));
   return list.map((s) => {
-    const imgs = (s.images || []).filter((g) => g && g.image);
+    const imgs = (s.images || []).filter((g) => g && (g.image || g.video));
     let quotes = "";
     const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? markdown(String(s.text)) : ""}`
       // quotes in a section's text leave the side-by-side column and run the full page width below it
@@ -687,7 +687,7 @@ function pageSections(p) {
       const g = imgs[0];
       const desc = String(g.text || "").trim();
       return `
-<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure>${mediaEl(g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure>${mediaEl(g.video || g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
 ${quotes}
 ${mediaRows(imgs.slice(1))}`;
     }

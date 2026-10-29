@@ -55,7 +55,7 @@ sections:
 - heading: Showing your designs
   text: Eager to bring visual journalism to the digital realm, I learned Flash and began producing feature stories and investigative journalism for ChicagoTribune.com
   images:
-  - image: /images/projects/project-11-chicago-tribune/your-guide-to-tut.mp4
+  - video: /images/projects/project-11-chicago-tribune/your-guide-to-tut.mp4
     alt: Tut Guide
     size: half-text
     text: 'Placeholder: describe the design shown here and the decisions behind it.'
