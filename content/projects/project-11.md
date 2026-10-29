@@ -60,6 +60,7 @@ sections:
     images:
       - image: /images/projects/CocktailNerds_814.png
         alt: "illustration of a cocktail party "
+        caption: Illustration at times took a forefront over visualizing data.
         size: half-text
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
