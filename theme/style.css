@@ -104,6 +104,30 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
   .site-footer { align-items: baseline; }
   .site-footer > div { flex-direction: row; gap: 16px; }
 }
+
+
+/* ---------- home intro ---------- */
+.intro { padding: 56px var(--gutter) 72px; }
+.intro h1, .intro .subhead { max-width: 980px; }
+.portrait-wrap { position: relative; display: inline-block; margin-bottom: 20px; }
+.portrait { display: block; width: 320px; max-width: 100%; height: auto;
+  mix-blend-mode: multiply; /* the illustration's white paper blends into the page color */ }
+
+/* ---------- greeting on portrait hover ----------
+   Text beside the illustration, level with the face. It fades and scales in on hover. */
+.bubble {
+  position: absolute; left: 286px; top: 76px; transform-origin: left center;
+  width: max-content; max-width: 6.2em;
+  font-family: var(--display); font-weight: 500; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em;
+  color: var(--greeting); text-wrap: balance;
+  opacity: 0; transform: scale(.85);
+  transition: opacity .6s cubic-bezier(.22, 1, .36, 1), transform .6s cubic-bezier(.22, 1, .36, 1);
+  pointer-events: none;
+}
+.bubble-text { display: block; }
+@media (hover: hover) {
+  .portrait-wrap:hover .bubble { opacity: 1; transform: scale(1); }
+}
 /* Not enough room beside the illustration (narrower than 520px), and touch screens:
    the greeting sits centered above the head. Size and line breaks match the side greeting. */
 @media (max-width: 520px), (hover: none) {
