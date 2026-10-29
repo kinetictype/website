@@ -83,8 +83,9 @@ sections:
     images:
       - video: /images/projects/project-11-chicago-tribune/your-guide-to-tut.mp4
         alt: Tut Guide
+        caption: This was a feature print story that I turned into an interactive
+          experience.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Breaking news
     text: One of the best feelings was being pulled into a breaking-news story and
       surrounded by the paper's best minds.
