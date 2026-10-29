@@ -651,7 +651,10 @@ function pageSections(p) {
   const list = (Array.isArray(p.sections) ? p.sections : []).filter((s) => s && (s.heading || s.text || (s.images || []).length));
   return list.map((s) => {
     const imgs = (s.images || []).filter((g) => g && g.image);
-    const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? markdown(String(s.text)) : ""}`;
+    let quotes = "";
+    const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? markdown(String(s.text)) : ""}`
+      // quotes in a section's text leave the side-by-side column and run the full page width below it
+      .replace(/<blockquote>[\s\S]*?<\/blockquote>/g, (q) => { quotes += q; return ""; });
     // When a section starts with a "half-text" image (image left) or a "text-half" image (image right), the heading and text sit beside it,
     // and the image's own description sits at the bottom of that column, level with the bottom of the image.
     const kind = imgs.length ? String(imgs[0].size || "").toLowerCase() : "";
@@ -660,12 +663,13 @@ function pageSections(p) {
       const desc = String(g.text || "").trim();
       return `
 <div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure><img loading="lazy" src="${imageUrl(g.image)}" alt="${escapeHtml(g.alt || "")}">${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+${quotes}
 ${mediaRows(imgs.slice(1))}`;
     }
     return `
 ${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}
 ${s.text ? markdown(String(s.text)) : ""}
-${mediaRows(s.images)}`;
+${mediaRows(s.images)}`; // (quotes stay in place here; they are already full width)
   }).join("\n");
 }
 /* Credits at the end, like "Clara crew": Name: role, with an optional link on the name */

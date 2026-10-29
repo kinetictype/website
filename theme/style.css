@@ -328,6 +328,7 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .case-body > .case-intro { font-size: clamp(19px, 2.2vw, 23px); line-height: 1.5; font-weight: 300; max-width: none; } /* full page width, like At a glance */
 .case-body > blockquote { margin-top: 40px; margin-bottom: 40px; padding-left: 20px; border-left: 3px solid var(--accent); font: italic 500 24px/1.4 var(--display); }
 .case-body > blockquote p { margin: 0; }
+.case-body > blockquote { max-width: none; } /* quotes run the full page width */
 /* Every quote looks like the Goldman Sachs one: whatever is pasted inside (a heading, bold, a second italic) takes the quote's own type */
 .case-body blockquote, .split-text blockquote { margin-top: 40px; margin-bottom: 40px; padding-left: 20px; border-left: 3px solid var(--accent); font: italic 500 24px/1.4 var(--display); color: var(--ink); }
 :is(.case-body, .split-text, .prose) blockquote :is(p, h1, h2, h3, h4, h5, h6) { font: inherit; color: inherit; letter-spacing: normal; text-transform: none; margin: 0; }
