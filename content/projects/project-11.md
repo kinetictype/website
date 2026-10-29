@@ -76,8 +76,6 @@ sections:
         caption: This concept revealed itself through a discussion with myself, writers,
           and page designers.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
