@@ -6,14 +6,16 @@ summary: Created daily graphics for news stories and led the transition to
   interactive graphics on ChicagoTribune.com.
 client: Chicago Tribune Graphics
 role: Visual Journalist, Flash Animation
+timeline: 2004-2007
 goals: Create visual explanations of daily news, with occasional investigative
   journalism stories.
 outcome: Created daily graphics for news stories and led the transition to
   interactive graphics on ChicagoTribune.com.
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: " Reporters, graphic artists, page designers, and editors"
+responsibilities: Daily, I created visual stories for the printed paper. To help
+  bridge the gap between digital and print, I worked with the paper's digital
+  team and designed a workflow to move printed graphics online. I began to
+  create digital visual explanations for in-depth reporting.
+team: " Reporters, visualization artists, illustrators, page designers, and editors."
 website: chicagotribune.com
 categories:
   - Information Graphics
