@@ -51,7 +51,8 @@ sections:
       subscribers created a discipline I've held onto throughout my career.
     images:
       - image: /images/projects/MIDWAY1126_MET_1181-2.png
-        alt: "Placeholder: research or workshop artifact"
+        alt: Midway landing expansion illustration.
+        caption: I illustrated the Midway airport landing expansion.
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
