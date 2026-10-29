@@ -64,12 +64,17 @@ sections:
         caption: Illustration at times took a forefront over visualizing data.
         size: half-text
   - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+    text: "As a visual journalist, the day begins at noon and ends once the paper is
+      sent to print. The paper is unique in that it has an omnipresent, ongoing
+      momentum. I enjoyed the rhythm. It is a constant cycle of feedback and
+      collaboration, which makes the work great. I quickly learned my limits so
+      I could meet deadlines. Unfortunately, that meant that sometimes an idea
+      could be great, but time constraints required a simpler solution. "
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
-        alt: "Placeholder: a challenge and how you solved it"
+      - image: /images/projects/ATT_Tribune.png
+        alt: AT&T monopoly full circle
+        caption: This concept revealed itself through a discussion with myself, writers,
+          and page designers.
         size: text-half
         text: "Placeholder: describe the challenge this image shows and how you got
           through it."
