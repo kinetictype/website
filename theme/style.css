@@ -356,16 +356,16 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .next-thumb img, .next-thumb > svg { width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.22, 1, .36, 1); }
 .next-project:not(.project-pager) > a:first-child:hover .next-title { color: var(--accent); }
 .next-project:not(.project-pager) > a:first-child:hover .next-thumb img, .next-project:not(.project-pager) > a:first-child:hover .next-thumb > svg { transform: scale(1.04); }
-/* project pages: under the rule, "Previous project", its logo and title stacked on the left; "Next project", its logo and title stacked on the right */
+/* project pages: under the rule, "Previous project" and its title stacked on the left; "Next project" and its title stacked on the right */
 .project-pager { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 20px var(--gutter) 24px; }
 .project-pager > a { text-decoration: none; }
 .project-pager .pager-next, .project-pager .pager-prev { display: flex; flex-direction: column; gap: 12px; max-width: 48%; }
 .project-pager .pager-next { align-items: flex-end; text-align: right; margin-left: auto; }
 .project-pager .pager-prev { align-items: flex-start; text-align: left; }
 .project-pager .pager-prev .next-thumb { justify-content: flex-start; }
-@media (max-width: 640px) { .project-pager { flex-direction: column; gap: 32px; } .project-pager .pager-next, .project-pager .pager-prev { max-width: 100%; } .project-pager .next-title { font-size: 26px; } }
+@media (max-width: 640px) { .project-pager { flex-direction: column; gap: 32px; } .project-pager .pager-next, .project-pager .pager-prev { max-width: 100%; } }
 .project-pager .next-label { display: inline-flex; gap: 6px; align-items: center; }
-.project-pager .next-title { margin-top: 0; }
+.project-pager .next-title { margin-top: 0; font-size: 30px; letter-spacing: normal; line-height: 1.08; } /* same size as the section headings */
 .project-pager .next-thumb { width: auto; height: 56px; aspect-ratio: auto; border: 0; border-radius: 0; overflow: visible; display: flex; justify-content: flex-end; }
 .project-pager .next-thumb img, .project-pager .next-thumb > svg { width: auto; height: 100%; max-width: 220px; object-fit: contain; }
 .project-pager .pager-next:hover .next-title, .project-pager .pager-prev:hover .next-title, .project-pager .pager-prev:hover .next-label, .project-pager .pager-next:hover .next-label { color: var(--accent); }

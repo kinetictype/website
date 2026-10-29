@@ -751,12 +751,10 @@ function caseStudy(p) {
 <nav class="next-project project-pager" aria-label="More projects">
   ${prev ? `<a class="pager-prev" href="${projectUrl(prev)}">
     <span class="next-label">${ARROW_BACK} Previous project</span>
-    ${prev.cover ? `<span class="next-thumb"><img src="${assetUrl(prev, prev.cover)}" alt="" loading="lazy"></span>` : ""}
     <span class="next-title">${escapeHtml(prev.title)}</span>
   </a>` : "<span></span>"}
   <a class="pager-next" href="${projectUrl(next)}">
     <span class="next-label">Next project ${ARROW}</span>
-    ${next.cover ? `<span class="next-thumb"><img src="${assetUrl(next, next.cover)}" alt="" loading="lazy"></span>` : ""}
     <span class="next-title">${escapeHtml(next.title)}</span>
   </a>
 </nav>
