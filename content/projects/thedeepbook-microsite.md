@@ -2,17 +2,17 @@
 title: The Deep Book Microsite
 tagline: Bringing deep-sea creatures to life online.
 summary: Design and develop a microsite to market a book on deep-sea creatures.
-client: "University of Chicago Press "
+client: 'University of Chicago Press '
 role: Motion graphics designer
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
+goals: 'Placeholder: the customer and business goal.'
+outcome: 'Placeholder: what you eventually designed.'
 responsibilities: Storyboard, animation, layout, and collaboration with sound design.
 team: The marketing team and  Iroro Orife, a talented sound designer.
 website: https://bit.ly/4jIWREn
 website_label: The Deep Book
 categories:
-  - Motion Graphics Design
-years: "2007"
+- Motion Graphics Design
+years: '2007'
 section: work
 start_year: 2007
 featured: false
@@ -22,24 +22,65 @@ drawer_image: /images/projects/03_deep-book-1.png
 drawer_image_alt: The Deep Book microsite
 prototype_size: half
 sections:
-  - heading: Context
-    text: >+
-      The project's mission was to advertise a non-scholarly textbook from the
-      University of Chicago Press. My hypothesis led me to envision a shadow
-      puppet-like experience featuring deep-sea creatures that would entice
-      viewers to buy the book.
+- heading: Context
+  text: |+
+    The project's mission was to advertise a non-scholarly textbook from the University of Chicago Press. My hypothesis led me to envision a shadow puppet-like experience featuring deep-sea creatures that would entice viewers to buy the book.
 
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
-        alt: "Placeholder: image that sets the context"
-        size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
-  - heading: Learnings
-    text: It was an honor to work on this creation with the largest and one of the
-      oldest university presses in North America. Working with this team helped
-      me refine the pacing and sequencing of objects to make it as smooth as
-      possible.
+  images:
+  - image: /images/placeholders/placeholder-detail-1.svg
+    sound: false
+    alt: 'Placeholder: image that sets the context'
+    size: half-text
+    text: 'Placeholder: describe what this image shows and why it matters to the problem.'
+- heading: Your goal
+  text: |+
+    Placeholder: What was your goal as the designer, and what did you want the design to achieve?
+
+    - "How might we…" statements
+    - Metrics the team aimed for (e.g. ARR, convert X% of customers)
+    - Research that shaped the work: competitive analysis, customer satisfaction scores (surveys, NPS), market research
+
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: research or workshop artifact'
+    size: text-half
+    text: 'Placeholder: describe the research, workshop or competitive analysis shown here.'
+- heading: Design principles & frameworks
+  text: 'Placeholder: Which frameworks helped you and your team think through the customer problems? Which design principles did you follow, or create, to guide the design?'
+  images:
+  - image: /images/placeholders/placeholder-detail-1.svg
+    alt: 'Placeholder: framework or design principles'
+    size: half-text
+    text: 'Placeholder: describe the framework, principle or diagram shown here.'
+- heading: Challenges
+  text: 'Placeholder: Which challenges are worth highlighting (team or org, technical, design system, capacity or scope), and how did you get through them?'
+  images:
+  - image: /images/placeholders/placeholder-detail-2.svg
+    alt: 'Placeholder: a challenge and how you solved it'
+    size: text-half
+    text: 'Placeholder: describe the challenge this image shows and how you got through it.'
+- heading: Showing your designs
+  text: 'Placeholder: Show one or two iterations or alternatives you considered (flats, prototypes, videos or GIFs) and the screens that explain your decisions. Mention any AI tools you used, such as Figma Make, Lovable, Cursor or Replit.'
+  images:
+  - image: /images/placeholders/placeholder-detail-1.svg
+    alt: 'Placeholder: design iteration or alternative'
+    size: half-text
+    text: 'Placeholder: describe the design shown here and the decisions behind it.'
+- heading: Results & outcomes
+  text: |+
+    Placeholder: What data or metrics resulted from the design? If none, what positives came out of it?
+
+    - Business value the design provided
+    - Customer problems the solution solved
+    - Next steps, if there are more iterations to go
+
+  images:
+  - video: /images/projects/thedeepbook/thedeepbook-loop.mp4
+    sound: true
+    alt: 'Animated intro of TheDeepBook.org microsite (2007): deep-sea creatures from the book The Deep by Claire Nouvian'
+    caption: Animated microsite of deep-sea creatures from the book The Deep by Claire Nouvian
+    size: full
+- heading: Learnings
+  text: It was an honor to work on this creation with the largest and one of the oldest university presses in North America. Working with this team helped me refine the pacing and sequencing of objects to make it as smooth as possible.
 ---
 A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images, and sound design.
