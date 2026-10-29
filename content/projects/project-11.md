@@ -50,7 +50,7 @@ sections:
       pace. Knowing my work would be seen daily by an audience of 500,000
       subscribers created a discipline I've held onto throughout my career.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/MIDWAY1126_MET_1181-2.png
         alt: "Placeholder: research or workshop artifact"
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
