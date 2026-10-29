@@ -76,7 +76,7 @@ sections:
         caption: This concept revealed itself through a discussion with myself, writers,
           and page designers.
         size: text-half
-  - heading: Showing your designs
+  - heading: Transition from print to digital
     text: Eager to bring visual journalism to the digital realm, I learned Flash and
       began producing feature stories and investigative journalism for
       ChicagoTribune.com
