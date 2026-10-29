@@ -43,7 +43,7 @@ sections:
       contribute to the team and run with the news.
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
-        alt: "Placeholder: image that sets the context"
+        alt: The expansion of The Art Institute page one story.
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
