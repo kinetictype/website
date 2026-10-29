@@ -53,11 +53,13 @@ sections:
         caption: I illustrated the Midway airport landing expansion.
         size: text-half
   - heading: Design principles and frameworks
-    text: "To bridge the gap between digital and print, I worked with the paper's
-      digital team to design a workflow for moving printed graphics online. "
+    text: One of my favorite things about working in the newspaper business is the
+      number of eyes on my work. When a graphic was ready for print, it traveled
+      the newroom and went through several checks and balances to ensure
+      accuracy.
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        alt: diagram of workflow for chicagotribune.com
+      - image: /images/projects/CocktailNerds_814.png
+        alt: "illustration of a cocktail party "
         size: half-text
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
