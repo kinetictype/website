@@ -118,14 +118,4 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-To be part of a great newspaper like the Chicago Tribune was an exciting journey and an honor to work in an iconic building just below its famous buttresses. Daily print infographics describing the Art Institute expansion, Midway runway arrester beds, and AT&T mergers timeline was a highlight.
-
-
-
-Print: terror alert levels, raised bike lanes  
-Interactive: Flash graphics (obesity in America, mortgage fraud demographics), a process timeline for the editorial and interactive teams
-
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED  
-Worked on some of the first interactive graphics the paper produced and brought its print and .com teams together.
-
-co-bylines with Max Rust and Adam Zoll; worked with architecture critic Blair Kamin).
+To be part of a great newspaper like the Chicago Tribune was an exciting journey and an honor to work in an iconic building just below its famous buttresses. Highlights of my experience included daily print infographics describing the Art Institute expansion (worked with esteemed architecture critic Blair Kamin), Midway runway arrester beds, and the AT&T mergers timeline.
