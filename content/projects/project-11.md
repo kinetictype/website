@@ -43,8 +43,8 @@ sections:
     images:
       - image: /images/projects/artInstitute_o-2.png
         alt: Newspaper image of the expansion of The Art Institute of Chicago.
+        caption: The expansion of The Art Institute of Chicago's page-one story.
         size: half-text
-        text: The expansion of The Art Institute of Chicago's page-one story.
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
