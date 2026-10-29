@@ -13,8 +13,8 @@ outcome: Created daily graphics for news stories and led the transition to
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
   testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+team: " Reporters, graphic artists, page designers, and editors"
+website: chicagotribune.com
 categories:
   - Information Graphics
   - Interactive Data Visualization
@@ -116,15 +116,14 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-Outcome: what I designed:  
+To be part of a great newspaper like the Chicago Tribune was an exciting journey and an honor to work in an iconic building just below its famous buttresses. Daily print infographics describing the Art Institute expansion, Midway runway arrester beds, and AT&T mergers timeline was a highlight.
 
-- Daily print infographics (e.g., Art Institute expansion, Midway runway arrester beds, AT&T mergers timeline, terror alert levels, raised bike lanes)
-- Interactive Flash graphics (obesity in America, mortgage fraud demographics)
-- A process timeline for the editorial and interactive teams
 
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
 
-Worked on the first interactive graphics the paper produced and brought its print and .com teams together.
+Print: terror alert levels, raised bike lanes  
+Interactive: Flash graphics (obesity in America, mortgage fraud demographics), a process timeline for the editorial and interactive teams
 
-MY TEAM  
-Reporters, graphic artists, page designers and editors (co-bylines with Max Rust and Adam Zoll; worked with architecture critic Blair Kamin).
+WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED  
+Worked on some of the first interactive graphics the paper produced and brought its print and .com teams together.
+
+co-bylines with Max Rust and Adam Zoll; worked with architecture critic Blair Kamin).
