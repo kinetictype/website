@@ -95,7 +95,9 @@ sections:
           Claire Nouvian
         size: full
   - heading: Learnings
-    text: It was an honor to work with the largest and one of the oldest university
-      presses in North America on this creation.
+    text: It was an honor to work on this creation with the largest and one of the
+      oldest university presses in North America. Working with this team helped
+      me refine the pacing and sequencing of objects to make it as smooth as
+      possible.
 ---
 A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images, and sound design.
