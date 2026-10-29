@@ -75,15 +75,11 @@ sections:
     - Next steps, if there are more iterations to go
 
   images:
-  - image: /images/placeholders/placeholder-wide-2.svg
-    alt: 'Placeholder: result or shipped product'
-    size: full
-- heading: Learnings
-  text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
-  images:
   - video: /images/projects/thedeepbook/thedeepbook-loop.mp4
     sound: true
     alt: 'Animated intro of TheDeepBook.org microsite (2007): deep-sea creatures from the book The Deep by Claire Nouvian'
     size: full
+- heading: Learnings
+  text: 'Placeholder: What did you and your team learn? What would help you on another project? Anything else worth highlighting?'
 ---
 A Flash [microsite](https://bit.ly/4jIWREn) using kinetic typography, moving images, and sound design.
