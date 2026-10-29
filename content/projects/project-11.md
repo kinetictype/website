@@ -11,10 +11,8 @@ goals: Create visual explanations of daily news, with occasional investigative
   journalism stories.
 outcome: Created daily graphics for news stories and led the transition to
   interactive graphics on ChicagoTribune.com.
-responsibilities: Daily, I created visual stories for the printed paper. To help
-  bridge the gap between digital and print, I worked with the paper's digital
-  team and designed a workflow to move printed graphics online. I began to
-  create digital visual explanations for in-depth reporting.
+responsibilities: Daily, I created visual stories for the printed paper and
+  digital visual explanations for in-depth reporting on ChicagoTribune.com.
 team: " Reporters, visualization artists, illustrators, page designers, and editors."
 categories:
   - Information Graphics
