@@ -100,7 +100,7 @@ sections:
       - image: /images/projects/project-13/usertesting-browser-prototype-heatmap.svg
         alt: Scrollable prototype of the report with the score breakdown shown as heat
           maps for Verizon and T-Mobile, in a browser window
-        size: full
+        size: half
       - image: /images/projects/project-13/usertesting-browser-prototype-score.svg
         alt: Scrollable prototype of the full report, from the overall score to common
           product descriptors and path directness, in a browser window
