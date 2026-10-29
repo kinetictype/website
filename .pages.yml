@@ -140,6 +140,7 @@ content:
                 label: "Video instead of an image (optional) — an .mp4 or .webm; it plays silently on a loop, like a GIF. Upload a .webm with the same name next to the .mp4 for a smaller file"
                 type: file
                 options: { media: images, path: content/images/projects, categories: [video] }
+              - { name: sound, label: "Video has sound — show a Sound on/off button (the video starts silent)", type: boolean }
               - { name: alt, label: Description for screen readers (alt text), type: string }
               - { name: caption, label: Caption under the image (optional), type: string }
               - name: size

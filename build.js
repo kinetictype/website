@@ -594,7 +594,7 @@ function editableGallery(p) {
 function pageGallery(p) {
   const items = galleryOf(p).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -625,6 +625,8 @@ function listImages(p) {
 
 /* Sections each one is a heading, text (Markdown: paragraphs, bullet lists, links)
    and that section's images. Images use the same sizes as the gallery: full, half (two side by side), third. */
+const SPEAKER = `<svg class="icon-speaker" width="1em" height="1em" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="waves" d="M16 9.5a3.5 3.5 0 0 1 0 5M18.5 7a7 7 0 0 1 0 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="mute" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+
 // width and height of an .mp4 (from its track header), so the page reserves the right space before the video loads
 function mp4Size(file) {
   if (!exists(file)) return null;
@@ -637,7 +639,7 @@ function mp4Size(file) {
   return null;
 }
 // An image, or for .mp4/.webm a silent looping video that plays like a GIF (much smaller files than animated GIFs)
-function mediaEl(src, alt = "") {
+function mediaEl(src, alt = "", sound = false) {
   if (/\.(mp4|webm)$/i.test(String(src))) {
     // a .webm next to the .mp4 (same name) is offered first: smaller, and played by every current browser
     const base = String(src).replace(/\.(mp4|webm)$/i, "");
@@ -645,14 +647,18 @@ function mediaEl(src, alt = "") {
       .map((ext) => `<source src="${imageUrl(base + ext)}" type="video/${ext.slice(1)}">`).join("");
     const dims = mp4Size(path.join(CONTENT, base + ".mp4"));
     const ratio = dims ? ` style="aspect-ratio:${dims[0]} / ${dims[1]}"` : "";
-    return `<video autoplay muted loop playsinline preload="auto"${ratio} aria-label="${escapeHtml(alt)}">${sources || `<source src="${imageUrl(src)}">`}</video>`;
+    const video = `<video autoplay muted loop playsinline preload="auto"${ratio} aria-label="${escapeHtml(alt)}">${sources || `<source src="${imageUrl(src)}">`}</video>`;
+    if (!sound) return video;
+    // videos with sound start muted (browsers only autoplay silent video); the button turns the sound on and off
+    const toggle = "var v=this.parentNode.querySelector('video');v.muted=!v.muted;if(!v.muted)v.play();this.setAttribute('aria-pressed',String(!v.muted));this.querySelector('span').textContent=v.muted?'Sound off':'Sound on'";
+    return `<div class="video-wrap">${video}<button type="button" class="sound-toggle" aria-pressed="false" onclick="${toggle}">${SPEAKER}<span>Sound off</span></button></div>`;
   }
   return `<img loading="lazy" src="${imageUrl(src)}" alt="${escapeHtml(alt)}">`;
 }
 
 function mediaRows(items) {
   items = (items || []).filter((g) => g && (g.image || g.video));
-  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const size = (g) => per[String(g.size || "full").toLowerCase()] || 1;
   const out = [];
@@ -687,7 +693,7 @@ function pageSections(p) {
       const g = imgs[0];
       const desc = String(g.text || "").trim();
       return `
-<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure>${mediaEl(g.video || g.image, g.alt)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
 ${quotes}
 ${mediaRows(imgs.slice(1))}`;
     }
