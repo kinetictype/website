@@ -6,10 +6,8 @@ client: "University of Chicago Press "
 role: Motion graphics designer
 goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: The marketing team and Iroro Orife, a talented sound designer.
+responsibilities: Storyboard, animation, layout, and collaboration with sound design.
+team: The marketing team and  Iroro Orife, a talented sound designer.
 categories:
   - Motion Graphics Design
 years: "2007"
