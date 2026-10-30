@@ -3,14 +3,12 @@ title: Sara Lee Sales Brochure Charts
 tagline: An illustrated chart style for Sara Lee's sales brochures.
 summary: Give the information graphics in Sara Lee's sales brochures a more
   illustrative, dynamic look.
-client: "Sara Lee Corp./Launch Creative Marketing "
+client: "Sara Lee Corp/Launch Creative Marketing "
 role: Visualization Designer
 timeline: "2007"
 goals: The art director and several designers.
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
+outcome: Multiple charts in one consistent style across several brochures.
+responsibilities: Chart Illustrations
 team: The art director and several designers.
 categories:
   - Visualization Designer
@@ -28,12 +26,11 @@ sections:
       The mission or goal of the project?  
 
       Which customer or business problems were you and your team trying to
-      solve?
+      solve?  
 
+      Assumptions you set out to validate or disprove  
 
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
+      The hypothesis that guided your design
 
     images:
       - image: /images/projects/Artboard 1 copy 2@2x.png
@@ -118,4 +115,4 @@ sections:
       went all in on more illustrative charts. The team was energized, and so
       was the client. It was worth it. "
 ---
-Multiple charts in one consistent style across ten brochures.
+Multiple charts in one consistent style across several brochures.
