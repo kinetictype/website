@@ -92,8 +92,9 @@ sections:
       - image: /images/projects/mmp-form-A-1.gif
         sound: false
         alt: Merchandise Mart form design (animated)
+        caption: Putting the marks together in animation is the most compelling aspect
+          of this concept.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
@@ -107,7 +108,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/projects/mmp-form-C.gif
+      - image: /images/projects/mmp-sequence-wire.gif
         sound: false
         alt: Merchandise Mart form design, second version (animated)
         size: full
