@@ -54,7 +54,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/01_breezeway-steps-1-1.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
