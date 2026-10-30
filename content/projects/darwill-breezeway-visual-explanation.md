@@ -23,7 +23,7 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      What was the mission or goal of the project?   
+      What was the mission or goal of the project?  
 
       Which customer or business problems were you and your team trying to
       solve?  
