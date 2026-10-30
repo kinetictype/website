@@ -70,8 +70,8 @@ sections:
       - image: /images/projects/Artboard 1@2x.png
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: the framework, principle or diagram shown here.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
       - sound: false
         size: full
   - heading: Challenges
@@ -82,9 +82,8 @@ sections:
       - image: /images/projects/Picture 2-1.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: The final brochure with image placed inside.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
@@ -94,8 +93,8 @@ sections:
       - image: /images/projects/Artboard 1 copy@2x.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: the design shown here and the decisions behind it.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
