@@ -23,15 +23,16 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      What was the mission or goal of the project?   
 
+      Which customer or business problems were you and your team trying to
+      solve?  
 
-      - Data or stats that set the context
+      Data or stats that set the context  
 
-      - Assumptions you set out to validate or disprove
+      Assumptions you set out to validate or disprove  
 
-      - The hypothesis that guided your design
+      The hypothesis that guided your design
 
     images:
       - image: /images/projects/02_breezeway-step-detail-1.png
