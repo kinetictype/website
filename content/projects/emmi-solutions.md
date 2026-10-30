@@ -47,6 +47,10 @@ sections:
         alt: "Placeholder: image that sets the context"
         caption: I assisted with interface work as well as visual explanations.
         size: half-text
+      - image: /images/projects/alberto1_before.jpg
+        sound: false
+        caption: The state of the software I began with.
+        size: full
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
@@ -61,8 +65,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
-        sound: false
+      - sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
