@@ -68,10 +68,11 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - sound: false
+      - image: /images/projects/flipshare-video-option-a-1.gif
+        sound: false
         alt: "Placeholder: framework or design principles"
+        caption: The framework, principle or diagram shown here.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
