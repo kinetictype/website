@@ -20,7 +20,7 @@ start_year: 2008
 featured: false
 hidden: false
 cover: /images/logos/3rstLogo.svg
-drawer_image: /images/projects/05_combination-of-options.png
+drawer_image: /images/projects/mmp-form-C-2.gif
 prototype_size: half
 sections:
   - heading: Context
