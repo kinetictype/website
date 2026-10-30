@@ -105,7 +105,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/06_myintel-wireframe-3.png
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
