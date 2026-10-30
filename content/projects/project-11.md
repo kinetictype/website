@@ -25,7 +25,7 @@ hidden: false
 description: Visual Journalist, early interactive visualization
 cover: /images/logos/chicago-tribune.svg
 cover_alt: Chicago Tribune logo
-drawer_image: /images/projects/MIDWAY1126_MET_1181-3.png
+drawer_image: /images/projects/historyMuseum_2500.png
 drawer_image_alt: Hand drawn map of Lalapalooza festival map.
 prototype_size: half
 sections:
@@ -39,6 +39,7 @@ sections:
       and run with the news.
     images:
       - image: /images/projects/artInstitute_o-2.png
+        sound: false
         alt: Newspaper image of the expansion of The Art Institute of Chicago.
         caption: The expansion of The Art Institute of Chicago's page-one story.
         size: half-text
@@ -49,6 +50,7 @@ sections:
       throughout my career.
     images:
       - image: /images/projects/lollapalooza_Fullpage.png
+        sound: false
         alt: Lollapalooza festival map.
         caption: The page designer took inspiration from my map icons for Lollapalooza
           and it became a was a close collaboration.
@@ -60,6 +62,7 @@ sections:
       accuracy.
     images:
       - image: /images/projects/CocktailNerds_814.png
+        sound: false
         alt: "illustration of a cocktail party "
         caption: Illustration at times took a forefront over visualizing data.
         size: half-text
@@ -72,6 +75,7 @@ sections:
       could be great, but time constraints required a simpler solution. "
     images:
       - image: /images/projects/ATT_Tribune.png
+        sound: false
         alt: AT&T monopoly full circle
         caption: This concept revealed itself through a discussion with myself, writers,
           and page designers.
@@ -82,6 +86,7 @@ sections:
       ChicagoTribune.com
     images:
       - video: /images/projects/project-11-chicago-tribune/your-guide-to-tut.mp4
+        sound: false
         alt: Tut Guide
         caption: This was a feature print story that I turned into an interactive
           experience.
@@ -91,6 +96,7 @@ sections:
       surrounded by the paper's best minds.
     images:
       - image: /images/projects/08-11-06_SECURITY_3542-2.png
+        sound: false
         alt: "Placeholder: result or shipped product"
         caption: Mapping security risks over time.
         size: full
