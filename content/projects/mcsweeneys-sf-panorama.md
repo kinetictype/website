@@ -1,5 +1,11 @@
 ---
-title: McSweeneys SF Panorama
+title: McSweeney's – San Francisco Panorama
+tagline: Illustrating a real-estate exposé for McSweeney's
+summary: >+
+  I illustrated more than 100 Lembi properties from photographs. Illustrate
+  Richard Parks's two-page article about the Lembi Group's San Francisco real
+  estate holdings.
+
 goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
@@ -31,9 +37,10 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - sound: false
+      - image: /images/projects/06_building-5.png
+        sound: false
         alt: "Placeholder: image that sets the context"
-        caption: what this image shows and why it matters to the problem.
+        caption: Hand drawn ink on paper illustration
         size: half-text
   - heading: Your goal
     text: >+
@@ -49,28 +56,27 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/03_building-2.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
+        caption: Hand illustration
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/04_building-3.png
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: principle or diagram shown here.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
       them?"
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/02_building-1.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
@@ -82,11 +88,11 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/04_building-3-1.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: " design shown here "
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
@@ -110,20 +116,5 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-HEADLINE
+McSweeney's kindly mentioned that my illustrations are "One of the Panorama designs we're proudest of." 
 
-Illustrating a real-estate exposé for McSweeney's
-
-COMPANY NAME
-
-McSweeney's – San Francisco Panorama
-
-GOAL
-
-Illustrate Richard Parks's two-page article about the Lembi Group's San Francisco real-estate holdings.
-
-I illustrated over 100 of the Lembi properties from photographs.
-
-A positive outcome was a mention in the Society of News Design, [snd.org, and](http://snd.org) McSweeney's: "One of the Panorama designs we're proudest of." 
-
-I worked with the page designer and the editor of the paper for this special edition.
