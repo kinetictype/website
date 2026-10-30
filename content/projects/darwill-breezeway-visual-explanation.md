@@ -7,11 +7,9 @@ client: David James Group for Darwill
 role: Visualization Designer
 goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+responsibilities: I worked on visual and concept design while the creative
+  director provided content to me.
+team: I worked directly with the creative director.
 categories:
   - Visualization Designer
 years: "2007"
@@ -117,10 +115,4 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-OUTCOME: WHAT I DESIGNED  
-A six-step process visualization to display how the product worked for their marketing materials.
-
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED  
-Not stated in the source files.
-
-I worked directly with the creative director.
+I designed a six-step process visualization for their marketing materials to show how the product worked.
