@@ -31,8 +31,7 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/projects/spread_blended-1.png
-        sound: false
+      - sound: false
         alt: "Placeholder: image that sets the context"
         caption: what this image shows and why it matters to the problem.
         size: half-text
