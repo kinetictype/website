@@ -5,13 +5,12 @@ summary: Develop a custom Android user interface; the earlier version was
   outsourced and adapted from the iPhone app.
 client: "Flip Video "
 role: UX Designer
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+timeline: 2010-2011
+goals: Create an Android application for Flipshare.
+outcome: The Android phone was a new platform. I designed the slide feature with
+  engineers at Flip. This functionality did not exist before.
+responsibilities: "I worked on interaction design and concept design. "
+team: Worked with a product manager to review requirements.
 categories:
   - UX Design
 years: "2010"
