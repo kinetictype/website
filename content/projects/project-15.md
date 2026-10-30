@@ -26,22 +26,22 @@ drawer_image_alt: Placeholder image for project 15
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+    text: >-
+      **Created Visual design enhancements**•  • After an action completes,
+      return to the video list with the item still selected but the menu closed
+      • One selection color for the video list and action menu • Same menu
+      appearance for the pop-up menu and tap and hold (icons and text) • Present
+      the channel distinctly from other channels
 
 
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
+      Prototype: tap the video or click/roll the trackball to show the overlay.
+      Play, drag the progress circle, skip between videos (7 of 23) and tap the
+      share/mark icons.
     images:
       - video: /images/projects/flipshare-channels-drawer.mp4
         sound: false
         alt: "Placeholder: image that sets the context"
-        caption: what this image shows and why it matters to the problem.
+        caption: New icons for the viewing controls (progress bar, forward, back, play)
         size: half-text
   - heading: My goal
     text: >+
@@ -67,8 +67,7 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
+      - sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
