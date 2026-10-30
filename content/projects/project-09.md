@@ -153,4 +153,4 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-When I joined Workday Analytics, they were replacing the current visualization library with one that could handle large volumes of data. 
+When I joined Workday Analytics, they were replacing the current visualization library with one that could handle large volumes of data. Accessibility is ethically the right thing to ensure. I was thrilled to have the opportunity to work on it.
