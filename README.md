@@ -177,3 +177,10 @@ Each page gets a unique title, meta description, canonical URL on kierawestphal.
 card tags, and a language tag. The homepage and About page include schema.org `Person` data; project pages
 include `CreativeWork` data. The build also writes `sitemap.xml`, `robots.txt`, `404.html`, and the `CNAME`
 file that tells GitHub Pages to serve kierawestphal.com.
+
+## New projects get the standard structure automatically
+When you create a project in Pages CMS, the deploy workflow runs `scripts/fill-sections.js`, which adds the standard
+case-study sections from `templates/default-sections.yml` (Context, Your goal, Design principles & frameworks,
+Challenges, Showing your designs, Results & outcomes, Learnings) with placeholder text and images in the alternating
+layout. The site shows that structure for a project without sections even before the file is updated.
+Existing sections are never changed.

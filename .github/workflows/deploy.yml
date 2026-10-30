@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   # lets the workflow add the standard sections to a newly created project
   pages: write
   id-token: write
 
@@ -33,6 +33,18 @@ jobs:
           echo "::error title=GitHub Pages is not turned on::Open the repository on github.com > Settings > Pages, and under 'Build and deployment' set Source to 'GitHub Actions'. On a free GitHub account the repository must be public first (Settings > General > Danger Zone > Change visibility). Then open Actions > Deploy site > Run workflow."
           exit 1
       - run: npm ci
+      # A project created in Pages CMS gets the same structure as all the others: Context, Your goal,
+      # Design principles & frameworks, Challenges, Showing your designs, Results & outcomes, Learnings
+      - name: Add the standard sections to new projects
+        run: |
+          node scripts/fill-sections.js
+          if [ -n "$(git status --porcelain content/projects)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/projects
+            git commit -m "Add the standard case-study sections to new projects"
+            git pull --rebase origin main && git push origin HEAD:main || echo "Could not save the sections now; the site still shows them and the next save will retry."
+          fi
       # base_path is "/website" while the site lives at kinetictype.github.io/website/,
       # and empty once the custom domain kierawestphal.com is connected
       - run: npm run build

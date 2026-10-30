@@ -192,11 +192,17 @@ function byRecency(a, b) {
 }
 
 const PROJECT_DIR = path.join(CONTENT, "projects");
+const DEFAULT_SECTIONS = () => {
+  const file = path.join(__dirname, "templates", "default-sections.yml");
+  return exists(file) ? (yaml.load(read(file)) || {}).sections || [] : [];
+};
 const projects = fs
   .readdirSync(PROJECT_DIR)
   .filter((f) => f.endsWith(".md"))
   .map((f) => {
     const { data, body } = parseFile(path.join(PROJECT_DIR, f));
+    // a project without sections (e.g. just created in Pages CMS) gets the standard case-study structure
+    if (!Array.isArray(data.sections) || !data.sections.length) data.sections = DEFAULT_SECTIONS();
     return { ...data, slug: f.replace(/\.md$/, ""), body };
   })
   .filter((p) => p.hidden !== true)
