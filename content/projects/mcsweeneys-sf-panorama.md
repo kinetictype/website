@@ -23,7 +23,6 @@ start_year: 2009
 featured: false
 hidden: false
 cover: /images/logos/McSweenys-chair.svg
-drawer_image: /images/projects/spread_blended.png
 prototype_size: half
 sections:
   - heading: Context
