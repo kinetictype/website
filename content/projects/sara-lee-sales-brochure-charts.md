@@ -112,8 +112,10 @@ sections:
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+  - heading: Jazzy Infographics
+    text: "I was brought in to work with Launch Design Agency to build infographics
+      with a dimension effect. I broke traditional graph rules for clarity and
+      went all in on more illustrative charts. The team was energized, and so
+      was the client. It was worth it. "
 ---
 Multiple charts in one consistent style across ten brochures.
