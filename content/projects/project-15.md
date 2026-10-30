@@ -22,6 +22,7 @@ hidden: false
 description: Placeholder description of project 15 for search engines and link previews.
 cover: /images/logos/FlipVideo.svg
 cover_alt: Placeholder cover image for project 15
+drawer_image: /images/projects/flipshare-video-option-a.gif
 drawer_image_alt: Placeholder image for project 15
 prototype_size: half
 sections:
