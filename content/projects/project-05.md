@@ -94,16 +94,15 @@ sections:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: The challenge this image shows and how you got through it.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/05_help-wizard.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
@@ -121,7 +120,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/06_system-map.png
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
