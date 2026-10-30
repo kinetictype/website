@@ -1,23 +1,25 @@
 ---
-title: McSweeney's – San Francisco Panorama
-tagline: Illustrating a real-estate exposé for McSweeney's
+title: San Francisco Panorama
+tagline: Illustrating a real-estate exposé for McSweeney's Panorama.
 summary: >+
   I illustrated more than 100 Lembi properties from photographs. Illustrate
   Richard Parks's two-page article about the Lembi Group's San Francisco real
   estate holdings.
 
-goals: "Placeholder: the customer and business goal."
+client: McSweeny's
+role: Illustrator
+timeline: "2009"
+goals: Illustrate drawings reminiscent of the style of buildings of 1910.
 outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
   testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+team: Worked with the page editor.
 categories:
   - Illustration
 years: "2009"
 section: work
-start_year: 2003
+start_year: 2009
 featured: false
 hidden: false
 cover: /images/logos/McSweenys-chair.svg
