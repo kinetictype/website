@@ -102,7 +102,9 @@ sections:
         size: full
       - image: /images/projects/lollapalooza_grapic-1.png
         sound: false
-        caption: I had a lot of fun with this one.
+        caption: I was inspired by pop-up books and how Grant Park was transformed by
+          the festival. Keeping landmarks in sight when among a crowd in the
+          middle of the city.
         size: full
   - heading: Working at the Chicago Tribune
     text: I loved working at a large news organization. Not only was I surrounded by
