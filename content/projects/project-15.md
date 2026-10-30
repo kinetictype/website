@@ -38,12 +38,11 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - video: /images/projects/flipshare-channels-drawer.mp4
         sound: false
         alt: "Placeholder: image that sets the context"
+        caption: what this image shows and why it matters to the problem.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: My goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
@@ -58,11 +57,11 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - sound: false
+      - video: /images/projects/flipshare-photo-playback.mp4
+        sound: false
         alt: "Placeholder: research or workshop artifact"
+        caption: " research, workshop or competitive analysis shown here."
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
