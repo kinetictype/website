@@ -776,6 +776,10 @@ function caseStudy(p) {
   return `
 <article class="case">
   <a class="back" href="/work/">${ARROW_BACK} Work</a>
+  <nav class="top-pager" aria-label="Previous and next project">
+    ${prev ? `<a class="back" href="${projectUrl(prev)}" aria-label="Previous project: ${escapeHtml(prev.title)}">${ARROW_BACK} Previous</a>` : "<span></span>"}
+    <a class="back" href="${projectUrl(next)}" aria-label="Next project: ${escapeHtml(next.title)}">Next ${ARROW}</a>
+  </nav>
   <header class="case-head">
     <h1${edText("title")}>${escapeHtml(p.title)}</h1>
     ${p.logo ? `<img class="case-logo"${edImage(p, "logo")} src="${imageUrl(p.logo)}" alt="${escapeHtml(p.client || "")} logo">` : ""}
@@ -791,11 +795,11 @@ function caseStudy(p) {
 
 <nav class="next-project project-pager" aria-label="More projects">
   ${prev ? `<a class="pager-prev" href="${projectUrl(prev)}">
-    <span class="next-label">${ARROW_BACK} Previous project</span>
+    <span class="next-label">${ARROW_BACK} Previous</span>
     <span class="next-title">${escapeHtml(prev.title)}</span>
   </a>` : "<span></span>"}
   <a class="pager-next" href="${projectUrl(next)}">
-    <span class="next-label">Next project ${ARROW}</span>
+    <span class="next-label">Next ${ARROW}</span>
     <span class="next-title">${escapeHtml(next.title)}</span>
   </a>
 </nav>
