@@ -44,7 +44,8 @@ sections:
         size: half-text
       - image: /images/projects/1945Hyde.png
         sound: false
-        size: full
+        caption: new
+        size: half-text
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
