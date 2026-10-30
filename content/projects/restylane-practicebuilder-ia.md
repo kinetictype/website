@@ -3,15 +3,15 @@ title: Restylane PracticeBuilder IA
 tagline: Turning a CD-ROM into a web resource for dermatology practices.
 summary: Create the site architecture for the Restylane PracticeBuilder, moving
   it from a CD into a microsite on RestylaneUSA.com.
-client: Williams-Labadie for Restylane / Medicis Aesthetics
+client: Restylane / Williams-Labadie
 role: Information Architect
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+timeline: "2007"
+goals: "Transfer business from customers accessing a CD-ROM to customers
+  visiting a website. "
+outcome: Information architecture around which the firm could build the website.
+responsibilities: I analyzed the content through card sorting and workshops with
+  the client to identify their needs.
+team: product manager, engineers
 categories:
   - Information Architecture
 years: "2007"
