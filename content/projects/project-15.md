@@ -77,19 +77,18 @@ sections:
       technical, design system, capacity or scope), and how did you get through
       them?"
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/flipshare-favorite.gif
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: The challenge this image shows and how you got through it.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/flipshare-tap-hold-option-1.gif
         sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
