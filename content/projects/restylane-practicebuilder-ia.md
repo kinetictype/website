@@ -112,10 +112,4 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-I designed the site architecture, developed through card sorting and multiple iterations.
-
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED  
-Not stated in the source files.
-
-My Team  
-Writers and web developers.
+Moving a CD Rom to the internet was an exciting feat! I designed the site architecture, developed through card sorting and multiple iterations in the early Web 2.0 days.
