@@ -6,13 +6,13 @@ summary: Explain Intel's new content management system (CQ) to content
   needs.
 client: Razorfish for Intel
 role: UX Designer
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+timeline: "2011"
+goals: Build a CMS platform for Myintel. Communicate how they implement their
+  platform.
+outcome: Wireframes for the Onboarding process and a booklet to document how the
+  CMS Platform works.
+responsibilities: Visual Design, Information Architecture
+team: Information Architects
 categories:
   - Information Design
   - UX Design
