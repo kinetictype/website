@@ -5,7 +5,9 @@ summary: Create a diagram explaining Darwill's automated "Breezeway" prepress
   process for a brochure.
 client: David James Group for Darwill
 role: Visualization Designer
-goals: "Placeholder: the customer and business goal."
+timeline: "2007"
+goals: Clarify the benefits of the Darwil process verses the old way that took
+  too much time.
 outcome: Two diagrams for a brochure that visually explained business processes.
 responsibilities: I worked on visual and concept design while the creative
   director provided content to me.
