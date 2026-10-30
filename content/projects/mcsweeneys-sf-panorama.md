@@ -42,6 +42,9 @@ sections:
         alt: "Placeholder: image that sets the context"
         caption: Hand drawn ink on paper illustration
         size: half-text
+      - image: /images/projects/1945Hyde.png
+        sound: false
+        size: full
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
