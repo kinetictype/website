@@ -42,12 +42,11 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/alberto1_after.jpg
         sound: false
         alt: "Placeholder: image that sets the context"
+        caption: I assisted with interface work as well as visual explanations.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
