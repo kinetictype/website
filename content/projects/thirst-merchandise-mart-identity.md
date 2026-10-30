@@ -56,7 +56,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/01_block-letter-variations.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         caption: The blocks could then be formed in different positions and combinations
@@ -67,11 +67,11 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/02_mark-sheet-1-1.png
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: "Placeholder: describe the framework, principle or diagram shown here."
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
