@@ -53,7 +53,7 @@ sections:
         sound: false
         alt: Lollapalooza festival map.
         caption: The page designer took inspiration from my map icons for Lollapalooza
-          and it became a was a close collaboration.
+          and it became a close collaboration.
         size: text-half
   - heading: Design principles and frameworks
     text: One of my favorite things about working in the newspaper business is the
