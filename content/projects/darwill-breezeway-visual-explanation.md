@@ -115,4 +115,4 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-I designed a six-step process visualization for their marketing materials to show how the product worked.
+I designed a step-by-step visual process for their marketing materials to illustrate how the product works.
