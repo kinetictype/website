@@ -65,10 +65,11 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - sound: false
+      - image: /images/projects/02_architecture-iteration-1.png
+        sound: false
         alt: "Placeholder: framework or design principles"
+        caption: the framework, principle or diagram shown here is another step
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
