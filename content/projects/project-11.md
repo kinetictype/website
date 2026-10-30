@@ -25,7 +25,7 @@ hidden: false
 description: Visual Journalist, early interactive visualization
 cover: /images/logos/chicago-tribune.svg
 cover_alt: Chicago Tribune logo
-drawer_image: /images/projects/historyMuseum_2500.png
+drawer_image: /images/projects/historyMuseum_2500-1.png
 drawer_image_alt: Hand drawn map of Lalapalooza festival map.
 prototype_size: half
 sections:
