@@ -22,6 +22,7 @@ start_year: 2011
 featured: false
 hidden: false
 cover: /images/logos/Intel_logo_2023.svg
+drawer_image: /images/projects/06_myintel-wireframe-3-1.png
 prototype_size: half
 sections:
   - heading: Context
