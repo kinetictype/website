@@ -70,22 +70,22 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/03_personas.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
-        size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
+        caption: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
+        size: text-half
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/02_heatmap-research.jpg
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: Heatmaps were a signal of where to place attention for the redesign.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
