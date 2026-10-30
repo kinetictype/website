@@ -24,7 +24,7 @@ hidden: false
 description: Placeholder description of project 09 for search engines and link previews.
 cover: /images/logos/workdayColor.svg
 cover_alt: Workday logo
-drawer_image: /images/projects/06_implementation.png
+drawer_image: /images/projects/fill_pattern_cover_big.png
 drawer_image_alt: Placeholder image for project 09
 prototype_size: half
 sections:
