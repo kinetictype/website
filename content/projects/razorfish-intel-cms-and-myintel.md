@@ -7,7 +7,7 @@ summary: Explain Intel's new content management system (CQ) to content
 client: Razorfish for Intel
 role: UX Designer
 timeline: "2011"
-goals: Build a CMS platform for Myintel. Communicate how they implement their
+goals: Build a CMS platform for MyIntel. Communicate how they implement their
   platform.
 outcome: Wireframes for the Onboarding process and a booklet to document how the
   CMS Platform works.

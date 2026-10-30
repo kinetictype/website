@@ -88,7 +88,7 @@ sections:
     alt: Scrollable prototype of the full report, from the overall score to common product descriptors and path directness, in a browser window
     size: full
 - heading: Learnings
-  text: When I joined the team at User Testing, the project had been in discovery for nine months prior.  I realized the vision, but by the time I joined, management had started looking in a different direction. They ultimately decided to pivot. It was a thrill to join a talented team with a brand new design system. It taught me how crucial it is to have a design lead involved from the start to scope the vision.
+  text: When I joined the team at User Testing, the project had been in discovery for nine months prior. I realized the vision, but by the time I joined, management had started looking in a different direction. They ultimately decided to pivot. It was a thrill to join a talented team with a brand new design system. It taught me how crucial it is to have a design lead involved from the start to scope the vision.
 ---
 OUTCOME: WHAT I DESIGNED
 

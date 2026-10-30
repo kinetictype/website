@@ -1,7 +1,7 @@
 ---
-title: Tivo Architecture
+title: TiVo Architecture
 tagline: Information architecture for the TiVo iPhone app
-client: Tivo
+client: TiVo
 role: Information Architect
 team: Product manager
 categories:
@@ -105,7 +105,7 @@ sections:
       - image: /images/projects/02_application-map.png
         sound: false
         alt: "Placeholder: result or shipped product"
-        caption: Tivo iPhone app architecture
+        caption: TiVo iPhone app architecture
         size: full
   - heading: Learnings
     text: "Placeholder: What did you and your team learn? What would help you on

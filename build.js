@@ -775,7 +775,6 @@ function caseStudy(p) {
   const site = p.website ? `<p class="case-link"><a href="${escapeHtml(String(p.website))}" target="_blank" rel="noopener">${escapeHtml(String(p.website_label || String(p.website).replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")))} ${ARROW}</a></p>` : "";
   return `
 <article class="case">
-  <a class="back" href="/work/">${ARROW_BACK} Work</a>
   <nav class="top-pager" aria-label="Previous and next project">
     ${prev ? `<a class="back" href="${projectUrl(prev)}" aria-label="Previous project: ${escapeHtml(prev.title)}">${ARROW_BACK} Previous</a>` : "<span></span>"}
     <a class="back" href="${projectUrl(next)}" aria-label="Next project: ${escapeHtml(next.title)}">Next ${ARROW}</a>
@@ -964,7 +963,6 @@ ${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type
         },
         body: `
 <article class="case">
-  <a class="back" href="/journal/">${ARROW_BACK} Journal</a>
   <header class="case-head">
     <p class="case-meta"><time datetime="${e.iso}">${dotDate(e.date)}</time>${e.category ? ` · ${escapeHtml(e.category)}` : ""}</p>
     <h1${edText("title")}>${escapeHtml(e.title)}</h1>

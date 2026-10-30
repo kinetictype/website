@@ -7,7 +7,7 @@ role: Motion graphics designer
 goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
 responsibilities: Storyboard, animation, layout, and collaboration with sound design.
-team: The marketing team and  Iroro Orife, a talented sound designer.
+team: The marketing team and Iroro Orife, a talented sound designer.
 website: https://bit.ly/4jIWREn
 website_label: The Deep Book
 categories:

@@ -6,7 +6,7 @@ summary: Create a diagram explaining Darwill's automated "Breezeway" prepress
 client: David James Group for Darwill
 role: Visualization Designer
 timeline: "2007"
-goals: Clarify the benefits of the Darwil process verses the old way that took
+goals: Clarify the benefits of the Darwill process versus the old way that took
   too much time.
 outcome: Two diagrams for a brochure that visually explained business processes.
 responsibilities: I worked on visual and concept design while the creative
@@ -40,7 +40,7 @@ sections:
       - image: /images/projects/02_breezeway-step-detail-1.png
         sound: false
         alt: "Placeholder: image that sets the context"
-        caption: describe  this image shows and why it matters to the problem
+        caption: describe what this image shows and why it matters to the problem
         size: half-text
   - heading: Your goal
     text: >+

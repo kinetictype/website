@@ -6,7 +6,7 @@ summary: >+
   Richard Parks's two-page article about the Lembi Group's San Francisco real
   estate holdings.
 
-client: McSweeny's
+client: McSweeney's
 role: Illustrator
 timeline: "2009"
 goals: Illustrate drawings reminiscent of the style of buildings of 1910.

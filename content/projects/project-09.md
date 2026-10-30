@@ -1,5 +1,5 @@
 ---
-title: Chart Accessibilty for Workday
+title: Chart Accessibility for Workday
 tagline: Making Workday's charts readable without relying on color.
 summary: |+
   

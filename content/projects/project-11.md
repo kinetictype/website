@@ -58,7 +58,7 @@ sections:
   - heading: Design principles and frameworks
     text: One of my favorite things about working in the newspaper business is the
       number of eyes on my work. When a graphic was ready for print, it traveled
-      the newroom and went through several checks and balances to ensure
+      the newsroom and went through several checks and balances to ensure
       accuracy.
     images:
       - image: /images/projects/CocktailNerds_814.png

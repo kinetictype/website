@@ -6,7 +6,7 @@ role: UX Designer
 timeline: "2013"
 goals: "Create an Android app that displays several aspects of the Google
   Shopping Express shopping experience. "
-outcome: Document the ecosystem of the product and it’s various touchpoints
+outcome: Document the ecosystem of the product and its various touchpoints
   along desktop and mobile platforms.
 responsibilities: Created several screens to display shopping categories, view
   the cart, add a category, checkout, remove from checkout, change quantity,
