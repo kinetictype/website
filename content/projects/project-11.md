@@ -100,6 +100,10 @@ sections:
         alt: "Placeholder: result or shipped product"
         caption: Mapping security risks over time.
         size: full
+      - image: /images/projects/lollapalooza_grapic-1.png
+        sound: false
+        caption: I had a lot of fun with this one.
+        size: full
   - heading: Working at the Chicago Tribune
     text: I loved working at a large news organization. Not only was I surrounded by
       a brilliant visualization team, but it was also an honor to speak with
