@@ -101,9 +101,11 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/spread_blended-2.png
         sound: false
         alt: "Placeholder: result or shipped product"
+        size: full
+      - sound: false
         size: full
   - heading: Learnings
     text: "Placeholder: What did you and your team learn? What would help you on
