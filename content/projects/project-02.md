@@ -1,6 +1,8 @@
 ---
 title: Apiture Developer Portal
 tagline: Designed features for the Developer Portal and created a design system library.
+summary: "Apiture is a banking platform that small community banks use to power
+  their platform. The Developer Portal allows engineers to configure software "
 client: Apiture
 role: UX Designer
 timeline: "2025"
