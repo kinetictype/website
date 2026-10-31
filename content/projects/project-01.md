@@ -29,17 +29,12 @@ cover_alt: Service Design JPMC
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
+    text: The design team stepped in to collaborate with Marketing to understand the
+      Campaign Creation Process. We were a new team and we approached the
+      project as a learning opportunity. As the team described the process, it
+      was clear we needed a new map to descibe the problem space. I then drew a
+      Service Blueprint to illustrate how the teams worked together and how much
+      time they spent in the process.
     images:
       - image: /images/projects/image-asset.png
         sound: false
@@ -48,12 +43,18 @@ sections:
           problem."
         size: half-text
   - heading: Goal
+    text: "The Marketing team owned the Campaign Creation process. "
+    images:
+      - image: /images/projects/HowMightWe_CampaignFlow-1.png
+        sound: false
+        alt: "Placeholder: research or workshop artifact"
+        caption: the research, workshop or competitive analysis shown here.
+        size: text-half
+  - heading: Design principles & frameworks
     text: >+
-      The Marketing team owned the Campaign Creation process. When I stepped in
-      with a content designer, we approached the project as a learning
-      opportunity. We learned the process by hearing the team describe it. I
-      then drew a Service Blueprint to illustrate how the teams worked together
-      and how much time they spent in the process.  
+      Placeholder: Which frameworks helped you and your team think through the
+      customer problems? Which design principles did you follow, or create, to
+      guide the design?
 
 
       > *Kiera is a great design partner. She created a framework to help us map
@@ -63,18 +64,7 @@ sections:
       Content Designer*
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
-        sound: false
-        alt: "Placeholder: research or workshop artifact"
-        size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/image-asset_2.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
