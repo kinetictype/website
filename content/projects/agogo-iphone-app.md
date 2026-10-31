@@ -77,7 +77,7 @@ sections:
       technical, design system, capacity or scope), and how did you get through
       them?"
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/02_beta-user-flow.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
