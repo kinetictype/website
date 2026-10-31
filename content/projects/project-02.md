@@ -87,18 +87,10 @@ sections:
         alt: "Placeholder: design iteration or alternative"
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+  - heading: Outcomes
+    text: Although the Developer Portal used a different tech stack, the Design
+      System Library made it easier to convert the files we were building to a
+      new system.
     images:
       - image: /images/projects/cover_DevPortal-1.png
         sound: false
