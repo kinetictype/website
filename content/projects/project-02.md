@@ -24,7 +24,6 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
-cover: /images/logos/Apiture_CSI_Logo_v3_FullColor-2.svg
 cover_alt: Placeholder cover image for project 02
 drawer_image: /images/projects/cover_DevPortal.png
 top_image_alt: Concept diagram
