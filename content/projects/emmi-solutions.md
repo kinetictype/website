@@ -50,7 +50,7 @@ sections:
       - image: /images/projects/alberto1_before.jpg
         sound: false
         caption: The state of the software I began with.
-        size: full
+        size: half-text
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
