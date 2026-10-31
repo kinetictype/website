@@ -44,24 +44,14 @@ sections:
           significance.
         size: half-text
   - heading: My goal
-    text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
+    text: Providing developers with a structure to test ideas that I workshopped
+      with the Product Manager to understand the purpose of what we were
+      building.
     images:
       - image: /images/projects/Developer Portal - December 2024.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
-        caption: Providing developers to test ideas had a structure that I workshopped
-          with the Product Manager to understand the view.
+        caption: I workshopped with the Product Manager to understand the goals.
         size: text-half
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
@@ -108,7 +98,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/cover_DevPortal-1.png
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
