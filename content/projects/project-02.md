@@ -26,6 +26,7 @@ hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
 drawer_image: /images/projects/Reset password_mock.png
 drawer_image_alt: Apiture Developer Portal Test Customers
+logo: /images/logos/Apiture_CSI_Logo_v3_FullColor-2.svg
 top_image_alt: Concept diagram
 prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
