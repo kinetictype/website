@@ -20,7 +20,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/darwill.svg
-drawer_image: /images/projects/06_process-diagram.png
+drawer_image: /images/projects/Darwill_Large.png
 prototype_size: half
 sections:
   - heading: Context
@@ -107,8 +107,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/projects/06_process-diagram-1.png
-        sound: false
+      - sound: false
         alt: "Placeholder: result or shipped product"
         caption: The final result for the printed brochure to visually explain the
           process of Darwill.
