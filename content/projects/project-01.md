@@ -110,6 +110,8 @@ sections:
         alt: Service Design for Campaign Offers
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: "JPMorgan Chase emphasized collaboration and efficient design practices.
+      It was great to collaborate with the Marketing team on this project and
+      reveal the Campaign Creation process that led Chase to acquire a company
+      to rapidly build campaigns. "
 ---
