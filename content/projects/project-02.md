@@ -24,6 +24,7 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
+cover: /images/logos/Reset password_mock.png
 drawer_image_alt: Apiture Developer Portal Test Customers
 top_image_alt: Concept diagram
 prototype_size: half
@@ -80,11 +81,11 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Screenshot 2026-10-31 at 15.24.23.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: design shown here and the decisions behind it.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Outcomes
     text: Although the Developer Portal used a different tech stack, the Design
       System Library made it easier to convert the files we were building to a
