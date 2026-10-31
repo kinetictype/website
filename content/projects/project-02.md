@@ -31,12 +31,8 @@ prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
-    text: The Developer Portal was neglected in the Apiture ecosystem, and I joined
-      the team to add functionality to it. Apiture's design team was small, and
-      the Developer Portal's design used a different tech stack than the
-      consumer-facing platform. I picked up files from the designer who worked
-      on the Developer Portal and made sense of several elements I needed to
-      design the workflow.
+    text: The Developer Portal was neglected in the Apiture ecosystem, so I joined
+      the team to add functionality.
     images:
       - image: /images/projects/Dev Portal-API Documentation.png
         sound: false
@@ -65,11 +61,14 @@ sections:
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+    text: "When I began working with the files, I realized the Developer Portal
+      would benefit from a design library. I ordered it to provide a seamless
+      transition to developers. As the Developer Portal used a different tech
+      stack than the consumer-facing platform, my design system library noted
+      the differences between the systems for the next iteration of the
+      migration. "
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Screenshot 2026-10-31 at 15.24.23-1.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
