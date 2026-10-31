@@ -89,11 +89,11 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/06_episodes-1.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: The design shown here and the decisions behind it.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
