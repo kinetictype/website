@@ -44,9 +44,9 @@ sections:
       - image: /images/projects/Dev Portal-API Documentation.png
         sound: false
         alt: "Placeholder: overview image"
+        caption: To understand the domain, I drew a map of the sections with their
+          significance.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: My goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
