@@ -47,12 +47,11 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/beforeAfter_ChaseCI.png
         sound: false
         alt: "Placeholder: image that sets the context"
+        caption: " image shows and why it matters "
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
