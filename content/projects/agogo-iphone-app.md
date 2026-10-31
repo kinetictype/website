@@ -67,10 +67,10 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/projects/01_beta-user-flow-2.png
+      - image: /images/projects/02_beta-user-flow-1.png
         sound: false
         alt: "Placeholder: framework or design principles"
-        caption: Describe the framework, principle or diagram shown here.
+        caption: Connecting apps
         size: half-text
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
