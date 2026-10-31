@@ -16,8 +16,9 @@ outcome: Campaign-creation journey map; updated the Offers and Shopping business
   banking site to align with the design system; created a line-of-business
   sub-component library extending MDSl; introduced a tab structure to provide
   access to the portal's deep-dive pages.
-responsibilities: Service Design, Visual Design, Design Systems, UX/UI Design,
-  Cross-team collaboration.
+responsibilities: Lead UX Designer; synthesized existing research, conducted
+  competitive analysis, mapped the user journey, designed tablet and mobile
+  experiences, and led the sub-library strategy; cross-team collaboration.
 team: A new-hire designer, a content designer, and the product team collaborated
   with the travel team on their sub-library approach.
 categories:
@@ -92,11 +93,9 @@ sections:
         alt: "Placeholder: a challenge and how you solved it"
         caption: " the challenge this image shows and how you got through it."
         size: text-half
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+  - heading: Building our Line-of-Business Components
+    text: The sub-library enabled reuse and scale across teams and faster delivery
+      files for developers.
     images:
       - image: /images/projects/Component_Building.png
         sound: false
@@ -118,4 +117,4 @@ sections:
       libraries. We were a new team, so I built a component library for our line
       of business to enable efficient updates and consistency across files.
 ---
-The improvements I made 400% increase in user engagement with the deep-dive pages. Lead UX Designer who synthesized existing research, conducted competitive analysis, mapped the user journey, designed tablet and mobile experiences, and led the sub-library strategy. I increase in the rate of new-user onboarding and improved retention. The timeline closed the "radio silence" merchants experienced while campaigns were built. The sub-library enabled reuse and scale across teams and faster delivery files for developers.
+I led a team of 2 designers, and we launched a new business line that wasn't connected to the design system. At first, the design was development-driven; design joined the table and began shifting toward holistic thinking, rather than small improvements. I introduced a tab structure, led the design team to use components in Figma, and user engagement with the deep-dive pages increased by 400%. I increased new-user onboarding and improved retention.
