@@ -27,7 +27,7 @@ description: Placeholder description of project 02 for search engines and link p
 cover: /images/logos/Apiture_CSI_Logo_v3_FullColor-2.svg
 cover_alt: Placeholder cover image for project 02
 drawer_image: /images/projects/cover_DevPortal.png
-top_image_alt: "Placeholder: hero image of the product"
+top_image_alt: Concept diagram
 prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
@@ -45,7 +45,7 @@ sections:
         caption: To understand the domain, I drew a map of the sections with their
           significance.
         size: half-text
-  - heading: My goal
+  - heading: Building Test Customers APis
     text: Providing developers with a structure to test ideas that I workshopped
       with the Product Manager to understand the purpose of what we were
       building.
@@ -60,7 +60,7 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Reset password_sure_.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
