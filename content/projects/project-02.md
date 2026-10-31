@@ -30,16 +30,12 @@ prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
-    text: >-
-      The Developer Portal was neglected within the Apiture ecosystem, and I
-      joined the team to clarify developers' needs. Apiture's design team was
-      small, and the Developer Portal's design used a different tech stack than
-      the consumer-facing platform. I picked up files from the designer who
-      worked on the Developer Portal and made sense of several elements I needed
-      to design the workflow.
-
-
-      Placeholder: a second short paragraph on the opportunity.
+    text: The Developer Portal was neglected in the Apiture ecosystem, and I joined
+      the team to add functionality to it. Apiture's design team was small, and
+      the Developer Portal's design used a different tech stack than the
+      consumer-facing platform. I picked up files from the designer who worked
+      on the Developer Portal and made sense of several elements I needed to
+      design the workflow.
     images:
       - image: /images/projects/Dev Portal-API Documentation.png
         sound: false
