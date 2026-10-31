@@ -24,7 +24,6 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
-drawer_image: /images/projects/Reset password_mock-1.png
 drawer_image_alt: Apiture Developer Portal Test Customers
 top_image_alt: Concept diagram
 prototype_size: half
