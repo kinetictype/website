@@ -13,7 +13,7 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
-cover: /images/logos/Dev Portal-API_tryit_sm.png
+cover: /images/logos/cover_DevPortal.png
 cover_alt: Placeholder cover image for project 02
 top_image_alt: "Placeholder: hero image of the product"
 prototype_size: half
@@ -32,6 +32,7 @@ sections:
       Placeholder: a second short paragraph on the opportunity.
     images:
       - image: /images/projects/DevPortalWebsite_before01.png
+        sound: false
         alt: "Placeholder: overview image"
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
@@ -51,6 +52,7 @@ sections:
 
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
+        sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
@@ -61,6 +63,7 @@ sections:
       guide the design?"
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
+        sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
@@ -70,6 +73,7 @@ sections:
       them?"
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
+        sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
         text: "Placeholder: describe the challenge this image shows and how you got
@@ -81,6 +85,7 @@ sections:
       Cursor or Replit."
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
+        sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
@@ -98,6 +103,7 @@ sections:
 
     images:
       - image: /images/placeholders/placeholder-wide-2.svg
+        sound: false
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
