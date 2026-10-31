@@ -94,7 +94,7 @@ sections:
     images:
       - image: /images/projects/cover_DevPortal-1.png
         sound: false
-        alt: "Placeholder: result or shipped product"
+        alt: " shipped product"
         size: full
   - heading: Learnings
     text: "Placeholder: What did you and your team learn? What would help you on
