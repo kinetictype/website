@@ -20,7 +20,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/restylane-seeklogo.svg
-drawer_image: /images/projects/06_sitemap.jpg
+drawer_image: /images/projects/Cover_sitemap.png
 prototype_size: half
 sections:
   - heading: Context
