@@ -110,8 +110,8 @@ sections:
         alt: Service Design for Campaign Offers
         size: full
   - heading: Learnings
-    text: "JPMorgan Chase emphasized collaboration and efficient design practices.
-      It was great to collaborate with the Marketing team on this project and
-      reveal the Campaign Creation process that led Chase to acquire a company
-      to rapidly build campaigns. "
+    text: JPMorgan Chase emphasized collaboration and efficient design practices. It
+      was great to collaborate with the Marketing team on this project and
+      reveal the opportunity in the Campaign Creation process. This led Chase to
+      acquire a company to fill the opportunity.
 ---
