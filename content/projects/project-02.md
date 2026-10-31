@@ -24,8 +24,8 @@ featured: true
 featured_order: 1
 hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
-cover_alt: Placeholder cover image for project 02
-drawer_image: /images/projects/cover_DevPortal-2.png
+cover_alt: Apiture Developer Portal Test Customers
+drawer_image: /images/projects/Reset password_mock.png
 top_image_alt: Concept diagram
 prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
