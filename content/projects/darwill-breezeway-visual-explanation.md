@@ -20,7 +20,7 @@ start_year: 2007
 featured: false
 hidden: false
 cover: /images/logos/darwill.svg
-drawer_image: /images/projects/Darwill_Large.png
+drawer_image: /images/projects/Darwill_Large-2.png
 prototype_size: half
 sections:
   - heading: Context
