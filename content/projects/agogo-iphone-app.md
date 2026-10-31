@@ -22,7 +22,7 @@ start_year: 2012
 featured: false
 hidden: false
 cover: /images/logos/agogo.svg
-drawer_image: /images/projects/agogo-prototype-B-combined-1.gif
+drawer_image: /images/projects/agogo-1.jpg
 prototype_size: half
 sections:
   - heading: Context
