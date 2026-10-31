@@ -30,9 +30,9 @@ prototype_size: half
 sections:
   - heading: Context
     text: The design team stepped in to collaborate with Marketing to understand the
-      Campaign Creation Process. We were a new team and we approached the
+      Campaign Creation Process. We were a new team, and we approached the
       project as a learning opportunity. As the team described the process, it
-      was clear we needed a new map to descibe the problem space. I then drew a
+      was clear we needed a new map to describe the problem space. I then drew a
       Service Blueprint to illustrate how the teams worked together and how much
       time they spent in the process.
     images:
