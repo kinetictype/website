@@ -56,12 +56,12 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Developer Portal - December 2024.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
+        caption: Providing developers to test ideas had a structure that I workshopped
+          with the Product Manager to understand the view.
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
