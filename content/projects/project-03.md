@@ -112,21 +112,14 @@ sections:
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+    text: The shipped redesign increased engagement by 400%. Our team worked hard to
+      turn Offers and Shopping into a unified part of the business banking
+      platform.
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/Cover_EndScreen02.png
         sound: false
         alt: "Placeholder: result or shipped product"
+        caption: Shipped product
         size: full
   - heading: Learnings
     text: "Placeholder: What did you and your team learn? What would help you on
