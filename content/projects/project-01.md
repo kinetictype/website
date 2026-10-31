@@ -41,12 +41,12 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/image-asset.png
         sound: false
         alt: "Placeholder: image that sets the context"
-        size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
+        caption: "Placeholder: describe what this image shows and why it matters to the
           problem."
+        size: half-text
   - heading: Goal
     text: >+
       The Marketing team owned the Campaign Creation process. When I stepped in
