@@ -80,9 +80,8 @@ sections:
       - image: /images/projects/02_beta-user-flow.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: Mapped the connections of app experience.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
