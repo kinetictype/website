@@ -122,7 +122,8 @@ sections:
         caption: Shipped product
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: My favorite part of this role was upskilling my team on Figma component
+      libraries. We were a new team, so I built a component library for our line
+      of business to enable efficient updates and consistency across files.
 ---
 The improvements I made 400% increase in user engagement with the deep-dive pages. Lead UX Designer who synthesized existing research, conducted competitive analysis, mapped the user journey, designed tablet and mobile experiences, and led the sub-library strategy. I increase in the rate of new-user onboarding and improved retention. The timeline closed the "radio silence" merchants experienced while campaigns were built. The sub-library enabled reuse and scale across teams and faster delivery files for developers.
