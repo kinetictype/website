@@ -12,18 +12,12 @@ timeline: Changes went live in October 2022, with impact measured over the
 goals: The goal was to enable merchant acquisition and retention through
   onboarding and to increase engagement with the Customer Insights portal, where
   merchants run offer campaigns to Chase customers and monitor results
-outcome: " A redesigned campaign-creation journey map that brought in merchants,
-  external partners and Chase teams, with touchpoints and time per step. Three
-  navigation options; shipped a tab structure, a filtering drawer for
-  business/account info, and chevrons. Updated landing page, form and email
-  template to communicate campaign progress (timeline).  A line-of-business
-  sub-component library extending MDS"
-responsibilities: "A redesigned campaign-creation journey map that brought in
-  merchants, external partners, and Chase teams, with touchpoints and time per
-  step. Three navigation options: a tab structure, a filtering drawer for
-  business/account info, and chevrons. Updated landing page, form, and email
-  template to communicate campaign progress (timeline). A line-of-business
-  sub-component library extending MDS."
+outcome: Campaign-creation journey map; updated the Offers and Shopping business
+  banking site to align with the design system; created a line-of-business
+  sub-component library extending MDSl; introduced a tab structure to provide
+  access to the portal's deep-dive pages.
+responsibilities: Service Design, Visual Design, Design Systems, UX/UI Design,
+  Cross-team collaboration.
 team: A new-hire designer, a content designer, and the product team collaborated
   with the travel team on their sub-library approach.
 categories:
