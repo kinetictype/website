@@ -4,7 +4,12 @@ tagline: Designed features for the Developer Portal and created a design system 
 client: Apiture
 role: UX Designer
 timeline: "2025"
-goals: "Build out "
+goals: Build out Developer Portal functionality to enable test customers.
+outcome: Test customers and "Try It" functionality for developers. Also created
+  a component design library for the developer portal to improve file transfer
+  efficiency.
+responsibilities: Design System, UX/UI Design
+team: Product Manager, Design System lead, engineers
 website: https://dx.apiture.com/
 website_label: Apiture Developer Portal
 categories:
