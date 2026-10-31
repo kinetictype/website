@@ -97,12 +97,15 @@ sections:
         alt: " shipped product"
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: Apiture had an engaging, smart, and fun design team that I had the
+      pleasure of contributing to. As I prepared documentation for the Developer
+      Portal migration to the AUI Design System, I worked closely with the
+      Design System team to best prepare our efforts.
 credits_heading: Team
 credits:
-  - name: Placeholder Name
-    role: Product Manager
+  - name: Jim Richardson
+    role: Design System Lead
+    link: https://www.linkedin.com/in/jim-a-richardson/
   - name: Placeholder Name
     role: Engineer
 ---
