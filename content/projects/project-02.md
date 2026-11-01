@@ -30,8 +30,8 @@ prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
-    text: In the beginning I mapped out the domain and focused on the dashboard and
-      API Documentation or, "Try It" functionality.
+    text: In the beginning, I mapped out the domain and focused on the dashboard,
+      API Documentation, and "Try It" functionality.
     images:
       - image: /images/projects/Dev Portal-Context.png
         sound: false
