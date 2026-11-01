@@ -34,7 +34,7 @@ sections:
     text: The Developer Portal was neglected in the Apiture ecosystem, so I joined
       the team to add functionality.
     images:
-      - image: /images/projects/Dev Portal-API Documentation.png
+      - image: /images/projects/Dev Portal-Context.png
         sound: false
         alt: "Placeholder: overview image"
         caption: To understand the domain, I drew a map of the sections with their
