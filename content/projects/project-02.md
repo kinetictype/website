@@ -9,7 +9,9 @@ timeline: "2025"
 goals: Build out Developer Portal functionality to enable test customers.
 outcome: Designed features for the Developer portal and established a component
   design library to improve scalability.
-responsibilities: Design System, UX/UI Design
+responsibilities: |-
+  Design System, 
+  UX/UI Design
 team: Product Manager, Design System lead, engineers
 website: https://dx.apiture.com/
 website_label: Apiture Developer Portal
