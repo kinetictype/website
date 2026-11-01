@@ -80,7 +80,7 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/projects/DevPortalDesignSystem.png
+      - image: /images/projects/Type_SystemDiscrepencies-1.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
         caption: design shown here and the decisions behind it.
@@ -90,7 +90,8 @@ sections:
       System Library made it easier to convert the files we were building to a
       new system.
     images:
-      - sound: false
+      - image: /images/projects/Reset password_mock-2.png
+        sound: false
         alt: " shipped product"
         size: full
   - heading: Learnings
