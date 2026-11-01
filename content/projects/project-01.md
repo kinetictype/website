@@ -86,11 +86,11 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/02_Process_ServiceDesign.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: Describe the design shown here and the decisions behind it.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Outcome
     text: JPMorgan Chase acquired Figg to build a two-sided commerce platform and
       fill the opportunity gap we illustrated in the Service Design map.
