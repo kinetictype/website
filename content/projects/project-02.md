@@ -44,8 +44,8 @@ sections:
   - heading: Building Test Customers APis
     text: Providing developers with a structure to test ideas was a concept that I
       workshopped with the Product Manager; I would often draw to understand the
-      purpose of what we were building. Typically, I will draw while discussing
-      ideas to make sure we share the same mental model of what we are building.
+      purpose of what we were building to ensure we shared the same mental model
+      of what we were building.
     images:
       - image: /images/projects/Developer Portal - December 2024.png
         sound: false
