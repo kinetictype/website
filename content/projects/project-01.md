@@ -70,11 +70,10 @@ sections:
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
-    text: "This project got senior leadership's attention once it was clear of the
-      main opportunity gap we discovered, reaching out to customers along the
-      way of the Campaign Creation. The content designer and I had proposed some
-      ideas to move forward. The management ultimately acquired a startup,
-      goFigg. "
+    text: "This project caught senior leadership's attention once we identified the
+      main opportunity gap, and we reached out to customers throughout the
+      Campaign Creation. The content designer and I proposed a few ideas to move
+      forward. The management ultimately acquired a startup, goFigg. "
     images:
       - image: /images/projects/ServicePoster.png
         sound: false
