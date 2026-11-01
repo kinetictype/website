@@ -75,10 +75,9 @@ sections:
           the components in the Developer Portal.
         size: text-half
   - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+    text: After I documented all the components, the Apiture consumer-facing Design
+      System lead for AUI began discussing migrating the Developer Portal
+      elements into a single system.
     images:
       - image: /images/projects/Type_SystemDiscrepencies-1.png
         sound: false
