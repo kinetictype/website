@@ -126,7 +126,10 @@ sections:
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+  - heading: Working at Goldman Sachs
+    text: "It was an honor to contribute to a large financial institution like
+      Goldman Sachs. I dove deep into programming and collaborated with many
+      Managing Directors in Research on stories for the Research Portal. I also
+      enjoyed leading the way towards more interactive storytelling with
+      custom-made SVG graphics. "
 ---
