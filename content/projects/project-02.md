@@ -80,7 +80,7 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/projects/Screenshot 2026-10-31 at 15.24.23.png
+      - image: /images/projects/DevPortalDesignSystem.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
         caption: design shown here and the decisions behind it.
@@ -90,8 +90,7 @@ sections:
       System Library made it easier to convert the files we were building to a
       new system.
     images:
-      - image: /images/projects/cover_DevPortal-1.png
-        sound: false
+      - sound: false
         alt: " shipped product"
         size: full
   - heading: Learnings
@@ -99,12 +98,5 @@ sections:
       pleasure of contributing to. As I prepared documentation for the Developer
       Portal migration to the AUI Design System, I worked closely with the
       Design System team to best prepare our efforts.
-credits_heading: Team
-credits:
-  - name: Jim Richardson
-    role: Design System Lead
-    link: https://www.linkedin.com/in/jim-a-richardson/
-  - name: Placeholder Name
-    role: Engineer
 ---
 Focus on design system addition to the project as I highlight the work.
