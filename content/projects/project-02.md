@@ -98,4 +98,4 @@ sections:
       Portal migration to the AUI Design System, I worked closely with the
       Design System team to best prepare our efforts.
 ---
-Focus on design system addition to the project as I highlight the work.
+I was brought in to assist with several design features on the developer portal. The product manager and I worked closely to review the research and explore integrating new features. While designing new features, I learned that the Developer Portal was not part of the AUI consumer-facing website. 
