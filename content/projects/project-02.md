@@ -30,8 +30,8 @@ prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
-    text: The Developer Portal was neglected in the Apiture ecosystem, so I joined
-      the team to add functionality.
+    text: In the beginning I mapped out the domain and focused on the dashboard and
+      API Documentation or, "Try It" functionality.
     images:
       - image: /images/projects/Dev Portal-Context.png
         sound: false
@@ -98,4 +98,4 @@ sections:
       Portal migration to the AUI Design System, I worked closely with the
       Design System team to best prepare our efforts.
 ---
-I was brought in to assist with several design features on the developer portal. The product manager and I worked closely to review the research and explore integrating new features. While designing new features, I learned that the Developer Portal was not part of the AUI consumer-facing website. 
+I was brought in to assist with several design features on the developer portal. The product manager and I worked closely to review the research and explore integrating new features. While designing new features, I learned that the Developer Portal was not part of the AUI design system, which supports the consumer-facing website. 
