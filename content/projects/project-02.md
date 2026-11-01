@@ -40,9 +40,10 @@ sections:
           significance.
         size: half-text
   - heading: Building Test Customers APis
-    text: Providing developers with a structure to test ideas that I workshopped
-      with the Product Manager to understand the purpose of what we were
-      building.
+    text: Providing developers with a structure to test ideas was a concept that I
+      workshopped with the Product Manager to understand the purpose of what we
+      were building. Typically, I will draw while discussing ideas to make sure
+      we share the same mental model of what we are building.
     images:
       - image: /images/projects/Developer Portal - December 2024.png
         sound: false
