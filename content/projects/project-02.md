@@ -71,9 +71,9 @@ sections:
       - image: /images/projects/Screenshot 2026-10-31 at 15.24.23-1.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: Documented the typpography and colors in the Library with the rest of
+          the components in the Developer Portal.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
