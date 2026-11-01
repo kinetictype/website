@@ -31,7 +31,8 @@ prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
     text: In the beginning, I mapped out the domain and focused on the dashboard,
-      API Documentation, and "Try It" functionality.
+      API Documentation, and "Try It" functionality. I discussed the vision and
+      importance with several engineers to get a better feel for the vision.
     images:
       - image: /images/projects/Dev Portal-Context.png
         sound: false
