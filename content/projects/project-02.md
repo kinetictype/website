@@ -54,41 +54,17 @@ sections:
         caption: I workshopped with the Product Manager to understand the goals.
         size: text-half
   - heading: Prototyping the experience
-    text: >-
-      The ease of communication at Apiture made sharing the work more fun and
-      enjoyable. The team was engaged while we stepped through the screens. We
-      would often review work and move it to connect strategy, research, design,
-      and the details that make a product work.
-
-
-      ## **I design with different needs in mind.**
-
-
-      Accessibility has shaped my work, from BlindMaps to Google. I aim to make
-      products useful and usable for people with different abilities,
-      experiences, and needs.
-
-
-      ## **I think in systems.**
-
-
-      I enjoy finding the patterns that make complex products feel simple,
-      familiar, and consistent.
-
-
-      ## **I like making things real.**
-
-
-      Sketches, prototypes, conversations, and testing. I keep an open mind
-      about what we might learn along the way, even when that means redefining
-      the problem.
+    text: Building prototypes and having conversations is a great way to learn along
+      the way. Sometimes that might mean redefining the problem. **Apiture's
+      ease of communication made sharing** work more fun and enjoyable. We often
+      reviewed work and moved toward the details that make a product work.
     images:
       - image: /images/projects/Reset password_sure_.png
         sound: false
         alt: Prototype of Test Customers for Apiture
         caption: Prototype of this layout
         size: half-text
-  - heading: Challenges
+  - heading: Designing a Design System Library
     text: "When I began working with the files, I realized the Developer Portal
       would benefit from a design library. I ordered it to provide a seamless
       transition to developers. As the Developer Portal used a different tech
@@ -98,8 +74,8 @@ sections:
     images:
       - image: /images/projects/Screenshot 2026-10-31 at 15.24.23-1.png
         sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        caption: Documented the typpography and colors in the Library with the rest of
+        alt: A challenge and how you solved it
+        caption: Documented the colors and typography in the Library with the rest of
           the components in the Developer Portal.
         size: text-half
   - heading: Led a Migration of Components
