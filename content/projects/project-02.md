@@ -7,9 +7,8 @@ client: Apiture
 role: UX Designer
 timeline: "2025"
 goals: Build out Developer Portal functionality to enable test customers.
-outcome: Test customers and "Try It" functionality for developers. Also created
-  a component design library for the developer portal to improve file transfer
-  efficiency.
+outcome: Designed features for the Developer portal and established a component
+  design library to improve scalability.
 responsibilities: Design System, UX/UI Design
 team: Product Manager, Design System lead, engineers
 website: https://dx.apiture.com/
