@@ -74,7 +74,7 @@ sections:
         caption: Documented the typpography and colors in the Library with the rest of
           the components in the Developer Portal.
         size: text-half
-  - heading: Showing your designs
+  - heading: Led a Migration of Components
     text: After I documented all the components, the Apiture consumer-facing Design
       System lead for AUI began discussing migrating the Developer Portal
       elements into a single system.
