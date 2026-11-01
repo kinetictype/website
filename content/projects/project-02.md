@@ -30,10 +30,11 @@ prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
-    text: In the beginning, I mapped out the domain and focused on the dashboard,
-      API Documentation, and "Try It" functionality. I discussed the experience
-      and goals with several engineers to better understand the project's
-      vision.
+    text: In the beginning, I explored the problem and mapped out the domain. We
+      focused on the dashboard, API Documentation, and "Try It" functionality. I
+      discussed the experience and goals with several engineers to better
+      understand the project's vision. Connecting research with strategy brings
+      a product to life.
     images:
       - image: /images/projects/Dev Portal-Context.png
         sound: false
@@ -52,16 +53,41 @@ sections:
         alt: "Placeholder: research or workshop artifact"
         caption: I workshopped with the Product Manager to understand the goals.
         size: text-half
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+  - heading: Prototyping the experience
+    text: >-
+      The ease of communication at Apiture made sharing the work more fun and
+      enjoyable. The team was engaged while we stepped through the screens. We
+      would often review work and move it to connect strategy, research, design,
+      and the details that make a product work.
+
+
+      ## **I design with different needs in mind.**
+
+
+      Accessibility has shaped my work, from BlindMaps to Google. I aim to make
+      products useful and usable for people with different abilities,
+      experiences, and needs.
+
+
+      ## **I think in systems.**
+
+
+      I enjoy finding the patterns that make complex products feel simple,
+      familiar, and consistent.
+
+
+      ## **I like making things real.**
+
+
+      Sketches, prototypes, conversations, and testing. I keep an open mind
+      about what we might learn along the way, even when that means redefining
+      the problem.
     images:
       - image: /images/projects/Reset password_sure_.png
         sound: false
-        alt: "Placeholder: framework or design principles"
+        alt: Prototype of Test Customers for Apiture
+        caption: Prototype of this layout
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "When I began working with the files, I realized the Developer Portal
       would benefit from a design library. I ordered it to provide a seamless
