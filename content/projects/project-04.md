@@ -58,7 +58,7 @@ sections:
       Scalable Vector Graphics. We transformed a series of SVGs that transformed
       complex data into engaging, interactive stories on the Research Portal.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/retailFuelPrices.svg
         sound: false
         alt: "Placeholder: research or workshop artifact"
         caption: Competitive analysis shown here.
@@ -74,9 +74,8 @@ sections:
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+    text: Challenges are worth highlighting (team or org, technical, design system,
+      capacity or scope), and how did you get through them?
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
