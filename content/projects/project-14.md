@@ -24,8 +24,8 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      My goal of this project? Which customer or business problems were you and
+      your team solving?
 
 
       - Data or stats that set the context
