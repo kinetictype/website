@@ -600,7 +600,7 @@ function editableGallery(p) {
 function pageGallery(p) {
   const items = galleryOf(p).filter((g) => g && g.image);
   if (!items.length) return "";
-  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure${figWidth(g)}>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const out = [];
   for (let i = 0; i < items.length; ) {
@@ -633,6 +633,11 @@ function listImages(p) {
    and that section's images. Images use the same sizes as the gallery: full, half (two side by side), third. */
 const SPEAKER = `<svg class="icon-speaker" width="1em" height="1em" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="waves" d="M16 9.5a3.5 3.5 0 0 1 0 5M18.5 7a7 7 0 0 1 0 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="mute" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
 
+// optional "width" (percent of its column) shrinks an image inside its column, e.g. so a phone prototype matches the scale of other screens
+const figWidth = (g) => {
+  const w = parseFloat(g && g.width);
+  return w > 0 && w < 100 ? ` class="fig-scaled" style="--w:${Math.round(w * 10) / 10}%"` : "";
+};
 // width and height of an .mp4 (from its track header), so the page reserves the right space before the video loads
 function mp4Size(file) {
   if (!exists(file)) return null;
@@ -664,7 +669,7 @@ function mediaEl(src, alt = "", sound = false) {
 
 function mediaRows(items) {
   items = (items || []).filter((g) => g && (g.image || g.video));
-  const fig = (g) => `<figure>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+  const fig = (g) => `<figure${figWidth(g)}>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
   const per = { half: 2, third: 3 };
   const size = (g) => per[String(g.size || "full").toLowerCase()] || 1;
   const out = [];
@@ -699,7 +704,7 @@ function pageSections(p) {
       const g = imgs[0];
       const desc = String(g.text || "").trim();
       return `
-<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
+<div class="media-split section-split${kind === "text-half" ? " reverse" : ""}"><figure${figWidth(g)}>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure><div class="split-text"><div class="split-main">${head}</div>${desc ? `<div class="split-desc">${markdown(desc)}</div>` : ""}</div></div>
 ${quotes}
 ${mediaRows(imgs.slice(1))}`;
     }

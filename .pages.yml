@@ -141,6 +141,7 @@ content:
                 type: file
                 options: { media: images, path: content/images/projects, categories: [video] }
               - { name: sound, label: "Video has sound — show a Sound on/off button (the video starts silent)", type: boolean }
+              - { name: width, label: "Width — % of its column (optional). Leave empty for the full column; e.g. 43 shows a phone prototype at the same scale as the phones in other screenshots", type: number }
               - { name: alt, label: Description for screen readers (alt text), type: string }
               - { name: caption, label: Caption under the image (optional), type: string }
               - name: size
