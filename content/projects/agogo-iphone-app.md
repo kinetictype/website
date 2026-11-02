@@ -9,7 +9,7 @@ client: Agogo Startup
 role: User Experience Team of One
 goals: Understand the Agogo ecosystem, propose options for playing content on
   the Agogo beta launch of the app.
-outcome: A map of the system and ideas for the iPhone app.
+outcome: "A map of the system and ideas for the iPhone app. "
 responsibilities: I worked on concepting the interactions for the beta launch.
 team: Product Owner and Engineers
 categories:
@@ -116,4 +116,4 @@ sections:
 credits:
   - {}
 ---
-It was a great experience to design for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision.
+It was a great experience to design for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision. I explored the "My Music" channel, which pulls music from either your iPhone or a streaming music app. Agogo also includes other content that is not typically audio, such as text articles and television programs
