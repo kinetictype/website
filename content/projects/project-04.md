@@ -10,9 +10,10 @@ summary: "Goldman Sachs' Global Investment Research division wanted to add
 client: Goldman Sachs
 role: Interactive Visualization Designer
 goals: Create interactive visual stories for the Goldman Sachs research portal.
-outcome: Several interactive scalable vector graphics.
+outcome: Several interactive scalable vector graphics were published to the
+  research portal.
 responsibilities: I worked on the visual design, interaction design, design
-  system, concept design.
+  system, and concept design.
 team: I worked with managing directors on conceptualization and collaborated
   with engineers on execution.
 categories:
