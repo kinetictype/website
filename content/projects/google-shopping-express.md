@@ -1,16 +1,18 @@
 ---
 title: Google Shopping Express
 tagline: Design the shopping experience journey and wireframes to build the app.
+summary: Where does this show up???
 client: Google/Fluid Agency
 role: UX Designer
 timeline: "2013"
 goals: "Create an Android app that displays several aspects of the Google
   Shopping Express shopping experience. "
-outcome: Document the ecosystem of the product and its various touchpoints
-  along desktop and mobile platforms.
+outcome: Document the ecosystem of the product and its various touchpoints along
+  desktop and mobile platforms.
 responsibilities: Created several screens to display shopping categories, view
   the cart, add a category, checkout, remove from checkout, change quantity,
   shop a different store, and consolidate delivery.
+team: Met with the Google Shopping team and worked with Fluid (agency) designers.
 years: "2013"
 section: work
 featured: false
