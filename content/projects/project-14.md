@@ -35,7 +35,7 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/01_flow-diagram-1.png
         sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
@@ -55,7 +55,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/02_search-for-your-family.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
@@ -66,7 +66,7 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/02_search-for-your-family-1.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
@@ -76,7 +76,7 @@ sections:
       technical, design system, capacity or scope), and how did you get through
       them?"
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/04_search-results.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
@@ -88,7 +88,7 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/projects/project-14/ancestry-browser-prototype-family-facts.svg
+      - image: /images/projects/04_search-results-1.png
         sound: false
         alt: Scrollable prototype of the Gardiner Family Facts page on Ancestry.com,
           shown in a browser window
