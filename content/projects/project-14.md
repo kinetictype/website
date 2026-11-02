@@ -115,5 +115,5 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-Improved the SEO landing flow to better showcase the breadth and depth of Ancestry's ancestor content, and improved user acquisition in the sign-up flow. I designed diagrammatic flows, wireframes, and visual design. This included a tab structure and data visualization that provides more context for family relationships.
+Improved the landing flow to better showcase the breadth and depth of Ancestry's ancestor content, and improved user acquisition in the sign-up flow. I drew flows, wireframes, and visual designs. This included a tab structure and data visualization that provided more context for family relationships.
 
