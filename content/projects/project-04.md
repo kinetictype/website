@@ -107,17 +107,10 @@ sections:
         sound: false
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
-  - heading: Results & outcomes
+  - heading: Evergreen content creation
     text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
+      I curated a body of icons that the Goldman Sachs Research department can
+      use to be consistent in their communication.
 
     images:
       - video: /images/projects/map.mov
