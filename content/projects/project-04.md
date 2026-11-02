@@ -9,13 +9,12 @@ summary: "Goldman Sachs' Global Investment Research division wanted to add
   interactive graphics throughout the year. "
 client: Goldman Sachs
 role: Interactive Visualization Designer
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+goals: Create interactive visual stories for the Goldman Sachs research portal.
+outcome: Several interactive scalable vector graphics.
+responsibilities: I worked on the visual design, interaction design, design
+  system, concept design.
+team: I worked with managing directors on conceptualization and collaborated
+  with engineers on execution.
 categories:
   - Interactive Data Visualization
   - UX/UI Design
