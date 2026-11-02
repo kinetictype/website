@@ -3,13 +3,11 @@ title: Ancestry Acquisition Flow
 tagline: Showing new visitors how much Ancestry knows about their family.
 client: " Ancestry.com"
 role: UX Designer
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+timeline: "2013"
+goals: Improve the process of acquiring customers.
+outcome: An acquisition flow
+responsibilities: Visual design, interaction design, concept design.
+team: Product manager and engineers.
 categories:
   - UX Design
 years: 2012–2013
@@ -117,19 +115,5 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-Improve the SEO landing flow to reveal the breadth and depth of Ancestry's content about ancestors, and improve user acquisition in the sign-up flow.
+Improved the SEO landing flow to better showcase the breadth and depth of Ancestry's ancestor content, and improved user acquisition in the sign-up flow. I designed diagrammatic flows, wireframes, and visual design. This included a tab structure and data visualization that provides more context for family relationships.
 
-OUTCOME: WHAT I DESIGNED  
-Diagrammatic flows, wireframes, and visual design. This included a tab structure and data visualization that provides more context for family relationships.
-
-WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
-
-Not stated in the source files.
-
-MY ROLE
-
-Not stated in the source files.
-
-MY TEAM
-
-The product manager.
