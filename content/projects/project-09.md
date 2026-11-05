@@ -28,12 +28,17 @@ drawer_image_alt: Placeholder image for project 09
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
+    text: >-
       ##### Over two months, I audited the current framework, conceptualized a
       pattern-based approach, executed the designs, and tested the patterns
       internally. I enjoy making the internet more accessible and was thrilled
       to work on this project.
 
+
+      Provide fill patterns for the charting tool that improve accessibility and
+      work with the current design system. Existing patterns lacked logic, did
+      not match system colors, and were hard to read at small sizes; the
+      charting library did not offer guidance.
     images:
       - image: /images/projects/01_existing-fill-patterns-1.png
         sound: false
@@ -43,11 +48,7 @@ sections:
         size: half-text
   - heading: Goal
     text: >-
-      Provide fill patterns for the charting tool that improve accessibility and
-      work with the current design system. Existing patterns lacked logic, did
-      not match system colors, and were hard to read at small sizes; the
-      charting library did not offer guidance.
-
+      
 
       TIMELINE
 
