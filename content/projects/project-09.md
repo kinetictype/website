@@ -91,19 +91,11 @@ sections:
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+    text: The positive business value this project created was incorporating
+      accessibility into Workday's charting library. It is the ethically right
+      thing to do.
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/FinalNormalMode_02.png
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
