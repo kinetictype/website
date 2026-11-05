@@ -105,7 +105,7 @@ sections:
         size: full
   - heading: Learnings
     text: >-
-      What did you and your team learn?   
+      What did you and your team learn?  
 
       What would help you on another project?  
 
@@ -116,5 +116,5 @@ sections:
       Google noticed declining engagement and decided to rebrand the entire
       service again.
 ---
-In 2013, Google announced the transition from the old Google Shopping to Google Express, an evolved version of the platform that let users buy products from different vendor websites & marketplaces right from the Google Express platform. Google handled everything on its platform, from collecting payments to delivering the products themselves. At the time, it was mostly used for grocery shopping.
+In 2013, Google announced the transition from the old Google Shopping to Google Express, an evolved version of the platform that let users buy products from different vendor websites & marketplaces right from the Google Express platform. Our team consulted with Google to propose a solution that would handle everything on its platform, from collecting payments to delivering the products themselves. At the time, it was mostly used for grocery shopping.
 
