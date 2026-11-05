@@ -94,8 +94,10 @@ sections:
         caption: " the challenge this image shows and how you got through it."
         size: text-half
   - heading: Building our Line-of-Business Components
-    text: The sub-library enabled reuse and scale across teams and faster delivery
-      files for developers.
+    text: I worked across the organization to learn from more mature design teams,
+      such as Chase Travel, about how they managed product deployment. Then, I
+      upskilled my team on Figma component libraries. The sub-library enabled
+      reuse and scaling across teams and faster file delivery for developers.
     images:
       - image: /images/projects/Component_Building.png
         sound: false
