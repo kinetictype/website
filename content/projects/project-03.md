@@ -64,8 +64,6 @@ sections:
         alt: "Placeholder: research or workshop artifact"
         caption: Our team analyzed the homepage to move toward increased engagement.
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown h"
   - heading: Strategically Aligned with Product
     text: >+
       ##### When design moved into the product triad with the product owner and
