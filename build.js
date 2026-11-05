@@ -164,6 +164,9 @@ marked.use({
   },
 });
 const markdown = (src = "") => marked.parse(src);
+// Text typed as a small heading (####, #####, ######) in a paragraph box is shown as a normal paragraph,
+// so every page's text has the same typography
+const prose = (src = "") => markdown(src).replace(/<h[4-6]\b[^>]*>/g, "<p>").replace(/<\/h[4-6]>/g, "</p>");
 const inline = (src = "") => marked.parseInline(String(src));
 
 /* ---------- load content ---------- */
@@ -694,7 +697,7 @@ function pageSections(p) {
   return list.map((s) => {
     const imgs = (s.images || []).filter((g) => g && (g.image || g.video));
     let quotes = "";
-    const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? markdown(String(s.text)) : ""}`
+    const head = `${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}${s.text ? prose(String(s.text)) : ""}`
       // quotes in a section's text leave the side-by-side column and run the full page width below it
       .replace(/<blockquote>[\s\S]*?<\/blockquote>/g, (q) => { quotes += q; return ""; });
     // When a section starts with a "half-text" image (image left) or a "text-half" image (image right), the heading and text sit beside it,
@@ -710,7 +713,7 @@ ${mediaRows(imgs.slice(1))}`;
     }
     return `
 ${s.heading ? `<h2>${escapeHtml(String(s.heading))}</h2>` : ""}
-${s.text ? markdown(String(s.text)) : ""}
+${s.text ? prose(String(s.text)) : ""}
 ${mediaRows(s.images)}`; // (quotes stay in place here; they are already full width)
   }).join("\n");
 }
@@ -732,7 +735,7 @@ function pageCredits(p) {
    Each item keeps its own column even when another is blank. */
 // Intro text (the page body): paragraphs and lists get the "case-intro" style (subheading size, lighter weight)
 function introText(body) {
-  return markdown(body).replace(/<(p|ul|ol)>/g, '<$1 class="case-intro">');
+  return prose(body).replace(/<(p|ul|ol)>/g, '<$1 class="case-intro">');
 }
 
 function pageOverview(p) {
