@@ -66,8 +66,8 @@ sections:
       - image: /images/projects/image-asset_2.png
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: Themes for opportunities showed that engagement was a priority.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "This project caught senior leadership's attention once we identified the
       main opportunity gap, and we reached out to customers throughout the
