@@ -34,8 +34,6 @@ sections:
       internally.
 
 
-
-
       ##### The existing patterns lacked logic, did not match the system colors,
       and were hard to read at small sizes; the charting library did not offer
       guidance.
@@ -94,7 +92,7 @@ sections:
       accessibility into Workday's charting library. It is the ethically right
       thing to do.
     images:
-      - image: /images/projects/FinalNormalMode_02.png
+      - image: /images/projects/FinalNormalMode_02-1.png
         sound: false
         alt: "Placeholder: result or shipped product"
         caption: The shipped pattern library.
