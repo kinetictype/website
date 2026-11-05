@@ -31,7 +31,7 @@ sections:
       - image: /images/projects/CustomerFlows02.png
         sound: false
         alt: "Placeholder: image that sets the context"
-        caption: Designed User flows for different aspects of the iPhone app.
+        caption: Designed User flows for different aspects of the application.
         size: half-text
   - heading: Your goal
     text: >+
