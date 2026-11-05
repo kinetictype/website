@@ -36,28 +36,14 @@ cover_alt: JPMorgan Chase
 prototype_size: half
 sections:
   - heading: Context
-    text: >-
-      ##### My team at Offers and Shopping at JPMorgan helped merchants execute
-      campaigns and monitor their business on our platform. We were a new team,
-      and our product had several gaps. We wanted to move away from custom code,
-      adopt the design system, align with the rest of Business Banking, and
-      incorporate research to drive engagement.
+    text: >+
+      ##### We were a new team, and our product had several gaps. We wanted to
+      move away from custom code, adopt the design system, incorporate research
+      to drive engagement, and align with the rest of Business Banking. Our data
+      showed users were not exploring the content behind the Business Offers
+      dashboard. I proposed adding a tab structure to increase engagement with
+      the site's content.
 
-
-      ##### The changes went live in October 2022, and we saw a 400% increase in
-      user engagement!  
-        
-      What was the mission or goal of the project? Which customer or business
-      problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
-       I introduced a tab structure, led the design team to use components in Figma, and user engagement with the deep-dive pages increased by 400%. I increased new-user onboarding and improved retention.
     images:
       - image: /images/projects/beforeAfter_ChaseCI.png
         sound: false
@@ -130,4 +116,5 @@ sections:
       business to enable efficient Figma updates and consistency across our
       files and, ultimately, Business Banking.
 ---
-I led a team of two designers and launched a new business line that was not yet connected to the design system. At first, the design was development-driven; then the design shifted toward holistic thinking rather than small, development-led improvements.
+##### My team at Offers and Shopping at JPMorgan helped merchants execute campaigns and monitor their business on our platform. I led a team of two designers and took over a new business line that was not yet connected to the design system. At first, the design was development-driven; then the design shifted toward holistic thinking rather than small, development-led improvements. After the changes went live in October 2022, we saw a 400% increase in user engagement.
+
