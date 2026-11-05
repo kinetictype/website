@@ -104,6 +104,17 @@ sections:
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: >-
+      What did you and your team learn?   
+
+      What would help you on another project?  
+
+      Anything else worth highlighting?  
+
+      I enjoyed bringing service design to the Google Shopping Express platform
+      to support the rebranding. As product costs skyrocketed on the platform,
+      Google noticed declining engagement and decided to rebrand the entire
+      service again.
 ---
+In 2013, Google announced the transition from the old Google Shopping to Google Express, an evolved version of the platform that let users buy products from different vendor websites & marketplaces right from the Google Express platform. Google handled everything on its platform, from collecting payments to delivering the products themselves. At the time, it was mostly used for grocery shopping.
+
