@@ -98,6 +98,7 @@ sections:
       - image: /images/projects/FinalNormalMode_02.png
         sound: false
         alt: "Placeholder: result or shipped product"
+        caption: The shipped pattern library.
         size: full
   - heading: Learnings
     text: Patterns shipped, complied with usability/contrast standards, and were
