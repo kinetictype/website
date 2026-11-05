@@ -34,7 +34,7 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/CustomerFlows02.png
         sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
@@ -54,7 +54,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Wireframes.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
@@ -65,7 +65,7 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Wireframes01.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
@@ -75,7 +75,7 @@ sections:
       technical, design system, capacity or scope), and how did you get through
       them?"
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Wireframes02.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
@@ -87,8 +87,7 @@ sections:
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
       Cursor or Replit."
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
+      - sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
