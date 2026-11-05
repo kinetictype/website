@@ -81,14 +81,16 @@ sections:
           research to position our product.
         size: half-text
   - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+    text: >-
+      
+
+      challenges are worth highlighting (team or org, technical, design system,
+      capacity or scope), and how did you get through them?
     images:
       - image: /images/projects/Small_Features.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
-        caption: " the challenge this image shows and how you got through it."
+        caption: Small feature fixes before design joined the product triad.
         size: text-half
   - heading: Building our Line-of-Business Components
     text: I worked across the organization to learn from more mature design teams,
