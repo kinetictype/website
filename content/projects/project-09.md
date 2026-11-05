@@ -7,7 +7,9 @@ client: Workday
 role: UI Designer
 timeline: "2018"
 goals: Design a pattern library to support people with color blindness.
-outcome: "Placeholder: what you eventually designed."
+outcome: When I began this project, the existing accessibility feature did not
+  match the design system's colors, and there was logic governed how the
+  patterns were displayed.
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
   testing, content design."
