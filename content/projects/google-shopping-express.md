@@ -35,8 +35,8 @@ sections:
         size: half-text
   - heading: Your goal
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      What was your goal as the designer, and what did you want the design to
+      achieve?
 
 
       - "How might we…" statements
