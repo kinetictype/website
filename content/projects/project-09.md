@@ -48,11 +48,13 @@ sections:
         size: half-text
   - heading: Goal
     text: In a month, the goal was to create a logic for how the patterns were
-      displayed and draw a connection to the design system's colors.
+      displayed and draw a connection to the design system's colors. The
+      developer needed guidance on a way to implement patterns.
     images:
       - image: /images/projects/Before_FillPattern_Dev.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
+        caption: The developer needed guidance on a way to implement patterns.
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
