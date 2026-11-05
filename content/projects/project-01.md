@@ -7,14 +7,14 @@ summary: >-
 
   I was asked to work with the Marketing team to better understand the process.
 client: JPMorgan Chase
-role: Lead Designer
+role: UX Design Lead
+timeline: 2021-2023
 goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
+outcome: I designed a service design map of the process
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
   testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+team: Content designer, Marketing team
 categories:
   - Service Design
 years: 2021-2023
