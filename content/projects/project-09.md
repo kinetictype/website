@@ -7,13 +7,10 @@ client: Workday
 role: UI Designer
 timeline: "2018"
 goals: Design a pattern library to support people with color blindness.
-outcome: When I began this project, there was no logic for how the patterns were
-  displayed or connection to the design system's colors.
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+outcome: A pattern system built from basic elements, tuned for density in small
+  spaces to help read charts for color blindness.
+responsibilities: Visual design, interaction design, design system.
+team: Engineer, Product Manager.
 categories:
   - Data Visualization
   - UI Design
@@ -61,8 +58,7 @@ sections:
       Outcome
 
 
-      - A pattern system built from basic elements, tuned for density in small
-      spaces
+      - 
 
       - Multiple prototypes using a CodePen tool the developer built
 
@@ -90,6 +86,12 @@ sections:
 
       A charting developer and the design systems team (leveraged existing
       standards; no user testing).The challenge
+
+
+
+
+      When I began this project, there was no logic for how the patterns were
+      displayed or connection to the design system's colors.
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
