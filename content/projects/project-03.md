@@ -81,11 +81,10 @@ sections:
           research to position our product.
         size: half-text
   - heading: Challenges
-    text: >-
-      
+    text: >+
+      ##### A big challenge we faced as a new team was incorporating design in
+      the 
 
-      challenges are worth highlighting (team or org, technical, design system,
-      capacity or scope), and how did you get through them?
     images:
       - image: /images/projects/Small_Features.png
         sound: false
