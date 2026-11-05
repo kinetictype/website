@@ -22,12 +22,11 @@ drawer_image: /images/projects/ServiceMap.png
 prototype_size: half
 sections:
   - heading: Context
-    text: Created an Android App to display several aspects of the Google Shopping
-      Express shopping experience. Document the ecosystem of the product and its
-      various touchpoints on desktop and mobile platforms. Created several
-      screens to display shopping categories, view the cart, add a category,
-      check out, remove items from the cart, change quantities, shop at a
-      different store, and consolidate delivery.
+    text: I brought Design System expertise to document the product ecosystem and
+      its touchpoints across desktop and mobile platforms. The team focused on
+      creating an Android App to display shopping categories, view the cart, add
+      a category, check out, remove items from the cart, change quantities, shop
+      at a different store, and consolidate delivery.
     images:
       - image: /images/projects/CustomerFlows02.png
         sound: false
