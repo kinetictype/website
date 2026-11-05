@@ -69,11 +69,11 @@ sections:
           would contribute to the design system library.
         size: half-text
   - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+    text: This was new territory, and I developed a process for designing patterns
+      on my own and proposing them to my team. I looked at the foreground and
+      background to examine which contrast would be the most legible.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/FillPattern_logic.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
