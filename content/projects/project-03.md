@@ -80,10 +80,13 @@ sections:
         caption: A visualization I created to create alignment with product owners and
           research to position our product.
         size: half-text
-  - heading: Challenges
+  - heading: Creating Efficient Design Files
     text: >+
-      ##### A big challenge we faced as a new team was incorporating design in
-      the
+      ##### When our team began execution, we faced challenges with the
+      efficiency of our design files. To align our efforts with a mature line of
+      business, Chase Travel, I worked with my team to share a streamlined
+      approach to using Figma subcomponents across our line of business. This
+      improved our team's efficiency and enabled a faster release cycle.
 
     images:
       - image: /images/projects/Small_Features.png
@@ -100,7 +103,8 @@ sections:
       - image: /images/projects/Component_Building.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
-        caption: the decisions behind this
+        caption: To enhance efficient delivery of our design files, I built a design
+          library for faster exection.
         size: half-text
   - heading: Results & outcomes
     text: The shipped redesign increased engagement by 400%. Our team worked hard to
