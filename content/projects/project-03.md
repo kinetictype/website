@@ -36,9 +36,19 @@ cover_alt: JPMorgan Chase
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+    text: >-
+      ##### My team at Offers and Shopping at JPMorgan helped merchants execute
+      campaigns and monitor their business on our platform. We were a new team,
+      and our product had several gaps. We wanted to move away from custom code,
+      adopt the design system, align with the rest of Business Banking, and
+      incorporate research to drive engagement.
+
+
+      ##### The changes went live in October 2022, and we saw a 400% increase in
+      user engagement!  
+        
+      What was the mission or goal of the project? Which customer or business
+      problems were you and your team solving?
 
 
       - Data or stats that set the context
@@ -47,6 +57,7 @@ sections:
 
       - The hypothesis that guided your design
 
+       I introduced a tab structure, led the design team to use components in Figma, and user engagement with the deep-dive pages increased by 400%. I increased new-user onboarding and improved retention.
     images:
       - image: /images/projects/beforeAfter_ChaseCI.png
         sound: false
@@ -119,4 +130,4 @@ sections:
       business to enable efficient Figma updates and consistency across our
       files and, ultimately, Business Banking.
 ---
-I led a team of 2 designers, and we launched a new business line that wasn't connected to the design system. At first, the design was development-driven; design joined the table and began shifting toward holistic thinking, rather than small improvements. I introduced a tab structure, led the design team to use components in Figma, and user engagement with the deep-dive pages increased by 400%. I increased new-user onboarding and improved retention.
+I led a team of two designers and launched a new business line that was not yet connected to the design system. At first, the design was development-driven; then the design shifted toward holistic thinking rather than small, development-led improvements.
