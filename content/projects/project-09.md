@@ -9,8 +9,8 @@ timeline: "2018"
 goals: Design a pattern library to support people with color blindness.
 outcome: A pattern system built from basic elements, tuned for density in small
   spaces to help read charts for color blindness.
-responsibilities: Visual design, interaction design, design system.
-team: Engineer, Product Manager.
+responsibilities: Visual design, research, exploration, prototyping, and recommendations.
+team: A charting developer and the design systems team.
 categories:
   - Data Visualization
   - UI Design
@@ -48,21 +48,8 @@ sections:
         size: half-text
   - heading: Goal
     text: >-
-      
+      Multiple prototypes using a CodePen tool the developer built
 
-      TIMELINE
-
-
-      2018–2019, Shipped
-
-
-      Outcome
-
-
-      - 
-
-
-      - Multiple prototypes using a CodePen tool the developer built
 
       - Recommendation to change the legend to a rectangle so patterns stay
       visible
@@ -76,20 +63,6 @@ sections:
       Patterns shipped, complied with usability/contrast standards, and were
       incorporated into the design system. "Project received well and improved
       accessibility across platform."
-
-
-      My Role  
-
-      Visual/product designer: research, exploration, prototyping and
-      recommendations.
-
-
-      My Team  
-
-      A charting developer and the design systems team (leveraged existing
-      standards; no user testing).The challenge
-
-
 
 
       When I began this project, there was no logic for how the patterns were
