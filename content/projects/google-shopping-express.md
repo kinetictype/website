@@ -22,24 +22,18 @@ drawer_image: /images/projects/ServiceMap.png
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
+    text: "*Create an Android App to display several aspects of the shopping
+      experience for Google Shopping Express. Document the ecosystem of the
+      product and it’s various touchpoints along desktop and mobile
+      platforms.Created several screens to display the shopping categories,
+      viewing the cart, adding a category, checkout, remove from checkout,
+      change quantity, shop a different store, consolidate delivery.*"
     images:
       - image: /images/projects/CustomerFlows02.png
         sound: false
         alt: "Placeholder: image that sets the context"
+        caption: Designed User flows for different aspects of the iPhone app.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
@@ -57,9 +51,9 @@ sections:
       - image: /images/projects/Wireframes.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
-        size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
+        caption: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
+        size: text-half
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
@@ -78,9 +72,9 @@ sections:
       - image: /images/projects/Wireframes02.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
-        size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
+        caption: "Placeholder: describe the challenge this image shows and how you got
           through it."
+        size: text-half
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
@@ -89,8 +83,9 @@ sections:
     images:
       - sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: "Placeholder: describe the design shown here and the decisions behind
+          it."
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
