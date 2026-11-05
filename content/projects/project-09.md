@@ -28,17 +28,18 @@ drawer_image_alt: Placeholder image for project 09
 prototype_size: half
 sections:
   - heading: Context
-    text: >-
+    text: >+
       ##### Over two months, I audited the current framework, conceptualized a
       pattern-based approach, executed the designs, and tested the patterns
-      internally. I enjoy making the internet more accessible and was thrilled
-      to work on this project.
+      internally.
 
 
-      Provide fill patterns for the charting tool that improve accessibility and
-      work with the current design system. Existing patterns lacked logic, did
-      not match system colors, and were hard to read at small sizes; the
-      charting library did not offer guidance.
+
+
+      ##### The existing patterns lacked logic, did not match the system colors,
+      and were hard to read at small sizes; the charting library did not offer
+      guidance.
+
     images:
       - image: /images/projects/Before_FillPattern_WD.png
         sound: false
@@ -80,10 +81,8 @@ sections:
         text: "Placeholder: describe the challenge this image shows and how you got
           through it."
   - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+    text: I worked with a codepen that the developer created to help me formulate
+      the color patterns.
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
@@ -105,4 +104,4 @@ sections:
       incorporated into the design system. The project was well received and
       improved accessibility across the platform.
 ---
-When I joined Workday Analytics, they were replacing the current visualization library with one that could handle large volumes of data. Accessibility is ethically the right thing to ensure. I was thrilled to have the opportunity to work on it.
+When I joined Workday Analytics, we were replacing the current visualization library with one that could handle large volumes of data. Accessibility is ethically the right thing to ensure. I was thrilled to have the opportunity to contribute to this feature.
