@@ -48,7 +48,8 @@ sections:
       - image: /images/projects/beforeAfter_ChaseCI.png
         sound: false
         alt: "Placeholder: image that sets the context"
-        caption: " image shows and why it matters "
+        caption: "The before and after designs of the dashboard enhanced with a tab
+          stucture and incorporation of the design system. "
         size: half-text
   - heading: Your goal
     text: >+
@@ -62,6 +63,13 @@ sections:
 
       - Research that shaped the work: competitive analysis, customer
       satisfaction scores (surveys, NPS), market research
+
+
+      ##### The previous team was development-led, focusing on small feature
+      updates. After working on several small features, our team shifted its
+      focus to a holistic view of the product. The dashboard cover page I
+      started with showed that customers were not accessing the data within the
+      tiles.
 
     images:
       - image: /images/projects/Dashboard_Analysis-1.png
