@@ -104,5 +104,5 @@ sections:
       reveal the opportunity in the Campaign Creation process. This led Chase to
       acquire a company to fill the opportunity.
 ---
-##### The Merchant Insights Campaign at JPMorgan Chase Bank saw low customer engagement. They brought me in to help map the process. People were not following through on signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
+##### The Merchant Insights Campaign at JPMorgan Chase Bank saw low customer engagement.  Design stepped in to clarify the process. People were not following through on signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
 
