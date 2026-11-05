@@ -47,19 +47,8 @@ sections:
           platform. "
         size: half-text
   - heading: Goal
-    text: >-
-      Multiple prototypes using a CodePen tool the developer built
-
-
-      - Recommendation to change the legend to a rectangle so patterns stay
-      visible
-
-      - Normal/reversed pattern modes; design-system colors interpolated (0.35 /
-      0.6) to meet contrast standards
-
-
-      When I began this project, there was no logic for how the patterns were
-      displayed or connection to the design system's colors.
+    text: In a month, the goal was to create a logic for how the patterns were
+      displayed and draw a connection to the design system's colors.
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
