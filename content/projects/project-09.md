@@ -62,7 +62,7 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?"
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/FillPattern_processMap-2.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
