@@ -79,10 +79,10 @@ sections:
         caption: The challenge this image shows and how you got through it.
         size: text-half
   - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+    text: >+
+      ##### After mapping the journey and the broader scope of the organization
+      involved in launching the Campaign, the team began mapping opportunities.
+
     images:
       - image: /images/projects/02_Process_ServiceDesign.png
         sound: false
@@ -91,8 +91,14 @@ sections:
           of information that it did not represent.
         size: half-text
   - heading: Outcome
-    text: JPMorgan Chase acquired Figg to build a two-sided commerce platform and
-      fill the opportunity gap we illustrated in the Service Design map.
+    text: >+
+      ##### Viewing the project as a whole helped identify gaps, redundancies,
+      and areas for improvement, promoting effective problem-solving and goal
+      alignment. My work to build a holistic understanding of the Campaign
+      Creation Process led Chase to acquire [Figg.com](http://Figg.com) to
+      manage the Chase Offers Campaign. My work on this project helped
+      management identify the flow's complexity and decide how to address it.
+
     images:
       - image: /images/projects/Service_Poster.png
         sound: false
