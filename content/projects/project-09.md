@@ -40,7 +40,7 @@ sections:
       not match system colors, and were hard to read at small sizes; the
       charting library did not offer guidance.
     images:
-      - image: /images/projects/01_existing-fill-patterns-1.png
+      - image: /images/projects/Before_FillPattern_WD.png
         sound: false
         alt: "Placeholder: image that sets the context"
         caption: "I began with researching the legacy fill patterns on the Workday
@@ -50,7 +50,7 @@ sections:
     text: In a month, the goal was to create a logic for how the patterns were
       displayed and draw a connection to the design system's colors.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Before_FillPattern_Dev.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
@@ -106,8 +106,7 @@ sections:
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
-    text: >+
-      Patterns shipped, complied with usability/contrast standards, and were
+    text: Patterns shipped, complied with usability/contrast standards, and were
       incorporated into the design system. The project was well received and
       improved accessibility across the platform.
 ---
