@@ -88,7 +88,8 @@ sections:
       - image: /images/projects/02_Process_ServiceDesign.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
-        caption: Describe the design shown here and the decisions behind it.
+        caption: Examining the existing map, it was clear that there was a large amount
+          of information that it did not represent.
         size: half-text
   - heading: Outcome
     text: JPMorgan Chase acquired Figg to build a two-sided commerce platform and
