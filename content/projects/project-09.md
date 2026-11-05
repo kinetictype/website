@@ -35,12 +35,12 @@ sections:
       to work on this project.
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/01_existing-fill-patterns-1.png
         sound: false
         alt: "Placeholder: image that sets the context"
+        caption: "I began with researching the legacy fill patterns on the Workday
+          platform. "
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Goal
     text: >-
       Provide fill patterns for the charting tool that improve accessibility and
@@ -59,6 +59,7 @@ sections:
 
 
       - 
+
 
       - Multiple prototypes using a CodePen tool the developer built
 
