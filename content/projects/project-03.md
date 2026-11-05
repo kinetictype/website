@@ -71,6 +71,15 @@ sections:
       intuitively. Adding a new tab structure and aligning with the design
       system increased traffic.
 
+
+      > I really appreciate Kiera’s heads-down desire to do things properly and
+      her process-oriented approach to design. She’s extremely proactive,
+      thoughtful, collaborative, and open to learning new things.
+
+      >
+
+      > A. Gitlin, JPMorgan Chase Design Lead, Chase Travel
+
     images:
       - image: /images/projects/CustomerInsightJourney.png
         sound: false
