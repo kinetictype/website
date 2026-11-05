@@ -113,8 +113,8 @@ sections:
         caption: Shipped product
         size: full
   - heading: Learnings
-    text: My favorite part of this role was upskilling my team on Figma component
-      libraries. We were a new team, so I built a component library for our line
-      of business to enable efficient updates and consistency across files.
+    text: We were a new team, and I built a component library for our line of
+      business to enable efficient Figma updates and consistency across our
+      files and, ultimately, Business Banking.
 ---
 I led a team of 2 designers, and we launched a new business line that wasn't connected to the design system. At first, the design was development-driven; design joined the table and began shifting toward holistic thinking, rather than small improvements. I introduced a tab structure, led the design team to use components in Figma, and user engagement with the deep-dive pages increased by 400%. I increased new-user onboarding and improved retention.
