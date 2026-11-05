@@ -65,8 +65,9 @@ sections:
       - image: /images/projects/FillPattern_processMap-2.png
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: Working with basic elements, I created a matrix to find patterns that
+          would contribute to the design system library.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
