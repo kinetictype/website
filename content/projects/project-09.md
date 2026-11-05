@@ -58,13 +58,6 @@ sections:
       0.6) to meet contrast standards
 
 
-      Positive Outcomes Emerged  
-
-      Patterns shipped, complied with usability/contrast standards, and were
-      incorporated into the design system. "Project received well and improved
-      accessibility across platform."
-
-
       When I began this project, there was no logic for how the patterns were
       displayed or connection to the design system's colors.
     images:
@@ -124,7 +117,9 @@ sections:
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: >+
+      Patterns shipped, complied with usability/contrast standards, and were
+      incorporated into the design system. The project was well received and
+      improved accessibility across the platform.
 ---
 When I joined Workday Analytics, they were replacing the current visualization library with one that could handle large volumes of data. Accessibility is ethically the right thing to ensure. I was thrilled to have the opportunity to work on it.
