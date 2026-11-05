@@ -56,7 +56,7 @@ sections:
       ##### The previous team was development-led and focused on small feature
       updates. After working on several small features, our team shifted its
       focus to a holistic view of the product. How might we entice customers to
-      engage with content behind the tiles? 
+      engage with content behind the tiles?
 
     images:
       - image: /images/projects/Dashboard_Analysis-1.png
@@ -67,14 +67,18 @@ sections:
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown h"
   - heading: Design principles & frameworks
-    text: The frameworks helped you and your team think through the customer
-      problems? Which design principles did you follow, or create, to guide the
-      design?
+    text: >+
+      ##### When design moved into the product triad with the product owner and
+      development, we strategized how to access deep-dive page content more
+      intuitively. Adding a new tab structure and aligning with the design
+      system increased traffic.
+
     images:
       - image: /images/projects/CustomerInsightJourney.png
         sound: false
-        alt: "Placeholder: framework or design principles"
-        caption: the framework, principle or diagram shown here.
+        alt: Visual storytelling for the position of our product.
+        caption: A visualization I created to create alignment with product owners and
+          research to position our product.
         size: half-text
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
