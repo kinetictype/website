@@ -53,31 +53,19 @@ sections:
         size: half-text
   - heading: Your goal
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
-
-      ##### The previous team was development-led, focusing on small feature
+      ##### The previous team was development-led and focused on small feature
       updates. After working on several small features, our team shifted its
-      focus to a holistic view of the product. The dashboard cover page I
-      started with showed that customers were not accessing the data within the
-      tiles.
+      focus to a holistic view of the product. How might we entice customers to
+      engage with content behind the tiles? 
 
     images:
       - image: /images/projects/Dashboard_Analysis-1.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
+        caption: Our team analyzed the homepage to move toward increased engagement.
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
+          shown h"
   - heading: Design principles & frameworks
     text: The frameworks helped you and your team think through the customer
       problems? Which design principles did you follow, or create, to guide the
