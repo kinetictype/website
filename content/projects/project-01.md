@@ -39,8 +39,7 @@ sections:
       - image: /images/projects/image-asset.png
         sound: false
         alt: "Placeholder: image that sets the context"
-        caption: "Placeholder: describe what this image shows and why it matters to the
-          problem."
+        caption: The existing map had areas of difficulty we were examining.
         size: half-text
   - heading: Goal
     text: "The Marketing team owned the Campaign Creation process. "
