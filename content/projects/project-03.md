@@ -51,7 +51,7 @@ sections:
         caption: "The before and after designs of the dashboard enhanced with a tab
           stucture and incorporation of the design system. "
         size: half-text
-  - heading: Your goal
+  - heading: Shifting Focus Toward a Holistic View
     text: >+
       ##### The previous team was development-led and focused on small feature
       updates. After working on several small features, our team shifted its
@@ -83,7 +83,7 @@ sections:
   - heading: Challenges
     text: >+
       ##### A big challenge we faced as a new team was incorporating design in
-      the 
+      the
 
     images:
       - image: /images/projects/Small_Features.png
