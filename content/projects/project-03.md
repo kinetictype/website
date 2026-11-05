@@ -66,7 +66,7 @@ sections:
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown h"
-  - heading: Design principles & frameworks
+  - heading: Strategically Aligned with Product
     text: >+
       ##### When design moved into the product triad with the product owner and
       development, we strategized how to access deep-dive page content more
