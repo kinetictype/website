@@ -5,7 +5,8 @@ summary: |+
   
 client: Workday
 role: UI Designer
-goals: "Placeholder: the customer and business goal."
+timeline: "2018"
+goals: Design a pattern library to support people with color blindness.
 outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
@@ -30,15 +31,10 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
+      ##### Over two months, I audited the current framework, conceptualized a
+      pattern-based approach, executed the designs, and tested the patterns
+      internally. I enjoy making the internet more accessible and was thrilled
+      to work on this project.
 
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
