@@ -69,6 +69,7 @@ sections:
         size: half-text
       - image: /images/projects/hybrid_Sketch02.png
         sound: false
+        alt: Sketch 02 Hybrid Cloud
         size: half-text
         text: >+
           I enjoyed the autonomy to design and develop an independent
