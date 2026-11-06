@@ -1,32 +1,10 @@
 ---
 title: Chart Accessibility for Workday
 tagline: Making Workday's charts readable without relying on color.
-summary: >
-  Provide fill patterns for the charting tool that improve accessibility and
-  work with the current design system. Existing patterns lacked logic, did not
-  match system colors, and were hard to read at small sizes. I developed the
+summary: Provide fill patterns for the charting tool that improve accessibility
+  and work with the current design system. Existing patterns lacked logic, did
+  not match system colors, and were hard to read at small sizes. I developed the
   structure to find new patterns.
-
-
-
-
-  WHAT POSITIVE OR VALUABLE OUTCOMES EMERGED
-
-  Patterns shipped, complied with usability/contrast standards, and were
-  incorporated into the design system. "Project received well and improved
-  accessibility across platform."
-
-
-  MY ROLE
-
-  Visual/product designer: research, exploration, prototyping and
-  recommendations.
-
-
-  MY TEAM
-
-  A charting developer and the design systems team (leveraged existing
-  standards; no user testing).
 client: Workday
 role: UI Designer
 timeline: "2018"
