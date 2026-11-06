@@ -9,6 +9,7 @@ summary: "Goldman Sachs' Global Investment Research division wanted to add
   interactive graphics throughout the year. "
 client: Goldman Sachs
 role: Interactive Visualization Designer
+timeline: "2018"
 goals: Create interactive visual stories for the Goldman Sachs research portal.
 outcome: Several interactive scalable vector graphics were published to the
   research portal.
