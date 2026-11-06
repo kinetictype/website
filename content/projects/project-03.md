@@ -35,7 +35,7 @@ cover: /images/logos/Cover_EndScreen03.png
 cover_alt: JPMorgan Chase
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: A New Team Driven to Build Engagement
     text: >+
       ##### We were a new team, and our product had several gaps. We wanted to
       move away from custom code, adopt the design system, incorporate research
