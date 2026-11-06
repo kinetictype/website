@@ -30,32 +30,13 @@ drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
-    text: >-
+    text: >+
       Goldman Sachs was committed to providing interactive graphics to
       Investment Research stories to add value to insights and analysis in the
       equity, fixed income, currency, and commodities markets. I joined to team
       to build towards generating several economic, market, and company
-      forecasts and models for the firm during a global pandemic. 
+      forecasts and models for the firm during a global pandemic.
 
-
-      Interactive storytelling with custom-made SVG graphics surfaced an
-      underdeveloped craft. I enjoyed the autonomy of designing and developing
-      an independent interactive graphic.
-
-
-
-
-      - Goldman Sachs Research provides cutting-edge thought leadership across
-      over 3,000 securities, over 45 economies, and every major market under
-      coverage.   
-
-      We reach clients in formats that suit them, from webcasts and large
-      multi-stream events to interactive data, email alerts, and our GS Now app.
-
-
-
-
-      &nbsp;
     images:
       - video: /images/projects/StreamingVideo-small.mp4
         sound: false
@@ -63,14 +44,11 @@ sections:
         caption: describe what this image shows and why it matters to the problem.
         size: half-text
   - heading: Interactive Data to Enhance Understanding
-    text: >-
-      I turned complex data into engaging, interactive stories on the Research
-      Portal.
-
-
-      I consulted with the firm's Managing Directors to design and develop
-      Scalable Vector Graphics. We transformed a series of SVGs that transformed
-      complex data into engaging, interactive stories on the Research Portal.
+    text: "Interactive storytelling with custom-made SVG graphics surfaced an
+      underdeveloped craft. It let us work with the current CMS platform in an
+      image format with a small file size. I rolled up my development sleeves
+      and leaned on a developer from the UX Division to churn out several
+      Interactive Graphics over the year. "
     images:
       - video: /images/projects/Simulus.mp4
         sound: false
