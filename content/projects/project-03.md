@@ -113,7 +113,7 @@ sections:
         caption: To enhance efficient delivery of our design files, I built a design
           library for faster exection.
         size: half-text
-  - heading: Results & outcomes
+  - heading: Results Exceeded our Expectations
     text: The shipped redesign increased engagement by 400%. Our team worked hard to
       turn Offers and Shopping into a unified part of the business banking
       platform.
@@ -123,7 +123,7 @@ sections:
         alt: "Placeholder: result or shipped product"
         caption: Shipped product
         size: full
-  - heading: Learnings
+  - heading: Driven to Create Unity
     text: We were a new team, and I built a component library for our line of
       business to enable efficient Figma updates and consistency across our
       files and, ultimately, Business Banking.
