@@ -48,7 +48,7 @@ sections:
     images:
       - image: /images/projects/02_Process_ServiceDesign-2.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Existing map from marketing was limited
         caption: the research, workshop or competitive analysis shown here.
         size: text-half
   - heading: Design a New Process Map
