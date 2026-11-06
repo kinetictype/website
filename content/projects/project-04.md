@@ -60,8 +60,9 @@ sections:
     images:
       - video: /images/projects/Simulus.mp4
         sound: false
-        alt: "Placeholder: research or workshop artifact"
-        caption: Competitive analysis shown here.
+        alt: Stimulus SVG MOV
+        caption: Comparison of different allocation of funds in different periods of
+          time.
         size: text-half
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
