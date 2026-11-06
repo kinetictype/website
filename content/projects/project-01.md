@@ -54,7 +54,9 @@ sections:
   - heading: Design a New Process Map
     text: >+
       To facilitate the discussion, I designed a new map with swimlanes for each
-      team involved in creating a campaign. 
+      team involved in creating a campaign. This made it easier to follow the
+      campaign creation process and identify gaps in communication with the
+      customer.
 
 
       > *Kiera is a great design partner. She created a framework to help us map
