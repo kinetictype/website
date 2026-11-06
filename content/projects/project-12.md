@@ -31,7 +31,7 @@ drawer_image_alt: Placeholder image for project 12
 prototype_size: half
 sections:
   - heading: Context
-    text: >+
+    text: >-
       This was the first time I worked directly with a product strategist to
       decipher his vision. As we talked, I extracted personas and their mental
       model from the story and defined them to understand who we were building
@@ -39,11 +39,23 @@ sections:
 
 
 
+        
 
-      A CHRO who hears of a worrying trend), storyboard, user flows, and a
-      mental model  
 
-      Screens and requirements  
+      What was the mission or goal of the project? Which customer or business
+      problems were you and your team solving?
+
+
+      - Data or stats that set the context
+
+      - Assumptions you set out to validate or disprove
+
+      - The hypothesis that guided your design
+
+      - ), storyboard, user flows, and a mental model  
+
+      Screens and requirements
+
 
       Framework selection via a proof of concept; "discovery boards" chosen  
 
@@ -58,25 +70,13 @@ sections:
       foundation for new products and services  
 
       The process diagram "became a key artifact for our team"
-
-
-      What was the mission or goal of the project? Which customer or business
-      problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/Persona_PA_WD.webp
         sound: false
         alt: "Placeholder: image that sets the context"
+        caption: Defining the personas was the first step in realizing the vision of the
+          Business Analyst.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Your goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
