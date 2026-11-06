@@ -84,8 +84,7 @@ sections:
       multi-stream events to interactive data, email alerts, and our GS Now app.
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
+      - sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
