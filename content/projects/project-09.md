@@ -55,11 +55,9 @@ sections:
     images:
       - image: /images/projects/Before_FillPattern_Dev.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Before image of Workday chart Patterns that lacked logic.
         caption: The developer needed guidance on a way to implement patterns.
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
   - heading: Design principles & frameworks
     text: "Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
