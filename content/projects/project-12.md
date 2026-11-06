@@ -3,8 +3,8 @@ title: AI + People Analytics
 tagline: Conceptualized and built a platform that surfaced data for an AI
   powered product.
 summary: Define the page layout and framework for a new Analytic Application
-  platform that visualizes Workday and non-Workday data and highlights the
-  drivers of business performance.
+  platform that visualizes Workday and non-Workday data to highlight the drivers
+  of business performance.
 client: Workday Analytics
 role: Product designer, strategy through shipped iteration.
 timeline: 2018-2019
@@ -121,7 +121,6 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-
 Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows, and a mental model  
 Screens and requirements  
 Framework selection via a proof of concept; "discovery boards" chosen  
