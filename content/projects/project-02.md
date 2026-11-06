@@ -105,4 +105,4 @@ sections:
       Portal migration to the AUI Design System, I worked closely with the
       Design System team to best prepare our efforts.
 ---
-I was brought in to assist with several design features on the developer portal. The product manager and I worked closely to review research and explore integrating new features. While designing new features, I learned that the Developer Portal was not part of the AUI design system that supports the consumer-facing website. 
+I joined Apiture to assist with several design features on the developer portal. The product manager and I worked closely to review research and explore integrating new features. While designing new features, I learned that the Developer Portal was not part of the AUI design system that supports the consumer-facing website. 
