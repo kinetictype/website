@@ -42,12 +42,12 @@ sections:
         caption: Defining the personas was the first step in realizing the vision of the
           Business Analyst.
         size: half-text
-  - heading: Your goal
+  - heading: Building a Platform for People Analytics
     text: As I sketched the storyboard for how the product would work based on the
       personas we defined, I began building a broader workflow to design the
       platform.
     images:
-      - image: /images/projects/Storyboard02-1.png
+      - image: /images/projects/Quality-of-Hire-Storyboard.svg
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
