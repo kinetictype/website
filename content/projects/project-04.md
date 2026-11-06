@@ -57,27 +57,10 @@ sections:
           time.
         size: text-half
   - heading: Sketching first
-    text: >+
-      As I consulted with the firm's Managing Directors, I would sketch and
+    text: "As I consulted with the firm's Managing Directors, I would sketch and
       collaborate to learn more about the subject we were discussing. Michael
-      Hinds reported on a story about "Cloud" technology. We passed ideas about
-      the image while I sketched, and we came to a shared vision.   
-
-
-      We transformed a series of SVGs into engaging, interactive stories on the
-      Research Portal.  
-
-      I enjoyed the autonomy of designing and developing an independent
-      interactive graphic.
-
-
-      - Goldman Sachs Research provides cutting-edge thought leadership across
-      over 3,000 securities, over 45 economies, and every major market under
-      coverage.   
-
-      We reach clients in formats that suit them, from webcasts and large
-      multi-stream events to interactive data, email alerts, and our GS Now app.
-
+      Hinds reported on a story about \"Cloud\" technology. We passed ideas
+      about the image while I sketched, and we came to a shared vision.   "
     images:
       - image: /images/projects/hybrid_Sketch.png
         sound: false
