@@ -32,15 +32,25 @@ prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
     text: >+
-      What was the mission or goal of the project? Which customer or business
-      problems were you and your team solving?
+      Goldman Sachs had a highly suData or stats that set the context
 
 
-      - Data or stats that set the context
+      - Assumptions that interactivity would add value to the Investmen Research
+      Platform  
+        
+      Providing original, fundamental insights and analysis for clients in the
+      equity, fixed income, currency, and commodities markets.  
 
-      - Assumptions you set out to validate or disprove
+      We generate thousands of economic, market, and company forecasts and
+      models. Plus we create and maintain Goldman Sachs proprietary indicators
+      to help our clients see around corners.
 
-      - The hypothesis that guided your design
+      - Goldman Sachs Research provides cutting-edge thought leadership across
+      over 3,000 securities, over 45 economies, and every major market under
+      coverage.   
+
+      We reach clients in formats that suit them, from webcasts and large
+      multi-stream events to interactive data, email alerts, and our GS Now app.
 
     images:
       - sound: false
