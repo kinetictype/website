@@ -14,8 +14,7 @@ outcome: Several interactive scalable vector graphics were published to the
   research portal.
 responsibilities: I worked on the visual design, interaction design, design
   system, and concept design.
-team: I worked with managing directors on conceptualization and collaborated
-  with engineers on execution.
+team: "Managing directors and engineers "
 categories:
   - Interactive Data Visualization
   - UX/UI Design
