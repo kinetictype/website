@@ -1,6 +1,6 @@
 ---
 title: Service Design Reveals Insights
-tagline: Utilized Service Design to Enhance the Campaign Creation Process
+tagline: Utilized a Service Blueprint to Enhance the Campaign Creation Process
 summary: >-
   Enrollment for the Business sign-up in the Chase Offers program was not
   increasing.
