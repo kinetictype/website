@@ -80,7 +80,7 @@ sections:
         caption: To sort out the contrast levels, I looked at normal and reverse pattern
           structure.
         size: text-half
-  - heading: Showing your designs
+  - heading: Close Collaboration with Development
     text: I worked with a codepen that the developer created to help me formulate
       the color patterns.
     images:
