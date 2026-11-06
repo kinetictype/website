@@ -65,7 +65,7 @@ sections:
     images:
       - image: /images/projects/FillPattern_processMap-2.png
         sound: false
-        alt: "Placeholder: framework or design principles"
+        alt: Matrix for creating pattterns
         caption: Working with basic elements, I created a matrix to find patterns that
           would contribute to the design system library.
         size: half-text
