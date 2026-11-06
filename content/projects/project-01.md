@@ -29,10 +29,11 @@ cover_alt: Service Design JPMC
 prototype_size: half
 sections:
   - heading: Learning and Documenting a Process
-    text: "The design team stepped in to collaborate with Marketing to understand
-      the Campaign Creation Process. We were a new team, and we approached the
-      project as a learning opportunity. As the team described the process, it
-      was clear we needed a new map to describe the problem space. "
+    text: The design team stepped in to collaborate with Marketing to understand the
+      Campaign Creation Process. We were a new team, and we approached the
+      project as a learning opportunity. As the team described the process, we
+      uncovered several undocumented aspects of how the campaign process
+      unfolded.
     images:
       - image: /images/projects/image-asset.png
         sound: false
@@ -40,9 +41,12 @@ sections:
         caption: The existing map had areas of difficulty we were examining.
         size: half-text
   - heading: Goal
-    text: "The Marketing team owned the Campaign Creation process. "
+    text: "The existing map that the Marketing team used to describe the Campaign
+      Creation Process was limited. We learned there were external partners and
+      teams at Chase that were involved in creating the campaign through
+      discussion but it was left out of the existing map. "
     images:
-      - image: /images/projects/HowMightWe_CampaignFlow-1.png
+      - image: /images/projects/02_Process_ServiceDesign-2.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         caption: the research, workshop or competitive analysis shown here.
