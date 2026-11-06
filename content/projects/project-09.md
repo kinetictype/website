@@ -90,17 +90,17 @@ sections:
         caption: Interpolating the colors to find the right level of contrast for the
           patterns.
         size: half-text
-  - heading: Results & outcomes
-    text: The positive business value this project created was incorporating
-      accessibility into Workday's charting library. It is the ethically right
-      thing to do.
+  - heading: Outcome
+    text: This project created positive business value by incorporating
+      accessibility and consistency into Workday's charting library. It is the
+      ethically right thing to do.
     images:
       - image: /images/projects/ShippedPattern-1.png
         sound: false
         alt: "Placeholder: result or shipped product"
         caption: The shipped pattern library.
         size: full
-  - heading: Learnings
+  - heading: Accessible Patterns Shipped in the Workday Platform
     text: Patterns shipped, complied with usability/contrast standards, and were
       incorporated into the design system. The project was well received and
       improved accessibility across the platform.
