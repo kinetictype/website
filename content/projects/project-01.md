@@ -98,7 +98,7 @@ sections:
         caption: Examining the existing map, it was clear that there was a large amount
           of information that it did not represent.
         size: half-text
-  - heading: Outcome
+  - heading: Understanding Led to Focused Decision Making
     text: >+
       ##### After building a holistic understanding of the Campaign Creation
       Process, Chase acquired [Figg.com](http://Figg.com) to manage the Chase
