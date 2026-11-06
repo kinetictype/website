@@ -43,29 +43,20 @@ sections:
           Business Analyst.
         size: half-text
   - heading: Your goal
-    text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
+    text: As I sketched the storyboard for how the product would work based on the
+      personas we defined, I began building a broader workflow to design the
+      platform.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/Storyboard02-1.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+  - heading: Framework selectionn
+    text: >2-
+       via a proof of concept; "discovery boards" chose  
+      Which frameworks helped you and your team think through the customer
+      problems? Which design principles did you follow, or create, to guide the
+      design?
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
