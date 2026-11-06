@@ -83,15 +83,15 @@ sections:
         caption: Our teams collaboratively brainstormed opportunities after we
           identified the holistic process.
         size: text-half
-  - heading: Showing your designs
+  - heading: Themes of Opportunities
     text: >+
       ##### After mapping the journey and the broader scope of the organization
       involved in launching the Campaign, the team began mapping opportunities.
 
     images:
-      - image: /images/projects/02_Process_ServiceDesign.png
+      - image: /images/projects/image-asset_2-2.png
         sound: false
-        alt: "Placeholder: design iteration or alternative"
+        alt: Themes of Opportunities
         caption: Examining the existing map, it was clear that there was a large amount
           of information that it did not represent.
         size: half-text
