@@ -40,7 +40,7 @@ sections:
         alt: "Placeholder: image that sets the context"
         caption: The existing map had areas of difficulty we were examining.
         size: half-text
-  - heading: Goal
+  - heading: Revealing the Process
     text: "The existing map that the Marketing team used to describe the Campaign
       Creation Process was limited. We learned there were external partners and
       teams at Chase that were involved in creating the campaign through
