@@ -85,7 +85,7 @@ sections:
       System lead for AUI began discussing migrating the Developer Portal
       elements into a single system.
     images:
-      - image: /images/projects/Type_SystemDiscrepencies-1.png
+      - image: /images/projects/SystemDiscrepencies.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
         caption: design shown here and the decisions behind it.
