@@ -87,8 +87,9 @@ sections:
       - image: /images/projects/FP_Interpolation (1).png
         sound: false
         alt: "Placeholder: design iteration or alternative"
+        caption: Interpolating the colors to find the right level of contrast for the
+          patterns.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: The positive business value this project created was incorporating
       accessibility into Workday's charting library. It is the ethically right
