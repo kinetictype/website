@@ -61,7 +61,7 @@ sections:
       - image: /images/projects/WorkflowSketch.png
         sound: false
         alt: "Placeholder: framework or design principles"
-        size: half-text
+        size: full
         text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: While I fleshed out the product workflow, Workday acquired a Prague-based
