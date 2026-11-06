@@ -32,8 +32,36 @@ prototype_size: half
 sections:
   - heading: Context
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      This was the first time I worked directly with a product strategist to
+      decipher his vision. As we talked, I extracted personas and their mental
+      model from the story and defined them to understand who we were building
+      this platform for.
+
+
+
+
+      A CHRO who hears of a worrying trend), storyboard, user flows, and a
+      mental model  
+
+      Screens and requirements  
+
+      Framework selection via a proof of concept; "discovery boards" chosen  
+
+      Competitive research (Power BI, Tableau)  
+
+      New bi-directional drag-handle components for moving and expanding
+      visualizations  
+
+      A diagram documenting the Analytics team's process  
+
+      Product shipped in 2019 on the framework; became a core offering and the
+      foundation for new products and services  
+
+      The process diagram "became a key artifact for our team"
+
+
+      What was the mission or goal of the project? Which customer or business
+      problems were you and your team solving?
 
 
       - Data or stats that set the context
@@ -114,7 +142,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/placeholders/placeholder-wide-2.svg
+      - image: /images/projects/06_shipped-product.png
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
@@ -127,12 +155,4 @@ sections:
       offering and the foundation for new products and services for Workday
       Analytics.
 ---
-Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows, and a mental model  
-Screens and requirements  
-Framework selection via a proof of concept; "discovery boards" chosen  
-Competitive research (Power BI, Tableau)  
-New bi-directional drag-handle components for moving and expanding visualizations  
-A diagram documenting the Analytics team's process  
-Product shipped in 2019 on the framework; became a core offering and the foundation for new products and services  
-The process diagram "became a key artifact for our team"
-
+This ambitious project began by translating a business analyst's vision into personas, a storyboard, and ultimately an interactive dashboard platform using AI to surface people analytics from Workday data and non-Workday data. 
