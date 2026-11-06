@@ -65,8 +65,8 @@ sections:
       - image: /images/projects/hybrid_Sketch.png
         sound: false
         alt: Hybrid Cloud
+        caption: While discussing the story with the Analyst, I would draw ideas.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
       - image: /images/projects/hybrid_Sketch02.png
         sound: false
         size: half-text
