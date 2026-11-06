@@ -45,7 +45,7 @@ sections:
     images:
       - image: /images/projects/streamingTVService.png
         sound: false
-        alt: "Placeholder: image that sets the context"
+        alt: Streaming Video Options Overwhelm Customers
         caption: describe what this image shows and why it matters to the problem.
         size: half-text
   - heading: Interactive Data to Enhance Understanding
