@@ -96,7 +96,8 @@ sections:
       accessibility into Workday's charting library. It is the ethically right
       thing to do.
     images:
-      - sound: false
+      - image: /images/projects/ShippedPattern-1.png
+        sound: false
         alt: "Placeholder: result or shipped product"
         caption: The shipped pattern library.
         size: full
