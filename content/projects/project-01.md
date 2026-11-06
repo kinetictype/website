@@ -10,7 +10,8 @@ client: JPMorgan Chase
 role: UX Design Lead
 timeline: 2021-2023
 goals: Learn why the campaign struggled to increase customer sign-ups.
-outcome: I designed a service design map of the Campaign Creation process.
+outcome: A service design map that outlined opportunities for engagement in the
+  Campaign Creation process.
 responsibilities: Facilitate service design within the Campaign Creation process
   and with the Marketing team to identify opportunities to increase customers.
 team: Content designer, Marketing team
