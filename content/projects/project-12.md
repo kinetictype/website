@@ -8,13 +8,15 @@ summary: Define the page layout and framework for a new Analytic Application
 client: Workday Analytics
 role: Product designer, strategy through shipped iteration.
 timeline: 2018-2019
-goals: "Placeholder: the customer and business goal."
+goals: Define the page layout and framework for a new Analytic Application
+  platform that visualizes Workday and non-Workday data and highlights the
+  drivers of business performance.
 outcome: Converted a product strategy into a visual framework for a shipped
   analytics platform.
 responsibilities: Product design and strategy management through shipped iterations.
 team: I worked with a business analyst, a product manager, and development teams.
 categories:
-  - Product Owner
+  - Product Manager
   - UX/UI Designer
 years: 2018-2019
 section: work
@@ -116,9 +118,14 @@ sections:
         sound: false
         alt: "Placeholder: result or shipped product"
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+  - heading: Working with an AI Platform
+    text: This was a complex project with many moving parts. Workday acquired a
+      Prague-based company for its innovative AI technology to surface data.
+      While the company was integrating, I designed a platform and features as
+      we built a new product framework on top of the existing Workday platform.
+      The product shipped in 2019 based on this framework, and it became a core
+      offering and the foundation for new products and services for Workday
+      Analytics.
 ---
 Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows, and a mental model  
 Screens and requirements  
