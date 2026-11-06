@@ -86,7 +86,7 @@ sections:
         text: "Placeholder: describe the framework, principle or diagram shown here."
       - image: /images/projects/hybrid_Sketch02.png
         sound: false
-        size: full
+        size: text-half
   - heading: Opportunity to Clarify Complexity
     text: One of my favorite parts of creating visualizations is the opportunity to
       deeply learn about the subject while translating the concept in a clear
