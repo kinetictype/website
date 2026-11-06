@@ -100,10 +100,10 @@ sections:
         size: half-text
   - heading: Outcome
     text: >+
-      ##### My work to build a holistic understanding of the Campaign Creation
-      Process led Chase to acquire [Figg.com](http://Figg.com) to manage the
-      Chase Offers Campaign. My work on this project helped management identify
-      the flow's complexity and decide how to address it.
+      ##### After building a holistic understanding of the Campaign Creation
+      Process, Chase acquired [Figg.com](http://Figg.com) to manage the Chase
+      Offers Campaign. My work on this project helped management identify the
+      flow's complexity and decide how to address it.
 
     images:
       - image: /images/projects/Service_Poster.png
