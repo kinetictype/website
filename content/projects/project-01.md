@@ -111,10 +111,10 @@ sections:
         alt: Service Design for Campaign Offers
         size: full
   - heading: Collaboration Led to Fruitful Outcomes
-    text: JPMorgan Chase emphasized collaboration and efficient design practices. It
-      was great to collaborate with the Marketing team on this project and
-      reveal the opportunity in the Campaign Creation process. This led Chase to
-      acquire a company to fill the opportunity.
+    text: It was a great opportunity to collaborate cross-functionally with the
+      Marketing team on this project to reveal opportunities in the Campaign
+      Creation process. I enjoy work that reveals processes to empower teams to
+      make clear decisions to move forward.
 ---
 ##### The Merchant Insights Campaign at JPMorgan Chase Bank saw low customer engagement.  Design stepped in to clarify the process. People were not following through on signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
 
