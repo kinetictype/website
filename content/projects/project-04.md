@@ -58,7 +58,7 @@ sections:
       Scalable Vector Graphics. We transformed a series of SVGs that transformed
       complex data into engaging, interactive stories on the Research Portal.
     images:
-      - image: /images/projects/retailFuelPrices.svg
+      - video: /images/projects/Simulus.mp4
         sound: false
         alt: "Placeholder: research or workshop artifact"
         caption: Competitive analysis shown here.
