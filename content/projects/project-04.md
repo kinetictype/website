@@ -95,7 +95,7 @@ sections:
       - video: /images/projects/HybridCloud-small.mp4
         sound: false
         alt: Hybrid Cloud
-        size: text-half
+        size: full
         text: "Placeholder: describe the challenge this image shows and how you got
           through it."
   - heading: Approach
