@@ -58,19 +58,13 @@ sections:
         size: text-half
   - heading: Sketching first
     text: >+
-      Sketch, discuss, build in illustrator, work with the code in code editor.
-      Process...
-
-
-
-
-      I turned complex data into engaging, interactive stories on the Research
-      Portal.
-
-
-      I consulted with the firm's Managing Directors to design and develop
-      Scalable Vector Graphics. We transformed a series of SVGs into engaging,
-      interactive stories on the Research Portal.  
+      As I consulted with the firm's Managing Directors, I would sketch and
+      collaborate to learn more about the subject we were discussing. Michael
+      Hinds reported on a story about "Cloud" technology. We passed ideas about
+      the image while I sketched, and we came to a shared vision.   
+        
+      We transformed a series of SVGs into engaging, interactive stories on the
+      Research Portal.  
 
       I enjoyed the autonomy of designing and developing an independent
       interactive graphic.
@@ -84,15 +78,20 @@ sections:
       multi-stream events to interactive data, email alerts, and our GS Now app.
 
     images:
-      - sound: false
-        alt: "Placeholder: framework or design principles"
+      - image: /images/projects/hybrid_Sketch.png
+        sound: false
+        alt: Hybrid Cloud
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
-  - heading: Challenges
-    text: Challenges are worth highlighting (team or org, technical, design system,
-      capacity or scope), and how did you get through them?
+      - image: /images/projects/hybrid_Sketch02.png
+        sound: false
+        size: full
+  - heading: Opportunity to Clarify Complexity
+    text: One of my favorite parts of creating visualizations is the opportunity to
+      deeply learn about the subject while translating the concept in a clear
+      message.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - video: /images/projects/HybridCloud-small.mp4
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         size: text-half
@@ -117,20 +116,9 @@ sections:
       starting out in coding. -M. Hinds, Goldman Sachs Analyst*
 
     images:
-      - image: /images/projects/valuationsbyGrowth-1.svg
-        sound: false
+      - sound: false
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
-  - heading: Evergreen content creation
-    text: >+
-      I curated a body of icons that the Goldman Sachs Research department can
-      use to be consistent in their communication.
-
-    images:
-      - video: /images/projects/map.mov
-        sound: false
-        alt: "Placeholder: result or shipped product"
-        size: full
   - heading: Working at Goldman Sachs
     text: "I enjoyed being part of a group of thinkers that created and maintained
       Goldman Sachs proprietary indicators to help clients see around corners.
