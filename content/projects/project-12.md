@@ -11,8 +11,7 @@ timeline: 2018-2019
 goals: "Placeholder: the customer and business goal."
 outcome: Converted a product strategy into a visual framework for a shipped
   analytics platform.
-responsibilities: |
-  Turning a product strategy into a shipped analytics platform
+responsibilities: Product design and strategy management through shipped iterations.
 team: I worked with a business analyst, a product manager, and development teams.
 categories:
   - Product Owner
