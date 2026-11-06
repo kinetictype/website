@@ -12,8 +12,7 @@ outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
   testing, content design."
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+team: I worked with a business analyst, a product manager, and development teams.
 categories:
   - Product Owner
   - UX/UI Designer
@@ -121,18 +120,14 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-### Valuable Outcomes Emerged
 
-- Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows and a mental model
-- Screens and requirements
-- Framework selection via a proof of concept; "discovery boards" chosen
-- Competitive research (Power BI, Tableau)
-- New bi-directional drag-handle components for moving and expanding visualizations
-- A diagram documenting the Analytics team's process
 
-### Valuable Outcomes Emerged
+Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows, and a mental model  
+Screens and requirements  
+Framework selection via a proof of concept; "discovery boards" chosen  
+Competitive research (Power BI, Tableau)  
+New bi-directional drag-handle components for moving and expanding visualizations  
+A diagram documenting the Analytics team's process  
+Product shipped in 2019 on the framework; became a core offering and the foundation for new products and services  
+The process diagram "became a key artifact for our team"
 
-- Product shipped in 2019 on the framework; became a core offering and the foundation for new products and services
-- The process diagram "became a key artifact for our team"
-
-I worked with a business analyst, a product manager, research, and development teams.
