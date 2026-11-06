@@ -110,7 +110,7 @@ sections:
         sound: false
         alt: Service Design for Campaign Offers
         size: full
-  - heading: Learnings
+  - heading: Collaboration Led to Fruitful Outcomes
     text: JPMorgan Chase emphasized collaboration and efficient design practices. It
       was great to collaborate with the Marketing team on this project and
       reveal the opportunity in the Campaign Creation process. This led Chase to
