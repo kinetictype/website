@@ -64,16 +64,17 @@ sections:
         size: half-text
         text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+    text: While I fleshed out the product workflow, Workday acquired a Prague-based
+      startup with AI capabilities that we would incorporate into the product. I
+      began discussing capabilities with that team and sketching preliminary
+      wireframes to document how the application would work.
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: This is a prototype of some early blue/white user flows that I
+          discussed functionality with the team.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
