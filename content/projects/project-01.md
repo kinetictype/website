@@ -80,7 +80,8 @@ sections:
       - image: /images/projects/HowMightWe_CampaignFlow-2.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
-        caption: The challenge this image shows and how you got through it.
+        caption: Our teams collaboratively brainstormed opportunities after we
+          identified the holistic process.
         size: text-half
   - heading: Showing your designs
     text: >+
