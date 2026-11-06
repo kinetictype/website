@@ -7,11 +7,12 @@ summary: Define the page layout and framework for a new Analytic Application
   drivers of business performance.
 client: Workday Analytics
 role: Product designer, strategy through shipped iteration.
+timeline: 2018-2019
 goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
+outcome: Converted a product strategy into a visual framework for a shipped
+  analytics platform.
+responsibilities: |
+  Turning a product strategy into a shipped analytics platform
 team: I worked with a business analyst, a product manager, and development teams.
 categories:
   - Product Owner
@@ -120,7 +121,6 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-
 
 Personas (e.g., a CHRO who hears of a worrying trend), storyboard, user flows, and a mental model  
 Screens and requirements  
