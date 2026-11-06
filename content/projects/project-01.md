@@ -71,11 +71,11 @@ sections:
         alt: "Placeholder: framework or design principles"
         caption: The design of a new map helped us identify gaps in the process.
         size: half-text
-  - heading: Challenges
-    text: "This project caught senior leadership's attention once we identified the
-      main opportunity gap, and we reached out to customers throughout the
-      Campaign Creation. The content designer and I proposed a few ideas to move
-      forward. The management ultimately acquired a startup, goFigg. "
+  - heading: Solving for Opportunities
+    text: This project caught senior leadership's attention once we identified
+      opportunities in the Campaign Creation. The content designer and I
+      proposed a few ideas to move forward. As a short-term solution, we focused
+      on improving communication with customers.
     images:
       - image: /images/projects/HowMightWe_CampaignFlow-2.png
         sound: false
