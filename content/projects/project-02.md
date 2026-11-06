@@ -88,7 +88,8 @@ sections:
       - image: /images/projects/SystemDiscrepencies.png
         sound: false
         alt: "Placeholder: design iteration or alternative"
-        caption: design shown here and the decisions behind it.
+        caption: Documented discrepancies between the two libraries to help with
+          migration.
         size: half-text
   - heading: Outcomes
     text: Although the Developer Portal used a different tech stack, the Design
