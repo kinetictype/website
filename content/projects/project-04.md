@@ -95,9 +95,8 @@ sections:
       - video: /images/projects/HybridCloud-small.mp4
         sound: false
         alt: Hybrid Cloud
+        caption: Illustrating the effects of the hybrid cloud and their capabilities.
         size: full
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Approach
     text: >+
       I gathered content, designed, and developed interactive Scalable Vector
