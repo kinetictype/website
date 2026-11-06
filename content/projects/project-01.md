@@ -66,7 +66,7 @@ sections:
       Content Designer*
 
     images:
-      - image: /images/projects/CampaignProcessFlow.png
+      - image: /images/projects/Service_Poster-1.png
         sound: false
         alt: "Placeholder: framework or design principles"
         caption: The design of a new map helped us identify gaps in the process.
