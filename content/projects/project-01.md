@@ -14,7 +14,7 @@ outcome: A service design map that outlined opportunities for engagement in the
   Campaign Creation process.
 responsibilities: Facilitate service design within the Campaign Creation process
   and with the Marketing team to identify opportunities to increase customers.
-team: Content designer, Marketing team
+team: Content designer, Marketing
 categories:
   - Service Design
 years: 2021-2023
