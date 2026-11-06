@@ -83,7 +83,7 @@ sections:
     text: I worked with a codepen that the developer created to help me formulate
       the color patterns.
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/FP_Interpolation (1).png
         sound: false
         alt: "Placeholder: design iteration or alternative"
         size: half-text
@@ -93,8 +93,7 @@ sections:
       accessibility into Workday's charting library. It is the ethically right
       thing to do.
     images:
-      - image: /images/projects/FinalNormalMode_02-1.png
-        sound: false
+      - sound: false
         alt: "Placeholder: result or shipped product"
         caption: The shipped pattern library.
         size: full
