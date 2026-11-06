@@ -25,9 +25,9 @@ featured: false
 hidden: false
 description: Placeholder description of project 12 for search engines and link previews.
 cover: /images/logos/workdayColor.svg
-cover_alt: Placeholder cover image for project 12
+cover_alt: Workday
 drawer_image: /images/projects/WD_PA_MainImg.png
-drawer_image_alt: Placeholder image for project 12
+drawer_image_alt: Workday Analytics Platform
 prototype_size: half
 sections:
   - heading: Extracting the Mental Model of our Users
@@ -47,7 +47,7 @@ sections:
       personas we defined, I began building a broader workflow to design the
       platform.
     images:
-      - image: /images/projects/Quality-of-Hire-Storyboard.svg
+      - image: /images/projects/QualityHireStoryboard.svg
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
