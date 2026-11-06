@@ -30,10 +30,10 @@ cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Bringing Interactivity to Investment Research
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      What was the mission or goal of the project? Which customer or business
+      problems were you and your team solving?
 
 
       - Data or stats that set the context
@@ -43,8 +43,7 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/projects/streamingTVService.png
-        sound: false
+      - sound: false
         alt: Streaming Video Options Overwhelm Customers
         caption: describe what this image shows and why it matters to the problem.
         size: half-text
