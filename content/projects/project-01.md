@@ -77,7 +77,7 @@ sections:
       Campaign Creation. The content designer and I proposed a few ideas to move
       forward. The management ultimately acquired a startup, goFigg. "
     images:
-      - image: /images/projects/ServicePoster.png
+      - image: /images/projects/HowMightWe_CampaignFlow-2.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         caption: The challenge this image shows and how you got through it.
