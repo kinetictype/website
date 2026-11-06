@@ -77,9 +77,9 @@ sections:
       - image: /images/projects/FillPattern_logic.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: To sort out the contrast levels, I looked at normal and reverse pattern
+          structure.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: I worked with a codepen that the developer created to help me formulate
       the color patterns.
