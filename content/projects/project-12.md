@@ -31,45 +31,10 @@ drawer_image_alt: Placeholder image for project 12
 prototype_size: half
 sections:
   - heading: Context
-    text: >-
-      This was the first time I worked directly with a product strategist to
-      decipher his vision. As we talked, I extracted personas and their mental
-      model from the story and defined them to understand who we were building
-      this platform for.
-
-
-
-        
-
-
-      What was the mission or goal of the project? Which customer or business
-      problems were you and your team solving?
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
-      - ), storyboard, user flows, and a mental model  
-
-      Screens and requirements
-
-
-      Framework selection via a proof of concept; "discovery boards" chosen  
-
-      Competitive research (Power BI, Tableau)  
-
-      New bi-directional drag-handle components for moving and expanding
-      visualizations  
-
-      A diagram documenting the Analytics team's process  
-
-      Product shipped in 2019 on the framework; became a core offering and the
-      foundation for new products and services  
-
-      The process diagram "became a key artifact for our team"
+    text: I wore both product manager and designer hats and worked directly with a
+      product strategist to decipher his vision. As we talked, I extracted
+      personas and their mental model from the story and defined them to
+      understand who we were building this platform for.
     images:
       - image: /images/projects/Persona_PA_WD.webp
         sound: false
