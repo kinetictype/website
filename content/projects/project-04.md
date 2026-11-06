@@ -39,9 +39,11 @@ sections:
       forecasts and models for the firm during a global pandemic. 
 
 
+      Interactive storytelling with custom-made SVG graphics surfaced an
+      underdeveloped craft. I enjoyed the autonomy of designing and developing
+      an independent interactive graphic.
 
 
-      &nbsp;
 
 
       - Goldman Sachs Research provides cutting-edge thought leadership across
