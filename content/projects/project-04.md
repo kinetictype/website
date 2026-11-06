@@ -48,7 +48,7 @@ sections:
         alt: "Placeholder: image that sets the context"
         caption: describe what this image shows and why it matters to the problem.
         size: half-text
-  - heading: Goal
+  - heading: Interactive Data to Enhance Understanding
     text: >-
       I turned complex data into engaging, interactive stories on the Research
       Portal.
