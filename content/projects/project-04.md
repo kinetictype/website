@@ -62,7 +62,8 @@ sections:
       collaborate to learn more about the subject we were discussing. Michael
       Hinds reported on a story about "Cloud" technology. We passed ideas about
       the image while I sketched, and we came to a shared vision.   
-        
+
+
       We transformed a series of SVGs into engaging, interactive stories on the
       Research Portal.  
 
@@ -93,7 +94,7 @@ sections:
     images:
       - video: /images/projects/HybridCloud-small.mp4
         sound: false
-        alt: "Placeholder: a challenge and how you solved it"
+        alt: Hybrid Cloud
         size: text-half
         text: "Placeholder: describe the challenge this image shows and how you got
           through it."
