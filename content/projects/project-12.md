@@ -74,7 +74,7 @@ sections:
         alt: "Placeholder: a challenge and how you solved it"
         caption: "Prototype the early wireframes on the Workday blue... "
         size: text-half
-  - heading: Showing your designs
+  - heading: Refined Wireframes Imagining the Product
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
       decisions. Mention any AI tools you used, such as Figma Make, Lovable,
@@ -82,9 +82,9 @@ sections:
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
-        alt: "Placeholder: design iteration or alternative"
+        alt: Prototype of Refined Wireframes
+        caption: Imagining the product capabilities and visual style.
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Results & outcomes
     text: >+
       Placeholder: What data or metrics resulted from the design? If none, what
