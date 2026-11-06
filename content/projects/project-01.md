@@ -51,11 +51,10 @@ sections:
         alt: "Placeholder: research or workshop artifact"
         caption: the research, workshop or competitive analysis shown here.
         size: text-half
-  - heading: Design principles & frameworks
+  - heading: Design a New Process Map
     text: >+
-      Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?
+      To facilitate the discussion, I designed a new map with swimlanes for each
+      team involved in creating a campaign. 
 
 
       > *Kiera is a great design partner. She created a framework to help us map
