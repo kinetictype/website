@@ -28,7 +28,7 @@ cover: /images/logos/ServicePoster.png
 cover_alt: Service Design JPMC
 prototype_size: half
 sections:
-  - heading: Learning and Documenting a Process
+  - heading: Learning About Campaign Creation
     text: The design team stepped in to collaborate with Marketing to understand the
       Campaign Creation Process. We were a new team, and we approached the
       project as a learning opportunity. As the team described the process, we
