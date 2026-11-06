@@ -30,7 +30,7 @@ drawer_image: /images/projects/WD_PA_MainImg.png
 drawer_image_alt: Placeholder image for project 12
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Extracting the Mental Model of our Users
     text: I wore both product manager and designer hats and worked directly with a
       product strategist to decipher his vision. As we talked, I extracted
       personas and their mental model from the story and defined them to
