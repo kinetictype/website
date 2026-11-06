@@ -118,8 +118,10 @@ sections:
         size: full
   - heading: Working at Goldman Sachs
     text: "It was an honor to contribute to a large financial institution like
-      Goldman Sachs. I dove deep into programming and collaborated with many
-      Managing Directors in Research on stories for the Research Portal. I also
-      enjoyed leading the way towards more interactive storytelling with
-      custom-made SVG graphics. "
+      Goldman Sachs. I dove deep into programming and collaborated with Managing
+      Directors in the bank's Research arm. Four months into my time at the
+      Firm, all employees were asked to work from home due to the Global
+      Pandemic. Interactive storytelling with custom-made SVG graphics surfaced
+      an underdeveloped craft. I enjoyed the autonomy of designing and
+      developing an independent interactive graphic. "
 ---
