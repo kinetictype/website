@@ -66,10 +66,10 @@ sections:
       Content Designer*
 
     images:
-      - image: /images/projects/image-asset_2.png
+      - image: /images/projects/CampaignProcessFlow.png
         sound: false
         alt: "Placeholder: framework or design principles"
-        caption: Themes for opportunities showed that engagement was a priority.
+        caption: The design of a new map helped us identify gaps in the process.
         size: half-text
   - heading: Challenges
     text: "This project caught senior leadership's attention once we identified the
