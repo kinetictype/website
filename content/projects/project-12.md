@@ -63,7 +63,7 @@ sections:
         alt: "Placeholder: framework or design principles"
         size: full
         text: "Placeholder: describe the framework, principle or diagram shown here."
-  - heading: Challenges
+  - heading: Merging with an Acquired Startup
     text: While I fleshed out the product workflow, Workday acquired a Prague-based
       startup with AI capabilities that we would incorporate into the product. I
       began discussing capabilities with that team and sketching preliminary
@@ -72,8 +72,7 @@ sections:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
-        caption: This is a prototype of some early blue/white user flows that I
-          discussed functionality with the team.
+        caption: "Prototype the early wireframes on the Workday blue... "
         size: text-half
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
