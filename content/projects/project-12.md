@@ -51,14 +51,14 @@ sections:
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
-  - heading: Framework selectionn
-    text: >2-
-       via a proof of concept; "discovery boards" chose  
-      Which frameworks helped you and your team think through the customer
-      problems? Which design principles did you follow, or create, to guide the
-      design?
+  - heading: Delineating the Flow
+    text: "Through multiple discussions and iterations, I mapped out how the
+      application would work. The development team needed to build a new
+      platform for the product. Although the Discovery Boards platform was a
+      static tool used for visualizing data, it had the most promise for
+      building out the Analytic Application dashboard. "
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/WorkflowSketch.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
