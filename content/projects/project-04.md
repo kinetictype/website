@@ -70,6 +70,14 @@ sections:
       - image: /images/projects/hybrid_Sketch02.png
         sound: false
         size: half-text
+        text: >+
+          I enjoyed the autonomy to design and develop an independent
+          interactive graphic. Goldman Sachs Research provides cutting-edge
+          thought leadership across over 3,000 securities, over 45 economies,
+          and every major market under coverage, and I helped communicate it. I
+          enjoyed contributing to efforts to reach clients with interactive data
+          and comprehensive reports.
+
   - heading: Opportunity to Clarify Complexity
     text: One of my favorite parts of creating visualizations is the opportunity to
       deeply learn about the subject while translating the concept in a clear
