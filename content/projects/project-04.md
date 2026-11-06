@@ -31,19 +31,18 @@ drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
-    text: >+
-      Goldman Sachs had a highly suData or stats that set the context
+    text: >-
+      Goldman Sachs was committed to providing interactive graphics to
+      Investment Research stories to add value to insights and analysis in the
+      equity, fixed income, currency, and commodities markets. I joined to team
+      to build towards generating several economic, market, and company
+      forecasts and models for the firm during a global pandemic. 
 
 
-      - Assumptions that interactivity would add value to the Investmen Research
-      Platform  
-        
-      Providing original, fundamental insights and analysis for clients in the
-      equity, fixed income, currency, and commodities markets.  
 
-      We generate thousands of economic, market, and company forecasts and
-      models. Plus we create and maintain Goldman Sachs proprietary indicators
-      to help our clients see around corners.
+
+      &nbsp;
+
 
       - Goldman Sachs Research provides cutting-edge thought leadership across
       over 3,000 securities, over 45 economies, and every major market under
@@ -52,6 +51,10 @@ sections:
       We reach clients in formats that suit them, from webcasts and large
       multi-stream events to interactive data, email alerts, and our GS Now app.
 
+
+
+
+      &nbsp;
     images:
       - sound: false
         alt: Streaming Video Options Overwhelm Customers
@@ -127,11 +130,8 @@ sections:
         alt: "Placeholder: result or shipped product"
         size: full
   - heading: Working at Goldman Sachs
-    text: "It was an honor to contribute to a large financial institution like
-      Goldman Sachs. I dove deep into programming and collaborated with Managing
-      Directors in the bank's Research arm. Four months into my time at the
-      Firm, all employees were asked to work from home due to the Global
-      Pandemic. Interactive storytelling with custom-made SVG graphics surfaced
-      an underdeveloped craft. I enjoyed the autonomy of designing and
-      developing an independent interactive graphic. "
+    text: "I enjoyed being part of a group of thinkers that created and maintained
+      Goldman Sachs proprietary indicators to help clients see around corners.
+      At the same time, I dove deep into programming while collaborating with
+      Managing Directors in the bank's Research arm. "
 ---
