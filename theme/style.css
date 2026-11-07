@@ -452,10 +452,9 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .about .page-head, .contact .page-head { padding-bottom: 0; }
 .about .page-head h1, .contact .page-head h1 { margin-bottom: 16px; }
 
-/* ---------- splash cursor: ink follows the pointer and splashes on click (theme/splash-cursor.js) ---------- */
-.splash-cursor { position: fixed; inset: 0; pointer-events: none; }
-.splash-cursor[data-contained] { position: absolute; }
-.splash-cursor__canvas { display: block; width: 100%; height: 100%; }
+/* ---------- variable proximity: homepage headline letters grow bolder near the pointer (theme/variable-proximity.js) ---------- */
+@font-face { font-family: "Roboto Flex"; src: url("/fonts/roboto-flex-latin-opsz-wght.woff2") format("woff2-variations"), url("/fonts/roboto-flex-latin-opsz-wght.woff2") format("woff2"); font-weight: 100 1000; font-display: swap; }
+.variable-proximity { font-family: "Roboto Flex", sans-serif; }
 
 /* ---------- logo covers (an SVG marked data-fit="contain"): just the logo, no image box ---------- */
 svg[data-fit="contain"] { background: none !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
