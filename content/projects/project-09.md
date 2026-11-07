@@ -93,9 +93,13 @@ sections:
           patterns.
         size: half-text
   - heading: Outcome
-    text: This project created positive business value by incorporating
-      accessibility and consistency into Workday's charting library. It is the
-      ethically right thing to do.
+    text: >+
+      ##### Based on legibility standards, I used color interpolation to blend
+      between the two values. This produced a set of high-contrast color and
+      fill pattern pairs. This project created positive business value by
+      incorporating accessibility and consistency into Workday's charting
+      library. It is the ethically right thing to do.
+
     images:
       - image: /images/projects/ShippedPattern-1.png
         sound: false
