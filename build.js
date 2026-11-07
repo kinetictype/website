@@ -89,10 +89,13 @@ function liveSvg(html) {
     if (!isInteractiveSvg(src)) return tag;
     const attrs = before + " " + after;
     const alt = (attrs.match(/\balt="([^"]*)"/) || [])[1] || "";
-    const vb = (read(path.join(CONTENT, src)).match(/viewBox="([^"]+)"/) || [])[1];
+    const svgText = read(path.join(CONTENT, src));
+    const vb = (svgText.match(/viewBox="([^"]+)"/) || [])[1];
+    // a browser-window prototype brings its own frame: no card background or border around it
+    const bare = /<svg[^>]*\bdata-bare="true"/.test(svgText) ? " svg-bare" : "";
     const [, , w, h] = vb ? vb.trim().split(/[\s,]+/).map(Number) : [];
     const ar = w && h ? ` style="aspect-ratio:${(w / h).toFixed(4)}"` : "";
-    return `<object class="svg-live" type="image/svg+xml" data="${src}"${ar} aria-label="${alt}"><img src="${src}" alt="${alt}"></object>`;
+    return `<object class="svg-live${bare}" type="image/svg+xml" data="${src}"${ar} aria-label="${alt}"><img src="${src}" alt="${alt}"></object>`;
   });
 }
 

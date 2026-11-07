@@ -596,6 +596,7 @@ a:hover .icon-arrow.down { transform: rotate(90deg) translateX(3px); }
 /* Interactive SVG graphics run in place (replay buttons, hovers, animations) */
 object.svg-live { display: block; width: 100%; height: auto; border: 0; background: var(--card); border-radius: 6px; }
 .media figure > object.svg-live, .media-split figure > object.svg-live { border: 1px solid var(--rule); }
+.media figure > object.svg-bare, .media-split figure > object.svg-bare, object.svg-bare { border: 0; background: transparent; border-radius: 0; }
 .row-thumb > object.svg-live, .drawer-media > object.svg-live, .card-media > object.svg-live { position: absolute; inset: 0; height: 100%; pointer-events: none; }
 
 /* Small headings (####, #####, ######) pasted into case-study text read as normal body text, so every page looks the same */
