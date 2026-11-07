@@ -6,12 +6,11 @@ summary: Develop a logo concept in which blocks represent the letters of the
 client: 3st, for Merchandise Mart Properties
 role: Logo Mark Design
 timeline: "2007"
-goals: I designed the logo concept, color palette, block-theme variations, and
-  an animated version of the mark for Merchandise Mart Properties
+goals: Design the logo concept, color palette, block-theme variations, and an
+  animated version of the mark for Merchandise Mart Properties
 outcome: Logo concept, color palette, and an animated version of the mark
 responsibilities: Visual design, interaction design, concept design.
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+team: Design Lead
 categories:
   - Brand Design
 years: "2008"
