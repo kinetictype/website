@@ -341,7 +341,7 @@ ${body}
     if (still) box.classList.add("still");
   })();
 </script>
-<script src="/glow-cursor.js?v=${JS_VERSION}" defer></script>
+<script src="/ghost-cursor.js?v=${JS_VERSION}" defer></script>
 </body>
 </html>
 `;
@@ -446,10 +446,10 @@ fs.copyFileSync(path.join(THEME, "style.css"), path.join(OUT, "style.css"));
 copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
 copyDir(path.join(CONTENT, "files"), path.join(OUT, "files")); // downloads such as the CV
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
-// glow cursor (a glowing ink trail follows the pointer on every page); the fingerprint makes browsers load a changed file right away
-const glowJs = read(path.join(THEME, "glow-cursor.js"));
-writeFile("glow-cursor.js", glowJs);
-JS_VERSION = require("crypto").createHash("md5").update(glowJs).digest("hex").slice(0, 10);
+// ghost cursor (a smoky ghost trail follows the pointer on every page); the fingerprint makes browsers load a changed file right away
+const ghostJs = read(path.join(THEME, "ghost-cursor.js"));
+writeFile("ghost-cursor.js", ghostJs);
+JS_VERSION = require("crypto").createHash("md5").update(ghostJs).digest("hex").slice(0, 10);
 
 // Background color from site.md is injected into the stylesheet
 {
