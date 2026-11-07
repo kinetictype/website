@@ -54,7 +54,7 @@ sections:
       vs. a parallel coordinates diagram
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/HappyPath.webp
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
