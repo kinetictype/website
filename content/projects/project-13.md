@@ -59,7 +59,7 @@ sections:
       diagram
 
     images:
-      - image: /images/projects/01_analysis-of-current-report-3.png
+      - image: /images/projects/UQ_Analysis.webp
         sound: false
         alt: Analysis of Report
         caption: To get a sense of the material I was working with, I mapped out the
