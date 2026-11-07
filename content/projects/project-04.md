@@ -39,7 +39,7 @@ sections:
       forecasts and models for the firm during a global pandemic.
 
     images:
-      - video: /images/projects/StreamingVideo-small.mp4
+      - video: /images/projects/StreamingVideo-from-svg-1.mp4
         sound: false
         alt: Streaming Video Options Overwhelm Customers
         caption: describe what this image shows and why it matters to the problem.
