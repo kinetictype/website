@@ -113,6 +113,7 @@ sections:
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Working at Goldman Sachs
     text: "I enjoyed being part of a group of thinkers that helped clients read the
-      road ahead. Programming while collaborating with Managing Directors in the
-      bank's Research arm was highly rewarding. "
+      road ahead. Designing and developing SVG graphics while collaborating with
+      Managing Directors in the bank's Research arm was a highly rewarding
+      experience. "
 ---
