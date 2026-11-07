@@ -5,9 +5,10 @@ summary: Discover how Girl Effect could develop a digital currency to fund NGOs
   supporting girls in developing countries.
 client: "Nike: Girl Effect"
 role: Your Role
-goals: "Placeholder: the customer and business goal."
-outcome: Discover how Girl Effect could develop a digital currency to fundraise
+goals: Discover how Girl Effect could develop a digital currency to fundraise
   for girls in developing countries.
+outcome: Led discovery, a service design narrative, concept diagrams, and
+  sketches for an iPhone app concept.
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
   interaction design, design system, user research, concept design, usability
   testing, content design."
@@ -126,4 +127,3 @@ What I designed
 - Whiteboard discovery, service design narrative, concept diagrams and sketches
 - iPhone app concept: build a profile, select actions, sign up/add to calendar, track progress and currency (earned/spent/pending), find nearby activities, rate actions
 
-Positive Outcome Emerged  
