@@ -250,6 +250,7 @@ content:
         type: file
         options: { media: files, extensions: [pdf] }
       - { name: cv_label, label: "Link text (default: Download CV)", type: string }
+      - { name: email_label, label: "Email link text (default: Email me)", type: string }
 
   - name: imprint
     label: Imprint (Impressum)

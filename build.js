@@ -1001,7 +1001,7 @@ function columns(md, name, data = {}) {
   const cols = parts.map((part) => `<div class="col">${markdown(part)}</div>`);
   // Contact: email, then a "Download CV" link once a CV file is uploaded (Pages CMS: Contact page → CV file)
   const cv = data.cv ? `<p class="cv-link"><a href="${escapeHtml(String(data.cv))}" download>${escapeHtml(String(data.cv_label || "Download CV"))} ${ARROW_DOWN}</a></p>` : "";
-  if (name === "contact") cols.push(`<div class="col"><p class="big-mail"><a href="mailto:${SITE.email}">${SITE.email}</a></p>${cv}</div>`);
+  if (name === "contact") cols.push(`<div class="col"><p class="big-mail"><a href="mailto:${SITE.email}" aria-label="Email me at ${SITE.email}">${escapeHtml(String(data.email_label || "Email me"))} ${ARROW}</a></p>${cv}</div>`);
   return `<div class="cols3">${cols.join("\n")}</div>`;
 }
 
