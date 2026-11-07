@@ -59,7 +59,7 @@ sections:
       diagram
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/01_analysis-of-current-report-3.png
         sound: false
         alt: Analysis of Report
         caption: what this image shows and why it matters to the problem.
