@@ -281,7 +281,6 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <meta name="twitter:image" content="${ogImage}">
 <link rel="icon" href="${imageUrl(SITE.favicon || "favicon.png")}"${/\.svg$/i.test(SITE.favicon || "") ? ' type="image/svg+xml"' : /\.png$/i.test(SITE.favicon || "favicon.png") ? ' type="image/png"' : ""}>
 <link rel="stylesheet" href="/style.css?v=${CSS_VERSION}">
-<style>:root{--wand:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M10%2010%20L29%2029%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%220%2022%206%2099%22/%3E%3Cpath%20d%3D%22M7%201.5%20L8.6%205.4%20L12.8%205.6%20L9.6%208.2%20L10.7%2012.3%20L7%2010%20L3.3%2012.3%20L4.4%208.2%20L1.2%205.6%20L5.4%205.4%20Z%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%230F181A%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E") 7 6}</style>
 ${EDIT ? `<style>/* editor preview only: SVG logos are not inlined here, so keep them uncropped */img[src$=".svg"]{object-fit:contain}</style>\n` : ""}${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
 </head>
 <body class="${bodyClass}">
@@ -342,30 +341,7 @@ ${body}
     if (still) box.classList.add("still");
   })();
 </script>
-<div class="sparkles" aria-hidden="true"></div>
-<script>
-  // magic wand: little stars drift off the pointer as it moves (mouse/trackpad only; off for reduced motion)
-  (() => {
-    if (!matchMedia("(pointer: fine)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const layer = document.querySelector(".sparkles");
-    const colors = ["#45BCD1", "#09596B", "#961574", "#F2C14E"];
-    let last = 0, lx = 0, ly = 0;
-    addEventListener("pointermove", (e) => {
-      const now = performance.now();
-      const dist = Math.hypot(e.clientX - lx, e.clientY - ly);
-      if (now - last < 28 || dist < 6) return;          // a few stars per movement, not a flood
-      last = now; lx = e.clientX; ly = e.clientY;
-      const star = document.createElement("span");
-      star.className = "sparkle";
-      const size = 6 + Math.random() * 9;
-      star.style.cssText = "left:" + (e.clientX - 1) + "px;top:" + e.clientY + "px;width:" + size + "px;height:" + size + "px;" +
-        "color:" + colors[(Math.random() * colors.length) | 0] + ";" +
-        "--dx:" + ((Math.random() - .5) * 60) + "px;--dy:" + (18 + Math.random() * 40) + "px;--r:" + ((Math.random() - .5) * 220) + "deg";
-      layer.appendChild(star);
-      star.addEventListener("animationend", () => star.remove());
-    }, { passive: true });
-  })();
-</script>
+<script src="/splash-cursor.js?v=${JS_VERSION}" defer></script>
 </body>
 </html>
 `;
@@ -462,6 +438,7 @@ function portraitMarkup() {
 /* ---------- build ---------- */
 
 let CSS_VERSION = "";
+let JS_VERSION = "";
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
@@ -469,6 +446,10 @@ fs.copyFileSync(path.join(THEME, "style.css"), path.join(OUT, "style.css"));
 copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
 copyDir(path.join(CONTENT, "files"), path.join(OUT, "files")); // downloads such as the CV
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
+// splash cursor (ink that follows the pointer); the fingerprint makes browsers load a changed file right away
+const splashJs = read(path.join(THEME, "splash-cursor.js"));
+writeFile("splash-cursor.js", splashJs);
+JS_VERSION = require("crypto").createHash("md5").update(splashJs).digest("hex").slice(0, 10);
 
 // Background color from site.md is injected into the stylesheet
 {
