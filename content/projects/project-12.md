@@ -103,12 +103,8 @@ sections:
         alt: Shipped product
         size: full
   - heading: Working with an AI Platform
-    text: This was a complex project with many moving parts. Workday acquired a
-      Prague-based company for its innovative AI technology to surface data.
-      While the company was integrating, I designed a platform and features as
-      we built a new product framework on top of the existing Workday Discovery
-      Boards Platform. The product shipped in 2019 based on this framework, and
-      it became a core offering and the foundation for new products and services
-      for Workday Analytics.
+    text: This was a complex project with many moving parts. The product shipped in
+      2019 based on this framework, and it became a core offering and the
+      foundation for new products and services for Workday Analytics.
 ---
 This ambitious project began by translating a business analyst's vision into personas, a storyboard, and ultimately an interactive dashboard platform using AI to surface people analytics from Workday data and non-Workday data. 
