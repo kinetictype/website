@@ -42,7 +42,7 @@ sections:
         caption: To get a sense of the material I was working with, I mapped out the
           categorical data from an overview to specific data.
         size: half-text
-  - heading: Goal
+  - heading: How might we translate a printed document to an interactive experience?
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
       design to achieve?
