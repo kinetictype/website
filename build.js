@@ -399,7 +399,7 @@ function row(p) {
       <span class="row-toggle" aria-hidden="true"></span>
     </summary>
     <div class="drawer">
-      ${drawerImg ? `<a class="drawer-media" href="${projectUrl(p)}" tabindex="-1"><img${edImage(p, "drawer_image", "drawer_image_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
+      ${drawerImg ? `<a class="drawer-media${p.drawer_whole ? " whole" : ""}" href="${projectUrl(p)}" tabindex="-1"><img${edImage(p, "drawer_image", "drawer_image_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, drawerImg)}" alt="${escapeHtml(drawerAlt)}" loading="lazy"></a>` : ""}
       <div class="drawer-text">
         ${p.tagline ? `<p class="drawer-tagline"${edText(f("tagline"))}>${escapeHtml(p.tagline)}</p>` : ""}
         ${p.summary ? `<p class="drawer-summary"${edText(f("summary"))}>${escapeHtml(String(p.summary).trim())}</p>` : ""}

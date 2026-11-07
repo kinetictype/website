@@ -67,6 +67,7 @@ content:
         type: image
         options: { media: images, path: content/images/projects }
       - { name: drawer_image_alt, label: Drop-down image description (alt text), type: string }
+      - { name: drawer_whole, label: "Show the whole drop-down image (scaled to fit the box, not cropped)", type: boolean }
       - name: logo
         label: Client logo on the project page (optional)
         type: image

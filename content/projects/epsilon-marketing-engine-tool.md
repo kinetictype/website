@@ -23,6 +23,7 @@ hidden: false
 cover: /images/logos/epsilon-seeklogo.svg
 drawer_image: /images/projects/epsilon/moment-engine-dashboard.png
 drawer_image_alt: The Moment Engine dashboard in a browser window
+drawer_whole: true
 prototype_size: half
 sections:
   - heading: Developing a Mental Model
