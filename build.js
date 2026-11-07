@@ -244,7 +244,6 @@ const assetUrl = (p, file) => imageUrl(file);
 // Arrow icon used in links (aria-hidden: the link text already says where it goes)
 const ARROW = `<svg class="icon-arrow" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const ARROW_BACK = ARROW.replace('class="icon-arrow"', 'class="icon-arrow flip"');
-const ARROW_DOWN = ARROW.replace('class="icon-arrow"', 'class="icon-arrow down"');
 
 /* ---------- shared layout ---------- */
 
@@ -984,7 +983,7 @@ function columns(md, name, data = {}) {
   const parts = md.split(/\n(?=##\s)/).map((x) => x.trim()).filter(Boolean);
   const cols = parts.map((part) => `<div class="col">${markdown(part)}</div>`);
   // Contact: email, then a "Download CV" link once a CV file is uploaded (Pages CMS: Contact page → CV file)
-  const cv = data.cv ? `<p class="cv-link"><a href="${escapeHtml(String(data.cv))}" download>${escapeHtml(String(data.cv_label || "Download CV"))} ${ARROW_DOWN}</a></p>` : "";
+  const cv = data.cv ? `<p class="cv-link"><a href="${escapeHtml(String(data.cv))}" download>${escapeHtml(String(data.cv_label || "Download CV"))} ${ARROW}</a></p>` : "";
   if (name === "contact") cols.push(`<div class="col"><p class="big-mail"><a href="mailto:${SITE.email}" aria-label="Email me at ${SITE.email}">${escapeHtml(String(data.email_label || "Email me"))} ${ARROW}</a></p>${cv}</div>`);
   return `<div class="cols3">${cols.join("\n")}</div>`;
 }
