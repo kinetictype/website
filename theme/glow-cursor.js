@@ -297,18 +297,18 @@ const fromHsv = (hue, saturation, value) => {
 
 
   const settings = {
-    color: "#3E5463",
+    color: "#06b6d4",
     secondaryColor: "",
-    intensity: 1.25,
-    trailWidth: 2,
-    linger: 1.1,
-    glow: 1.2,
+    intensity: 0.8,
+    trailWidth: 20,
+    linger: 3.1,
+    glow: 0.6,
     hotspot: 0.8,
     followSpeed: 0.6,
     grain: 0,
     clickBurst: true,
     quality: "high",
-    theme: "light",
+    theme: "dark",
     maxDevicePixelRatio: 2,
     enabled: true
   };
