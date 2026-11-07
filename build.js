@@ -341,7 +341,7 @@ ${body}
     if (still) box.classList.add("still");
   })();
 </script>
-<script src="/metaballs.js?v=${JS_VERSION}" defer></script>
+<script src="/cubes.js?v=${JS_VERSION}" defer></script>
 </body>
 </html>
 `;
@@ -446,10 +446,10 @@ fs.copyFileSync(path.join(THEME, "style.css"), path.join(OUT, "style.css"));
 copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
 copyDir(path.join(CONTENT, "files"), path.join(OUT, "files")); // downloads such as the CV
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
-// metaballs (outlined blobs drift across every page; one follows the pointer); the fingerprint makes browsers load a changed file right away
-const blobJs = read(path.join(THEME, "metaballs.js"));
-writeFile("metaballs.js", blobJs);
-JS_VERSION = require("crypto").createHash("md5").update(blobJs).digest("hex").slice(0, 10);
+// cubes (a grid of cubes behind every page turns toward the pointer); the fingerprint makes browsers load a changed file right away
+const cubesJs = read(path.join(THEME, "cubes.js"));
+writeFile("cubes.js", cubesJs);
+JS_VERSION = require("crypto").createHash("md5").update(cubesJs).digest("hex").slice(0, 10);
 
 // Background color from site.md is injected into the stylesheet
 {
