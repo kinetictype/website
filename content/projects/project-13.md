@@ -31,8 +31,8 @@ gallery:
 prototype_size: half
 sections:
   - heading: Analysis of the Existing Content
-    text: This project was based on print. Data scientists gathered data and
-      presented it to clients in a PDF file. I analyzed the data and built a
+    text: Previously, this project was print-based. Data scientists gathered data
+      and presented it to clients as a PDF. I analyzed the data and built a
       diagram of research areas we could start with. I began with a happy path
       built with sample data.
     images:
