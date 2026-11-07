@@ -25,7 +25,7 @@ drawer_image: /images/projects/04_search-moments.png
 prototype_size: half
 sections:
   - heading: Developing a Mental Model
-    text: >-
+    text: >+
       Consulting with the lead engineer, I developed a system diagram that
       isolated the components of the interface. We used this diagram to document
       the product requirements. 
@@ -35,26 +35,6 @@ sections:
 
       - The hypothesis that guided your design
 
-
-
-
-      KEY LEARNINGS
-
-
-      The design of a product without the resource of a product manager is a
-      challenge. Most of my time focused on what problem we were trying to
-      solve.
-
-
-      Once we wrote requirements, I craved user feedback to learn what the
-      Marketers and Administrators needed from this tool. Although advocating
-      for research, the product owner wanted to develop the first version of the
-      product before gathering this data.
-
-
-
-
-      &nbsp;
     images:
       - image: /images/projects/SystemDiagram.png
         sound: false
@@ -127,7 +107,6 @@ sections:
     text: My effort in this project focused on gathering the requirements to bring
       this product to life. I was eager to learn what the Marketers and
       Administrators needed from this tool. Although I advocated for research,
-      the product owner wanted to develop the first version before gathering
-      this data.
+      the product team was bullish on developing the tool for the first release.
 ---
 Alliance Data wanted to redesign The Moment Engine product. Previously known as The Bonus Engine, it was an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
