@@ -98,7 +98,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/projects/06_shipped-product.png
+      - image: /images/projects/07_shipped-product.png
         sound: false
         alt: Shipped product
         size: full
