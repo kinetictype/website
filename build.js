@@ -341,7 +341,7 @@ ${body}
     if (still) box.classList.add("still");
   })();
 </script>
-<script src="/variable-proximity.js?v=${JS_VERSION}" defer></script>
+<script src="/glow-cursor.js?v=${JS_VERSION}" defer></script>
 </body>
 </html>
 `;
@@ -446,10 +446,10 @@ fs.copyFileSync(path.join(THEME, "style.css"), path.join(OUT, "style.css"));
 copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
 copyDir(path.join(CONTENT, "files"), path.join(OUT, "files")); // downloads such as the CV
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
-// variable proximity (headline letters grow bolder near the pointer); the fingerprint makes browsers load a changed file right away
-const proximityJs = read(path.join(THEME, "variable-proximity.js"));
-writeFile("variable-proximity.js", proximityJs);
-JS_VERSION = require("crypto").createHash("md5").update(proximityJs).digest("hex").slice(0, 10);
+// glow cursor (a glowing ink trail follows the pointer on every page); the fingerprint makes browsers load a changed file right away
+const glowJs = read(path.join(THEME, "glow-cursor.js"));
+writeFile("glow-cursor.js", glowJs);
+JS_VERSION = require("crypto").createHash("md5").update(glowJs).digest("hex").slice(0, 10);
 
 // Background color from site.md is injected into the stylesheet
 {
@@ -490,7 +490,7 @@ writeFile(
   })();
   </script>
   ${home.data.greeting ? `<p class="greeting"${edText("greeting")}>${inline(home.data.greeting)}</p>` : ""}
-  <h1 data-variable-proximity>${inline(home.data.headline || "").replace(/\s*\|\s*/g, '<br class="desktop-break"> ')}</h1>
+  <h1>${inline(home.data.headline || "").replace(/\s*\|\s*/g, '<br class="desktop-break"> ')}</h1>
   ${home.data.subhead ? `<p class="subhead"${edText("subhead")}>${inline(home.data.subhead)}</p>` : ""}
   <div class="lede"${edText("@content", "block")}>${markdown(home.body)}</div>
 </section>
