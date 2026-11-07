@@ -117,7 +117,7 @@ sections:
         alt: Scrollable prototype of the full report, from the overall score to common
           product descriptors and path directness, in a browser window
         size: full
-  - heading: Learnings
+  - heading: Scoping the Vision from the Beginning
     text: When I joined the team at User Testing, the project had been in discovery
       for nine months prior. I realized the vision, but by the time I joined,
       management had started looking in a different direction. They ultimately
