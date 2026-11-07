@@ -122,8 +122,9 @@ sections:
       describe the touchpoints a girl would encounter. Inspired future work with
       Weight Watchers.
 ---
-Leading the team at Wieden + Kennedy to use Service Design that would integrate...
+Led the team at Wieden + Kennedy in using Service Design to identify the touchpoints a girl would encounter to benefit NGOs in developing countries. The project involved discovery to learn how the concept would work. Then explore a touchpoint, an iPhone app, that would help track actions a girl would take that would help them earn "Girl Coin", a digital currency focused around helping NGOs for this non-profit foundation.  
+  
+ service design narrative, concept diagrams and sketches
 
-- Whiteboard discovery, service design narrative, concept diagrams and sketches
 - iPhone app concept: build a profile, select actions, sign up/add to calendar, track progress and currency (earned/spent/pending), find nearby activities, rate actions
 
