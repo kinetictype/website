@@ -12,7 +12,7 @@ goals: Let customers compare their services with others.
 outcome: "Displayed research data as an interactive experience. Previously based
   in print, as a storytelling visual description of different business areas. "
 responsibilities: Data analysis, led critique sessions, and delivered mockups.
-team: Product manager, researcher.
+team: A data scientist, a researcher, and a product manager.
 categories:
   - Data Visualization
   - UX Design
@@ -25,7 +25,7 @@ description: Data Visualization for competitive Benchmarking
 cover: /images/logos/user-testing-icon-svgrepo-com.svg
 cover_alt: User Testing Logo
 drawer_image: /images/projects/TeaserImage-1.png
-drawer_image_alt: Placeholder image for project 13
+drawer_image_alt: Data Visualization UX Designer
 gallery:
   - size: full
 prototype_size: half
@@ -133,18 +133,4 @@ sections:
       design system. It taught me how crucial it is to have a design lead
       involved from the start to scope the vision.
 ---
-
-Interaction Done Wrong users stalled on the unfamiliar parallel coordinates chart. The stakeholder critique you gathered shaped the next iterations.
-
-
-
-A happy path built with sample data
-
-- Wireframes: overview, top insights, UX factors, tasks vs. competition, struggle areas
-- Video player with data overlays
-- Score breakdown explored as a heat map vs. a parallel coordinates diagram
-
-  
-Data Visualization UX Designer.
-
-My team included a data scientist, a researcher, and a product manager.
+Competitive benchmarking was an area the research arm of User Testing would send to clients as a file they could review to see how their company compared with others in their industry. Before I joined the team, the project had been in discovery for nine months, and they wanted a solution that would make the statistics visible for a first release.
