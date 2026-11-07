@@ -213,12 +213,13 @@ const projection = (width, height, scale, perspective) => {
 
 
   // the settings from the usage example (gridSize 10, maxAngle 45, radius 3); the colours are changed for the pale page:
-  // faces match the page background (the component's suggestion for a cut-out look) and the edges are plum, since white edges would not show
+  // faces match the page background (the component's suggestion for a cut-out look) and the edges are slate #5B7282, since white edges would not show.
+  // gridSize sets the cube size (the shorter side of the window holds 10 cubes); more columns or rows are added so the grid covers the whole window
   const settings = {
     gridSize: 10,
     gap: 0.18,
     faceColor: getComputedStyle(document.documentElement).getPropertyValue("--bg").trim() || "#F2F5F7",
-    edgeColor: "#6B155A",
+    edgeColor: "#5B7282",
     edgeWidth: 1,
     edgeStyle: "solid",
     faceOpacity: 1,
@@ -305,7 +306,7 @@ const projection = (width, height, scale, perspective) => {
     const view = { width: 1, height: 1, ratio: 1, scale: 1 };
     const pointer = { x: 0, y: 0, inside: false, moved: 0 };
     const cursor = { x: 0, y: 0, vx: 0, vy: 0, weight: 0, primed: false };
-    const grid = { size: 0, count: 0 };
+    const grid = { size: 0, cols: 0, rows: 0, count: 0, key: '' };
     let rx = new Float32Array(0);
     let ry = new Float32Array(0);
     let wx = new Float32Array(0);
@@ -321,9 +322,15 @@ const projection = (width, height, scale, perspective) => {
     let visible = true;
 
     const allocate = size => {
-      if (grid.size === size) return;
+      const cols = 2 * Math.ceil(view.width / view.scale / 2) + 1;
+      const rows = 2 * Math.ceil(view.height / view.scale / 2) + 1;
+      const key = `${size}|${cols}|${rows}`;
+      if (grid.key === key) return;
+      grid.key = key;
       grid.size = size;
-      grid.count = size * size;
+      grid.cols = cols;
+      grid.rows = rows;
+      grid.count = cols * rows;
       rx = new Float32Array(grid.count);
       ry = new Float32Array(grid.count);
       wx = new Float32Array(grid.count);
@@ -331,18 +338,18 @@ const projection = (width, height, scale, perspective) => {
       glow = new Float32Array(grid.count);
       delays = new Float32Array(grid.count);
       instances = new Float32Array(grid.count * 8);
-      const center = (size - 1) / 2;
+      const centerX = (cols - 1) / 2;
+      const centerY = (rows - 1) / 2;
       for (let i = 0; i < grid.count; i++) {
-        const col = i % size;
-        const row = Math.floor(i / size);
-        delays[i] = Math.hypot(col - center, row - center) / Math.max(1, size / 2);
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        delays[i] = Math.hypot(col - centerX, row - centerY) / Math.max(1, Math.max(cols, rows) / 2);
       }
     };
 
     const cellOf = i => {
-      const size = grid.size;
-      const center = (size - 1) / 2;
-      return [(i % size) - center, center - Math.floor(i / size)];
+      const cols = grid.cols;
+      return [(i % cols) - (cols - 1) / 2, (grid.rows - 1) / 2 - Math.floor(i / cols)];
     };
 
     const toWorld = (x, y) => [(x - view.width / 2) / view.scale, (view.height / 2 - y) / view.scale];
@@ -418,9 +425,8 @@ const projection = (width, height, scale, perspective) => {
         [goalX, goalY] = toWorld(pointer.x, pointer.y);
         engaged = true;
       } else if (live) {
-        const reach = grid.size * 0.42;
-        goalX = Math.sin(clock * 0.37) * reach * Math.cos(clock * 0.11);
-        goalY = Math.sin(clock * 0.53 + 1.2) * reach;
+        goalX = Math.sin(clock * 0.37) * grid.cols * 0.42 * Math.cos(clock * 0.11);
+        goalY = Math.sin(clock * 0.53 + 1.2) * grid.rows * 0.42;
         engaged = true;
       }
       if (!cursor.primed && engaged) {
@@ -444,7 +450,7 @@ const projection = (width, height, scale, perspective) => {
       const lift = 0.8;
       const travel = 8 * s.rippleSpeed;
       const fade = Math.exp(-dt * 3.2);
-      const reachLimit = grid.size * 1.5 + 2;
+      const reachLimit = Math.max(grid.cols, grid.rows) * 1.5 + 2;
       for (let k = rings.length - 1; k >= 0; k--) {
         if ((clock - rings[k].born) * travel > reachLimit) rings.splice(k, 1);
       }
