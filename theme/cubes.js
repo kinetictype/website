@@ -213,15 +213,15 @@ const projection = (width, height, scale, perspective) => {
 
 
   // the settings from the usage example (gridSize 10, maxAngle 45, radius 3); the colours are changed for the pale page:
-  // faces match the page background (the component's suggestion for a cut-out look) and the edges are slate #5B7282, since white edges would not show.
-  // gridSize sets the cube size (the shorter side of the window holds 10 cubes); more columns or rows are added so the grid covers the whole window
+  // faces match the page background (the component's suggestion for a cut-out look) no outlines are drawn, and slate #5B7282 is the only colour: it shades the sides of turning cubes and tints the click ripple.
+  // gridSize sets the cube size (the shorter side of the window holds 20 cubes); more columns or rows are added so the grid covers the whole window
   const settings = {
-    gridSize: 10,
+    gridSize: 20,
     gap: 0.18,
     faceColor: getComputedStyle(document.documentElement).getPropertyValue("--bg").trim() || "#F2F5F7",
     edgeColor: "#5B7282",
     edgeWidth: 1,
-    edgeStyle: "solid",
+    edgeStyle: "none",
     faceOpacity: 1,
     shading: 0.6,
     maxAngle: 45,
@@ -232,7 +232,7 @@ const projection = (width, height, scale, perspective) => {
     perspective: 0,
     autoAnimate: true,
     rippleOnClick: true,
-    rippleColor: "#961574",
+    rippleColor: "#5B7282",
     rippleSpeed: 1,
     intro: true,
     paused: false,
