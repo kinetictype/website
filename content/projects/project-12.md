@@ -66,10 +66,21 @@ sections:
         size: full
         text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Merging with an Acquired Startup
-    text: While I fleshed out the product workflow, Workday acquired a Prague-based
-      startup with AI capabilities that we would incorporate into the product. I
-      began discussing capabilities with that team and sketching preliminary
-      wireframes to document how the application would work.
+    text: >-
+      Workday acquired a Prague-based company for its innovative AI technology
+      to surface data within the application. While the company was integrating,
+      I designed a platform and features as we built a new product framework on
+      top of the existing Workday Discovery Boards Platform. I began discussing
+      capabilities with that team and sketching preliminary wireframes to
+      document how the application would work.
+
+
+
+
+      &nbsp;
+
+
+      &nbsp;
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
@@ -86,9 +97,11 @@ sections:
         caption: Imagining the product capabilities and visual style.
         size: half-text
   - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
+    text: >2+
+       
+
+      What data or metrics resulted from the design? If none, what positives
+      came out of it?
 
 
       - Business value the design provided
