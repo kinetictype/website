@@ -44,16 +44,7 @@ sections:
         size: half-text
   - heading: How might we translate a printed document to an interactive experience?
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
+      I wanted  the design to achieve?
 
 
       users stalled on the unfamiliar parallel coordinates chart. The
