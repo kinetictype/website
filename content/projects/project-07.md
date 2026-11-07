@@ -29,7 +29,7 @@ drawer_image: /images/projects/conceptMapCurrency02.png
 drawer_image_alt: Placeholder image for project 07
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Discovering the vision
     text: >+
       Placeholder: What was the mission or goal of the project? Which customer
       or business problems were you and your team solving?
