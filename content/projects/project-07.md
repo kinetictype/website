@@ -64,7 +64,7 @@ sections:
     images:
       - image: /images/projects/conceptMapCurrency02-2.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Concept map 02
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
