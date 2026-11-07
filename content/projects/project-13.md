@@ -62,7 +62,8 @@ sections:
       - image: /images/projects/01_analysis-of-current-report-3.png
         sound: false
         alt: Analysis of Report
-        caption: what this image shows and why it matters to the problem.
+        caption: To get a sense of the material I was working with, I mapped out the
+          categorical data from an overview to specific data.
         size: half-text
   - heading: Goal
     text: >+
