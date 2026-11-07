@@ -104,23 +104,11 @@ sections:
         size: full
   - heading: Accessible Patterns Shipped in the Workday Platform
     text: >+
-      Patterns shipped, complied with usability/contrast standards, and were
-      incorporated into the design system. The project was well received and
-      improved accessibility across the platform.
-
-
-
-
-
-
-      ##### Based on legibility standards, I used color interpolation to blend
-      between the two values. This produced a set of high-contrast color and
-      fill pattern pairs.
-
-
       ##### The new color schemes and fill patterns significantly improved
       accessibility across the platform, making it easier for a wider range of
       individuals to navigate and interact with charts in the Workday
-      enterprise.
+      enterprise. Patterns shipped, complied with usability/contrast standards,
+      and were incorporated into the design system. The project was well
+      received and improved accessibility across the platform.
 ---
 When I joined Workday Analytics, we were replacing the current visualization library with one that could handle large volumes of data. Accessibility is ethically the right thing to ensure. I was thrilled to have the opportunity to contribute to this feature.
