@@ -97,8 +97,8 @@ sections:
         caption: Imagining the product capabilities and visual style.
         size: half-text
   - heading: Results & outcomes
-    text: >2+
-       
+    text: >+
+      
 
       What data or metrics resulted from the design? If none, what positives
       came out of it?
@@ -111,7 +111,7 @@ sections:
       - Next steps, if there are more iterations to go
 
     images:
-      - image: /images/projects/07_shipped-product.png
+      - image: /images/projects/WD_PA_MainImg.webp
         sound: false
         alt: Shipped product
         size: full
