@@ -114,10 +114,10 @@ sections:
         size: full
   - heading: Learnings
     text: My effort in this project focused on gathering the requirements to bring
-      this product to life. What problem were we trying to solve? I was eager to
-      learn what the Marketers and Administrators needed from this tool.
-      Although I advocated for research, the product owner wanted to develop the
-      first version before gathering this data.
+      this product to life. I was eager to learn what the Marketers and
+      Administrators needed from this tool. Although I advocated for research,
+      the product owner wanted to develop the first version before gathering
+      this data.
 ---
 Alliance Data wanted to redesign The Moment Engine product. Previously known as The Bonus Engine, it was an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
 
@@ -127,23 +127,11 @@ DOMAIN MODEL
 
 Documenting the domain helped to clarify the elements we were designing for in the system. This was a key moment that drove the project forward.
 
-
-
 REALIZE FEATURES
 
 Once I framed the project and wrote requirements, I created wireframes for the product. The Marketer and the Administer's process flow mapped to the system diagram. 
 
 
-
-KEY LEARNINGS
-
-The design of a product without the resource of a product manager is a challenge. Most of my time focused on what problem we were trying to solve.
-
-Once we wrote requirements, I craved user feedback to learn what the Marketers and Administrators needed from this tool. Although advocating for research, the product owner wanted to develop the first version of the product before gathering this data.
-
-
-
-&nbsp;
 
 System diagram, review of the product owner's early documents, a UI requirements document, the administrator task flow, and wireframes.  
 
