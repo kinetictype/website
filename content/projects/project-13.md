@@ -65,11 +65,12 @@ sections:
       customer problems? Which design principles did you follow, or create, to
       guide the design?
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/StoryElements.webp
         sound: false
-        alt: "Placeholder: framework or design principles"
+        alt: Storytelling principles to guide the design
+        caption: Discovering how to guide a user through the data in a seemless way was
+          a first step.
         size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Challenges
     text: "Placeholder: Which challenges are worth highlighting (team or org,
       technical, design system, capacity or scope), and how did you get through
