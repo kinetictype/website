@@ -42,13 +42,28 @@ sections:
 
       - The hypothesis that guided your design
 
+
+      users stalled on the unfamiliar parallel coordinates chart. The
+      stakeholder critique you gathered shaped the next iterations.
+
+
+      A happy path built with sample data
+
+
+      - Wireframes: overview, top insights, UX factors, tasks vs. competition,
+      struggle areas
+
+      - Video player with data overlays
+
+      - Score breakdown explored as a heat map vs. a parallel coordinates
+      diagram
+
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
-        alt: "Placeholder: image that sets the context"
+        alt: Analysis of Report
+        caption: what this image shows and why it matters to the problem.
         size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
   - heading: Goal
     text: >+
       Placeholder: What was your goal as the designer, and what did you want the
