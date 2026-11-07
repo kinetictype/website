@@ -43,27 +43,27 @@ sections:
           categorical data from an overview to specific data.
         size: half-text
   - heading: How might we translate a printed document to an interactive experience?
-    text: >+
-      I wanted  the design to achieve?
-
-
-      users stalled on the unfamiliar parallel coordinates chart. The
-      stakeholder critique you gathered shaped the next iterations. Wireframes:
-      overview, top insights, UX factors, tasks vs. competition, struggle areas.
-      Video player with data overlays. Score breakdown explored as a heat map
-      vs. a parallel coordinates diagram
-
+    text: To achieve the outcome of what this product would look like, using
+      interactive data visualization, I categorized the wireframes to show an
+      overview, top insights, UX factors, tasks vs. competition, and struggle
+      areas.
     images:
       - image: /images/projects/HappyPath.webp
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Happy path
+        caption: Documenting the "happy path" experience
         size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
+  - heading: Gathering stakeholder Buy-in
+    text: >-
+      users stalled on the unfamiliar parallel coordinates chart. The
+      stakeholder critique you gathered shaped the next iterations.  Video
+      player with data overlays. Score breakdown explored as a heat map vs. a
+      parallel coordinates diagram
+
+
+      Placeholder: Which frameworks helped you and your team think through the
       customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+      guide the design?
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
