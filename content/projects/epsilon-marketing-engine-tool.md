@@ -102,20 +102,10 @@ sections:
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
   - heading: Documenting the Domain
-    text: >+
-      Documenting the domain helped to clarify the elements we were designing
-      for in the system. This was a key moment that drove the project
-      forward.laceholder: What was your goal as the designer, and what did you
-      want the design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
+    text: Documenting the domain helped to clarify the elements we were designing
+      for in the system. This was a key moment that drove the project forward.
+      “How might we create a product that marketers, with little technical
+      knowledge, could easily access and operate?”
     images:
       - image: /images/projects/domainModel.png
         sound: false
