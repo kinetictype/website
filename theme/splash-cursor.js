@@ -1,6 +1,6 @@
 /* Splash cursor: ink that follows the pointer and splashes on click.
    Vanilla-JavaScript port of the SplashCursor component from React Bits (reactbits.dev, MIT licence) for this static site.
-   Settings below follow the component's usage example; theme "light" suits the site's light background. */
+   Settings below follow the component's usage example, with a single #3E5463 ink; theme "light" suits the site's light background. */
 (() => {
 const QUALITY = {
   low: { sim: 64, dye: 512, iterations: 10 },
@@ -254,10 +254,10 @@ const hsv = (h, s, v) => {
 
 
   const S = {
-    palette: ['#4f8cff', '#2dd4bf', '#ffd166'].map(parseColor),
-    rainbow: true,
+    palette: ['#3E5463'].map(parseColor),   // slate blue ink
+    rainbow: false,
     colorSpeed: 1,
-    intensity: 1,
+    intensity: 0.5,   // the thickest ink reaches about #3E5463 instead of going black
     size: 1,
     force: 1,
     swirl: 3,
