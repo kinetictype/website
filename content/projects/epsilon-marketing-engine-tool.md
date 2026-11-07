@@ -43,10 +43,12 @@ sections:
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
-  - heading: Your goal
+  - heading: Documenting the Domain
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      Documenting the domain helped to clarify the elements we were designing
+      for in the system. This was a key moment that drove the project
+      forward.laceholder: What was your goal as the designer, and what did you
+      want the design to achieve?
 
 
       - "How might we…" statements
@@ -120,20 +122,3 @@ sections:
       this data.
 ---
 Alliance Data wanted to redesign The Moment Engine product. Previously known as The Bonus Engine, it was an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
-
-
-
-DOMAIN MODEL
-
-Documenting the domain helped to clarify the elements we were designing for in the system. This was a key moment that drove the project forward.
-
-REALIZE FEATURES
-
-Once I framed the project and wrote requirements, I created wireframes for the product. The Marketer and the Administer's process flow mapped to the system diagram. 
-
-
-
-System diagram, review of the product owner's early documents, a UI requirements document, the administrator task flow, and wireframes.  
-
-The Valuable Outcomes that Emerged  
-"Chaos among stakeholders and the engineering lead" was resolved by documenting the system model first, then designing wireframes.
