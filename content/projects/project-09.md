@@ -58,7 +58,7 @@ sections:
         alt: Before image of Workday chart Patterns that lacked logic.
         caption: The developer needed guidance on a way to implement patterns.
         size: text-half
-  - heading: Design principles & frameworks
+  - heading: Exploring Spacial Density
     text: >+
       ##### After selecting basic elements to assess spatial density, I explored
       options ranging from sparse to dense patterns. After selecting patterns, I
