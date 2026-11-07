@@ -60,9 +60,9 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/domainModel.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Domain model
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
