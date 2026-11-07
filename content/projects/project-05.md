@@ -57,10 +57,9 @@ sections:
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
-  - heading: Your goal
+  - heading: I wanted the design to achieve...
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      What was your goal as the designer, and what did you 
 
 
       - "How might we…" statements
@@ -73,7 +72,7 @@ sections:
     images:
       - image: /images/projects/03_personas.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Persona definition
         caption: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
         size: text-half
