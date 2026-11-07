@@ -77,10 +77,8 @@ sections:
         caption: "Prototype the early wireframes on the Workday blue... "
         size: text-half
   - heading: Refined Wireframes Imagining the Product
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+    text: As development built the framework, I began building capabilities based on
+      the stories I gathered with the product team.
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
