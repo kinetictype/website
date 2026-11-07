@@ -134,7 +134,6 @@ sections:
       involved from the start to scope the vision.
 ---
 
-
 Interaction Done Wrong users stalled on the unfamiliar parallel coordinates chart. The stakeholder critique you gathered shaped the next iterations.
 
 
