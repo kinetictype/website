@@ -31,33 +31,10 @@ gallery:
 prototype_size: half
 sections:
   - heading: Analysis of the Existing Content
-    text: >+
-      This project was based on print. Data scientists would gather data and
-      present it to clients in a PDF file. 
-
-
-      - Data or stats that set the context
-
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
-
-      users stalled on the unfamiliar parallel coordinates chart. The
-      stakeholder critique you gathered shaped the next iterations.
-
-
-      A happy path built with sample data
-
-
-      - Wireframes: overview, top insights, UX factors, tasks vs. competition,
-      struggle areas
-
-      - Video player with data overlays
-
-      - Score breakdown explored as a heat map vs. a parallel coordinates
-      diagram
-
+    text: This project was based on print. Data scientists gathered data and
+      presented it to clients in a PDF file. I analyzed the data and built a
+      diagram of research areas we could start with. I began with a happy path
+      built with sample data.
     images:
       - image: /images/projects/UQ_Analysis.webp
         sound: false
@@ -77,6 +54,13 @@ sections:
 
       - Research that shaped the work: competitive analysis, customer
       satisfaction scores (surveys, NPS), market research
+
+
+      users stalled on the unfamiliar parallel coordinates chart. The
+      stakeholder critique you gathered shaped the next iterations. Wireframes:
+      overview, top insights, UX factors, tasks vs. competition, struggle areas.
+      Video player with data overlays. Score breakdown explored as a heat map
+      vs. a parallel coordinates diagram
 
     images:
       - image: /images/placeholders/placeholder-detail-2.svg
