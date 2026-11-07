@@ -30,7 +30,7 @@ gallery:
   - size: full
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Analysis of the Existing Content
     text: >+
       Placeholder: What was the mission or goal of the project? Which customer
       or business problems were you and your team solving?
