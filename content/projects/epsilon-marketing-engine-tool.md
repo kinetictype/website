@@ -38,7 +38,8 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - sound: false
+      - image: /images/projects/SystemDiagram.png
+        sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
