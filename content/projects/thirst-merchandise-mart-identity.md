@@ -4,12 +4,12 @@ tagline: A modular logo built from the letters of the name.
 summary: Develop a logo concept in which blocks represent the letters of the
   company name, conveying the company's modularity.
 client: 3st, for Merchandise Mart Properties
-role: Brand Designer
-goals: "Placeholder: the customer and business goal."
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
+role: Logo Mark Design
+timeline: "2007"
+goals: I designed the logo concept, color palette, block-theme variations, and
+  an animated version of the mark for Merchandise Mart Properties
+outcome: Logo concept, color palette, and an animated version of the mark
+responsibilities: Visual design, interaction design, concept design.
 team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
   researcher."
 categories:
