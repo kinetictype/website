@@ -32,8 +32,8 @@ prototype_size: half
 sections:
   - heading: Analysis of the Existing Content
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      This project was based on print. Data scientists would gather data and
+      present it to clients in a PDF file. 
 
 
       - Data or stats that set the context
