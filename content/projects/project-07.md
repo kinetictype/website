@@ -62,7 +62,7 @@ sections:
       satisfaction scores (surveys, NPS), market research
 
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/conceptMapCurrency02-2.png
         sound: false
         alt: "Placeholder: research or workshop artifact"
         size: text-half
