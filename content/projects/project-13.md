@@ -125,4 +125,4 @@ sections:
       design system. I learned how crucial it is to have a design lead involved
       from the start to scope the vision.
 ---
-Competitive benchmarking was an area of research that User Testing would send to clients as a file they could review to see how their company compared with others in their industry. Before I joined the team, the project had been in discovery for nine months, and they wanted a solution that would make the statistics visible for a first release.
+Competitive benchmarking was a research area that User Testing would send to clients as a file they could review to see how their company compared with others in their industry. Before I joined the team, the project had been in discovery for nine months, and they wanted a solution that would make the statistics visible for a first release.
