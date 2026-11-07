@@ -28,51 +28,12 @@ sections:
     text: >-
       Consulting with the lead engineer, I developed a system diagram that
       isolated the components of the interface. We used this diagram to document
-      the product requirements.
+      the product requirements. 
 
-
-      - Data or stats that set the context
 
       - Assumptions you set out to validate or disprove
 
       - The hypothesis that guided your design
-
-
-      PROJECT SUMMARY
-
-
-      Alliance Data wanted to redesign The Moment Engine product. Previously
-      known as The Bonus Engine, an enterprise white label product to help
-      marketers plan loyalty and marketing campaigns.
-
-
-
-
-      DEVELOPING A MENTAL MODEL
-
-
-      Consulting with the lead engineer, I developed a system diagram which
-      isolated the components of the interface. We referred to this diagram and
-      documented requirements for the product.
-
-
-
-
-      DOMAIN MODEL
-
-
-      Documenting the domain helped to clarify the elements we were designing
-      for in the system. This was a key moment that drove the project forward.
-
-
-
-
-      REALIZE FEATURES
-
-
-      Once I framed the project and wrote requirements, I created wireframes for
-      the product. The Marketer and the Administer's process flow mapped to the
-      system diagram. 
 
 
 
@@ -113,10 +74,10 @@ sections:
         size: text-half
         text: "Placeholder: describe the research, workshop or competitive analysis
           shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+  - heading: Realize Features
+    text: I framed the project and wrote requirements; I created wireframes for the
+      product. I mapped the marketer and administrator process flows to the
+      system diagram. 
     images:
       - image: /images/placeholders/placeholder-detail-1.svg
         sound: false
