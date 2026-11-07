@@ -107,4 +107,4 @@ sections:
     text: "Placeholder: What did you and your team learn? What would help you on
       another project? Anything else worth highlighting?"
 ---
-Working with [Rick Valicenti](https://www.designboom.com/design/rick-vallecenti-3st-interview/) was a career highlight. I designed the logo concept, color palette, block-theme variations, and an animated version of the mark for Merchandise Mart Properties. In the end, they wanted something with less dynamism, but we explored movable identity marks together, which was a lot of fun!
+Working with [Rick Valicenti](https://www.designboom.com/design/rick-vallecenti-3st-interview/) was a career highlight. I designed the logo concept, color palette, block-theme variations, and an animated version of the mark for Merchandise Mart Properties. In the end, they wanted something less dynamic and more understated. In the meantime, we explored movable identity marks together, which was a lot of fun!
