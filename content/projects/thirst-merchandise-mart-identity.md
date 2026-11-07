@@ -95,7 +95,7 @@ sections:
         caption: Putting the marks together in animation is the most compelling aspect
           of this concept.
         size: half-text
-  - heading: Results & outcomes
+  - heading: Animation of Marks
     text: "This concept explored a graphic identity that would move. This reinforced
       the metaphor of the Merchandise Mart: a movable exhibition space. "
     images:
