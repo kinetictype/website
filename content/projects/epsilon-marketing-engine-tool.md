@@ -59,7 +59,7 @@ sections:
       product. I mapped the marketer and administrator process flows to the
       system diagram. 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/SystemDiagram-2.png
         sound: false
         alt: "Placeholder: framework or design principles"
         size: half-text
