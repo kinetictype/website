@@ -96,19 +96,10 @@ sections:
           of this concept.
         size: half-text
   - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+    text: "This concept explored a graphic identity that would move. This reinforced
+      the metaphor of the Merchandise Mart: a movable exhibition space. "
     images:
-      - image: /images/projects/mmp-sequence-wire.gif
+      - image: /images/projects/mmp-sequence-wire-1.gif
         sound: false
         alt: Merchandise Mart form design, second version (animated)
         size: full
