@@ -8,6 +8,7 @@ summary: Redesign of customer support from calling Fitbit to self-service. I met
   Fitbit.
 client: Fitbit
 role: UX Design Lead
+timeline: "2017"
 goals: "Placeholder: the customer and business goal."
 outcome: "Placeholder: what you eventually designed."
 responsibilities: "Placeholder: what you worked on, e.g. visual design,
@@ -50,9 +51,9 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
+      - image: /images/projects/01_service-blueprint-1.png
         sound: false
-        alt: "Placeholder: image that sets the context"
+        alt: Service Blueprint
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
           problem."
