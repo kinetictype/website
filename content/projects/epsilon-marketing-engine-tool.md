@@ -26,8 +26,9 @@ prototype_size: half
 sections:
   - heading: Developing a Mental Model
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      Consulting with the lead engineer, I developed a system diagram that
+      isolated the components of the interface. We used this diagram to document
+      the product requirements.
 
 
       - Data or stats that set the context
@@ -37,8 +38,7 @@ sections:
       - The hypothesis that guided your design
 
     images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
+      - sound: false
         alt: "Placeholder: image that sets the context"
         size: half-text
         text: "Placeholder: describe what this image shows and why it matters to the
@@ -120,16 +120,6 @@ sections:
       first version before gathering this data.
 ---
 Alliance Data wanted to redesign The Moment Engine product. Previously known as The Bonus Engine, it was an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
-
-
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-Consulting with the lead engineer, I developed a system diagram which isolated the components of the interface. We referred to this diagram and documented requirements for the product.
 
 
 
