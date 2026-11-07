@@ -30,7 +30,7 @@ drawer_image: /images/projects/WD_PA_MainImg.png
 drawer_image_alt: Workday Analytics Platform
 prototype_size: half
 sections:
-  - heading: Extracting the Mental Model of our Users
+  - heading: Decipher the Vision
     text: I wore both product manager and designer hats and worked directly with a
       product strategist to decipher his vision. As we talked, I extracted
       personas and their mental model from the story and defined them to
