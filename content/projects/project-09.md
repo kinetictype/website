@@ -60,9 +60,9 @@ sections:
         size: text-half
   - heading: Exploring Spacial Density
     text: >+
-      ##### After selecting basic elements to assess spatial density, I explored
-      options ranging from sparse to dense patterns. After selecting patterns, I
-      began incorporating colors from the design system.
+      ##### After selecting basic elements, I explored options ranging from
+      sparse to dense patterns. After selecting patterns, I began incorporating
+      colors from the design system.
 
     images:
       - image: /images/projects/FillPattern_processMap-2.png
