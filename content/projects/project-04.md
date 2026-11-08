@@ -63,7 +63,7 @@ sections:
       collaborated and discussed the subject and visual possibilities. We
       partnered as we exchanged ideas arrived at a shared vision.   "
     images:
-      - image: /images/projects/hybrid_Sketch.png
+      - image: /images/projects/hybrid_Sketch04.png
         sound: false
         alt: Hybrid Cloud
         caption: While discussing the story with the Analyst, I would draw ideas.
