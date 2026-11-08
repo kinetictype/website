@@ -28,6 +28,7 @@ description: Placeholder description of project 04 for search engines and link p
 cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
@@ -90,23 +91,18 @@ sections:
         alt: Hybrid Cloud
         caption: Illustrating the effects of the hybrid cloud and their capabilities.
         size: full
-  - heading: Approach
+  - heading: Evergreen Content
     text: >+
-      I gathered content, designed, and developed interactive Scalable Vector
-      Graphics. I added explanatory interactive graphics to the Goldman Sachs
-      Investment Research Portal.  
-
-
-      Beyond the scope of this work, I connected across the firm with the Core
-      UX Design System team to standardize icons and create evergreen content
-      that could support future data stories and ensure consistency across
-      production.
+      In addition to designing and developing interactive Scalable Vector
+      Graphics, I partnered with the Core UX Design System team to standardize
+      icons and create evergreen content to support future data stories and
+      ensure consistency across production.
 
 
       > *Kiera was a pleasure to work with. She not only created innovative data
       visualizations (including SVGs) for data-science-literate audiences, but
       also helped foster a more data-centric culture among junior analysts just
-      starting out in coding. -M. Hinds, Goldman Sachs Analyst*
+      starting out in coding. **-M. Hinds, Goldman Sachs Analyst***
 
     images:
       - sound: false
