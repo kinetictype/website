@@ -49,7 +49,7 @@ sections:
     text: "Interactive storytelling with custom-made SVG graphics surfaced an
       underdeveloped craft at the Firm. It let us work with the current CMS
       platform in an image format with a small file size. I rolled up my
-      development sleeves and leaned on a developer from the UX Division to
+      development sleeves and leaned on a developer from the Core UX Team to
       churn out several Interactive Graphics over the year. "
     images:
       - video: /images/projects/Simulus.mp4
