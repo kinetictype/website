@@ -29,16 +29,15 @@ cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 drawer_whole: false
+prototype_url: >+
+  Goldman Sachs was committed to providing interactive graphics to Investment
+  Research stories to add value to insights and analysis in the equity, fixed
+  income, currency, and commodities markets. I joined the firm to build engaging
+  interactive data stories for the research portal during a global pandemic.
+
 prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
-    text: >+
-      Goldman Sachs was committed to providing interactive graphics to
-      Investment Research stories to add value to insights and analysis in the
-      equity, fixed income, currency, and commodities markets. I joined to team
-      to build towards generating several economic, market, and company
-      forecasts and models for the firm during a global pandemic.
-
     images:
       - video: /images/projects/StreamingVideo-from-svg-1.mp4
         sound: false
