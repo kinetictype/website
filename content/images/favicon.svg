@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs><clipPath id="c"><circle cx="100" cy="100" r="92"/></clipPath><clipPath id="a"><rect x="0" y="62.5" width="200" height="140"/></clipPath></defs>
+<g fill="none" stroke="#3880B1">
+<circle cx="100" cy="100" r="91" stroke-width="18"/>
+<g clip-path="url(#c)">
+<path d="M72.5 0V200" stroke-width="17.5"/>
+<path d="M72.55 127L198.28 0" stroke-width="14" clip-path="url(#a)"/>
+<path d="M93.2 105L176.15 200" stroke-width="15.5"/>
+</g></g></svg>

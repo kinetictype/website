@@ -241,6 +241,15 @@ const projectUrl = (p) => `/work/${p.slug}/`;
 const imageUrl = (f) => (!f ? "" : /^(https?:)?\//.test(f) ? f : `/images/${f}`);
 const assetUrl = (p, file) => imageUrl(file);
 
+// Browser-tab icon: a sharp vector for modern browsers, a multi-size .ico for older ones, and a tile for phone home screens.
+// If a different favicon is chosen in Pages CMS (Site settings), that one is used instead.
+const FAVICON_LINKS = (() => {
+  const custom = SITE.favicon && !/^\/?images\/favicon\.png$/i.test(SITE.favicon) ? SITE.favicon : "";
+  if (custom) return `<link rel="icon" href="${imageUrl(custom)}"${/\.svg$/i.test(custom) ? ' type="image/svg+xml"' : ""}>`;
+  return `<link rel="icon" href="/images/favicon.ico" sizes="48x48">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">`;
+})();
 // Arrow icon used in links (aria-hidden: the link text already says where it goes)
 const ARROW = `<svg class="icon-arrow" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const ARROW_BACK = ARROW.replace('class="icon-arrow"', 'class="icon-arrow flip"');
@@ -278,7 +287,7 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <meta name="twitter:title" content="${escapeHtml(fullTitle)}">
 <meta name="twitter:description" content="${escapeHtml(desc)}">
 <meta name="twitter:image" content="${ogImage}">
-<link rel="icon" href="${imageUrl(SITE.favicon || "favicon.png")}"${/\.svg$/i.test(SITE.favicon || "") ? ' type="image/svg+xml"' : /\.png$/i.test(SITE.favicon || "favicon.png") ? ' type="image/png"' : ""}>
+${FAVICON_LINKS}
 <link rel="stylesheet" href="/style.css?v=${CSS_VERSION}">
 ${EDIT ? `<style>/* editor preview only: SVG logos are not inlined here, so keep them uncropped */img[src$=".svg"]{object-fit:contain}</style>\n` : ""}${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
 </head>
