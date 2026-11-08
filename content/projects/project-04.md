@@ -43,7 +43,7 @@ sections:
       learning how they worked with Research and the capabilities of the CMS
       Platform behind the Research Portal.
     images:
-      - video: /images/projects/Screen_Recording_2026-11-08.mp4
+      - video: /images/projects/StreamingVideo05.mp4
         sound: false
         alt: Streaming Video Options Overwhelm Customers
         caption: The interactivity in Streaming Video Options was a great example of the
