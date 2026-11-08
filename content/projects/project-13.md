@@ -54,16 +54,10 @@ sections:
         caption: Documenting the "happy path" experience
         size: text-half
   - heading: Gathering stakeholder Buy-in
-    text: >-
-      users stalled on the unfamiliar parallel coordinates chart. The
-      stakeholder critique you gathered shaped the next iterations.  Video
-      player with data overlays. Score breakdown explored as a heat map vs. a
-      parallel coordinates diagram
-
-
-      Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?
+    text: "Stakeholders stalled on the unfamiliar parallel coordinates chart for the
+      score breakdown, so I explored a heat map as a simpler visualization. To
+      support further iterations, I held critiques with the design team to dig
+      deeper into clearer representations. "
     images:
       - image: /images/projects/StoryElements.webp
         sound: false
