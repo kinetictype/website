@@ -101,9 +101,8 @@ sections:
         size: half
   - heading: The Outcome
     text: I created an interactive experience that moved the content from a printed
-      document to a live web version. It allowed businesses to compare their
-      company with competitors to learn how they were performing in a
-      competitive landscape.
+      document to a live web version. It let businesses compare themselves with
+      competitors to see how they were performing in the competitive landscape.
     images:
       - image: /images/projects/project-13/usertesting-browser-prototype-score-wide.svg
         sound: false
