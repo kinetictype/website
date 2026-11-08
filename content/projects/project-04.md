@@ -48,12 +48,12 @@ sections:
         alt: Streaming Video Options Overwhelm Customers
         caption: describe what this image shows and why it matters to the problem.
         size: half-text
-  - heading: Interactive Data to Enhance Understanding
-    text: "Interactive storytelling with custom-made SVG graphics surfaced an
+  - heading: Surfacing and Underdeveloped Craft
+    text: Interactive storytelling with custom-made SVG graphics surfaced an
       underdeveloped craft at the Firm. It let us work with the current CMS
       platform in an image format with a small file size. I rolled up my
       development sleeves and leaned on a developer from the Core UX Team to
-      churn out several Interactive Graphics over the year. "
+      churn out several Interactive Graphics over the year.
     images:
       - video: /images/projects/Simulus.mp4
         sound: false
