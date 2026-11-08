@@ -46,7 +46,9 @@ sections:
           platform. "
         size: half-text
   - heading: Define Logic to Display the Patterns
-    text: "The developer needed guidance on a way to implement patterns. "
+    text: The developer needed guidance on a way to implement patterns. He played
+      with random colors and shapes to test the functionality, but it was
+      lacking cohesiveness with the Workday platform.
     images:
       - image: /images/projects/Before_FillPattern_Dev.png
         sound: false
