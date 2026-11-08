@@ -76,11 +76,9 @@ sections:
         alt: "Placeholder: a challenge and how you solved it"
         caption: Describe the challenge this image shows and how you got through it.
         size: text-half
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
+  - heading: Incorporating the Design System
+    text: "After gathering feedback, I presented the final designs and shared the
+      vision for the new platform. "
     images:
       - image: /images/projects/project-13/usertesting-browser-prototype.svg
         sound: false
