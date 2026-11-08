@@ -34,8 +34,9 @@ sections:
     text: >+
       ##### When I began this project, I researched whether the current patterns
       followed any logic. They did not match the system colors and were hard to
-      read at small sizes; the charting library did not offer any guidance. It
-      was a neglected part of the design system, and I embraced the challenge.
+      read at small sizes; the charting library did not offer any guidance. I
+      learned it was a neglected part of the design system, and I embraced the
+      challenge.
 
     images:
       - image: /images/projects/Before_FillPattern_WD.png
