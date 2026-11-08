@@ -29,11 +29,8 @@ cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
 drawer_whole: false
-prototype_url: >+
-  Goldman Sachs was committed to providing interactive graphics to Investment
-  Research stories to add value to insights and analysis in the equity, fixed
-  income, currency, and commodities markets. I joined the firm to build engaging
-  interactive data stories for the research portal during a global pandemic.
+prototype_url: |+
+  
 
 prototype_size: half
 sections:
@@ -120,3 +117,4 @@ sections:
       Managing Directors in the bank's Research arm was a highly rewarding
       experience. "
 ---
+Goldman Sachs was committed to providing interactive graphics to Investment Research stories to add value to insights and analysis in the equity, fixed income, currency, and commodities markets. I joined the firm to build engaging interactive data stories for the research portal during a global pandemic.
