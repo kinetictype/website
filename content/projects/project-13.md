@@ -26,7 +26,6 @@ cover: /images/logos/user-testing-icon-svgrepo-com.svg
 cover_alt: User Testing Logo
 drawer_image: /images/projects/project-13/usertesting-benchmark-browser.png
 drawer_image_alt: The UserTesting benchmark Score Breakdown in a browser window
-drawer_whole: true
 gallery:
   - size: full
 prototype_size: half
@@ -80,9 +79,8 @@ sections:
       - image: /images/placeholders/placeholder-detail-2.svg
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
+        caption: Describe the challenge this image shows and how you got through it.
         size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
   - heading: Showing your designs
     text: "Placeholder: Show one or two iterations or alternatives you considered
       (flats, prototypes, videos or GIFs) and the screens that explain your
