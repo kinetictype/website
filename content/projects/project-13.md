@@ -99,18 +99,11 @@ sections:
         alt: Scrollable prototype of the report with the score breakdown shown as heat
           maps for Verizon and T-Mobile, in a browser window
         size: half
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+  - heading: The Outcome
+    text: I created an interactive experience that moved the content from a printed
+      document to a live web version. It allowed businesses to compare their
+      company with competitors to learn how they were performing in a
+      competitive landscape.
     images:
       - image: /images/projects/project-13/usertesting-browser-prototype-score-wide.svg
         sound: false
