@@ -40,7 +40,7 @@ sections:
       learning how they worked with Research and the capabilities of the CMS
       Platform behind the Research Portal.
     images:
-      - video: /images/projects/StreamingVideo05.mp4
+      - video: /images/projects/StreamingVideo05_GoldmanSans-1.mp4
         sound: false
         alt: Streaming Video Options Overwhelm Customers
         caption: The interactivity in Streaming Video Options was a great example of the
