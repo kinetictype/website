@@ -30,16 +30,12 @@ drawer_image: /images/projects/fill_pattern_cover_big_2.png
 drawer_image_alt: Placeholder image for project 09
 prototype_size: half
 sections:
-  - heading: Understanding the ontext
+  - heading: Understanding the Context
     text: >+
-      ##### Over two months, I audited the current framework, conceptualized a
-      pattern-based approach, executed the designs, and tested the patterns
-      internally.
-
-
-      ##### The existing patterns lacked logic, did not match the system colors,
-      and were hard to read at small sizes; the charting library did not offer
-      guidance.
+      ##### When I began this project, I researched whether the current patterns
+      followed any logic. They did not match the system colors and were hard to
+      read at small sizes; the charting library did not offer any guidance. It
+      was a neglected part of the design system, and I embraced the challenge.
 
     images:
       - image: /images/projects/Before_FillPattern_WD.png
