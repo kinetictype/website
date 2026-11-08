@@ -811,9 +811,9 @@ function caseStudy(p) {
   <button class="lb-next" type="button" aria-label="Next image">${ARROW}</button>
 </div>
 <script>
-  // click any image in the case study to see it large; arrow keys move between images, Esc closes
+  // click any image or video in the case study to see it large; arrow keys move between them, Esc closes
   (() => {
-    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg, .case .media-split img, .case .media-split svg")];
+    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg, .case .media video, .case .media-split img, .case .media-split svg, .case .media-split video")];
     const lb = document.querySelector(".lightbox"); if (!lb || !imgs.length) return;
     const stage = lb.querySelector(".lb-stage"), cap = lb.querySelector("figcaption");
     let at = 0, opener = null;
@@ -821,7 +821,15 @@ function caseStudy(p) {
     const show = (n) => {
       at = (n + imgs.length) % imgs.length; const im = imgs[at];
       stage.innerHTML = "";
-      if (im.tagName.toLowerCase() === "img") {
+      if (im.tagName.toLowerCase() === "video") {
+        // the enlarged video keeps playing from the same moment, muted and looping like the one on the page
+        const big = document.createElement("video");
+        Object.assign(big, { muted: true, loop: true, autoplay: true, playsInline: true });
+        big.setAttribute("aria-label", label(im).replace(/ — open larger$/, ""));
+        im.querySelectorAll("source").forEach((s) => big.appendChild(s.cloneNode()));
+        big.addEventListener("loadedmetadata", () => { try { big.currentTime = im.currentTime; } catch (e) {} big.play().catch(() => {}); }, { once: true });
+        stage.appendChild(big);
+      } else if (im.tagName.toLowerCase() === "img") {
         const big = new Image(); big.src = im.currentSrc || im.src; big.alt = im.alt; stage.appendChild(big);
       } else {
         const big = im.cloneNode(true); big.removeAttribute("tabindex"); big.removeAttribute("role"); big.setAttribute("aria-label", label(im).replace(/ — open larger$/, "")); big.setAttribute("role", "img"); big.setAttribute("preserveAspectRatio", "xMidYMid meet"); stage.appendChild(big);
