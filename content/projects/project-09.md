@@ -48,7 +48,7 @@ sections:
         caption: "I began with researching the legacy fill patterns on the Workday
           platform. "
         size: half-text
-  - heading: Goal
+  - heading: Define Logic to Display the Patterns
     text: In a month, the goal was to create a logic for how the patterns were
       displayed and draw a connection to the design system's colors. The
       developer needed guidance on a way to implement patterns.
