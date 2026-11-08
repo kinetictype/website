@@ -46,7 +46,7 @@ sections:
         caption: The interactivity in Streaming Video Options was a great example of the
           capabilities of the media.
         size: half-text
-  - heading: Surfacing and Underdeveloped Craft
+  - heading: Surfacing an Underdeveloped Craft
     text: Interactive storytelling with custom-made SVG graphics surfaced an
       underdeveloped craft at the Firm. It let us work with the current CMS
       platform in an image format with a small file size. I rolled up my
