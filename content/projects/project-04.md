@@ -38,6 +38,9 @@ prototype_url: >+
 prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
+    text: "The Core UX Team partnered with Global Investment Research but often
+      lacked the bandwidth to create interactive graphics for the Firm. I began
+      learning how they had worked with Research in the past. "
     images:
       - video: /images/projects/StreamingVideo-from-svg-1.mp4
         sound: false
