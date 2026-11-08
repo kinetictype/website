@@ -68,7 +68,7 @@ sections:
         alt: Hybrid Cloud
         caption: While discussing the story with the Analyst, I would draw ideas.
         size: half-text
-      - image: /images/projects/hybrid_Sketch02.png
+      - image: /images/projects/hybrid_Sketch03.png
         sound: false
         alt: Sketch 02 Hybrid Cloud
         size: half-text
