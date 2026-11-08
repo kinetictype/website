@@ -80,8 +80,8 @@ sections:
           I enjoyed the autonomy to design and develop an interactive graphic
           independently after collaborating on the right direction. Goldman
           Sachs Research provides cutting-edge thought leadership across over
-          3,000 securities, over 45 economies, and every major market; I helped
-          communicate it. 
+          3,000 securities and over 45 economies in every major market, and I
+          helped communicate it. 
 
   - heading: Opportunity to Clarify Complexity
     text: One of my favorite parts of creating visualizations is the chance to learn
