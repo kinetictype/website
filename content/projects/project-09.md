@@ -97,7 +97,7 @@ sections:
       fill pattern pairs. This project created positive business value by
       incorporating accessibility and consistency into Workday's charting
       library. I created logic for how the patterns were displayed and connected
-      it to the design system's colors. 
+      it to the design system's colors.
 
     images:
       - image: /images/projects/ShippedPattern-1.png
