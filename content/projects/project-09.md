@@ -46,9 +46,7 @@ sections:
           platform. "
         size: half-text
   - heading: Define Logic to Display the Patterns
-    text: "The developer needed guidance on a way to implement patterns. I created
-      logic for how the patterns were displayed and connected it to the design
-      system's colors. "
+    text: "The developer needed guidance on a way to implement patterns. "
     images:
       - image: /images/projects/Before_FillPattern_Dev.png
         sound: false
@@ -96,7 +94,8 @@ sections:
       between the two values. This produced a set of high-contrast color and
       fill pattern pairs. This project created positive business value by
       incorporating accessibility and consistency into Workday's charting
-      library. It is the ethically right thing to do.
+      library. I created logic for how the patterns were displayed and connected
+      it to the design system's colors. 
 
     images:
       - image: /images/projects/ShippedPattern-1.png
