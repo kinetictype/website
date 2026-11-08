@@ -66,12 +66,12 @@ sections:
         caption: Discovering how to guide a user through the data in a seemless way was
           a first step.
         size: half-text
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+  - heading: Balancing Data Literacy with Clarity
+    text: The team, although based in the Bay Area, was mainly spread out and we
+      held meetings remotely. I created critiques using Miro, a whiteboarding
+      confernce tool, to share my progress and gain feedback from the team.
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/03_first-draft-ux-factors.png
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         caption: Describe the challenge this image shows and how you got through it.
