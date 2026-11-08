@@ -49,14 +49,15 @@ sections:
           platform. "
         size: half-text
   - heading: Define Logic to Display the Patterns
-    text: In a month, the goal was to create a logic for how the patterns were
-      displayed and draw a connection to the design system's colors. The
-      developer needed guidance on a way to implement patterns.
+    text: "The developer needed guidance on a way to implement patterns. I created
+      logic for how the patterns were displayed and connected it to the design
+      system's colors. "
     images:
       - image: /images/projects/Before_FillPattern_Dev.png
         sound: false
         alt: Before image of Workday chart Patterns that lacked logic.
-        caption: The developer needed guidance on a way to implement patterns.
+        caption: The developer made an attempt to design patterns and I provided
+          guidance on a way to implement patterns.
         size: text-half
   - heading: Exploring Spacial Density
     text: >+
