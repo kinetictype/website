@@ -91,8 +91,9 @@ sections:
         sound: false
         alt: Scrollable prototype of the competitive benchmarking report for Verizon,
           shown in a browser window
+        caption: "Placeholder: describe the design shown here and the decisions behind
+          it."
         size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
       - image: /images/projects/project-13/usertesting-browser-prototype-heatmap.svg
         sound: false
         alt: Scrollable prototype of the report with the score breakdown shown as heat
