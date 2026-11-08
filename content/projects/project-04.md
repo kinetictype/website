@@ -43,7 +43,7 @@ sections:
       learning how they worked with Research and the capabilities of the CMS
       Platform behind the Research Portal.
     images:
-      - video: /images/projects/StreamingVideo-from-svg-1.mp4
+      - video: /images/projects/Screen_Recording_2026-11-08.mp4
         sound: false
         alt: Streaming Video Options Overwhelm Customers
         caption: describe what this image shows and why it matters to the problem.
