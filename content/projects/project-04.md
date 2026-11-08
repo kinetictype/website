@@ -46,7 +46,8 @@ sections:
       - video: /images/projects/Screen_Recording_2026-11-08.mp4
         sound: false
         alt: Streaming Video Options Overwhelm Customers
-        caption: describe what this image shows and why it matters to the problem.
+        caption: The interactivity in Streaming Video Options was a great example of the
+          capabilities of the media.
         size: half-text
   - heading: Surfacing and Underdeveloped Craft
     text: Interactive storytelling with custom-made SVG graphics surfaced an
