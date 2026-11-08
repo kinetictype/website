@@ -58,11 +58,10 @@ sections:
         caption: Comparison of different allocation of funds in different periods of
           time.
         size: text-half
-  - heading: Sketching first
-    text: "As I consulted with the firm's Managing Directors, I would sketch and
-      collaborate to learn more about the subject we were discussing. Michael
-      Hinds reported on a story about \"Cloud\" technology. We passed ideas
-      about the image while I sketched, and we came to a shared vision.   "
+  - heading: Ideating with Managing Directors
+    text: "As I consulted with the firm's Managing Directors, I would sketch as we
+      collaborated and discussed the subject and visual possibilities. We
+      partnered as we exchanged ideas arrived at a shared vision.   "
     images:
       - image: /images/projects/hybrid_Sketch.png
         sound: false
