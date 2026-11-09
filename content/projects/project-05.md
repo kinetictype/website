@@ -134,12 +134,15 @@ sections:
           24 and 60 with interests in travel, the arts, and entertainment.
 
   - heading: Bridging support and product design
-    text: After identifying the key pain points in the current experience, I rapidly
-      sketched new ways to access articles, identify a tracker, search, and
-      reach the community. Because the support platform had no design presence
-      of its own, I took the sketches to other teams for input. Those reviews
-      helped bridge gaps between teams and improve relationships, and the
-      cross-team meetings continued beyond the scope of this effort.
+    text: I found order in a large number of help articles and eventually regrouped
+      about 200 articles from 17 categories into 4. To make sense of the data, I
+      took over an underused conference room and brought all the pieces together
+      into a cohesive whole. After identifying the key pain points in the
+      current experience, I rapidly sketched new ways to access articles,
+      identify a tracker, search, and reach the community. I joined forces with
+      the Product Team for input. The critique sessions bridged the gaps between
+      teams and improved relationships, and the cross-team meetings continued
+      beyond the scope of this effort.
     images:
       - image: /images/projects/project-05-fitbit/05_sketch-review-wall.jpg
         sound: false
