@@ -50,7 +50,7 @@ sections:
       personas we defined, I began building a broader workflow to design the
       platform.
     images:
-      - image: /images/projects/Artboard 1@2x-3.png
+      - image: /images/projects/Artboard 1@2x-5.png
         sound: false
         alt: Storyboard
         caption: Building the personas and storyboarding were building blocks to
