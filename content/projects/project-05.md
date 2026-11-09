@@ -85,16 +85,11 @@ sections:
         size: text-half
       - image: /images/projects/project-05-fitbit/03_heatmaps.jpg
         sound: false
-        alt: Heatmaps of the existing help.fitbit.com landing page on desktop and mobile
+        alt: Heatmaps
         caption: Heatmaps were a signal of where to place attention for the redesign.
         size: half-text
-        text: >+
-          **Heatmaps revealed customer activity**
-
-
-          Heatmaps from existing research showed the three things customers came
-          to do: contact support, learn how to use their tracker, and search.
-
+        text: Heatmaps revealed users wanted to contact support, learn how to use their
+          tracker, and search.
   - heading: Finding order in the research
     text: "On the existing platform, customers who couldn't find an answer had to
       complete a multi-step questionnaire before they could call for help. My
