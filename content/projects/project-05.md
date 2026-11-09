@@ -59,9 +59,10 @@ sections:
     images:
       - image: /images/projects/project-05-fitbit/01_service-ecosystem.png
         sound: false
-        alt: Map of the Fitbit self-service ecosystem showing how customers reach help,
-          the community forums, product care, how-to videos, and contact support
-        caption: A service blueprint to align three teams.
+        alt: "Map of the Fitbit self-service ecosystem "
+        caption: A service blueprint to align three teams showing how customers reach
+          help, the community forums, product care, how-to videos, and contact
+          support
         size: half-text
         text: >+
           **A service blueprint to align three teams**
