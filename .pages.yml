@@ -290,6 +290,8 @@ content:
       - { name: location, label: Location, type: string }
       - { name: portrait, label: Portrait (any shape, shown 320px wide), type: image, options: { media: images, path: content/images } }
       - { name: portrait_alt, label: Portrait description, type: string }
+      - { name: portrait_photo, label: "Portrait photo (cut out, transparent background): printed as halftone dots that reveal the photo under the pointer. Leave empty to show the portrait above", type: image, options: { media: images, path: content/images } }
+      - { name: portrait_photo_alt, label: Portrait photo description, type: string }
       - { name: og_image, label: Link-preview image (1200 × 630), type: image, options: { media: images, path: content/images } }
       - { name: favicon, label: Favicon, type: image, options: { media: images, path: content/images } }
       - { name: background, label: Background color, type: string }

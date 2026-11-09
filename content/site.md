@@ -25,6 +25,8 @@ location: Berlin, Germany
 # Images live in content/images/ (shown on the site as /images/...)
 portrait: /images/kiera-westphal-portrait.webp
 portrait_alt: Illustrated portrait of Kiera Westphal
+portrait_photo: /images/kiera-westphal-photo.webp
+portrait_photo_alt: Photo of Kiera Westphal, smiling, in tortoiseshell glasses and a white T-shirt
 og_image: /images/og-image.png
 favicon: /images/favicon.png
 

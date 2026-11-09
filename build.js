@@ -429,6 +429,13 @@ function yearSpan(list) {
    any other image type falls back to a normal <img>. */
 function portraitMarkup() {
   const alt = escapeHtml(SITE.portrait_alt || SITE.name);
+  // With a photo set (Pages CMS: "Portrait photo"), the photo is printed as halftone dots that swell into the real photo
+  // under the pointer (theme/halftone-reveal.js). The plain cut-out photo shows if the browser can't run the effect.
+  if (SITE.portrait_photo && !EDIT) {
+    const photo = imageUrl(SITE.portrait_photo);
+    const photoAlt = escapeHtml(SITE.portrait_photo_alt || SITE.portrait_alt || SITE.name);
+    return `<div class="portrait halftone-reveal" data-src="${photo}" role="img" aria-label="${photoAlt}"><img class="halftone-fallback" src="${photo}" alt=""><canvas class="halftone-reveal-canvas" aria-hidden="true"></canvas></div>`;
+  }
   const file = path.join(CONTENT, String(SITE.portrait || "").replace(/^\//, ""));
   if (EDIT) {
     return `<img class="portrait"${edImage(SITE, "portrait", "portrait_alt", "@file[/content/site.md].")} src="${imageUrl(SITE.portrait)}" alt="${alt}" width="320" height="238">`;
@@ -455,6 +462,9 @@ copyDir(path.join(CONTENT, "images"), path.join(OUT, "images"));
 copyDir(path.join(CONTENT, "files"), path.join(OUT, "files")); // downloads such as the CV
 copyDir(path.join(THEME, "fonts"), path.join(OUT, "fonts"));
 // cubes (a grid of cubes behind every page turns toward the pointer); the fingerprint makes browsers load a changed file right away
+const halftoneJs = read(path.join(THEME, "halftone-reveal.js"));
+writeFile("halftone-reveal.js", halftoneJs);
+var HALFTONE_VERSION = require("crypto").createHash("md5").update(halftoneJs).digest("hex").slice(0, 10);
 const cubesJs = read(path.join(THEME, "cubes.js"));
 writeFile("cubes.js", cubesJs);
 JS_VERSION = require("crypto").createHash("md5").update(cubesJs).digest("hex").slice(0, 10);
@@ -480,10 +490,11 @@ writeFile(
     bodyClass: "home",
     body: `
 <section class="intro">
-  <span class="portrait-wrap">
+  <span class="portrait-wrap${SITE.portrait_photo ? " has-photo" : ""}">
     ${portraitMarkup()}
     ${home.data.bubble ? `<span class="bubble" aria-hidden="true"><span class="bubble-text">${inline(home.data.bubble)}</span></span>` : ""}
   </span>
+  ${SITE.portrait_photo ? `<script src="/halftone-reveal.js?v=${HALFTONE_VERSION}" defer></script>` : ""}
   <script>
   // touch screens have no hover: tapping the portrait shows or hides the greeting; tapping elsewhere hides it
   (() => {
