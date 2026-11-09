@@ -93,10 +93,10 @@ sections:
         size: text-half
   - heading: Refined Wireframes Imagining the Product
     text: "As development built the framework, I began building capabilities based
-      on the stories I gathered with the product team. Discovery Boards was a
-      static dashboard tool that we built on top of for this product. I moved
-      tabs to the top and brought three parts together: a carousel of Quality of
-      Hire KPIs, a story you can drill into for more detail, and a drawer of
+      on the stories I gathered from the product team. Building on Discovery
+      Boards, I turned a static dashboard tool into a dynamic page. I moved tabs
+      to the top and brought three parts together: a carousel of Quality of Hire
+      KPIs, a story you can drill into for more detail, and a drawer of
       additional stories. For example, you can see where hiring struggles are
       and where our best performers come from, and preview it with a vertical
       dot scroll."
