@@ -64,23 +64,20 @@ sections:
           help, the community forums, product care, how-to videos, and contact
           support
         size: half-text
-        text: >+
-          **A service blueprint to align three teams**
-
-
-          Fitbit had a mature product design team, but the customer service
-          platform was an entirely separate entity, in its own building and
-          without a design presence. I consulted individually with three
-          stakeholders from the User Authentication, Community Forum, and Help
-          teams, each with a very different view of what to prioritize.
-
-
-          To align them, I mapped the user journey across the ways customers
-          reach help through fitbit.com. The map unified our efforts and
-          clarified requirements for the first phase of the design.
-
   - heading: Let the metrics show what customers need
     text: >+
+      Fitbit had a mature product design team, but the customer service platform
+      was an entirely separate entity, in its own building and without a design
+      presence. I consulted individually with three stakeholders from the User
+      Authentication, Community Forum, and Help teams, each with a very
+      different view of what to prioritize.
+
+
+      To align them, I mapped the user journey of how customers reached help.
+      The map unified our efforts and clarified requirements for the first
+      design phase.
+
+
       In the existing platform, customers who couldn't find an answer had to
       fill out a multi-step questionnaire before they could call for help. My
       goal was to get them to the right article long before that point.
