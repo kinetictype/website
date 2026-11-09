@@ -85,8 +85,9 @@ sections:
     images:
       - image: /images/projects/people-analytics-browser-prototype.svg
         sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        caption: "Prototype the early wireframes on the Workday blue... "
+        alt: "Prototype of early wireframes "
+        caption: A prototype the early wireframes to try to make sense of the
+          Application.
         size: text-half
   - heading: Refined Wireframes Imagining the Product
     text: As development built the framework, I began building capabilities based on
