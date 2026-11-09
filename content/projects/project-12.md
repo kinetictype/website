@@ -37,7 +37,7 @@ sections:
       personas and their mental model from the story and defined them to
       understand who we were building this platform for.
     images:
-      - image: /images/projects/Persona_PA_WD.webp
+      - image: /images/projects/Artboard 1 copy@2x-1.png
         sound: false
         alt: "Placeholder: image that sets the context"
         caption: Defining the personas was the first step in realizing the vision of the
