@@ -93,7 +93,7 @@ sections:
     text: As development built the framework, I began building capabilities based on
       the stories I gathered with the product team.
     images:
-      - image: /images/projects/discoveryBoard_Framework_mock-1.png
+      - image: /images/projects/people-analytics-hiring-drawer-prototype.svg
         sound: false
         alt: Prototype of Refined Wireframes
         caption: Imagining the product capabilities and visual style.
