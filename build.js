@@ -822,9 +822,11 @@ function caseStudy(p) {
   <button class="lb-next" type="button" aria-label="Next image">${ARROW}</button>
 </div>
 <script>
-  // click any image or video in the case study to see it large; arrow keys move between them, Esc closes
+  // click any image or video in the case study to see it large; arrow keys move between them, Esc closes.
+  // Clickable prototypes keep their own clicks, so they get an "Open larger" button in the corner instead, and stay clickable in the lightbox.
   (() => {
-    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg, .case .media video, .case .media-split img, .case .media-split svg, .case .media-split video")];
+    const imgs = [...document.querySelectorAll(".case .media img, .case .media svg, .case .media video, .case .media object.svg-live, .case .media-split img, .case .media-split svg, .case .media-split video, .case .media-split object.svg-live")]
+      .filter((el) => !el.parentElement.closest("object"));
     const lb = document.querySelector(".lightbox"); if (!lb || !imgs.length) return;
     const stage = lb.querySelector(".lb-stage"), cap = lb.querySelector("figcaption");
     let at = 0, opener = null;
@@ -832,7 +834,15 @@ function caseStudy(p) {
     const show = (n) => {
       at = (n + imgs.length) % imgs.length; const im = imgs[at];
       stage.innerHTML = "";
-      if (im.tagName.toLowerCase() === "video") {
+      if (im.tagName.toLowerCase() === "object") {
+        // a fresh copy of the prototype, as large as the window allows, still clickable
+        const big = document.createElement("object");
+        big.type = "image/svg+xml"; big.data = im.data; big.className = im.className;
+        const ar = parseFloat(im.style.aspectRatio) || 1.4;
+        big.style.aspectRatio = String(ar); big.style.width = "min(100%, calc(82vh * " + ar + "))";
+        big.setAttribute("aria-label", im.getAttribute("aria-label") || "Prototype");
+        stage.appendChild(big);
+      } else if (im.tagName.toLowerCase() === "video") {
         // the enlarged video keeps playing from the same moment, muted and looping like the one on the page
         const big = document.createElement("video");
         Object.assign(big, { muted: true, loop: true, autoplay: true, playsInline: true });
@@ -850,6 +860,15 @@ function caseStudy(p) {
     const open = (n) => { opener = document.activeElement; show(n); lb.hidden = false; document.body.style.overflow = "hidden"; lb.querySelector(".lb-close").focus(); };
     const close = () => { lb.hidden = true; document.body.style.overflow = ""; opener && opener.focus(); };
     imgs.forEach((im, n) => {
+      if (im.tagName.toLowerCase() === "object") {
+        const fig = im.closest("figure"); if (!fig) return;
+        const b = document.createElement("button");
+        b.type = "button"; b.className = "proto-enlarge"; b.setAttribute("aria-label", "Open the prototype larger"); b.title = "Open larger";
+        b.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        b.addEventListener("click", () => open(n));
+        fig.classList.add("has-proto"); fig.appendChild(b);
+        return;
+      }
       im.setAttribute("tabindex", "0"); im.setAttribute("role", "button"); im.setAttribute("aria-label", label(im) + " — open larger");
       im.removeAttribute("aria-hidden");
       im.addEventListener("click", () => open(n));

@@ -406,6 +406,11 @@ a:hover .icon-arrow.flip { transform: scaleX(-1) translateX(3px); }
 .lightbox img, .lb-stage > svg, .lb-stage > video { max-width: 100%; max-height: 82vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; }
 .lb-stage > video { display: block; background: #fff; }
 .lb-stage > svg { width: min(100%, 1200px); height: auto; }
+.lb-stage > object.svg-live { display: block; height: auto; max-width: 100%; margin: 0 auto; border: 0; background: none; }
+/* clickable prototypes: an "Open larger" button in the top-right corner (clicks on the prototype itself stay with the prototype) */
+figure.has-proto { position: relative; }
+.proto-enlarge { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--rule); border-radius: 50%; background: var(--card); color: var(--ink); cursor: zoom-in; box-shadow: 0 1px 4px rgba(28, 43, 54, .15); transition: transform .15s, color .15s, border-color .15s; }
+.proto-enlarge:hover, .proto-enlarge:focus-visible { color: var(--accent); border-color: var(--accent); transform: scale(1.08); }
 .lightbox figcaption { color: #F2F5F7; font-size: 14px; margin-top: 10px; }
 .lightbox button { background: none; border: 0; color: #F2F5F7; font-size: 28px; cursor: pointer; padding: 12px; border-radius: 6px; }
 .lightbox button:hover { background: rgba(255, 255, 255, .1); }
