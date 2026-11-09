@@ -121,8 +121,10 @@ sections:
         alt: Shipped product
         size: full
   - heading: Working with an AI Platform
-    text: This was a complex project with many moving parts. The product shipped in
-      2019 based on this framework, and it became a core offering and the
-      foundation for new products and services for Workday Analytics.
+    text: This complex project had many moving parts. It was exciting to build a
+      product from a concept through to execution. We also welcomed a Prague
+      startup and built with their team. The product shipped in 2019 based on
+      this framework, and it became a core offering and the foundation for new
+      products and services for Workday Analytics.
 ---
 This ambitious project began by translating a business analyst's vision into personas, a storyboard, and ultimately an interactive dashboard platform using AI to surface people analytics from Workday data and non-Workday data. 
