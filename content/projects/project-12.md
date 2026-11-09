@@ -95,8 +95,14 @@ sections:
     images:
       - image: /images/projects/people-analytics-hiring-drawer-prototype.svg
         sound: false
-        alt: Prototype of Refined Wireframes
-        caption: Imagining the product capabilities and visual style.
+        alt: Clickable prototype of the refined People Analytics Hiring page, with the
+          Additional stories drawer
+        caption: "The refined Hiring page moves the tabs from the bottom of Discovery
+          Boards to the top, in line with other Workday tools, and brings together
+          three parts: a carousel of Quality of Hire KPIs, a story you can drill
+          into for more detail, and a drawer of additional stories, such as where
+          we struggle to hire and where our best performers come from, that you
+          can preview with a vertical dot scroll."
         size: half-text
   - heading: Results & outcomes
     text: >+
