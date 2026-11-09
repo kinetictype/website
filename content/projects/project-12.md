@@ -90,19 +90,21 @@ sections:
           Application.
         size: text-half
   - heading: Refined Wireframes Imagining the Product
-    text: As development built the framework, I began building capabilities based on
-      the stories I gathered with the product team.
+    text: "As development built the framework, I began building capabilities based
+      on the stories I gathered with the product team. The refined Hiring page
+      moves the tabs from the bottom of Discovery Boards to the top, in line
+      with other Workday tools, and brings together three parts: a carousel of
+      Quality of Hire KPIs, a story you can drill into for more detail, and a
+      drawer of additional stories, such as where we struggle to hire and where
+      our best performers come from, that you can preview with a vertical dot
+      scroll."
     images:
       - image: /images/projects/people-analytics-hiring-drawer-prototype.svg
         sound: false
         alt: Clickable prototype of the refined People Analytics Hiring page, with the
           Additional stories drawer
-        caption: "The refined Hiring page moves the tabs from the bottom of Discovery
-          Boards to the top, in line with other Workday tools, and brings together
-          three parts: a carousel of Quality of Hire KPIs, a story you can drill
-          into for more detail, and a drawer of additional stories, such as where
-          we struggle to hire and where our best performers come from, that you
-          can preview with a vertical dot scroll."
+        caption: The refined Hiring page moves the tabs from the bottom of Discovery
+          Boards to the top.
         size: half-text
   - heading: Results & outcomes
     text: >+
