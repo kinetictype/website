@@ -70,7 +70,7 @@ function edImage(obj, srcKey, altKey, prefix = "") {
 }
 
 const withBase = (html) =>
-  BASE ? html.replace(/(href|src|data)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
+  BASE ? html.replace(/(href|src|data|poster|data-[a-z-]+)="\/(?!\/)/g, `$1="${BASE}/`).replace(/url\("\/(?!\/)/g, `url("${BASE}/`) : html;
 
 // Placeholder and other small SVG images are written straight into the page instead of <img>,
 // so they always show (no separate file to load). Large SVGs (the portrait) stay as <img>.
