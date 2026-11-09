@@ -63,7 +63,7 @@ sections:
     images:
       - image: /images/projects/WorkflowSketch.png
         sound: false
-        alt: "Placeholder: framework or design principles"
+        alt: Map of the flow with Personas
         caption: Mapping the flow with Personas to tell the story.
         size: full
   - heading: Merging with an Acquired Startup
