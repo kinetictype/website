@@ -39,7 +39,7 @@ sections:
       defined them. This helped us understand who we were building this platform
       for.
     images:
-      - image: /images/projects/Artboard 1 copy@2x-3.png
+      - image: /images/projects/Artboard 2@2x.png
         sound: false
         alt: Personas
         caption: Defining the personas was the first step in realizing the vision of the
