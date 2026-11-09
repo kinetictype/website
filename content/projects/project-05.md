@@ -83,14 +83,6 @@ sections:
         caption: Damaged devices led the issues customers chose when they emailed
           support.
         size: text-half
-        text: >+
-          **Topics drawn from the data**
-
-
-          By analyzing the data, I identified the core topics customers asked
-          about and surfaced them as tags on the landing page. Tapping a tag
-          quickly narrows the search to the article a customer is looking for.
-
       - image: /images/projects/project-05-fitbit/03_heatmaps.jpg
         sound: false
         alt: Heatmaps of the existing help.fitbit.com landing page on desktop and mobile
