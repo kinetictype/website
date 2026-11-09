@@ -104,11 +104,13 @@ sections:
           to do: contact support, learn how to use their tracker, and search.
 
   - heading: Finding order in the research
-    text: The project meant documenting research, examining the existing information
-      architecture of help.fitbit.com, and finding order in a large number of
-      help articles, eventually regrouping about 200 articles from 17 categories
-      into 4. To make sense of the data, I took over an underused conference
-      room and brought all the pieces together into a cohesive whole.
+    text: "On the existing platform, customers who couldn't find an answer had to
+      complete a multi-step questionnaire before they could call for help. My
+      goal was to get them to the right article before that point. How might we
+      help customers narrow their search quickly, without contacting support?
+      Fitbit had a large amount of quantitative data on how people used the
+      site, so the research started there: support email data, site analytics,
+      and heatmaps. "
     images:
       - image: /images/projects/project-05-fitbit/04_research-room.jpg
         sound: false
