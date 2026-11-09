@@ -28,6 +28,7 @@ cover: /images/logos/workdayColor.svg
 cover_alt: Workday
 drawer_image: /images/projects/WD_PA_MainImg.png
 drawer_image_alt: Workday Analytics Platform
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Decipher the Vision
@@ -82,7 +83,7 @@ sections:
 
       &nbsp;
     images:
-      - image: /images/placeholders/placeholder-detail-2.svg
+      - image: /images/projects/people-analytics-browser-prototype.svg
         sound: false
         alt: "Placeholder: a challenge and how you solved it"
         caption: "Prototype the early wireframes on the Workday blue... "
