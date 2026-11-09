@@ -64,8 +64,8 @@ sections:
       - image: /images/projects/WorkflowSketch.png
         sound: false
         alt: "Placeholder: framework or design principles"
+        caption: Mapping the flow with Personas to tell the story.
         size: full
-        text: "Placeholder: describe the framework, principle or diagram shown here."
   - heading: Merging with an Acquired Startup
     text: >-
       Workday acquired a Prague-based company for its innovative AI technology
