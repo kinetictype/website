@@ -140,4 +140,4 @@ sections:
       Administrators needed from this tool. Although I advocated for research,
       the product team was bullish on developing the tool for the first release.
 ---
-Alliance Data wanted to redesign The Moment Engine product. Previously known as The Bonus Engine, it was an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
+Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
