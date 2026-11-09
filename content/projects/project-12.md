@@ -71,8 +71,8 @@ sections:
       Workday acquired a Prague-based company for its innovative AI technology
       to surface data within the application. While the company was integrating,
       I designed a platform and features as we built a new product framework on
-      top of the existing Workday Discovery Boards Platform. I began discussing
-      capabilities with that team and sketching preliminary wireframes to
+      top of the existing Workday Discovery Boards Platform. I discussed
+      capabilities with the product owner and sketched preliminary wireframes to
       document how the application would work.
 
 
