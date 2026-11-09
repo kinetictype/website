@@ -116,7 +116,7 @@ sections:
       feature that showed how a visualization would move around the page in the
       new React Framework.
     images:
-      - image: /images/projects/WD_PA_drag-to-swap.gif
+      - image: /images/projects/WD_PA_drag-to-swap (3).gif
         sound: false
         alt: Shipped product
         size: full
