@@ -101,8 +101,7 @@ sections:
     images:
       - image: /images/projects/project-05-fitbit/04_research-room.jpg
         sound: false
-        alt: A project room wall with the help article inventory, categories, analytics,
-          and personas pinned up beside sticky notes
+        alt: War room
         caption: The project room put the article inventory, analytics, and personas on
           one wall.
         size: full
