@@ -39,9 +39,9 @@ sections:
       defined them. This helped us understand who we were building this platform
       for.
     images:
-      - image: /images/projects/Artboard 1 copy@2x-1.png
+      - image: /images/projects/Artboard 1 copy@2x-3.png
         sound: false
-        alt: "Placeholder: image that sets the context"
+        alt: Personas
         caption: Defining the personas was the first step in realizing the vision of the
           Business Analyst.
         size: half-text
