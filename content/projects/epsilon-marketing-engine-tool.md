@@ -75,7 +75,7 @@ sections:
       product. I mapped the marketer and administrator process flows to the
       system diagram. "
     images:
-      - image: /images/projects/epsilon/02_ui-requirements.png
+      - image: /images/projects/02_ui-requirementsNEW-1.png
         sound: false
         alt: Moment Engine UI requirements, listing the marketer's moment creation steps
           and the administrator's setup steps
