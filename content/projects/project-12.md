@@ -106,20 +106,12 @@ sections:
         caption: The refined Hiring page moves the tabs from the bottom of Discovery
           Boards to the top.
         size: half-text
-  - heading: Results & outcomes
-    text: >+
-      
-
-      What data or metrics resulted from the design? If none, what positives
-      came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+  - heading: Outcomes
+    text: This project moved quickly while integrating with a newly acquired
+      company. The new company's developers integrated their codebase while we
+      rebuilt the Discovery Boards Dashboard in ReactJS. I designed a feature
+      that showed how a visualization would move around the page with the new
+      React Framework.
     images:
       - image: /images/projects/WD_PA_MainImg.webp
         sound: false
