@@ -50,7 +50,7 @@ sections:
     images:
       - image: /images/projects/QualityHireStoryboard.svg
         sound: false
-        alt: "Placeholder: research or workshop artifact"
+        alt: Storyboard
         caption: Building the personas and storyboarding were building blocks to
           building the framework for this product.
         size: text-half
