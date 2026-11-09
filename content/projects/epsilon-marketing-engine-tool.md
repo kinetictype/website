@@ -107,14 +107,14 @@ sections:
           to show its dates and rules
         caption: Expanding a moment in the list shows its dates and the rules a customer
           has to meet.
-        size: full
+        size: text-half
       - image: /images/projects/epsilon/moment-engine-learn-prototype.svg
         sound: false
         alt: Scrollable prototype of the administrator screen for turning on learning in
           the Moment Engine
         caption: Administrators set a time frame for the Moment Engine to learn from
           events, with an alert for when learning ends.
-        size: full
+        size: half-text
   - heading: Order from a system model
     text: >+
       Documenting the system model first, and then designing wireframes,
