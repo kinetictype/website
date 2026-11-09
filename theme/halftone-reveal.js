@@ -1,6 +1,6 @@
 /* HalftoneReveal (React Bits), ported to plain JavaScript.
-   Homepage portrait: the cut-out photo is printed as navy halftone dots on the page colour;
-   wherever the pointer goes, the dots swell into the real photo. Used on every element with class "halftone-reveal" and a data-src. */
+   Homepage portrait: the illustration shows at rest; wherever the pointer goes, it opens up
+   (with a halftone-dot edge) to reveal the photo lined up behind it. Used on every element with class "halftone-reveal" and a data-src. */
 (function () {
   if (!window.WebGL2RenderingContext) return;
 const VERTEX = `#version 300 es
@@ -40,6 +40,7 @@ void main() {
 
 const VIEW = `#version 300 es
 precision highp float;
+uniform sampler2D uArt;
 uniform sampler2D uImage;
 uniform sampler2D uMask;
 uniform vec2 uResolution;
@@ -280,9 +281,11 @@ void main() {
   float w = max(fwidth(d), 0.0001) * 0.75;
   float k = smoothstep(r + w, r - w, d) * clamp(r / (w * 2.0), 0.0, 1.0);
   vec4 sharp = photo(p, 0.0, 0.0);
-  // the paper is left see-through (the page shows through): only the ink and the photo are drawn
-  float inkCover = clamp(length(print - uPaper) / max(length(uInk - uPaper), 0.001), 0.0, 1.0);
-  vec4 printed = vec4(print - (1.0 - inkCover) * uPaper, inkCover);
+  // at rest: the illustration (drawn as on the page: its white paper takes on the page colour); the photo shows through the reveal
+  vec2 artUv = (p - uFrame.xy) / uFrame.zw;
+  vec2 onArt = step(0.0, artUv) * step(artUv, vec2(1.0));
+  vec4 art = texture(uArt, clamp(artUv, 0.0, 1.0)) * (onArt.x * onArt.y);
+  vec4 printed = vec4(art.rgb * uPaper * art.a, art.a);
   vec4 real = vec4(sharp.rgb * sharp.a, sharp.a);
   outColor = mix(printed, real, k);
 }`;
@@ -390,7 +393,7 @@ const measureEdge = (context, image) => {
       reverse: false,
       wander: false,
       clickBurst: true,
-      intro: true
+      intro: false
     };
     const canvas = container.querySelector("canvas");
     const gl = canvas?.getContext('webgl2', {
@@ -418,6 +421,7 @@ const measureEdge = (context, image) => {
       'uFade'
     ]);
     const viewUniforms = locate(gl, viewProgram, [
+      'uArt',
       'uImage',
       'uMask',
       'uResolution',
@@ -613,6 +617,9 @@ const measureEdge = (context, image) => {
       gl.uniform1f(viewUniforms.uKey, state.key);
       gl.uniform1f(viewUniforms.uReverse, s.reverse ? 1 : 0);
       gl.uniform1f(viewUniforms.uIntro, 1 - (1 - intro) * (1 - intro));
+      gl.activeTexture(gl.TEXTURE2);
+      gl.bindTexture(gl.TEXTURE_2D, artTexture);
+      gl.uniform1i(viewUniforms.uArt, 2);
       gl.uniform4fv(viewUniforms.uBursts, burstData);
       gl.uniform1f(viewUniforms.uBurstWidth, Math.max(60, s.revealRadius * 0.9));
       gl.bindVertexArray(vao);
@@ -681,12 +688,34 @@ const measureEdge = (context, image) => {
       if (!raf && alive && visible && !document.hidden) raf = requestAnimationFrame(frame);
     };
 
+    // the illustration shown at rest; it is the same size as the photo, which is lined up with it
+    const artTexture = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, artTexture);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array(4));
+    let artReady = false, photoReady = false;
+    const ready = () => { if (artReady && photoReady) { container.classList.add("ht-on"); wake(); } };
+    const art = new Image();
+    art.decoding = "async";
+    art.onload = () => {
+      if (!alive) return;
+      gl.bindTexture(gl.TEXTURE_2D, artTexture);
+      gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, art);
+      gl.generateMipmap(gl.TEXTURE_2D);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      artReady = true;
+      ready();
+    };
+    art.src = container.dataset.art;
+
     const image = new Image();
     image.crossOrigin = 'anonymous';
     image.decoding = 'async';
     image.onload = () => {
       if (!alive) return;
-      container.classList.add("ht-on");
       gl.bindTexture(gl.TEXTURE_2D, imageTexture);
       gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
@@ -704,7 +733,8 @@ const measureEdge = (context, image) => {
       }
       state.image = image;
       state.introStart = performance.now();
-      wake();
+      photoReady = true;
+      ready();
     };
     image.src = container.dataset.src;
 

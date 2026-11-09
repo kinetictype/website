@@ -429,12 +429,12 @@ function yearSpan(list) {
    any other image type falls back to a normal <img>. */
 function portraitMarkup() {
   const alt = escapeHtml(SITE.portrait_alt || SITE.name);
-  // With a photo set (Pages CMS: "Portrait photo"), the photo is printed as halftone dots that swell into the real photo
-  // under the pointer (theme/halftone-reveal.js). The plain cut-out photo shows if the browser can't run the effect.
+  // With a photo set (Pages CMS: "Portrait photo"), the illustration opens up under the pointer to reveal the photo
+  // lined up behind it (theme/halftone-reveal.js). The plain illustration shows if the browser can't run the effect.
   if (SITE.portrait_photo && !EDIT) {
     const photo = imageUrl(SITE.portrait_photo);
     const photoAlt = escapeHtml(SITE.portrait_photo_alt || SITE.portrait_alt || SITE.name);
-    return `<div class="portrait halftone-reveal" data-src="${photo}" role="img" aria-label="${photoAlt}"><img class="halftone-fallback" src="${photo}" alt=""><canvas class="halftone-reveal-canvas" aria-hidden="true"></canvas></div>`;
+    return `<div class="portrait halftone-reveal" data-src="${photo}" data-art="${imageUrl(SITE.portrait)}" role="img" aria-label="${alt}"><img class="halftone-fallback" src="${imageUrl(SITE.portrait)}" alt=""><canvas class="halftone-reveal-canvas" aria-hidden="true"></canvas></div>`;
   }
   const file = path.join(CONTENT, String(SITE.portrait || "").replace(/^\//, ""));
   if (EDIT) {
