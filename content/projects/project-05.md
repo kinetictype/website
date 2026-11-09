@@ -52,9 +52,9 @@ sections:
       internal initiative to redefine the self-service experience. The support
       site drew about 1.5 million visitors a month, most of them searching for
       an answer to a specific issue. Most visitors who filed a support case had
-      never tried self-service. The hypothesis: if people could find help on the
-      website, fewer of them would need to call Fitbit. To get there, we had to
-      rethink the navigation of the entire site.
+      never tried self-service. Our hypothesis was that if people could find
+      help on the website, fewer of them would need to call Fitbit. We had to
+      rethink the entire site's navigation.
 
     images:
       - image: /images/projects/project-05-fitbit/01_service-ecosystem.png
