@@ -65,10 +65,9 @@ sections:
           support
         size: half-text
   - heading: Let the metrics show what customers need
-    text: >+
-      Fitbit had a mature product design team, but the customer service platform
-      was an entirely separate entity, in its own building and without a design
-      presence. I consulted individually with three stakeholders from the User
+    text: >-
+      Fitbit had a mature product design team and the customer service lacked a
+      a design presence. I consulted with three stakeholders from the User
       Authentication, Community Forum, and Help teams, each with a very
       different view of what to prioritize.
 
@@ -76,19 +75,6 @@ sections:
       To align them, I mapped the user journey of how customers reached help.
       The map unified our efforts and clarified requirements for the first
       design phase.
-
-
-      In the existing platform, customers who couldn't find an answer had to
-      fill out a multi-step questionnaire before they could call for help. My
-      goal was to get them to the right article long before that point.
-
-
-      - How might we help customers narrow their search quickly, without
-      contacting support?
-
-      - Fitbit had a large amount of data on how people used the site, so the
-      research started there: support email data, site analytics, and heatmaps.
-
     images:
       - image: /images/projects/project-05-fitbit/02_email-issues-chart.png
         sound: false
