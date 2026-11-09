@@ -133,7 +133,7 @@ sections:
         alt: Scrollable prototype of the Moment Engine dashboard in a browser window
         caption: The dashboard shows the engine's status, moments at a glance, and a
           searchable list of moments.
-        size: full
+        size: half-text
   - heading: Learnings
     text: My effort in this project focused on gathering the requirements to bring
       this product to life. I was eager to learn what the Marketers and
