@@ -32,12 +32,12 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: Decipher the Vision
-    text: I wore both product manager and designer hats while designing the People
-      Analytics Application for Workday. Initially, I worked directly with a
-      product strategist to decipher his vision. As we talked, I extracted
-      personas, their characteristics, and mental models from the story and
-      defined them. This helped us understand who we were building this platform
-      for.
+    text: I wore both product manager and designer hats while discovering the
+      benefits of People Analytics for Workday. Initially, I worked directly
+      with a product strategist to decipher his vision. As we talked, I
+      extracted personas, their characteristics, and mental models from the
+      story and defined them. This helped us understand who we were building
+      this platform for.
     images:
       - image: /images/projects/Artboard 2@2x.png
         sound: false
