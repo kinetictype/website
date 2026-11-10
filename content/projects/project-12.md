@@ -94,9 +94,7 @@ sections:
     text: As development built the framework, I turned a static dashboard tool into
       a dynamic page. I moved tabs to the top and created an experience that
       made it easy to drill down into more detailed information, with a drawer
-      of additional stories. For example, you can see where hiring struggles are
-      and where our best performers come from, and preview it with a vertical
-      dot scroll.
+      of additional stories.
     images:
       - image: /images/projects/people-analytics-hiring-drawer-prototype.svg
         sound: false
