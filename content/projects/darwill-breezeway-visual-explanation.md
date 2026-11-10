@@ -23,8 +23,9 @@ hidden: false
 description: An information graphic for a Darwill brochure that explains the
   automated BreezeWay prepress process, developed in six steps.
 cover: /images/logos/darwill.svg
-drawer_image: /images/projects/Darwill_Large-2.png
+drawer_image: /images/projects/04_brochure-spread.png
 drawer_image_alt: The BreezeWay prepress diagram for Darwill
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Prepress, the traditional way
@@ -39,15 +40,14 @@ sections:
       printers prepared files, and marked-up proofs went back and forth by
       messenger or overnight mail.
 
-      - BreezeWay brought those steps online, so approval took minutes or
-      hours.
+      - BreezeWay brought those steps online, so approval took minutes or hours.
 
     images:
       - image: /images/projects/darwill/03_brochure-spread.png
         sound: false
-        alt: Brochure spread comparing prepress the traditional way, with proofs
-          passed between the design team, printer, client, and agency, to prepress
-          the BreezeWay
+        alt: Brochure spread comparing prepress the traditional way, with proofs passed
+          between the design team, printer, client, and agency, to prepress the
+          BreezeWay
         caption: "The finished brochure spread: prepress the traditional way on the
           left, prepress the BreezeWay on the right."
         size: full
@@ -68,13 +68,12 @@ sections:
   - heading: Developing the diagram in six steps
     text: I developed the diagram over six steps. Early versions mapped the flow
       with simple line art. Later versions added 3D rendering, a color for each
-      tool, and callouts that explain what happens at each point in the
-      process.
+      tool, and callouts that explain what happens at each point in the process.
     images:
       - image: /images/projects/darwill/01_breezeway-steps-1-3-5.png
         sound: false
-        alt: Steps 1, 3, and 5 of the BreezeWay diagram, moving from flat line art
-          to 3D rendering with callouts
+        alt: Steps 1, 3, and 5 of the BreezeWay diagram, moving from flat line art to 3D
+          rendering with callouts
         caption: Steps 1, 3, and 5 move from flat line art to 3D spheres, then add
           callouts for each tool.
         size: full
@@ -111,17 +110,17 @@ sections:
       - Lo-res images are automatically replaced with hi-res versions.
 
       - PDFs are uploaded to InSite, where the client, agency, and Darwill
-      review proofs online, and Matchprint Virtual Software shows
-      color-accurate proofs on screen.
+      review proofs online, and Matchprint Virtual Software shows color-accurate
+      proofs on screen.
 
     images:
       - image: /images/projects/darwill/05_process-diagram.png
         sound: false
         alt: Final BreezeWay diagram showing files moving from the asset originator
-          through ImageQuest, the design team, Prepare, and InSite to the client,
-          agency, and Darwill
-        caption: The final diagram, with callouts explaining each step from asset
-          upload to collaborative online proofing.
+          through ImageQuest, the design team, Prepare, and InSite to the
+          client, agency, and Darwill
+        caption: The final diagram, with callouts explaining each step from asset upload
+          to collaborative online proofing.
         size: full
 ---
 I designed a step-by-step visual process for their marketing materials to illustrate how the product works.
