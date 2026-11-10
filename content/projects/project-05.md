@@ -109,15 +109,8 @@ sections:
         alt: Three personas, the Active Traveller, the Competitive Athlete, and the
           Dieter
         size: text-half
-        text: >+
-          **Personas derived from metrics**
-
-
-          From quantitative data on visitors to help.fitbit.com, I designed
-          three scenarios and flows based on personas that matched the
-          characteristics of the data. The primary persona was a woman between
-          24 and 60 with interests in travel, the arts, and entertainment.
-
+        text: "I designed three scenarios and flows based on personas that matched the
+          characteristics of our data. "
   - heading: Bridging support and product design
     text: "To make sense of the data, I took over an underused conference room and
       brought all the pieces together into a cohesive whole. After identifying
