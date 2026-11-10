@@ -27,6 +27,7 @@ hidden: false
 description: Placeholder description of project 02 for search engines and link previews.
 cover: /images/logos/Reset password_mock.png
 drawer_image_alt: Apiture Developer Portal Test Customers
+drawer_whole: false
 top_image_alt: Concept diagram
 prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
@@ -106,4 +107,4 @@ sections:
       Portal migration to the AUI Design System, I worked closely with the
       Design System team to best prepare our efforts.
 ---
-The developer portal at Apiture was a neglected part of the ecosystem. It lets developers experiment with parts of the site before a client commits to working with Apiture. The product manager and I worked closely to review research and explore integrating new features. While designing new features, I created a design system for the Developer Portal and worked with the consumer-facing design system to integrate it. 
+The developer portal at Apiture was part of the ecosystem that received little attention. Developers used it to experiment with parts of the Apiture banking platform before a new client committed to working with Apiture. The product manager and I worked closely to review research and explore integrating new features. While designing new features, I created a design system for the Developer Portal and worked with the consumer-facing design system to integrate it. 
