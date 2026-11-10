@@ -57,9 +57,8 @@ sections:
         size: text-half
   - heading: Prototyping the experience
     text: Building prototypes and having conversations is a great way to learn along
-      the way. Sometimes that might mean redefining the problem. **Apiture's
-      ease of communication made sharing** work more fun and enjoyable. We often
-      reviewed work and moved toward the details that make a product work.
+      the way. Apiture's ease of communication made sharing work more fun. We
+      often reviewed work and moved toward the details that make a product work.
     images:
       - image: /images/projects/Reset password_sure_.png
         sound: false
