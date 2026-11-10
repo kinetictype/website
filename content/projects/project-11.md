@@ -27,6 +27,7 @@ cover: /images/logos/chicago-tribune.svg
 cover_alt: Chicago Tribune logo
 drawer_image: /images/projects/historyMuseum_2500-1.png
 drawer_image_alt: Hand drawn map of Lalapalooza festival map.
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Context
@@ -38,7 +39,7 @@ sections:
       No matter the situation that day, I was thrilled to contribute to the team
       and run with the news.
     images:
-      - image: /images/projects/artInstitute_o-2.png
+      - image: /images/projects/artInstitute_o-1.png
         sound: false
         alt: Newspaper image of the expansion of The Art Institute of Chicago.
         caption: The expansion of The Art Institute of Chicago's page-one story.
