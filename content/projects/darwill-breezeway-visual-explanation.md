@@ -4,11 +4,12 @@ tagline: Explaining Darwill's prepress process in six steps.
 summary: Create a diagram explaining Darwill's automated "Breezeway" prepress
   process for a brochure.
 client: David James Group for Darwill
-role: Visualization Designer
-timeline: "2007"
+role: Information Graphics Designer
+timeline: April 2007
 goals: Clarify the benefits of the Darwill process versus the old way that took
   too much time.
-outcome: Two diagrams for a brochure that visually explained business processes.
+outcome: A six-step process infographic with 3D rendering, and two diagrams for
+  a brochure that visually explained business processes.
 responsibilities: I worked on visual and concept design while the creative
   director provided content to me.
 team: I worked directly with the creative director.
@@ -19,101 +20,108 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
+description: An information graphic for a Darwill brochure that explains the
+  automated BreezeWay prepress process, developed in six steps.
 cover: /images/logos/darwill.svg
 drawer_image: /images/projects/Darwill_Large-2.png
+drawer_image_alt: The BreezeWay prepress diagram for Darwill
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Prepress, the traditional way
     text: >+
-      What was the mission or goal of the project?  
+      Darwill, a commercial printer, had automated its prepress process and
+      called it BreezeWay. For a brochure, the David James Group asked me to
+      create a diagram that explains how BreezeWay works and why it is better
+      than the traditional way.
 
-      Which customer or business problems were you and your team trying to
-      solve?  
 
-      Data or stats that set the context  
+      - The traditional way took days or weeks: designers tracked down images,
+      printers prepared files, and marked-up proofs went back and forth by
+      messenger or overnight mail.
 
-      Assumptions you set out to validate or disprove  
-
-      The hypothesis that guided your design
+      - BreezeWay brought those steps online, so approval took minutes or
+      hours.
 
     images:
-      - image: /images/projects/02_breezeway-step-detail-1.png
+      - image: /images/projects/darwill/03_brochure-spread.png
         sound: false
-        alt: "Placeholder: image that sets the context"
-        caption: describe what this image shows and why it matters to the problem
-        size: half-text
-  - heading: Your goal
-    text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
-    images:
-      - image: /images/projects/01_breezeway-steps-1-1.png
-        sound: false
-        alt: "Placeholder: research or workshop artifact"
-        size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
-        alt: "Placeholder: framework or design principles"
-        size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
-    images:
-      - image: /images/placeholders/placeholder-detail-2.svg
-        sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
-        alt: "Placeholder: design iteration or alternative"
-        size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
-    images:
-      - sound: false
-        alt: "Placeholder: result or shipped product"
-        caption: The final result for the printed brochure to visually explain the
-          process of Darwill.
+        alt: Brochure spread comparing prepress the traditional way, with proofs
+          passed between the design team, printer, client, and agency, to prepress
+          the BreezeWay
+        caption: "The finished brochure spread: prepress the traditional way on the
+          left, prepress the BreezeWay on the right."
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+  - heading: Making a complex process clear
+    text: >+
+      My goal was a diagram that marketers could read at a glance, showing how
+      files move through Darwill's four tools and who is involved at each step.
+
+
+      - How might we show the time BreezeWay saves, from days and weeks to
+      minutes and hours?
+
+      - Four tools to explain: ImageQuest, Prepare, InSite, and Matchprint
+      Virtual Software
+
+      - Three groups who review the work: the client, the agency, and Darwill
+
+  - heading: Developing the diagram in six steps
+    text: I developed the diagram over six steps. Early versions mapped the flow
+      with simple line art. Later versions added 3D rendering, a color for each
+      tool, and callouts that explain what happens at each point in the
+      process.
+    images:
+      - image: /images/projects/darwill/01_breezeway-steps-1-3-5.png
+        sound: false
+        alt: Steps 1, 3, and 5 of the BreezeWay diagram, moving from flat line art
+          to 3D rendering with callouts
+        caption: Steps 1, 3, and 5 move from flat line art to 3D spheres, then add
+          callouts for each tool.
+        size: full
+      - image: /images/projects/darwill/02_breezeway-steps-2-4-6.png
+        sound: false
+        alt: Steps 2, 4, and 6 of the BreezeWay diagram, ending with a color-coded
+          legend beside the final diagram
+        caption: Steps 2, 4, and 6 refine the flow, test rendering styles for InSite,
+          and pair the diagram with a color-coded legend.
+        size: full
+  - heading: Pairing the diagram with a legend
+    text: To keep the diagram uncluttered, I moved the detailed descriptions into
+      color-coded panels, one for each tool. Each panel uses the same color as
+      its circle in the diagram, so readers can move between the two easily.
+    images:
+      - image: /images/projects/darwill/04_process-text-panels.png
+        sound: false
+        alt: Color-coded text panels describing InSite, Matchprint Virtual Software,
+          ImageQuest, and Prepare
+        caption: Each tool has a panel in the same color as its circle in the diagram.
+        size: full
+  - heading: Prepress the BreezeWay
+    text: >+
+      The final diagram follows a file from the person who creates it to the
+      final approval for print.
+
+
+      - Photographers and illustrators upload their files directly into
+      ImageQuest.
+
+      - The design team lays out pages with FPO lo-res images, then creates
+      press-ready PDFs with Prepare.
+
+      - Lo-res images are automatically replaced with hi-res versions.
+
+      - PDFs are uploaded to InSite, where the client, agency, and Darwill
+      review proofs online, and Matchprint Virtual Software shows
+      color-accurate proofs on screen.
+
+    images:
+      - image: /images/projects/darwill/05_process-diagram.png
+        sound: false
+        alt: Final BreezeWay diagram showing files moving from the asset originator
+          through ImageQuest, the design team, Prepare, and InSite to the client,
+          agency, and Darwill
+        caption: The final diagram, with callouts explaining each step from asset
+          upload to collaborative online proofing.
+        size: full
 ---
 I designed a step-by-step visual process for their marketing materials to illustrate how the product works.
