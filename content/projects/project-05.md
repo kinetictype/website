@@ -74,7 +74,7 @@ sections:
 
       To align them, I mapped the user journey of how customers reached help.
       The map unified our efforts and clarified requirements for the first
-      design phase.
+      design phase. 
     images:
       - image: /images/projects/project-05-fitbit/02_email-issues-chart.png
         sound: false
@@ -86,10 +86,9 @@ sections:
       - image: /images/projects/project-05-fitbit/03_heatmaps.jpg
         sound: false
         alt: Heatmaps
-        caption: Heatmaps were a signal of where to place attention for the redesign.
+        caption: Heatmaps revealed users wanted to contact support, learn how to use
+          their tracker, and search.
         size: half-text
-        text: Heatmaps revealed users wanted to contact support, learn how to use their
-          tracker, and search.
   - heading: Finding order in the research
     text: "On the existing platform, customers who couldn't find an answer had to
       complete a multi-step questionnaire before they could call for help. My
@@ -182,12 +181,12 @@ sections:
           assist her search: she chooses her tracker and her platform, and the
           results surface the most popular article above a list to choose from.
 
-  - heading: A system map, then a pause
+  - heading: A system map
     text: The new designs and overall user experience were well received by the Help
       team and the extended stakeholders. I captured the artifacts in a
-      [presentation](https://www.dropbox.com/s/higfdx1jr3ehfn0/help.fitbit.com.pdf?dl=0)
-      for the team. After the engagement, competing priorities put the CMS
-      upgrade initiative on hold, and the project did not move forward.
+      presentation for the team. In the end, due to competing priorities, Fitbit
+      put the CMS upgrade initiative on hold, and the project did not move
+      forward. Two years later, Google acquired Fitbit.
     images:
       - image: /images/projects/project-05-fitbit/09_system-map.png
         sound: false
