@@ -47,11 +47,10 @@ sections:
           capabilities of the media.
         size: half-text
   - heading: Surfacing an Underdeveloped Craft
-    text: Before I joined the team, interactive storytelling with custom-made SVG
-      graphics was explored on an ad hoc basis. The file format let us work with
-      the current CMS platform while keeping file sizes small. I rolled up my
-      development sleeves and leaned on a developer from the Core UX Team to
-      churn out several Interactive Graphics over the year.
+    text: The small file format allowed us to work with the current CMS platform
+      without long loading times. I rolled up my developer sleeves and
+      occasionally leaned on a developer from the Core UX Team to churn out
+      several Interactive Graphics over the year.
     images:
       - video: /images/projects/Simulus.mp4
         sound: false
