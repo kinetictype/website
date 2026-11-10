@@ -67,10 +67,10 @@ sections:
         size: half-text
   - heading: Designing a Design System Library
     text: When I began working with the files, I realized the Developer Portal would
-      benefit from a design library. As the Developer Portal used a different
-      tech stack than the consumer-facing platform, my design system library
-      noted the differences between the systems for the next iteration of the
-      migration.
+      benefit from a design system library. As the Developer Portal used a
+      different tech stack than the consumer-facing platform, my design system
+      library noted the differences between the systems for the next iteration
+      of the migration.
     images:
       - image: /images/projects/Screenshot 2026-10-31 at 15.24.23-1.png
         sound: false
