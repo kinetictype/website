@@ -74,7 +74,7 @@ sections:
     images:
       - image: /images/projects/Screenshot 2026-10-31 at 15.24.23-1.png
         sound: false
-        alt: A challenge and how you solved it
+        alt: Design system colors
         caption: Documented the colors and typography in the Library with the rest of
           the components in the Developer Portal.
         size: text-half
