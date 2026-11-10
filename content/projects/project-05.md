@@ -108,9 +108,9 @@ sections:
         sound: false
         alt: Three personas, the Active Traveller, the Competitive Athlete, and the
           Dieter
+        caption: "I designed three scenarios and flows based on personas that matched
+          the characteristics of our data. "
         size: text-half
-        text: "I designed three scenarios and flows based on personas that matched the
-          characteristics of our data. "
   - heading: Bridging support and product design
     text: "To make sense of the data, I took over an underused conference room and
       brought all the pieces together into a cohesive whole. After identifying
