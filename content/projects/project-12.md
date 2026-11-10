@@ -91,14 +91,12 @@ sections:
           Application.
         size: text-half
   - heading: Refined Wireframes Imagining the Product
-    text: "As development built the framework, I began building capabilities based
-      on the stories I gathered from the product team. Building on Discovery
-      Boards, I turned a static dashboard tool into a dynamic page. I moved tabs
-      to the top and brought three parts together: a carousel of Quality of Hire
-      KPIs, a story you can drill into for more detail, and a drawer of
-      additional stories. For example, you can see where hiring struggles are
+    text: As development built the framework, I turned a static dashboard tool into
+      a dynamic page. I moved tabs to the top and created an experience that
+      made it easy to drill down into more detailed information, with a drawer
+      of additional stories. For example, you can see where hiring struggles are
       and where our best performers come from, and preview it with a vertical
-      dot scroll."
+      dot scroll.
     images:
       - image: /images/projects/people-analytics-hiring-drawer-prototype.svg
         sound: false
