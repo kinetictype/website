@@ -100,8 +100,7 @@ sections:
     images:
       - image: /images/projects/people-analytics-hiring-drawer-prototype.svg
         sound: false
-        alt: Clickable prototype of the refined People Analytics Hiring page, with the
-          Additional stories drawer
+        alt: People Analytics Hiring page
         caption: The refined Hiring page moves the tabs from the bottom of Discovery
           Boards to the top.
         size: half-text
