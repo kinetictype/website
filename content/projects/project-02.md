@@ -79,9 +79,21 @@ sections:
           the components in the Developer Portal.
         size: text-half
   - heading: Led a Migration of Components
-    text: After I documented all the components, the Apiture consumer-facing Design
+    text: >+
+      After I documented all the components, the Apiture consumer-facing Design
       System lead for AUI began discussing migrating the Developer Portal
       elements into a single system.
+
+
+      > “It has been a pleasure working closely with Kiera! She’s incredibly
+      kind, curious, and thoughtful. She took time to understand how we work and
+      dove deep into learning about the Apiture design system. She made a
+      meaningful impact on the Dev Portal team; both by offering smart design
+      solutions and by thoughtfully evaluating how well our design system could
+      support their needs. She brought great insight, positivity, and
+      collaboration to our design team, and we’re all grateful to have spent
+      time working with her.” — J. Richardson, Design System Lead at Apiture
+
     images:
       - image: /images/projects/SystemDiscrepencies.png
         sound: false
