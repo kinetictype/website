@@ -6,12 +6,12 @@
 <meta name="aspect-ratio" content="1400/1200">
 <title>help.fitbit.com redesign: mobile prototype</title>
 <style>
-@font-face{font-family:"Nunito Sans";src:url("prototype-fonts/nunito-sans-latin-300-normal.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:"Nunito Sans";src:url("prototype-fonts/nunito-sans-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Nunito Sans";src:url("prototype-fonts/nunito-sans-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Nunito Sans";src:url("prototype-fonts/nunito-sans-latin-700-normal.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Nunito Sans";src:url("prototype-fonts/nunito-sans-latin-800-normal.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:"Nunito Sans";src:url("prototype-fonts/nunito-sans-latin-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-300-normal.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-700-normal.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-900-normal.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
 
 body{margin:0;background:#C1CCD6}
 a{color:#00737B}a:hover{color:#005A60}
@@ -83,7 +83,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#FF9B00}
 </head>
 <body>
 <div id="stage"></div>
-<template id="tpl"><div style="width: 1400px; height: 1200px; position: relative; overflow: hidden; background: #FF9B00; font-family: 'Goldman Sans', 'GS Sans', 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif">
+<template id="tpl"><div style="width: 1400px; height: 1200px; position: relative; overflow: hidden; background: #FF9B00; font-family: Roboto, 'Helvetica Neue', Arial, sans-serif">
   <svg aria-hidden="true" width="1400" height="1200" style="position: absolute; left: 0; top: 0"><polygon points="575,89 435,229 824,1108 964,968" fill="#CC7C00"></polygon><rect x="416" y="210" width="427" height="917" rx="64" fill="#CC7C00"></rect></svg>
 
   <!-- story caption + player controls -->
@@ -112,10 +112,10 @@ html,body{margin:0;height:100%;overflow:hidden;background:#FF9B00}
     <div aria-hidden="true" style="position: absolute; left: 50%; top: 40px; width: 11px; height: 11px; margin-left: -5.5px; border-radius: 50%; background: #3A4A55; box-shadow: inset 0 0 0 3px #22303A"></div>
     <div aria-hidden="true" style="position: absolute; left: 50%; top: 72px; width: 72px; height: 9px; margin-left: -36px; border-radius: 5px; background: #3A4148; box-shadow: inset 0 0 0 2px #2A3036"></div>
     <div onPointerDown="{{touch}}" onWheel="{{touch}}" style="position: absolute; left: 26px; top: 125px; width: 375px; height: 667px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1.5px #C9CED3">
-<div class="fb" style="width: 375px; height: 667px; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #fff; font-family: 'Goldman Sans', 'GS Sans', 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif; color: #5B7282">
+<div class="fb" style="width: 375px; height: 667px; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #fff; font-family: Roboto, 'Helvetica Neue', Arial, sans-serif; color: #5B7282">
 
   <!-- iOS status bar (as in the original mockup) -->
-  <div aria-hidden="true" style="flex: none; height: 20px; background: rgba(193,204,214,.3); display: flex; align-items: center; justify-content: space-between; padding: 0 6px; font-size: 12px; font-weight: 700; color: #111; font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <div aria-hidden="true" style="flex: none; height: 20px; background: rgba(193,204,214,.3); display: flex; align-items: center; justify-content: space-between; padding: 0 6px; font-size: 12px; font-weight: 700; color: #111; font-family: Roboto, -apple-system, 'Helvetica Neue', Arial, sans-serif">
     <div style="display: flex; align-items: center; gap: 4px; width: 110px">
       <svg width="34" height="7" viewBox="0 0 34 7"><circle cx="3.5" cy="3.5" r="3" fill="#111"></circle><circle cx="10.5" cy="3.5" r="3" fill="#111"></circle><circle cx="17.5" cy="3.5" r="3" fill="#111"></circle><circle cx="24.5" cy="3.5" r="3" fill="none" stroke="#111" stroke-width="1"></circle><circle cx="31" cy="3.5" r="2.5" fill="none" stroke="#111" stroke-width="1"></circle></svg>
       <span style="font-weight: 400">AT&amp;T</span>
@@ -645,7 +645,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#FF9B00}
 
     <!-- ===== WEB SEARCH (third party) ===== -->
     <sc-if value="{{isWeb}}" hint-placeholder-val="{{ false }}">
-      <div style="background: #fff; min-height: 100%; font-family: Arial, 'Helvetica Neue', sans-serif">
+      <div style="background: #fff; min-height: 100%; font-family: Roboto, Arial, 'Helvetica Neue', sans-serif">
         <div style="padding: 14px 12px 0">
           <div style="font-size: 22px; font-weight: 700; color: #5B7282; text-align: center; letter-spacing: .02em; margin-bottom: 10px">web search</div>
           <form onSubmit="{{webSearch}}" style="display: flex; margin: 0; box-shadow: 0 1px 4px rgba(0,0,0,.2); border-radius: 4px; overflow: hidden">
