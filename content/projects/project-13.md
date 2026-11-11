@@ -49,7 +49,8 @@ sections:
       overview, top insights, UX factors, tasks vs. competition, and struggle
       areas.
     images:
-      - sound: false
+      - image: /images/projects/StoryElements-2.webp
+        sound: false
         alt: Visualizing the data
         caption: Documenting the "happy path" experience
         size: text-half
