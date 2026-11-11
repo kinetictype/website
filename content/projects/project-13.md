@@ -52,7 +52,7 @@ sections:
       - image: /images/projects/StoryElements-2.webp
         sound: false
         alt: Visualizing the data
-        caption: Documenting the "happy path" experience
+        caption: Storytelling principles to guide the design forward.
         size: text-half
   - heading: Gathering stakeholder Buy-in
     images:
