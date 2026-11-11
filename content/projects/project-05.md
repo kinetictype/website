@@ -125,6 +125,9 @@ sections:
         alt: laptop and a phone redesign
         caption: Designing a mobile first experience responding to desktop.
         size: text-half
+      - image: /images/projects/help-fitbit-prototype.svg
+        sound: false
+        size: half
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
       team and the extended stakeholders. I captured the artifacts in a
