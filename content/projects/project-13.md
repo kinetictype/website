@@ -55,10 +55,6 @@ sections:
         caption: Documenting the "happy path" experience
         size: text-half
   - heading: Gathering stakeholder Buy-in
-    text: "Stakeholders stalled on the unfamiliar parallel coordinates chart for the
-      score breakdown, so I explored a heat map as a simpler visualization. To
-      support further iterations, I held critiques with the design team to dig
-      deeper into clearer representations. "
     images:
       - image: /images/projects/StoryElements.webp
         sound: false
@@ -78,8 +74,11 @@ sections:
           critique rooms where teammates places stickies on my work.
         size: text-half
   - heading: Incorporating the Design System
-    text: "After gathering feedback, I presented the final designs and shared the
-      vision for the new platform. "
+    text: "Stakeholders stalled on the unfamiliar parallel coordinates chart for the
+      score breakdown, so I explored a heat map as a simpler visualization. To
+      support further iterations, I held critiques with the design team to
+      explore clearer representations. After gathering feedback, I presented the
+      final designs and shared the vision for the new platform. "
     images:
       - image: /images/projects/project-13/usertesting-browser-prototype.svg
         sound: false
