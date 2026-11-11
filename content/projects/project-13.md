@@ -37,7 +37,7 @@ sections:
       diagram of research areas we could start with. I began with a happy path
       built with sample data.
     images:
-      - image: /images/projects/UQ_Analysis.webp
+      - image: /images/projects/UQ_Analysis-1.png
         sound: false
         alt: Analysis of Report
         caption: To get a sense of the material I was working with, I mapped out the
