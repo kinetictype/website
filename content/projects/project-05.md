@@ -106,15 +106,16 @@ sections:
         caption: "I designed three scenarios and flows based on personas that matched
           the characteristics of our data. "
         size: text-half
-  - heading: Bridging support and product design
+  - heading: Bridging customer support and product design
     text: "To make sense of the data, I took over an underused conference room and
-      brought all the pieces together into a cohesive whole. After identifying
-      the key pain points in the current experience, I quickly sketched new ways
-      to access articles (regrouping 17 categories into 4), identify a tracker,
-      search, and reach the community. After the first month, I joined forces
-      with the Product Team for input. The critique sessions bridged the gaps
-      between teams and improved relationships, and the cross-team meetings
-      continued beyond the scope of this effort. "
+      brought all the pieces together in one place to track the elements I was
+      working with: existing research, over 200 articles, and personas. After
+      identifying the key pain points in the current experience, I quickly
+      sketched new ways to access articles (regrouping 17 categories into 4),
+      identify a tracker, search, and reach the community. After the first
+      month, I joined forces with the Product Team for input. The critique
+      sessions bridged gaps between teams and improved relationships, and the
+      cross-team meetings continued beyond this effort. "
     images:
       - image: /images/projects/project-05-fitbit/05_sketch-review-wall.jpg
         sound: false
