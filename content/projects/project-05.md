@@ -64,8 +64,8 @@ sections:
         size: half-text
   - heading: Let the metrics show what customers need
     text: >-
-      Fitbit had a mature product design team and the customer service lacked a
-      a design presence. I consulted with three stakeholders from the User
+      Fitbit had a mature product design team, yet the customer service lacked a
+      design presence. I consulted with three stakeholders from the User
       Authentication, Community Forum, and Help teams, each with a very
       different view of what to prioritize.
 
