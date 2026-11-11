@@ -657,6 +657,14 @@ function mp4Size(file) {
 }
 // An image, or for .mp4/.webm a silent looping video that plays like a GIF (much smaller files than animated GIFs)
 function mediaEl(src, alt = "", sound = false) {
+  // a self-contained .html prototype (stored with the images) runs in a frame at its own width-to-height ratio,
+  // read from <meta name="aspect-ratio" content="1400/1200"> in the file
+  if (/\.html?$/i.test(String(src))) {
+    const file = path.join(CONTENT, String(src));
+    const m = exists(file) ? read(file).match(/<meta name="aspect-ratio" content="([\d.]+)\s*\/\s*([\d.]+)"/) : null;
+    const ratio = m ? `${m[1]} / ${m[2]}` : "16 / 9";
+    return `<div class="html-proto" style="aspect-ratio:${ratio}"><iframe src="${imageUrl(src)}" title="${escapeHtml(alt || "Interactive prototype")}" loading="lazy"></iframe></div>`;
+  }
   if (/\.(mp4|webm)$/i.test(String(src))) {
     // a .webm next to the .mp4 (same name) is offered first: smaller, and played by every current browser
     const base = String(src).replace(/\.(mp4|webm)$/i, "");

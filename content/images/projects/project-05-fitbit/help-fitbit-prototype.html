@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="aspect-ratio" content="1400/1200">
+<title>help.fitbit.com redesign: mobile prototype</title>
+<style>
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-300-normal.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-700-normal.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-900-normal.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto";src:url("prototype-fonts/roboto-latin-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+
+body{margin:0;background:#C1CCD6}
+a{color:#00737B}a:hover{color:#005A60}
+*{box-sizing:border-box}
+.fb button{font-family:inherit}
+.fb input{font-family:inherit}
+.scroller{scroll-behavior:smooth}
+.scroller::-webkit-scrollbar{width:0}
+.chip{border:0;border-radius:999px;padding:7px 14px;font-size:15px;font-weight:400;color:#fff;background:#5B7282;cursor:pointer;line-height:1.2;min-height:34px}
+.chip:hover{background:#5B7282;filter:brightness(.88)}
+.chip.on{background:#00828B}
+.chip.on:hover{background:#006E76}
+.pill{border-radius:999px;padding:10px 26px;font-size:18px;font-weight:600;cursor:pointer;min-height:44px;border:1.5px solid #00828B;background:#00828B;color:#fff}
+.pill:hover{background:#006E76;border-color:#006E76}
+.pill:disabled{background:#C1CCD6;border-color:#C1CCD6;color:#5B7282;cursor:not-allowed}
+.ghost{border-radius:999px;padding:10px 26px;font-size:18px;font-weight:400;cursor:pointer;min-height:44px;border:1.5px solid #5B7282;background:#fff;color:#5B7282}
+.ghost:hover{background:rgba(193,204,214,.3)}
+.textlink{background:none;border:0;padding:0;color:#00737B;cursor:pointer;font:inherit;text-align:left}
+.textlink:hover{color:#005A60;text-decoration:underline}
+.cat{background:none;border:0;padding:8px 0;font-size:14px;font-weight:800;letter-spacing:.04em;color:#00737B;cursor:pointer;text-align:left;border-bottom:2px solid transparent;align-self:flex-start;min-height:36px}
+.cat.on{border-bottom-color:#00828B}
+.prod{width:132px;height:132px;border-radius:50%;border:0;background:#C1CCD6;color:#5B7282;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:17px;font-weight:800;padding:0}
+.prod:hover{filter:brightness(.95)}
+.prod.on{background:#00828B;color:#fff}
+.dot{width:24px;height:24px;border-radius:50%;background:#3E5463;display:flex;align-items:center;justify-content:center}
+.dot.cur{background:#00939C}
+.dot.done{background:#00939C}
+.steplabel{font-size:13px;font-weight:800;letter-spacing:.05em;color:#00737B;height:18px}
+.steplabel.hide{visibility:hidden}
+.row{display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:0;border-bottom:1px solid #3E5463;padding:14px 20px;font-size:19px;color:#5B7282;cursor:pointer;text-align:left;min-height:52px}
+.row:hover{background:rgba(193,204,214,.3)}
+.artitem{display:block;width:100%;background:none;border:0;border-bottom:1px solid #3E5463;padding:14px 20px;text-align:left;cursor:pointer;color:#5B7282}
+.artitem:hover{background:rgba(193,204,214,.3)}
+.tool{background:none;border:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#0A7AFF;padding:0}
+.tool:disabled{color:#C1CCD6;cursor:default}
+.fab{width:46px;height:46px;border:0;padding:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.menuitem{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #3E5463;padding:15px 24px;font-size:18px;color:#5B7282;cursor:pointer;min-height:52px}
+.menuitem:hover{background:rgba(193,204,214,.3)}
+.field{width:100%;border:1.5px solid #5B7282;border-radius:999px;padding:11px 46px 11px 18px;font-size:17px;color:#5B7282;background:#fff;outline:none}
+.field:focus{border-color:#00828B;box-shadow:0 0 0 3px rgba(0,130,139,.18)}
+.box{width:100%;border:1.5px solid #5B7282;border-radius:8px;padding:12px 14px;font-size:17px;color:#5B7282;background:#fff;outline:none}
+.box:focus{border-color:#00828B;box-shadow:0 0 0 3px rgba(0,130,139,.18)}
+.underline{width:100%;border:0;border-bottom:1.5px solid #3E5463;padding:8px 0;font-size:17px;color:#5B7282;background:transparent;outline:none}
+.underline:focus{border-bottom-color:#00828B}
+.tile{background:#fff;border:1.5px solid #C1CCD6;border-radius:12px;padding:16px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:4px;color:#5B7282;width:100%}
+.tile:hover{border-color:#00828B}
+.yn{border:1.5px solid #5B7282;background:#fff;border-radius:999px;padding:8px 22px;font-size:16px;cursor:pointer;color:#5B7282;min-height:40px}
+.yn:hover{border-color:#00828B}
+.flip{transform:rotate(180deg)}
+.ld{display:block;width:10px;height:10px;border-radius:50%;background:#fff}
+.ld.on{background:#00828B}
+.star{fill:none;stroke:#5B7282}
+.star.on{fill:#00828B;stroke:#00828B}
+.ptab{border:1.5px solid #C1CCD6;background:#fff;color:#3E5463;border-radius:999px;padding:5px 12px;font-size:13px;font-weight:700;cursor:pointer;min-height:32px}
+.ptab:hover{border-color:#00828B}
+.ptab.on{background:#00828B;border-color:#00828B;color:#fff}
+.ctl{width:40px;height:40px;border-radius:50%;border:1.5px solid #C1CCD6;background:#fff;color:#3E5463;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.ctl:hover{border-color:#00828B;color:#00828B}
+.ctl.main{width:48px;height:48px;background:#00828B;border-color:#00828B;color:#fff}
+.ctl.main:hover{background:#006E76;color:#fff}
+.seg{flex:1;height:4px;border-radius:2px;background:#C1CCD6}
+.seg.done{background:#00828B}
+.seg.cur{background:#00939C}
+
+html,body{margin:0;height:100%;overflow:hidden;background:#FF9B00}
+#stage{position:absolute;left:0;top:0;width:1400px;height:1200px;transform-origin:0 0}
+#stage button,#stage input{font-family:inherit}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<template id="tpl"><div style="width: 1400px; height: 1200px; position: relative; overflow: hidden; background: #FF9B00; font-family: Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <svg aria-hidden="true" width="1400" height="1200" style="position: absolute; left: 0; top: 0"><polygon points="575,89 435,229 824,1108 964,968" fill="#CC7C00"></polygon><rect x="416" y="210" width="427" height="917" rx="64" fill="#CC7C00"></rect></svg>
+
+  <!-- story caption + player controls -->
+  <div style="position: absolute; left: 48px; top: 56px; width: 340px; background: #fff; border-radius: 18px; padding: 18px 20px 16px; box-shadow: 0 8px 24px rgba(120,60,0,.18)">
+    <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px">
+      <sc-for list="{{personaTabs}}" as="pt" hint-placeholder-count="4">
+        <button class="ptab {{pt.cls}}" aria-pressed="{{pt.on}}" onClick="{{pt.go}}">{{pt.label}}</button>
+      </sc-for>
+    </div>
+    <div style="font-size: 15px; font-weight: 700; color: #00737B">{{capPersona}} · Step {{capNum}} of {{capTotal}}</div>
+    <div style="font-size: 21px; font-weight: 700; line-height: 1.3; color: #3E5463; margin: 6px 0 14px; min-height: 55px">{{capText}}</div>
+    <div style="display: flex; gap: 3px; margin-bottom: 14px" aria-hidden="true">
+      <sc-for list="{{segs}}" as="sg" hint-placeholder-count="21">
+        <span class="seg {{sg.cls}}"></span>
+      </sc-for>
+    </div>
+    <div style="font-size: 14px; color: #5B7282; line-height: 1.35">{{playNote}}</div>
+  </div>
+
+  <!-- iPhone (white) -->
+  <div style="position: absolute; left: 556px; top: 70px; width: 427px; height: 917px; border-radius: 64px; background: #F6F7F8; box-shadow: inset 0 0 0 2px #D2D6DA, inset 0 0 0 7px #FCFCFD, inset 0 0 0 8.5px #E2E5E8, 0 2px 0 #D9DCE0">
+    <div aria-hidden="true" style="position: absolute; left: -5px; top: 118px; width: 5px; height: 26px; border-radius: 3px 0 0 3px; background: #D5D9DD"></div>
+    <div aria-hidden="true" style="position: absolute; left: -5px; top: 178px; width: 5px; height: 46px; border-radius: 3px 0 0 3px; background: #D5D9DD"></div>
+    <div aria-hidden="true" style="position: absolute; left: -5px; top: 238px; width: 5px; height: 46px; border-radius: 3px 0 0 3px; background: #D5D9DD"></div>
+    <div aria-hidden="true" style="position: absolute; right: 70px; top: -5px; width: 56px; height: 5px; border-radius: 3px 3px 0 0; background: #D5D9DD"></div>
+    <div aria-hidden="true" style="position: absolute; left: 50%; top: 40px; width: 11px; height: 11px; margin-left: -5.5px; border-radius: 50%; background: #3A4A55; box-shadow: inset 0 0 0 3px #22303A"></div>
+    <div aria-hidden="true" style="position: absolute; left: 50%; top: 72px; width: 72px; height: 9px; margin-left: -36px; border-radius: 5px; background: #3A4148; box-shadow: inset 0 0 0 2px #2A3036"></div>
+    <div onPointerDown="{{touch}}" onWheel="{{touch}}" style="position: absolute; left: 26px; top: 125px; width: 375px; height: 667px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1.5px #C9CED3">
+<div class="fb" style="width: 375px; height: 667px; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #fff; font-family: Roboto, 'Helvetica Neue', Arial, sans-serif; color: #5B7282">
+
+  <!-- iOS status bar (as in the original mockup) -->
+  <div aria-hidden="true" style="flex: none; height: 20px; background: rgba(193,204,214,.3); display: flex; align-items: center; justify-content: space-between; padding: 0 6px; font-size: 12px; font-weight: 700; color: #111; font-family: Roboto, -apple-system, 'Helvetica Neue', Arial, sans-serif">
+    <div style="display: flex; align-items: center; gap: 4px; width: 110px">
+      <svg width="34" height="7" viewBox="0 0 34 7"><circle cx="3.5" cy="3.5" r="3" fill="#111"></circle><circle cx="10.5" cy="3.5" r="3" fill="#111"></circle><circle cx="17.5" cy="3.5" r="3" fill="#111"></circle><circle cx="24.5" cy="3.5" r="3" fill="none" stroke="#111" stroke-width="1"></circle><circle cx="31" cy="3.5" r="2.5" fill="none" stroke="#111" stroke-width="1"></circle></svg>
+      <span style="font-weight: 400">AT&amp;T</span>
+      <svg width="13" height="10" viewBox="0 0 13 10"><path d="M6.5 9.5L.6 3.4a8.5 8.5 0 0 1 11.8 0z" fill="#111"></path></svg>
+    </div>
+    <span>9:57 AM</span>
+    <div style="display: flex; align-items: center; justify-content: flex-end; gap: 4px; width: 110px; font-weight: 400">
+      <svg width="7" height="11" viewBox="0 0 7 11" fill="none" stroke="#111" stroke-width="1.1"><path d="M1 3l5 5-2.5 2.5V.5L6 3 1 8"></path></svg>
+      <span>89%</span>
+      <svg width="25" height="11" viewBox="0 0 25 11"><rect x=".5" y=".5" width="21" height="10" rx="2.5" fill="none" stroke="#111"></rect><rect x="2" y="2" width="17" height="7" rx="1.2" fill="#111"></rect><rect x="22.5" y="3.5" width="2" height="4" rx="1" fill="#111"></rect></svg>
+    </div>
+  </div>
+  <!-- Safari address bar -->
+  <div style="flex: none; background: rgba(193,204,214,.3); padding: 2px 10px 6px; border-bottom: 1px solid #3E5463">
+    <div style="display: flex; align-items: center; justify-content: center; position: relative; background: rgba(193,204,214,.6); border-radius: 9px; height: 30px; font-size: 14px; color: #5B7282">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5B7282" stroke-width="2.5" aria-hidden="true" style="margin-right: 6px"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+      <span>{{host}}</span>
+      <button class="tool" aria-label="Reload" onClick="{{reload}}" style="position: absolute; right: 0; top: -7px; color: #5B7282">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9"></path><path d="M20 4v5h-5"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="fb-scroller" class="scroller" style="flex: 1 1 auto; overflow-y: auto; overflow-x: hidden; position: relative; background: #fff">
+
+    <!-- ===== help.fitbit.com header ===== -->
+    <sc-if value="{{showHelpHeader}}" hint-placeholder-val="{{ true }}">
+      <div style="position: sticky; top: 0; z-index: 5; background: #fff">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; border-bottom: 1px solid #3E5463">
+          <button class="tool" aria-label="Open menu" onClick="{{openMenu}}" style="color: #00828B">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M2 3h20M2 10h20M2 17h20"></path></svg>
+          </button>
+          <button class="textlink" onClick="{{goHome}}" style="font-size: 22px; font-weight: 300; color: #00737B; letter-spacing: .01em">fitbit help</button>
+          <sc-if value="{{loggedOut}}" hint-placeholder-val="{{ true }}">
+            <button class="textlink" onClick="{{openLogin}}" style="font-size: 17px; font-weight: 700; padding: 10px 10px; min-height: 44px">Log in</button>
+          </sc-if>
+          <sc-if value="{{loggedIn}}" hint-placeholder-val="{{ false }}">
+            <button aria-label="Account menu" onClick="{{openMenu}}" style="width: 36px; height: 36px; margin: 4px 8px; border-radius: 50%; border: 0; background: #00828B; color: #fff; font-weight: 800; font-size: 16px; cursor: pointer">A</button>
+          </sc-if>
+        </div>
+        <button class="row" onClick="{{learnProduct}}">
+          <span>{{rowLabel}}</span>
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true"><path d="M2 2l8 8-8 8"></path></svg>
+        </button>
+      </div>
+    </sc-if>
+
+    <!-- ===== HOME ===== -->
+    <sc-if value="{{isHome}}" hint-placeholder-val="{{ true }}">
+      <div>
+        <sc-if value="{{showRecent}}" hint-placeholder-val="{{ true }}">
+          <div style="background: #E6F4F5">
+            <button onClick="{{toggleRecent}}" aria-expanded="{{recentOpen}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: #00828B; color: #fff; border: 0; padding: 10px 20px; font-size: 15px; font-weight: 800; letter-spacing: .04em; cursor: pointer; min-height: 44px">
+              <span>RECENT ISSUES · 2</span>
+              <span style="font-size: 14px; font-weight: 600; letter-spacing: 0">{{recentToggleLabel}}</span>
+            </button>
+            <sc-if value="{{recentOpen}}" hint-placeholder-val="{{ true }}">
+              <div style="display: flex; flex-direction: column">
+                <sc-for list="{{recentIssues}}" as="ri" hint-placeholder-count="2">
+                  <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 20px; border-bottom: 1px solid #C9E5E7">
+                    <div style="flex: 1; min-width: 0">
+                      <div style="font-size: 16px; font-weight: 800; color: #5B7282">{{ri.title}}</div>
+                      <div style="font-size: 14px; color: #5B7282; line-height: 1.4; margin-top: 2px">{{ri.body}}</div>
+                    </div>
+                    <button class="pill" onClick="{{ri.open}}" style="padding: 6px 14px; font-size: 14px; min-height: 36px; flex: none">more</button>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{loggedIn}}" hint-placeholder-val="{{ false }}">
+          <div style="margin: 16px 16px 0; border: 1.5px solid #C1CCD6; border-radius: 14px; overflow: hidden">
+            <div style="background: #F4F9FA; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center">
+              <div>
+                <div style="font-size: 20px; font-weight: 800">Hi, Allie</div>
+                <div style="font-size: 13px; color: #5B7282">English (US) · United States</div>
+              </div>
+              <div style="font-size: 13px; color: #00737B; font-weight: 700">Case history: none open</div>
+            </div>
+            <div style="padding: 12px 16px; display: flex; gap: 12px; align-items: center; border-top: 1px solid #3E5463">
+              <div style="width: 52px; height: 52px; border-radius: 50%; background: #C1CCD6; color: #fff; display: flex; align-items: center; justify-content: center; flex: none">
+                <svg width="34" height="13" viewBox="0 17 56 22" aria-hidden="true"><circle cx="7.2" cy="28" r="3.2" fill="#fff"></circle><circle cx="17.6" cy="28" r="3.2" fill="#fff"></circle><circle cx="28" cy="28" r="3.2" fill="#fff"></circle><circle cx="38.4" cy="28" r="3.2" fill="#fff"></circle><circle cx="48.8" cy="28" r="3.2" fill="#fff"></circle></svg>
+              </div>
+              <div style="flex: 1; min-width: 0; font-size: 14px; line-height: 1.45">
+                <div style="font-size: 17px; font-weight: 800">Flex 2</div>
+                <div>Warranty: <b>active</b> · Returns: eligible</div>
+                <div>Sync: last synced today — <b>faster than most</b></div>
+              </div>
+            </div>
+            <div style="padding: 10px 16px; background: #FFF6E5; border-top: 1px solid #F1E0BC; display: flex; justify-content: space-between; align-items: center; gap: 8px">
+              <div style="font-size: 14px; color: #5A4300"><b>Battery is low.</b> Charge your Flex 2 soon.</div>
+              <button class="textlink" onClick="{{openBattery}}" style="font-size: 14px; font-weight: 800">How to charge</button>
+            </div>
+            <sc-if value="{{hasViewed}}" hint-placeholder-val="{{ false }}">
+              <div style="padding: 12px 16px; border-top: 1px solid #3E5463">
+                <div style="font-size: 12px; font-weight: 800; letter-spacing: .05em; color: #5B7282; margin-bottom: 6px">ARTICLES YOU'VE VIEWED</div>
+                <sc-for list="{{viewedItems}}" as="v" hint-placeholder-count="2">
+                  <div><button class="textlink" onClick="{{v.open}}" style="font-size: 15px; padding: 4px 0">{{v.title}}</button></div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <!-- wizard step 1 -->
+        <div style="padding: 14px 0 0">
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); position: relative; padding: 0 30px">
+            <div style="position: absolute; left: 0; right: 0; bottom: 11px; height: 1px; background: #3E5463"></div>
+            <sc-for list="{{steps}}" as="st" hint-placeholder-count="3">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative">
+                <div class="steplabel {{st.labelCls}}">{{st.label}}</div>
+                <div class="dot {{st.dotCls}}">
+                  <sc-if value="{{st.done}}" hint-placeholder-val="{{ false }}">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+                  </sc-if>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="padding: 18px 20px 0">
+            <h1 style="margin: 0 0 14px 14px; font-size: 22px; font-weight: 400; color: #00737B">How can we help?</h1>
+            <form onSubmit="{{submitSearch}}" style="position: relative; margin: 0">
+              <label for="kw" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search keywords</label>
+              <input id="kw" class="field" type="search" placeholder="search keywords" value="{{query}}" onChange="{{onQuery}}">
+              <button type="submit" aria-label="Search" style="position: absolute; right: 6px; top: 3px; width: 40px; height: 40px; border: 0; background: none; cursor: pointer; color: #5B7282">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+              </button>
+            </form>
+            <div style="display: flex; flex-wrap: wrap; gap: 9px 8px; margin-top: 16px">
+              <sc-for list="{{issueChips}}" as="c" hint-placeholder-count="11">
+                <button class="chip {{c.cls}}" aria-pressed="{{c.on}}" onClick="{{c.pick}}">{{c.label}}</button>
+              </sc-for>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 18px 0 6px">
+              <button class="fab" aria-label="Chat with the help assistant" onClick="{{openChat}}">
+                <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 4a19 19 0 1 1-10.6 34.8L4 42l3.3-8A19 19 0 0 1 23 4z" fill="#00939C"></path><path d="M23 14v18M14 23h18" stroke="#fff" stroke-width="3" stroke-linecap="round"></path></svg>
+              </button>
+              <button class="pill" disabled="{{issueNextDisabled}}" onClick="{{issueNext}}">next</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- categories -->
+        <div style="padding: 10px 20px 4px; display: flex; flex-direction: column; gap: 2px">
+          <sc-for list="{{cats}}" as="ct" hint-placeholder-count="4">
+            <button class="cat {{ct.cls}}" aria-pressed="{{ct.on}}" onClick="{{ct.pick}}">{{ct.label}}</button>
+          </sc-for>
+        </div>
+
+        <div style="border-top: 1px solid #3E5463; margin-top: 12px">
+          <button onClick="{{toggleList}}" aria-expanded="{{listOpen}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; border-bottom: 1px solid #3E5463; padding: 16px 20px; font-size: 20px; font-weight: 700; color: #5B7282; cursor: pointer">
+            <span>Article list</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true" class="{{listChevron}}"><path d="M1 1l8 8 8-8"></path></svg>
+          </button>
+          <sc-if value="{{listOpen}}" hint-placeholder-val="{{ true }}">
+            <div>
+              <sc-for list="{{catArticles}}" as="a" hint-placeholder-count="4">
+                <button class="artitem" onClick="{{a.open}}">
+                  <div style="font-size: 18px; font-weight: 700; margin-bottom: 3px">{{a.short}}</div>
+                  <div style="font-size: 16px; line-height: 1.45; color: #5B7282">{{a.excerpt}}</div>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== PRODUCT STEP ===== -->
+    <sc-if value="{{isProductStep}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 14px 0 8px">
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); position: relative; padding: 0 30px">
+          <div style="position: absolute; left: 0; right: 0; bottom: 11px; height: 1px; background: #3E5463"></div>
+          <sc-for list="{{steps}}" as="st" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative">
+              <div class="steplabel {{st.labelCls}}">{{st.label}}</div>
+              <div class="dot {{st.dotCls}}">
+                <sc-if value="{{st.done}}" hint-placeholder-val="{{ false }}">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <h1 style="margin: 18px 0 18px; text-align: center; font-size: 22px; font-weight: 400; color: #00737B">Which product do you have?</h1>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 0; justify-items: center; padding: 0 30px">
+          <sc-for list="{{wizardProducts}}" as="p" hint-placeholder-count="8">
+            <button class="prod {{p.cls}}" aria-pressed="{{p.on}}" onClick="{{p.pick}}">
+              <svg width="76" height="22" viewBox="0 17 56 22" aria-hidden="true"><circle cx="7.2" cy="28" r="3.2" fill="#fff"></circle><circle cx="17.6" cy="28" r="3.2" fill="#fff"></circle><circle cx="28" cy="28" r="3.2" fill="#fff"></circle><circle cx="38.4" cy="28" r="3.2" fill="#fff"></circle><circle cx="48.8" cy="28" r="3.2" fill="#fff"></circle></svg>
+              <span>{{p.name}}</span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 22px 30px 8px">
+          <button class="fab" aria-label="Chat with the help assistant" onClick="{{openChat}}">
+            <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 4a19 19 0 1 1-10.6 34.8L4 42l3.3-8A19 19 0 0 1 23 4z" fill="#00939C"></path><path d="M23 14v18M14 23h18" stroke="#fff" stroke-width="3" stroke-linecap="round"></path></svg>
+          </button>
+          <button class="pill" disabled="{{productNextDisabled}}" onClick="{{productNext}}">next</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== DEVICE STEP ===== -->
+    <sc-if value="{{isDeviceStep}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 14px 0 8px">
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); position: relative; padding: 0 30px">
+          <div style="position: absolute; left: 0; right: 0; bottom: 11px; height: 1px; background: #3E5463"></div>
+          <sc-for list="{{steps}}" as="st" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative">
+              <div class="steplabel {{st.labelCls}}">{{st.label}}</div>
+              <div class="dot {{st.dotCls}}">
+                <sc-if value="{{st.done}}" hint-placeholder-val="{{ false }}">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="padding: 18px 20px 0">
+          <h1 style="margin: 0 0 14px 14px; font-size: 22px; font-weight: 400; color: #00737B; line-height: 1.3">What device do you use to connect your tracker?</h1>
+          <div style="position: relative">
+            <label for="devq" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search devices</label>
+            <input id="devq" class="field" type="search" placeholder="search devices" value="{{devQuery}}" onChange="{{onDevQuery}}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B7282" stroke-width="2" aria-hidden="true" style="position: absolute; right: 16px; top: 13px"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+          </div>
+          <div style="font-size: 17px; font-weight: 600; margin: 16px 0 8px">platform</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{platformChips}}" as="c" hint-placeholder-count="3">
+              <button class="chip {{c.cls}}" aria-pressed="{{c.on}}" onClick="{{c.pick}}">{{c.label}}</button>
+            </sc-for>
+          </div>
+          <div style="font-size: 17px; font-weight: 600; margin: 16px 0 8px">manufacturer</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{makerChips}}" as="c" hint-placeholder-count="4">
+              <button class="chip {{c.cls}}" aria-pressed="{{c.on}}" onClick="{{c.pick}}">{{c.label}}</button>
+            </sc-for>
+          </div>
+          <div style="font-size: 17px; font-weight: 600; margin: 16px 0 8px">device</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{deviceChips}}" as="c" hint-placeholder-count="4">
+              <button class="chip {{c.cls}}" aria-pressed="{{c.on}}" onClick="{{c.pick}}">{{c.label}}</button>
+            </sc-for>
+            <sc-if value="{{noDevices}}" hint-placeholder-val="{{ false }}">
+              <div style="font-size: 15px; color: #5B7282">No devices match “{{devQuery}}”.</div>
+            </sc-if>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin: 22px 0 8px">
+            <button class="fab" aria-label="Chat with the help assistant" onClick="{{openChat}}">
+              <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 4a19 19 0 1 1-10.6 34.8L4 42l3.3-8A19 19 0 0 1 23 4z" fill="#00939C"></path><path d="M23 14v18M14 23h18" stroke="#fff" stroke-width="3" stroke-linecap="round"></path></svg>
+            </button>
+            <button class="pill" onClick="{{deviceDone}}">done</button>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== SEARCH RESULTS ===== -->
+    <sc-if value="{{isResults}}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="padding: 14px 20px 0">
+          <form onSubmit="{{submitSearch}}" style="position: relative; margin: 0">
+            <label for="kw2" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search help</label>
+            <input id="kw2" class="field" type="search" placeholder="Search help" value="{{query}}" onChange="{{onQuery}}">
+            <button type="submit" aria-label="Search" style="position: absolute; right: 6px; top: 3px; width: 40px; height: 40px; border: 0; background: none; cursor: pointer; color: #5B7282">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+            </button>
+          </form>
+          <div style="margin: 16px 0 4px 4px; color: #00737B">
+            <div style="font-size: 22px; font-weight: 800">“{{resultTerm}}”</div>
+            <div style="font-size: 20px">{{resultCount}}</div>
+          </div>
+          <sc-if value="{{hasContext}}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 2px 4px; font-size: 14px; color: #5B7282">
+              <span>Showing help for</span>
+              <span style="background: #E6F4F5; color: #00626A; font-weight: 700; border-radius: 999px; padding: 3px 10px">{{contextLabel}}</span>
+              <button class="textlink" onClick="{{refine}}" style="font-size: 14px; font-weight: 700; padding: 6px 2px">change</button>
+            </div>
+          </sc-if>
+        </div>
+        <div style="border-top: 1px solid #3E5463; margin-top: 14px">
+          <button onClick="{{toggleList}}" aria-expanded="{{listOpen}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; border-bottom: 1px solid #3E5463; padding: 16px 20px; font-size: 20px; font-weight: 700; color: #5B7282; cursor: pointer">
+            <span>Article list</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true" class="{{listChevron}}"><path d="M1 1l8 8 8-8"></path></svg>
+          </button>
+          <sc-if value="{{listOpen}}" hint-placeholder-val="{{ true }}">
+            <div>
+              <sc-if value="{{hasTop}}" hint-placeholder-val="{{ true }}">
+                <div style="padding: 18px 20px 14px; border-bottom: 1px solid #3E5463">
+                  <div style="font-size: 12px; font-weight: 800; letter-spacing: .06em; color: #5B7282; margin-bottom: 6px">MOST POPULAR</div>
+                  <button class="textlink" onClick="{{top.open}}" style="color: #5B7282; font-size: 21px; font-weight: 800; line-height: 1.3">{{top.title}}</button>
+                  <p style="font-size: 18px; line-height: 1.5; color: #5B7282; margin: 12px 0 10px">{{top.excerpt}}</p>
+                  <sc-for list="{{top.heads}}" as="h" hint-placeholder-count="4">
+                    <div><button class="textlink" onClick="{{h.open}}" style="color: #5B7282; font-size: 18px; line-height: 1.6">{{h.label}}</button></div>
+                  </sc-for>
+                  <button class="textlink" onClick="{{top.open}}" style="font-size: 16px; font-weight: 800; margin-top: 8px">Read article</button>
+                </div>
+              </sc-if>
+              <sc-for list="{{restResults}}" as="a" hint-placeholder-count="3">
+                <button class="artitem" onClick="{{a.open}}">
+                  <div style="font-size: 18px; font-weight: 700; margin-bottom: 3px">{{a.title}}</div>
+                  <div style="font-size: 15px; line-height: 1.45; color: #5B7282">{{a.excerpt}}</div>
+                </button>
+              </sc-for>
+              <sc-if value="{{noResults}}" hint-placeholder-val="{{ false }}">
+                <div style="padding: 20px; font-size: 17px; line-height: 1.5">
+                  <p style="margin: 0 0 12px">We couldn't find an article for that. Try a broader word like <b>battery</b> or <b>syncing</b>, or ask the help assistant.</p>
+                  <button class="pill" onClick="{{openChat}}">Ask the assistant</button>
+                </div>
+              </sc-if>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== REFINE: CHOOSE PRODUCT ===== -->
+    <sc-if value="{{isRefine}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 20px 0 10px">
+        <h1 style="margin: 0 20px 6px; font-size: 22px; font-weight: 400; color: #00737B">Choose your product</h1>
+        <p style="margin: 0 20px 18px; font-size: 16px; color: #5B7282">We'll show the manual, quick start and articles for it.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 0; justify-items: center; padding: 0 30px">
+          <sc-for list="{{refineProducts}}" as="p" hint-placeholder-count="8">
+            <button class="prod {{p.cls}}" onClick="{{p.pick}}">
+              <svg width="76" height="22" viewBox="0 17 56 22" aria-hidden="true"><circle cx="7.2" cy="28" r="3.2" fill="#fff"></circle><circle cx="17.6" cy="28" r="3.2" fill="#fff"></circle><circle cx="28" cy="28" r="3.2" fill="#fff"></circle><circle cx="38.4" cy="28" r="3.2" fill="#fff"></circle><circle cx="48.8" cy="28" r="3.2" fill="#fff"></circle></svg>
+              <span>{{p.name}}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== PRODUCT PAGE ===== -->
+    <sc-if value="{{isProductPage}}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="padding: 14px 20px 0">
+          <form onSubmit="{{submitSearch}}" style="position: relative; margin: 0">
+            <label for="kwp" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search help</label>
+            <input id="kwp" class="field" type="search" placeholder="Search help" value="{{query}}" onChange="{{onQuery}}">
+            <button type="submit" aria-label="Search" style="position: absolute; right: 6px; top: 3px; width: 40px; height: 40px; border: 0; background: none; cursor: pointer; color: #5B7282">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+            </button>
+          </form>
+        </div>
+        <div style="padding: 18px 20px 14px; display: flex; gap: 16px; align-items: center">
+          <div style="width: 84px; height: 84px; border-radius: 50%; background: #C1CCD6; display: flex; align-items: center; justify-content: center; flex: none">
+            <svg width="54" height="15" viewBox="0 17 56 22" aria-hidden="true"><circle cx="7.2" cy="28" r="3.2" fill="#fff"></circle><circle cx="17.6" cy="28" r="3.2" fill="#fff"></circle><circle cx="28" cy="28" r="3.2" fill="#fff"></circle><circle cx="38.4" cy="28" r="3.2" fill="#fff"></circle><circle cx="48.8" cy="28" r="3.2" fill="#fff"></circle></svg>
+          </div>
+          <div style="min-width: 0">
+            <h1 style="margin: 0; font-size: 30px; font-weight: 300; color: #5B7282; text-transform: lowercase">{{productName}}</h1>
+            <button class="textlink" onClick="{{openManual}}" aria-expanded="{{manualOpen}}" style="font-size: 16px; font-weight: 800; padding: 4px 0">Product Manual</button>
+            <div><button class="textlink" onClick="{{refine}}" style="font-size: 13px; font-weight: 600; padding: 2px 0; color: #5B7282">Not your product?</button></div>
+          </div>
+        </div>
+        <sc-if value="{{manualOpen}}" hint-placeholder-val="{{ false }}">
+          <div style="margin: 0 20px 10px; padding: 14px 16px; border: 1.5px solid #C1CCD6; border-radius: 12px; font-size: 15px; line-height: 1.5">
+            <div style="font-weight: 800; margin-bottom: 4px">{{productName}} manual</div>
+            <div style="color: #5B7282">Getting started · Wearing your tracker · Basic navigation · Notifications · Battery and charging · General info and specifications</div>
+            <button class="textlink" onClick="{{noop}}" style="font-size: 15px; font-weight: 800; padding: 8px 0 0">Print manual (PDF)</button>
+          </div>
+        </sc-if>
+        <div style="display: flex; gap: 10px; padding: 0 20px 6px">
+          <a class="ghost" href="https://www.fitbit.com/global/us/products/apps" style="flex: 1; text-align: center; text-decoration: none; font-size: 16px; font-weight: 700; padding: 10px 12px">Get the App</a>
+          <button class="ghost" onClick="{{toggleQuick}}" aria-expanded="{{quickOpen}}" style="flex: 1; font-size: 16px; font-weight: 700; padding: 10px 12px">Quick Start</button>
+        </div>
+        <sc-if value="{{quickOpen}}" hint-placeholder-val="{{ false }}">
+          <div style="margin: 8px 20px 4px; padding: 14px 16px; border: 1.5px solid #C1CCD6; border-radius: 12px; font-size: 16px; line-height: 1.5">
+            <div style="font-weight: 800; margin-bottom: 6px">Quick Start</div>
+            <ol style="margin: 0; padding-left: 20px">
+              <li>Charge your tracker fully.</li>
+              <li>Download the Fitbit app on your phone or computer.</li>
+              <li>Create an account or log in, then tap <b>Set up a device</b>.</li>
+              <li>Follow the steps to pair, then sync.</li>
+            </ol>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px; margin-top: 10px">
+              <button class="textlink" onClick="{{openSetup}}" style="font-weight: 700; padding: 4px 0">101 user guide from the app</button>
+              <button class="textlink" onClick="{{openCompat}}" style="font-weight: 700; padding: 4px 0">Compatibility with devices</button>
+            </div>
+          </div>
+        </sc-if>
+        <div style="padding: 10px 20px 4px; display: flex; flex-direction: column; gap: 2px">
+          <sc-for list="{{prodCats}}" as="ct" hint-placeholder-count="4">
+            <button class="cat {{ct.cls}}" aria-pressed="{{ct.on}}" onClick="{{ct.pick}}">{{ct.label}}</button>
+          </sc-for>
+        </div>
+        <div style="border-top: 1px solid #3E5463; margin-top: 10px">
+          <button onClick="{{toggleList}}" aria-expanded="{{listOpen}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; border-bottom: 1px solid #3E5463; padding: 16px 20px; font-size: 20px; font-weight: 700; color: #5B7282; cursor: pointer">
+            <span>Article list</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true" class="{{listChevron}}"><path d="M1 1l8 8 8-8"></path></svg>
+          </button>
+          <sc-if value="{{listOpen}}" hint-placeholder-val="{{ true }}">
+            <div style="padding: 6px 0 8px">
+              <sc-for list="{{productArticles}}" as="a" hint-placeholder-count="5">
+                <div><button class="textlink" onClick="{{a.open}}" style="color: #5B7282; font-style: italic; font-size: 17px; line-height: 1.45; padding: 7px 20px; width: 100%">{{a.title}}</button></div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{hasProdPreview}}" hint-placeholder-val="{{ true }}">
+            <div style="padding: 16px 20px 6px; border-top: 1px solid #3E5463">
+              <button class="textlink" onClick="{{prodPreview.open}}" style="color: #5B7282; font-size: 20px; font-weight: 800; line-height: 1.3">{{prodPreview.title}}</button>
+              <p style="margin: 10px 0 12px; font-size: 17px; line-height: 1.5; color: #5B7282">{{prodPreview.excerpt}}</p>
+              <sc-if value="{{prodPreview.isLights}}" hint-placeholder-val="{{ true }}">
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px">
+                  <sc-for list="{{lightRows}}" as="lr" hint-placeholder-count="5">
+                    <div style="display: flex; align-items: center; gap: 12px">
+                      <div style="display: flex; gap: 4px; background: #C1CCD6; border-radius: 999px; padding: 6px 10px">
+                        <sc-for list="{{lr.dots}}" as="d" hint-placeholder-count="5">
+                          <span class="ld {{d.cls}}"></span>
+                        </sc-for>
+                      </div>
+                      <span style="font-size: 15px; color: #5B7282">{{lr.label}}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-if>
+              <button class="textlink" onClick="{{prodPreview.open}}" style="font-size: 16px; font-weight: 800; padding: 6px 0">Read article</button>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== ARTICLE ===== -->
+    <sc-if value="{{isArticle}}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="padding: 14px 20px 0">
+          <form onSubmit="{{submitSearch}}" style="position: relative; margin: 0">
+            <label for="kw3" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search help</label>
+            <input id="kw3" class="field" type="search" placeholder="search help" value="{{query}}" onChange="{{onQuery}}">
+            <button type="submit" aria-label="Search" style="position: absolute; right: 6px; top: 3px; width: 40px; height: 40px; border: 0; background: none; cursor: pointer; color: #5B7282">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+            </button>
+          </form>
+          <h1 style="margin: 16px 0 12px; font-size: 23px; font-weight: 700; color: #00737B; line-height: 1.3">{{art.title}}</h1>
+        </div>
+        <div style="border-top: 1px solid #3E5463">
+          <button onClick="{{toggleRefine}}" aria-expanded="{{refineOpen}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; padding: 14px 20px; font-size: 17px; color: #5B7282; cursor: pointer">
+            <span>Refine articles by product · <b>{{productName}}</b></span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true" class="{{refineChevron}}"><path d="M1 1l8 8 8-8"></path></svg>
+          </button>
+          <sc-if value="{{refineOpen}}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; gap: 10px; overflow-x: auto; padding: 2px 20px 16px">
+              <sc-for list="{{refineProductsInline}}" as="p" hint-placeholder-count="8">
+                <button class="prod {{p.cls}}" aria-pressed="{{p.on}}" onClick="{{p.pick}}" style="width: 88px; height: 88px; flex: none; font-size: 14px; gap: 5px">
+                  <svg width="48" height="14" viewBox="0 17 56 22" aria-hidden="true"><circle cx="7.2" cy="28" r="3.2" fill="#fff"></circle><circle cx="17.6" cy="28" r="3.2" fill="#fff"></circle><circle cx="28" cy="28" r="3.2" fill="#fff"></circle><circle cx="38.4" cy="28" r="3.2" fill="#fff"></circle><circle cx="48.8" cy="28" r="3.2" fill="#fff"></circle></svg>
+                  <span>{{p.name}}</span>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+        <div style="border-top: 1px solid #3E5463">
+          <button onClick="{{toggleToc}}" aria-expanded="{{tocOpen}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; padding: 16px 20px; font-size: 20px; font-weight: 700; color: #5B7282; cursor: pointer">
+            <span>In this article</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true" class="{{tocChevron}}"><path d="M1 1l8 8 8-8"></path></svg>
+          </button>
+          <sc-if value="{{tocOpen}}" hint-placeholder-val="{{ true }}">
+            <div style="padding: 0 20px 16px; display: flex; flex-direction: column; gap: 4px">
+              <sc-for list="{{art.sections}}" as="s" hint-placeholder-count="5">
+                <a href="#{{s.anchor}}" style="color: #5B7282; font-style: italic; font-size: 17px; line-height: 1.5; padding: 3px 0; text-decoration: none">{{s.h}}</a>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+        <div style="border-top: 1px solid #3E5463; padding: 6px 20px 8px">
+          <sc-for list="{{art.sections}}" as="s" hint-placeholder-count="5">
+            <section id="{{s.anchor}}" style="padding: 14px 0 6px; scroll-margin-top: 120px">
+              <h2 style="margin: 0 0 6px; font-size: 19px; font-weight: 800; color: #5B7282">{{s.h}}</h2>
+              <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #5B7282">{{s.p}}</p>
+              <sc-for list="{{s.pairs}}" as="pr" hint-placeholder-count="0">
+                <div id="{{pr.id}}" style="margin-top: 12px; scroll-margin-top: 120px">
+                  <div style="font-size: 17px; font-weight: 800; color: #5B7282">Problem</div>
+                  <p style="margin: 0 0 8px; font-size: 17px; line-height: 1.5; color: #5B7282">{{pr.problem}}</p>
+                  <div style="font-size: 17px; font-weight: 800; color: #5B7282">Solution</div>
+                  <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #5B7282">{{pr.solution}}</p>
+                </div>
+              </sc-for>
+              <sc-if value="{{s.lights}}" hint-placeholder-val="{{ false }}">
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 12px">
+                  <sc-for list="{{lightRows}}" as="lr" hint-placeholder-count="5">
+                    <div style="display: flex; align-items: center; gap: 12px">
+                      <div style="display: flex; gap: 4px; background: #C1CCD6; border-radius: 999px; padding: 6px 10px">
+                        <sc-for list="{{lr.dots}}" as="d" hint-placeholder-count="5">
+                          <span class="ld {{d.cls}}"></span>
+                        </sc-for>
+                      </div>
+                      <span style="font-size: 15px; color: #5B7282">{{lr.label}}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </section>
+          </sc-for>
+        </div>
+        <div style="margin: 10px 20px 4px; padding: 14px 16px; background: rgba(193,204,214,.3); border-radius: 12px">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+            <span style="font-size: 16px; font-weight: 700; color: #5B7282">Was this helpful?</span>
+            <div style="display: flex; gap: 2px" role="group" aria-label="Rate this article">
+              <sc-for list="{{stars}}" as="st" hint-placeholder-count="5">
+                <button onClick="{{st.pick}}" aria-label="{{st.label}}" aria-pressed="{{st.on}}" style="width: 32px; height: 36px; border: 0; background: none; padding: 0; cursor: pointer; display: flex; align-items: center; justify-content: center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="star {{st.cls}}"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          <sc-if value="{{ratedGood}}" hint-placeholder-val="{{ false }}">
+            <div style="font-size: 15px; color: #5B7282; margin-top: 8px">Thanks — glad that helped.</div>
+          </sc-if>
+          <sc-if value="{{ratedBad}}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px">
+              <span style="font-size: 15px; color: #5B7282">Sorry about that.</span>
+              <button class="pill" onClick="{{openContact}}" style="font-size: 15px; padding: 8px 16px">contact support</button>
+            </div>
+          </sc-if>
+          <div style="font-size: 12px; font-weight: 800; letter-spacing: .05em; color: #5B7282; margin-top: 10px">TAGS · {{art.tagLine}}</div>
+          <div style="font-size: 12px; font-weight: 800; letter-spacing: .05em; color: #5B7282; margin-top: 2px">CATEGORY · {{art.category}}</div>
+        </div>
+        <div style="padding: 8px 20px 0; display: flex; flex-direction: column; gap: 2px">
+          <div style="font-size: 13px; font-weight: 800; letter-spacing: .06em; color: #5B7282; margin-top: 12px">RELATED</div>
+          <sc-for list="{{related}}" as="r" hint-placeholder-count="3">
+            <div><button class="textlink" onClick="{{r.open}}" style="font-size: 16px; padding: 6px 0">{{r.title}}</button></div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== WEB SEARCH (third party) ===== -->
+    <sc-if value="{{isWeb}}" hint-placeholder-val="{{ false }}">
+      <div style="background: #fff; min-height: 100%; font-family: Roboto, Arial, 'Helvetica Neue', sans-serif">
+        <div style="padding: 14px 12px 0">
+          <div style="font-size: 22px; font-weight: 700; color: #5B7282; text-align: center; letter-spacing: .02em; margin-bottom: 10px">web search</div>
+          <form onSubmit="{{webSearch}}" style="display: flex; margin: 0; box-shadow: 0 1px 4px rgba(0,0,0,.2); border-radius: 4px; overflow: hidden">
+            <label for="wq" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search the web</label>
+            <input id="wq" value="{{webQuery}}" onChange="{{onWebQuery}}" style="flex: 1; min-width: 0; border: 0; padding: 12px; font-size: 16px; color: #222; outline: none">
+            <button type="submit" aria-label="Search" style="width: 48px; border: 0; background: #4A7FE8; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>
+            </button>
+          </form>
+          <div style="display: flex; gap: 22px; padding: 12px 6px 0; font-size: 12px; font-weight: 700; color: #5B7282; border-bottom: 1px solid #3E5463">
+            <span style="color: #2A62D6; border-bottom: 3px solid #2A62D6; padding-bottom: 8px">ALL</span><span>VIDEOS</span><span>NEWS</span><span>SHOPPING</span>
+          </div>
+        </div>
+        <div style="padding: 10px 8px 20px; display: flex; flex-direction: column; gap: 10px; background: rgba(193,204,214,.3)">
+          <sc-for list="{{webResults}}" as="w" hint-placeholder-count="3">
+            <div style="background: #fff; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,.15)">
+              <button onClick="{{w.open}}" style="display: block; width: 100%; text-align: left; background: none; border: 0; cursor: pointer; padding: 12px 14px 8px; border-bottom: 1px solid #3E5463; font-family: inherit">
+                <div style="font-size: 17px; line-height: 1.3; color: #5A2CA0">{{w.title}}</div>
+                <div style="font-size: 13px; color: #1B7A3A; margin-top: 3px">{{w.crumb}}</div>
+              </button>
+              <div style="padding: 8px 14px 12px; font-size: 14px; line-height: 1.45; color: #333">{{w.snippet}}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== FITBIT.COM (entry) ===== -->
+    <sc-if value="{{isFitbitCom}}" hint-placeholder-val="{{ false }}">
+      <div style="min-height: 100%; background: #fff">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px 10px 18px; border-bottom: 1px solid #3E5463">
+          <span style="font-size: 24px; font-weight: 800; color: #5B7282; letter-spacing: .01em">fitbit</span>
+          <button class="tool" aria-label="Close site menu" style="color: #00828B" onClick="{{noop}}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+          </button>
+        </div>
+        <nav aria-label="fitbit.com">
+          <sc-for list="{{siteMenu}}" as="m" hint-placeholder-count="8">
+            <button class="row {{m.cls}}" onClick="{{m.go}}" style="font-size: 18px; padding: 13px 20px; min-height: 48px">
+              <span>{{m.label}}</span>
+              <svg width="10" height="16" viewBox="0 0 12 20" fill="none" stroke="#5B7282" stroke-width="1.8" aria-hidden="true"><path d="M2 2l8 8-8 8"></path></svg>
+            </button>
+          </sc-for>
+        </nav>
+        <div style="padding: 22px 20px; text-align: center">
+          <div style="font-size: 16px; color: #5B7282; margin-bottom: 14px">Track steps, sleep, weight and more.</div>
+          <div style="display: flex; justify-content: center; gap: 14px">
+            <sc-for list="{{heroDots}}" as="h" hint-placeholder-count="3">
+              <div style="width: 74px; height: 74px; border-radius: 50%; background: #C1CCD6; display: flex; align-items: center; justify-content: center">
+                <svg width="46" height="13" viewBox="0 17 56 22" aria-hidden="true"><circle cx="7.2" cy="28" r="3.2" fill="#fff"></circle><circle cx="17.6" cy="28" r="3.2" fill="#fff"></circle><circle cx="28" cy="28" r="3.2" fill="#fff"></circle><circle cx="38.4" cy="28" r="3.2" fill="#fff"></circle><circle cx="48.8" cy="28" r="3.2" fill="#fff"></circle></svg>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== CHATBOT ===== -->
+    <sc-if value="{{isChat}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; min-height: 100%">
+        <div style="padding: 16px 20px 6px; border-bottom: 1px solid #3E5463">
+          <h1 style="margin: 0; font-size: 21px; font-weight: 400; color: #00737B">FitBot</h1>
+          <div style="font-size: 14px; color: #5B7282">Chat help, no forms to fill out</div>
+        </div>
+        <div style="flex: 1; padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 10px">
+          <sc-for list="{{chatItems}}" as="m" hint-placeholder-count="2">
+            <div style="display: flex; flex-direction: column">
+              <sc-if value="{{m.isBot}}" hint-placeholder-val="{{ true }}">
+                <div style="display: flex; gap: 8px; align-items: flex-end; max-width: 88%">
+                  <div style="width: 30px; height: 30px; border-radius: 50%; background: #00939C; flex: none; display: flex; align-items: center; justify-content: center">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+                  </div>
+                  <div style="background: #5B7282; color: #fff; border-radius: 16px 16px 16px 4px; padding: 10px 14px; font-size: 16px; line-height: 1.4">
+                    <div>{{m.text}}</div>
+                    <sc-if value="{{m.hasLink}}" hint-placeholder-val="{{ false }}">
+                      <button onClick="{{m.open}}" style="margin-top: 8px; background: #fff; color: #00626A; border: 0; border-radius: 10px; padding: 8px 12px; font-size: 15px; font-weight: 800; cursor: pointer; text-align: left">{{m.linkLabel}}</button>
+                    </sc-if>
+                  </div>
+                </div>
+              </sc-if>
+              <sc-if value="{{m.isUser}}" hint-placeholder-val="{{ false }}">
+                <div style="align-self: flex-end; max-width: 80%; background: #fff; border: 1.5px solid #00828B; color: #00626A; border-radius: 16px 16px 4px 16px; padding: 10px 14px; font-size: 16px; line-height: 1.4">{{m.text}}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px">
+            <sc-for list="{{chatSuggestions}}" as="sg" hint-placeholder-count="3">
+              <button onClick="{{sg.send}}" style="border: 1.5px solid #00828B; background: #fff; color: #00737B; border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 700; cursor: pointer; min-height: 34px">{{sg.label}}</button>
+            </sc-for>
+          </div>
+        </div>
+        <form onSubmit="{{sendChat}}" style="position: sticky; bottom: 0; background: #fff; border-top: 1px solid #3E5463; padding: 10px 12px; display: flex; gap: 8px; align-items: center; margin: 0">
+          <label for="chatin" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Message the help assistant</label>
+          <input id="chatin" class="field" placeholder="Describe your issue…" value="{{chatDraft}}" onChange="{{onChatDraft}}" style="padding-right: 18px">
+          <button type="submit" aria-label="Send" style="width: 44px; height: 44px; border-radius: 50%; border: 0; background: #00828B; color: #fff; flex: none; cursor: pointer; display: flex; align-items: center; justify-content: center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"></path></svg>
+          </button>
+        </form>
+      </div>
+    </sc-if>
+
+    <!-- ===== LOG IN ===== -->
+    <sc-if value="{{isLogin}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 10px 24px 30px">
+        <div style="display: flex; justify-content: flex-end">
+          <button class="tool" aria-label="Close" onClick="{{noThanks}}" style="color: #5B7282">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+          </button>
+        </div>
+        <div style="font-size: 26px; font-weight: 300; color: #00737B; text-align: center; margin: 6px 0 10px">fitbit help</div>
+        <h1 style="margin: 0 0 22px; font-size: 19px; font-weight: 400; text-align: center; line-height: 1.4; color: #5B7282">Log in with your Fitbit account so we can better assist you.</h1>
+        <form onSubmit="{{doLogin}}" style="display: flex; flex-direction: column; gap: 14px; margin: 0">
+          <div>
+            <label for="em" style="font-size: 14px; font-weight: 700; display: block; margin-bottom: 4px">Email address</label>
+            <input id="em" class="box" type="email" autocomplete="off" placeholder="allie@example.com">
+          </div>
+          <div>
+            <label for="pw" style="font-size: 14px; font-weight: 700; display: block; margin-bottom: 4px">Password</label>
+            <input id="pw" class="box" type="password" autocomplete="off" placeholder="••••••••">
+          </div>
+          <div style="display: flex; justify-content: space-between; gap: 10px; margin-top: 6px">
+            <button type="button" class="ghost" onClick="{{noThanks}}" style="flex: 1">No thanks</button>
+            <button type="submit" class="pill" style="flex: 1">Go</button>
+          </div>
+        </form>
+        <div style="display: flex; align-items: center; gap: 10px; margin: 22px 0; color: #5B7282; font-size: 14px">
+          <div style="flex: 1; height: 1px; background: #3E5463"></div><span>or</span><div style="flex: 1; height: 1px; background: #3E5463"></div>
+        </div>
+        <button class="ghost" onClick="{{doLogin}}" style="width: 100%; font-size: 17px">Continue with Google</button>
+        <p style="font-size: 13px; color: #5B7282; text-align: center; margin: 18px 0 0">Prototype: nothing you type here is sent anywhere.</p>
+      </div>
+    </sc-if>
+
+    <!-- ===== CONTACT US ===== -->
+    <sc-if value="{{isContact}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 20px 20px 10px">
+        <h1 style="margin: 0 0 6px; font-size: 22px; font-weight: 400; color: #00737B">Contact support</h1>
+        <p style="margin: 0 0 16px; font-size: 16px; color: #5B7282; line-height: 1.45">{{contactIntro}}</p>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <button class="tile" onClick="{{openChat}}" style="flex-direction: row; align-items: center; gap: 14px">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00828B" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg>
+            <span style="display: flex; flex-direction: column"><span style="font-size: 17px; font-weight: 800">Chat</span><span style="font-size: 14px; color: #5B7282">Start with the help assistant</span></span>
+          </button>
+          <button class="tile" onClick="{{noop}}" style="flex-direction: row; align-items: center; gap: 14px">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00828B" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+            <span style="display: flex; flex-direction: column"><span style="font-size: 17px; font-weight: 800">Email</span><span style="font-size: 14px; color: #5B7282">We reply within one business day</span></span>
+          </button>
+          <button class="tile" onClick="{{noop}}" style="flex-direction: row; align-items: center; gap: 14px">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00828B" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>
+            <span style="display: flex; flex-direction: column"><span style="font-size: 17px; font-weight: 800">Phone</span><span style="font-size: 14px; color: #5B7282">[SUPPORT PHONE] · [HOURS]</span></span>
+          </button>
+          <button class="tile" onClick="{{noop}}" style="flex-direction: row; align-items: center; gap: 14px">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00828B" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1"></path></svg>
+            <span style="display: flex; flex-direction: column"><span style="font-size: 17px; font-weight: 800">@FitbitSupport</span><span style="font-size: 14px; color: #5B7282">Message us on social</span></span>
+          </button>
+          <button class="tile" onClick="{{openForum}}" style="flex-direction: row; align-items: center; gap: 14px">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00828B" stroke-width="2" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="10" r="2.5"></circle><path d="M3 19a6 6 0 0 1 12 0M14 19a4 4 0 0 1 7 0"></path></svg>
+            <span style="display: flex; flex-direction: column"><span style="font-size: 17px; font-weight: 800">Community forum</span><span style="font-size: 14px; color: #5B7282">Ask other Fitbit users</span></span>
+          </button>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== COMMUNITY FORUM ===== -->
+    <sc-if value="{{isForum}}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #5B7282; color: #fff">
+          <span style="font-size: 20px; font-weight: 300">fitbit <b style="font-weight: 800">community</b></span>
+          <button onClick="{{goHome}}" style="background: none; border: 1.5px solid #fff; color: #fff; border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; cursor: pointer; min-height: 36px">help home</button>
+        </div>
+        <sc-if value="{{forumSent}}" hint-placeholder-val="{{ false }}">
+          <div style="margin: 16px 16px 0; padding: 12px 14px; border-radius: 12px; background: #E6F4F5; font-size: 15px; line-height: 1.45">
+            <b>Your question is posted.</b> “{{forumPost}}” — you'll get an email when someone replies.
+          </div>
+        </sc-if>
+        <div style="padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 10px">
+          <sc-for list="{{forumSections}}" as="f" hint-placeholder-count="3">
+            <button class="tile" onClick="{{f.toggle}}" aria-expanded="{{f.open}}">
+              <span style="display: flex; justify-content: space-between; width: 100%; align-items: center"><span style="font-size: 18px; font-weight: 800">{{f.title}}</span><span style="font-size: 13px; color: #5B7282">{{f.meta}}</span></span>
+              <span style="font-size: 14px; color: #5B7282">{{f.desc}}</span>
+              <sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+                <span style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; border-top: 1px solid #3E5463; padding-top: 8px">
+                  <sc-for list="{{f.threads}}" as="t" hint-placeholder-count="3">
+                    <span style="font-size: 15px; color: #5B7282">{{t}}</span>
+                  </sc-for>
+                </span>
+              </sc-if>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== Shared: ask the forum + contact + footer (help pages) ===== -->
+    <sc-if value="{{showAsk}}" hint-placeholder-val="{{ true }}">
+      <div style="padding: 18px 20px 6px">
+        <div style="font-size: 18px; font-weight: 800; margin-bottom: 4px">See what others are saying:</div>
+        <sc-if value="{{askNotSent}}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{sendForum}}" style="margin: 0">
+            <label for="askq" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Ask the help forum a question</label>
+            <input id="askq" class="underline" placeholder="Ask the help forum a question" value="{{forumDraft}}" onChange="{{onForumDraft}}">
+            <div style="display: flex; justify-content: flex-end; margin-top: 10px">
+              <button type="submit" class="ghost" disabled="{{forumEmpty}}" style="padding: 6px 20px; font-size: 17px; font-weight: 700; min-height: 40px">send</button>
+            </div>
+          </form>
+        </sc-if>
+        <sc-if value="{{forumSent}}" hint-placeholder-val="{{ false }}">
+          <div style="font-size: 16px; line-height: 1.45; padding: 6px 0">Posted to the community. <button class="textlink" onClick="{{openForum}}" style="font-weight: 800">View on community.fitbit.com</button></div>
+        </sc-if>
+      </div>
+    </sc-if>
+    <sc-if value="{{showContactBtn}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; justify-content: center; padding: 14px 20px 22px">
+        <button class="ghost" onClick="{{openContact}}" style="padding: 10px 44px">contact support</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{showFooter}}" hint-placeholder-val="{{ true }}">
+      <footer style="background: rgba(193,204,214,.3); border-top: 1px solid #3E5463; padding: 20px 20px 26px">
+        <div style="font-size: 20px; font-weight: 300; color: #00737B">fitbit</div>
+        <div style="display: flex; gap: 16px; margin: 10px 0 14px; font-size: 15px">
+          <a href="https://blog.fitbit.com" style="color: #00737B">Blog</a>
+          <button class="textlink" onClick="{{openForum}}" style="font-size: 15px">Community</button>
+          <button class="textlink" onClick="{{openContact}}" style="font-size: 15px">Contact</button>
+        </div>
+        <div style="font-size: 15px; font-weight: 700; margin-bottom: 6px">Get the skinny on all things Fitbit</div>
+        <sc-if value="{{newsNotSent}}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{sendNews}}" style="display: flex; gap: 8px; margin: 0">
+            <label for="nl" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Email address</label>
+            <input id="nl" class="box" type="email" autocomplete="off" placeholder="enter email" style="border-radius: 999px; padding: 9px 16px; font-size: 15px">
+            <button type="submit" class="pill" style="font-size: 15px; padding: 8px 16px; flex: none">Sign up</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{newsSent}}" hint-placeholder-val="{{ false }}">
+          <div style="font-size: 15px; color: #00626A">You're on the list.</div>
+        </sc-if>
+      </footer>
+    </sc-if>
+
+    <!-- floating chat on content pages -->
+    <sc-if value="{{showFloatFab}}" hint-placeholder-val="{{ false }}">
+      <div style="position: sticky; bottom: 12px; height: 0; display: flex; justify-content: flex-start; padding-left: 14px; z-index: 4">
+        <button class="fab" aria-label="Chat with the help assistant" onClick="{{openChat}}" style="transform: translateY(-58px); filter: drop-shadow(0 3px 6px rgba(0,0,0,.25))">
+          <svg width="50" height="50" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 4a19 19 0 1 1-10.6 34.8L4 42l3.3-8A19 19 0 0 1 23 4z" fill="#00939C"></path><path d="M23 14v18M14 23h18" stroke="#fff" stroke-width="3" stroke-linecap="round"></path></svg>
+        </button>
+      </div>
+    </sc-if>
+  </div>
+
+  <!-- Safari toolbar -->
+  <div style="flex: none; height: 44px; background: rgba(193,204,214,.3); border-top: 1px solid #3E5463; display: flex; justify-content: space-around; align-items: center; padding: 0 6px">
+    <button class="tool" aria-label="Back" disabled="{{cantBack}}" onClick="{{back}}">
+      <svg width="13" height="22" viewBox="0 0 13 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M11 2L2 11l9 9"></path></svg>
+    </button>
+    <button class="tool" aria-label="Forward" disabled="{{cantFwd}}" onClick="{{forward}}">
+      <svg width="13" height="22" viewBox="0 0 13 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M2 2l9 9-9 9"></path></svg>
+    </button>
+    <span style="width: 44px; display: flex; justify-content: center; color: #0A7AFF" aria-hidden="true">
+      <svg width="20" height="26" viewBox="0 0 20 26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9H3v15h14V9h-3M10 1v15M6 5l4-4 4 4"></path></svg>
+    </span>
+    <span style="width: 44px; display: flex; justify-content: center; color: #0A7AFF" aria-hidden="true">
+      <svg width="26" height="20" viewBox="0 0 26 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 4C10 1.5 5 1.5 1 3v15c4-1.5 9-1.5 12 1 3-2.5 8-2.5 12-1V3c-4-1.5-9-1.5-12 1zM13 4v15"></path></svg>
+    </span>
+    <span style="width: 44px; display: flex; justify-content: center; color: #0A7AFF" aria-hidden="true">
+      <svg width="24" height="22" viewBox="0 0 24 22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="1" y="6" width="16" height="15" rx="2"></rect><path d="M6 6V2h17v15h-6"></path></svg>
+    </span>
+  </div>
+
+  <!-- Menu drawer -->
+  <sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+    <div style="position: absolute; inset: 59px 0 0 0; z-index: 20; display: flex">
+      <div role="dialog" aria-label="Menu" style="width: 290px; background: #fff; height: 100%; overflow-y: auto; box-shadow: 4px 0 18px rgba(0,0,0,.18)">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 8px 8px 24px; border-bottom: 1px solid #3E5463">
+          <span style="font-size: 22px; font-weight: 300; color: #00737B">fitbit help</span>
+          <button class="tool" aria-label="Close menu" onClick="{{closeMenu}}" style="color: #5B7282">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+          </button>
+        </div>
+        <sc-for list="{{menuItems}}" as="mi" hint-placeholder-count="8">
+          <button class="menuitem" onClick="{{mi.go}}">{{mi.label}}</button>
+        </sc-for>
+      </div>
+      <button aria-label="Close menu" onClick="{{closeMenu}}" style="flex: 1; border: 0; background: rgba(20,24,28,.35); cursor: pointer"></button>
+    </div>
+  </sc-if>
+</div>
+  </div>
+  <div aria-hidden="true" style="position: absolute; left: 50%; top: 823px; width: 62px; height: 62px; margin-left: -31px; border-radius: 50%; background: #F1F2F4; box-shadow: inset 0 0 0 2px #D2D6DA"></div>
+  </div>
+</div></template>
+<script>
+(() => {
+  const STAGE = document.getElementById('stage');
+  const TPL = document.getElementById('tpl').content;
+  const EVENTS = { onclick: 'click', onchange: 'input', oninput: 'input', onsubmit: 'submit', onpointerdown: 'pointerdown', onwheel: 'wheel', onkeydown: 'keydown' };
+  const HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+  const WHOLE = /^\{\{\s*([^}]+?)\s*\}\}$/;
+  function look(expr, scope) {
+    expr = expr.trim();
+    if (expr === 'true') return true; if (expr === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(expr)) return Number(expr);
+    const parts = expr.split('.');
+    let v = scope[parts[0]];
+    for (let i = 1; i < parts.length && v != null; i++) v = v[parts[i]];
+    return v;
+  }
+  const str = (v) => (v == null || v === false ? '' : String(v));
+  const interp = (t, scope) => t.replace(HOLE, (m, e) => str(look(e, scope)));
+  function bind(el, ev) {
+    el.__evs = ev;
+    el.__bound = el.__bound || {};
+    for (const type in ev) if (!el.__bound[type]) {
+      el.__bound[type] = true;
+      el.addEventListener(type, (e) => { const f = el.__evs && el.__evs[type]; if (f) f(e); });
+    }
+  }
+  function renderList(nodes, scope, out) { for (const n of nodes) renderNode(n, scope, out); return out; }
+  function renderNode(n, scope, out) {
+    if (n.nodeType === 3) { out.push(document.createTextNode(interp(n.data, scope))); return; }
+    if (n.nodeType !== 1) return;
+    const tag = n.localName;
+    if (tag === 'sc-if') { if (look((n.getAttribute('value') || '').replace(WHOLE, '$1'), scope)) renderList(n.childNodes, scope, out); return; }
+    if (tag === 'sc-for') {
+      const list = look((n.getAttribute('list') || '').replace(WHOLE, '$1'), scope) || [];
+      const as = n.getAttribute('as') || 'item';
+      list.forEach((item, i) => { const sc = Object.create(scope); sc[as] = item; sc.$index = i; renderList(n.childNodes, sc, out); });
+      return;
+    }
+    const el = n.namespaceURI && n.namespaceURI !== 'http://www.w3.org/1999/xhtml' ? document.createElementNS(n.namespaceURI, n.tagName) : document.createElement(tag);
+    const ev = {};
+    for (const a of n.attributes) {
+      const name = a.name;
+      if (name.startsWith('hint-')) continue;
+      const whole = a.value.match(WHOLE);
+      const raw = whole ? look(whole[1], scope) : interp(a.value, scope);
+      if (EVENTS[name.toLowerCase()]) { if (typeof raw === 'function') ev[EVENTS[name.toLowerCase()]] = raw; continue; }
+      if (name === 'value') { el.__value = str(raw); el.setAttribute('value', str(raw)); continue; }
+      if (name === 'disabled') { if (raw) el.setAttribute('disabled', ''); el.__disabled = !!raw; continue; }
+      if (typeof raw === 'boolean' && name.startsWith('aria-')) { el.setAttribute(name, String(raw)); continue; }
+      if (raw === false || raw == null) continue;
+      el.setAttribute(name, typeof raw === 'string' ? raw : String(raw));
+    }
+    el.__ev = ev;
+    if (n.localName === 'template') { out.push(el); return; }
+    renderList(n.childNodes, scope, []).forEach((c) => el.appendChild(c));
+    out.push(el);
+  }
+  function finish(el) {
+    if (el.nodeType !== 1) return;
+    bind(el, el.__ev || {});
+    if (el.__value !== undefined) el.value = el.__value;
+    if (el.__disabled !== undefined) el.disabled = el.__disabled;
+    for (const c of el.childNodes) finish(c);
+  }
+  function morphKids(parent, kids) {
+    for (let i = 0; i < kids.length; i++) {
+      const old = parent.childNodes[i], nw = kids[i];
+      if (!old) { parent.appendChild(nw); finish(nw); continue; }
+      if (old.nodeType === 3 && nw.nodeType === 3) { if (old.data !== nw.data) old.data = nw.data; continue; }
+      if (old.nodeType === 1 && nw.nodeType === 1 && old.namespaceURI === nw.namespaceURI && old.tagName === nw.tagName) { morphEl(old, nw); continue; }
+      parent.replaceChild(nw, old); finish(nw);
+    }
+    while (parent.childNodes.length > kids.length) parent.removeChild(parent.lastChild);
+  }
+  function morphEl(old, nw) {
+    for (const a of [...old.attributes]) if (!nw.hasAttribute(a.name)) old.removeAttribute(a.name);
+    for (const a of nw.attributes) if (old.getAttribute(a.name) !== a.value) old.setAttribute(a.name, a.value);
+    bind(old, nw.__ev || {});
+    if (nw.__value !== undefined && old.value !== nw.__value) old.value = nw.__value;
+    if (nw.__disabled !== undefined) old.disabled = nw.__disabled;
+    morphKids(old, [...nw.childNodes]);
+  }
+
+  let comp, pending = false, prevForUpdate = null;
+  window.DCLogic = class {
+    constructor(props) { this.props = props; this.state = {}; }
+    setState(p) {
+      const prev = this.state;
+      const patch = typeof p === 'function' ? p(prev, this.props) : p;
+      this.state = Object.assign({}, prev, patch);
+      schedule(prev);
+    }
+    forceUpdate() { schedule(this.state); }
+  };
+  function draw() { morphKids(STAGE, renderList(TPL.childNodes, comp.renderVals(), [])); }
+  function schedule(prev) {
+    if (!comp || !comp.__mounted) return;
+    if (!pending) { pending = true; prevForUpdate = prev; queueMicrotask(() => { pending = false; draw(); if (comp.componentDidUpdate) comp.componentDidUpdate(comp.props, prevForUpdate); }); }
+  }
+  window.__boot = (Component, props) => {
+    comp = new Component(props);
+    draw();
+    comp.__mounted = true;
+    if (comp.componentDidMount) comp.componentDidMount();
+  };
+
+  // scale the fixed-size scene to fit the window
+  function fit() {
+    const k = Math.min(innerWidth / 1400, innerHeight / 1200);
+    STAGE.style.transform = 'scale(' + k + ')';
+    STAGE.style.left = Math.max(0, (innerWidth - 1400 * k) / 2) + 'px';
+    STAGE.style.top = Math.max(0, (innerHeight - 1200 * k) / 2) + 'px';
+  }
+  addEventListener('resize', fit); fit();
+})();
+</script>
+<script>
+
+const ARTICLES = [
+  { id: 'battery', title: "Why isn't my battery charging?", short: 'Battery', category: 'Battery & charging', tags: ['battery', 'charging', 'charge', 'damaged', 'power', 'usb'],
+    excerpt: "If your battery stopped charging, test the solutions in this article — usually it's dirty contacts or the power source.",
+    sections: [
+      { h: "Why isn't my battery charging?", p: 'If your battery stopped charging, test the solutions below.', pairs: [
+        { id: 'fix-contacts', problem: 'The contacts on the tracker or charging cable are dirty.', solution: 'Dust and debris can build up over time and prevent a charge. Clean the charging contacts using the instructions in “How do I clean my tracker?”' },
+        { id: 'fix-usb', problem: 'The USB port or outlet is faulty.', solution: "If you haven't done so, try a different port. A UL-certified wall charger will also work. Don't use a USB hub." }
+      ] },
+      { h: "Can I improve my tracker's battery life?", p: 'If your battery is draining too quickly after a charge, turn off notifications you don’t use, turn off all-day sync, and turn off features you rarely need. Battery life also drops in very cold weather.' },
+      { h: 'How do I charge my tracker?', p: 'Plug the charging cable into a USB port on your computer or a UL-certified wall charger. Seat the tracker in the cradle so the gold contacts line up, then press until it clicks into place. The lights show the charge level — each solid light is about 20%.' },
+      { h: 'How do I clean my tracker?', p: 'Gently clean the gold contacts on the back of the tracker and inside the charging cable with a toothbrush or cotton swab dipped in rubbing alcohol. Sand and lint collect there after a day outdoors. Let both dry fully before charging again.' },
+      { h: 'How do I restart my tracker?', p: "Connect your tracker to its charging cable and press the button on the cable three times within a few seconds. When all the lights flash, your tracker has restarted. Restarting doesn't delete your data." }
+    ] },
+  { id: 'exercise', title: 'How do I track my exercise and activities with Fitbit?', short: 'Exercise', category: 'Exercise & activity', tags: ['data', 'exercise', 'activity', 'workout', 'run', 'running', 'log'],
+    excerpt: 'There are several ways to ensure that your workouts or other calorie-burning activities are calculated in your daily totals.',
+    sections: [
+      { h: 'Multisport and exercise modes', p: 'Some trackers let you start an exercise from the tracker itself, so you can see real-time stats while you work out.' },
+      { h: 'SmartTrack', p: 'SmartTrack automatically recognizes many continuous activities, such as walks and runs, and records them in your exercise history.' },
+      { h: 'MobileRun', p: 'Use your phone’s GPS in the Fitbit app to record a run, walk or hike with distance, pace and a map of your route.' },
+      { h: 'Manually logging an exercise', p: 'If your tracker didn’t record a run, add it yourself: in the Fitbit app, tap the + icon, choose Track exercise, then Log previous exercise and enter the time and distance.' },
+      { h: 'FitStar', p: 'Guided video workouts in the app add their sessions to your exercise history automatically.' }
+    ] },
+  { id: 'syncing', title: "Why won't my tracker sync?", short: 'Syncing', category: 'Syncing', tags: ['syncing', 'sync', 'data', 'mobile app', 'bluetooth'],
+    excerpt: 'Syncing difficulty is usually caused by a missing requirement. Verify each one before moving on to the troubleshooting steps.',
+    sections: [
+      { h: 'Requirements', p: 'The Bluetooth setting on your phone or computer must be on, the Fitbit app must be up to date, and your tracker needs some battery charge. On Android, location permission must be on for Bluetooth scanning.' },
+      { h: 'Sync manually', p: 'Open the Fitbit app, pull down on the dashboard and wait for the sync to finish. Keep your tracker close to your phone while it syncs.' },
+      { h: 'Restart Bluetooth and the app', p: 'Turn Bluetooth off and on again, force-quit the Fitbit app and reopen it. If it still won’t sync, restart your phone and your tracker.' },
+      { h: 'Remove other connections', p: 'Your tracker can only sync with one device at a time. Close the Fitbit app on other phones or tablets nearby.' }
+    ] },
+  { id: 'howsync', title: 'How do Fitbit trackers sync their data?', short: 'How syncing works', category: 'Syncing', tags: ['sync', 'syncing', 'data', 'bluetooth'],
+    excerpt: 'Your tracker sends its data to the Fitbit app over Bluetooth, and the app sends it to your Fitbit account.',
+    sections: [
+      { h: 'Syncing with your phone', p: 'When the Fitbit app is open, or all-day sync is on, your tracker syncs over Bluetooth whenever it’s nearby.' },
+      { h: 'Syncing with a computer', p: 'On a Windows 10 computer, the Fitbit app syncs over Bluetooth. Older computers can use Fitbit Connect with a wireless sync dongle.' },
+      { h: 'How often should I sync?', p: 'Your tracker stores about a week of detailed data. Sync at least once every few days so nothing is lost.' }
+    ] },
+  { id: 'lights', title: 'What do the light patterns mean on my Flex 2?', short: 'Light patterns', category: 'Getting to know your tracker', tags: ['lights', 'light patterns', 'flex 2', 'flex', 'led', 'goal'],
+    excerpt: 'Flex 2 has five indicator lights. Their patterns show your progress toward your daily goal, battery level and notifications.',
+    sections: [
+      { h: 'Light pattern summary', p: 'Double-tap your tracker to see your progress. Each light is 20% of your daily goal, and a blinking light shows the 20% you’re working on now.', lights: true },
+      { h: 'Reaching your goal', p: 'When you reach your daily goal, your tracker vibrates and the lights flash in a celebration pattern.' },
+      { h: 'Battery level', p: 'While charging, the lights show the battery level. Each solid light is about 20% charged; when all five are solid, your tracker is full.' },
+      { h: 'Notifications', p: 'When a call, text or calendar alert arrives, your tracker vibrates and the lights flash in the color set for that notification.' },
+      { h: 'Reminders to move', p: 'If you haven’t moved in a while, your tracker vibrates and the lights sweep across to remind you to get up.' }
+    ] },
+  { id: 'notifications', title: 'How do I get call and text notifications?', short: 'Notifications', category: 'Notifications', tags: ['notifications', 'notification', 'calls', 'call', 'texts'],
+    excerpt: 'Supported trackers buzz and light up when your phone gets a call, text or calendar alert, so you don’t miss one.',
+    sections: [
+      { h: 'Turn on notifications', p: 'In the Fitbit app, tap your tracker, then Notifications. Turn on Calls, Text messages or Calendar events.' },
+      { h: 'Choose a light color', p: 'Flex 2 can flash a different color for each kind of notification, so you know a call from a text without looking at your phone.' },
+      { h: 'Not getting notifications?', p: 'Keep your phone within about 30 feet, make sure Do Not Disturb is off, and keep the Fitbit app running in the background.' }
+    ] },
+  { id: 'hr', title: 'What should I know about my heart-rate data?', short: 'Heart rate', category: 'Heart rate', tags: ['data', 'heart rate', 'hr', 'cardio'],
+    excerpt: 'Trackers with heart-rate sensors estimate your heart rate all day. Fit and placement affect accuracy the most.',
+    sections: [
+      { h: 'How heart rate is measured', p: 'Green lights on the back of the tracker measure changes in blood volume in your wrist, which the tracker turns into beats per minute.' },
+      { h: 'Getting the most accurate reading', p: 'Wear the tracker a finger’s width above your wrist bone. During exercise, wear it a little higher and snugger.' },
+      { h: 'What is my cardio fitness score?', p: 'Your cardio fitness score estimates your VO2 max from your resting heart rate, your profile and, when available, your runs with GPS.' }
+    ] },
+  { id: 'sleep', title: 'How do I track my sleep?', short: 'Sleep', category: 'Sleep', tags: ['data', 'sleep'],
+    excerpt: 'Wear your tracker to bed and it records sleep automatically. Sleep stages need a tracker with heart rate.',
+    sections: [
+      { h: 'Automatic sleep tracking', p: 'Your tracker notices when you’ve been still for about an hour and records it as sleep. Sync in the morning to see the results.' },
+      { h: 'What should I know about sleep stages?', p: 'Trackers with heart-rate sensors estimate light, deep and REM sleep using movement and heart-rate patterns.' },
+      { h: 'Why does my sleep look wrong?', p: 'Wear the tracker snugly on your non-dominant wrist and check that its sleep sensitivity setting is Normal.' }
+    ] },
+  { id: 'calories', title: 'How does Fitbit estimate how many calories I burn?', short: 'Calories', category: 'Food & calories', tags: ['data', 'calories', 'activity'],
+    excerpt: 'Calorie estimates combine your basal metabolic rate with your activity data. Keeping your profile up to date makes them more accurate.',
+    sections: [
+      { h: 'Basal metabolic rate', p: 'Your BMR is the calories your body burns at rest, estimated from your height, weight, sex and age. It counts even while you sleep.' },
+      { h: 'Activity', p: 'Steps, active minutes and heart rate (when available) add to your BMR to give your total for the day.' },
+      { h: 'What are active minutes?', p: 'Active minutes count time spent in moderate-to-vigorous activity, in bouts of ten minutes or more.' }
+    ] },
+  { id: 'setup', title: 'How do I set up my Fitbit device?', short: 'Setting up', category: 'Getting started', tags: ['setting up', 'setup', 'set up', 'app', 'pair', 'new'],
+    excerpt: 'Set up your tracker with the Fitbit app on your phone, tablet or computer. It takes about five minutes.',
+    sections: [
+      { h: 'Before you start', p: 'Charge your tracker and download the Fitbit app. You’ll need Bluetooth on and an internet connection.' },
+      { h: 'Set up with your phone', p: 'Open the app, create an account or log in, tap Set up a device and follow the steps to pair.' },
+      { h: 'Set up with a computer', p: 'Install the app on your Windows 10 computer, or use Fitbit Connect with a wireless sync dongle.' },
+      { h: 'Which devices are compatible?', p: 'The Fitbit app works with recent versions of iOS, Android and Windows 10. Check the compatibility list for your exact phone.' }
+    ] },
+  { id: 'firmware', title: "How do I update my tracker's firmware?", short: 'Firmware update', category: 'Troubleshooting', tags: ['firmware update', 'firmware', 'update'],
+    excerpt: 'Updates bring new features and fixes. Charge your tracker, then update from the Fitbit app.',
+    sections: [
+      { h: 'Update from the app', p: 'Open the Fitbit app, tap your tracker, then the Update button. Keep your phone close to your tracker until it finishes.' },
+      { h: 'If the update gets stuck', p: 'Restart your phone and your tracker, make sure the battery is above 50%, and try again.' }
+    ] },
+  { id: 'damaged', title: 'What should I do if my tracker is damaged?', short: 'Damaged', category: 'Troubleshooting', tags: ['damaged', 'broken', 'warranty', 'returns'],
+    excerpt: 'Check your warranty status first. Many problems can be solved with a restart before a replacement is needed.',
+    sections: [
+      { h: 'Check your warranty', p: 'Log in to see the warranty status of each product on your account.' },
+      { h: 'Try a restart', p: 'A restart fixes many screen and button problems without deleting your data.' },
+      { h: 'Request a replacement', p: 'If your tracker is still under warranty, contact support to start a claim.' }
+    ] },
+  { id: 'lost', title: 'What should I do if I lost my tracker?', short: 'Lost', category: 'Lost or stolen', tags: ['lost', 'missing', 'stolen'],
+    excerpt: 'The Fitbit app shows when your tracker last synced, which can help you narrow down where it is.',
+    sections: [
+      { h: 'Check the last sync time', p: 'In the Fitbit app, tap your tracker to see when it last synced.' },
+      { h: 'Remove it from your account', p: 'If it’s gone for good, remove it from your account so you can set up a new one.' }
+    ] },
+  { id: 'orders', title: 'How do I check the status of my order?', short: 'Orders', category: 'Store & shipping', tags: ['orders', 'order', 'shipping', 'returns'],
+    excerpt: 'Orders from fitbit.com can be tracked with your order number and the email you used at checkout.',
+    sections: [
+      { h: 'Track an order', p: 'Use the link in your confirmation email, or enter your order number and email on the order status page.' },
+      { h: 'Returns', p: 'Products bought on fitbit.com can be returned within the return window. Start a return from your order page.' }
+    ] },
+  { id: 'account', title: 'How do I change my account settings?', short: 'Account settings', category: 'Account settings', tags: ['account settings', 'account', 'password', 'email'],
+    excerpt: 'Change your email, password, units and privacy settings from the Fitbit app or fitbit.com.',
+    sections: [
+      { h: 'Change your email or password', p: 'In the Fitbit app, tap your profile picture, then your name, and edit your account details.' },
+      { h: 'Privacy', p: 'Choose who can see your profile, activity and friends from the Privacy settings.' }
+    ] }
+];
+const BYID = {}; ARTICLES.forEach((a) => { BYID[a.id] = a; });
+const ISSUES = ['damaged', 'battery', 'data', 'syncing', 'setting up', 'account settings', 'notifications', 'mobile app', 'lost', 'orders', 'firmware update'];
+const CATS = [
+  { id: 'popular', label: 'POPULAR ARTICLES', ids: ['syncing', 'battery', 'exercise', 'sleep'] },
+  { id: 'new', label: 'NEW TO FITBIT', ids: ['setup', 'notifications', 'calories', 'account'] },
+  { id: 'living', label: 'LIVING WITH MY TRACKER', ids: ['hr', 'sleep', 'exercise', 'calories'] },
+  { id: 'trouble', label: 'TROUBLESHOOTING', ids: ['syncing', 'battery', 'firmware', 'damaged'] }
+];
+const PROD_CATS = [
+  { id: 'popular', label: 'POPULAR ARTICLES', ids: ['howsync', 'lights', 'battery', 'notifications', 'sleep'] },
+  { id: 'new', label: 'NEW TO FITBIT', ids: ['setup', 'lights', 'notifications', 'howsync'] },
+  { id: 'living', label: 'LIVING WITH MY TRACKER', ids: ['lights', 'exercise', 'sleep', 'notifications'] },
+  { id: 'trouble', label: 'TROUBLESHOOTING', ids: ['battery', 'syncing', 'firmware', 'damaged'] }
+];
+const PRODUCTS = [
+  { id: 'flex2', name: 'Flex 2', blurb: 'Slim, swimproof tracker for steps, sleep and swims.' },
+  { id: 'altahr', name: 'Alta HR', blurb: 'Slim tracker with continuous heart rate.' },
+  { id: 'charge2', name: 'Charge 2', blurb: 'Heart rate and fitness wristband.' },
+  { id: 'blaze', name: 'Blaze', blurb: 'Smart fitness watch.' },
+  { id: 'surge', name: 'Surge', blurb: 'Fitness watch with built-in GPS.' },
+  { id: 'ionic', name: 'Ionic', blurb: 'Health and fitness smartwatch.' },
+  { id: 'zip', name: 'Zip', blurb: 'Clip-on tracker for steps and distance.' },
+  { id: 'one', name: 'One', blurb: 'Clip-on tracker for steps and sleep.' }
+];
+const PNAME = {}; PRODUCTS.forEach((p) => { PNAME[p.id] = p; });
+const MAKERS = { iOS: ['Apple'], Android: ['Samsung', 'Motorola', 'HTC', 'Google'], Windows: ['Microsoft', 'Desktop PC'] };
+const DEVICES = {
+  Apple: ['iPhone 6', 'iPhone 6s', 'iPhone 7', 'iPad'],
+  Samsung: ['Galaxy S7', 'Galaxy S8', 'Galaxy Note 8'],
+  Motorola: ['Moto G5', 'Moto Z'],
+  HTC: ['HTC 10', 'U11'],
+  Google: ['Nexus 5', 'Nexus 5x', 'Nexus 6', 'Pixel'],
+  Microsoft: ['Lumia 950', 'Surface'],
+  'Desktop PC': ['Windows 10 desktop']
+};
+const SCREEN_HOST = { forum: 'community.fitbit.com', web: 'web search', fitbitcom: 'www.fitbit.com' };
+const LIGHT_ROWS = [1, 2, 3, 4, 5].map((n) => ({
+  label: n === 5 ? '100% — goal reached' : (n * 20) + '% of your daily goal',
+  dots: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'on' : '' }))
+}));
+const BOT_HELLO = "Hi, I'm FitBot. I'm here to help you with your issue. Might you introduce yourself?";
+
+const PRESET_DEFAULT = 'home';
+const TIMELINE = [
+  { who: 'Allie, 35', preset: 'home', t: 'Her run didn’t record, so she visits help.fitbit.com', ms: 3400 },
+  { who: 'Allie, 35', preset: 'allie1', t: 'She uses the wizard — her issue is “data”', ms: 3200 },
+  { who: 'Allie, 35', preset: 'allie2', t: 'She then chooses her tracker', ms: 3200 },
+  { who: 'Allie, 35', preset: 'allie3', t: 'And her platform…', ms: 3200 },
+  { who: 'Allie, 35', preset: 'allie4', t: 'Results surface the most popular article and a list', ms: 3600 },
+  { who: 'Allie, 35', preset: 'allie5', t: 'She learns she can log her run manually', ms: 4600 },
+  { who: 'Allie, 35', preset: 'allie6', t: 'She logs in — her battery needs a charge', ms: 4000 },
+  { who: 'Josh, 25', preset: 'josh1', t: 'He searches “why isn’t my battery charging”', ms: 3600 },
+  { who: 'Josh, 25', preset: 'josh2', t: 'Log in? He taps no thanks', ms: 3000 },
+  { who: 'Josh, 25', preset: 'josh3', t: 'He lands on the article', ms: 3200 },
+  { who: 'Josh, 25', preset: 'josh4', t: 'He chooses a section of the article', ms: 3400 },
+  { who: 'Josh, 25', preset: 'josh5', t: 'Sand in the USB port — a wall charger fixes it', ms: 4600 },
+  { who: 'Susan, 44', preset: 'susan1', t: 'She visits help through fitbit.com', ms: 3400 },
+  { who: 'Susan, 44', preset: 'susan2', t: 'She wants to learn about her product', ms: 3000 },
+  { who: 'Susan, 44', preset: 'susan3', t: 'She chooses her tracker…', ms: 3200 },
+  { who: 'Susan, 44', preset: 'susan4', t: 'Now she can learn about her Flex 2', ms: 3600 },
+  { who: 'Susan, 44', preset: 'susan5', t: '“I’ve been wondering about these light patterns!”', ms: 4600 },
+  { who: 'Susan, 44', preset: 'susan6', t: 'She sets up call notifications', ms: 3600 },
+  { who: 'Features', preset: 'recent', t: 'Recent Issues: support is aware of known problems', ms: 3800 },
+  { who: 'Features', preset: 'chat', t: 'FitBot: help without filling out forms', ms: 3800 },
+  { who: 'Features', preset: 'forum', t: 'Community: emerging issues and announcements', ms: 3800 }
+];
+const PERSONA_TABS = [['Allie', 'Allie, 35'], ['Josh', 'Josh, 25'], ['Susan', 'Susan, 44'], ['Features', 'Features']];
+const SNAP = (screen, articleId) => ({ screen, articleId: articleId || 'battery', resultTerm: screen === 'results' ? 'data' : '' });
+const HOME_SNAP = SNAP('home');
+const WEB_SNAP = SNAP('web');
+const FB_SNAP = SNAP('fitbitcom');
+const ALLIE = { issue: 'data', product: 'flex2', platform: 'Windows', maker: 'Desktop PC', device: 'Windows 10 desktop' };
+const PRESETS = {
+  home: {},
+  recent: { recentOpen: true },
+  menu: { menuOpen: true },
+  login: { screen: 'login', hist: [HOME_SNAP] },
+  auth: { loggedIn: true, product: 'flex2', viewed: ['battery', 'syncing'] },
+  product: { screen: 'product', issue: 'data', product: 'flex2', hist: [HOME_SNAP] },
+  device: Object.assign({ screen: 'device', hist: [HOME_SNAP, SNAP('product')] }, ALLIE),
+  results: Object.assign({ screen: 'results', resultTerm: 'data', query: 'data', hist: [HOME_SNAP] }, ALLIE),
+  article: { screen: 'article', articleId: 'battery', product: 'flex2', hist: [HOME_SNAP] },
+  refine: { screen: 'refine', hist: [HOME_SNAP] },
+  productPage: { screen: 'productPage', product: 'flex2', hist: [HOME_SNAP] },
+  chat: { screen: 'chat', hist: [HOME_SNAP], chatName: 'Jane', chat: [
+    { from: 'bot', text: BOT_HELLO },
+    { from: 'user', text: 'My name is Jane' },
+    { from: 'bot', text: 'Nice to meet you, Jane. What’s going on with your tracker?' }
+  ] },
+  contact: { screen: 'contact', hist: [HOME_SNAP] },
+  forum: { screen: 'forum', forumOpen: 'recent', hist: [HOME_SNAP] },
+  web: { screen: 'web' },
+  fitbitcom: { screen: 'fitbitcom' },
+  // Allie, 35 — her run didn't record
+  allie1: { issue: 'data' },
+  allie2: { screen: 'product', issue: 'data', product: 'flex2', hist: [HOME_SNAP] },
+  allie3: Object.assign({ screen: 'device', hist: [HOME_SNAP, SNAP('product')] }, ALLIE),
+  allie4: Object.assign({ screen: 'results', resultTerm: 'data', query: 'data', hist: [HOME_SNAP, SNAP('product'), SNAP('device')] }, ALLIE),
+  allie5: Object.assign({ screen: 'article', articleId: 'exercise', tocOpen: false, scrollTo: 'sec-exercise-3', hist: [HOME_SNAP, SNAP('results')] }, ALLIE),
+  allie6: Object.assign({ loggedIn: true, viewed: ['exercise', 'battery'], hist: [SNAP('article', 'exercise'), SNAP('login')] }, ALLIE),
+  // Josh, 25 — battery won't charge, from a web search
+  josh1: { screen: 'web' },
+  josh2: { screen: 'login', afterLogin: { screen: 'article', articleId: 'battery' }, hist: [WEB_SNAP] },
+  josh3: { screen: 'article', articleId: 'battery', tocOpen: false, hist: [WEB_SNAP] },
+  josh4: { screen: 'article', articleId: 'battery', tocOpen: true, hist: [WEB_SNAP] },
+  josh5: { screen: 'article', articleId: 'battery', tocOpen: true, scrollTo: 'fix-usb', hist: [WEB_SNAP] },
+  // Susan, 44 — wants to learn everything about her new Flex 2
+  susan1: { screen: 'fitbitcom' },
+  susan2: { hist: [FB_SNAP] },
+  susan3: { screen: 'refine', hist: [FB_SNAP, HOME_SNAP] },
+  susan4: { screen: 'productPage', product: 'flex2', listOpen: true, hist: [FB_SNAP, HOME_SNAP, SNAP('refine')] },
+  susan5: { screen: 'article', articleId: 'lights', product: 'flex2', tocOpen: false, scrollTo: 'sec-lights-0', hist: [FB_SNAP, SNAP('productPage')] },
+  susan6: { screen: 'article', articleId: 'notifications', product: 'flex2', tocOpen: true, hist: [FB_SNAP, SNAP('productPage'), SNAP('article', 'lights')] }
+};
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      screen: 'home', articleId: 'battery',
+      hist: [], fwd: [],
+      issue: null, query: '', product: null, platform: null, maker: null, device: null, devQuery: '',
+      cat: 'popular', prodCat: 'popular', listOpen: true, tocOpen: true, recentOpen: false, refineOpen: false,
+      loggedIn: !!(props && props.startLoggedIn), menuOpen: false, afterLogin: null,
+      viewed: [], rating: 0, quickOpen: false, manualOpen: false,
+      chat: [{ from: 'bot', text: BOT_HELLO }], chatName: null,
+      chatDraft: '', forumDraft: '', forumSent: false, forumPost: '', newsSent: false, forumOpen: 'recent',
+      resultTerm: '', webQuery: "why isn't my fitbit battery charging", scrollTo: null
+    };
+    this.base = Object.assign({}, this.state);
+    this.autoplay = !(props && props.autoplay === false);
+    const pre = PRESETS[(props && props.preset) || PRESET_DEFAULT] || {};
+    Object.assign(this.state, pre, { step: 0, playing: this.autoplay, touched: false });
+    this.stepAt = Date.now();
+    this.lastTouch = 0;
+  }
+
+  scrollStep(id, smooth) {
+    const sc = document.getElementById('fb-scroller');
+    if (!sc) return;
+    let top = 0;
+    if (id) {
+      let n = document.getElementById(id);
+      if (!n) return;
+      while (n && n !== sc) { top += n.offsetTop; n = n.offsetParent; }
+      top = Math.max(0, top - 110);
+    }
+    try { sc.scrollTo({ top, behavior: smooth ? 'smooth' : 'auto' }); } catch (e) { sc.scrollTop = top; }
+  }
+
+  applyStep(i) {
+    const st = TIMELINE[i];
+    const pre = PRESETS[st.preset] || {};
+    this.stepAt = Date.now();
+    this.setState(Object.assign({}, this.base, pre, { step: i, playing: this.state.playing, touched: false }));
+    setTimeout(() => this.scrollStep(pre.scrollTo || null, true), 700);
+  }
+
+  tick() {
+    const s = this.state;
+    if (!s.playing) return;
+    if (s.touched) {
+      if (Date.now() - this.lastTouch > 15000) this.applyStep(s.step);
+      return;
+    }
+    if (Date.now() - this.stepAt > TIMELINE[s.step].ms) this.applyStep((s.step + 1) % TIMELINE.length);
+  }
+
+  componentWillUnmount() { if (this.timer) clearInterval(this.timer); }
+
+  componentDidMount() {
+    if (this.autoplay) {
+      this.applyStep(0);
+      this.timer = setInterval(() => this.tick(), 250);
+    } else if (this.state.scrollTo) {
+      setTimeout(() => this.scrollStep(this.state.scrollTo, false), 80);
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.screen !== this.state.screen || prevState.articleId !== this.state.articleId) {
+      const el = document.getElementById('fb-scroller');
+      if (el) { el.style.scrollBehavior = 'auto'; el.scrollTop = 0; el.style.scrollBehavior = ''; }
+    }
+    if (prevState.chat.length !== this.state.chat.length && this.state.screen === 'chat') {
+      const el = document.getElementById('fb-scroller');
+      if (el) el.scrollTop = el.scrollHeight;
+    }
+  }
+
+  snap() { return { screen: this.state.screen, articleId: this.state.articleId, resultTerm: this.state.resultTerm }; }
+
+  go(screen, extra) {
+    const s = this.state;
+    if (s.screen === screen && (!extra || !extra.articleId || extra.articleId === s.articleId) && screen !== 'results') {
+      this.setState(Object.assign({ menuOpen: false }, extra || {}));
+      return;
+    }
+    const patch = Object.assign({ screen, hist: s.hist.concat([this.snap()]), fwd: [], menuOpen: false, rating: 0, refineOpen: false }, extra || {});
+    this.setState(patch);
+  }
+
+  openArticle(id) {
+    const viewed = [id].concat(this.state.viewed.filter((v) => v !== id)).slice(0, 3);
+    this.go('article', { articleId: id, viewed, tocOpen: true });
+  }
+
+  search(term) {
+    const t = (term || '').trim();
+    if (!t) return;
+    this.go('results', { resultTerm: t, query: t, listOpen: true });
+  }
+
+  match(term) {
+    const t = term.toLowerCase().trim();
+    if (!t) return [];
+    const words = t.split(/\s+/).filter((w) => w.length > 2 || t.length <= 3);
+    const scored = ARTICLES.map((a, idx) => {
+      let score = 0;
+      if (a.tags.indexOf(t) >= 0) score += 10;
+      a.tags.forEach((tag) => { if (t.indexOf(tag) >= 0) score += 4; });
+      const hay = (a.title + ' ' + a.excerpt + ' ' + a.tags.join(' ')).toLowerCase();
+      words.forEach((w) => { const c = w.replace(/[^a-z0-9]/g, ''); if (c && hay.indexOf(c) >= 0) score += 1; });
+      return { a, score, idx };
+    }).filter((x) => x.score > 0);
+    scored.sort((x, y) => (y.score - x.score) || (x.idx - y.idx));
+    return scored.map((x) => x.a);
+  }
+
+  botReply(text) {
+    if (!this.state.chatName) {
+      const m = text.match(/(?:my name is|i am|i'm|im|this is|it's)\s+([a-z][a-z'-]*)/i);
+      const raw = m ? m[1] : text.trim().split(/\s+/)[0];
+      const name = raw.charAt(0).toUpperCase() + raw.slice(1);
+      return { reply: { from: 'bot', text: 'Nice to meet you, ' + name + '. What’s going on with your tracker?' }, name };
+    }
+    if (/contact|human|person|agent|call|phone|email/i.test(text)) {
+      return { reply: { from: 'bot', text: 'You can reach our support team by chat, email, phone or social.', link: 'contact', linkLabel: 'Contact support →' } };
+    }
+    const hits = this.match(text);
+    if (hits.length) {
+      return { reply: { from: 'bot', text: 'This article should help, ' + this.state.chatName + ':', link: hits[0].id, linkLabel: hits[0].title + ' →' } };
+    }
+    return { reply: { from: 'bot', text: "I couldn't match that to an article. Try words like battery, syncing or sleep — or contact our support team.", link: 'contact', linkLabel: 'Contact support →' } };
+  }
+
+  pushChat(text) {
+    const t = (text || '').trim();
+    if (!t) return;
+    const chat = this.state.chat.concat([{ from: 'user', text: t }]);
+    this.setState({ chat, chatDraft: '' });
+    setTimeout(() => {
+      const r = this.botReply(t);
+      const patch = { chat: this.state.chat.concat([r.reply]) };
+      if (r.name) patch.chatName = r.name;
+      this.setState(patch);
+    }, 450);
+  }
+
+  leaveLogin(loggedIn) {
+    const s = this.state;
+    const dest = s.afterLogin;
+    const base = { afterLogin: null, loggedIn: loggedIn || s.loggedIn };
+    if (loggedIn && !s.product) base.product = 'flex2';
+    if (dest) { this.go(dest.screen, Object.assign(base, dest.articleId ? { articleId: dest.articleId, tocOpen: false } : {})); return; }
+    if (loggedIn) { this.go('home', base); return; }
+    if (s.hist.length) {
+      const prev = s.hist[s.hist.length - 1];
+      this.setState(Object.assign({}, prev, base, { hist: s.hist.slice(0, -1), fwd: [] }));
+    } else {
+      this.go('home', base);
+    }
+  }
+
+  renderVals() {
+    const s = this.state;
+    const p = this.props || {};
+    const scr = s.screen;
+    const showRecentProp = p.showRecentIssues ?? true;
+    const art = BYID[s.articleId] || ARTICLES[0];
+    const prod = PNAME[s.product || 'flex2'];
+    const stepIdx = scr === 'product' ? 1 : (scr === 'device' ? 2 : 0);
+    const steps = ['ISSUE', 'PRODUCT', 'DEVICE'].map((label, i) => ({
+      label, done: i < stepIdx,
+      labelCls: i === stepIdx ? '' : 'hide',
+      dotCls: i < stepIdx ? 'done' : (i === stepIdx ? 'cur' : '')
+    }));
+    const chips = (list, sel, onPick) => list.map((label) => ({ label, on: sel === label, cls: sel === label ? 'on' : '', pick: () => onPick(sel === label ? null : label) }));
+
+    const makers = s.platform ? MAKERS[s.platform] : [].concat(MAKERS.iOS, MAKERS.Android, MAKERS.Windows);
+    let devices = s.maker ? DEVICES[s.maker] : makers.reduce((acc, m) => acc.concat(DEVICES[m]), []);
+    const dq = s.devQuery.trim().toLowerCase();
+    if (dq) devices = devices.filter((d) => d.toLowerCase().indexOf(dq) >= 0);
+
+    const results = scr === 'results' ? this.match(s.resultTerm) : [];
+    const top = results[0];
+    const ctxParts = [s.product ? PNAME[s.product].name : null, s.platform, s.device].filter(Boolean);
+
+    const isHelp = ['home', 'product', 'device', 'results', 'refine', 'productPage', 'article', 'contact'].indexOf(scr) >= 0;
+    const go = (screen) => () => this.go(screen);
+    const openArt = (id) => () => this.openArticle(id);
+    const relatedIds = ARTICLES.filter((a) => a.id !== art.id && a.tags.some((t) => art.tags.indexOf(t) >= 0)).slice(0, 3);
+    const related = (relatedIds.length ? relatedIds : ARTICLES.filter((a) => a.id !== art.id).slice(0, 3)).map((a) => ({ title: a.title, open: openArt(a.id) }));
+    const prodCat = PROD_CATS.find((c) => c.id === s.prodCat) || PROD_CATS[0];
+    const preview = BYID[prodCat.ids[0]];
+    const forumData = [
+      { id: 'discussion', title: 'Discussion forums', meta: 'Devices, app, features', desc: 'Get help from other members, by product.', threads: ['Flex 2 · Swimming with Flex 2 — any tips?', 'Charge 2 · Heart rate during weightlifting', 'Fitbit app · Widgets on Android'] },
+      { id: 'community', title: 'Community forums', meta: 'Challenges, goals', desc: 'Motivation, challenges and success stories.', threads: ['Weekend Warrior challenge — who’s in?', 'Training for my first marathon', 'Sleep goals that actually stuck'] },
+      { id: 'recent', title: 'Recent issues', meta: 'From the Fitbit team', desc: 'Known issues and announcements, and their status.', threads: ['Daylight Saving Time: wrong time until next sync — fix: sync once', 'Flex 2 firmware update rolling out this week', 'Android 8 sync delays — investigating'] }
+    ];
+    const onProductPage = scr === 'productPage';
+
+    const cap = TIMELINE[s.step || 0];
+    const jump = (i) => { this.lastTouch = 0; this.applyStep(i); };
+    return {
+      capPersona: cap.who, capText: cap.t, capNum: (s.step || 0) + 1, capTotal: TIMELINE.length,
+      segs: TIMELINE.map((t, i) => ({ cls: i < s.step ? 'done' : (i === s.step ? 'cur' : '') })),
+      personaTabs: PERSONA_TABS.map(([label, who]) => ({ label, on: cap.who === who, cls: cap.who === who ? 'on' : '', go: () => jump(TIMELINE.findIndex((t) => t.who === who)) })),
+      playing: !!s.playing, paused: !s.playing,
+      playLabel: s.playing ? 'Pause' : 'Play',
+      togglePlay: () => { if (s.playing) this.setState({ playing: false }); else { this.setState({ playing: true }); this.applyStep(s.step || 0); } },
+      nextStep: () => jump(((s.step || 0) + 1) % TIMELINE.length),
+      prevStep: () => jump(((s.step || 0) - 1 + TIMELINE.length) % TIMELINE.length),
+      playNote: s.touched ? 'You’re exploring. Autoplay resumes after 15 seconds idle.' : 'Tap the phone to explore.',
+      touch: () => { this.lastTouch = Date.now(); if (s.playing && !s.touched) this.setState({ touched: true }); },
+      host: SCREEN_HOST[scr] || 'help.fitbit.com',
+      reload: () => this.forceUpdate(),
+      showHelpHeader: isHelp,
+      loggedIn: s.loggedIn, loggedOut: !s.loggedIn,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      menuOpen: s.menuOpen,
+      goHome: go('home'),
+      rowLabel: onProductPage ? 'I have an issue' : 'Learn about my product',
+      learnProduct: () => { if (onProductPage) this.go('home'); else this.go(s.product ? 'productPage' : 'refine'); },
+      openLogin: go('login'),
+      openChat: go('chat'),
+      openContact: go('contact'),
+      openForum: go('forum'),
+      openBattery: openArt('battery'),
+      openSetup: openArt('setup'),
+      openCompat: openArt('setup'),
+      refine: go('refine'),
+      noop: () => {},
+
+      isHome: scr === 'home', isProductStep: scr === 'product', isDeviceStep: scr === 'device',
+      isResults: scr === 'results', isRefine: scr === 'refine', isProductPage: onProductPage,
+      isArticle: scr === 'article', isChat: scr === 'chat', isLogin: scr === 'login',
+      isContact: scr === 'contact', isForum: scr === 'forum', isWeb: scr === 'web', isFitbitCom: scr === 'fitbitcom',
+
+      showRecent: showRecentProp,
+      recentOpen: s.recentOpen,
+      recentToggleLabel: s.recentOpen ? 'hide' : 'show',
+      toggleRecent: () => this.setState({ recentOpen: !s.recentOpen }),
+      recentIssues: [
+        { title: 'Daylight Saving Time', body: 'Some tracker features temporarily will be affected. Sync once to fix the time.', open: go('forum') },
+        { title: 'Flex 2 update', body: 'Some tracker features temporarily will be affected while the update rolls out.', open: openArt('firmware') }
+      ],
+      hasViewed: s.viewed.length > 0,
+      viewedItems: s.viewed.map((id) => ({ title: BYID[id].title, open: openArt(id) })),
+
+      steps,
+      query: s.query,
+      onQuery: (e) => this.setState({ query: e.target.value }),
+      submitSearch: (e) => { if (e && e.preventDefault) e.preventDefault(); this.search(s.query); },
+      issueChips: chips(ISSUES, s.issue, (v) => this.setState({ issue: v })),
+      issueNextDisabled: !s.issue && !s.query.trim(),
+      issueNext: () => this.go('product'),
+      cats: CATS.map((c) => ({ label: c.label, on: c.id === s.cat, cls: c.id === s.cat ? 'on' : '', pick: () => this.setState({ cat: c.id, listOpen: true }) })),
+      catArticles: (CATS.find((c) => c.id === s.cat) || CATS[0]).ids.map((id) => ({ short: BYID[id].short, excerpt: BYID[id].excerpt, open: openArt(id) })),
+      listOpen: s.listOpen,
+      toggleList: () => this.setState({ listOpen: !s.listOpen }),
+      listChevron: s.listOpen ? 'flip' : '',
+
+      wizardProducts: PRODUCTS.map((pr) => ({ name: pr.name, on: s.product === pr.id, cls: s.product === pr.id ? 'on' : '', pick: () => this.setState({ product: s.product === pr.id ? null : pr.id }) })),
+      productNextDisabled: !s.product,
+      productNext: () => this.go('device'),
+
+      devQuery: s.devQuery,
+      onDevQuery: (e) => this.setState({ devQuery: e.target.value }),
+      platformChips: chips(['iOS', 'Android', 'Windows'], s.platform, (v) => this.setState({ platform: v, maker: null, device: null })),
+      makerChips: chips(makers, s.maker, (v) => this.setState({ maker: v, device: null })),
+      deviceChips: chips(devices, s.device, (v) => this.setState({ device: v })),
+      noDevices: devices.length === 0,
+      deviceDone: () => this.search(s.query.trim() || s.issue || 'syncing'),
+
+      resultTerm: s.resultTerm,
+      resultCount: results.length === 1 ? '1 article' : results.length + ' articles',
+      hasContext: ctxParts.length > 0,
+      contextLabel: ctxParts.join(' · '),
+      hasTop: !!top,
+      top: top ? { title: top.title, excerpt: top.excerpt, open: openArt(top.id), heads: top.sections.map((sec) => ({ label: sec.h, open: () => this.openArticle(top.id) })) } : { title: '', excerpt: '', heads: [], open: () => {} },
+      restResults: results.slice(1).map((a) => ({ title: a.title, excerpt: a.excerpt, open: openArt(a.id) })),
+      noResults: results.length === 0,
+
+      refineProducts: PRODUCTS.map((pr) => ({ name: pr.name, cls: s.product === pr.id ? 'on' : '', pick: () => this.go('productPage', { product: pr.id }) })),
+      refineProductsInline: PRODUCTS.map((pr) => ({ name: pr.name, on: s.product === pr.id, cls: s.product === pr.id ? 'on' : '', pick: () => this.setState({ product: pr.id, refineOpen: false }) })),
+      refineOpen: s.refineOpen,
+      toggleRefine: () => this.setState({ refineOpen: !s.refineOpen }),
+      refineChevron: s.refineOpen ? 'flip' : '',
+
+      productName: prod.name,
+      productUpper: prod.name.toUpperCase(),
+      productBlurb: prod.blurb,
+      quickOpen: s.quickOpen,
+      toggleQuick: () => this.setState({ quickOpen: !s.quickOpen }),
+      manualOpen: s.manualOpen,
+      openManual: () => this.setState({ manualOpen: !s.manualOpen }),
+      prodCats: PROD_CATS.map((c) => ({ label: c.label, on: c.id === prodCat.id, cls: c.id === prodCat.id ? 'on' : '', pick: () => this.setState({ prodCat: c.id, listOpen: true }) })),
+      productArticles: prodCat.ids.map((id) => ({ title: BYID[id].title, open: openArt(id) })),
+      hasProdPreview: !!preview,
+      prodPreview: { title: preview.title, excerpt: preview.excerpt, isLights: preview.id === 'lights', open: openArt(preview.id) },
+      lightRows: LIGHT_ROWS,
+
+      art: {
+        title: art.title, category: art.category || 'Help', tagLine: art.tags.slice(0, 3).join(', '),
+        sections: art.sections.map((sec, i) => ({ h: sec.h, p: sec.p, pairs: sec.pairs || [], lights: !!sec.lights, anchor: 'sec-' + art.id + '-' + i }))
+      },
+      tocOpen: s.tocOpen,
+      toggleToc: () => this.setState({ tocOpen: !s.tocOpen }),
+      tocChevron: s.tocOpen ? 'flip' : '',
+      stars: [1, 2, 3, 4, 5].map((n) => ({ label: n + (n === 1 ? ' star' : ' stars'), on: n <= s.rating, cls: n <= s.rating ? 'on' : '', pick: () => this.setState({ rating: n }) })),
+      ratedGood: s.rating >= 4, ratedBad: s.rating > 0 && s.rating < 4,
+      related,
+
+      webQuery: s.webQuery,
+      onWebQuery: (e) => this.setState({ webQuery: e.target.value }),
+      webSearch: (e) => { if (e && e.preventDefault) e.preventDefault(); },
+      webResults: [
+        { title: 'Help article: Why isn’t my battery charging? - Fitbit Help', crumb: 'Fitbit › help › articles › en_US › Help_article', snippet: 'If your battery is draining too quickly after a charge, see Can I improve my tracker’s battery life?', open: () => this.go('login', { afterLogin: { screen: 'article', articleId: 'battery' } }) },
+        { title: 'Fitbit Help - Battery & Charging', crumb: 'Fitbit › help › c=Topics:Battery', snippet: 'Why isn’t my battery charging? If you’re having difficulty charging your tracker, review these troubleshooting options.', open: () => this.go('results', { resultTerm: 'battery', query: 'battery', listOpen: true }) },
+        { title: 'Solved: Charge HR not charging - Fitbit Community', crumb: 'Fitbit › Charge-HR-not-charging › td-p', snippet: 'Cleaned the contacts with a toothbrush and alcohol and it charges again.', open: go('forum') }
+      ],
+
+      siteMenu: ['Products', 'Why Fitbit', 'Get Motivated', 'App & Dashboard', 'Help', 'Store', 'Log in', 'Setup'].map((label) => ({
+        label, cls: '',
+        go: () => {
+          if (label === 'Help') this.go('home');
+          else if (label === 'Products') this.go('refine');
+          else if (label === 'Log in') this.go('login');
+          else if (label === 'Setup' || label === 'App & Dashboard') this.openArticle('setup');
+        }
+      })),
+      heroDots: [1, 2, 3],
+
+      chatItems: s.chat.map((m) => ({
+        text: m.text, isBot: m.from === 'bot', isUser: m.from === 'user', hasLink: !!m.link, linkLabel: m.linkLabel || '',
+        open: () => { if (m.link === 'contact') this.go('contact'); else if (m.link) this.openArticle(m.link); }
+      })),
+      chatSuggestions: (!s.chatName ? ['My name is Jane'] : (s.chat.length > 3 ? [] : ['My battery won’t charge', 'My run didn’t record', 'Talk to a person'])).map((t) => ({ label: t, send: () => this.pushChat(t) })),
+      chatDraft: s.chatDraft,
+      onChatDraft: (e) => this.setState({ chatDraft: e.target.value }),
+      sendChat: (e) => { if (e && e.preventDefault) e.preventDefault(); this.pushChat(s.chatDraft); },
+
+      doLogin: (e) => { if (e && e.preventDefault) e.preventDefault(); this.leaveLogin(true); },
+      noThanks: () => this.leaveLogin(false),
+
+      contactIntro: s.loggedIn ? 'Allie, we can see your Flex 2 and its warranty, so you won’t need to repeat your details.' : 'Log in first and we can see your products and warranty, so you won’t need to repeat your details.',
+
+      forumSections: forumData.map((f) => ({ title: f.title, meta: f.meta, desc: f.desc, threads: f.threads, open: s.forumOpen === f.id, toggle: () => this.setState({ forumOpen: s.forumOpen === f.id ? null : f.id }) })),
+      forumSent: s.forumSent, askNotSent: !s.forumSent, forumPost: s.forumPost,
+      forumDraft: s.forumDraft,
+      forumEmpty: !s.forumDraft.trim(),
+      onForumDraft: (e) => this.setState({ forumDraft: e.target.value }),
+      sendForum: (e) => { if (e && e.preventDefault) e.preventDefault(); if (!s.forumDraft.trim()) return; this.setState({ forumSent: true, forumPost: s.forumDraft.trim(), forumDraft: '' }); },
+
+      showAsk: ['home', 'results', 'article', 'productPage'].indexOf(scr) >= 0,
+      showContactBtn: ['home', 'product', 'device', 'results', 'article', 'productPage', 'refine'].indexOf(scr) >= 0,
+      showFooter: isHelp || scr === 'forum',
+      showFloatFab: ['results', 'article', 'productPage', 'refine', 'contact'].indexOf(scr) >= 0,
+      newsSent: s.newsSent, newsNotSent: !s.newsSent,
+      sendNews: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ newsSent: true }); },
+
+      cantBack: s.hist.length === 0,
+      cantFwd: s.fwd.length === 0,
+      back: () => {
+        if (!s.hist.length) return;
+        const prev = s.hist[s.hist.length - 1];
+        this.setState(Object.assign({}, prev, { hist: s.hist.slice(0, -1), fwd: s.fwd.concat([this.snap()]), menuOpen: false, query: prev.resultTerm && prev.screen === 'results' ? prev.resultTerm : s.query }));
+      },
+      forward: () => {
+        if (!s.fwd.length) return;
+        const nx = s.fwd[s.fwd.length - 1];
+        this.setState(Object.assign({}, nx, { fwd: s.fwd.slice(0, -1), hist: s.hist.concat([this.snap()]), menuOpen: false }));
+      },
+
+      menuItems: [
+        { label: 'Home', go: go('home') },
+        { label: 'Learn about my product', go: () => this.go(s.product ? 'productPage' : 'refine') },
+        { label: 'Popular articles', go: () => this.go('home', { cat: 'popular', listOpen: true }) },
+        { label: 'New to Fitbit', go: () => this.go('home', { cat: 'new', listOpen: true }) },
+        { label: 'Living with my tracker', go: () => this.go('home', { cat: 'living', listOpen: true }) },
+        { label: 'Troubleshooting', go: () => this.go('home', { cat: 'trouble', listOpen: true }) },
+        { label: 'FitBot (chat)', go: go('chat') },
+        { label: 'Community forum', go: go('forum') },
+        { label: 'Contact support', go: go('contact') },
+        { label: 'fitbit.com', go: go('fitbitcom') },
+        s.loggedIn
+          ? { label: 'Log out (Allie)', go: () => this.setState({ loggedIn: false, menuOpen: false }) }
+          : { label: 'Log in', go: go('login') }
+      ]
+    };
+  }
+}
+
+window.__boot(Component, {"autoplay":true,"preset":"home","showRecentIssues":true,"startLoggedIn":false});
+</script>
+</body>
+</html>
