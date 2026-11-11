@@ -55,6 +55,9 @@ sections:
         caption: Storytelling principles to guide the design forward.
         size: text-half
   - heading: Gathering stakeholder Buy-in
+    text: As the designs took shape, I presented the work to the team and gained
+      stakeholder support. At the time, the team was pursuing a different tool
+      that began shortly before I joined.
     images:
       - image: /images/projects/03_first-draft-ux-factors-1.png
         sound: false
