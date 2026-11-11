@@ -99,7 +99,7 @@ sections:
         caption: The project room put the article inventory, analytics, and personas on
           one wall.
         size: full
-      - image: /images/projects/03_personas.png
+      - image: /images/projects/03_personas-1.png
         sound: false
         alt: Three personas, the Active Traveller, the Competitive Athlete, and the
           Dieter
