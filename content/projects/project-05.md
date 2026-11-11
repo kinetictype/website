@@ -33,7 +33,7 @@ description: Redesigning help.fitbit.com as a self-service platform, using a
   calls.
 cover: /images/logos/fitbit.svg
 cover_alt: Fitbit logo
-drawer_image: /images/projects/desktop_mobile.png
+drawer_image: /images/projects/project-05-fitbit/06_responsive-desktop-mobile-hd.webp
 drawer_image_alt: Responsive design for Fitbit help
 drawer_whole: false
 top_image_alt: Service blueprint and ecosystem/system map      Heat map and
@@ -130,13 +130,13 @@ sections:
       then their product and device, with search, live chat, popular articles,
       and the community forum always close at hand.
     images:
-      - image: /images/projects/project-05-fitbit/06_responsive-desktop-mobile.png
+      - image: /images/projects/project-05-fitbit/06_responsive-desktop-mobile-hd.webp
         sound: false
         alt: The redesigned help.fitbit.com on a laptop and a phone, with issue tags,
           search, and live chat
         caption: The same issue-first navigation on desktop and mobile.
         size: full
-      - image: /images/projects/project-05-fitbit/help-fitbit-prototype.html
+      - image: /images/projects/project-05-fitbit/help-fitbit-prototype.svg
         sound: false
         alt: Interactive prototype of the redesigned help.fitbit.com on a white
           iPhone, playing the Allie, Josh and Susan scenarios in turn
