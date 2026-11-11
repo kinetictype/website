@@ -71,10 +71,10 @@ sections:
       held meetings remotely. I created critiques using Miro, a whiteboarding
       confernce tool, to share my progress and gain feedback from the team.
     images:
-      - image: /images/projects/03_first-draft-ux-factors.png
-        sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        caption: Describe the challenge this image shows and how you got through it.
+      - sound: false
+        alt: Critique of early wireframes.
+        caption: Our team was distributed throughout the Bay Area; I held virtual
+          critique rooms where teammates places stickies on my work.
         size: text-half
   - heading: Incorporating the Design System
     text: "After gathering feedback, I presented the final designs and shared the
