@@ -122,7 +122,7 @@ sections:
         alt: The redesigned help.fitbit.com on a laptop and a phone, with issue tags,
           search, and live chat
         caption: The same issue-first navigation on desktop and mobile.
-        size: full
+        size: text-half
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
       team and the extended stakeholders. I captured the artifacts in a
