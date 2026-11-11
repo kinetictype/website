@@ -119,9 +119,8 @@ sections:
     images:
       - image: /images/projects/project-05-fitbit/06_responsive-desktop-mobile-hd.webp
         sound: false
-        alt: The redesigned help.fitbit.com on a laptop and a phone, with issue tags,
-          search, and live chat
-        caption: The same issue-first navigation on desktop and mobile.
+        alt: laptop and a phone redesign
+        caption: Designing a mobile first experience responding to desktop.
         size: text-half
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
