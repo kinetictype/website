@@ -714,6 +714,17 @@ function pageSections(p) {
     // When a section starts with a "half-text" image (image left) or a "text-half" image (image right), the heading and text sit beside it,
     // and the image's own description sits at the bottom of that column, level with the bottom of the image.
     const kind = imgs.length ? String(imgs[0].size || "").toLowerCase() : "";
+    // "third-text": two images side by side, each a third of the width, with the heading and text in the last third
+    const pairCount = imgs.findIndex((g) => String(g.size || "").toLowerCase() !== "third-text");
+    const nPair = pairCount === -1 ? imgs.length : pairCount;
+    if (head && kind === "third-text") {
+      const take = Math.min(2, nPair);
+      const fig = (g) => `<figure${figWidth(g)}>${mediaEl(g.video || g.image, g.alt, g.sound === true)}${g.caption ? `<figcaption>${escapeHtml(g.caption)}</figcaption>` : ""}</figure>`;
+      return `
+<div class="media-split section-split pair-text">${imgs.slice(0, take).map(fig).join("")}<div class="split-text"><div class="split-main">${head}</div></div></div>
+${quotes}
+${mediaRows(imgs.slice(take))}`;
+    }
     if (head && (kind === "half-text" || kind === "text-half")) {
       const g = imgs[0];
       const desc = String(g.text || "").trim();

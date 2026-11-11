@@ -40,12 +40,10 @@ sections:
       - My job was to illustrate the properties themselves.
 
     images:
-      - image: /images/projects/spread_blended-2.png
+      - image: /images/projects/06_building-5.png
         sound: false
-        alt: "The two-page spread, We Have No Comment Thank You Very Much, with the
-          article surrounded by drawings of Lembi buildings"
-        caption: "The finished spread, \"We Have No Comment Thank You Very Much,\" with
-          the drawings framing Richard Parks's article."
+        alt: Ink drawing of 1945 Hyde Street, a building with arched doorways
+        caption: 1945 Hyde Street, hand drawn in ink on paper.
         size: full
   - heading: Drawing every building
     text: >+
@@ -55,37 +53,38 @@ sections:
 
       - I drew more than 100 Lembi properties from photographs.
 
-      - The drawings are reminiscent of the style of buildings of 1910, hand
-      drawn in ink on paper and labeled with each street address.
+      - The drawings are reminiscent of the style of buildings of 1910, labeled
+      with each street address.
 
     images:
       - image: /images/projects/02_building-1.png
         sound: false
         alt: Ink drawing of 345 Fulton Street, an apartment building with a fire escape
-        caption: 345 Fulton Street, hand drawn in ink on paper.
-        size: full
+        caption: 345 Fulton Street.
+        size: third-text
       - image: /images/projects/03_building-2.png
         sound: false
         alt: Ink drawing of 642 Jones Street, a tall apartment building with bay
           windows and a fire escape
         caption: 642 Jones Street.
-        size: full
-  - heading: From photographs to line drawings
+        size: third-text
+  - heading: From photographs to the page
     text: Working from photographs, I simplified each facade to its lines, keeping
       the details that make each building recognizable, such as the bay windows,
       cornices, and fire escapes. The page designer then placed and colored the
-      drawings on the spread.
+      drawings around the article.
     images:
       - image: /images/projects/04_building-3.png
         sound: false
         alt: Ink drawing of 814 California Street, with bay windows and a fire escape
         caption: 814 California Street.
-        size: full
-      - image: /images/projects/06_building-5.png
+        size: third-text
+      - image: /images/projects/spread_blended-2.png
         sound: false
-        alt: Ink drawing of 1945 Hyde Street, a building with arched doorways
-        caption: 1945 Hyde Street.
-        size: full
+        alt: "The two-page spread, We Have No Comment Thank You Very Much, with the
+          article surrounded by drawings of Lembi buildings"
+        caption: The finished spread, with the drawings framing Richard Parks's article.
+        size: third-text
   - heading: One of the designs they're proudest of
     text: McSweeney's called the spread "One of the Panorama designs we're proudest
       of." The work was also cited on snd.org, the site of the Society for News

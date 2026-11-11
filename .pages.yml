@@ -156,6 +156,7 @@ content:
                     - { name: text-half, label: "Half, text left with image beside it" }
                     - { name: half, label: Half (two images side by side) }
                     - { name: third, label: Third (three images side by side) }
+                    - { name: third-text, label: "Third, two images side by side with the section text beside them" }
               - { name: text, label: "Text beside the image (for the Half with text layouts)", type: rich-text, options: { format: markdown } }
       - { name: credits_heading, label: "Credits heading (e.g. Team, Crew; default: Team)", type: string }
       - name: credits

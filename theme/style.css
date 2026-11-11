@@ -596,7 +596,11 @@ svg[data-fit="contain"] { background: none !important; border: 0 !important; bor
 .section-split .split-main > h2 { font-size: 30px; margin: 0 0 12px; }
 .section-split .split-main > :last-child, .section-split .split-desc > :last-child { margin-bottom: 0; }
 .section-split .split-desc { margin-top: auto; padding-top: 16px; }
+/* two images and the section text, in three equal columns ("third-text" layout) */
+.case-body > .section-split.pair-text { grid-template-columns: 1fr 1fr 1fr; align-items: start; }
+.pair-text figure { align-self: end; }
 @media (max-width: 900px) { .case-body > .media-split { grid-template-columns: 1fr; gap: 16px; } .media-split.reverse figure { order: 0; } }
+@media (min-width: 601px) and (max-width: 900px) { .case-body > .section-split.pair-text { grid-template-columns: 1fr 1fr; } .pair-text .split-text { grid-column: 1 / -1; order: -1; } }
 
 /* Interactive SVG graphics run in place (replay buttons, hovers, animations) */
 object.svg-live { display: block; width: 100%; height: auto; border: 0; background: var(--card); border-radius: 6px; }
