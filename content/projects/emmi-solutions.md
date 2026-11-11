@@ -14,8 +14,7 @@ outcome: "Among User Interface work and marketing materials, I mapped out his
   understanding of the process and shared the visualization across the company.
   "
 responsibilities: Visual Design, Interface Design, Design System management
-team: "Placeholder: the roles you worked with, e.g. product manager, engineers,
-  researcher."
+team: The departing system architect and the management team.
 categories:
   - UX Design
   - Information Design
@@ -25,103 +24,86 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
+description: Documenting how Emmi Solutions produced its patient education programs,
+  and restructuring the Schedule an Emmi screen in Emmi Manager.
 cover: /images/logos/emmi.svg
 drawer_image: /images/projects/02_production-process-diagram.png
+drawer_image_alt: Emmi Solutions new program process diagram
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: A process only one person knew
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      Emmi Solutions makes Emmi programs, interactive programs that help
+      patients understand a procedure before they have it. As the company
+      developed partnerships, one question kept coming up: how is the software
+      produced?
 
 
-      - Data or stats that set the context
+      - The lead engineer, the system's architect, was the one person who knew
+      the whole process, and he was leaving the company.
 
-      - Assumptions you set out to validate or disprove
+      - Once he left, no one could field those questions, so we needed
+      documentation.
 
-      - The hypothesis that guided your design
+      - Alongside that, the Schedule an Emmi section of Emmi Manager needed a
+      clearer structure.
 
-    images:
-      - image: /images/projects/alberto1_after.jpg
-        sound: false
-        alt: "Placeholder: image that sets the context"
-        caption: I assisted with interface work as well as visual explanations.
-        size: half-text
-      - image: /images/projects/alberto1_before.jpg
-        sound: false
-        caption: The state of the software I began with.
-        size: half-text
-  - heading: Your goal
+  - heading: Mapping the production process
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      My goal was to capture the architect's understanding of the process
+      before he left, in a form the whole company could read.
 
 
-      - "How might we…" statements
+      - How might we show every step, role, and handoff in producing a new
+      Emmi program on a single page?
 
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
-    images:
-      - sound: false
-        alt: "Placeholder: research or workshop artifact"
-        size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
-        alt: "Placeholder: framework or design principles"
-        size: half-text
-        text: "Placeholder: describe the framework, principle or diagram shown here."
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
-    images:
-      - image: /images/placeholders/placeholder-detail-2.svg
-        sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
-        alt: "Placeholder: design iteration or alternative"
-        size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
+      - I worked with the departing architect to map the process, then shared
+      the visualization across the company.
 
     images:
       - image: /images/projects/02_production-process-diagram-1.png
         sound: false
-        alt: "Placeholder: result or shipped product"
-        caption: Emmi Solutions Software production process documentation.
+        alt: Emmi Solutions new program process diagram, with phases from prep and
+          research through alpha, beta, testing, and deployment, and a row for
+          each role
+        caption: "The new program process: phases run left to right from prep to
+          deployment, and each role has its own row, from recruiting through
+          review, production, and release."
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+  - heading: Restructuring Schedule an Emmi
+    text: Alongside the documentation, I worked on the Emmi Manager interface. The
+      Schedule an Emmi screen packed patient details, doctor details, and
+      program search into one dense form. I reorganized it into clear groups,
+      patient information, doctor information, and programs available, and
+      made it easier to narrow the program list.
+    images:
+      - image: /images/projects/alberto1_before.jpg
+        sound: false
+        alt: The original Schedule an Emmi screen, with patient, doctor, and program
+          fields in one dense form
+        caption: "Before: patient, doctor, and program fields in one form."
+        size: full
+      - image: /images/projects/alberto1_after.jpg
+        sound: false
+        alt: The redesigned Schedule an Emmi screen, with sections for patient
+          information, doctor information, and programs available
+        caption: "After: patient information, doctor information, and programs
+          available each have their own group, with clearer ways to narrow the
+          program list."
+        size: full
+  - heading: A shared picture of the process
+    text: >+
+      Management used the diagram to plan staffing and process steps, and to
+      communicate with potential investors and shareholders.
+
+
+      - Documentation of the production process that outlasted the architect's
+      departure
+
+      - A clearer Schedule an Emmi screen in Emmi Manager
+
+      - Interface work and marketing materials alongside both
+
+
 ---
 Management used the diagram to plan staffing and process steps, and to communicate with potential investors and shareholders. The departing system lead and the management team.
