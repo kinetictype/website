@@ -24,7 +24,7 @@ hidden: false
 description: Data Visualization for competitive Benchmarking
 cover: /images/logos/user-testing-icon-svgrepo-com.svg
 cover_alt: User Testing Logo
-drawer_image: /images/projects/project-13/usertesting-benchmark-browser.png
+drawer_image: /images/projects/TeaserImage02.png
 drawer_image_alt: The UserTesting benchmark Score Breakdown in a browser window
 drawer_whole: false
 gallery:
