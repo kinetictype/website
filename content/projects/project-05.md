@@ -137,9 +137,9 @@ sections:
           forums, and the logged-in experience.
         size: full
   - heading: What carried forward
-    text: Although the redesign didn't ship, two things outlasted it. Mapping the
+    text: Although the redesign did not ship, a few things outlasted it. Mapping the
       customer journey gave three teams with competing priorities a shared
-      picture to work from. And reaching out to the product team started
+      picture to work from. Reaching out to the product team also started
       cross-team meetings that continued long after this project ended.
 ---
 Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform that reduces incoming help calls. Users often looked for the help number before checking help articles. I came in, bridged customer support and product design (separate teams, separate buildings), and began collaborating with the onboarding team. The project was put on hold due to competing priorities, and the site never moved to the new platform.
