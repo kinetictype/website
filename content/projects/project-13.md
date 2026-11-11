@@ -49,9 +49,8 @@ sections:
       overview, top insights, UX factors, tasks vs. competition, and struggle
       areas.
     images:
-      - image: /images/projects/HappyPath.webp
-        sound: false
-        alt: Happy path
+      - sound: false
+        alt: Visualizing the data
         caption: Documenting the "happy path" experience
         size: text-half
   - heading: Gathering stakeholder Buy-in
