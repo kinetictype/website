@@ -123,14 +123,6 @@ sections:
           search, and live chat
         caption: The same issue-first navigation on desktop and mobile.
         size: full
-      - image: /images/projects/project-05-fitbit/help-fitbit-prototype.svg
-        sound: false
-        alt: Interactive prototype of the redesigned help.fitbit.com on a white iPhone,
-          playing the Allie, Josh and Susan scenarios in turn
-        caption: Each persona's scenario became a flow. The prototype plays Allie, Josh
-          and Susan in turn, then Recent Issues, FitBot and the community. Tap
-          the phone to explore; it picks up again after 15 seconds.
-        size: full
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
       team and the extended stakeholders. I captured the artifacts in a
