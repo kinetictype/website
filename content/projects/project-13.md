@@ -100,8 +100,8 @@ sections:
       - image: /images/projects/project-13/usertesting-browser-prototype-score-wide.svg
         sound: false
         alt: Scrollable prototype of the full report, from the overall score to common
-          product descriptors and path directness, in a browser window
-        size: half-text
+          product descriptors and path directness
+        size: full
   - heading: Scoping the Vision from the Beginning
     text: When I joined the team at User Testing, the project had been in discovery
       for nine months prior. I realized the vision, but by the time I joined,
