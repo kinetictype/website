@@ -78,12 +78,6 @@ sections:
         caption: Damaged devices led the issues customers chose when they emailed
           support.
         size: text-half
-      - image: /images/projects/project-05-fitbit/03_heatmaps.jpg
-        sound: false
-        alt: Heatmaps
-        caption: Heatmaps revealed users wanted to contact support, learn how to use
-          their tracker, and search.
-        size: half-text
   - heading: Finding order in the research
     text: "On the existing platform, customers who couldn't find an answer had to
       complete a multi-step questionnaire before they could call for help. My
