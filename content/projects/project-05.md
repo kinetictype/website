@@ -190,4 +190,4 @@ sections:
       picture to work from. And reaching out to the product team started
       cross-team meetings that continued long after this project ended.
 ---
-Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform that reduces incoming help calls. Users often looked for the help number before checking help articles. I came in, bridged customer support and product design (separate teams, separate buildings), and began collaborating with the onboarding team. The project was put on hold due to competing priorities and declining revenue; the site never moved to the new platform.
+Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform that reduces incoming help calls. Users often looked for the help number before checking help articles. I came in, bridged customer support and product design (separate teams, separate buildings), and began collaborating with the onboarding team. The project was put on hold due to competing priorities, and the site never moved to the new platform.
