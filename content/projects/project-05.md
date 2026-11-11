@@ -119,8 +119,7 @@ sections:
     images:
       - image: /images/projects/project-05-fitbit/05_sketch-review-wall.jpg
         sound: false
-        alt: Printed wireframes of the help flows covered in colored sticky notes with
-          feedback and questions
+        alt: wireframes covered in colored sticky notes
         caption: Feedback from other teams on the first wireframes, one sticky note at a
           time.
         size: full
