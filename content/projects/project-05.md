@@ -124,9 +124,12 @@ sections:
         sound: false
         alt: laptop and a phone redesign
         caption: Designing a mobile first experience responding to desktop.
-        size: text-half
-      - image: /images/projects/help-fitbit-prototype.svg
+        size: half
+      - image: /images/projects/project-05-fitbit/help-fitbit-prototype.svg
         sound: false
+        alt: Interactive prototype of the redesigned help.fitbit.com on an iPhone,
+          playing the Allie, Josh and Susan scenarios in turn
+        caption: The prototype plays each persona's scenario. Tap the phone to explore.
         size: half
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
