@@ -5,13 +5,15 @@ summary: Create the site architecture for the Restylane PracticeBuilder, moving
   it from a CD into a microsite on RestylaneUSA.com.
 client: Restylane / Williams-Labadie
 role: Information Architect
-timeline: "2007"
+timeline: February – May 2007
 goals: "Transfer business from customers accessing a CD-ROM to customers
   visiting a website. "
-outcome: Information architecture around which the firm could build the website.
-responsibilities: I analyzed the content through card sorting and workshops with
-  the client to identify their needs.
-team: product manager, engineers
+outcome: Site architecture developed through card sorting and multiple
+  iterations, around which the firm could build the website.
+responsibilities: I independently analyzed the existing and new content, then
+  developed the site architecture through card sorting and workshops with the
+  client to identify their needs.
+team: Writers and web developers.
 categories:
   - Information Architecture
 years: "2007"
@@ -19,98 +21,104 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
+description: Information architecture for the Restylane PracticeBuilder, moving a
+  CD-ROM of practice-building tools for dermatologists into a microsite on
+  RestylaneUSA.com.
 cover: /images/logos/restylane-seeklogo.svg
 drawer_image: /images/projects/Cover_sitemap.png
+drawer_image_alt: Restylane PracticeBuilder site architecture, version 1.2
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: From CD-ROM to the web
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      Restylane, from Medicis Aesthetics, gave dermatology practices a CD-ROM
+      called PracticeBuilder, full of tools to help them grow their Restylane
+      business. Working with the agency Williams-Labadie, I created the site
+      architecture that moved PracticeBuilder from the CD into a microsite on
+      RestylaneUSA.com.
 
 
-      - Data or stats that set the context
+      - The CD organized its tools around acquiring, developing, and
+      maintaining relationships with patients.
 
-      - Assumptions you set out to validate or disprove
+      - The content ranged from letters and newsletters to seminar guides,
+      staff training, calculators, and videos.
 
-      - The hypothesis that guided your design
+      - The goal: move customers from a CD-ROM to a website they would visit
+      again and again.
 
     images:
       - image: /images/projects/03_content-structure.png
         sound: false
-        alt: "Placeholder: image that sets the context"
-        caption: " this image shows and why it matters to the problem."
-        size: half-text
-  - heading: Your goal
+        alt: Content structure of the Restylane CD-ROM, version 2.0, with tools for
+          acquiring, developing, and maintaining relationships and a set of support
+          tools
+        caption: The CD-ROM grouped its tools by stage of the patient relationship,
+          with a legend for each file type.
+        size: full
+  - heading: Sorting the content
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      My goal was a structure that would make sense to practices on the web,
+      not just reproduce the CD. I independently analyzed the existing and new
+      content, then worked through it with the client.
 
 
-      - "How might we…" statements
+      - How might we organize dozens of tools so a busy practice can find the
+      right one quickly?
 
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
+      - Card sorting and workshops with the client grouped the content into
+      sections such as tips and techniques, the loyalty program, marketing
+      tools, resources, and enhancing the patient experience.
 
     images:
       - image: /images/projects/04_card-sort.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
-        caption: describe the research, workshop or competitive analysis shown here.
-        size: text-half
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+        alt: A card sort pinned to a board, grouping content under tips and
+          techniques, loyalty program, marketing tools, resources, and enhancing
+          the patient experience
+        caption: The card sort grouped the content into the sections a practice would
+          look for.
+        size: full
+  - heading: Iterating on the architecture
+    text: The first draft, in March 2007, organized the site around tools to use
+      with doctors, communicating Restylane, using Restylane, the patient and
+      doctor relationship, international resources, managing your practice, and
+      reward points. Each iteration refined the sections and how doctors,
+      sales representatives, and staff would sign in.
     images:
       - image: /images/projects/02_architecture-iteration-1.png
         sound: false
-        alt: "Placeholder: framework or design principles"
-        caption: the framework, principle or diagram shown here is another step
-        size: half-text
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
-    images:
-      - image: /images/placeholders/placeholder-detail-2.svg
-        sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
-    images:
-      - image: /images/placeholders/placeholder-detail-1.svg
-        sound: false
-        alt: "Placeholder: design iteration or alternative"
-        size: half-text
-        text: "Placeholder: describe the design shown here and the decisions behind it."
-  - heading: Outcome
+        alt: Draft site architecture for the Restylane PracticeBuilder from March
+          2007, with a main screen, sign-in, and sections of tools
+        caption: The March 2007 draft of the site architecture.
+        size: full
+  - heading: The site architecture
     text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
+      Version 1.2, in April 2007, set the structure the team would build. A
+      main screen leads doctors and sales specialists to sign in, then to seven
+      sections, each holding its tools and guides.
 
 
-      - Business value the design provided
+      - Communicating Restylane, Using Restylane, and the patient and doctor
+      relationship
 
-      - Customer problems the solution solved
+      - Managing your practice, the rewards program, and PracticeBuilder
+      resources
 
-      - Next steps, if there are more iterations to go
+      - A section for sales specialists, plus a key for quick release, global
+      navigation, and release 2 content
 
     images:
       - image: /images/projects/06_sitemap-1.jpg
         sound: false
-        alt: "Placeholder: result or shipped product"
+        alt: Restylane PracticeBuilder site architecture, version 1.2, from April 2007
+        caption: Site architecture, version 1.2, the structure the writers and web
+          developers built from.
         size: full
   - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+    text: Moving a CD-ROM to the internet in the early Web 2.0 days meant rethinking
+      the content for the way people use a website. Card sorting with the client
+      turned a large set of tools into a structure that practices could
+      navigate.
 ---
 Moving a CD Rom to the internet was an exciting feat! I designed the site architecture, developed through card sorting and multiple iterations in the early Web 2.0 days.
