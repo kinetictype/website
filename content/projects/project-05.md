@@ -52,8 +52,7 @@ sections:
       had to rethink the entire site's navigation.
 
     images:
-      - image: /images/projects/project-05-fitbit/01_service-ecosystem.png
-        sound: false
+      - sound: false
         alt: "Map of the Fitbit self-service ecosystem "
         caption: A service blueprint to align three teams showing how customers reach
           help, the community forums, product care, how-to videos, and contact
