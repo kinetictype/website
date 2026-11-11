@@ -1,20 +1,18 @@
 ---
 title: San Francisco Panorama
 tagline: Illustrating a real-estate exposé for McSweeney's Panorama.
-summary: >+
-  I illustrated more than 100 Lembi properties from photographs. Illustrate
+summary: I illustrated more than 100 Lembi properties from photographs for
   Richard Parks's two-page article about the Lembi Group's San Francisco real
   estate holdings.
-
 client: McSweeney's
 role: Illustrator
-timeline: "2009"
-goals: Illustrate drawings reminiscent of the style of buildings of 1910.
-outcome: "Placeholder: what you eventually designed."
-responsibilities: "Placeholder: what you worked on, e.g. visual design,
-  interaction design, design system, user research, concept design, usability
-  testing, content design."
-team: Worked with the page editor.
+timeline: November 2009
+goals: Illustrate Richard Parks's two-page article about the Lembi Group's San
+  Francisco real estate holdings, in drawings reminiscent of the style of
+  buildings of 1910.
+outcome: Drawings of more than 100 Lembi properties, made from photographs.
+responsibilities: Illustration, hand-drawn in ink on paper.
+team: The page designer, who placed and colored the drawings.
 categories:
   - Illustration
 years: "2009"
@@ -22,101 +20,76 @@ section: work
 start_year: 2009
 featured: false
 hidden: false
+description: Ink drawings of more than 100 Lembi Group properties for a
+  real-estate exposé in McSweeney's San Francisco Panorama.
 cover: /images/logos/McSweenys-chair.svg
 drawer_image: /images/projects/coverfullSpread02-1200.jpg
+drawer_image_alt: The San Francisco Panorama spread with illustrations of Lembi properties
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: A newspaper, and an exposé
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      In 2009, McSweeney's published the San Francisco Panorama, a one-off
+      newspaper. One of its stories was Richard Parks's two-page article about
+      the Lembi Group, a family-owned company that had bought up a large share
+      of San Francisco's rent-controlled apartment buildings.
 
 
-      - Data or stats that set the context
+      - The article needed to show the scale of the Lembi holdings.
 
-      - Assumptions you set out to validate or disprove
-
-      - The hypothesis that guided your design
-
-    images:
-      - image: /images/projects/06_building-5.png
-        sound: false
-        alt: "Placeholder: image that sets the context"
-        caption: Hand drawn ink on paper illustration
-        size: half-text
-  - heading: Your goal
-    text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
-
-
-      - "How might we…" statements
-
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
-    images:
-      - image: /images/projects/03_building-2.png
-        sound: false
-        alt: "Placeholder: research or workshop artifact"
-        caption: Hand illustration
-        size: text-half
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
-    images:
-      - image: /images/projects/04_building-3.png
-        sound: false
-        alt: "Placeholder: framework or design principles"
-        caption: principle or diagram shown here.
-        size: half-text
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
-    images:
-      - image: /images/projects/02_building-1.png
-        sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        size: text-half
-        text: "Placeholder: describe the challenge this image shows and how you got
-          through it."
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
-    images:
-      - image: /images/projects/04_building-3-1.png
-        sound: false
-        alt: "Placeholder: design iteration or alternative"
-        caption: " design shown here "
-        size: half-text
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
+      - My job was to illustrate the properties themselves.
 
     images:
       - image: /images/projects/spread_blended-2.png
         sound: false
-        alt: "Placeholder: result or shipped product"
+        alt: "The two-page spread, We Have No Comment Thank You Very Much, with the
+          article surrounded by drawings of Lembi buildings"
+        caption: "The finished spread, \"We Have No Comment Thank You Very Much,\" with
+          the drawings framing Richard Parks's article."
         size: full
-      - sound: false
+  - heading: Drawing every building
+    text: >+
+      My goal was to let readers see the holdings, building by building, in a
+      style that suited the paper and the buildings themselves.
+
+
+      - I drew more than 100 Lembi properties from photographs.
+
+      - The drawings are reminiscent of the style of buildings of 1910, hand
+      drawn in ink on paper and labeled with each street address.
+
+    images:
+      - image: /images/projects/02_building-1.png
+        sound: false
+        alt: Ink drawing of 345 Fulton Street, an apartment building with a fire escape
+        caption: 345 Fulton Street, hand drawn in ink on paper.
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
+      - image: /images/projects/03_building-2.png
+        sound: false
+        alt: Ink drawing of 642 Jones Street, a tall apartment building with bay
+          windows and a fire escape
+        caption: 642 Jones Street.
+        size: full
+  - heading: From photographs to line drawings
+    text: Working from photographs, I simplified each facade to its lines, keeping
+      the details that make each building recognizable, such as the bay windows,
+      cornices, and fire escapes. The page designer then placed and colored the
+      drawings on the spread.
+    images:
+      - image: /images/projects/04_building-3.png
+        sound: false
+        alt: Ink drawing of 814 California Street, with bay windows and a fire escape
+        caption: 814 California Street.
+        size: full
+      - image: /images/projects/06_building-5.png
+        sound: false
+        alt: Ink drawing of 1945 Hyde Street, a building with arched doorways
+        caption: 1945 Hyde Street.
+        size: full
+  - heading: One of the designs they're proudest of
+    text: McSweeney's called the spread "One of the Panorama designs we're proudest
+      of." The work was also cited on snd.org, the site of the Society for News
+      Design.
 ---
 McSweeney's kindly mentioned that my illustrations are "One of the Panorama designs we're proudest of." 
 
