@@ -16,11 +16,8 @@ outcome: A mobile-first, responsive help site built on a new, metrics-driven
   navigation system, documented in scenario flows and a system map. The Help
   team and extended stakeholders received it well, but the CMS upgrade was put
   on hold and the redesign did not move forward.
-responsibilities: Stakeholder alignment, service design blueprint, data and
-  heatmap analysis, information architecture, personas and scenarios, sketching,
-  wireframes, and responsive design.
-team: '"Design team of one." Worked directly with three stakeholders and a
-  program manager.'
+responsibilities: "Lead and sole designer: research synthesis, framework, and vision."
+team: Worked directly with three stakeholders and a program manager.
 categories:
   - UX
   - Service Blueprint
