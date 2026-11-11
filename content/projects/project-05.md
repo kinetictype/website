@@ -137,39 +137,6 @@ sections:
           search, and live chat
         caption: The same issue-first navigation on desktop and mobile.
         size: full
-      - image: /images/projects/project-05-fitbit/07_mobile-issue-step.png
-        sound: false
-        alt: The mobile help page asking How can we help? with a search field and issue
-          tags such as damaged, battery, and syncing
-        size: half-text
-        text: >+
-          **Start with the issue**
-
-
-          Customers type a question or tap one of the issue tags drawn from the
-          support data, such as damaged, battery, or syncing, then move on to
-          choose their product.
-
-      - image: /images/projects/project-05-fitbit/08_mobile-flow.png
-        sound: false
-        alt: "Four mobile screens: choosing an issue, browsing articles, choosing a
-          tracker, and reading an article"
-        caption: Choosing an issue, browsing articles, picking a tracker, and reading
-          the answer.
-        size: full
-      - image: /images/projects/05_help-wizard.png
-        sound: false
-        alt: A scenario flow in which Allie uses the wizard to choose her tracker and
-          platform before reaching the search results
-        size: half-text
-        text: >+
-          **Scenarios as flows**
-
-
-          Each persona's scenario became a flow. Here, Allie uses the wizard to
-          assist her search: she chooses her tracker and her platform, and the
-          results surface the most popular article above a list to choose from.
-
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
       team and the extended stakeholders. I captured the artifacts in a
