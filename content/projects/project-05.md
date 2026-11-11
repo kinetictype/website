@@ -98,7 +98,7 @@ sections:
         alt: Heatmaps
         caption: Heatmaps revealed users wanted to contact support, learn how to use
           their tracker, and search.
-        size: full
+        size: half-text
   - heading: Bridging customer support and product design
     text: "To make sense of the data, I took over an underused conference room and
       brought all the pieces together in one place to track the elements I was
