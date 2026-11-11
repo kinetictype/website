@@ -56,8 +56,7 @@ sections:
         size: text-half
   - heading: Gathering stakeholder Buy-in
     images:
-      - image: /images/projects/StoryElements.webp
-        sound: false
+      - sound: false
         alt: Storytelling principles to guide the design
         caption: Discovering how to guide a user through the data in a seemless way was
           a first step.
