@@ -48,13 +48,11 @@ prototype_size: half
 sections:
   - heading: How might we create a self-service platform?
     text: >+
-      Fitbit wanted to improve its customer support website as part of an
-      internal initiative to redefine the self-service experience. The support
-      site drew about 1.5 million visitors a month, most of them searching for
-      an answer to a specific issue. Most visitors who filed a support case had
-      never tried self-service. Our hypothesis was that if people could find
-      help on the website, fewer of them would need to call Fitbit. We had to
-      rethink the entire site's navigation.
+      The Fitbit support site drew about 1.5 million visitors a month, most of
+      them searching for answers to specific issues, but most visitors who filed
+      a support case had never tried self-service. We believed that if people
+      could find help on the website, fewer of them would need to call Fitbit. I
+      had to rethink the entire site's navigation.
 
     images:
       - image: /images/projects/project-05-fitbit/01_service-ecosystem.png
