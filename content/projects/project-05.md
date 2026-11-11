@@ -93,19 +93,12 @@ sections:
       site, so the research started there: support email data, site analytics,
       and heatmaps. "
     images:
-      - image: /images/projects/project-05-fitbit/04_research-room.jpg
+      - image: /images/projects/heatMaps-1.png
         sound: false
-        alt: War room
-        caption: The project room put the article inventory, analytics, and personas on
-          one wall.
+        alt: Heatmaps
+        caption: Heatmaps revealed users wanted to contact support, learn how to use
+          their tracker, and search.
         size: full
-      - image: /images/projects/03_personas-1.png
-        sound: false
-        alt: Three personas, the Active Traveller, the Competitive Athlete, and the
-          Dieter
-        caption: "I designed three scenarios and flows based on personas that matched
-          the characteristics of our data. "
-        size: text-half
   - heading: Bridging customer support and product design
     text: "To make sense of the data, I took over an underused conference room and
       brought all the pieces together in one place to track the elements I was
@@ -138,11 +131,11 @@ sections:
         size: full
       - image: /images/projects/project-05-fitbit/help-fitbit-prototype.svg
         sound: false
-        alt: Interactive prototype of the redesigned help.fitbit.com on a white
-          iPhone, playing the Allie, Josh and Susan scenarios in turn
-        caption: "Each persona's scenario became a flow. The prototype plays Allie,
-          Josh and Susan in turn, then Recent Issues, FitBot and the community.
-          Tap the phone to explore; it picks up again after 15 seconds."
+        alt: Interactive prototype of the redesigned help.fitbit.com on a white iPhone,
+          playing the Allie, Josh and Susan scenarios in turn
+        caption: Each persona's scenario became a flow. The prototype plays Allie, Josh
+          and Susan in turn, then Recent Issues, FitBot and the community. Tap
+          the phone to explore; it picks up again after 15 seconds.
         size: full
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
