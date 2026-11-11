@@ -71,7 +71,8 @@ sections:
       held meetings remotely. I created critiques using Miro, a whiteboarding
       confernce tool, to share my progress and gain feedback from the team.
     images:
-      - sound: false
+      - image: /images/projects/02_wireframe-critique.jpg
+        sound: false
         alt: Critique of early wireframes.
         caption: Our team was distributed throughout the Bay Area; I held virtual
           critique rooms where teammates places stickies on my work.
