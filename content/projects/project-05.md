@@ -176,11 +176,9 @@ sections:
       put the CMS upgrade initiative on hold, and the project did not move
       forward. Two years later, Google acquired Fitbit.
     images:
-      - image: /images/projects/project-05-fitbit/09_system-map.png
+      - image: /images/projects/06_NEWsystem-map.png
         sound: false
-        alt: System map of help.fitbit.com and community.fitbit.com, connecting
-          articles, search, the product page, contact options, and the
-          authenticated experience
+        alt: "System map "
         caption: The system map connected every screen of help.fitbit.com, the community
           forums, and the logged-in experience.
         size: full
