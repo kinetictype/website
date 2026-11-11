@@ -1,14 +1,15 @@
 ---
 title: Sara Lee Sales Brochure Charts
-tagline: An illustrated chart style for Sara Lee's sales brochures.
+tagline: A consistent, illustrated chart style for Sara Lee's sales brochures.
 summary: Give the information graphics in Sara Lee's sales brochures a more
   illustrative, dynamic look.
 client: "Sara Lee Corp/Launch Creative Marketing "
 role: Visualization Designer
-timeline: "2007"
-goals: The art director and several designers.
-outcome: Multiple charts in one consistent style across several brochures.
-responsibilities: Chart Illustrations
+timeline: January 2007
+goals: Give the information graphics in Sara Lee's sales brochures a more
+  illustrative, dynamic look.
+outcome: Multiple charts in one consistent style across ten brochures.
+responsibilities: Information graphics and chart illustration.
 team: The art director and several designers.
 categories:
   - Visualization Designer
@@ -17,97 +18,92 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
+description: Illustrated, dimensional charts in one consistent style for ten Sara
+  Lee sales brochures, designed with Launch Creative Marketing.
 cover: /images/logos/sara-lee.svg
 drawer_image: /images/projects/SarahLee.png
+drawer_image_alt: A series of illustrated charts for Sara Lee sales brochures
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Charts that sell
     text: >+
-      The mission or goal of the project?  
-
-      Which customer or business problems were you and your team trying to
-      solve?  
-
-      Assumptions you set out to validate or disprove  
-
-      The hypothesis that guided your design
-
-    images:
-      - image: /images/projects/Artboard 1 copy 2@2x.png
-        sound: false
-        alt: "Placeholder: image that sets the context"
-        size: half-text
-        text: "Placeholder: describe what this image shows and why it matters to the
-          problem."
-  - heading: The Goal
-    text: >+
-      What was your goal as the designer, and what did you want the design to
-      achieve?
+      Launch Creative Marketing was producing a series of sales brochures for
+      Sara Lee Corporation, for brands such as Hillshire Farm and Jimmy Dean.
+      Each brochure made its case to retailers with data, and the agency
+      wanted those information graphics to feel more illustrative and dynamic.
 
 
-      - "How might we…" statements
+      - Ten brochures, each with its own set of charts
 
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
-
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
+      - Every chart needed to share one consistent style
 
     images:
       - image: /images/projects/Picture 3.png
         sound: false
-        alt: "Placeholder: research or workshop artifact"
-        size: text-half
-        text: "Placeholder: describe the research, workshop or competitive analysis
-          shown here."
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
+        alt: Two Sara Lee sales brochure spreads covering distribution, shelving,
+          merchandising, and pricing, and why Hillshire Farm
+        caption: Sales brochure spreads that make Hillshire Farm's case to retailers
+          with data.
+        size: full
+  - heading: One style across ten brochures
+    text: >+
+      My goal was a chart style with dimension and character that could carry
+      across every brochure, whatever the data.
+
+
+      - How might we make sales data feel illustrative and dynamic without
+      losing what the numbers say?
+
+      - Line, bar, pie, and 3D charts all had to look like they belong to the
+      same family.
+
+    images:
+      - image: /images/projects/Artboard 1 copy 2@2x.png
+        sound: false
+        alt: Red three-dimensional charts of fresh sandwich chain sales, dollar
+          sales percent change, and frozen breakfast brands
+        caption: Fresh sandwich chain sales, dollar sales change, and frozen breakfast
+          brands, drawn as dimensional ribbons and bars.
+        size: full
+  - heading: A palette for each brand
+    text: Each brochure took its colors from the brand it promoted, such as deep red
+      for one and green and gold for Hillshire Farm, while the dimension,
+      lighting, and type stayed the same. That kept the series consistent and
+      let each brochure feel like its own brand.
     images:
       - image: /images/projects/Artboard 1@2x.png
         sound: false
-        alt: "Placeholder: framework or design principles"
-        caption: the framework, principle or diagram shown here.
-        size: half-text
-      - sound: false
+        alt: Green and gold charts of turkey breakfast sausage sales, wraps eaten in
+          home, wrap items on menus, and tortillas used for sandwiches
+        caption: Turkey breakfast sausage sales, wraps eaten at home, wrap items on
+          menus, and tortillas used for sandwiches.
         size: full
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
+      - image: /images/projects/Artboard 1 copy@2x.png
+        sound: false
+        alt: Red charts of Jimmy Dean frozen breakfast sales, how often consumers
+          buy, product liking and purchase intent, and what influences purchase
+        caption: Bars, a pie chart, and score tables share the same dimensional style.
+        size: full
+  - heading: Breaking the rules for clarity
+    text: Traditional chart rules call for flat, minimal graphics. I broke those
+      rules on purpose and went all in on more illustrative charts, with depth,
+      perspective, and bold labels that make the key number easy to find.
     images:
       - image: /images/projects/Picture 2-1.png
         sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        caption: The final brochure with image placed inside.
-        size: text-half
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
-    images:
-      - image: /images/projects/Artboard 1 copy@2x.png
-        sound: false
-        alt: "Placeholder: design iteration or alternative"
-        caption: the design shown here and the decisions behind it.
-        size: half-text
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
+        alt: Hillshire Farm brochure spreads comparing smoked sausage links with the
+          competition and outlining promotional support
+        caption: The final brochure, with the charts placed in the layout.
+        size: full
+  - heading: Multiple charts, one consistent style
+    text: I designed multiple charts in one consistent style across ten brochures,
+      working with the art director and several designers at Launch Creative
+      Marketing.
     images:
       - image: /images/projects/SaraLee_highRes.png
         sound: false
-        alt: "Placeholder: result or shipped product"
+        alt: A collection of charts from the Sara Lee brochure series
+        caption: Charts from across the brochure series, in one consistent style.
         size: full
   - heading: Jazzy Infographics
     text: "I was brought in to work with Launch Design Agency to build infographics
