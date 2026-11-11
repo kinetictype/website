@@ -110,6 +110,9 @@ sections:
         caption: Feedback from other teams on the first wireframes, one sticky note at a
           time.
         size: full
+      - sound: false
+        alt: War room with research, articles, and room for critique.
+        size: full
   - heading: Designing mobile first
     text: Metrics showed that most people accessed help from their phones while on
       the go, so I took a mobile-first approach and then designed the desktop
