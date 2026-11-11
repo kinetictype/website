@@ -58,9 +58,8 @@ sections:
     images:
       - image: /images/projects/03_first-draft-ux-factors-1.png
         sound: false
-        alt: Storytelling principles to guide the design
-        caption: Discovering how to guide a user through the data in a seemless way was
-          a first step.
+        alt: Initial wireframes
+        caption: The wireframes began to take shape the design gained momentum.
         size: half-text
   - heading: Balancing Data Literacy with Clarity
     text: The team, although based in the Bay Area, was mainly spread out and we
