@@ -49,18 +49,11 @@ sections:
           Read More expands the banner to reveal descriptive text and pushes the
           rest of the page down.
         size: full
-  - heading: A map that carries the brand
-    text: >+
-      A standard Google map was not going to help with the brand. My goal was a
-      custom geography experience that felt like Caldera and still let people
-      find a project quickly.
-
-
-      - How might we let visitors explore the work by place, media, and year?
-
-      - Visitors can filter by place, media, and year, or search by an artist's
-      name or school.
-
+  - heading: Design a Map to Carry the Brand
+    text: My goal was to create a custom geographic experience that felt like
+      Caldera while also letting people find a project quickly. How might we let
+      visitors explore the work by place, media, and year? Visitors can filter
+      by place, media, and year, or search by an artist's name or school.
     images:
       - image: /images/projects/caldera/02_information-architecture-flow.png
         sound: false
@@ -68,7 +61,7 @@ sections:
           Central Oregon maps, partner schools, and individual projects
         caption: An abstract map of Oregon leads to Portland and Central Oregon, then to
           partner schools and up to 20 assignments each, with process photos.
-        size: full
+        size: half-text
   - heading: Sketching the map
     text: I sketched layouts that put the map, a filter menu, and a strip of project
       thumbnails on the same screen, and designed map pins that show each
