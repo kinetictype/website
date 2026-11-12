@@ -73,14 +73,6 @@ sections:
           match each action with a donation to NGOs. Different actions are worth
           different amounts.
         size: full
-      - image: /images/projects/girl-effect/04_whiteboard-option-2.png
-        sound: false
-        alt: Whiteboard sketch of option 2, with notes on discounts, the value of
-          actions, and a scenario about Anna
-        caption: "Option 2 as a scenario: Anna shares an NGO photo on Tumblr, receives
-          Girl Coin, gets 20% off at Starbucks, and Starbucks gives money to the
-          NGO."
-        size: half
   - heading: Mapping the girl's journey
     text: Service design helped us find every touchpoint a girl would encounter, not
       just the app. We followed a 16- to 24-year-old girl named Anna from first
