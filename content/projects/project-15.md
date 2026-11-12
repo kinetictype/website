@@ -102,13 +102,6 @@ sections:
         alt: Prototype of photo playback, a grid of photos scrolled with the trackball
         caption: Scroll with the trackball and tap a photo to select it.
         size: text-half
-      - image: /images/projects/flipshare-video-option-a-1.gif
-        sound: false
-        alt: Prototype of video playback, with the share and mark buttons in the play
-          controls
-        caption: Tap the video to show the overlay, then play, drag the progress circle,
-          or skip to the next video.
-        size: half-text
   - heading: Cut my teeth on the Android phone
     text: I enjoy learning about new domains and wrapping my brain around their
       intricacies. It was great to work with the Principal Designer while
