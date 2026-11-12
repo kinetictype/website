@@ -87,13 +87,6 @@ sections:
         caption: Anna's journey runs from awareness to success, across marketing,
           people, and digital touchpoints, as she moves from passive to active.
         size: full
-      - image: /images/projects/girl-effect/06_project-wall.png
-        sound: false
-        alt: Project wall with the concept, the currency diagram, principles, and sticky
-          notes
-        caption: The project wall kept the concept, the currency model, and the
-          principles in view.
-        size: full
   - heading: Making every action count
     text: The challenge was to make actions active, not passive, and to show a girl
       where her money goes and how she is helping. I mapped the app flow from
@@ -106,7 +99,7 @@ sections:
           list or map of actions, rating, and tracking progress
         caption: "The app flow under the business goal: sign up, browse a list or map of
           nearby actions, rate them, and track progress and currency earned."
-        size: full
+        size: half-text
   - heading: Sketching the app
     text: I sketched how a girl would discover actions, see which friends are
       involved, prioritize what matters to her, and track the currency she
