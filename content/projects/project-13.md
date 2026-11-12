@@ -56,13 +56,13 @@ sections:
         size: text-half
   - heading: Gathering stakeholder Buy-in
     text: As the designs took shape, I presented the work to the team and gained
-      stakeholder support. At the time, the team was pursuing a different tool
-      that began shortly before I joined.
+      stakeholder support. Before I joined the company, the team was also
+      pursuing a different tool.
     images:
       - image: /images/projects/03_first-draft-ux-factors-1.png
         sound: false
         alt: Initial wireframes
-        caption: The wireframes began to take shape the design gained momentum.
+        caption: The wireframes began to take shape and the design gained momentum.
         size: half-text
   - heading: Balancing Data Literacy with Clarity
     text: The team, although based in the Bay Area, was mainly spread out and we
