@@ -7,9 +7,11 @@ summary: Build an interface with exploration features for the upcoming beta
   wireframes for player, module, episodes, and related-bundles screens.
 client: Agogo Startup
 role: User Experience Team of One
-goals: Understand the Agogo ecosystem, propose options for playing content on
-  the Agogo beta launch of the app.
-outcome: "A map of the system and ideas for the iPhone app. "
+timeline: June 2012
+goals: Build an interface with features to explore for the upcoming beta
+  release of a streaming audio app.
+outcome: User flows for obtaining the iOS beta, with success and error states,
+  and wireframes for the player, module, episodes, and related-bundles screens.
 responsibilities: I worked on concepting the interactions for the beta launch.
 team: Product Owner and Engineers
 categories:
@@ -21,99 +23,131 @@ section: work
 start_year: 2012
 featured: false
 hidden: false
+description: User flows and wireframes for the beta launch of Agogo, a
+  personalized streaming audio app that combines music, podcasts, and news.
 cover: /images/logos/agogo.svg
-drawer_image: /images/projects/agogo-1.jpg
+cover_alt: Agogo logo
+drawer_image: /images/projects/agogo-channels.jpg
+drawer_image_alt: The Agogo app on five iPhones, one color for each channel
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Getting the beta into people's hands
     text: >+
-      Placeholder: What was the mission or goal of the project? Which customer
-      or business problems were you and your team solving?
+      Agogo was a San Francisco startup building an all-in-one personalized
+      audio app that combines your favorite music, podcasts, and news. Before
+      the beta release, the team needed a way to invite people in and an
+      interface with features they could explore.
 
 
-      - Data or stats that set the context
+      - An admin enters a tester's email, and Agogo sends them a link.
 
-      - Assumptions you set out to validate or disprove
+      - Testers set a password, connect Twitter, Facebook, and MOG, and take a
+      quiz to customize their content, or skip either step.
 
-      - The hypothesis that guided your design
+      - Approved testers receive an email with a link to download Agogo on
+      their iOS device.
 
     images:
-      - image: /images/projects/agogo-prototype-B-combined-3.gif
+      - image: /images/projects/01_beta-user-flow-2.png
         sound: false
-        alt: "Placeholder: image that sets the context"
-        caption: This image shows and why it matters to the problem.
-        size: half-text
-  - heading: Your goal
+        alt: "Agogo user flow to obtain the beta iOS app, from the admin entering an
+          email to downloading the app"
+        caption: "Obtaining the iOS beta in nine steps, from an invitation email to
+          \"Congratulations! You've been approved for the AGOGO Beta iOS
+          Client.\""
+        size: full
+  - heading: Mapping the app
     text: >+
-      Placeholder: What was your goal as the designer, and what did you want the
-      design to achieve?
+      My goal was to make a lot of audio feel simple to browse and play.
 
 
-      - "How might we…" statements
+      - How might we let listeners move between channels, shows, and episodes
+      without losing what's playing?
 
-      - Metrics the team aimed for (e.g. ARR, convert X% of customers)
+      - I mapped every screen, from load and registration to the home, player,
+      settings, and voice feedback screens, including the success and error
+      states for each.
 
-      - Research that shaped the work: competitive analysis, customer
-      satisfaction scores (surveys, NPS), market research
-
-    images:
-      - image: /images/projects/agogo-prototype-A-separate-player-2.gif
-        sound: false
-        alt: "Placeholder: research or workshop artifact"
-        caption: The research, workshop or competitive analysis shown here.
-        size: text-half
-  - heading: Design principles & frameworks
-    text: "Placeholder: Which frameworks helped you and your team think through the
-      customer problems? Which design principles did you follow, or create, to
-      guide the design?"
-    images:
-      - image: /images/projects/02_beta-user-flow-1.png
-        sound: false
-        alt: "Placeholder: framework or design principles"
-        caption: Connecting apps
-        size: half-text
-  - heading: Challenges
-    text: "Placeholder: Which challenges are worth highlighting (team or org,
-      technical, design system, capacity or scope), and how did you get through
-      them?"
     images:
       - image: /images/projects/02_beta-user-flow.png
         sound: false
-        alt: "Placeholder: a challenge and how you solved it"
-        caption: Mapped the connections of app experience.
-        size: text-half
-  - heading: Showing your designs
-    text: "Placeholder: Show one or two iterations or alternatives you considered
-      (flats, prototypes, videos or GIFs) and the screens that explain your
-      decisions. Mention any AI tools you used, such as Figma Make, Lovable,
-      Cursor or Replit."
-    images:
-      - image: /images/projects/06_episodes-1.png
-        sound: false
-        alt: "Placeholder: design iteration or alternative"
-        caption: The design shown here and the decisions behind it.
-        size: half-text
-  - heading: Results & outcomes
-    text: >+
-      Placeholder: What data or metrics resulted from the design? If none, what
-      positives came out of it?
-
-
-      - Business value the design provided
-
-      - Customer problems the solution solved
-
-      - Next steps, if there are more iterations to go
-
-    images:
-      - image: /images/placeholders/placeholder-wide-2.svg
-        sound: false
-        alt: "Placeholder: result or shipped product"
+        alt: Map of the Agogo app, from the load, registration, and intro screens to
+          the home, player, settings, and voice feedback screens
+        caption: The app map, with notes on what each screen holds and the messages it
+          shows for errors, success, and loading.
         size: full
-  - heading: Learnings
-    text: "Placeholder: What did you and your team learn? What would help you on
-      another project? Anything else worth highlighting?"
-credits:
-  - {}
+  - heading: The player screen
+    text: The player shows the module and bundle names, the show title and date,
+      a waveform progress bar, and playback controls. To keep it uncluttered, I
+      explored drawers that slide up from the bottom, one for related bundles
+      and one for share, rate, and save.
+    images:
+      - image: /images/projects/03_related-bundles.png
+        sound: false
+        alt: Annotated player screen wireframe, with related bundles sliding up from
+          the bottom
+        caption: Related bundles slide up from the bottom of the player.
+        size: full
+      - image: /images/projects/04_share-rate-save.png
+        sound: false
+        alt: Player screen wireframes in which share, rate, and save slide up from the
+          bottom
+        caption: Share, rate, and save slide up from the bottom, so the controls stay in
+          front.
+        size: full
+  - heading: Combining the module and player
+    text: >+
+      Listeners choose a module, such as Weather, Business and Finance, or
+      News, and then a bundle within it, such as Market Reports. Combining the
+      module screen and the player kept both in one place.
+
+
+      - Modules sit in a row at the bottom, and swipe left and right.
+
+      - Bundles, from Bloomberg and NPR to the BBC and KCRW, open in a drawer.
+
+      - Segments and episodes within a bundle show as ticks above the player.
+
+    images:
+      - image: /images/projects/05_module-and-player.png
+        sound: false
+        alt: Wireframes of the module and player combined, with modules along the
+          bottom and bundle choices in a drawer
+        caption: "Module and player combined: modules along the bottom and bundle choices
+          inside a drawer."
+        size: full
+      - image: /images/projects/06_episodes.png
+        sound: false
+        alt: Wireframes of episodes within a bundle, with save, rate, and share inside
+          the drawer or always visible
+        caption: Episodes within a bundle, with save, rate, and share either inside the
+          drawer or always visible.
+        size: full
+  - heading: Two ways to play
+    text: I prototyped two options for the beta, a separate player screen and a
+      player combined with the module screen, so the team could feel the
+      difference before choosing.
+    images:
+      - image: /images/projects/agogo-prototype-A-separate-player-2.gif
+        sound: false
+        alt: Animated prototype of option A, a separate player screen
+        caption: "Option A: a separate player screen."
+        size: half
+      - image: /images/projects/agogo-prototype-B-combined-3.gif
+        sound: false
+        alt: Animated prototype of option B, the module and player combined
+        caption: "Option B: the module and player combined on one screen."
+        size: half
+  - heading: Designing for a startup
+    text: It was a great experience to design for a startup in the heart of San
+      Francisco. I was inspired by the entrepreneurial spirit of the founders
+      and was driven to realize their vision.
+    images:
+      - image: /images/projects/agogo-channels.jpg
+        sound: false
+        alt: "The Agogo app on five iPhones, each channel in its own color: traffic and
+          weather, business and finance, arts, my music, and sports"
+        caption: The Agogo app, with a color for each channel, including My Music.
+        size: full
 ---
 It was a great experience to design for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision. I explored the "My Music" channel, which pulls music from either your iPhone or a streaming music app. Agogo also includes other content that is not typically audio, such as text articles and television programs
