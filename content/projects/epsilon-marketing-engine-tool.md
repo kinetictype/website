@@ -72,9 +72,9 @@ sections:
           creation and the administrator's setup steps.
         size: full
   - heading: Building a Shared Model
-    text: Rather than start with screens, I reviewed the product owner's early
-      documents and documented the system model first. With everyone working
-      from the same model, we could then design the wireframes.
+    text: After outlining requirements, I reviewed the product owner's early
+      documents and prioritized the features. With everyone working from the
+      same model, we could then design the wireframes.
     images:
       - image: /images/projects/epsilon/03_product-owner-documents.png
         sound: false
