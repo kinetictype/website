@@ -26,7 +26,7 @@ description: Service design and Android wireframes for Google Shopping Express,
 cover: /images/logos/Google_Shopping.svg
 cover_alt: Google Shopping logo
 drawer_image: /images/projects/ServiceMap.png
-drawer_image_alt: Service map of the Google Shopping Express experience
+drawer_image_alt: Service map of the Google Shopping Express Experience
 drawer_whole: false
 prototype_size: half
 sections:
