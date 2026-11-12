@@ -38,7 +38,6 @@ sections:
       - image: /images/projects/06_building-5.png
         sound: false
         alt: Ink drawing of 1945 Hyde Street, a building with arched doorways
-        caption: 1945 Hyde Street, hand drawn in ink on paper.
         size: half-text
   - heading: Drawing every building
     text: "My goal was to let readers see the holdings, building by building, in a
