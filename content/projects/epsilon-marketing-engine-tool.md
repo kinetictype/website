@@ -60,9 +60,9 @@ sections:
           relates to the others.
         size: text-half
   - heading: Actualize Feature Requirements
-    text: "I framed the project, wrote requirements with the engineering lead, and
-      created product wireframes. I mapped the marketer and administrator
-      process flows to the system diagram I created at the start. "
+    text: "Creating a map of the marketer and administrator process flows connected
+      to the system diagram. I framed the project, wrote requirements with the
+      engineering lead, and created product wireframes. "
     images:
       - image: /images/projects/02_ui-requirementsNEW-1.png
         sound: false
