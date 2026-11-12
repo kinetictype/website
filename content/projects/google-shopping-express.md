@@ -48,18 +48,11 @@ sections:
           and back, through order, item suggestion, payment, and delivery."
         size: text-half
   - heading: Designing for new and returning customers
-    text: >+
-      My goal was a shopping app that made it quick to find, reorder, and track
+    text: My goal was a shopping app that made it quick to find, reorder, and track
       everyday essentials. How might we help shoppers get essentials delivered
-      to their door with as few steps as possible?
-
-
-      - I designed customer flows for new customers (a first-time visit,
-      searching, and browsing) and for returning customers (a reorder reminder,
-      scheduled delivery status, and the shopping cart).
-
-      - [Fill in: research or metrics that shaped the work, e.g. ___ ]
-
+      to their door with as few steps as possible? We made assumptions about
+      these flows as we focused on giving Google a concept for in-app
+      interactions.
     images:
       - image: /images/projects/CustomerFlows02.png
         sound: false
