@@ -58,14 +58,11 @@ sections:
         size: text-half
   - heading: A drawer of actions
     text: >+
-      I designed a slide feature with the engineers at Flip, functionality that
-      did not exist before. An action bar slides open from a handle on each
-      video in a channel, so every action is one tap away.
+      I designed a new slide feature with the engineers at Flip that did not
+      exist before. An action bar slides open from a handle on each video in a
+      channel, so every action is one tap away. Completing the interaction, a
+      confirmation such as "Added to Favorites" appears in the drawer.
 
-
-      - Favorite, Playlist, Facebook, email, or download, each with a single tap
-
-      - A confirmation such as "Added to Favorites" appears in the drawer
 
       - The icon that was acted on turns blue to record the history
 
