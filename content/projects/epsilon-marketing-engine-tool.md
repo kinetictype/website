@@ -82,7 +82,7 @@ sections:
           with handwritten notes
         caption: The product owner's early sketches, numbered to match the steps in the
           system diagram.
-        size: full
+        size: half-text
   - heading: Wireframing the administrator flows
     text: The wireframes covered the core tasks in the Moment Engine. Marketers and
       administrators could search for and view moments from the dashboard, while
