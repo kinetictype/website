@@ -76,17 +76,10 @@ sections:
       A single order could come from several stores, which made the cart the
       hardest screen to design. The team worked through how we would navigate
       the hierarchy, beginning with category. For example, drill down by
-      department, from Grocery to Dairy to Milk, while the pr
-
-
-      - Shoppers swipe from right to left, or tap the cart icon, to open the
-      cart from any screen.
-
-      - Items are grouped by store, such as Nob Hill Foods and Target, with
-      quantity and price for each.
-
-      - Messages encourage shoppers to consolidate delivery into as few stores
-      as possible, to save on delivery fees and the environment.
+      department, from Grocery to Dairy to Milk. Items are grouped by store,
+      such as Nob Hill Foods and Target, with quantity and price for each. We
+      also encourage shoppers to consolidate deliveries to as few stores as
+      possible to save on delivery fees and reduce environmental impact.
 
     images:
       - image: /images/projects/Wireframes.png
