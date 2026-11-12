@@ -67,10 +67,11 @@ sections:
         alt: Ink drawing of 814 California Street, with bay windows and a fire escape
         caption: 814 California Street.
         size: third-text
-  - heading: One of the designs they're proudest of
-    text: McSweeney's called the spread "One of the Panorama designs we're proudest
-      of." The work was also cited on snd.org, the site of the Society for News
-      Design.
+  - heading: Contributing to a Unique Team
+    text: McSweeney's is an icon of the Bay Area. It was a great experience to
+      participate in this project. called the spread "One of the Panorama
+      designs we're proudest of." The work was also cited on snd.org, the site
+      of the Society for News Design.
 ---
 In 2009, McSweeney's published the San Francisco Panorama, a one-off newspaper. It was one of a kind and an honor to be part. McSweeney's kindly mentioned that my illustrations are "One of the Panorama designs we're proudest of." The feeling was mutual.
 
