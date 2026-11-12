@@ -53,16 +53,10 @@ sections:
   - heading: Designing for the way people share
     text: >+
       My goal was an app that felt native to Android and made sharing video
-      simple.
-
-
-      - How might we let people download, share, and view video with a few taps
-      or a roll of the trackball?
-
-      - Interviews shaped the use-case diagrams of the "channel" sharing system,
-      which helped the team discuss it clearly.
-
-      - I designed persona-based screens for downloading, sharing, and viewing
+      simple. How might we let people download, share, and view video with a few
+      taps or a trackball roll? Interviews shaped the use-case diagrams of the
+      "channel" sharing system, which helped the team discuss it clearly. I
+      designed persona-based screens for downloading, sharing, and viewing
       video.
 
   - heading: A drawer of actions
