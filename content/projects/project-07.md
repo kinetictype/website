@@ -133,8 +133,7 @@ sections:
         caption: Ideas for browsing actions with friends, a questionnaire worth one coin
           per question, and news about girls taking action.
         size: half
-      - image: /images/projects/girl-effect/girl-effect-iphone-prototype.svg
-        sound: false
+      - sound: false
         alt: Clickable prototype of the Girl Effect iPhone app, stepping through
           featured actions, prioritizing, search, map, profile, and goal screens
         caption: Tap through the core screens, from featured actions and the map of
