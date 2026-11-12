@@ -111,28 +111,28 @@ sections:
           confirmation
         caption: Onboarding asks the girl to activate her superpower and connects her
           with other girls around activities that earn currency.
-        size: text-half
+        size: half
       - image: /images/projects/girl-effect/10_sketches-choose-action.png
         sound: false
         alt: Sketches of choosing an action, tracking completed actions toward a goal,
           and selecting interests
         caption: Choosing an action, tracking completed actions toward a goal, and
           tapping interests to tailor the list.
-        size: half-text
+        size: half
       - image: /images/projects/girl-effect/11_sketches-action-list.png
         sound: false
         alt: Sketches of an action list, prioritizing actions, and customizing a
           selection
         caption: The action list shows each action's value and friends nearby who are
           involved, and lets her drag actions to prioritize them.
-        size: full
+        size: half
       - image: /images/projects/girl-effect/08_sketches-questionnaire-news.png
         sound: false
         alt: Sketches of browsing actions, a questionnaire, and news about actions, with
           notes on earned and spent currency
         caption: Ideas for browsing actions with friends, a questionnaire worth one coin
           per question, and news about girls taking action.
-        size: full
+        size: half
       - image: /images/projects/girl-effect/girl-effect-iphone-prototype.svg
         sound: false
         alt: Clickable prototype of the Girl Effect iPhone app, stepping through
