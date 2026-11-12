@@ -101,14 +101,6 @@ sections:
         caption: If an audio project has no images, one of three default wood textures
           fills the space behind the player.
         size: text-half
-      - image: /images/projects/caldera/06_project-detail-overview.png
-        sound: false
-        alt: Annotated designs of a project detail page showing the navigation bar,
-          scrolling anchor points, photo grid, and rollover captions
-        caption: A tertiary navigation bar moves between projects or areas, anchor
-          points jump between sections, and photo rollovers show captions on a
-          70% black overlay.
-        size: full
   - heading: An important project for Caldera
     text: >+
       I was picked for this project, and it was an honor to contribute to this
@@ -122,6 +114,10 @@ sections:
 
       - Textures behind audio projects, so every project has a visual presence
 
+    images:
+      - image: /images/projects/caldera/06_project-detail-overview.png
+        sound: false
+        size: full
   - heading: Learnings
     text: Customizing geographic maps, and learning how to apply custom maps to a
       website, was the biggest challenge I solved on this project. A map built
