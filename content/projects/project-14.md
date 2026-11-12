@@ -76,13 +76,6 @@ sections:
         caption: "The first layout: record counts, tabs for each type of record, and the
           search form below."
         size: text-half
-      - image: /images/projects/04_search-results.png
-        sound: false
-        alt: Wireframe of the Gardiner Family Facts page with the search form moved up
-          and tabs down the side of a map of name distribution
-        caption: "An iteration: the search form moves up, and the tabs run down the side
-          of a map of where the family lived."
-        size: full
   - heading: Comparing the layouts
     text: We compared a tabbed layout, which keeps each type of record in one panel,
       with a long page that stacks every type of record in one scroll.
