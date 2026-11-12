@@ -105,8 +105,11 @@ sections:
   - heading: Cut my teeth on the Android phone
     text: I enjoy learning about new domains and wrapping my brain around their
       intricacies. It was great to work with the Principal Designer while
-      learning how aspects of the software worked. Documentation while building
-      features is a worthwhile practice. Later that year, Cisco acquired Flip
-      and canceled its projects.
+      learning how aspects of the software worked. Documenting while building
+      features is a practice that benefits the team. Later that year, Cisco
+      acquired Flip and canceled its projects.
+    images:
+      - sound: false
+        size: full
 ---
 Before our mobile phones had video, there was a booming company called Flip. These tiny devices were the size of a cigarette box and could plug into your laptop to download photos to share. Flipshare was the software application that enabled you to share and favorite your videos. I joined the team to design the Android app that would sync with the desktop app. 
