@@ -87,7 +87,7 @@ sections:
         caption: On the project detail page, the map zooms to the selected project.
           Arrows move through the collection, and the grid icon returns to all
           projects.
-        size: full
+        size: half-text
   - heading: Designing the project detail pages
     text: Working with the visual designer, I carried the wireframes into detailed
       page designs. Every project shows its title, date, place, and media, the
