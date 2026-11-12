@@ -71,9 +71,8 @@ sections:
         caption: The UI requirements split the work into the marketer's guided moment
           creation and the administrator's setup steps.
         size: full
-  - heading: From chaos to a shared model
-    text: The project began in chaos among the stakeholders and the engineering
-      lead. Rather than start with screens, I reviewed the product owner's early
+  - heading: Building a Shared Model
+    text: Rather than start with screens, I reviewed the product owner's early
       documents and documented the system model first. With everyone working
       from the same model, we could then design the wireframes.
     images:
