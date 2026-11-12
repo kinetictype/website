@@ -91,17 +91,10 @@ sections:
         size: half-text
   - heading: Viewing photos and video
     text: >+
-      Playback put the controls where Android users expected them, and made the
-      most of the trackball.
-
-
-      - Photos show their number in the set, such as 3 of 84, once selected with
-      the trackball or by touch.
-
-      - During video playback, an overlay holds the play controls with the share
-      and mark buttons, so every action lives in one place.
-
-      - New icons for the progress bar, forward, back, and play
+      During video playback, an overlay holds the play controls, share, and mark
+      buttons, so every action lives in one place.  I surveyed the video player
+      landscape to identify new icons for the progress bar, forward, back, and
+      play.
 
     images:
       - video: /images/projects/flipshare-photo-playback.mp4
