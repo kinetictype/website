@@ -33,7 +33,7 @@ sections:
       Group, a family-owned company that had bought up a large share of San
       Francisco's rent-controlled apartment buildings. The article needed to
       show the scale of the Lembi holdings. My job was to illustrate the
-      properties themselves.
+      properties.
     images:
       - image: /images/projects/06_building-5.png
         sound: false
