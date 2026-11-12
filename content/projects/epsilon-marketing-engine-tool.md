@@ -31,22 +31,13 @@ drawer_whole: true
 prototype_size: half
 sections:
   - heading: Developing a Mental Model
-    text: >-
-      Consulting with the lead engineer, I developed a system diagram that
-      isolated the components of the interface. We used this diagram to document
-      the product requirements. 
-
-
-      - The Moment Engine is a white-label product sold to clients such as
-      Hilton, Macy's, and Delta to help them manage promotional currency.
-
-      - The hypothesis: if we documented the system model first, the
-      stakeholders and engineering lead could agree on what we were building
+    text: The Moment Engine is a white-label product sold to clients such as Hilton,
+      Macy's, and Delta to help them manage promotional currency. Consulting
+      with the lead engineer, I developed a system diagram that isolated the
+      interface components. We used this diagram to document the product
+      requirements. We believed that if we documented the system model first,
+      the stakeholders and engineering lead could agree on what we were building
       before anyone designed a screen.
-
-
-      , showing the client, marketer, administrator, Moment Engine UI, marketing
-      platform, and Moment Engine service
     images:
       - image: /images/projects/SystemDiagram.png
         sound: false
@@ -54,7 +45,7 @@ sections:
         caption: The system diagram follows a moment from a client's request, through
           the administrator and marketer steps, to the service that evaluates
           it.
-        size: full
+        size: half-text
   - heading: Documenting the Domain
     text: >-
       Documenting the domain helped to clarify the elements we were designing
