@@ -50,11 +50,9 @@ sections:
   - heading: Designing for new and returning customers
     text: >+
       My goal was a shopping app that made it quick to find, reorder, and track
-      everyday essentials.
+      everyday essentials. How might we help shoppers get essentials delivered
+      to their door with as few steps as possible?
 
-
-      - How might we help shoppers get essentials delivered to their door with
-      as few steps as possible?
 
       - I designed customer flows for new customers (a first-time visit,
       searching, and browsing) and for returning customers (a reorder reminder,
@@ -65,11 +63,10 @@ sections:
     images:
       - image: /images/projects/CustomerFlows02.png
         sound: false
-        alt: "Six customer flows: first time visit, search products, browse products,
-          reorder reminder, scheduled delivery status, and shopping cart"
+        alt: Six customer flows
         caption: Customer flows for new customers on the left and returning customers on
           the right, each ending at checkout or delivery.
-        size: full
+        size: half-text
   - heading: Drilling down to an item
     text: Grocery shopping meant deep categories. A slide-out menu lets shoppers
       drill down by department, from Grocery to Dairy to Milk, while the
