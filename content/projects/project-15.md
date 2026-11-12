@@ -83,13 +83,13 @@ sections:
           handle on a video
         caption: Slide the handle to open the action bar on a video; tap it again to
           close the drawer.
-        size: full
+        size: half
       - image: /images/projects/flipshare-favorite.gif
         sound: false
         alt: Prototype of selecting Favorite in the action bar, with a confirmation and
           the icon staying highlighted
         caption: Tap the star to add a video to Favorites; the icon stays highlighted.
-        size: full
+        size: half
   - heading: Tap and hold
     text: Tapping and holding a video opens a menu over a grey screen with the
       video's thumbnail and title at the top, so the viewer keeps sight of the
