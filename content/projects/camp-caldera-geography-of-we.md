@@ -1,18 +1,18 @@
 ---
 title: Camp Caldera Geography of We
-tagline: A branded map of where Caldera artists come from and what they create
-summary: The goal was to design an addition to the website that showcases
-  attendees' work, their location, the type of work, and the year.
+tagline: An extension to the site with a map of where Caldera artists come from
+  and what they create.
+summary: Design of an addition to the website that showcases attendees' work,
+  their location, and the type of work they created.
 client: Caldera Arts
 role: UX Designer
 timeline: "2014"
-goals: Design an addition to the Caldera website that showcases attendees'
-  work, their location, the type of work, and the year.
+goals: Design an addition to the Caldera website that showcases attendees' work,
+  their location, the type of work, and the year.
 outcome: A custom geography experience, project detail pages, and textures
   behind audio projects, carried from concept sketches and wireframes into
   visual design.
-responsibilities: Concept design, information architecture, interaction design,
-  and wireframes.
+responsibilities: Concept design, information architecture, interaction design, and wireframes.
 team: Visual designer
 website: caldera.com
 categories:
@@ -25,6 +25,7 @@ hidden: false
 description: Designing Geography of We for Caldera Arts, a custom, on-brand map
   of where young artists come from and the work they create.
 cover: /images/logos/gemini-svg.svg
+drawer_whole: false
 gallery:
   - image: /images/projects/06_project-detail-overview.png
     size: full
@@ -38,20 +39,20 @@ sections:
       and the year it was made.
 
 
-      - Caldera's programs reach artists across Oregon, from Portland to
-      Central Oregon.
+      - Caldera's programs reach artists across Oregon, from Portland to Central
+      Oregon.
 
       - The collection held 90 to 100 projects in image, writing, sound, and
       video.
 
-      - The hypothesis: a map would let visitors discover the work through
-      the places it came from.
+      - The hypothesis: a map would let visitors discover the work through the
+      places it came from.
 
     images:
       - image: /images/projects/caldera/geography-of-we-landing-prototype.svg
         sound: false
-        alt: Scrollable prototype of the Geography of We landing page, with a custom
-          map of Oregon above a grid of student projects
+        alt: Scrollable prototype of the Geography of We landing page, with a custom map
+          of Oregon above a grid of student projects
         caption: The landing page pairs a custom map with a grid of projects. Clicking
           Read More expands the banner to reveal descriptive text and pushes the
           rest of the page down.
@@ -65,17 +66,16 @@ sections:
 
       - How might we let visitors explore the work by place, media, and year?
 
-      - Visitors can filter by place, media, and year, or search by an
-      artist's name or school.
+      - Visitors can filter by place, media, and year, or search by an artist's
+      name or school.
 
     images:
       - image: /images/projects/caldera/02_information-architecture-flow.png
         sound: false
         alt: Information architecture flow from an abstract Oregon map to Portland and
           Central Oregon maps, partner schools, and individual projects
-        caption: An abstract map of Oregon leads to Portland and Central Oregon, then
-          to partner schools and up to 20 assignments each, with process
-          photos.
+        caption: An abstract map of Oregon leads to Portland and Central Oregon, then to
+          partner schools and up to 20 assignments each, with process photos.
         size: full
   - heading: Sketching the map
     text: I sketched layouts that put the map, a filter menu, and a strip of project
@@ -92,9 +92,9 @@ sections:
           question: what if we don't have locations?"
         size: full
   - heading: Customizing the map
-    text: The biggest challenge I solved was customizing geographic maps and learning
-      how to apply custom maps to a website. On a project detail page, the map
-      zooms to the location of the selected project and follows along as
+    text: The biggest challenge I solved was customizing geographic maps and
+      learning how to apply custom maps to a website. On a project detail page,
+      the map zooms to the location of the selected project and follows along as
       visitors scroll through the collection.
     images:
       - image: /images/projects/caldera/04_project-detail-wireframe.png
@@ -115,8 +115,8 @@ sections:
         sound: false
         alt: Scrollable prototype of an audio project detail page, with a wood-grain
           background behind the audio player
-        caption: If an audio project has no images, one of three default wood
-          textures fills the space behind the player.
+        caption: If an audio project has no images, one of three default wood textures
+          fills the space behind the player.
         size: full
       - image: /images/projects/caldera/06_project-detail-overview.png
         sound: false
