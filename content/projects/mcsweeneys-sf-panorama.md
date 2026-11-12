@@ -44,7 +44,7 @@ sections:
     text: >+
       My goal was to let readers see the holdings, building by building, in a
       style derived from the time these properties were built. When drawing more
-      than 100 Lembi properties, I time traveled to 1910 as I brought them to
+      than 100 Lembi properties, I time-traveled to 1910 as I brought them to
       life. 
 
     images:
