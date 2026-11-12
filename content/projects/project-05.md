@@ -54,16 +54,12 @@ sections:
           support
         size: half-text
   - heading: Let the metrics show what customers need
-    text: >-
-      Fitbit had a mature product design team, yet the customer service lacked a
-      design presence. I consulted with three stakeholders from the User
+    text: "Fitbit had a mature product design team, yet the customer service lacked
+      a design presence. I consulted with three stakeholders from the User
       Authentication, Community Forum, and Help teams, each with a very
-      different view of what to prioritize.
-
-
-      To align them, I mapped the user journey of how customers reached help.
-      The map unified our efforts and clarified requirements for the first
-      design phase. 
+      different view of what to prioritize. To align them, I mapped the user
+      journey of how customers reached help. The map unified our efforts and
+      clarified requirements for the first design phase. "
     images:
       - image: /images/projects/project-05-fitbit/02_email-issues-chart.png
         sound: false
