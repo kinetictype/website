@@ -41,12 +41,10 @@ sections:
         caption: 1945 Hyde Street, hand drawn in ink on paper.
         size: half-text
   - heading: Drawing every building
-    text: >+
-      My goal was to let readers see the holdings, building by building, in a
-      style derived from the time these properties were built. When drawing more
-      than 100 Lembi properties, I time-traveled to 1910 as I brought them to
-      life. 
-
+    text: "My goal was to let readers see the holdings, building by building, in a
+      style that reflects the era when these properties were built. When drawing
+      more than 100 Lembi properties, I time-traveled to 1910 as I brought them
+      to ink. "
     images:
       - image: /images/projects/02_building-1.png
         sound: false
@@ -68,12 +66,6 @@ sections:
         sound: false
         alt: Ink drawing of 814 California Street, with bay windows and a fire escape
         caption: 814 California Street.
-        size: third-text
-      - image: /images/projects/spread_blended-2.png
-        sound: false
-        alt: The two-page spread, We Have No Comment Thank You Very Much, with the
-          article surrounded by drawings of Lembi buildings
-        caption: The finished spread, with the drawings framing Richard Parks's article.
         size: third-text
   - heading: One of the designs they're proudest of
     text: McSweeney's called the spread "One of the Panorama designs we're proudest
