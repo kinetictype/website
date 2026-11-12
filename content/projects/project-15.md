@@ -43,7 +43,8 @@ sections:
       projects. Worked with the team's Principal UX designer. , I created
       use-case diagrams, based on interviews, for the "channel" sharing system. 
     images:
-      - sound: false
+      - image: /images/projects/01_NEWuse-case-diagram.png
+        sound: false
         alt: "Use-case diagrams "
         caption: Use-case diagrams, based on interviews, show five ways people share
           videos through channels.
