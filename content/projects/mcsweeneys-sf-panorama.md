@@ -25,6 +25,7 @@ description: Ink drawings of more than 100 Lembi Group properties for a
 cover: /images/logos/McSweenys-chair.svg
 drawer_image: /images/projects/coverfullSpread02-1200.jpg
 drawer_image_alt: The San Francisco Panorama spread with illustrations of Lembi properties
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: A newspaper, and an exposé
@@ -44,7 +45,7 @@ sections:
         sound: false
         alt: Ink drawing of 1945 Hyde Street, a building with arched doorways
         caption: 1945 Hyde Street, hand drawn in ink on paper.
-        size: full
+        size: half-text
   - heading: Drawing every building
     text: >+
       My goal was to let readers see the holdings, building by building, in a
@@ -64,8 +65,8 @@ sections:
         size: third-text
       - image: /images/projects/03_building-2.png
         sound: false
-        alt: Ink drawing of 642 Jones Street, a tall apartment building with bay
-          windows and a fire escape
+        alt: Ink drawing of 642 Jones Street, a tall apartment building with bay windows
+          and a fire escape
         caption: 642 Jones Street.
         size: third-text
   - heading: From photographs to the page
@@ -81,8 +82,8 @@ sections:
         size: third-text
       - image: /images/projects/spread_blended-2.png
         sound: false
-        alt: "The two-page spread, We Have No Comment Thank You Very Much, with the
-          article surrounded by drawings of Lembi buildings"
+        alt: The two-page spread, We Have No Comment Thank You Very Much, with the
+          article surrounded by drawings of Lembi buildings
         caption: The finished spread, with the drawings framing Richard Parks's article.
         size: third-text
   - heading: One of the designs they're proudest of
