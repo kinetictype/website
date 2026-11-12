@@ -100,7 +100,7 @@ sections:
           background behind the audio player
         caption: If an audio project has no images, one of three default wood textures
           fills the space behind the player.
-        size: half-text
+        size: text-half
       - image: /images/projects/caldera/06_project-detail-overview.png
         sound: false
         alt: Annotated designs of a project detail page showing the navigation bar,
