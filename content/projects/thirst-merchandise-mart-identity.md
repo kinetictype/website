@@ -41,7 +41,7 @@ sections:
       word becomes a set of blocks of a matching length.
 
     images:
-      - image: /images/projects/05_combination-of-options-1.png
+      - image: /images/projects/01_NEWblock-letter-variations.png
         sound: false
         alt: blocks, and block options
         caption: Each word becomes a block in proportion to its letters, and each block
