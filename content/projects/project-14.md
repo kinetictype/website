@@ -31,7 +31,7 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: From a search to a sign-up
-    text: >+
+    text: >-
       Many new visitors reached Ancestry.com from a search engine, by typing a
       last name or "family records" into a search. They landed on a page of
       family facts about that name, and from there Ancestry hoped they would
@@ -43,11 +43,13 @@ sections:
 
       - The sign-up flow needed to turn more of those visitors into customers.
 
+
+      from a search for a last name or family records, through the family facts
+      and records pages, to sample records and sign-up
     images:
       - image: /images/projects/01_flow-diagram-1.png
         sound: false
-        alt: Flow diagram from a search for a last name or family records, through the
-          family facts and records pages, to sample records and sign-up
+        alt: "Flow diagram "
         caption: 'Two paths from search: "family facts" for a last name, and "records"
           for a first and last name, each leading through sample records to
           sign-up.'
