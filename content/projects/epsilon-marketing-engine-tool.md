@@ -84,10 +84,9 @@ sections:
           system diagram.
         size: half-text
   - heading: Wireframing the Administrator Flows
-    text: The wireframes covered the core tasks in the Moment Engine. Marketers and
-      administrators could search for and view moments from the dashboard, while
-      administrators could turn on event learning and then review and approve
-      the attributes of each event.
+    text: Marketers and administrators could search for and view moments from the
+      dashboard, while administrators could enable event learning and then
+      review and approve each event's attributes.
     images:
       - image: /images/projects/epsilon/moment-engine-moment-details-prototype.svg
         sound: false
