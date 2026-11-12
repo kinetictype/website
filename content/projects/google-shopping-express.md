@@ -38,7 +38,8 @@ sections:
       order, item suggestion, payment, and delivery. It raised questions for the
       team, such as how to discover a shopper's lifestyle to better target
       products, and how payments are made. Google wanted a vision of the
-      lifecycle as well as the screens that explain the product."
+      lifecycle as well as the screens that explain how the digital product
+      worked."
     images:
       - image: /images/projects/ServiceMap-1.png
         sound: false
