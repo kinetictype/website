@@ -51,12 +51,10 @@ sections:
     images:
       - image: /images/projects/girl-effect/01_girl-currency-economy.png
         sound: false
-        alt: Diagram of the girl currency economy connecting globally connected girls,
-          girls in developing countries, corporate partners, NGO partner
-          agencies, and girl currency
+        alt: "Concept diagram of the girl currency "
         caption: "A high-level look at the girl currency economy: for every action a
           girl takes, part of its value goes to NGOs and the rest goes to her."
-        size: full
+        size: half-text
   - heading: Exploring how girl currency could work
     text: >+
       My goal was to make the economy simple enough to explain in a single
