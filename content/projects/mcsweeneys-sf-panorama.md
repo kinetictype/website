@@ -58,7 +58,6 @@ sections:
       - image: /images/projects/04_building-3.png
         sound: false
         alt: Ink drawing of 814 California Street, with bay windows and a fire escape
-        caption: 814 California Street.
         size: third-text
       - image: /images/projects/05_building-4.png
         sound: false
