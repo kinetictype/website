@@ -51,7 +51,7 @@ sections:
       Merchandise Mart through the form.
 
     images:
-      - image: /images/projects/02_mark-sheet-1-1.png
+      - image: /images/projects/mmp-mark-sequence.svg
         sound: false
         alt: A sheet of combinations of options, showing each word's block lying flat or
           standing in different arrangements
