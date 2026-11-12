@@ -129,7 +129,7 @@ sections:
         caption: Tap the video to show the overlay, then play, drag the progress circle,
           or skip to the next video.
         size: full
-  - heading: The start of a UX career
+  - heading: Cut my teeth on the Android phone
     text: The documentation fed into discussions about creating a new sharing
       system. This project launched my UX career. After Cisco acquired Flip, it
       later cancelled Flip's projects.
