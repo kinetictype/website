@@ -98,11 +98,10 @@ sections:
     images:
       - image: /images/projects/flipshare-tap-hold-option-1.gif
         sound: false
-        alt: Prototype of tap and hold, where a menu with the video's thumbnail opens
-          over a grey screen
+        alt: Prototype of tap and hold
         caption: Press and hold a row until the blue fill completes, then pick an
           action.
-        size: full
+        size: half-text
   - heading: Viewing photos and video
     text: >+
       Playback put the controls where Android users expected them, and made the
