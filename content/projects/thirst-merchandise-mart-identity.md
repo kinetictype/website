@@ -53,9 +53,8 @@ sections:
     images:
       - image: /images/projects/mmp-mark-sequence.svg
         sound: false
-        alt: A sheet of combinations of options, showing each word's block lying flat or
-          standing in different arrangements
-        caption: Combinations of options, row by row, for the four blocks.
+        alt: combinations of options
+        caption: Combinations of options.
         size: text-half
   - heading: A mark that evolves
     text: I designed variations on the block theme in a color palette of blue,
