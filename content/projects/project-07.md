@@ -143,7 +143,7 @@ sections:
       - image: /images/projects/girl-effect/girl-effect-iphone-prototype.svg
         sound: false
         size: full
-  - heading: Learnings
+  - heading: Service Design Moved the Project Forward
     text: Sketches and a prototype of the iPhone app concept helped communicate with
       the client; they used them in their presentation to describe the
       touchpoints a girl would encounter. Wieden + Kennedy incorporated service
