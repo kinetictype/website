@@ -67,11 +67,10 @@ sections:
     images:
       - image: /images/projects/Wireframes01.png
         sound: false
-        alt: Four wireframes of the navigation menu drilling down from Shop By
-          Department to Grocery, Dairy, and Milk
+        alt: "wireframes of the navigation "
         caption: "Navigation drill-down: Shop By Department, then Grocery, Dairy, and
           Milk."
-        size: full
+        size: text-half
   - heading: One cart, several stores
     text: >+
       A single order could come from several stores, which made the cart the
