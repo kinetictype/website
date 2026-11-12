@@ -70,7 +70,7 @@ sections:
     images:
       - image: /images/projects/04_search-results-1.png
         sound: false
-        size: text-half
+        size: half-text
   - heading: Tabs and data visualization
     text: I designed a tab structure for the types of records, with a data
       visualization in each tab that gives family relationships more context,
