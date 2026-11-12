@@ -43,8 +43,8 @@ sections:
     images:
       - image: /images/projects/caldera/geography-of-we-landing-prototype.svg
         sound: false
-        alt: Scrollable prototype of the Geography of We landing page, with a custom map
-          of Oregon above a grid of student projects
+        alt: Scrollable prototype of the landing page with a map of Oregon above a grid
+          of student projects.
         caption: The landing page pairs a custom map with a grid of projects. Clicking
           Read More expands the banner to reveal descriptive text and pushes the
           rest of the page down.
