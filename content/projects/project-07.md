@@ -144,8 +144,10 @@ sections:
         sound: false
         size: full
   - heading: Learnings
-    text: Communication with the client; they used it in their presentation to
-      describe the touchpoints a girl would encounter. Inspired future work with
-      Weight Watchers.
+    text: Sketches and a prototype of the iPhone app concept helped communicate with
+      the client; they used them in their presentation to describe the
+      touchpoints a girl would encounter. Wieden + Kennedy incorporated service
+      design into their work with Weight Watchers, which helped move the project
+      forward during a major rebrand.
 ---
 Led the team at Wieden + Kennedy in using Service Design to identify the touchpoints a girl would encounter to benefit NGOs in developing countries. The project involved discovery to learn how the concept would work. Then explore a touchpoint, an iPhone app, that would help track actions a girl would take that would help them earn "Girl Coin", a digital currency focused around helping NGOs for this non-profit foundation.
