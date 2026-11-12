@@ -114,9 +114,9 @@ sections:
         sound: false
         size: full
   - heading: Learnings
-    text: My effort in this project focused on gathering the requirements to learn
-      what the Marketers and Administrators needed from this tool. Although I
-      advocated for research, the product team was determined to develop the
-      first release without it.
+    text: My effort in this project focused on gathering the requirements and
+      mapping the system to learn what the Marketers and Administrators needed
+      from this tool. Although I advocated for research, the product team was
+      determined to develop the first release without it.
 ---
 Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
