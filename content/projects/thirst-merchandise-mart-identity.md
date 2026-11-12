@@ -24,14 +24,15 @@ description: A modular logo concept for Merchandise Mart Properties, designed at
 cover: /images/logos/3rstLogo.svg
 drawer_image: /images/projects/mmp-form-C-2.gif
 drawer_image_alt: Animated Merchandise Mart Properties mark, built from colored blocks
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: A mark for a modular space
     text: >+
       Merchandise Mart Properties runs the Merchandise Mart in Chicago, a vast
-      building of showrooms and exhibition space that is constantly
-      rearranged. At 3st, the studio of Rick Valicenti, we developed a logo
-      concept that would express that modular space.
+      building of showrooms and exhibition space that is constantly rearranged.
+      At 3st, the studio of Rick Valicenti, we developed a logo concept that
+      would express that modular space.
 
 
       - The idea: blocks represent the letters of the company name.
@@ -42,11 +43,10 @@ sections:
     images:
       - image: /images/projects/05_combination-of-options-1.png
         sound: false
-        alt: A table turning the words Merchandise, Mart, Properties, and Inc into
-          letter counts, blocks, and block options
+        alt: blocks, and block options
         caption: Each word becomes a block in proportion to its letters, and each block
           can lie flat or stand up.
-        size: full
+        size: half-text
   - heading: Blocks that rearrange
     text: >+
       My goal was a mark that could change, the way the space inside the Mart
@@ -62,15 +62,15 @@ sections:
     images:
       - image: /images/projects/02_mark-sheet-1-1.png
         sound: false
-        alt: A sheet of combinations of options, showing each word's block lying flat
-          or standing in different arrangements
+        alt: A sheet of combinations of options, showing each word's block lying flat or
+          standing in different arrangements
         caption: Combinations of options, row by row, for the four blocks.
         size: full
   - heading: A mark that evolves
     text: I designed variations on the block theme in a color palette of blue,
       green, magenta, and black, one color for each word. Seen in three
-      dimensions, the same four blocks form a family of marks, from solid
-      stacks to thin, linear forms.
+      dimensions, the same four blocks form a family of marks, from solid stacks
+      to thin, linear forms.
     images:
       - image: /images/projects/01_block-letter-variations.png
         sound: false
