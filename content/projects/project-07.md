@@ -111,14 +111,14 @@ sections:
           confirmation
         caption: Onboarding asks the girl to activate her superpower and connects her
           with other girls around activities that earn currency.
-        size: full
+        size: text-half
       - image: /images/projects/girl-effect/10_sketches-choose-action.png
         sound: false
         alt: Sketches of choosing an action, tracking completed actions toward a goal,
           and selecting interests
         caption: Choosing an action, tracking completed actions toward a goal, and
           tapping interests to tailor the list.
-        size: full
+        size: half-text
       - image: /images/projects/girl-effect/11_sketches-action-list.png
         sound: false
         alt: Sketches of an action list, prioritizing actions, and customizing a
