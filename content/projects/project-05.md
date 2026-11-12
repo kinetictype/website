@@ -90,7 +90,7 @@ sections:
       identifying the key pain points in the current experience, I quickly
       sketched new ways to access articles (regrouping 17 categories into 4),
       identify a tracker, search, and reach the community. After the first
-      month, I joined forces with the Product Team for input. The critique
+      month, I joined forces with the Product Team for feedback. The critique
       sessions bridged gaps between teams and improved relationships, and the
       cross-team meetings continued beyond this effort. "
     images:
