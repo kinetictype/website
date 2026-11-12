@@ -3,7 +3,7 @@ title: Girl Effect iPhone App
 tagline: Using a digital currency to fund NGOs that support girls
 summary: Discover how Girl Effect could develop a digital currency to fund NGOs
   supporting girls in developing countries.
-client: "Nike: Girl Effect"
+client: Nike Foundation, The Girl Effect
 role: Service Design Lead
 goals: Discover how Girl Effect could develop a digital currency to fundraise
   for girls in developing countries.
@@ -29,20 +29,21 @@ cover_alt: Girl Effect logo
 drawer_image: /images/projects/conceptMapCurrency02.png
 drawer_image_alt: Concept map of how girl currency flows between girls,
   corporate partners, and NGOs
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Discovering the vision
     text: >+
       Girl Effect, Nike's non-profit foundation, asked how a digital currency
       could raise money for NGOs that support girls in developing countries.
-      Working at Wieden + Kennedy, I led the team through discovery to learn
-      how the concept would work.
+      Working at Wieden + Kennedy, I led the team through discovery to learn how
+      the concept would work.
 
 
       - The audience was the globally connected girl, aged 16 to 24.
 
-      - The idea: when she takes a world-changing action, she earns "Girl
-      Coin," and corporate partners donate money to NGOs.
+      - The idea: when she takes a world-changing action, she earns "Girl Coin,"
+      and corporate partners donate money to NGOs.
 
       - Every action is tied to one of six categories: Health, Safety,
       Education, Citizenship, Economic Security, and Child Marriage.
@@ -50,8 +51,8 @@ sections:
     images:
       - image: /images/projects/girl-effect/01_girl-currency-economy.png
         sound: false
-        alt: Diagram of the girl currency economy connecting globally connected
-          girls, girls in developing countries, corporate partners, NGO partner
+        alt: Diagram of the girl currency economy connecting globally connected girls,
+          girls in developing countries, corporate partners, NGO partner
           agencies, and girl currency
         caption: "A high-level look at the girl currency economy: for every action a
           girl takes, part of its value goes to NGOs and the rest goes to her."
@@ -62,12 +63,11 @@ sections:
       picture, then find the touchpoint a girl would use every day.
 
 
-      - How might we engage the globally connected girl to exchange her
-      services for Girl Coin that will donate to girls in the developing
-      world?
+      - How might we engage the globally connected girl to exchange her services
+      for Girl Coin that will donate to girls in the developing world?
 
-      - We tested options on the whiteboard, from discounts at partner stores
-      to matching programs, before settling on a model.
+      - We tested options on the whiteboard, from discounts at partner stores to
+      matching programs, before settling on a model.
 
     images:
       - image: /images/projects/girl-effect/02_concept-map-first-draft.png
@@ -109,8 +109,8 @@ sections:
         size: full
       - image: /images/projects/girl-effect/06_project-wall.png
         sound: false
-        alt: Project wall with the concept, the currency diagram, principles, and
-          sticky notes
+        alt: Project wall with the concept, the currency diagram, principles, and sticky
+          notes
         caption: The project wall kept the concept, the currency model, and the
           principles in view.
         size: full
@@ -122,10 +122,10 @@ sections:
     images:
       - image: /images/projects/girl-effect/07_business-goal-flow-sketch.png
         sound: false
-        alt: Sketched app flow under the business goal, from download and sign-up to
-          a list or map of actions, rating, and tracking progress
-        caption: "The app flow under the business goal: sign up, browse a list or map
-          of nearby actions, rate them, and track progress and currency earned."
+        alt: Sketched app flow under the business goal, from download and sign-up to a
+          list or map of actions, rating, and tracking progress
+        caption: "The app flow under the business goal: sign up, browse a list or map of
+          nearby actions, rate them, and track progress and currency earned."
         size: full
   - heading: Sketching the app
     text: I sketched how a girl would discover actions, see which friends are
@@ -155,10 +155,10 @@ sections:
         size: full
       - image: /images/projects/girl-effect/08_sketches-questionnaire-news.png
         sound: false
-        alt: Sketches of browsing actions, a questionnaire, and news about actions,
-          with notes on earned and spent currency
-        caption: Ideas for browsing actions with friends, a questionnaire worth one
-          coin per question, and news about girls taking action.
+        alt: Sketches of browsing actions, a questionnaire, and news about actions, with
+          notes on earned and spent currency
+        caption: Ideas for browsing actions with friends, a questionnaire worth one coin
+          per question, and news about girls taking action.
         size: full
       - image: /images/projects/girl-effect/girl-effect-iphone-prototype.svg
         sound: false
@@ -175,8 +175,7 @@ sections:
 
       - Concept diagrams that explain the girl currency economy
 
-      - A customer journey map across marketing, people, and digital
-      touchpoints
+      - A customer journey map across marketing, people, and digital touchpoints
 
       - Sketches and a prototype of the iPhone app concept
 
