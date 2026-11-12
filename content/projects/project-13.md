@@ -5,7 +5,7 @@ tagline: A visual way for executives to compare their UX scores with
 summary: This project aimed to replace a static, linear report with an
   interactive tool that lets executives compare their product's UX against their
   own and competitors' over time. The project had been in discovery for 9 months
-  before I joined in 2017 to help bring it to life.
+  before I joined to help bring it to life.
 client: UserTesting.com
 role: UX and Data Visualization Design Lead
 goals: Let customers compare their services with others.
