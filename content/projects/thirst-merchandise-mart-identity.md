@@ -44,11 +44,11 @@ sections:
         size: half-text
   - heading: Blocks that rearrange
     text: >+
-      My goal was a mark that could change, the way the space inside the Mart
-      changes, while staying recognizable. How might we build an identity that
-      moves like a movable exhibition space? The four blocks could be arranged
-      in different positions and combinations to imply the meaning of the
-      Merchandise Mart through the form.
+      My goal was a mark that could change, the way the space inside the
+      Merchandise Mart changes, while staying recognizable. How might we build
+      an identity that moves like a movable exhibition space? The four blocks
+      could be arranged in different positions and combinations to imply the
+      meaning of the Merchandise Mart through the form.
 
     images:
       - image: /images/projects/mmp-mark-sequence.svg
