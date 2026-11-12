@@ -67,6 +67,9 @@ sections:
         alt: Ink drawing of 814 California Street, with bay windows and a fire escape
         caption: 814 California Street.
         size: third-text
+      - image: /images/projects/05_building-4.png
+        sound: false
+        size: third-text
   - heading: Contributing to a Unique Team
     text: McSweeney's is an icon of the Bay Area. It was a great experience to
       participate in this project. The work was also cited on snd.org, the site
