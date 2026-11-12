@@ -19,7 +19,7 @@ responsibilities: UX Design, research synthesis, framework, and vision.
 team: Worked directly with three stakeholders and a program manager.
 categories:
   - UX Design
-  - Service Blueprint
+  - Service Design
   - Stakeholder Management
 years: "2017"
 section: work
