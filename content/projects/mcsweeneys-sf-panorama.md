@@ -46,16 +46,9 @@ sections:
       more than 100 Lembi properties, I time-traveled to 1910 as I brought them
       to ink. "
     images:
-      - image: /images/projects/02_building-1.png
+      - image: /images/projects/coverfullSpread-1.png
         sound: false
-        alt: Ink drawing of an apartment building with a fire escape
-        caption: 345 Fulton Street.
-        size: third-text
-      - image: /images/projects/03_building-2.png
-        sound: false
-        alt: Ink drawing of a tall apartment building with bay windows and a fire escape
-        caption: 642 Jones Street.
-        size: third-text
+        size: full
   - heading: From photographs to the page
     text: Working from photographs, I simplified each facade to its lines, keeping
       the details that make each building recognizable, such as the bay windows,
