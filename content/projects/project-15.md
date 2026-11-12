@@ -3,13 +3,13 @@ title: Flipshare for Android
 tagline: Designing Flipshare for Android instead of porting it from the iPhone.
 summary: Develop a custom Android user interface; the earlier version was
   outsourced and adapted from the iPhone app.
-client: Flip Video (Cisco)
+client: Flip Video
 role: UX Designer
-timeline: December 2009 – March 2010
-goals: Develop a user interface custom-built for Android; the earlier version was
-  outsourced and adapted from the iPhone app.
-outcome: The Android phone was a new platform. I designed the slide feature with
-  engineers at Flip. This functionality did not exist before.
+timeline: 2009 – 2010
+goals: Develop a user interface custom-built for Android; the earlier version
+  was outsourced and adapted from the iPhone app.
+outcome: For the Android app for Flipshare, I designed the new slide feature and
+  ways to view media on the app.
 responsibilities: "I worked on interaction design and concept design. "
 team: Reported to Cisco's principal UX designer, and worked with a product
   manager to review requirements.
@@ -27,6 +27,7 @@ cover: /images/logos/FlipVideo.svg
 cover_alt: Flip Video logo
 drawer_image: /images/projects/flipshare-video-option-a.gif
 drawer_image_alt: Animated prototype of video playback in Flipshare for Android
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: An app ported from the iPhone
@@ -37,30 +38,29 @@ sections:
       job was to design a user interface built for Android.
 
 
-      - Android phones of the time had a trackball and hardware buttons, and
-      the iPhone design didn't use them.
+      - Android phones of the time had a trackball and hardware buttons, and the
+      iPhone design didn't use them.
 
       - I started with an audit of the existing app and competing apps.
 
     images:
       - image: /images/projects/01_use-case-diagram.png
         sound: false
-        alt: "Use-case diagrams answering: how does one share their videos on their
-          mobile phone, using Flipshare?"
+        alt: "Use-case diagrams "
         caption: Use-case diagrams, based on interviews, show five ways people share
           videos through channels.
-        size: full
+        size: half-text
   - heading: Designing for the way people share
     text: >+
       My goal was an app that felt native to Android and made sharing video
       simple.
 
 
-      - How might we let people download, share, and view video with a few
-      taps or a roll of the trackball?
+      - How might we let people download, share, and view video with a few taps
+      or a roll of the trackball?
 
-      - Interviews shaped the use-case diagrams of the "channel" sharing
-      system, which helped the team discuss it clearly.
+      - Interviews shaped the use-case diagrams of the "channel" sharing system,
+      which helped the team discuss it clearly.
 
       - I designed persona-based screens for downloading, sharing, and viewing
       video.
@@ -72,8 +72,7 @@ sections:
       video in a channel, so every action is one tap away.
 
 
-      - Favorite, Playlist, Facebook, email, or download, each with a single
-      tap
+      - Favorite, Playlist, Facebook, email, or download, each with a single tap
 
       - A confirmation such as "Added to Favorites" appears in the drawer
 
@@ -108,15 +107,15 @@ sections:
         size: full
   - heading: Viewing photos and video
     text: >+
-      Playback put the controls where Android users expected them, and made
-      the most of the trackball.
+      Playback put the controls where Android users expected them, and made the
+      most of the trackball.
 
 
-      - Photos show their number in the set, such as 3 of 84, once selected
-      with the trackball or by touch.
+      - Photos show their number in the set, such as 3 of 84, once selected with
+      the trackball or by touch.
 
-      - During video playback, an overlay holds the play controls with the
-      share and mark buttons, so every action lives in one place.
+      - During video playback, an overlay holds the play controls with the share
+      and mark buttons, so every action lives in one place.
 
       - New icons for the progress bar, forward, back, and play
 
@@ -130,8 +129,8 @@ sections:
         sound: false
         alt: Prototype of video playback, with the share and mark buttons in the play
           controls
-        caption: Tap the video to show the overlay, then play, drag the progress
-          circle, or skip to the next video.
+        caption: Tap the video to show the overlay, then play, drag the progress circle,
+          or skip to the next video.
         size: full
   - heading: The start of a UX career
     text: The documentation fed into discussions about creating a new sharing
