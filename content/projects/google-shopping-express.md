@@ -49,11 +49,10 @@ sections:
     images:
       - image: /images/projects/ServiceMap-1.png
         sound: false
-        alt: Service map of Google Shopping Express, a loop from the shopper through
-          order, item suggestion, payment, delivery, and package
+        alt: "Service map "
         caption: "The service map: the shopper's journey loops from physical to digital
           and back, through order, item suggestion, payment, and delivery."
-        size: full
+        size: text-half
   - heading: Designing for new and returning customers
     text: >+
       My goal was a shopping app that made it quick to find, reorder, and track
