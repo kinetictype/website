@@ -29,17 +29,12 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: A newspaper, and an exposé
-    text: >+
-      In 2009, McSweeney's published the San Francisco Panorama, a one-off
+    text: In 2009, McSweeney's published the San Francisco Panorama, a one-off
       newspaper. One of its stories was Richard Parks's two-page article about
       the Lembi Group, a family-owned company that had bought up a large share
-      of San Francisco's rent-controlled apartment buildings.
-
-
-      - The article needed to show the scale of the Lembi holdings.
-
-      - My job was to illustrate the properties themselves.
-
+      of San Francisco's rent-controlled apartment buildings. The article needed
+      to show the scale of the Lembi holdings. My job was to illustrate the
+      properties themselves.
     images:
       - image: /images/projects/06_building-5.png
         sound: false
