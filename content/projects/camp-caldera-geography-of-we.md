@@ -43,12 +43,11 @@ sections:
     images:
       - image: /images/projects/caldera/geography-of-we-landing-prototype.svg
         sound: false
-        alt: Scrollable prototype of the landing page with a map of Oregon above a grid
-          of student projects.
+        alt: Scrollable prototype of the landing page with a map
         caption: The landing page pairs a custom map with a grid of projects. Clicking
           Read More expands the banner to reveal descriptive text and pushes the
           rest of the page down.
-        size: full
+        size: text-half
   - heading: Design a Map to Carry the Brand
     text: My goal was to create a custom geographic experience that felt like
       Caldera while also letting people find a project quickly. How might we let
