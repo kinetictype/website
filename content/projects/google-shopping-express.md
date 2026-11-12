@@ -99,6 +99,10 @@ sections:
 
       - [Fill in: any results or feedback, e.g. ___ ]
 
+    images:
+      - image: /images/projects/ServiceMap-1.png
+        sound: false
+        size: full
   - heading: Learnings
     text: I enjoyed bringing service design to the Google Shopping Express platform
       to support the rebranding. As product costs skyrocketed on the platform,
