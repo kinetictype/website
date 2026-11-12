@@ -134,17 +134,11 @@ sections:
           per question, and news about girls taking action.
         size: half
   - heading: A story the client could tell
-    text: >+
-      The service design narrative gave Girl Effect a clear way to describe the
-      touchpoints a girl would encounter.
-
-
-      - Concept diagrams that explain the girl currency economy
-
-      - A customer journey map across marketing, people, and digital touchpoints
-
-      - Sketches and a prototype of the iPhone app concept
-
+    text: "The service design narrative gave Girl Effect a clear way to describe the
+      touchpoints a girl would encounter. As we explored how the program would
+      work, I designed several concept diagrams to explain the girl currency
+      economy. A customer journey map across marketing, people, and digital
+      touchpoints helped us identify which option to test. "
     images:
       - image: /images/projects/girl-effect/girl-effect-iphone-prototype.svg
         sound: false
