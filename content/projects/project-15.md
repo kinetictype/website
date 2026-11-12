@@ -31,12 +31,25 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: An app ported from the iPhone
-    text: Flip Video made the Flip, a pocket video camera, and Flipshare, the app
-      for downloading, sharing, and viewing its videos. The first Android
-      version of Flipshare was outsourced and adapted from the iPhone app. The
-      trackball and hardware buttons were an added affordance the iPhone design
-      did not provide. I began with an audit of the existing app and competing
-      apps.
+    text: >-
+      The Android had a trackball and hardware buttons which, at first felt like
+      an extra flipper when you play pinball.  were an added affordance the
+      iPhone design did not provide. I began with an audit of the existing app
+      and competing apps.
+
+
+
+
+      &nbsp;
+
+
+      I audited the existing app and competing apps. The documentation fed into
+      discussions about creating a new sharing system. This project launched my
+      UX career. After Cisco acquired the company, it later canceled Flip's
+      projects. Worked with the team's Principal UX designer. I designed
+      persona-based screens for downloading, sharing, and viewing video. To
+      communicate clearly within the team, I created use-case diagrams, based on
+      interviews, for the "channel" sharing system. 
     images:
       - image: /images/projects/01_use-case-diagram.png
         sound: false
