@@ -32,13 +32,8 @@ sections:
       Merchandise Mart Properties runs the Merchandise Mart in Chicago, a vast
       building of showrooms and exhibition space that is constantly rearranged.
       At 3st, the studio of Rick Valicenti, we developed a logo concept that
-      would express that modular space.
-
-
-      - The idea: blocks represent the letters of the company name.
-
-      - Merchandise has 11 letters, Mart 4, Properties 10, and Inc 3, so each
-      word becomes a set of blocks of a matching length.
+      would express a modular space. Blocks represent the letters of the company
+      name, so each word becomes a set of blocks of a matching length.
 
     images:
       - image: /images/projects/01_NEWblock-letter-variations.png
