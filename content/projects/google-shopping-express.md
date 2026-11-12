@@ -1,5 +1,5 @@
 ---
-title: Google Shopping Express
+title: Google Express
 tagline: Design the shopping experience journey and wireframes to build the app.
 summary: Design the shopping experience journey and the wireframes for the
   Google Shopping Express Android app.
