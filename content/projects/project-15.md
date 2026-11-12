@@ -129,9 +129,3 @@ sections:
       later cancelled Flip's projects.
 ---
 Before our mobile phones had video, there was a booming company called Flip. These tiny devices were the size of a cigarette box and could plug into your laptop to download photos to share. Flipshare was the software application that enabled you to share and favorite your videos. I joined the team to design the Android app that would sync with the desktop app. 
-
-
-
-&nbsp;
-
-I audited the existing app and competing apps. The documentation fed into discussions about creating a new sharing system. This project launched my UX career. After Cisco acquired the company, it later canceled Flip's projects. Worked with the team's Principal UX designer. I designed persona-based screens for downloading, sharing, and viewing video. To communicate clearly within the team, I created use-case diagrams, based on interviews, for the "channel" sharing system. 
