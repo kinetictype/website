@@ -78,12 +78,12 @@ sections:
         alt: Animated Merchandise Mart Properties mark, with blocks moving into new
           arrangements
         caption: The blocks shift between solid and open arrangements.
-        size: full
+        size: half
       - image: /images/projects/mmp-form-A-1.gif
         sound: false
         alt: Merchandise Mart form design (animated)
         caption: Each arrangement settles into a mark, then moves on to the next.
-        size: full
+        size: half
   - heading: Animation of Marks
     text: "This concept explored a graphic identity that would move. This reinforced
       the metaphor of the Merchandise Mart: a movable exhibition space. "
