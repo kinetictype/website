@@ -49,8 +49,8 @@ sections:
       simple. How might we let people download, share, and view video with a few
       taps or a trackball roll? Interviews shaped the use-case diagrams of the
       "channel" sharing system, which helped the team discuss it clearly. I
-      designed persona-based screens for downloading, sharing, and viewing
-      video.
+      designed screens for favoriting, downloading, sharing, adding to a
+      playlist, and viewing video.
 
     images:
       - image: /images/projects/flipshare-favorite.gif
