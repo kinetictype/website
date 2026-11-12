@@ -128,4 +128,10 @@ sections:
       system. This project launched my UX career. After Cisco acquired Flip, it
       later cancelled Flip's projects.
 ---
+Before our mobile phones had video, there was a booming company called Flip. These tiny devices were the size of a cigarette box and could pludg
+
+
+
+&nbsp;
+
 I audited the existing app and competing apps. The documentation fed into discussions about creating a new sharing system. This project launched my UX career. After Cisco acquired the company, it later canceled Flip's projects. Worked with the team's Principal UX designer. I designed persona-based screens for downloading, sharing, and viewing video. To communicate clearly within the team, I created use-case diagrams, based on interviews, for the "channel" sharing system. 
