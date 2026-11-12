@@ -33,9 +33,9 @@ prototype_size: half
 sections:
   - heading: Analysis of the Existing Content
     text: Previously, this project was print-based. Data scientists gathered data
-      and presented it to clients as a PDF. I analyzed the data and built a
-      diagram of research areas we could start with. I began with a happy path
-      built with sample data.
+      and presented competitive research to clients in a document they would
+      email. I analyzed the data and built a diagram of research areas we could
+      start with. I began with a happy path built with sample data.
     images:
       - image: /images/projects/UQ_Analysis-1.png
         sound: false
