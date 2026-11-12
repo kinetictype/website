@@ -83,7 +83,7 @@ sections:
         caption: The product owner's early sketches, numbered to match the steps in the
           system diagram.
         size: half-text
-  - heading: Wireframing the administrator flows
+  - heading: Wireframing the Administrator Flows
     text: The wireframes covered the core tasks in the Moment Engine. Marketers and
       administrators could search for and view moments from the dashboard, while
       administrators could turn on event learning and then review and approve
