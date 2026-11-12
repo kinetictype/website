@@ -34,10 +34,10 @@ sections:
     text: The Moment Engine is a white-label product sold to clients such as Hilton,
       Macy's, and Delta to help them manage promotional currency. Consulting
       with the lead engineer, I developed a system diagram that isolated the
-      interface components. We used this diagram to document the product
-      requirements. We believed that if we documented the system model first,
-      the stakeholders and engineering lead could agree on what we were building
-      before anyone designed a screen.
+      interface components. We used this diagram as a reference when building
+      the product requirements. We believed that if we documented the system
+      model first, the stakeholders and engineering lead could agree on what we
+      were building before anyone designed a screen.
     images:
       - image: /images/projects/SystemDiagram.png
         sound: false
