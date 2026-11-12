@@ -95,13 +95,6 @@ sections:
         caption: Expanding a moment in the list shows its dates and the rules a customer
           has to meet.
         size: text-half
-      - image: /images/projects/epsilon/moment-engine-learn-prototype.svg
-        sound: false
-        alt: Scrollable prototype of the administrator screen for turning on learning in
-          the Moment Engine
-        caption: Administrators set a time frame for the Moment Engine to learn from
-          events, with an alert for when learning ends.
-        size: half-text
   - heading: Order from a system model
     text: >+
       Documenting the system model first, then designing wireframes, removed the
@@ -116,7 +109,9 @@ sections:
         alt: Scrollable prototype of the Moment Engine dashboard in a browser window
         caption: The dashboard shows the engine's status, moments at a glance, and a
           searchable list of moments.
-        size: half-text
+        size: half
+      - sound: false
+        size: full
   - heading: Learnings
     text: My effort in this project focused on gathering the requirements to learn
       what the Marketers and Administrators needed from this tool. Although I
