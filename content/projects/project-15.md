@@ -63,9 +63,6 @@ sections:
       channel, so every action is one tap away. Completing the interaction, a
       confirmation such as "Added to Favorites" appears in the drawer.
 
-
-      - The icon that was acted on turns blue to record the history
-
     images:
       - video: /images/projects/flipshare-channels-drawer.mp4
         sound: false
