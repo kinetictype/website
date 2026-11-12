@@ -95,7 +95,7 @@ sections:
           cart, and the cart grouped by store
         caption: The home page, swiping to open the cart, and the cart grouped by store
           with a single checkout.
-        size: full
+        size: half-text
   - heading: Results & outcomes
     text: >+
       The work documented the ecosystem of the product and its touchpoints
