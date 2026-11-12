@@ -31,21 +31,14 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: From a search to a sign-up
-    text: >-
-      Many new visitors reached Ancestry.com from a search engine, by typing a
+    text: Many new visitors reached Ancestry.com from a search engine, by typing a
       last name or "family records" into a search. They landed on a page of
       family facts about that name, and from there Ancestry hoped they would
-      sign up.
-
-
-      - The landing page needed to reveal the breadth and depth of Ancestry's
-      content about ancestors.
-
-      - The sign-up flow needed to turn more of those visitors into customers.
-
-
-      from a search for a last name or family records, through the family facts
-      and records pages, to sample records and sign-up
+      sign up. The landing page needed to reveal the breadth and depth of
+      Ancestry's content about ancestors. The sign-up flow needed to turn more
+      of those visitors into customers. From a search for a last name or family
+      records, through the family facts and records pages, to sample records and
+      sign-up.
     images:
       - image: /images/projects/01_flow-diagram-1.png
         sound: false
