@@ -31,17 +31,11 @@ drawer_image_alt: Animated prototype of video playback in Flipshare for Android
 drawer_whole: false
 prototype_size: half
 sections:
-  - heading: An app ported from the iPhone
-    text: >-
-      The Android had a trackball and hardware buttons which, at first, felt
-      like an extra flipper when you play pinball. I had more edge cases to
-      consider. I began with an audit of the existing app and competing apps.
-
-
-      The documentation fed into discussions about creating a new sharing
-      system. After Cisco acquired the company, it later canceled Flip's
-      projects. Worked with the team's Principal UX designer. , I created
-      use-case diagrams, based on interviews, for the "channel" sharing system. 
+  - heading: Working wtih the Android Phone
+    text: "The Android had a trackball and hardware buttons which, at first, felt
+      like an extra flipper when you play pinball. It added another element to
+      pay attention to. I began by auditing the existing app and competing apps,
+      then documented the system we were working with. "
     images:
       - image: /images/projects/01_NEWuse-case-diagram.png
         sound: false
