@@ -108,7 +108,7 @@ sections:
           controls
         caption: Tap the video to show the overlay, then play, drag the progress circle,
           or skip to the next video.
-        size: full
+        size: half-text
   - heading: Cut my teeth on the Android phone
     text: I enjoy learning about new domains and wrapping my brain around their
       intricacies. It was great to work with the Principal Designer while
