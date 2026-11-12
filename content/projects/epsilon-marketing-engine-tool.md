@@ -60,7 +60,7 @@ sections:
         alt: Domain model
         caption: The domain model named every element in the system and how each one
           relates to the others.
-        size: full
+        size: text-half
   - heading: Realize Features
     text: "I framed the project and wrote requirements; I created wireframes for the
       product. I mapped the marketer and administrator process flows to the
