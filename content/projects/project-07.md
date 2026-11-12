@@ -52,8 +52,8 @@ sections:
       - image: /images/projects/girl-effect/01_girl-currency-economy.png
         sound: false
         alt: "Concept diagram of the girl currency "
-        caption: "A high-level look at the girl currency economy: for every action a
-          girl takes, part of its value goes to NGOs and the rest goes to her."
+        caption: A high-level look at the girl currency economy; for every action a girl
+          takes, part of its value goes to NGOs and the rest goes to her.
         size: half-text
   - heading: Exploring how girl currency could work
     text: >+
