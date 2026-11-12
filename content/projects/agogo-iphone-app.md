@@ -47,8 +47,7 @@ sections:
       - image: /images/projects/01_beta-user-flow-2.png
         sound: false
         alt: Agogo user flow to obtain the app
-        caption: Obtaining the iOS beta in nine steps, from an invitation email to
-          "Congratulations! You've been approved for the AGOGO Beta iOS Client."
+        caption: Obtaining the iOS beta from an invitation email to a confirmation.
         size: text-half
   - heading: Mapping the app
     text: >+
