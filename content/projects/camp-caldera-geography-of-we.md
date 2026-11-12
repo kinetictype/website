@@ -73,7 +73,7 @@ sections:
           sound, and writing projects
         caption: "Concept sketches of the map layout and media-type pins, with the
           question: what if we don't have locations?"
-        size: full
+        size: text-half
   - heading: Customizing the map
     text: The biggest challenge I solved was customizing geographic maps and
       learning how to apply custom maps to a website. On a project detail page,
