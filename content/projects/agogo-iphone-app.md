@@ -68,7 +68,7 @@ sections:
           home, player, settings, and voice feedback screens
         caption: The app map, with notes on what each screen holds and the messages it
           shows for errors, success, and loading.
-        size: full
+        size: text-half
   - heading: The player screen
     text: The player shows the module and bundle names, the show title and date, a
       waveform progress bar, and playback controls. To keep it uncluttered, I
