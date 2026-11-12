@@ -1,8 +1,8 @@
 ---
 title: Google Shopping Express
 tagline: Design the shopping experience journey and wireframes to build the app.
-summary: Design the shopping experience journey and the wireframes for the Google
-  Shopping Express Android app.
+summary: Design the shopping experience journey and the wireframes for the
+  Google Shopping Express Android app.
 client: Google/Fluid Agency
 role: UX Designer
 timeline: April 2013
@@ -14,6 +14,9 @@ responsibilities: Created several screens to display shopping categories, view
   the cart, add a category, checkout, remove from checkout, change quantity,
   shop a different store, and consolidate delivery.
 team: Met with the Google Shopping team and worked with Fluid (agency) designers.
+categories:
+  - Service Design
+  - UX Design
 years: "2013"
 section: work
 featured: false
@@ -24,18 +27,19 @@ cover: /images/logos/Google_Shopping.svg
 cover_alt: Google Shopping logo
 drawer_image: /images/projects/ServiceMap.png
 drawer_image_alt: Service map of the Google Shopping Express experience
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Mapping the whole experience
     text: >+
-      Google Shopping Express delivered products from local stores, often on
-      the same day. Working with Fluid, I mapped how a shopper moves between
-      the physical and digital parts of the service, from building a list to
+      Google Shopping Express delivered products from local stores, often on the
+      same day. Working with Fluid, I mapped how a shopper moves between the
+      physical and digital parts of the service, from building a list to
       receiving the package.
 
 
-      - The map follows the shopper through four stages: order, item
-      suggestion, payment, and delivery.
+      - The map follows the shopper through four stages: order, item suggestion,
+      payment, and delivery.
 
       - It raised questions for the team, such as how to discover a shopper's
       lifestyle to target products better, and how payments are made.
@@ -52,16 +56,16 @@ sections:
         size: full
   - heading: Designing for new and returning customers
     text: >+
-      My goal was a shopping app that made it quick to find, reorder, and
-      track everyday essentials.
+      My goal was a shopping app that made it quick to find, reorder, and track
+      everyday essentials.
 
 
       - How might we help shoppers get essentials delivered to their door with
       as few steps as possible?
 
       - I designed customer flows for new customers (a first-time visit,
-      searching, and browsing) and for returning customers (a reorder
-      reminder, scheduled delivery status, and the shopping cart).
+      searching, and browsing) and for returning customers (a reorder reminder,
+      scheduled delivery status, and the shopping cart).
 
       - [Fill in: research or metrics that shaped the work, e.g. ___ ]
 
@@ -75,13 +79,13 @@ sections:
         size: full
   - heading: Drilling down to an item
     text: Grocery shopping meant deep categories. A slide-out menu lets shoppers
-      drill down by department, from Grocery to Dairy to Milk, while the products
-      stay in view beside the menu.
+      drill down by department, from Grocery to Dairy to Milk, while the
+      products stay in view beside the menu.
     images:
       - image: /images/projects/Wireframes01.png
         sound: false
-        alt: "Four wireframes of the navigation menu drilling down from Shop By
-          Department to Grocery, Dairy, and Milk"
+        alt: Four wireframes of the navigation menu drilling down from Shop By
+          Department to Grocery, Dairy, and Milk
         caption: "Navigation drill-down: Shop By Department, then Grocery, Dairy, and
           Milk."
         size: full
