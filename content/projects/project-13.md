@@ -106,11 +106,10 @@ sections:
           product descriptors and path directness
         size: full
   - heading: Scoping the Vision from the Beginning
-    text: When I joined the team at User Testing, the project had been in discovery
-      for nine months prior. I realized the vision, but by the time I joined,
+    text: When I joined the team at User Testing after nine months of discovery,
       management had begun looking in a different direction. They ultimately
       decided to pivot. It was a thrill to bring data visualization skills to a
-      talented team with a brand-new design system. It is crucial to have a
-      design lead involved from the start to scope the vision.
+      talented team with a brand-new design system. I learned how crucial it is
+      to have a design lead from the start to scope the vision.
 ---
 Competitive benchmarking was a research area that User Testing would send to clients as a file they could review to see how their company compared with others in their industry. Before I joined the team, the project had been in discovery for nine months, and they wanted a solution that would make the statistics visible for a first release.
