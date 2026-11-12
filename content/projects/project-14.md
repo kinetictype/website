@@ -73,8 +73,7 @@ sections:
       - image: /images/projects/02_search-for-your-family.png
         sound: false
         alt: "Wireframe of the Gardiner Family "
-        caption: "The first layout: record counts, tabs for each type of record, and the
-          search form below."
+        caption: Preliminary wireframe examining how to display the record counts.
         size: text-half
   - heading: Comparing the layouts
     text: We compared a tabbed layout, which keeps each type of record in one panel,
