@@ -60,7 +60,7 @@ sections:
         alt: A sheet of combinations of options, showing each word's block lying flat or
           standing in different arrangements
         caption: Combinations of options, row by row, for the four blocks.
-        size: full
+        size: text-half
   - heading: A mark that evolves
     text: I designed variations on the block theme in a color palette of blue,
       green, magenta, and black, one color for each word. Seen in three
