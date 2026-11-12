@@ -115,8 +115,5 @@ sections:
   - heading: Visualizing Place
     text: Customizing geographic maps was a great experience. It made the artists'
       places part of the story while elevating the Caldera brand.
-    images:
-      - sound: false
-        size: full
 ---
 It was an honor to contribute to this important mission. The biggest challenge I solved was customizing geographic maps and learning how to apply custom maps to a website.
