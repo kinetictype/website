@@ -64,8 +64,7 @@ sections:
     images:
       - image: /images/projects/02_beta-user-flow.png
         sound: false
-        alt: Map of the Agogo app, from the load, registration, and intro screens to the
-          home, player, settings, and voice feedback screens
+        alt: Map from the load, registration, and intro screens
         caption: The app map, with notes on what each screen holds and the messages it
           shows for errors, success, and loading.
         size: half-text
