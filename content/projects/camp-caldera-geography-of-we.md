@@ -103,16 +103,10 @@ sections:
         size: text-half
   - heading: An important project for Caldera
     text: >+
-      I was picked for this project, and it was an honor to contribute to this
-      important mission.
-
-
-      - A custom geography experience in place of a generic map
-
-      - Project detail pages that present each artist's work with its place,
-      media, and year
-
-      - Textures behind audio projects, so every project has a visual presence
+      I enjoyed working with a custom geography experience in place of a generic
+      map. Helping artists share their work and providing a textured solution
+      behind audio projects, so every project has a visual presence, aligns with
+      my values of supporting and accelerating the arts.
 
     images:
       - image: /images/projects/caldera/06_project-detail-overview.png
