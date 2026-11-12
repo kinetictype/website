@@ -112,9 +112,8 @@ sections:
       - image: /images/projects/caldera/06_project-detail-overview.png
         sound: false
         size: full
-  - heading: Learnings
-    text: Customizing geographic maps, and learning how to apply custom maps to a
-      website, was the biggest challenge I solved on this project. A map built
-      for the brand made the artists' places part of the story.
+  - heading: Visualizing Place
+    text: Customizing geographic maps was a great experience. It made the artists'
+      places part of the story while elevating the Caldera brand.
 ---
 It was an honor to contribute to this important mission. The biggest challenge I solved was customizing geographic maps and learning how to apply custom maps to a website.
