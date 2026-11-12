@@ -75,8 +75,8 @@ sections:
     text: >+
       A single order could come from several stores, which made the cart the
       hardest screen to design. The team worked through how we would navigate
-      the hierarchy, beginning with category. Drill down by department, from
-      Grocery to Dairy to Milk, while the pr
+      the hierarchy, beginning with category. For example, drill down by
+      department, from Grocery to Dairy to Milk, while the pr
 
 
       - Shoppers swipe from right to left, or tap the cart icon, to open the
