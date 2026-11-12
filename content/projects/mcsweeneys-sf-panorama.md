@@ -43,13 +43,9 @@ sections:
   - heading: Drawing every building
     text: >+
       My goal was to let readers see the holdings, building by building, in a
-      style that suited the paper and the buildings themselves.
-
-
-      - I drew more than 100 Lembi properties from photographs.
-
-      - The drawings are reminiscent of the style of buildings of 1910, labeled
-      with each street address.
+      style derived from the time these properties were built. When drawing more
+      than 100 Lembi properties, I time traveled to 1910 as I brought them to
+      life. 
 
     images:
       - image: /images/projects/02_building-1.png
