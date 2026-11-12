@@ -121,7 +121,7 @@ sections:
         sound: false
         alt: Prototype of photo playback, a grid of photos scrolled with the trackball
         caption: Scroll with the trackball and tap a photo to select it.
-        size: full
+        size: text-half
       - image: /images/projects/flipshare-video-option-a-1.gif
         sound: false
         alt: Prototype of video playback, with the share and mark buttons in the play
