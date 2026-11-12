@@ -72,11 +72,10 @@ sections:
     images:
       - image: /images/projects/02_search-for-your-family.png
         sound: false
-        alt: Wireframe of the Gardiner Family Facts page with record counts, tabs for
-          each type of record, and a search form below
+        alt: "Wireframe of the Gardiner Family "
         caption: "The first layout: record counts, tabs for each type of record, and the
           search form below."
-        size: full
+        size: text-half
       - image: /images/projects/04_search-results.png
         sound: false
         alt: Wireframe of the Gardiner Family Facts page with the search form moved up
