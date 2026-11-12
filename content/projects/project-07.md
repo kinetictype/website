@@ -133,12 +133,6 @@ sections:
         caption: Ideas for browsing actions with friends, a questionnaire worth one coin
           per question, and news about girls taking action.
         size: half
-      - sound: false
-        alt: Clickable prototype of the Girl Effect iPhone app, stepping through
-          featured actions, prioritizing, search, map, profile, and goal screens
-        caption: Tap through the core screens, from featured actions and the map of
-          nearby activities to tracking girl coins against a goal.
-        size: full
   - heading: A story the client could tell
     text: >+
       The service design narrative gave Girl Effect a clear way to describe the
@@ -151,6 +145,10 @@ sections:
 
       - Sketches and a prototype of the iPhone app concept
 
+    images:
+      - image: /images/projects/girl-effect/girl-effect-iphone-prototype.svg
+        sound: false
+        size: full
   - heading: Learnings
     text: Communication with the client; they used it in their presentation to
       describe the touchpoints a girl would encounter. Inspired future work with
