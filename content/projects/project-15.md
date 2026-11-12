@@ -9,7 +9,7 @@ timeline: 2009 – 2010
 goals: Develop a user interface custom-built for Android; the earlier version
   was outsourced and adapted from the iPhone app.
 outcome: For the Android app for Flipshare, I designed the new slide feature and
-  ways to view media on the app.
+  ways to view media on the app
 responsibilities: "I worked on interaction design and concept design. "
 team: Reported to Cisco's principal UX designer, and worked with a product
   manager to review requirements.
@@ -31,18 +31,12 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: An app ported from the iPhone
-    text: >+
-      Flip Video made the Flip, a pocket video camera, and Flipshare, the app
+    text: Flip Video made the Flip, a pocket video camera, and Flipshare, the app
       for downloading, sharing, and viewing its videos. The first Android
-      version of Flipshare was outsourced and adapted from the iPhone app. My
-      job was to design a user interface built for Android.
-
-
-      - Android phones of the time had a trackball and hardware buttons, and the
-      iPhone design didn't use them.
-
-      - I started with an audit of the existing app and competing apps.
-
+      version of Flipshare was outsourced and adapted from the iPhone app. The
+      trackball and hardware buttons were an added affordance the iPhone design
+      did not provide. I began with an audit of the existing app and competing
+      apps.
     images:
       - image: /images/projects/01_use-case-diagram.png
         sound: false
