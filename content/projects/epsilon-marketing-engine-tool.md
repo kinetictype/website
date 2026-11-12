@@ -47,13 +47,11 @@ sections:
           it.
         size: half-text
   - heading: Documenting the Domain
-    text: >-
-      Documenting the domain helped to clarify the elements we were designing
+    text: Documenting the domain helped to clarify the elements we were designing
       for in the system. This was a key moment that drove the project forward.
-      “How might we create a product that marketers, with little technical
-      knowledge, could easily access and operate?”
-
-       connecting the administrator, marketer, metadata, rules, eligibility, events, moments, outcomes, calculations, and transactions
+      We connected the administrator, marketer, metadata, rules, eligibility,
+      events, moments, outcomes, calculations, and transactions to understand
+      the bigger picture.
     images:
       - image: /images/projects/domainModel.png
         sound: false
