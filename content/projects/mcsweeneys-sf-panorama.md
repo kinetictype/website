@@ -50,7 +50,7 @@ sections:
     images:
       - image: /images/projects/02_building-1.png
         sound: false
-        alt: Ink drawing of 345 Fulton Street, an apartment building with a fire escape
+        alt: Ink drawing of an apartment building with a fire escape
         caption: 345 Fulton Street.
         size: third-text
       - image: /images/projects/03_building-2.png
