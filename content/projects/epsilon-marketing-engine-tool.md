@@ -104,15 +104,11 @@ sections:
         size: half-text
   - heading: Order from a system model
     text: >+
-      Documenting the system model first, and then designing wireframes,
-      resolved the chaos among the stakeholders and the engineering lead.
-
-
-      - The team shared one model of how the Moment Engine worked.
-
-      - I delivered a system diagram, a review of the product owner's early
-      documents, a UI requirements document, the administrator task flow, and
-      wireframes.
+      Documenting the system model first, then designing wireframes, removed the
+      chaos among stakeholders and the engineering lead. The team shared one
+      model of how the Moment Engine worked. I delivered a system diagram, UI
+      requirements, the administrator task flow, and wireframes to delineate the
+      flows.
 
     images:
       - image: /images/projects/epsilon/moment-engine-browser-prototype.svg
