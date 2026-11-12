@@ -74,7 +74,7 @@ sections:
           channels girl currency
         caption: "The first concept map: girls flex their superpower through actions,
           earn girl currency, and spend it with corporate partners."
-        size: full
+        size: text-half
       - image: /images/projects/girl-effect/03_girl-coin-flow.png
         sound: false
         alt: Flow diagram in which a girl's action earns Girl Coin while corporate
