@@ -55,8 +55,7 @@ sections:
         size: third-text
       - image: /images/projects/03_building-2.png
         sound: false
-        alt: Ink drawing of 642 Jones Street, a tall apartment building with bay windows
-          and a fire escape
+        alt: Ink drawing of a tall apartment building with bay windows and a fire escape
         caption: 642 Jones Street.
         size: third-text
   - heading: From photographs to the page
