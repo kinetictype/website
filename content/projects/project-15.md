@@ -128,7 +128,7 @@ sections:
       system. This project launched my UX career. After Cisco acquired Flip, it
       later cancelled Flip's projects.
 ---
-Before our mobile phones had video, there was a booming company called Flip. These tiny devices were the size of a cigarette box and could pludg
+Before our mobile phones had video, there was a booming company called Flip. These tiny devices were the size of a cigarette box and could plug into your laptop to download photos to share. Flipshare was the software application that enabled you to share and favorite your videos. I joined the team to design the Android app that would sync with the desktop app. 
 
 
 
