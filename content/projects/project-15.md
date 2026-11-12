@@ -59,6 +59,10 @@ sections:
       designed persona-based screens for downloading, sharing, and viewing
       video.
 
+    images:
+      - image: /images/projects/flipshare-favorite.gif
+        sound: false
+        size: text-half
   - heading: A drawer of actions
     text: >+
       I designed a slide feature with the engineers at Flip, functionality that
