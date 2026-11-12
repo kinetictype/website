@@ -110,9 +110,6 @@ sections:
         caption: The dashboard shows the engine's status, moments at a glance, and a
           searchable list of moments.
         size: half
-      - image: /images/projects/moment-engine-browser-prototype.svg
-        sound: false
-        size: full
   - heading: Learnings
     text: My effort in this project focused on gathering the requirements and
       mapping the system to learn what the Marketers and Administrators needed
