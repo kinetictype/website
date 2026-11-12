@@ -81,11 +81,10 @@ sections:
     images:
       - image: /images/projects/project-14/ancestry-wireframe-tabs-prototype.svg
         sound: false
-        alt: Clickable wireframe of the Gardiner Family Facts page, with tabs for name
-          distribution, family occupations, and Civil War service
+        alt: Prototype of the Gardiner Family Facts page
         caption: The tabbed layout keeps each type of record in one panel. Click Name
           distribution, Family Occupations, or Civil War Service to switch tabs.
-        size: full
+        size: half
       - image: /images/projects/project-14/ancestry-wireframe-long-page-prototype.svg
         sound: false
         alt: Scrollable wireframe of the long-page Gardiner Family Facts design, with
