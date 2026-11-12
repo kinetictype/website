@@ -56,8 +56,7 @@ sections:
     images:
       - image: /images/projects/caldera/02_information-architecture-flow.png
         sound: false
-        alt: Information architecture flow from an abstract Oregon map to Portland and
-          Central Oregon maps, partner schools, and individual projects
+        alt: Information architecture flow
         caption: An abstract map of Oregon leads to Portland and Central Oregon, then to
           partner schools and up to 20 assignments each, with process photos.
         size: half-text
