@@ -52,15 +52,12 @@ sections:
         size: half-text
   - heading: Exploring how girl currency could work
     text: >+
-      My goal was to make the economy simple enough to explain in a single
-      picture, then find the touchpoint a girl would use every day.
-
-
-      - How might we engage the globally connected girl to exchange her services
-      for Girl Coin that will donate to girls in the developing world?
-
-      - We tested options on the whiteboard, from discounts at partner stores to
-      matching programs, before settling on a model.
+      I used my diagrammatic skills to simplify the economy into a single
+      picture, then found the touchpoint a girl would use every day. How might
+      we engage the globally connected girl to exchange her services for Girl
+      Coin that will be donated to girls in the developing world? We tested
+      options on the whiteboard, from discounts at partner stores to matching
+      programs, before settling on a model.
 
     images:
       - image: /images/projects/girl-effect/02_concept-map-first-draft.png
