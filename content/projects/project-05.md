@@ -34,11 +34,7 @@ cover_alt: Fitbit logo
 drawer_image: /images/projects/project-05-fitbit/06_responsive-desktop-mobile-hd.webp
 drawer_image_alt: Responsive design for Fitbit help
 drawer_whole: false
-top_image_alt: Service blueprint and ecosystem/system map      Heat map and
-  metrics analysis    Three personas from quantitative data (Josh, Allie, Susan)
-  and three search scenarios    200 articles regrouped from 17 categories into
-  4    Search wizard, article section navigation, "Recent Issues" banner,
-  chatbot    Responsive, mobile-first designs
+top_image_alt: Service blueprint and ecosystem/system map, Responsive, mobile-first designs
 prototype_size: half
 sections:
   - heading: How might we create a self-service platform?
