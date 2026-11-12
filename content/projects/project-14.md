@@ -11,8 +11,7 @@ goals: Improve the SEO landing flow to reveal the breadth and depth of
   Ancestry's content about ancestors, and improve user acquisition in the
   sign-up flow.
 outcome: Diagrammatic flows, wireframes, and visual design, including a tab
-  structure and data visualization that gives family relationships more
-  context.
+  structure and data visualization that gives family relationships more context.
 responsibilities: Visual design, interaction design, concept design.
 team: Product manager and engineers.
 categories:
@@ -28,6 +27,7 @@ cover: /images/logos/Ancestry-logo.svg
 cover_alt: Ancestry.com logo
 drawer_image: /images/projects/03_family-facts-1.png
 drawer_image_alt: Visual design of the Gardiner Family Facts page
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: From a search to a sign-up
@@ -41,26 +41,25 @@ sections:
       - The landing page needed to reveal the breadth and depth of Ancestry's
       content about ancestors.
 
-      - The sign-up flow needed to turn more of those visitors into
-      customers.
+      - The sign-up flow needed to turn more of those visitors into customers.
 
     images:
       - image: /images/projects/01_flow-diagram-1.png
         sound: false
-        alt: Flow diagram from a search for a last name or family records, through
-          the family facts and records pages, to sample records and sign-up
-        caption: "Two paths from search: \"family facts\" for a last name, and
-          \"records\" for a first and last name, each leading through sample
-          records to sign-up."
-        size: full
+        alt: Flow diagram from a search for a last name or family records, through the
+          family facts and records pages, to sample records and sign-up
+        caption: 'Two paths from search: "family facts" for a last name, and "records"
+          for a first and last name, each leading through sample records to
+          sign-up.'
+        size: text-half
   - heading: Showing what Ancestry knows
     text: >+
       My goal was to show visitors, in a glance, how much Ancestry could tell
       them about their family before asking them to sign up.
 
 
-      - How might we turn a count of records into something that makes a
-      visitor curious about their own family?
+      - How might we turn a count of records into something that makes a visitor
+      curious about their own family?
 
       - Each type of record could tell a different story: where the family
       lived, what they did for a living, how long they lived, where they came
@@ -69,22 +68,22 @@ sections:
   - heading: Tabs and data visualization
     text: I designed a tab structure for the types of records, with a data
       visualization in each tab that gives family relationships more context,
-      such as a map of where the Gardiner families lived in each census year,
-      or the split between Union and Confederate soldiers in the Civil War.
+      such as a map of where the Gardiner families lived in each census year, or
+      the split between Union and Confederate soldiers in the Civil War.
     images:
       - image: /images/projects/02_search-for-your-family.png
         sound: false
         alt: Wireframe of the Gardiner Family Facts page with record counts, tabs for
           each type of record, and a search form below
-        caption: "The first layout: record counts, tabs for each type of record, and
-          the search form below."
+        caption: "The first layout: record counts, tabs for each type of record, and the
+          search form below."
         size: full
       - image: /images/projects/04_search-results.png
         sound: false
         alt: Wireframe of the Gardiner Family Facts page with the search form moved up
           and tabs down the side of a map of name distribution
-        caption: "An iteration: the search form moves up, and the tabs run down the
-          side of a map of where the family lived."
+        caption: "An iteration: the search form moves up, and the tabs run down the side
+          of a map of where the family lived."
         size: full
   - heading: Comparing the layouts
     text: We compared a tabbed layout, which keeps each type of record in one panel,
