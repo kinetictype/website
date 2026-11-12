@@ -8,8 +8,8 @@ summary: Build an interface with exploration features for the upcoming beta
 client: Agogo Startup
 role: User Experience Team of One
 timeline: June 2012
-goals: Build an interface with features to explore for the upcoming beta
-  release of a streaming audio app.
+goals: Build an interface with features to explore for the upcoming beta release
+  of a streaming audio app.
 outcome: User flows for obtaining the iOS beta, with success and error states,
   and wireframes for the player, module, episodes, and related-bundles screens.
 responsibilities: I worked on concepting the interactions for the beta launch.
@@ -29,6 +29,7 @@ cover: /images/logos/agogo.svg
 cover_alt: Agogo logo
 drawer_image: /images/projects/agogo-channels.jpg
 drawer_image_alt: The Agogo app on five iPhones, one color for each channel
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Getting the beta into people's hands
@@ -44,18 +45,17 @@ sections:
       - Testers set a password, connect Twitter, Facebook, and MOG, and take a
       quiz to customize their content, or skip either step.
 
-      - Approved testers receive an email with a link to download Agogo on
-      their iOS device.
+      - Approved testers receive an email with a link to download Agogo on their
+      iOS device.
 
     images:
       - image: /images/projects/01_beta-user-flow-2.png
         sound: false
-        alt: "Agogo user flow to obtain the beta iOS app, from the admin entering an
-          email to downloading the app"
-        caption: "Obtaining the iOS beta in nine steps, from an invitation email to
-          \"Congratulations! You've been approved for the AGOGO Beta iOS
-          Client.\""
-        size: full
+        alt: Agogo user flow to obtain the beta iOS app, from the admin entering an
+          email to downloading the app
+        caption: Obtaining the iOS beta in nine steps, from an invitation email to
+          "Congratulations! You've been approved for the AGOGO Beta iOS Client."
+        size: text-half
   - heading: Mapping the app
     text: >+
       My goal was to make a lot of audio feel simple to browse and play.
@@ -71,21 +71,21 @@ sections:
     images:
       - image: /images/projects/02_beta-user-flow.png
         sound: false
-        alt: Map of the Agogo app, from the load, registration, and intro screens to
-          the home, player, settings, and voice feedback screens
+        alt: Map of the Agogo app, from the load, registration, and intro screens to the
+          home, player, settings, and voice feedback screens
         caption: The app map, with notes on what each screen holds and the messages it
           shows for errors, success, and loading.
         size: full
   - heading: The player screen
-    text: The player shows the module and bundle names, the show title and date,
-      a waveform progress bar, and playback controls. To keep it uncluttered, I
+    text: The player shows the module and bundle names, the show title and date, a
+      waveform progress bar, and playback controls. To keep it uncluttered, I
       explored drawers that slide up from the bottom, one for related bundles
       and one for share, rate, and save.
     images:
       - image: /images/projects/03_related-bundles.png
         sound: false
-        alt: Annotated player screen wireframe, with related bundles sliding up from
-          the bottom
+        alt: Annotated player screen wireframe, with related bundles sliding up from the
+          bottom
         caption: Related bundles slide up from the bottom of the player.
         size: full
       - image: /images/projects/04_share-rate-save.png
@@ -97,9 +97,9 @@ sections:
         size: full
   - heading: Combining the module and player
     text: >+
-      Listeners choose a module, such as Weather, Business and Finance, or
-      News, and then a bundle within it, such as Market Reports. Combining the
-      module screen and the player kept both in one place.
+      Listeners choose a module, such as Weather, Business and Finance, or News,
+      and then a bundle within it, such as Market Reports. Combining the module
+      screen and the player kept both in one place.
 
 
       - Modules sit in a row at the bottom, and swipe left and right.
@@ -111,10 +111,10 @@ sections:
     images:
       - image: /images/projects/05_module-and-player.png
         sound: false
-        alt: Wireframes of the module and player combined, with modules along the
-          bottom and bundle choices in a drawer
-        caption: "Module and player combined: modules along the bottom and bundle choices
-          inside a drawer."
+        alt: Wireframes of the module and player combined, with modules along the bottom
+          and bundle choices in a drawer
+        caption: "Module and player combined: modules along the bottom and bundle
+          choices inside a drawer."
         size: full
       - image: /images/projects/06_episodes.png
         sound: false
