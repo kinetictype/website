@@ -32,22 +32,14 @@ gallery:
 prototype_size: half
 sections:
   - heading: Mapping story, memory, and place
-    text: >+
-      Caldera Arts wanted an addition to its website that showcases the work of
-      the young artists who attend its programs. The Geography of We would show
-      each project together with where the artist comes from, the type of work,
-      and the year it was made.
-
-
-      - Caldera's programs reach artists across Oregon, from Portland to Central
-      Oregon.
-
-      - The collection held 90 to 100 projects in image, writing, sound, and
-      video.
-
-      - The hypothesis: a map would let visitors discover the work through the
-      places it came from.
-
+    text: Caldera's programs reach artists across Oregon, from Portland to Central
+      Oregon. Caldera Arts wanted to add a section to its website that showcases
+      the work of the young artists who attend its programs. The Geography of We
+      would show each project together with where the artist comes from, the
+      type of work, and the year it was made. The collection held 90 to 100
+      projects in image, writing, sound, and video. The design team thought a
+      map would let visitors discover the work through the places where it came
+      from.
     images:
       - image: /images/projects/caldera/geography-of-we-landing-prototype.svg
         sound: false
