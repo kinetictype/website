@@ -87,11 +87,10 @@ sections:
         size: half
       - image: /images/projects/project-14/ancestry-wireframe-long-page-prototype.svg
         sound: false
-        alt: Scrollable wireframe of the long-page Gardiner Family Facts design, with
-          every type of record on one page
+        alt: Scrollable wireframe
         caption: The long-page alternative stacks every type of record, from name
           distribution to the community message board, on one scrolling page.
-        size: full
+        size: half
   - heading: The visual design
     text: In the visual design, the record counts lead the page, the search form
       invites visitors to start with themselves, and the tabbed visualizations
