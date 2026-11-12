@@ -18,10 +18,9 @@ outcome: A mobile-first, responsive help site built on a new, metrics-driven
 responsibilities: UX Design, research synthesis, framework, and vision.
 team: Worked directly with three stakeholders and a program manager.
 categories:
-  - UX
+  - UX Design
   - Service Blueprint
   - Stakeholder Management
-  - Responsive Design
 years: "2017"
 section: work
 start_year: 2017
