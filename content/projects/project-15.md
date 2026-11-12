@@ -6,10 +6,11 @@ summary: Develop a custom Android user interface; the earlier version was
 client: Flip Video
 role: UX Designer
 timeline: 2009 – 2010
-goals: Develop a user interface custom-built for Android; the earlier version
-  was outsourced and adapted from the iPhone app.
-outcome: For the Android app for Flipshare, I designed the new slide feature and
-  ways to view media on the app
+goals: Develop a user interface custom-built for Android.
+outcome: For the Android app for Flipshare, I designed screens for downloading,
+  sharing, and viewing videos. The first drawer feature for the Android phone.
+  Visualized aspects of how the application works to communicate clearly within
+  the team.
 responsibilities: "I worked on interaction design and concept design. "
 team: Reported to Cisco's principal UX designer, and worked with a product
   manager to review requirements.
@@ -32,24 +33,15 @@ prototype_size: half
 sections:
   - heading: An app ported from the iPhone
     text: >-
-      The Android had a trackball and hardware buttons which, at first felt like
-      an extra flipper when you play pinball.  were an added affordance the
-      iPhone design did not provide. I began with an audit of the existing app
-      and competing apps.
+      The Android had a trackball and hardware buttons which, at first, felt
+      like an extra flipper when you play pinball. I had more edge cases to
+      consider. I began with an audit of the existing app and competing apps.
 
 
-
-
-      &nbsp;
-
-
-      I audited the existing app and competing apps. The documentation fed into
-      discussions about creating a new sharing system. This project launched my
-      UX career. After Cisco acquired the company, it later canceled Flip's
-      projects. Worked with the team's Principal UX designer. I designed
-      persona-based screens for downloading, sharing, and viewing video. To
-      communicate clearly within the team, I created use-case diagrams, based on
-      interviews, for the "channel" sharing system. 
+      The documentation fed into discussions about creating a new sharing
+      system. After Cisco acquired the company, it later canceled Flip's
+      projects. Worked with the team's Principal UX designer. , I created
+      use-case diagrams, based on interviews, for the "channel" sharing system. 
     images:
       - image: /images/projects/01_use-case-diagram.png
         sound: false
