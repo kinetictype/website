@@ -59,10 +59,10 @@ sections:
         caption: The domain model named every element in the system and how each one
           relates to the others.
         size: text-half
-  - heading: Realize Features
-    text: "I framed the project and wrote requirements; I created wireframes for the
-      product. I mapped the marketer and administrator process flows to the
-      system diagram. "
+  - heading: Actualize Feature Requirements
+    text: "I framed the project, wrote requirements with the engineering lead, and
+      created product wireframes. I mapped the marketer and administrator
+      process flows to the system diagram I created at the start. "
     images:
       - image: /images/projects/02_ui-requirementsNEW-1.png
         sound: false
