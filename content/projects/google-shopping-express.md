@@ -74,8 +74,9 @@ sections:
   - heading: One cart, several stores
     text: >+
       A single order could come from several stores, which made the cart the
-      hardest screen to design. [Fill in: how you and the team worked through
-      it, e.g. ___ ]
+      hardest screen to design. The team worked through how we would navigate
+      the hierarchy, beginning with category. Drill down by department, from
+      Grocery to Dairy to Milk, while the pr
 
 
       - Shoppers swipe from right to left, or tap the cart icon, to open the
