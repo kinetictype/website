@@ -28,13 +28,11 @@ drawer_image_alt: The BreezeWay prepress diagram for Darwill
 drawer_whole: false
 prototype_size: half
 sections:
-  - heading: Prepress, the traditional way
-    text: >+
-      The traditional way took days or weeks: designers tracked down images,
+  - heading: Prepress the Traditional Way
+    text: The traditional way took days or weeks; designers tracked down images,
       printers prepared files, and marked-up proofs went back and forth by
       messenger or overnight mail. BreezeWay brought those steps online, so
       approval took minutes or hours.
-
     images:
       - image: /images/projects/NEW_brochure-spread.png
         sound: false
