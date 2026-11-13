@@ -21,12 +21,13 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
-description: Information architecture for the Restylane PracticeBuilder, moving a
-  CD-ROM of practice-building tools for dermatologists into a microsite on
+description: Information architecture for the Restylane PracticeBuilder, moving
+  a CD-ROM of practice-building tools for dermatologists into a microsite on
   RestylaneUSA.com.
 cover: /images/logos/restylane-seeklogo.svg
 drawer_image: /images/projects/Cover_sitemap.png
 drawer_image_alt: Restylane PracticeBuilder site architecture, version 1.2
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: From CD-ROM to the web
@@ -38,11 +39,11 @@ sections:
       RestylaneUSA.com.
 
 
-      - The CD organized its tools around acquiring, developing, and
-      maintaining relationships with patients.
+      - The CD organized its tools around acquiring, developing, and maintaining
+      relationships with patients.
 
-      - The content ranged from letters and newsletters to seminar guides,
-      staff training, calculators, and videos.
+      - The content ranged from letters and newsletters to seminar guides, staff
+      training, calculators, and videos.
 
       - The goal: move customers from a CD-ROM to a website they would visit
       again and again.
@@ -51,15 +52,15 @@ sections:
       - image: /images/projects/03_content-structure.png
         sound: false
         alt: Content structure of the Restylane CD-ROM, version 2.0, with tools for
-          acquiring, developing, and maintaining relationships and a set of support
-          tools
-        caption: The CD-ROM grouped its tools by stage of the patient relationship,
-          with a legend for each file type.
-        size: full
+          acquiring, developing, and maintaining relationships and a set of
+          support tools
+        caption: The CD-ROM grouped its tools by stage of the patient relationship, with
+          a legend for each file type.
+        size: text-half
   - heading: Sorting the content
     text: >+
-      My goal was a structure that would make sense to practices on the web,
-      not just reproduce the CD. I independently analyzed the existing and new
+      My goal was a structure that would make sense to practices on the web, not
+      just reproduce the CD. I independently analyzed the existing and new
       content, then worked through it with the client.
 
 
@@ -73,9 +74,9 @@ sections:
     images:
       - image: /images/projects/04_card-sort.png
         sound: false
-        alt: A card sort pinned to a board, grouping content under tips and
-          techniques, loyalty program, marketing tools, resources, and enhancing
-          the patient experience
+        alt: A card sort pinned to a board, grouping content under tips and techniques,
+          loyalty program, marketing tools, resources, and enhancing the patient
+          experience
         caption: The card sort grouped the content into the sections a practice would
           look for.
         size: full
@@ -83,19 +84,19 @@ sections:
     text: The first draft, in March 2007, organized the site around tools to use
       with doctors, communicating Restylane, using Restylane, the patient and
       doctor relationship, international resources, managing your practice, and
-      reward points. Each iteration refined the sections and how doctors,
-      sales representatives, and staff would sign in.
+      reward points. Each iteration refined the sections and how doctors, sales
+      representatives, and staff would sign in.
     images:
       - image: /images/projects/02_architecture-iteration-1.png
         sound: false
-        alt: Draft site architecture for the Restylane PracticeBuilder from March
-          2007, with a main screen, sign-in, and sections of tools
+        alt: Draft site architecture for the Restylane PracticeBuilder from March 2007,
+          with a main screen, sign-in, and sections of tools
         caption: The March 2007 draft of the site architecture.
         size: full
   - heading: The site architecture
     text: >+
-      Version 1.2, in April 2007, set the structure the team would build. A
-      main screen leads doctors and sales specialists to sign in, then to seven
+      Version 1.2, in April 2007, set the structure the team would build. A main
+      screen leads doctors and sales specialists to sign in, then to seven
       sections, each holding its tools and guides.
 
 
