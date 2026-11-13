@@ -36,9 +36,7 @@ sections:
     images:
       - image: /images/projects/Artboard 2@2x-1.png
         sound: false
-        alt: Brochure spread comparing prepress the traditional way, with proofs passed
-          between the design team, printer, client, and agency, to prepress the
-          BreezeWay
+        alt: v1
         caption: "The finished brochure spread: prepress the traditional way on the
           left, prepress the BreezeWay on the right."
         size: half-text
