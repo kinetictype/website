@@ -7,14 +7,12 @@ summary: Explain Intel's new content management system (CQ) to content
 client: Razorfish for Intel
 role: UX Designer
 timeline: May 2011
-goals: Explain Intel's new content management system (CQ) to content
-  publishers, and design MyIntel.com, a customized newsfeed filtered to user
-  needs.
+goals: Explain Intel's new content management system (CQ) to content publishers,
+  and design MyIntel.com, a customized newsfeed filtered to user needs.
 outcome: A 12-page Collections guide illustrating metadata, tagging, and modular
-  "blades," and MyIntel wireframes, including an onboarding wizard and
-  filtering options.
-responsibilities: Visual design, information design, information architecture,
-  and wireframes.
+  "blades," and MyIntel wireframes, including an onboarding wizard and filtering
+  options.
+responsibilities: Visual design, information design, information architecture, and wireframes.
 team: Information Architects
 categories:
   - UX/UI Design
@@ -23,13 +21,14 @@ years: "2011 "
 section: work
 start_year: 2011
 featured: false
-hidden: false
+hidden: true
 description: A guide that explains Intel's new CMS to content publishers, and
   wireframes for MyIntel, a personalized newsfeed, designed at Razorfish.
 cover: /images/logos/Intel_logo_2023.svg
 cover_alt: Intel logo
 drawer_image: /images/projects/06_myintel-wireframe-3-1.png
 drawer_image_alt: MyIntel dashboard wireframe
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: A new CMS for Intel
@@ -75,9 +74,9 @@ sections:
         size: half
   - heading: Designing MyIntel
     text: >+
-      MyIntel brings together the content a person cares about in one
-      dashboard. The wireframes covered an onboarding wizard and the options
-      for filtering the feed.
+      MyIntel brings together the content a person cares about in one dashboard.
+      The wireframes covered an onboarding wizard and the options for filtering
+      the feed.
 
 
       - Tabs for Recommended for Me, My Activities, My Alerts, and My Profile
