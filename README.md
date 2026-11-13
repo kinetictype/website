@@ -3,6 +3,11 @@
 Portfolio site for Kiera Westphal. You edit it in a browser with **Pages CMS** — no code, no terminal.
 Every time you press **Save** in the CMS, the change is committed to this repository and the site republishes itself in about a minute.
 
+> **Note for Claude sessions (agreed with the owner, 2026-11-13):** publish code changes straight to `main`
+> once `npm run build` passes locally. No pull request is needed, unless the change is large or risky
+> (for example a redesign, deleting content, or changing the deploy workflow): then open a PR and ask first.
+> After pushing, check that the "Deploy site" workflow run succeeds and tell the owner what changed.
+
 ---
 
 ## 1. Edit the site in Pages CMS (the everyday way)
