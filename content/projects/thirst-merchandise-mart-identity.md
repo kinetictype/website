@@ -62,7 +62,7 @@ sections:
       dimensions, the same four blocks form a family of marks, from solid stacks
       to thin, linear forms.
     images:
-      - image: /images/projects/01_block-letter-variations.png
+      - image: /images/projects/04_NEWmark-sheet.png
         sound: false
         alt: A sheet of Merchandise Mart Properties marks in blue, green, magenta, and
           black, from flat shapes to three-dimensional stacks
