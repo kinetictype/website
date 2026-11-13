@@ -59,7 +59,7 @@ sections:
       - image: /images/projects/Artboard 4@2x-2.png
         sound: false
         alt: v3
-        size: text-half
+        size: half-text
   - heading: Pairing the diagram with a legend
     text: To keep the diagram uncluttered, I moved the detailed descriptions into
       color-coded panels, one for each tool. Each panel uses the same color as
