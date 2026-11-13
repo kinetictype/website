@@ -79,7 +79,7 @@ sections:
           experience
         caption: The card sort grouped the content into the sections a practice would
           look for.
-        size: full
+        size: half-text
   - heading: Iterating on the architecture
     text: The first draft, in March 2007, organized the site around tools to use
       with doctors, communicating Restylane, using Restylane, the patient and
