@@ -101,7 +101,7 @@ sections:
       - Documentation of the production process that outlasted the architect's
       departure
 
-      - A clearer Schedule an Emmi screen in Emmi Manager
+      - A clearer schedule and an Emmi screen in Emmi Manager
 
       - Interface work and marketing materials alongside both
 ---
