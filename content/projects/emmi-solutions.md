@@ -49,6 +49,10 @@ sections:
       - Alongside that, the Schedule an Emmi section of Emmi Manager needed a
       clearer structure.
 
+    images:
+      - image: /images/projects/NEWdiagramBefore.png
+        sound: false
+        size: text-half
   - heading: Mapping the production process
     text: >+
       My goal was to capture the architect's understanding of the process before
