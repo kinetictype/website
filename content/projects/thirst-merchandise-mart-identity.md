@@ -29,11 +29,10 @@ prototype_size: half
 sections:
   - heading: A mark for a modular space
     text: >+
-      Merchandise Mart Properties runs the Merchandise Mart in Chicago, a vast
-      building of showrooms and exhibition space that is constantly rearranged.
-      At 3st, the studio of Rick Valicenti, we developed a logo concept that
-      would express a modular space. Blocks represent the letters of the company
-      name, so each word becomes a set of blocks of a matching length.
+      Blocks represent the letters of the company name, so each word becomes a
+      set of blocks of a matching length. This became a language of forms I
+      began to work with. Could we build a kinetic identity to represent a
+      modular space?
 
     images:
       - image: /images/projects/01_NEWblock-letter-variations.png
@@ -99,4 +98,4 @@ sections:
       and more understated, but exploring movable identity marks with Rick
       Valicenti was a career highlight.
 ---
-Merchandise Mart Properties was a large building space that hosted different events. Its modularity began the conceptualization of building an identity mark with block-themed variations and an animated version of the mark. In the end, they wanted something less dynamic and more understated. In the meantime, we explored movable identity marks together, which was a lot of fun!
+Merchandise Mart Properties was a vast building of showrooms and exhibition space that is constantly rearranged. Its modularity began the conceptualization of building an identity mark with block-themed variations and an animated version of the mark. In the end, they wanted something less dynamic and more understated. In the meantime, we explored movable identity marks together, which was a lot of fun!
