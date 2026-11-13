@@ -61,6 +61,8 @@ body {
   padding: var(--gutter); /* 16px frame around every side of the page */
 }
 img { max-width: 100%; height: auto; display: block; }
+video, object { max-width: 100%; }
+iframe.embed-responsive { display: block; width: 100%; max-width: 100%; height: auto; border: 0; border-radius: 6px; }
 a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 3px; }
 a:hover { color: var(--accent); text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }

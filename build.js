@@ -166,7 +166,14 @@ marked.use({
     },
   },
 });
-const markdown = (src = "") => marked.parse(src);
+// Embedded iframes (video players etc.) keep their width/height ratio but shrink to fit the column
+const responsiveEmbeds = (html) => html.replace(/<iframe\b([^>]*)>/gi, (m, attrs) => {
+  const w = +(attrs.match(/\bwidth=["']?(\d+)/i) || [])[1], h = +(attrs.match(/\bheight=["']?(\d+)/i) || [])[1];
+  if (/\bclass=["'][^"']*\bembed-responsive\b/i.test(attrs)) return m;
+  const ratio = w && h ? `aspect-ratio:${w}/${h};` : "aspect-ratio:16/9;";
+  return `<iframe class="embed-responsive" style="${ratio}"${attrs}>`;
+});
+const markdown = (src = "") => responsiveEmbeds(marked.parse(src));
 // Text typed as a small heading (####, #####, ######) in a paragraph box is shown as a normal paragraph,
 // so every page's text has the same typography
 const prose = (src = "") => markdown(src).replace(/<h[4-6]\b[^>]*>/g, "<p>").replace(/<\/h[4-6]>/g, "</p>");
