@@ -17,7 +17,7 @@ years: "2007"
 section: work
 start_year: 2007
 featured: false
-hidden: false
+hidden: true
 description: Illustrated, dimensional charts in one consistent style for ten
   Sara Lee sales brochures, designed with Launch Creative Marketing.
 cover: /images/logos/sara-lee.svg
