@@ -66,11 +66,9 @@ sections:
       color-coded panels, one for each tool. Each panel uses the same color as
       its circle in the diagram, so readers can move between the two easily.
     images:
-      - image: /images/projects/darwill/04_process-text-panels.png
+      - image: /images/projects/Artboard 6@2x.png
         sound: false
-        alt: Color-coded text panels describing InSite, Matchprint Virtual Software,
-          ImageQuest, and Prepare
-        caption: Each tool has a panel in the same color as its circle in the diagram.
+        alt: v4
         size: full
   - heading: Prepress the BreezeWay
     text: >+
