@@ -5,7 +5,7 @@ summary: Create a diagram explaining Darwill's automated "Breezeway" prepress
   process for a brochure.
 client: David James Group for Darwill
 role: Information Graphics Designer
-timeline: April 2007
+timeline: "2007"
 goals: Clarify the benefits of the Darwill process versus the old way that took
   too much time.
 outcome: A six-step process infographic with 3D rendering, and two diagrams for
