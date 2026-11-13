@@ -18,19 +18,20 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
-description: Illustrated, dimensional charts in one consistent style for ten Sara
-  Lee sales brochures, designed with Launch Creative Marketing.
+description: Illustrated, dimensional charts in one consistent style for ten
+  Sara Lee sales brochures, designed with Launch Creative Marketing.
 cover: /images/logos/sara-lee.svg
 drawer_image: /images/projects/SarahLee.png
 drawer_image_alt: A series of illustrated charts for Sara Lee sales brochures
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Charts that sell
     text: >+
       Launch Creative Marketing was producing a series of sales brochures for
       Sara Lee Corporation, for brands such as Hillshire Farm and Jimmy Dean.
-      Each brochure made its case to retailers with data, and the agency
-      wanted those information graphics to feel more illustrative and dynamic.
+      Each brochure made its case to retailers with data, and the agency wanted
+      those information graphics to feel more illustrative and dynamic.
 
 
       - Ten brochures, each with its own set of charts
@@ -44,7 +45,7 @@ sections:
           merchandising, and pricing, and why Hillshire Farm
         caption: Sales brochure spreads that make Hillshire Farm's case to retailers
           with data.
-        size: full
+        size: half-text
   - heading: One style across ten brochures
     text: >+
       My goal was a chart style with dimension and character that could carry
@@ -60,8 +61,8 @@ sections:
     images:
       - image: /images/projects/Artboard 1 copy 2@2x.png
         sound: false
-        alt: Red three-dimensional charts of fresh sandwich chain sales, dollar
-          sales percent change, and frozen breakfast brands
+        alt: Red three-dimensional charts of fresh sandwich chain sales, dollar sales
+          percent change, and frozen breakfast brands
         caption: Fresh sandwich chain sales, dollar sales change, and frozen breakfast
           brands, drawn as dimensional ribbons and bars.
         size: full
@@ -80,8 +81,8 @@ sections:
         size: full
       - image: /images/projects/Artboard 1 copy@2x.png
         sound: false
-        alt: Red charts of Jimmy Dean frozen breakfast sales, how often consumers
-          buy, product liking and purchase intent, and what influences purchase
+        alt: Red charts of Jimmy Dean frozen breakfast sales, how often consumers buy,
+          product liking and purchase intent, and what influences purchase
         caption: Bars, a pie chart, and score tables share the same dimensional style.
         size: full
   - heading: Breaking the rules for clarity
