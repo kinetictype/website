@@ -112,4 +112,4 @@ sections:
       a brilliant visualization team, but it was also an honor to speak with
       critics and writers daily.
 ---
-To be part of a great newspaper like the Chicago Tribune was an exciting journey and an honor to work in an iconic building just below its famous buttresses. Highlights of my experience included daily print infographics describing the Art Institute expansion (worked with esteemed architecture critic Blair Kamin), Midway runway arrester beds, and the AT&T mergers timeline.
+To be part of a great newspaper like the Chicago Tribune was an exciting journey and an honor to work in an iconic building just below its famous buttresses. Highlights of my experience included daily print infographics describing the Art Institute expansion and creating some of the first interactive graphics on the web.
