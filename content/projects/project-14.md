@@ -20,7 +20,7 @@ years: 2012–2013
 section: work
 start_year: 2012
 featured: false
-hidden: false
+hidden: true
 description: Redesigning Ancestry.com's family facts landing page and sign-up
   flow to show new visitors the breadth of records about their ancestors.
 cover: /images/logos/Ancestry-logo.svg
