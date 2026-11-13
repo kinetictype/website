@@ -95,7 +95,7 @@ sections:
         alt: Hillshire Farm brochure spreads comparing smoked sausage links with the
           competition and outlining promotional support
         caption: The final brochure, with the charts placed in the layout.
-        size: full
+        size: half-text
   - heading: Multiple charts, one consistent style
     text: I designed multiple charts in one consistent style across ten brochures,
       working with the art director and several designers at Launch Creative
