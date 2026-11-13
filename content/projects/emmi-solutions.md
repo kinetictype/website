@@ -41,6 +41,8 @@ sections:
     images:
       - image: /images/projects/NEWdiagramBefore.png
         sound: false
+        alt: Original documentation
+        caption: I began with this map of the process from the Lead Engineer.
         size: text-half
   - heading: Mapping the production process
     text: >+
