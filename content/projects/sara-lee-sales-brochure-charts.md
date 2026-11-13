@@ -78,13 +78,13 @@ sections:
           home, wrap items on menus, and tortillas used for sandwiches
         caption: Turkey breakfast sausage sales, wraps eaten at home, wrap items on
           menus, and tortillas used for sandwiches.
-        size: full
+        size: half
       - image: /images/projects/Artboard 1 copy@2x.png
         sound: false
         alt: Red charts of Jimmy Dean frozen breakfast sales, how often consumers buy,
           product liking and purchase intent, and what influences purchase
         caption: Bars, a pie chart, and score tables share the same dimensional style.
-        size: full
+        size: half
   - heading: Breaking the rules for clarity
     text: Traditional chart rules call for flat, minimal graphics. I broke those
       rules on purpose and went all in on more illustrative charts, with depth,
