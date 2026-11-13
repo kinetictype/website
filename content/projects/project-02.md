@@ -60,10 +60,8 @@ sections:
       the way. Apiture's ease of communication made sharing work more fun. We
       often reviewed work and moved toward the details that make a product work.
     images:
-      - image: /images/projects/Reset password_sure_.png
-        sound: false
+      - sound: false
         alt: Prototype of Test Customers for Apiture
-        caption: Prototype of this layout
         size: half-text
   - heading: Designing a Design System Library
     text: When I began working with the files, I realized the Developer Portal would
