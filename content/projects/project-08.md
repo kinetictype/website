@@ -12,7 +12,6 @@ outcome: An application map (v1.6) and spec documentation.
 responsibilities: Information architecture, application mapping, and spec documentation.
 team: Product manager
 categories:
-  - Information Architecture
 years: 2011-2012
 section: work
 start_year: 2011

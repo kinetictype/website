@@ -16,7 +16,6 @@ responsibilities: Visual design, information design, information architecture, a
 team: Information Architects
 categories:
   - UX/UI Design
-  - Information Architecture
 years: "2011 "
 section: work
 start_year: 2011

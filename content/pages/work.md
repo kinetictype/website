@@ -7,6 +7,5 @@ filters:
   - Data Visualization
   - Service Design
   - Design Systems
-  - Information Architecture
   - "Visual & Motion"
 ---

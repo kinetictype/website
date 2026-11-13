@@ -17,7 +17,6 @@ responsibilities: Visual Design, Interface Design, Design System management
 team: The departing system architect and the management team.
 categories:
   - UX/UI Design
-  - Information Architecture
   - "Visual & Motion"
 years: 2007 – 2008
 section: work

@@ -16,7 +16,6 @@ responsibilities: I worked on concepting the interactions for the beta launch.
 team: Product Owner and Engineers
 categories:
   - UX/UI Design
-  - Information Architecture
 years: "2012"
 section: work
 start_year: 2012

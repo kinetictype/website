@@ -15,7 +15,6 @@ responsibilities: I independently analyzed the existing and new content, then
   client to identify their needs.
 team: Writers and web developers.
 categories:
-  - Information Architecture
 years: "2007"
 section: work
 start_year: 2007
