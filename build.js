@@ -256,11 +256,63 @@ const ARROW_BACK = ARROW.replace('class="icon-arrow"', 'class="icon-arrow flip"'
 
 /* ---------- shared layout ---------- */
 
-function layout({ title, description, urlPath, body, image, type = "website", schema, bodyClass = "" }) {
+/* ---------- SEO helpers ----------
+   Every page's title, description, link-preview image and structured data are made from the
+   content files at build time, so they stay current with each Pages CMS save. Links always use
+   the main domain from Site settings (https://kierawestphal.com), even while the site is
+   previewed at a GitHub Pages address. */
+// absolute, URL-safe address on the main domain (file names may contain spaces)
+const absUrl = (u) => {
+  if (!u) return "";
+  const safe = encodeURI(String(u)).replace(/%25([0-9A-F]{2})/gi, "%$1");
+  return /^https?:/.test(u) ? safe : SITE.url + safe;
+};
+// Markdown/HTML → one line of plain text
+const plainText = (md) =>
+  String(md || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[#*_`>|]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+function clip(s, max = 160) {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max - 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:.\s]+$/, "") + "…";
+}
+/* The first usable text wins: "Placeholder description…" texts are skipped, and a keyword list
+   ("Service Design, Business Banking") loses to a full sentence (tagline, summary, excerpt) when there is one. */
+const isKeywordList = (t) => !/[.!?…]$/.test(t) && t.split(",").every((part) => part.trim().split(/\s+/).length <= 4);
+const sentence = (t) => (/[.!?…]$/.test(t) ? t : t + ".");
+function seoDescription(...candidates) {
+  const usable = candidates.map(plainText).filter((t) => t && !/placeholder/i.test(t));
+  return clip(sentence(usable.find((t) => !isKeywordList(t)) || usable[0] || plainText(SITE.description)));
+}
+// a preview image must be a bitmap that exists (SVG logos don't show in link previews)
+const previewImage = (...files) =>
+  files.map(imageUrl).find((u) => u && !/\.svg$/i.test(u) && (/^https?:/.test(u) || exists(path.join(CONTENT, decodeURI(u))))) || "";
+const PERSON_ID = SITE.url + "/#person";
+const WEBSITE_ID = SITE.url + "/#website";
+// structured data for a page plus its breadcrumb trail, e.g. Home › Work › Project
+function withCrumbs(schema, crumbs) {
+  const list = {
+    "@type": "BreadcrumbList",
+    itemListElement: [["Home", "/"], ...crumbs].map(([name, u], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE.url + u })),
+  };
+  const { "@context": _, ...rest } = schema;
+  return { "@context": "https://schema.org", "@graph": [rest, list] };
+}
+
+function layout({ title, description, urlPath, body, image, imageAlt, type = "website", schema, bodyClass = "", published, noindex = false }) {
   const fullTitle = title ? `${title} — ${SITE.name}` : SITE.site_title || SITE.name;
-  const desc = description || SITE.description;
+  const desc = seoDescription(description);
   const canonical = SITE.url + urlPath;
-  const ogImage = SITE.url + (image || imageUrl(SITE.og_image));
+  const ownImage = previewImage(image);
+  const ogImage = absUrl(ownImage || imageUrl(SITE.og_image));
+  // the default preview image is rendered at 1200 × 630 (scripts/render-og-image.js)
+  const ogSize = ownImage ? "" : `\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">`;
+  const ogAlt = escapeHtml(ownImage ? imageAlt || fullTitle : `${SITE.name}, ${SITE.job_title || SITE.tagline || ""}`.replace(/, $/, ""));
   const nav = [
     ["/work/", "Work"],
     ["/journal/", "Journal"],
@@ -274,19 +326,21 @@ function layout({ title, description, urlPath, body, image, type = "website", sc
 <title>${escapeHtml(fullTitle)}</title>
 <meta name="description" content="${escapeHtml(desc)}">
 <meta name="author" content="${escapeHtml(SITE.name)}">
-<link rel="canonical" href="${canonical}">
-<meta name="theme-color" content="${SITE.background || "#F2F5F7"}">
+<meta name="robots" content="${noindex ? "noindex, follow" : "index, follow, max-image-preview:large"}">
+${noindex ? "" : `<link rel="canonical" href="${canonical}">\n`}<meta name="theme-color" content="${SITE.background || "#F2F5F7"}">
 <meta property="og:type" content="${type}">
 <meta property="og:site_name" content="${escapeHtml(SITE.name)}">
 <meta property="og:title" content="${escapeHtml(fullTitle)}">
 <meta property="og:description" content="${escapeHtml(desc)}">
-<meta property="og:url" content="${canonical}">
-<meta property="og:image" content="${ogImage}">
-<meta property="og:locale" content="${SITE.locale || "en_US"}">
+${noindex ? "" : `<meta property="og:url" content="${canonical}">\n`}<meta property="og:image" content="${ogImage}">${ogSize}
+<meta property="og:image:alt" content="${ogAlt}">
+<meta property="og:locale" content="${SITE.locale || "en_US"}">${type === "article" ? `\n<meta property="article:author" content="${escapeHtml(SITE.name)}">` : ""}${published ? `\n<meta property="article:published_time" content="${published}">` : ""}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${escapeHtml(fullTitle)}">
 <meta name="twitter:description" content="${escapeHtml(desc)}">
 <meta name="twitter:image" content="${ogImage}">
+<meta name="twitter:image:alt" content="${ogAlt}">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 ${FAVICON_LINKS}
 <link rel="stylesheet" href="/style.css?v=${CSS_VERSION}">
 ${EDIT ? `<style>/* editor preview only: SVG logos are not inlined here, so keep them uncropped */img[src$=".svg"]{object-fit:contain}</style>\n` : ""}${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ""}
@@ -357,11 +411,13 @@ ${body}
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": PERSON_ID,
   name: SITE.name,
+  description: plainText(SITE.description),
   url: SITE.url + "/",
   email: `mailto:${SITE.email}`,
   jobTitle: SITE.job_title,
-  image: SITE.url + imageUrl(SITE.portrait),
+  image: absUrl(previewImage(SITE.portrait_photo, SITE.portrait) || imageUrl(SITE.portrait)),
   address: SITE.location ? { "@type": "PostalAddress", addressLocality: SITE.location } : undefined,
   sameAs: [SITE.linkedin, SITE.instagram, SITE.github, SITE.other_profile].filter(Boolean),
 };
@@ -485,7 +541,21 @@ writeFile(
     title: "",
     description: SITE.description,
     urlPath: "/",
-    schema: personSchema,
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": WEBSITE_ID,
+          url: SITE.url + "/",
+          name: SITE.name,
+          description: plainText(SITE.description),
+          inLanguage: SITE.language || "en",
+          publisher: { "@id": PERSON_ID },
+        },
+        (({ "@context": _, ...person }) => ({ ...person, mainEntityOfPage: SITE.url + "/" }))(personSchema),
+      ],
+    },
     bodyClass: "home",
     body: `
 <section class="intro">
@@ -560,6 +630,21 @@ writeFile(
     title: work.data.title || "Work",
     description: work.data.description,
     urlPath: "/work/",
+    schema: withCrumbs(
+      {
+        "@type": "CollectionPage",
+        name: plainText(work.data.title || "Work"),
+        url: SITE.url + "/work/",
+        description: seoDescription(work.data.description),
+        isPartOf: { "@id": WEBSITE_ID },
+        author: { "@id": PERSON_ID },
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: projects.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: SITE.url + projectUrl(p), name: p.title })),
+        },
+      },
+      [[plainText(work.data.title || "Work"), "/work/"]]
+    ),
     body: `
 <section class="page-head">
   <h1${work.data.title ? edText("title") : ""}>${inline(work.data.title || "Work")}</h1>
@@ -912,20 +997,32 @@ projects.forEach((p, i) => {
     `work/${p.slug}/index.html`,
     layout({
       title: p.title,
-      description: p.description || p.tagline,
+      description: seoDescription(p.description, p.tagline, p.summary),
       urlPath: projectUrl(p),
-      image: p.cover && !p.cover.endsWith(".svg") ? assetUrl(p, p.cover) : undefined,
+      // link preview: the project's own picture (top image, drop-down image or cover), else the site preview
+      image: previewImage(topImage(p).top_image, p.drawer_image, p.cover),
+      imageAlt: [[topImage(p).top_image, topImage(p).top_image_alt], [p.drawer_image, p.drawer_image_alt], [p.cover, p.cover_alt]].find(([f]) => previewImage(f))?.[1],
       type: "article",
       bodyClass: "project",
-      schema: {
-        "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        name: p.title,
-        description: p.description || p.tagline,
-        url: SITE.url + projectUrl(p),
-        author: { "@type": "Person", name: SITE.name, url: SITE.url + "/" },
-        dateCreated: p.start_year ? String(p.start_year) : undefined,
-      },
+      schema: withCrumbs(
+        {
+          "@type": "CreativeWork",
+          name: p.title,
+          headline: p.title,
+          description: seoDescription(p.description, p.tagline, p.summary),
+          abstract: plainText(p.tagline) || undefined,
+          url: SITE.url + projectUrl(p),
+          image: absUrl(previewImage(topImage(p).top_image, p.drawer_image, p.cover)) || undefined,
+          keywords: categories(p).join(", ") || undefined,
+          author: { "@id": PERSON_ID, "@type": "Person", name: SITE.name, url: SITE.url + "/" },
+          sourceOrganization: p.client ? { "@type": "Organization", name: plainText(p.client) } : undefined,
+          dateCreated: p.start_year ? String(p.start_year) : undefined,
+          temporalCoverage: p.years ? String(p.years) : undefined,
+          isPartOf: { "@id": WEBSITE_ID },
+          inLanguage: SITE.language || "en",
+        },
+        [["Work", "/work/"], [p.title, projectUrl(p)]]
+      ),
       body: caseStudy(p),
     })
   );
@@ -951,6 +1048,18 @@ const JOURNAL_PAGE_SIZE = 9;
       title: jp.data.title || "Journal",
       description: jp.data.description,
       urlPath: "/journal/",
+      schema: withCrumbs(
+        {
+          "@type": "Blog",
+          name: plainText(jp.data.title || "Journal"),
+          url: SITE.url + "/journal/",
+          description: seoDescription(jp.data.description),
+          isPartOf: { "@id": WEBSITE_ID },
+          author: { "@id": PERSON_ID },
+          blogPost: entries.map((e) => ({ "@type": "BlogPosting", headline: e.title, url: SITE.url + entryUrl(e), datePublished: e.iso || undefined })),
+        },
+        [[plainText(jp.data.title || "Journal"), "/journal/"]]
+      ),
       bodyClass: "journal",
       body: `
 <section class="page-head">
@@ -1003,20 +1112,29 @@ ${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type
       `journal/${e.slug}/index.html`,
       layout({
         title: e.title,
-        description: e.description || e.excerpt,
+        description: seoDescription(e.description, e.excerpt, e.body),
         urlPath: entryUrl(e),
-        image: e.cover && !e.cover.endsWith(".svg") ? imageUrl(e.cover) : undefined,
+        image: previewImage(e.cover),
+        imageAlt: e.cover_alt,
         type: "article",
+        published: e.iso || undefined,
         bodyClass: "project journal-entry",
-        schema: {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          headline: e.title,
-          description: e.description || e.excerpt,
-          datePublished: e.iso || undefined,
-          url: SITE.url + entryUrl(e),
-          author: { "@type": "Person", name: SITE.name, url: SITE.url + "/" },
-        },
+        schema: withCrumbs(
+          {
+            "@type": "BlogPosting",
+            headline: e.title,
+            description: seoDescription(e.description, e.excerpt, e.body),
+            datePublished: e.iso || undefined,
+            url: SITE.url + entryUrl(e),
+            mainEntityOfPage: SITE.url + entryUrl(e),
+            image: absUrl(previewImage(e.cover)) || undefined,
+            articleSection: e.category || undefined,
+            author: { "@id": PERSON_ID, "@type": "Person", name: SITE.name, url: SITE.url + "/" },
+            isPartOf: { "@id": WEBSITE_ID },
+            inLanguage: SITE.language || "en",
+          },
+          [[plainText(page("journal").data.title || "Journal"), "/journal/"], [e.title, entryUrl(e)]]
+        ),
         body: `
 <article class="case">
   <header class="case-head">
@@ -1063,6 +1181,17 @@ for (const name of ["contact", "imprint"]) {
       title: data.title,
       description: data.description,
       urlPath: `/${name}/`,
+      schema: withCrumbs(
+        {
+          "@type": name === "contact" ? "ContactPage" : "WebPage",
+          name: plainText(data.title || name),
+          url: `${SITE.url}/${name}/`,
+          description: seoDescription(data.description),
+          isPartOf: { "@id": WEBSITE_ID },
+          ...(name === "contact" ? { mainEntity: { "@id": PERSON_ID } } : {}),
+        },
+        [[plainText(data.title || name), `/${name}/`]]
+      ),
       bodyClass: `text ${name}`,
       body: `
 <section class="page-head"><h1${data.title ? edText("title") : ""}>${inline(data.title || name)}</h1></section>
@@ -1077,6 +1206,7 @@ writeFile(
   layout({
     title: "Page not found",
     urlPath: "/404.html",
+    noindex: true,
     body: `<section class="page-head"><h1>Page not found</h1><p class="lede">That page doesn't exist. <a href="/">Back to the homepage ${ARROW}</a></p></section>`,
   })
 );
@@ -1092,7 +1222,57 @@ ${urls.map((u) => `  <url><loc>${SITE.url}${u}</loc><lastmod>${today}</lastmod><
 </urlset>
 `
 );
-writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n`);
+// Search engines and AI crawlers are all welcome; llms.txt points AI models to a plain-text summary
+writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n# Plain-text summary for AI models: ${SITE.url}/llms.txt\n`);
+
+/* llms.txt (https://llmstxt.org): a plain Markdown summary of the site for AI models and AI search,
+   written from the same content files as the pages, so it updates with every Pages CMS save. */
+{
+  const line = (label, url, text) => `- [${plainText(label)}](${SITE.url}${url})${text ? `: ${text}` : ""}`;
+  const projectLine = (p) => {
+    const trim = (t) => plainText(t).replace(/[.\s]+$/, "");
+    const facts = [p.client && `Client: ${trim(p.client)}`, p.role && `Role: ${trim(p.role)}`, p.years && `Years: ${trim(p.years)}`, categories(p).length && `Topics: ${categories(p).join(", ")}`].filter(Boolean);
+    return line(p.title, projectUrl(p), [seoDescription(p.description, p.tagline, p.summary), facts.length ? facts.join(". ") + "." : ""].filter(Boolean).join(" "));
+  };
+  const jp = page("journal");
+  const profiles = [["LinkedIn", SITE.linkedin], ["Instagram", SITE.instagram], ["GitHub", SITE.github], ["Website", SITE.other_profile]].filter(([, u]) => u);
+  const about = home.body.split(/\n\s*\n/).map(plainText).filter(Boolean);
+  const llms = [
+    `# ${SITE.name}`,
+    "",
+    `> ${plainText(SITE.description)}`,
+    "",
+    [plainText(home.data.headline).replace(/\s*\|\s*/g, " "), plainText(home.data.subhead)].filter(Boolean).join(" "),
+    "",
+    ...about.flatMap((para) => [para, ""]),
+    [
+      SITE.job_title && `- Role: ${SITE.job_title}`,
+      SITE.location && `- Based in: ${SITE.location}`,
+      SITE.email && `- Email: ${SITE.email}`,
+      ...profiles.map(([k, u]) => `- ${k}: ${u}`),
+    ].filter(Boolean).join("\n"),
+    "",
+    "## Pages",
+    "",
+    line("Home", "/", "Introduction, recent work and project list"),
+    line(work.data.title || "Work", "/work/", seoDescription(work.data.description)),
+    line(jp.data.title || "Journal", "/journal/", seoDescription(jp.data.description)),
+    line(page("contact").data.title || "Contact", "/contact/", seoDescription(page("contact").data.description)),
+    "",
+    ...(featured.length ? ["## Selected work", "", ...featured.map(projectLine), ""] : []),
+    ...(archive.length ? ["## More projects", "", ...archive.map(projectLine), ""] : []),
+    ...(passion.length ? ["## Passion projects", "", ...passion.map(projectLine), ""] : []),
+    ...(entries.length
+      ? [`## ${plainText(jp.data.title || "Journal")}`, "", ...entries.map((e) => line(e.title, entryUrl(e), [`${e.iso}${e.category ? `, ${e.category}` : ""}.`, seoDescription(e.description, e.excerpt, e.body)].join(" "))), ""]
+      : []),
+    "## Optional",
+    "",
+    line(page("imprint").data.title || "Imprint", "/imprint/", "Legal notice"),
+    line("Sitemap", "/sitemap.xml", "Every page on the site"),
+    "",
+  ].join("\n");
+  writeFile("llms.txt", llms.replace(/\n{3,}/g, "\n\n"));
+}
 writeFile("CNAME", `${SITE.domain}\n`); // tells GitHub Pages which domain to serve
 writeFile(".nojekyll", "");
 
