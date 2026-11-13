@@ -110,7 +110,7 @@ sections:
       navigation, and release 2 content
 
     images:
-      - image: /images/projects/06_sitemap-1.jpg
+      - image: /images/projects/Cover_sitemap-3.png
         sound: false
         alt: Restylane PracticeBuilder site architecture, version 1.2, from April 2007
         caption: Site architecture, version 1.2, the structure the writers and web
