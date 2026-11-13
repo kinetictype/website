@@ -2,8 +2,8 @@
 title: " Healthcare Software Documentation"
 tagline: Mapping how a healthcare software program gets made.
 summary: Document the production process for Emmi programs before the system's
-  architect left, and restructure the "Schedule an Emmi" section of Emmi
-  Manager.
+  architect left, and restructure the scheduling pages in the Emmi Manager to
+  improve the interface.
 client: Emmi Solutions
 role: Interface designer / information graphics
 timeline: 2007-2008
@@ -24,11 +24,12 @@ section: work
 start_year: 2007
 featured: false
 hidden: false
-description: Documenting how Emmi Solutions produced its patient education programs,
-  and restructuring the Schedule an Emmi screen in Emmi Manager.
+description: Documenting how Emmi Solutions produced its patient education
+  programs, and restructuring the Schedule an Emmi screen in Emmi Manager.
 cover: /images/logos/emmi.svg
 drawer_image: /images/projects/02_production-process-diagram.png
 drawer_image_alt: Emmi Solutions new program process diagram
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: A process only one person knew
@@ -50,12 +51,12 @@ sections:
 
   - heading: Mapping the production process
     text: >+
-      My goal was to capture the architect's understanding of the process
-      before he left, in a form the whole company could read.
+      My goal was to capture the architect's understanding of the process before
+      he left, in a form the whole company could read.
 
 
-      - How might we show every step, role, and handoff in producing a new
-      Emmi program on a single page?
+      - How might we show every step, role, and handoff in producing a new Emmi
+      program on a single page?
 
       - I worked with the departing architect to map the process, then shared
       the visualization across the company.
@@ -74,8 +75,8 @@ sections:
     text: Alongside the documentation, I worked on the Emmi Manager interface. The
       Schedule an Emmi screen packed patient details, doctor details, and
       program search into one dense form. I reorganized it into clear groups,
-      patient information, doctor information, and programs available, and
-      made it easier to narrow the program list.
+      patient information, doctor information, and programs available, and made
+      it easier to narrow the program list.
     images:
       - image: /images/projects/alberto1_before.jpg
         sound: false
@@ -87,9 +88,9 @@ sections:
         sound: false
         alt: The redesigned Schedule an Emmi screen, with sections for patient
           information, doctor information, and programs available
-        caption: "After: patient information, doctor information, and programs
-          available each have their own group, with clearer ways to narrow the
-          program list."
+        caption: "After: patient information, doctor information, and programs available
+          each have their own group, with clearer ways to narrow the program
+          list."
         size: full
   - heading: A shared picture of the process
     text: >+
@@ -103,7 +104,5 @@ sections:
       - A clearer Schedule an Emmi screen in Emmi Manager
 
       - Interface work and marketing materials alongside both
-
-
 ---
 Management used the diagram to plan staffing and process steps, and to communicate with potential investors and shareholders. The departing system lead and the management team.
