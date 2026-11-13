@@ -5,7 +5,7 @@ summary: Document the production process for Emmi programs before the system's
   architect left, and restructure the scheduling pages in the Emmi Manager to
   improve the interface.
 client: Emmi Solutions
-role: Interface designer / information graphics
+role: Interface designer and Information graphics
 timeline: 2007-2008
 goals: As Emmi Solutions was developing partnerships, one question kept coming
   up. How is the software produced? The lead engineer was leaving the company,
@@ -109,4 +109,4 @@ sections:
 
       - Interface work and marketing materials alongside both
 ---
-Management used the diagram to plan staffing and process steps, and to communicate with potential investors and shareholders. The departing system lead and the management team.
+Management used the diagram to plan staffing and process steps, and to communicate with potential investors and shareholders. 
