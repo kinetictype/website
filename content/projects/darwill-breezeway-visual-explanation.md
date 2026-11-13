@@ -68,7 +68,7 @@ sections:
       - image: /images/projects/Artboard 6@2x.png
         sound: false
         alt: v4
-        size: full
+        size: text-half
   - heading: Infographics to Explain a Process
     text: After my time at the Chicago Tribune as a visual journalist, I began
       creating infographic illustrations that explained complex projects in a
