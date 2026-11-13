@@ -50,7 +50,7 @@ sections:
       - image: /images/projects/Artboard 3@2x-1.png
         sound: false
         alt: v2
-        size: full
+        size: text-half
   - heading: Developing the diagram in six steps
     text: I developed the diagram over six steps. Early versions mapped the flow
       with line art. Later versions added 3D rendering, a color for each tool,
