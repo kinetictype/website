@@ -92,7 +92,7 @@ sections:
         alt: Draft site architecture for the Restylane PracticeBuilder from March 2007,
           with a main screen, sign-in, and sections of tools
         caption: The March 2007 draft of the site architecture.
-        size: full
+        size: text-half
   - heading: The site architecture
     text: >+
       Version 1.2, in April 2007, set the structure the team would build. A main
