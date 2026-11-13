@@ -44,16 +44,14 @@ sections:
     text: >+
       My goal was a diagram that marketers could read at a glance, showing how
       files move through Darwill's four tools and who is involved at each step.
+      How might we show the time BreezeWay saves, from days and weeks to minutes
+      and hours?
 
-
-      - How might we show the time BreezeWay saves, from days and weeks to
-      minutes and hours?
-
-      - Four tools to explain: ImageQuest, Prepare, InSite, and Matchprint
-      Virtual Software
-
-      - Three groups who review the work: the client, the agency, and Darwill
-
+    images:
+      - image: /images/projects/Artboard 3@2x-1.png
+        sound: false
+        alt: v2
+        size: full
   - heading: Developing the diagram in six steps
     text: I developed the diagram over six steps. Early versions mapped the flow
       with simple line art. Later versions added 3D rendering, a color for each
