@@ -16,8 +16,7 @@ outcome: Converted a product strategy into a visual framework for a shipped
 responsibilities: Product design and strategy management through shipped iterations.
 team: I worked with a business analyst, a product manager, and development teams.
 categories:
-  - Product Manager
-  - UX/UI Designer
+  - UX/UI Design
 years: 2018-2019
 section: work
 start_year: 2018

@@ -16,7 +16,7 @@ responsibilities: Visual design, research, exploration, prototyping, and recomme
 team: A charting developer and the design systems team.
 categories:
   - Data Visualization
-  - UI Design
+  - UX/UI Design
   - Design Systems
 years: 2018-2019
 section: work

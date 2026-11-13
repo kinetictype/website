@@ -14,7 +14,7 @@ responsibilities: I worked on visual and concept design while the creative
   director provided content to me.
 team: I worked directly with the creative director.
 categories:
-  - Visualization Designer
+  - Data Visualization
 years: "2007"
 section: work
 start_year: 2007

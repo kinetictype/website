@@ -16,7 +16,7 @@ responsibilities: Created several screens to display shopping categories, view
 team: Met with the Google Shopping team and worked with Fluid (agency) designers.
 categories:
   - Service Design
-  - UX Design
+  - UX/UI Design
 years: "2013"
 section: work
 featured: false

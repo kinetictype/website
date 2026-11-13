@@ -12,7 +12,7 @@ outcome: Multiple charts in one consistent style across ten brochures.
 responsibilities: Information graphics and chart illustration.
 team: The art director and several designers.
 categories:
-  - Visualization Designer
+  - Data Visualization
 years: "2007"
 section: work
 start_year: 2007

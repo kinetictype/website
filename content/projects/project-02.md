@@ -17,7 +17,7 @@ website: https://dx.apiture.com/
 website_label: Apiture Developer Portal
 categories:
   - UX/UI Design
-  - Design System
+  - Design Systems
 years: 2024-2025
 section: work
 start_year: 2024

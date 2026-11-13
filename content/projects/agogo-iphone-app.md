@@ -15,9 +15,9 @@ outcome: User flows for obtaining the iOS beta, with success and error states,
 responsibilities: I worked on concepting the interactions for the beta launch.
 team: Product Owner and Engineers
 categories:
-  - UX Design
+  - UX/UI Design
   - Information Architecture
-  - Mobile App
+  - Mobile App Design
 years: "2012"
 section: work
 start_year: 2012

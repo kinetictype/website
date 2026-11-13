@@ -17,8 +17,8 @@ responsibilities: Visual design, information design, information architecture,
   and wireframes.
 team: Information Architects
 categories:
-  - Information Design
-  - UX Design
+  - UX/UI Design
+  - Information Architecture
 years: "2011 "
 section: work
 start_year: 2011

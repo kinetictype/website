@@ -226,6 +226,8 @@ content:
     fields:
       - { name: title, label: "Page title (also the menu, footer and link name everywhere)", type: string }
       - { name: description, label: SEO description, type: text }
+      - { name: filter_label, label: "Text before the filter chips (optional, e.g. Filter by:)", type: string }
+      - { name: filters, label: "Filter chips under the title, in this order. Each chip shows the projects that have the same Category tag (spelling must match; capitals and spaces don't matter). Other tags still show on the cards but don't get a chip", type: string, list: true }
       - { name: body, label: Intro, type: rich-text, options: { format: markdown } }
 
   - name: journal_page

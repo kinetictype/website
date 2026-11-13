@@ -441,9 +441,12 @@ function tags(p) {
   return `<ul class="tags" aria-label="Categories">${list.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`;
 }
 
+// filter keys for the Work page chips: one slug per category tag
+const catKeys = (p) => categories(p).map(slugify).join(" ");
+
 function card(p, withTags = false) {
   const f = (key) => fileProp("projects", p.slug, key);
-  return `<a class="card" href="${projectUrl(p)}">
+  return `<a class="card" href="${projectUrl(p)}" data-cats="${catKeys(p)}">
     <div class="card-media"><img${edImage(p, "cover", "cover_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, p.cover)}" alt="${escapeHtml(p.cover_alt || "")}" loading="lazy"></div>
     <div class="card-text">
       <h3${edText(f("title"))}>${escapeHtml(p.title)}</h3>
@@ -459,7 +462,7 @@ function row(p) {
   const drawerImg = p.drawer_image || p.cover;
   const drawerAlt = p.drawer_image ? p.drawer_image_alt || "" : p.cover_alt || "";
   const f = (key) => fileProp("projects", p.slug, key);
-  return `<li><details class="row">
+  return `<li data-cats="${catKeys(p)}"><details class="row">
     <summary>
       <span class="row-years"${edText(f("years"))}>${escapeHtml(String(p.years || ""))}</span>
       <span class="row-thumb">${p.cover ? `<img${edImage(p, "cover", "cover_alt", `@file[/content/projects/${p.slug}.md].`)} src="${assetUrl(p, p.cover)}" alt="" loading="lazy">` : ""}</span>
@@ -629,6 +632,10 @@ ${
 
 // Work index
 const work = page("work");
+// chips: the names listed in the CMS, kept only when at least one shown work project has that tag
+const workChips = (Array.isArray(work.data.filters) ? work.data.filters : [])
+  .map((c) => String(c || "").trim())
+  .filter((c) => c && [...featured, ...archive].some((p) => categories(p).some((t) => slugify(t) === slugify(c))));
 writeFile(
   "work/index.html",
   layout({
@@ -653,11 +660,34 @@ writeFile(
     body: `
 <section class="page-head">
   <h1${work.data.title ? edText("title") : ""}>${inline(work.data.title || "Work")}</h1>
+  ${workChips.length ? `<div class="work-filter" role="group" aria-label="Filter projects">
+    ${work.data.filter_label ? `<span class="filter-label">${escapeHtml(work.data.filter_label)}</span>` : ""}
+    <button type="button" class="chip" aria-pressed="true" data-filter="">All</button>
+    ${workChips.map((c) => `<button type="button" class="chip" aria-pressed="false" data-filter="${slugify(c)}">${escapeHtml(c)}</button>`).join("\n    ")}
+  </div>` : ""}
   <div class="lede"${edText("@content", "block")}>${markdown(work.body)}</div>
 </section>
 <section class="recent"><div class="cards">${featured.map((p) => card(p, true)).join("\n")}</div></section>
 ${passion.length ? `<section class="recent passion"><div class="section-head"><h2>${escapeHtml(home.data.passion_heading || "Passion projects")}</h2></div><div class="cards">${passion.map((p) => card(p, false)).join("\n")}</div></section>` : ""}
-<section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>`,
+<section class="archive"><ol class="rows">${archive.map(row).join("\n")}</ol></section>
+${workChips.length ? `<script>
+  // Work page chips: show only the projects tagged with the chosen category; without JavaScript everything shows
+  (() => {
+    const chips = [...document.querySelectorAll(".work-filter .chip")];
+    const items = [...document.querySelectorAll("main [data-cats]")];
+    const apply = (key) => {
+      chips.forEach((c) => c.setAttribute("aria-pressed", c.dataset.filter === key));
+      items.forEach((el) => (el.hidden = !!key && !el.dataset.cats.split(" ").includes(key)));
+      document.querySelectorAll("main section.recent, main section.archive").forEach((s) => (s.hidden = !s.querySelector("[data-cats]:not([hidden])")));
+    };
+    chips.forEach((c) => c.addEventListener("click", () => {
+      apply(c.dataset.filter);
+      try { history.replaceState(null, "", c.dataset.filter ? "#" + c.dataset.filter : location.pathname + location.search); } catch (e) {}
+    }));
+    const start = location.hash.slice(1);
+    if (start && chips.some((c) => c.dataset.filter === start)) apply(start);
+  })();
+</script>` : ""}`,
   })
 );
 

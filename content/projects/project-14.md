@@ -15,7 +15,7 @@ outcome: Diagrammatic flows, wireframes, and visual design, including a tab
 responsibilities: Visual design, interaction design, concept design.
 team: Product manager and engineers.
 categories:
-  - UX Design
+  - UX/UI Design
 years: 2012–2013
 section: work
 start_year: 2012

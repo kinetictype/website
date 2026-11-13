@@ -15,7 +15,7 @@ responsibilities: "I worked on interaction design and concept design. "
 team: Reported to Cisco's principal UX designer, and worked with a product
   manager to review requirements.
 categories:
-  - UX Design
+  - UX/UI Design
 years: "2010"
 section: work
 start_year: 2010

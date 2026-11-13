@@ -13,7 +13,7 @@ responsibilities: Information architecture, application mapping, and spec
   documentation.
 team: Product manager
 categories:
-  - Information Architect
+  - Information Architecture
 years: 2011-2012
 section: work
 start_year: 2011

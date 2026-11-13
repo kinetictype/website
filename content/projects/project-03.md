@@ -22,8 +22,8 @@ responsibilities: Lead UX Designer; synthesized existing research, conducted
 team: A new-hire designer, a content designer, and the product team collaborated
   with the travel team on their sub-library approach.
 categories:
-  - "UX/UI Design "
-  - Design System Library
+  - UX/UI Design
+  - Design Systems
 years: 2021–2023
 section: work
 start_year: 2021

@@ -16,9 +16,9 @@ outcome: "Among User Interface work and marketing materials, I mapped out his
 responsibilities: Visual Design, Interface Design, Design System management
 team: The departing system architect and the management team.
 categories:
-  - UX Design
-  - Information Design
-  - Marketing Materials
+  - UX/UI Design
+  - Information Architecture
+  - "Visual & Motion"
 years: 2007 – 2008
 section: work
 start_year: 2007

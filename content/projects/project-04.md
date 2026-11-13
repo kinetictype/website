@@ -17,7 +17,7 @@ responsibilities: I worked on the visual design, interaction design, design
   system, and concept design.
 team: "Managing directors and engineers "
 categories:
-  - Interactive Data Visualization
+  - Data Visualization
   - UX/UI Design
 years: 2019-2021
 section: work

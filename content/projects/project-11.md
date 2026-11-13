@@ -15,8 +15,8 @@ responsibilities: Daily, I created visual stories for the printed paper and
   digital visual explanations for in-depth reporting on ChicagoTribune.com.
 team: " Reporters, visualization artists, illustrators, page designers, and editors."
 categories:
+  - Data Visualization
   - Information Graphics
-  - Interactive Data Visualization
 years: 2004-2007
 section: work
 start_year: 2004

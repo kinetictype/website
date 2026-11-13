@@ -16,7 +16,7 @@ responsibilities: Product design, including the system diagram, UI requirements,
   task flows, and wireframes.
 team: An engineering lead.
 categories:
-  - UX Design
+  - UX/UI Design
 years: 2015-2016
 section: work
 start_year: 2015

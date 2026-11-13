@@ -15,7 +15,7 @@ responsibilities: Data analysis, led critique sessions, and delivered mockups.
 team: A data scientist, a researcher, and a product manager.
 categories:
   - Data Visualization
-  - UX Design
+  - UX/UI Design
 years: "2017"
 section: work
 start_year: 2017
