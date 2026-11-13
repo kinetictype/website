@@ -16,7 +16,6 @@ content/
     work.md           ← Work page intro
     journal.md        ← Journal page title and intro line
     imprint.md        ← Impressum (fill in the [brackets] before launch)
-    privacy.md        ← Datenschutz (fill in the [brackets] before launch)
   projects/           ← one file per project (project-01 … project-15, passion-01 … passion-03)
   journal/            ← one file per Journal entry (entry-01 … entry-12)
 templates/
