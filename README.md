@@ -173,10 +173,32 @@ npm run preview    # builds and serves at http://localhost:8000
 
 ## What's generated for SEO
 
-Each page gets a unique title, meta description, canonical URL on kierawestphal.com, Open Graph and Twitter
-card tags, and a language tag. The homepage and About page include schema.org `Person` data; project pages
-include `CreativeWork` data. The build also writes `sitemap.xml`, `robots.txt`, `404.html`, and the `CNAME`
-file that tells GitHub Pages to serve kierawestphal.com.
+Everything below is written by `build.js` from the content files on every Pages CMS save, so it stays current
+without editing code. Links always use the main domain from Site settings (https://kierawestphal.com), even while
+the site is previewed at kinetictype.github.io/website.
+
+- **Every page:** a unique title, meta description, canonical URL, robots tag, Open Graph and Twitter card tags
+  (with image alt text), and schema.org structured data with a breadcrumb trail. The 404 page is marked `noindex`.
+- **Descriptions:** the page's *SEO description*. If it is empty, still says "Placeholder…", or is only a list of
+  keywords, the tagline, summary or excerpt is used instead (trimmed to 160 characters).
+- **Link-preview image:** project pages use their top image, drop-down image or cover (SVG logos are skipped,
+  since previews can't show them); journal entries use their cover. Everything else uses the site preview image.
+- **Structured data:** homepage `WebSite` + `Person`; Work `CollectionPage`; projects `CreativeWork` (client,
+  years, categories); Journal `Blog`; entries `BlogPosting`; Contact `ContactPage`.
+- **Files:** `sitemap.xml`, `robots.txt`, `llms.txt` (a plain-text summary of the site, projects and journal for AI
+  models, following https://llmstxt.org), `404.html`, and the `CNAME` file that tells GitHub Pages to serve kierawestphal.com.
+
+### The link-preview image
+
+`content/images/og-image.png` (1200 × 630) is a picture of the homepage. After changing the homepage, render a new one:
+
+```bash
+npm install --no-save playwright && npx playwright install chromium   # first time only
+npm run build
+npm run og-image                       # saves content/images/og-image.png
+```
+
+Or upload any 1200 × 630 image as **Link-preview image** in Site settings.
 
 ## New projects get the standard structure automatically
 When you create a project in Pages CMS, the deploy workflow runs `scripts/fill-sections.js`, which adds the standard

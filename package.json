@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.js",
     "build:cloudcannon": "CLOUDCANNON_EDIT=1 node build.js",
-    "preview": "node build.js && python3 -m http.server 8000 -d dist"
+    "preview": "node build.js && python3 -m http.server 8000 -d dist",
+    "og-image": "node scripts/render-og-image.js"
   },
   "engines": {
     "node": ">=18"
