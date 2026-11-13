@@ -78,9 +78,7 @@ sections:
     images:
       - image: /images/projects/darwill/05_process-diagram.png
         sound: false
-        alt: Final BreezeWay diagram showing files moving from the asset originator
-          through ImageQuest, the design team, Prepare, and InSite to the
-          client, agency, and Darwill
+        alt: Final BreezeWay diagram
         caption: The final diagram, with callouts explaining each step from asset upload
           to collaborative online proofing.
         size: full
