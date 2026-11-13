@@ -56,21 +56,6 @@ sections:
     text: I developed the diagram over six steps. Early versions mapped the flow
       with simple line art. Later versions added 3D rendering, a color for each
       tool, and callouts that explain what happens at each point in the process.
-    images:
-      - image: /images/projects/darwill/01_breezeway-steps-1-3-5.png
-        sound: false
-        alt: Steps 1, 3, and 5 of the BreezeWay diagram, moving from flat line art to 3D
-          rendering with callouts
-        caption: Steps 1, 3, and 5 move from flat line art to 3D spheres, then add
-          callouts for each tool.
-        size: full
-      - image: /images/projects/darwill/02_breezeway-steps-2-4-6.png
-        sound: false
-        alt: Steps 2, 4, and 6 of the BreezeWay diagram, ending with a color-coded
-          legend beside the final diagram
-        caption: Steps 2, 4, and 6 refine the flow, test rendering styles for InSite,
-          and pair the diagram with a color-coded legend.
-        size: full
   - heading: Pairing the diagram with a legend
     text: To keep the diagram uncluttered, I moved the detailed descriptions into
       color-coded panels, one for each tool. Each panel uses the same color as
