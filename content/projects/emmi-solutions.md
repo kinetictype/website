@@ -83,7 +83,7 @@ sections:
         alt: The original Schedule an Emmi screen, with patient, doctor, and program
           fields in one dense form
         caption: "Before: patient, doctor, and program fields in one form."
-        size: full
+        size: half
       - image: /images/projects/alberto1_after.jpg
         sound: false
         alt: The redesigned Schedule an Emmi screen, with sections for patient
@@ -91,7 +91,7 @@ sections:
         caption: "After: patient information, doctor information, and programs available
           each have their own group, with clearer ways to narrow the program
           list."
-        size: full
+        size: half
   - heading: A shared picture of the process
     text: >+
       Management used the diagram to plan staffing and process steps, and to
