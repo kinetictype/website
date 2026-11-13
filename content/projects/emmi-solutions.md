@@ -33,22 +33,11 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: A process only one person knew
-    text: >+
-      Emmi Solutions makes Emmi programs, interactive programs that help
-      patients understand a procedure before they have it. As the company
-      developed partnerships, one question kept coming up: how is the software
-      produced?
-
-
-      - The lead engineer, the system's architect, was the one person who knew
-      the whole process, and he was leaving the company.
-
-      - Once he left, no one could field those questions, so we needed
-      documentation.
-
-      - Alongside that, the Schedule an Emmi section of Emmi Manager needed a
-      clearer structure.
-
+    text: "Emmi Solutions made Emmi programs, interactive videos made with Flash
+      that help patients understand a procedure before they have it. As the
+      company developed partnerships, one question kept coming up: how is the
+      software produced? The lead engineer, the system's architect, was the one
+      person who knew the whole process, and he was leaving the company."
     images:
       - image: /images/projects/NEWdiagramBefore.png
         sound: false
