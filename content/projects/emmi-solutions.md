@@ -81,16 +81,8 @@ sections:
           list."
         size: half
   - heading: A shared picture of the process
-    text: >+
-      Management used the diagram to plan staffing and process steps, and to
-      communicate with potential investors and shareholders.
-
-
-      - Documentation of the production process that outlasted the architect's
-      departure
-
-      - A clearer schedule and an Emmi screen in Emmi Manager
-
-      - Interface work and marketing materials alongside both
+    text: The documentation of the production process that outlasted the architect's
+      departure. Management used the diagram to plan staffing and process steps
+      and to communicate with potential investors and shareholders.
 ---
 Emmi Solutions made Emmi programs, interactive videos made with Flash, that help patients understand a medical procedure before they have it. Management used the diagram to plan staffing and process steps and to communicate with potential investors and shareholders. 
