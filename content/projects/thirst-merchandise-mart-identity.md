@@ -99,4 +99,4 @@ sections:
       and more understated, but exploring movable identity marks with Rick
       Valicenti was a career highlight.
 ---
-Working with [Rick Valicenti](https://www.designboom.com/design/rick-vallecenti-3st-interview/) was a career highlight. I designed the logo concept, color palette, block-theme variations, and an animated version of the mark for Merchandise Mart Properties. In the end, they wanted something less dynamic and more understated. In the meantime, we explored movable identity marks together, which was a lot of fun!
+Merchandise Mart Properties was a large building space that hosted different events. Its modularity began the conceptualization of building an identity mark with block-themed variations and an animated version of the mark. In the end, they wanted something less dynamic and more understated. In the meantime, we explored movable identity marks together, which was a lot of fun!
