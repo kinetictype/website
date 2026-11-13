@@ -20,7 +20,7 @@ years: "2007"
 section: work
 start_year: 2007
 featured: false
-hidden: false
+hidden: true
 description: Information architecture for the Restylane PracticeBuilder, moving
   a CD-ROM of practice-building tools for dermatologists into a microsite on
   RestylaneUSA.com.
