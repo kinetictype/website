@@ -60,7 +60,8 @@ sections:
       the way. Apiture's ease of communication made sharing work more fun. We
       often reviewed work and moved toward the details that make a product work.
     images:
-      - sound: false
+      - video: /images/projects/DevPortal_addNewcustomers_small.mp4
+        sound: false
         alt: Prototype of Test Customers for Apiture
         size: half-text
   - heading: Designing a Design System Library
