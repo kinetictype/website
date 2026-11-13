@@ -9,8 +9,7 @@ timeline: October 2011 – February 2012
 goals: Define the information architecture and spec documentation for the TiVo
   app for iPhone.
 outcome: An application map (v1.6) and spec documentation.
-responsibilities: Information architecture, application mapping, and spec
-  documentation.
+responsibilities: Information architecture, application mapping, and spec documentation.
 team: Product manager
 categories:
   - Information Architecture
@@ -18,13 +17,14 @@ years: 2011-2012
 section: work
 start_year: 2011
 featured: false
-hidden: false
+hidden: true
 description: Information architecture and spec documentation for the TiVo app
   for iPhone, mapped as a single application map of every screen.
 cover: /images/logos/tivo.svg
 cover_alt: TiVo logo
 drawer_image: /images/projects/project-08-tivo/01_application-map-page.png
 drawer_image_alt: Application map for the TiVo iPhone app, version 1.6
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Mapping the TiVo app for iPhone
@@ -35,8 +35,8 @@ sections:
       recording, and managing shows.
 
 
-      - Setup scans for TiVo boxes, connects to the selected DVR, and signs
-      into TiVo.com.
+      - Setup scans for TiVo boxes, connects to the selected DVR, and signs into
+      TiVo.com.
 
       - Seven main sections: Info, Guide, My Shows, Browse, More, Search, and
       Remote.
@@ -46,8 +46,8 @@ sections:
         sound: false
         alt: TiVo information architecture and spec documentation, showing the
           application map for the iPhone app
-        caption: The application map, version 1.6, part of the information
-          architecture and spec documentation for the TiVo iPhone app.
+        caption: The application map, version 1.6, part of the information architecture
+          and spec documentation for the TiVo iPhone app.
         size: full
   - heading: One map for every screen
     text: >+
@@ -55,8 +55,8 @@ sections:
       app and to specify each screen.
 
 
-      - Every screen has a number that reflects its place in the hierarchy,
-      from 0.1 Setup to 4.111 Category List.
+      - Every screen has a number that reflects its place in the hierarchy, from
+      0.1 Setup to 4.111 Category List.
 
       - A key marks web pages, screens whose visibility varies, and sections
       that repeat.
@@ -68,8 +68,8 @@ sections:
       and when someone continues as a guest.
 
 
-      - Paths for checking again, sign-in help on TiVo.com, and in-app help
-      and troubleshooting
+      - Paths for checking again, sign-in help on TiVo.com, and in-app help and
+      troubleshooting
 
       - An away mode that connects to the Guide and Browse sections
 
@@ -86,11 +86,12 @@ sections:
         alt: Application map for the TiVo iPhone app, version 1.6, from setup and
           sign-in to the Info, Guide, My Shows, Browse, More, Search, and Remote
           sections
-        caption: Application map for the iPhone app, v1.6, from setup and sign-in on
-          the left to the seven main sections on the right.
+        caption: Application map for the iPhone app, v1.6, from setup and sign-in on the
+          left to the seven main sections on the right.
         size: full
   - heading: An application map and spec
     text: I delivered an application map (v1.6) and spec documentation for the TiVo
-      app for iPhone. The full [application map](https://www.dropbox.com/s/jqiiowfe4jkig7e/IA_iPhone_app_1.pdf)
-      is available as a PDF.
+      app for iPhone. The full [application
+      map](https://www.dropbox.com/s/jqiiowfe4jkig7e/IA_iPhone_app_1.pdf) is
+      available as a PDF.
 ---
