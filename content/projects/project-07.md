@@ -15,7 +15,6 @@ team: Service Design Team lead for a team composed of a creative technologist
   and a designer.
 categories:
   - Service Design
-  - Mobile App Design
 years: "2014"
 section: work
 start_year: 2014

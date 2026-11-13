@@ -15,7 +15,6 @@ responsibilities: Illustration, hand-drawn in ink on paper.
 team: The page designer, who placed and colored the drawings.
 categories:
   - "Visual & Motion"
-  - Illustration
 years: "2009"
 section: work
 start_year: 2009

@@ -17,7 +17,6 @@ team: Product Owner and Engineers
 categories:
   - UX/UI Design
   - Information Architecture
-  - Mobile App Design
 years: "2012"
 section: work
 start_year: 2012

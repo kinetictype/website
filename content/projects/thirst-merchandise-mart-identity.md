@@ -14,7 +14,6 @@ responsibilities: Visual design, interaction design, concept design.
 team: Worked under the direction of Rick Valicenti.
 categories:
   - "Visual & Motion"
-  - Brand Design
 years: "2008"
 section: work
 start_year: 2008

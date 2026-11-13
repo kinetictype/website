@@ -16,7 +16,6 @@ responsibilities: Daily, I created visual stories for the printed paper and
 team: " Reporters, visualization artists, illustrators, page designers, and editors."
 categories:
   - Data Visualization
-  - Information Graphics
 years: 2004-2007
 section: work
 start_year: 2004

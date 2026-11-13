@@ -20,7 +20,6 @@ team: Worked directly with three stakeholders and a program manager.
 categories:
   - UX/UI Design
   - Service Design
-  - Stakeholder Management
 years: "2017"
 section: work
 start_year: 2017

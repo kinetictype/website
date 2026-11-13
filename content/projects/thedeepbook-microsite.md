@@ -12,7 +12,6 @@ website: https://bit.ly/4jIWREn
 website_label: The Deep Book
 categories:
   - "Visual & Motion"
-  - Motion Graphics
 years: "2007"
 section: work
 start_year: 2007
