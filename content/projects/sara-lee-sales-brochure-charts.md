@@ -65,7 +65,7 @@ sections:
           percent change, and frozen breakfast brands
         caption: Fresh sandwich chain sales, dollar sales change, and frozen breakfast
           brands, drawn as dimensional ribbons and bars.
-        size: full
+        size: text-half
   - heading: A palette for each brand
     text: Each brochure took its colors from the brand it promoted, such as deep red
       for one and green and gold for Hillshire Farm, while the dimension,
