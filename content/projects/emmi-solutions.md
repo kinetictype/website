@@ -66,7 +66,7 @@ sections:
       the visualization across the company.
 
     images:
-      - image: /images/projects/02_production-process-diagram-1.png
+      - image: /images/projects/Process_NewProgram_2021.png
         sound: false
         alt: Emmi Solutions new program process diagram, with phases from prep and
           research through alpha, beta, testing, and deployment, and a row for
