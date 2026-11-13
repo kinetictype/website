@@ -32,7 +32,8 @@ sections:
     text: The traditional way took days or weeks; designers tracked down images,
       printers prepared files, and marked-up proofs went back and forth by
       messenger or overnight mail. BreezeWay brought those steps online, so
-      approval took minutes or hours.
+      approval took minutes or hours. I created a before-and-after information
+      graphic for a brochure and several iterations.
     images:
       - image: /images/projects/Artboard 2@2x-1.png
         sound: false
@@ -41,12 +42,10 @@ sections:
           left, prepress the BreezeWay on the right."
         size: half-text
   - heading: Making a complex process clear
-    text: >+
-      My goal was a diagram that marketers could read at a glance, showing how
+    text: My goal was a diagram that marketers could read at a glance, showing how
       files move through Darwill's four tools and who is involved at each step.
       How might we show the time BreezeWay saves, from days and weeks to minutes
       and hours?
-
     images:
       - image: /images/projects/Artboard 3@2x-1.png
         sound: false
@@ -54,8 +53,8 @@ sections:
         size: full
   - heading: Developing the diagram in six steps
     text: I developed the diagram over six steps. Early versions mapped the flow
-      with simple line art. Later versions added 3D rendering, a color for each
-      tool, and callouts that explain what happens at each point in the process.
+      with line art. Later versions added 3D rendering, a color for each tool,
+      and callouts that explain what happens at each point in the process.
     images:
       - image: /images/projects/Artboard 4@2x-2.png
         sound: false
@@ -70,24 +69,12 @@ sections:
         sound: false
         alt: v4
         size: full
-  - heading: Prepress the BreezeWay
-    text: >+
-      The final diagram follows a file from the person who creates it to the
-      final approval for print.
-
-
-      - Photographers and illustrators upload their files directly into
-      ImageQuest.
-
-      - The design team lays out pages with FPO lo-res images, then creates
-      press-ready PDFs with Prepare.
-
-      - Lo-res images are automatically replaced with hi-res versions.
-
-      - PDFs are uploaded to InSite, where the client, agency, and Darwill
-      review proofs online, and Matchprint Virtual Software shows color-accurate
-      proofs on screen.
-
+  - heading: Infographics to Explain a Process
+    text: After my time at the Chicago Tribune as a visual journalist, I began
+      creating infographic illustrations that explained complex projects in a
+      simple, clear way. Building on this skill, I developed a consultancy that
+      involved listening closely and iterating with clients to bring graphics to
+      life.
     images:
       - image: /images/projects/darwill/05_process-diagram.png
         sound: false
