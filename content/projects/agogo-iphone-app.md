@@ -22,7 +22,7 @@ years: "2012"
 section: work
 start_year: 2012
 featured: false
-hidden: false
+hidden: true
 description: User flows and wireframes for the beta launch of Agogo, a
   personalized streaming audio app that combines music, podcasts, and news.
 cover: /images/logos/agogo.svg
