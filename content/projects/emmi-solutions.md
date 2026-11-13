@@ -33,11 +33,10 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: A process only one person knew
-    text: "Emmi Solutions made Emmi programs, interactive videos made with Flash
-      that help patients understand a procedure before they have it. As the
-      company developed partnerships, one question kept coming up: how is the
-      software produced? The lead engineer, the system's architect, was the one
-      person who knew the whole process, and he was leaving the company."
+    text: "As the company developed partnerships, one question kept coming up: how
+      is the software produced? The lead engineer, the system's architect, was
+      the one person who knew the whole process, and he was leaving the
+      company."
     images:
       - image: /images/projects/NEWdiagramBefore.png
         sound: false
@@ -94,4 +93,4 @@ sections:
 
       - Interface work and marketing materials alongside both
 ---
-Management used the diagram to plan staffing and process steps, and to communicate with potential investors and shareholders. 
+Emmi Solutions made Emmi programs, interactive videos made with Flash, that help patients understand a medical procedure before they have it. Management used the diagram to plan staffing and process steps and to communicate with potential investors and shareholders. 
