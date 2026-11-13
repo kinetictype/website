@@ -179,6 +179,12 @@ SITE.domain = (SITE.domain || "").replace(/^https?:\/\//, "").replace(/\/$/, "")
 SITE.url = `https://${SITE.domain}`;
 
 const page = (name) => parseFile(path.join(CONTENT, "pages", `${name}.md`));
+/* Page names come from each page's "Page title" in Pages CMS and are used everywhere the page is
+   named: the menu, the footer, breadcrumbs, browser tabs, structured data and llms.txt.
+   Renaming a page in the CMS (e.g. Journal → Blog) updates all of them on the next save.
+   The words here are only fallbacks for an empty title. */
+const PAGE_FALLBACK = { home: "Home", work: "Work", journal: "Journal", contact: "Contact", imprint: "Imprint" };
+const titleOf = (name) => String(page(name).data.title || "").replace(/[*_`]/g, "").trim() || PAGE_FALLBACK[name] || name;
 
 /* Projects are listed most recent first, using the "Years shown on the site" text:
    newest end year first (Today / present counts as now), then newest start year, then title.
@@ -298,7 +304,7 @@ const WEBSITE_ID = SITE.url + "/#website";
 function withCrumbs(schema, crumbs) {
   const list = {
     "@type": "BreadcrumbList",
-    itemListElement: [["Home", "/"], ...crumbs].map(([name, u], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE.url + u })),
+    itemListElement: [[titleOf("home"), "/"], ...crumbs].map(([name, u], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE.url + u })),
   };
   const { "@context": _, ...rest } = schema;
   return { "@context": "https://schema.org", "@graph": [rest, list] };
@@ -314,9 +320,9 @@ function layout({ title, description, urlPath, body, image, imageAlt, type = "we
   const ogSize = ownImage ? "" : `\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">`;
   const ogAlt = escapeHtml(ownImage ? imageAlt || fullTitle : `${SITE.name}, ${SITE.job_title || SITE.tagline || ""}`.replace(/, $/, ""));
   const nav = [
-    ["/work/", "Work"],
-    ["/journal/", "Journal"],
-    ["/contact/", "Contact"],
+    ["/work/", titleOf("work")],
+    ["/journal/", titleOf("journal")],
+    ["/contact/", titleOf("contact")],
   ];
   return `<!doctype html>
 <html lang="${SITE.language || "en"}">
@@ -350,7 +356,7 @@ ${EDIT ? `<style>/* editor preview only: SVG logos are not inlined here, so keep
 <header class="site-header">
   <a class="wordmark" href="/">${escapeHtml(SITE.name)}</a>
   <nav aria-label="Main">
-    ${nav.map(([href, label]) => `<a href="${href}"${urlPath.startsWith(href) ? ' aria-current="page"' : ""}>${label}</a>`).join("\n    ")}
+    ${nav.map(([href, label]) => `<a href="${href}"${urlPath.startsWith(href) ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`).join("\n    ")}
   </nav>
 </header>
 <main id="main">
@@ -362,7 +368,7 @@ ${body}
     <a class="footer-email" href="mailto:${SITE.email}">${SITE.email}</a>
   </div>
   <nav aria-label="Footer">
-    <a href="/imprint/">Imprint</a>
+    <a href="/imprint/">${escapeHtml(titleOf("imprint"))}</a>
   </nav>
 </footer>
 <div class="row-preview" aria-hidden="true"></div>
@@ -626,13 +632,13 @@ const work = page("work");
 writeFile(
   "work/index.html",
   layout({
-    title: work.data.title || "Work",
+    title: titleOf("work"),
     description: work.data.description,
     urlPath: "/work/",
     schema: withCrumbs(
       {
         "@type": "CollectionPage",
-        name: plainText(work.data.title || "Work"),
+        name: titleOf("work"),
         url: SITE.url + "/work/",
         description: seoDescription(work.data.description),
         isPartOf: { "@id": WEBSITE_ID },
@@ -642,7 +648,7 @@ writeFile(
           itemListElement: projects.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: SITE.url + projectUrl(p), name: p.title })),
         },
       },
-      [[plainText(work.data.title || "Work"), "/work/"]]
+      [[titleOf("work"), "/work/"]]
     ),
     body: `
 <section class="page-head">
@@ -1020,7 +1026,7 @@ projects.forEach((p, i) => {
           isPartOf: { "@id": WEBSITE_ID },
           inLanguage: SITE.language || "en",
         },
-        [["Work", "/work/"], [p.title, projectUrl(p)]]
+        [[titleOf("work"), "/work/"], [p.title, projectUrl(p)]]
       ),
       body: caseStudy(p),
     })
@@ -1044,20 +1050,20 @@ const JOURNAL_PAGE_SIZE = 9;
   writeFile(
     "journal/index.html",
     layout({
-      title: jp.data.title || "Journal",
+      title: titleOf("journal"),
       description: jp.data.description,
       urlPath: "/journal/",
       schema: withCrumbs(
         {
           "@type": "Blog",
-          name: plainText(jp.data.title || "Journal"),
+          name: titleOf("journal"),
           url: SITE.url + "/journal/",
           description: seoDescription(jp.data.description),
           isPartOf: { "@id": WEBSITE_ID },
           author: { "@id": PERSON_ID },
           blogPost: entries.map((e) => ({ "@type": "BlogPosting", headline: e.title, url: SITE.url + entryUrl(e), datePublished: e.iso || undefined })),
         },
-        [[plainText(jp.data.title || "Journal"), "/journal/"]]
+        [[titleOf("journal"), "/journal/"]]
       ),
       bodyClass: "journal",
       body: `
@@ -1065,7 +1071,7 @@ const JOURNAL_PAGE_SIZE = 9;
   <h1${jp.data.title ? edText("title") : ""}>${inline(jp.data.title || "Journal")}</h1>
   <div class="lede"${edText("@content", "block")}>${markdown(jp.body)}</div>
 </section>
-${cats.length > 1 ? `<div class="journal-filter" role="group" aria-label="Filter journal entries">
+${cats.length > 1 ? `<div class="journal-filter" role="group" aria-label="Filter ${escapeHtml(titleOf("journal"))} entries">
   <span class="filter-label">${escapeHtml(jp.data.filter_label || "Filter by:")}</span>
   <button type="button" class="chip" aria-pressed="true" data-filter="">All</button>
   ${cats.map((c) => `<button type="button" class="chip" aria-pressed="false" data-filter="${slugify(c)}">${escapeHtml(c)}</button>`).join("\n  ")}
@@ -1132,7 +1138,7 @@ ${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type
             isPartOf: { "@id": WEBSITE_ID },
             inLanguage: SITE.language || "en",
           },
-          [[plainText(page("journal").data.title || "Journal"), "/journal/"], [e.title, entryUrl(e)]]
+          [[titleOf("journal"), "/journal/"], [e.title, entryUrl(e)]]
         ),
         body: `
 <article class="case">
@@ -1144,7 +1150,7 @@ ${entries.length > JOURNAL_PAGE_SIZE ? `<div class="load-more-wrap"><button type
   ${e.cover ? `<div class="media media-1 case-hero"><figure><img${edImage(e, "cover", "cover_alt")} src="${imageUrl(e.cover)}" alt="${escapeHtml(e.cover_alt || "")}"></figure></div>` : ""}
   <div class="case-body"${edText("@content", "block")}>${markdown(e.body)}</div>
 </article>
-${entries.length > 1 ? `<nav class="next-project" aria-label="Next journal entry">
+${entries.length > 1 ? `<nav class="next-project" aria-label="Next ${escapeHtml(titleOf("journal"))} entry">
   <a href="${entryUrl(older)}">
     <span class="next-label">Next entry ${ARROW}</span>
     <span class="next-title">${escapeHtml(older.title)}</span>
@@ -1177,23 +1183,23 @@ for (const name of ["contact", "imprint"]) {
   writeFile(
     `${name}/index.html`,
     layout({
-      title: data.title,
+      title: titleOf(name),
       description: data.description,
       urlPath: `/${name}/`,
       schema: withCrumbs(
         {
           "@type": name === "contact" ? "ContactPage" : "WebPage",
-          name: plainText(data.title || name),
+          name: titleOf(name),
           url: `${SITE.url}/${name}/`,
           description: seoDescription(data.description),
           isPartOf: { "@id": WEBSITE_ID },
           ...(name === "contact" ? { mainEntity: { "@id": PERSON_ID } } : {}),
         },
-        [[plainText(data.title || name), `/${name}/`]]
+        [[titleOf(name), `/${name}/`]]
       ),
       bodyClass: `text ${name}`,
       body: `
-<section class="page-head"><h1${data.title ? edText("title") : ""}>${inline(data.title || name)}</h1></section>
+<section class="page-head"><h1${data.title ? edText("title") : ""}>${inline(data.title || titleOf(name))}</h1></section>
 ${COLUMN_PAGES.includes(name) ? columns(withEmail, name, data) : `<div class="prose">${markdown(withEmail)}</div>`}`,
     })
   );
@@ -1253,20 +1259,20 @@ writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap
     "",
     "## Pages",
     "",
-    line("Home", "/", "Introduction, recent work and project list"),
-    line(work.data.title || "Work", "/work/", seoDescription(work.data.description)),
-    line(jp.data.title || "Journal", "/journal/", seoDescription(jp.data.description)),
-    line(page("contact").data.title || "Contact", "/contact/", seoDescription(page("contact").data.description)),
+    line(titleOf("home"), "/", "Introduction, recent work and project list"),
+    line(titleOf("work"), "/work/", seoDescription(work.data.description)),
+    line(titleOf("journal"), "/journal/", seoDescription(jp.data.description)),
+    line(titleOf("contact"), "/contact/", seoDescription(page("contact").data.description)),
     "",
     ...(featured.length ? ["## Selected work", "", ...featured.map(projectLine), ""] : []),
     ...(archive.length ? ["## More projects", "", ...archive.map(projectLine), ""] : []),
     ...(passion.length ? ["## Passion projects", "", ...passion.map(projectLine), ""] : []),
     ...(entries.length
-      ? [`## ${plainText(jp.data.title || "Journal")}`, "", ...entries.map((e) => line(e.title, entryUrl(e), [`${e.iso}${e.category ? `, ${e.category}` : ""}.`, seoDescription(e.description, e.excerpt, e.body)].join(" "))), ""]
+      ? [`## ${titleOf("journal")}`, "", ...entries.map((e) => line(e.title, entryUrl(e), [`${e.iso}${e.category ? `, ${e.category}` : ""}.`, seoDescription(e.description, e.excerpt, e.body)].join(" "))), ""]
       : []),
     "## Optional",
     "",
-    line(page("imprint").data.title || "Imprint", "/imprint/", "Legal notice"),
+    line(titleOf("imprint"), "/imprint/", "Legal notice"),
     line("Sitemap", "/sitemap.xml", "Every page on the site"),
     "",
   ].join("\n");

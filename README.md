@@ -107,7 +107,7 @@ an image, the date (shown as DD.MM.YYYY), and the title, with a **Filter by** ro
 
 - **Add an entry:** Journal → **Add an entry**. Fill in Title, Date, Category, an image and its description, then write the entry.
 - **Categories** are free text. Every category you use appears as a filter button automatically (use the same spelling each time).
-- **Intro line and page title:** edit **Journal page**.
+- **Intro line and page title:** edit **Journal page**. The page title is also the name in the menu, breadcrumbs, browser tab and llms.txt (it is currently "Blog"); every page title works this way.
 - The 12 "Journal Entry Title" files are placeholders: edit them, or delete the ones you don't need.
 
 ### Download CV link
