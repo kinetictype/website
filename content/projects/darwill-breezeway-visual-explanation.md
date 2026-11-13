@@ -34,14 +34,14 @@ sections:
       messenger or overnight mail. BreezeWay brought those steps online, so
       approval took minutes or hours.
     images:
-      - image: /images/projects/NEW_brochure-spread.png
+      - image: /images/projects/Artboard 2@2x-1.png
         sound: false
         alt: Brochure spread comparing prepress the traditional way, with proofs passed
           between the design team, printer, client, and agency, to prepress the
           BreezeWay
         caption: "The finished brochure spread: prepress the traditional way on the
           left, prepress the BreezeWay on the right."
-        size: full
+        size: half-text
   - heading: Making a complex process clear
     text: >+
       My goal was a diagram that marketers could read at a glance, showing how
