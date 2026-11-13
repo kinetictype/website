@@ -41,7 +41,7 @@ sections:
     images:
       - image: /images/projects/Dev Portal-Context.png
         sound: false
-        alt: "Placeholder: overview image"
+        alt: architecture
         caption: To understand the domain, I drew a map of the sections with their
           significance.
         size: half-text
