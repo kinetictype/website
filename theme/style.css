@@ -99,7 +99,7 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .footer-tagline, .footer-email { color: var(--muted); text-decoration: none; }
 .footer-tagline:hover, .footer-email:hover { color: var(--accent); }
 .site-footer nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; margin-left: auto; }
-/* Footer on one line: tagline and email on the left, Contact, Imprint, Privacy on the right; 16px between items */
+/* Footer on one line: tagline and email on the left, Contact and Imprint on the right; 16px between items */
 @media (min-width: 641px) {
   .site-footer { align-items: baseline; }
   .site-footer > div { flex-direction: row; gap: 16px; }

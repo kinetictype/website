@@ -310,7 +310,6 @@ ${body}
   <nav aria-label="Footer">
     <a href="/contact/">Contact</a>
     <a href="/imprint/">Imprint</a>
-    <a href="/privacy/">Privacy</a>
   </nav>
 </footer>
 <div class="row-preview" aria-hidden="true"></div>
@@ -1055,7 +1054,7 @@ function columns(md, name, data = {}) {
 }
 
 // Simple text pages
-for (const name of ["contact", "imprint", "privacy"]) {
+for (const name of ["contact", "imprint"]) {
   const { data, body } = page(name);
   const withEmail = body.replace(/\{\{email\}\}/g, SITE.email).replace(/\{\{name\}\}/g, SITE.name);
   writeFile(
@@ -1083,7 +1082,7 @@ writeFile(
 );
 
 // SEO files
-const urls = ["/", "/work/", "/journal/", "/contact/", ...projects.map(projectUrl), ...entries.map(entryUrl), "/imprint/", "/privacy/"];
+const urls = ["/", "/work/", "/journal/", "/contact/", ...projects.map(projectUrl), ...entries.map(entryUrl), "/imprint/"];
 const today = new Date().toISOString().slice(0, 10);
 writeFile(
   "sitemap.xml",

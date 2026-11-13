@@ -264,16 +264,6 @@ content:
       - { name: description, label: SEO description, type: text }
       - { name: body, label: Text, type: rich-text, options: { format: markdown } }
 
-  - name: privacy
-    label: Privacy (Datenschutz)
-    type: file
-    path: content/pages/privacy.md
-    format: yaml-frontmatter
-    fields:
-      - { name: title, label: Page title, type: string }
-      - { name: description, label: SEO description, type: text }
-      - { name: body, label: Text, type: rich-text, options: { format: markdown } }
-
   # ------------------------------------------------------------
   - name: settings
     label: Site settings & SEO
