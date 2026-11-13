@@ -105,7 +105,7 @@ sections:
         sound: false
         alt: A collection of charts from the Sara Lee brochure series
         caption: Charts from across the brochure series, in one consistent style.
-        size: full
+        size: text-half
   - heading: Jazzy Infographics
     text: "I was brought in to work with Launch Design Agency to build infographics
       with a dimension effect. I broke traditional graph rules for clarity and
