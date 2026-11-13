@@ -43,7 +43,7 @@ sections:
       - BreezeWay brought those steps online, so approval took minutes or hours.
 
     images:
-      - image: /images/projects/darwill/03_brochure-spread.png
+      - image: /images/projects/NEW_brochure-spread.png
         sound: false
         alt: Brochure spread comparing prepress the traditional way, with proofs passed
           between the design team, printer, client, and agency, to prepress the
