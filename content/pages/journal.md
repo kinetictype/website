@@ -1,5 +1,5 @@
 ---
-title: Journal
+title: Blog
 description: Notes, talks, teaching and process from Kiera Westphal.
 filter_label: "Filter by:"
 ---
