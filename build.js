@@ -362,7 +362,6 @@ ${body}
     <a class="footer-email" href="mailto:${SITE.email}">${SITE.email}</a>
   </div>
   <nav aria-label="Footer">
-    <a href="/contact/">Contact</a>
     <a href="/imprint/">Imprint</a>
   </nav>
 </footer>
