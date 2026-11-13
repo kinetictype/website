@@ -387,7 +387,7 @@ const measureEdge = (context, image) => {
       invert: false,
       roughness: 0,
       misregistration: 0,
-      revealRadius: 160,
+      revealRadius: 96, // 40% smaller than the usage example's 160px
       softness: 0.6,
       linger: 1.2,
       reverse: false,
