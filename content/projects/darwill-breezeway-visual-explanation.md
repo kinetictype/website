@@ -30,17 +30,10 @@ prototype_size: half
 sections:
   - heading: Prepress, the traditional way
     text: >+
-      Darwill, a commercial printer, had automated its prepress process and
-      called it BreezeWay. For a brochure, the David James Group asked me to
-      create a diagram that explains how BreezeWay works and why it is better
-      than the traditional way.
-
-
-      - The traditional way took days or weeks: designers tracked down images,
+      The traditional way took days or weeks: designers tracked down images,
       printers prepared files, and marked-up proofs went back and forth by
-      messenger or overnight mail.
-
-      - BreezeWay brought those steps online, so approval took minutes or hours.
+      messenger or overnight mail. BreezeWay brought those steps online, so
+      approval took minutes or hours.
 
     images:
       - image: /images/projects/NEW_brochure-spread.png
@@ -123,4 +116,4 @@ sections:
           to collaborative online proofing.
         size: full
 ---
-I designed a step-by-step visual process for their marketing materials to illustrate how the product works.
+Darwill, a commercial printer, had automated its prepress process and called it BreezeWay. For a brochure, the David James Group asked me to create a diagram that explains how BreezeWay works and why it is better than the traditional way.
