@@ -56,6 +56,10 @@ sections:
     text: I developed the diagram over six steps. Early versions mapped the flow
       with simple line art. Later versions added 3D rendering, a color for each
       tool, and callouts that explain what happens at each point in the process.
+    images:
+      - image: /images/projects/Artboard 4@2x-2.png
+        sound: false
+        size: full
   - heading: Pairing the diagram with a legend
     text: To keep the diagram uncluttered, I moved the detailed descriptions into
       color-coded panels, one for each tool. Each panel uses the same color as
