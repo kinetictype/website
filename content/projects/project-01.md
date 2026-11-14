@@ -1,11 +1,6 @@
 ---
 title: Service Design Reveals Insights
 tagline: Utilized a Service Blueprint to Enhance the Campaign Creation Process
-summary: >-
-  Enrollment for the Business sign-up in the Chase Offers program was not
-  increasing.
-
-  I was asked to work with the Marketing team to better understand the process.
 client: JPMorgan Chase
 role: UX Design Lead
 timeline: 2021-2023
@@ -26,6 +21,7 @@ hidden: false
 description: Service Design, Business Banking
 cover: /images/logos/ServicePoster.png
 cover_alt: Service Design JPMC
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Learning About Campaign Creation
@@ -116,5 +112,5 @@ sections:
       Creation process. I enjoy work that reveals processes to empower teams to
       make clear decisions to move forward.
 ---
-##### The Merchant Insights Campaign at JPMorgan Chase Bank saw low customer engagement.  Design stepped in to clarify the process. People were not following through on signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
+##### The Merchant Insights Campaign at JPMorgan Chase Bank saw that enrollment for the Business sign-up in the Chase Offers program was not increasing. I was asked to work with the Marketing team to better understand the process. People were not following through on signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
 
