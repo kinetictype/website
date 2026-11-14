@@ -1,9 +1,6 @@
 ---
 title: Ancestry Acquisition Flow
 tagline: Showing new visitors how much Ancestry knows about their family.
-summary: Improve the SEO landing flow to reveal the breadth and depth of
-  Ancestry's content about ancestors, and improve user acquisition in the
-  sign-up flow.
 client: Ancestry.com
 role: UX Designer
 timeline: 2012–2013
@@ -103,5 +100,5 @@ sections:
         caption: The final visual design of the Gardiner Family Facts page.
         size: full
 ---
-Improved the landing flow to better showcase the breadth and depth of Ancestry's ancestor content, and improved user acquisition in the sign-up flow. I drew flows, wireframes, and visual designs. This included a tab structure and data visualization that provided more context for family relationships.
+Improved the SEO landing flow to showcase the breadth and depth of Ancestry's content about ancestors and improve user acquisition in the sign-up flow. I drew flows, wireframes, and visual designs. This included a tab structure and data visualization that provided more context for family relationships.
 
