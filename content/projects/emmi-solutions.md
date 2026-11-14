@@ -1,9 +1,6 @@
 ---
 title: " Healthcare Software Documentation"
 tagline: Mapping how a healthcare software program gets made.
-summary: Document the production process for Emmi programs before the system's
-  architect left, and restructure the scheduling pages in the Emmi Manager to
-  improve the interface.
 client: Emmi Solutions
 role: Interface designer and Information graphics
 timeline: 2007-2008
@@ -17,7 +14,7 @@ responsibilities: Visual Design, Interface Design, Design System management
 team: The departing system architect and the management team.
 categories:
   - UX/UI Design
-  - "Visual & Motion"
+  - Visual & Motion
 years: 2007 – 2008
 section: work
 start_year: 2007
@@ -84,4 +81,4 @@ sections:
       departure. Management used the diagram to plan staffing and process steps
       and to communicate with potential investors and shareholders.
 ---
-Emmi Solutions made Emmi programs, interactive videos made with Flash, that help patients understand a medical procedure before they have it. Management used the diagram to plan staffing and process steps and to communicate with potential investors and shareholders. 
+Emmi Solutions made Emmi programs, interactive videos made with Flash, that help patients understand a medical procedure before they have it. Documented the production process for Emmi programs before the system's architect left, and restructured the scheduling pages in the Emmi Manager to improve the interface. 
