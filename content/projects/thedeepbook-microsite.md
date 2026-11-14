@@ -1,7 +1,7 @@
 ---
 title: The Deep Book Microsite
-tagline: Bringing deep-sea creatures to life online.
-summary: Design and develop a microsite to market a book on deep-sea creatures.
+tagline: Bringing deep-sea creatures to life online by designing a microsite to
+  market a book.
 client: "University of Chicago Press "
 role: Motion graphics designer
 goals: "Placeholder: the customer and business goal."
@@ -11,7 +11,7 @@ team: The marketing team and Iroro Orife, a talented sound designer.
 website: https://bit.ly/4jIWREn
 website_label: The Deep Book
 categories:
-  - "Visual & Motion"
+  - Visual & Motion
 years: "2007"
 section: work
 start_year: 2007
@@ -20,6 +20,7 @@ hidden: false
 cover: /images/logos/U_of_Chicago_Press.svg
 drawer_image: /images/projects/03_deep-book-1.png
 drawer_image_alt: The Deep Book microsite
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Context
