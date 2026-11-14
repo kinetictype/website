@@ -7,8 +7,7 @@ summary: The goal was to enable merchant acquisition and retention through
   merchants run offer campaigns to Chase customers and monitor results.
 client: JPMorgan Chase
 role: UX Design Lead
-timeline: Changes went live in October 2022, with impact measured over the
-  following 6 months.
+timeline: "2022"
 goals: The goal was to enable merchant acquisition and retention through
   onboarding and to increase engagement with the Customer Insights portal, where
   merchants run offer campaigns to Chase customers and monitor results
@@ -33,6 +32,7 @@ hidden: false
 description: Increase Engagement, Dashboard Design, Design system
 cover: /images/logos/Cover_EndScreen03.png
 cover_alt: JPMorgan Chase
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: A New Team Driven to Build Engagement
