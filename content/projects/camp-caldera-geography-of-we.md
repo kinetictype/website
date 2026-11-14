@@ -2,13 +2,13 @@
 title: Camp Caldera Geography of We
 tagline: An extension to the site with a map of where Caldera artists come from
   and what they create.
-summary: Design of an addition to the website that showcases attendees' work,
+summary: An addition to the Caldera Arts website that showcases attendees' work,
   their location, and the type of work they created.
 client: Caldera Arts
 role: UX Designer
 timeline: "2014"
 goals: Design an addition to the Caldera website that showcases attendees' work,
-  their location, the type of work, and the year.
+  their location, and the type of work.
 outcome: A custom geography experience, project detail pages, and textures
   behind audio projects, carried from concept sketches and wireframes into
   visual design.
@@ -26,7 +26,6 @@ description: Designing Geography of We for Caldera Arts, a custom, on-brand map
   of where young artists come from and the work they create.
 cover: /images/logos/gemini-svg.svg
 drawer_whole: false
-gallery: []
 prototype_size: half
 sections:
   - heading: Mapping story, memory, and place
