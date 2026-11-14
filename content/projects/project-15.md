@@ -1,8 +1,6 @@
 ---
 title: Flipshare for Android
-tagline: Designing Flipshare for Android instead of porting it from the iPhone.
-summary: Develop a custom Android user interface; the earlier version was
-  outsourced and adapted from the iPhone app.
+tagline: Develop a custom Android user interface for the Flipshare platform.
 client: Flip Video
 role: UX Designer
 timeline: 2009 – 2010
