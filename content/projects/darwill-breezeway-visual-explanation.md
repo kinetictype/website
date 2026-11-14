@@ -1,8 +1,6 @@
 ---
 title: Darwill Breezeway Visual Explanation
 tagline: Explaining Darwill's prepress process in six steps.
-summary: Create a diagram explaining Darwill's automated "Breezeway" prepress
-  process for a brochure.
 client: David James Group for Darwill
 role: Information Graphics Designer
 timeline: "2007"
@@ -83,4 +81,4 @@ sections:
           to collaborative online proofing.
         size: full
 ---
-Darwill, a commercial printer, had automated its prepress process and called it BreezeWay. For a brochure, the David James Group asked me to create a diagram that explains how BreezeWay works and why it is better than the traditional way.
+Darwill, a commercial printer, had automated its prepress process and called it BreezeWay. For a brochure, the David James Group approached me to create a diagram explaining how BreezeWay works and why it is better than the traditional way. Create a diagram explaining Darwill's automated "BreezeWay" prepress process for a brochure.
