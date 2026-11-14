@@ -1,9 +1,6 @@
 ---
 title: Epsilon Marketing Engine Tool
 tagline: Bringing order to a complex marketing engine with a system model.
-summary: 'Design the UI for the Moment Engine: search for and view "moments,"
-  turn on event learning, and review/approve event attributes (administrator
-  flows).'
 client: Epsilon
 role: Product Designer and Product Manager
 timeline: "2015"
@@ -116,4 +113,4 @@ sections:
       from this tool. Although I advocated for research, the product team was
       determined to develop the first release without it.
 ---
-Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?”
+Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?” This was a highly technical product with "event learning" and "approve event attributes" that needed a clear message.
