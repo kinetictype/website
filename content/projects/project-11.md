@@ -2,8 +2,6 @@
 title: Visual Journalist
 tagline: Built explanatory visualizations daily and early interactive graphics
   in Flash, connecting the print paper and the ChicagoTribune.com.
-summary: Created daily graphics for news stories and led the transition to
-  interactive graphics on ChicagoTribune.com.
 client: Chicago Tribune Graphics
 role: Visual Journalist, Flash Animation
 timeline: 2004-2007
