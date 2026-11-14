@@ -7,8 +7,8 @@ summary: In addition to showcasing artists' work, I added a custom geographic
 client: Caldera Arts
 role: UX Designer
 timeline: "2014"
-goals: Design an addition to the Caldera website that showcases attendees' work,
-  their location, and the type of work.
+goals: An addition to the Caldera website that showcases attendees' work, their
+  location, and the type of work. Utilizing a custom map.
 outcome: A custom geography experience, project detail pages, and textures
   behind audio projects, carried from concept sketches and wireframes into
   visual design.
