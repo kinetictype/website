@@ -1,8 +1,7 @@
 ---
 title: Girl Effect iPhone App
-tagline: Using a digital currency to fund NGOs that support girls
-summary: Discover how Girl Effect could develop a digital currency to fund NGOs
-  supporting girls in developing countries.
+tagline: How Girl Effect could develop a digital currency to fund NGOs that
+  supports girls in developing countries.
 client: Nike Foundation, The Girl Effect
 role: Service Design Lead
 goals: Discover how Girl Effect could develop a digital currency to fundraise
