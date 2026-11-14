@@ -1,9 +1,7 @@
 ---
 title: San Francisco Panorama
-tagline: Illustrating a real-estate exposé for McSweeney's Panorama.
-summary: I illustrated more than 100 Lembi properties from photographs for
-  Richard Parks's two-page article about the Lembi Group's San Francisco real
-  estate holdings.
+tagline: Illustrating a real-estate exposé for McSweeney's Panorama, a limited
+  edition newspaper.
 client: McSweeney's
 role: Illustrator
 timeline: November 2009
@@ -14,7 +12,7 @@ outcome: Drawings of more than 100 Lembi properties, made from photographs.
 responsibilities: Illustration, hand-drawn in ink on paper.
 team: The page designer, who placed and colored the drawings.
 categories:
-  - "Visual & Motion"
+  - Visual & Motion
 years: "2009"
 section: work
 start_year: 2009
@@ -66,5 +64,4 @@ sections:
       participate in this project. The work was also cited on snd.org, the site
       of the Society for News Design.
 ---
-In 2009, McSweeney's published the San Francisco Panorama, a one-off newspaper. It was one of a kind and an honor to be part. McSweeney's kindly mentioned that my illustrations are "One of the Panorama designs we're proudest of." The feeling was mutual.
-
+The McSweeney's published the San Francisco Panorama, a one-off newspaper. It was one of a kind, and I enjoyed illustrating more than 100 Lembi properties for an article about the Lembi Group's San Francisco real estate holdings. McSweeney's kindly mentioned that my illustrations are "One of the Panorama designs we're proudest of." The feeling was mutual.
