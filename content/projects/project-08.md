@@ -1,7 +1,6 @@
 ---
 title: TiVo Architecture
-tagline: Information architecture for the TiVo iPhone app
-summary: Define the information architecture and spec documentation for the TiVo
+tagline: Define the information architecture and spec documentation for the TiVo
   app for iPhone.
 client: TiVo
 role: Information Architect
@@ -11,7 +10,6 @@ goals: Define the information architecture and spec documentation for the TiVo
 outcome: An application map (v1.6) and spec documentation.
 responsibilities: Information architecture, application mapping, and spec documentation.
 team: Product manager
-categories:
 years: 2011-2012
 section: work
 start_year: 2011
