@@ -1,9 +1,9 @@
 ---
 title: Camp Caldera Geography of We
-tagline: An extension to the site with a map of where Caldera artists come from
-  and what they create.
-summary: An addition to the Caldera Arts website that showcases attendees' work,
-  their location, and the type of work they created.
+tagline: An extension to the Caldera Arts website with a map of where Caldera
+  artists come from and what they create.
+summary: In addition to showcasing artists' work, I added a custom geographic
+  feature to the site that aligned with each artist's location.
 client: Caldera Arts
 role: UX Designer
 timeline: "2014"
