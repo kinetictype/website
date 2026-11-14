@@ -44,7 +44,9 @@ sections:
       he left, in a form the whole company could read. How might we show every
       step, role, and handoff in producing a new Emmi program on a single page?
       I worked with the departing architect to map the process, then shared the
-      visualization across the company.
+      visualization across the company. Management used the diagram to plan
+      staffing and process steps and to communicate with potential investors and
+      shareholders.
     images:
       - image: /images/projects/Process_NewProgram_2021.png
         sound: false
