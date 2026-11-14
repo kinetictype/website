@@ -2,9 +2,6 @@
 title: "Increased Engagement in Business Banking "
 tagline: Introduced a tab structure to the platform that resulted in an increase
   of 400% user engagement.
-summary: The goal was to enable merchant acquisition and retention through
-  onboarding and to increase engagement with the Customer Insights portal, where
-  merchants run offer campaigns to Chase customers and monitor results.
 client: JPMorgan Chase
 role: UX Design Lead
 timeline: "2022"
