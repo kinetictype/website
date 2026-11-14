@@ -1,10 +1,7 @@
 ---
 title: Redesign of Fitbit Help
-tagline: Self-service help that answers questions before they turn into calls.
-summary: "Redesign Fitbit customer support to encourage users to use the
-  self-service platform instead of calling. I met with Stakeholders, drew a
-  service blueprint, conducted a site audit, and proposed a new, metrics-based
-  navigation approach. "
+tagline: Redesign of Fitbit customer support to encourage users to use the
+  self-service platform instead of calling.
 client: Fitbit
 role: UX Design Lead
 timeline: "2017"
@@ -140,4 +137,4 @@ sections:
       cross-team meetings with product onboarding that continued long after this
       project ended.
 ---
-Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform that reduces incoming help calls. Users often looked for the help number before checking help articles. I came in, bridged customer support and product design (separate teams, separate buildings), and began collaborating with the onboarding team. 
+Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform that reduces incoming help calls. I bridged customer support and product design and began collaborating with the onboarding team. I met with Stakeholders, drew a service blueprint, conducted a site audit, and proposed a new, metrics-based navigation approach. 
