@@ -610,6 +610,8 @@ svg[data-fit="contain"] { background: none !important; border: 0 !important; bor
 .pair-text figure { align-self: end; }
 @media (max-width: 900px) { .case-body > .media-split { grid-template-columns: 1fr; gap: 16px; } .media-split.reverse figure { order: 0; } }
 @media (min-width: 601px) and (max-width: 900px) { .case-body > .section-split.pair-text { grid-template-columns: 1fr 1fr; } .pair-text .split-text { grid-column: 1 / -1; order: -1; } }
+/* phones: the "third-text" text and its two images stack in one column, text first like on tablets */
+@media (max-width: 600px) { .case-body > .section-split.pair-text { grid-template-columns: 1fr; } .pair-text .split-text { order: -1; } }
 
 /* Interactive SVG graphics run in place (replay buttons, hovers, animations) */
 object.svg-live { display: block; width: 100%; height: auto; border: 0; background: var(--card); border-radius: 6px; }
