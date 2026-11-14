@@ -113,4 +113,4 @@ sections:
     text: Customizing geographic maps was a great experience. It made the artists'
       places part of the story while elevating the Caldera brand.
 ---
-It was an honor to contribute to this important mission. The biggest challenge I solved was customizing geographic maps and learning how to apply custom maps to a website.
+It was gratifying to help showcase young artists' work and give them more visibility. The biggest challenge I solved was customizing geographic maps and learning how to apply custom maps to a website.
