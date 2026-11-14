@@ -805,5 +805,26 @@ class Component extends DCLogic {
 }
 
 window.__boot(Component, {"autoplay":true,"preset":"home","showRecentIssues":true,"startLoggedIn":false});
+
+/* Fit the 1400x1200 stage to whatever size the page gives this SVG. Safari doesn't apply the SVG viewBox
+   scaling to HTML inside <foreignObject>, so on small screens the prototype showed at full size and was cut off.
+   Instead the SVG fills its frame 1:1 and the stage is shrunk with a CSS transform, which every browser honours. */
+(() => {
+  const W = 1400, H = 1200;
+  const svg = document.documentElement, fo = svg.querySelector('foreignObject'), stage = document.getElementById('stage');
+  svg.removeAttribute('viewBox');
+  svg.setAttribute('width', '100%'); svg.setAttribute('height', '100%');
+  svg.style.overflow = 'hidden';
+  const fit = () => {
+    const w = window.innerWidth || W, h = window.innerHeight || H;
+    const k = Math.min(w / W, h / H);
+    fo.setAttribute('width', w); fo.setAttribute('height', h);
+    stage.style.width = W + 'px'; stage.style.height = H + 'px';
+    stage.style.transformOrigin = '0 0';
+    stage.style.transform = 'translate(' + (w - W * k) / 2 + 'px,' + (h - H * k) / 2 + 'px) scale(' + k + ')';
+  };
+  fit();
+  window.addEventListener('resize', fit);
+})();
 ]]></script>
 </svg>
