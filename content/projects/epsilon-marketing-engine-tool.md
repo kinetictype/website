@@ -22,7 +22,7 @@ hidden: false
 description: Designing the Moment Engine, Epsilon's white-label loyalty tool, by
   documenting the system model first and then wireframing the admin flows.
 cover: /images/logos/epsilon-seeklogo.svg
-drawer_image: /images/projects/epsilon/moment-engine-dashboard.png
+drawer_image: /images/projects/NEWdashboard_macbook.png
 drawer_image_alt: The Moment Engine dashboard in a browser window
 drawer_whole: true
 prototype_size: half
