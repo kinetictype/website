@@ -1,6 +1,6 @@
 ---
 title: Chart Accessibility for Workday
-tagline: Making Workday's charts readable without relying on color.
+tagline: Providing accessibility to Workday's charts.
 client: Workday
 role: UI Designer
 timeline: "2018"
@@ -111,4 +111,4 @@ sections:
       and were incorporated into the design system. The project was well
       received and improved accessibility across the platform.
 ---
-When I joined the company, Workday Analytics was replacing the current visualization library with one that could handle larger volumes of data. Over two months, I audited the current framework, conceptualized a pattern-based approach, executed the designs, and tested the patterns internally. Accessibility is ethically the right thing to do. I was thrilled to have the opportunity to contribute to this feature.
+When I joined the company, Workday Analytics was replacing the current visualization library with one that could handle larger volumes of data. Over two months, I audited the current framework, conceptualized a pattern-based approach, executed the designs, and tested the patterns internally. Accessibility is ethically the right thing to do. I was thrilled to have the opportunity to contribute to this feature. 
