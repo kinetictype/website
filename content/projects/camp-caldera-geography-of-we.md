@@ -19,7 +19,7 @@ years: "2014"
 section: work
 start_year: 0
 featured: false
-hidden: false
+hidden: true
 description: Designing Geography of We for Caldera Arts, a custom, on-brand map
   of where young artists come from and the work they create.
 cover: /images/logos/gemini-svg.svg
