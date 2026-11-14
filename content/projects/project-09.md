@@ -1,10 +1,6 @@
 ---
 title: Chart Accessibility for Workday
 tagline: Making Workday's charts readable without relying on color.
-summary: Provide fill patterns for the charting tool that improve accessibility
-  and work with the current design system. Existing patterns lacked logic, did
-  not match system colors, and were hard to read at small sizes. I developed the
-  structure to find new patterns.
 client: Workday
 role: UI Designer
 timeline: "2018"
@@ -28,6 +24,7 @@ cover: /images/logos/workdayColor.svg
 cover_alt: Workday logo
 drawer_image: /images/projects/fill_pattern_cover_big_2.png
 drawer_image_alt: Placeholder image for project 09
+drawer_whole: false
 prototype_size: half
 sections:
   - heading: Understanding the Context
@@ -114,4 +111,4 @@ sections:
       and were incorporated into the design system. The project was well
       received and improved accessibility across the platform.
 ---
-When I joined the company, Workday Analytics was replacing the current visualization library with one that could handle large volumes of data. Over two months, I audited the current framework, conceptualized a pattern-based approach, executed the designs, and tested the patterns internally. Accessibility is ethically the right thing to do. I was thrilled to have the opportunity to contribute to this feature.
+When I joined the company, Workday Analytics was replacing the current visualization library with one that could handle larger volumes of data. Over two months, I audited the current framework, conceptualized a pattern-based approach, executed the designs, and tested the patterns internally. Accessibility is ethically the right thing to do. I was thrilled to have the opportunity to contribute to this feature.
