@@ -1,10 +1,6 @@
 ---
 title: Agogo iPhone App
 tagline: Designing a streaming audio app for its beta launch.
-summary: Build an interface with exploration features for the upcoming beta
-  release of an all-in-one personalized audio app that combines your favorite
-  music and podcasts. I designed user flows (iOS beta, success/error states) and
-  wireframes for player, module, episodes, and related-bundles screens.
 client: Agogo Startup
 role: User Experience Team of One
 timeline: June 2012
@@ -140,4 +136,4 @@ sections:
         caption: The Agogo app, with a color for each channel, including My Music.
         size: full
 ---
-It was a great experience to design for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision. I explored the "My Music" channel, which pulls music from either your iPhone or a streaming music app. Agogo also includes other content that is not typically audio, such as text articles and television programs
+It was a great experience to design for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision. I explored the "My Music" channel, which pulls music from either your iPhone or a streaming music app. I designed user flows (iOS beta, success/error states) and wireframes for player, module, episodes, and related-bundles screens.
