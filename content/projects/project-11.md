@@ -27,7 +27,7 @@ drawer_image_alt: Hand drawn map of Lalapalooza festival map.
 drawer_whole: false
 prototype_size: half
 sections:
-  - heading: Context
+  - heading: Every Day a New Adventure
     text: Every day at the Chicago Tribune was a new adventure. Depending on the
       news that day, I worked on 2-3 small visualizations or, if a breaking news
       story broke, I worked with other artists to contribute to a larger data
