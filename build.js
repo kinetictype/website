@@ -187,7 +187,7 @@ SITE.url = `https://${SITE.domain}`;
 
 const page = (name) => parseFile(path.join(CONTENT, "pages", `${name}.md`));
 /* Page names come from each page's "Page title" in Pages CMS and are used everywhere the page is
-   named: the menu, the footer, breadcrumbs, browser tabs, structured data and llms.txt.
+   named: the menu, the footer, breadcrumbs, browser tabs and structured data.
    Renaming a page in the CMS (e.g. Journal → Blog) updates all of them on the next save.
    The words here are only fallbacks for an empty title. */
 const PAGE_FALLBACK = { home: "Home", work: "Work", journal: "Journal", contact: "Contact", imprint: "Imprint" };
@@ -339,7 +339,7 @@ function layout({ title, description, urlPath, body, image, imageAlt, type = "we
 <title>${escapeHtml(fullTitle)}</title>
 <meta name="description" content="${escapeHtml(desc)}">
 <meta name="author" content="${escapeHtml(SITE.name)}">
-<meta name="robots" content="${noindex ? "noindex, follow" : "index, follow, max-image-preview:large"}">
+<meta name="robots" content="${noindex ? "noindex, follow" : "index, follow, max-image-preview:large"}, noai, noimageai">
 ${noindex ? "" : `<link rel="canonical" href="${canonical}">\n`}<meta name="theme-color" content="${SITE.background || "#F2F5F7"}">
 <meta property="og:type" content="${type}">
 <meta property="og:site_name" content="${escapeHtml(SITE.name)}">
@@ -1264,56 +1264,23 @@ ${urls.map((u) => `  <url><loc>${SITE.url}${u}</loc><lastmod>${today}</lastmod><
 </urlset>
 `
 );
-// Search engines and AI crawlers are all welcome; llms.txt points AI models to a plain-text summary
-writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n# Plain-text summary for AI models: ${SITE.url}/llms.txt\n`);
-
-/* llms.txt (https://llmstxt.org): a plain Markdown summary of the site for AI models and AI search,
-   written from the same content files as the pages, so it updates with every Pages CMS save. */
+// Search engines may index the site so people can find it; AI training and scraper bots are asked to stay out.
+// robots.txt is a request that well-behaved bots follow; it cannot technically stop a determined scraper.
 {
-  const line = (label, url, text) => `- [${plainText(label)}](${SITE.url}${url})${text ? `: ${text}` : ""}`;
-  const projectLine = (p) => {
-    const trim = (t) => plainText(t).replace(/[.\s]+$/, "");
-    const facts = [p.client && `Client: ${trim(p.client)}`, p.role && `Role: ${trim(p.role)}`, p.years && `Years: ${trim(p.years)}`, categories(p).length && `Topics: ${categories(p).join(", ")}`].filter(Boolean);
-    return line(p.title, projectUrl(p), [seoDescription(p.description, p.tagline, p.summary), facts.length ? facts.join(". ") + "." : ""].filter(Boolean).join(" "));
-  };
-  const jp = page("journal");
-  const profiles = [["LinkedIn", SITE.linkedin], ["Instagram", SITE.instagram], ["GitHub", SITE.github], ["Website", SITE.other_profile]].filter(([, u]) => u);
-  const about = home.body.split(/\n\s*\n/).map(plainText).filter(Boolean);
-  const llms = [
-    `# ${SITE.name}`,
-    "",
-    `> ${plainText(SITE.description)}`,
-    "",
-    [plainText(home.data.headline).replace(/\s*\|\s*/g, " "), plainText(home.data.subhead)].filter(Boolean).join(" "),
-    "",
-    ...about.flatMap((para) => [para, ""]),
-    [
-      SITE.job_title && `- Role: ${SITE.job_title}`,
-      SITE.location && `- Based in: ${SITE.location}`,
-      SITE.email && `- Email: ${SITE.email}`,
-      ...profiles.map(([k, u]) => `- ${k}: ${u}`),
-    ].filter(Boolean).join("\n"),
-    "",
-    "## Pages",
-    "",
-    line(titleOf("home"), "/", "Introduction, recent work and project list"),
-    line(titleOf("work"), "/work/", seoDescription(work.data.description)),
-    line(titleOf("journal"), "/journal/", seoDescription(jp.data.description)),
-    line(titleOf("contact"), "/contact/", seoDescription(page("contact").data.description)),
-    "",
-    ...(featured.length ? ["## Selected work", "", ...featured.map(projectLine), ""] : []),
-    ...(archive.length ? ["## More projects", "", ...archive.map(projectLine), ""] : []),
-    ...(passion.length ? ["## Passion projects", "", ...passion.map(projectLine), ""] : []),
-    ...(entries.length
-      ? [`## ${titleOf("journal")}`, "", ...entries.map((e) => line(e.title, entryUrl(e), [`${e.iso}${e.category ? `, ${e.category}` : ""}.`, seoDescription(e.description, e.excerpt, e.body)].join(" "))), ""]
-      : []),
-    "## Optional",
-    "",
-    line(titleOf("imprint"), "/imprint/", "Legal notice"),
-    line("Sitemap", "/sitemap.xml", "Every page on the site"),
-    "",
-  ].join("\n");
-  writeFile("llms.txt", llms.replace(/\n{3,}/g, "\n\n"));
+  const blocked = [
+    "GPTBot", "ChatGPT-User", "OAI-SearchBot", "ClaudeBot", "Claude-Web", "Claude-User", "Claude-SearchBot", "anthropic-ai",
+    "Google-Extended", "Applebot-Extended", "CCBot", "PerplexityBot", "Perplexity-User", "Bytespider", "Amazonbot",
+    "meta-externalagent", "meta-externalfetcher", "FacebookBot", "cohere-ai", "cohere-training-data-crawler",
+    "Diffbot", "ImagesiftBot", "Omgilibot", "Omgili", "Timpibot", "YouBot", "AI2Bot", "Ai2Bot-Dolma",
+    "PetalBot", "DuckAssistBot", "MistralAI-User", "Scrapy", "img2dataset", "Kangaroo Bot", "Webzio-Extended",
+  ];
+  writeFile(
+    "robots.txt",
+    `# Search engines are welcome to index this site.\nUser-agent: *\nAllow: /\n\n` +
+      `# AI training, AI answer engines and scrapers are not.\n` +
+      blocked.map((bot) => `User-agent: ${bot}\nDisallow: /\n`).join("\n") +
+      `\nSitemap: ${SITE.url}/sitemap.xml\n`
+  );
 }
 writeFile("CNAME", `${SITE.domain}\n`); // tells GitHub Pages which domain to serve
 writeFile(".nojekyll", "");
