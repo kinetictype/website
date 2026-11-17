@@ -24,7 +24,7 @@ description: Service design and an iPhone app concept for Girl Effect, a digital
   NGOs supporting girls in developing countries.
 cover: /images/logos/Girl_Effect_Primary_RGB_Maroon_1_1.svg
 cover_alt: Girl Effect logo
-drawer_image: /images/projects/conceptMapCurrency02.png
+drawer_image: /images/projects/NEWThumb.png
 drawer_image_alt: Concept map of how girl currency flows between girls,
   corporate partners, and NGOs
 drawer_whole: false
