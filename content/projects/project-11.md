@@ -53,7 +53,7 @@ sections:
         caption: The page designer took inspiration from my map icons for Lollapalooza
           and it became a close collaboration.
         size: text-half
-  - heading: Design principles and frameworks
+  - heading: Checks and Balances
     text: One of my favorite things about working in the newspaper business is the
       number of eyes on my work. When a graphic was ready for print, it traveled
       the newsroom and went through several checks and balances to ensure
