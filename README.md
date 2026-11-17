@@ -107,7 +107,7 @@ an image, the date (shown as DD.MM.YYYY), and the title, with a **Filter by** ro
 
 - **Add an entry:** Journal → **Add an entry**. Fill in Title, Date, Category, an image and its description, then write the entry.
 - **Categories** are free text. Every category you use appears as a filter button automatically (use the same spelling each time).
-- **Intro line and page title:** edit **Journal page**. The page title is also the name in the menu, breadcrumbs, browser tab and llms.txt (it is currently "Blog"); every page title works this way.
+- **Intro line and page title:** edit **Journal page**. The page title is also the name in the menu, breadcrumbs and browser tab (it is currently "Blog"); every page title works this way.
 - The 12 "Journal Entry Title" files are placeholders: edit them, or delete the ones you don't need.
 
 ### Download CV link
@@ -190,8 +190,7 @@ the site is previewed at kinetictype.github.io/website.
   since previews can't show them); journal entries use their cover. Everything else uses the site preview image.
 - **Structured data:** homepage `WebSite` + `Person`; Work `CollectionPage`; projects `CreativeWork` (client,
   years, categories); Journal `Blog`; entries `BlogPosting`; Contact `ContactPage`.
-- **Files:** `sitemap.xml`, `robots.txt`, `llms.txt` (a plain-text summary of the site, projects and journal for AI
-  models, following https://llmstxt.org), `404.html`, and the `CNAME` file that tells GitHub Pages to serve kierawestphal.com.
+- **Files:** `sitemap.xml`, `robots.txt` (lets search engines in and asks AI training bots and scrapers to stay out), `404.html`, and the `CNAME` file that tells GitHub Pages to serve kierawestphal.com.
 
 ### The link-preview image
 
