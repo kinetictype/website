@@ -64,7 +64,7 @@ sections:
         alt: "illustration of a cocktail party "
         caption: Illustration at times took a forefront over visualizing data.
         size: half-text
-  - heading: Challenges
+  - heading: Working Within Tight Deadlines Daily
     text: "As a visual journalist, the day begins at noon and ends once the paper is
       sent to print. The paper is unique in that it has an omnipresent, ongoing
       momentum. I enjoyed the rhythm. It is a constant cycle of feedback and
