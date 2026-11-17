@@ -42,10 +42,10 @@ sections:
         caption: The expansion of The Art Institute of Chicago's page-one story.
         size: half-text
   - heading: Instilling discipline
-    text: Visual journalism instilled ethical practices of accuracy and working with
-      an established design system, all at a rapid pace. Knowing my work would
-      be seen daily by 500,000 subscribers instilled a discipline I've held onto
-      throughout my career.
+    text: Visual journalism introduced me to ethical practices of accuracy and
+      working within an established design system, all at a rapid pace. Knowing
+      my work would be seen daily by 500,000 subscribers instilled a discipline
+      I've held onto throughout my career.
     images:
       - image: /images/projects/lollapalooza_Fullpage.png
         sound: false
