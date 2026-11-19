@@ -132,7 +132,7 @@ sections:
     text: Although the redesign did not ship, a few things outlasted it. Mapping the
       customer journey gave three teams with competing priorities a shared
       picture to work from. Reaching out to the product team also started
-      cross-team meetings with product onboarding that continued long after this
-      project ended.
+      cross-team meetings focused on product onboarding, which continued long
+      after this project ended.
 ---
 Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform to reduce incoming support calls. I bridged customer support and product design and began collaborating with the onboarding team. I met with stakeholders, created a service blueprint, conducted a site audit, and proposed a new, metrics-driven navigation approach. 
