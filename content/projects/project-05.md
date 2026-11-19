@@ -98,8 +98,8 @@ sections:
         alt: War room with research, articles, and room for critique.
         size: full
   - heading: Designing mobile first
-    text: Metrics showed that most people accessed help from their phones while on
-      the go, so I took a mobile-first approach and then designed the desktop
+    text: Metrics showed that most people accessed help on their phones while on the
+      go, so I took a mobile-first approach and then designed the desktop
       experience as well. The new navigation starts with the customer's issue,
       then their product and device, with search, live chat, popular articles,
       and the community forum always close at hand.
