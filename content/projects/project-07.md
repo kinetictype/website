@@ -88,8 +88,8 @@ sections:
   - heading: Making every action count
     text: The challenge was to make actions active, not passive, and to show a girl
       where her money goes and how she is helping. I mapped the app flow from
-      download to tracking, so that each step connects her actions to girls in
-      the developing world.
+      download through tracking so that each step connects her actions to girls
+      in the developing world.
     images:
       - image: /images/projects/girl-effect/07_business-goal-flow-sketch.png
         sound: false
