@@ -30,9 +30,8 @@ sections:
     text: Agogo was a San Francisco startup building an all-in-one personalized
       audio app that combines your favorite music, podcasts, and news. Before
       the beta release, the team needed a way to invite people and an interface
-      with features to explore. An admin enters a tester's email, and Agogo
-      sends them a link. I began by visualizing this process to guide the
-      product's features.
+      for exploration. An admin enters a tester's email, and Agogo sends them a
+      link. I began by visualizing this process to guide the product's features.
     images:
       - image: /images/projects/01_beta-user-flow-2.png
         sound: false
