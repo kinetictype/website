@@ -44,9 +44,9 @@ sections:
           it.
         size: half-text
   - heading: Documenting the Domain
-    text: Documenting the domain helped to clarify the elements we were designing
-      for in the system. This was a key moment that drove the project forward.
-      We connected the administrator, marketer, metadata, rules, eligibility,
+    text: Documenting the domain helped clarify the elements we were designing for
+      in the system. This was a key moment that drove the project forward. We
+      connected the administrator, marketer, metadata, rules, eligibility,
       events, moments, outcomes, calculations, and transactions to understand
       the bigger picture.
     images:
