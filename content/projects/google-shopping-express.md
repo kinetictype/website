@@ -36,9 +36,9 @@ sections:
       receiving the package. The map follows the shopper through four stages:
       order, item suggestion, payment, and delivery. It raised questions for the
       team, such as how to discover a shopper's lifestyle to better target
-      products, and how payments are made. Google wanted a vision of the
-      lifecycle as well as the screens that explain how the digital product
-      worked."
+      products and how payments are processed. Google wanted a vision of the
+      lifecycle, as well as the screens that explain how the digital product
+      works."
     images:
       - image: /images/projects/ServiceMap-1.png
         sound: false
