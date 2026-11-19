@@ -76,14 +76,10 @@ sections:
     text: >+
       Listeners choose a module, such as Weather, Business and Finance, or News,
       and then a bundle within it, such as Market Reports. Combining the module
-      screen and the player kept both in one place.
-
-
-      - Modules sit in a row at the bottom, and swipe left and right.
-
-      - Bundles, from Bloomberg and NPR to the BBC and KCRW, open in a drawer.
-
-      - Segments and episodes within a bundle show as ticks above the player.
+      screen and the player kept both in one place. Modules sit in a row at the
+      bottom, and swipe left and right. Bundles, from Bloomberg and NPR to the
+      BBC and KCRW, open in a drawer. Segments and episodes within a bundle show
+      as ticks above the player.
 
     images:
       - image: /images/projects/05_module-and-player.png
