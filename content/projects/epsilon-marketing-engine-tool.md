@@ -95,10 +95,10 @@ sections:
         caption: The dashboard shows the engine's status, moments at a glance, and a
           searchable list of moments.
         size: half
-  - heading: Learnings
-    text: My effort in this project focused on gathering the requirements and
-      mapping the system to learn what the Marketers and Administrators needed
-      from this tool. Although I advocated for research, the product team was
-      determined to develop the first release without it.
+  - heading: "Mapping the System "
+    text: My efforts to gather requirements and map the system brought this project
+      into focus. I got the project ready to move into visual design with
+      high-fidelity wireframes. Through this process, my system diagrams
+      facilitated clear thinking about how this product was built.
 ---
 Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?” This was a highly technical product with "event learning" and "approve event attributes" that needed a clear message.
