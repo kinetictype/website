@@ -50,7 +50,7 @@ sections:
     text: My goal was a shopping app that made it quick to find, reorder, and track
       everyday essentials. How might we help shoppers get essentials delivered
       to their door with as few steps as possible? We made assumptions about
-      these flows as we focused on giving Google a concept for in-app
+      these flows while focusing on giving Google a concept for in-app
       interactions.
     images:
       - image: /images/projects/CustomerFlows02.png
