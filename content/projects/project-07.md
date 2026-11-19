@@ -33,13 +33,13 @@ sections:
   - heading: Discovering the vision
     text: >+
       Girl Effect, Nike's nonprofit foundation, asked how a digital currency
-      could raise money for NGOs supporting girls in developing countries. At
+      could raise funds for NGOs supporting girls in developing countries. At
       Wieden + Kennedy, I led the team through discovery to understand how the
-      concept would work. We targeted a globally connected girl, aged 16 to 24.
+      concept would work. We targeted a globally connected girl, ages 16 to 24.
       When a girl takes a world-changing action, she earns "Girl Coin," and
-      corporate partners donate money to NGOs. Every action is tied to one of
-      six categories: Health, Safety, Education, Citizenship, Economic Security,
-      and Child Marriage.
+      corporate partners donate money to NGOs. Each action is tied to one of six
+      categories: Health, Safety, Education, Citizenship, Economic Security, and
+      Child Marriage.
 
     images:
       - image: /images/projects/girl-effect/01_girl-currency-economy.png
