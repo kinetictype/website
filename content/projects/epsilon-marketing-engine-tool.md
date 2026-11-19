@@ -80,18 +80,6 @@ sections:
         caption: The product owner's early sketches, numbered to match the steps in the
           system diagram.
         size: half-text
-  - heading: Wireframing the Administrator Flows
-    text: Marketers and administrators could search for and view moments from the
-      dashboard, while administrators could enable event learning and then
-      review and approve each event's attributes.
-    images:
-      - image: /images/projects/epsilon/moment-engine-moment-details-prototype.svg
-        sound: false
-        alt: Scrollable prototype of the Moment Engine dashboard with a moment expanded
-          to show its dates and rules
-        caption: Expanding a moment in the list shows its dates and the rules a customer
-          has to meet.
-        size: text-half
   - heading: Order from a system model
     text: >+
       Documenting the system model first, then designing wireframes, removed the
