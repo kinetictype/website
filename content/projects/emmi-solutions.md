@@ -71,8 +71,7 @@ sections:
         size: half
       - image: /images/projects/alberto1_after.jpg
         sound: false
-        alt: The redesigned Schedule an Emmi screen, with sections for patient
-          information, doctor information, and programs available
+        alt: redesigned Schedule an Emmi screen
         caption: "After: patient information, doctor information, and programs available
           each have their own group, with clearer ways to narrow the program
           list."
