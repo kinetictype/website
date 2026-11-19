@@ -84,7 +84,7 @@ sections:
       and areas for improvement, promoting effective problem-solving and goal
       alignment. By mapping the journey and the broader scope of the
       organization involved in launching the Campaign, the team had a clear view
-      of where to place focus.
+      of where to focus.
 
     images:
       - image: /images/projects/image-asset_2-2.png
