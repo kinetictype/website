@@ -53,7 +53,7 @@ sections:
         caption: The app map, with notes on what each screen holds and the messages it
           shows for errors, success, and loading.
         size: half-text
-  - heading: The player screen
+  - heading: Waveform to Indicate Progress
     text: The player shows the module and bundle names, the show title and date, a
       waveform progress bar, and playback controls. To keep it uncluttered, I
       explored drawers that slide up from the bottom, one for related bundles
