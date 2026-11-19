@@ -36,10 +36,10 @@ sections:
         caption: The existing map had areas of difficulty we were examining.
         size: half-text
   - heading: Revealing the Process
-    text: "The existing map that the Marketing team used to describe the Campaign
-      Creation Process was limited. We learned there were external partners and
-      teams at Chase that were involved in creating the campaign through
-      discussion but it was left out of the existing map. "
+    text: "The existing map the Marketing team used to describe the Campaign
+      Creation Process was limited. Through discussion, we learned that external
+      partners and teams at Chase were involved in creating the campaign, but
+      they were left out of the existing map. "
     images:
       - image: /images/projects/02_Process_ServiceDesign-2.png
         sound: false
