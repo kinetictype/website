@@ -60,8 +60,8 @@ sections:
         sound: false
         size: third-text
   - heading: Contributing to a Unique Team
-    text: McSweeney's is an icon of the Bay Area. It was a great experience to
-      participate in this project. The work was also cited on snd.org, the site
-      of the Society for News Design.
+    text: McSweeney's is an icon of the Bay Area. It was a great experience to get a
+      peek into their world while contributing to this inspiring project. The
+      work was also cited on snd.org, the site of the Society for News Design.
 ---
 McSweeney's published the San Francisco Panorama, a one-off newspaper. It was one of a kind, and I enjoyed illustrating more than 100 Lembi properties for an article about the Lembi Group's San Francisco real estate holdings. McSweeney's kindly noted that my illustrations were "One of the Panorama designs we're proudest of." The feeling was mutual.
