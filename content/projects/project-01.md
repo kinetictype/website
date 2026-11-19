@@ -95,10 +95,10 @@ sections:
         size: half-text
   - heading: Understanding Led to Focused Decision Making
     text: >+
-      ##### After building a holistic understanding of the Campaign Creation
-      Process, Chase acquired [Figg.com](http://Figg.com) to manage the Chase
+      ##### After developing a holistic understanding of the Campaign Creation
+      Process, Chase acquired [Figg.com](http://Figg.com) to manage the Chase
       Offers Campaign. My work on this project helped management identify the
-      flow's complexity and decide how to address it.
+      flow's complexity and determine how to address it.
 
     images:
       - image: /images/projects/Service_Poster.png
