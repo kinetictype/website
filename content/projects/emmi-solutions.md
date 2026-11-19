@@ -65,8 +65,7 @@ sections:
     images:
       - image: /images/projects/alberto1_before.jpg
         sound: false
-        alt: The original Schedule an Emmi screen, with patient, doctor, and program
-          fields in one dense form
+        alt: The original Screen
         caption: "Before: patient, doctor, and program fields in one form."
         size: half
       - image: /images/projects/alberto1_after.jpg
