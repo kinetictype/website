@@ -34,13 +34,11 @@ top_image_alt: Service blueprint and ecosystem/system map, Responsive, mobile-fi
 prototype_size: half
 sections:
   - heading: How might we create a self-service platform?
-    text: >+
-      The Fitbit support site drew about 1.5 million visitors a month, most of
-      them searching for answers to specific issues, but most visitors who filed
+    text: The Fitbit support site drew about 1.5 million visitors a month, most of
+      them searching for answers to specific issues. Yet most visitors who filed
       a support case had never tried self-service. We believed that if people
-      could find help on the website, fewer of them would need to call Fitbit. I
-      had to rethink the entire site's navigation.
-
+      could find help on the website, fewer would need to call Fitbit. I had to
+      rethink the entire site's navigation.
     images:
       - image: /images/projects/01_Improved_service-blueprint.png
         sound: false
