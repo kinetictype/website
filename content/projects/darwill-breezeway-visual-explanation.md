@@ -28,10 +28,10 @@ prototype_size: half
 sections:
   - heading: Prepress the Traditional Way
     text: The traditional way took days or weeks; designers tracked down images,
-      printers prepared files, and marked-up proofs went back and forth by
+      printers prepared files, and marked-up proofs went back and forth via
       messenger or overnight mail. BreezeWay brought those steps online, so
       approval took minutes or hours. I created a before-and-after information
-      graphic for a brochure and several iterations.
+      graphic for a brochure, producing several iterations.
     images:
       - image: /images/projects/Artboard 2@2x-1.png
         sound: false
