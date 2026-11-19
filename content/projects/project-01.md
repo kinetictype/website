@@ -112,5 +112,5 @@ sections:
       Creation process. I enjoy work that reveals processes to empower teams to
       make clear decisions to move forward.
 ---
-##### The Merchant Insights Campaign at JPMorgan Chase Bank saw that enrollment for the Business sign-up in the Chase Offers program was not increasing. I was asked to work with the Marketing team to better understand the process. People were not following through on signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
+##### The Merchant Insights Campaign at JPMorgan Chase Bank found that enrollment for the Business sign-up in the Chase Offers program was not increasing. I was asked to work with the Marketing team to better understand the process. People were not following through with signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
 
