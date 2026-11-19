@@ -100,5 +100,5 @@ sections:
       costs skyrocketed on the platform, Google noticed declining engagement and
       decided to rebrand the entire service again.
 ---
-Google announced the transition from the old **Google Shopping to** **Google Express** in 2013, an evolved version of the platform that lets users buy products from different vendor websites & marketplaces directly on Google Express. Our team consulted with Google to propose a solution that would handle everything on its platform, from collecting payments to delivering the products themselves. At the time, it was mostly used for grocery shopping.
+In 2013, Google announced the transition from the old **Google Shopping to** **Google Express**, an evolved version of the platform that lets users buy products from different vendor websites and marketplaces directly on Google Express. Our team consulted with Google to propose a solution that would handle everything on its platform, from collecting payments to delivering the products. At the time, it was mostly used for grocery shopping.
 
