@@ -27,16 +27,14 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: Getting the beta into people's hands
-    text: >+
-      Agogo was a San Francisco startup building an all-in-one personalized
+    text: Agogo was a San Francisco startup building an all-in-one personalized
       audio app that combines your favorite music, podcasts, and news. Before
-      the beta release, the team needed a way to invite people in and an
-      interface with features they could explore. An admin enters a tester's
-      email, and Agogo sends them a link. Testers set a password, connect
-      Twitter, Facebook, and MOG, and take a quiz to customize their content, or
-      skip either step. Approved testers receive an email with a link to
-      download Agogo on their iOS device.
-
+      the beta release, the team needed a way to invite people and an interface
+      with features to explore. An admin enters a tester's email, and Agogo
+      sends them a link. Testers set a password, connect Twitter, Facebook, and
+      MOG, and take a quiz to customize their content, or skip either step.
+      Approved testers receive an email with a link to download Agogo on their
+      iOS device.
     images:
       - image: /images/projects/01_beta-user-flow-2.png
         sound: false
