@@ -135,4 +135,4 @@ sections:
       cross-team meetings with product onboarding that continued long after this
       project ended.
 ---
-Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform to reduce incoming help calls. I bridged customer support and product design and began collaborating with the onboarding team. I met with stakeholders, created a service blueprint, conducted a site audit, and proposed a new, metrics-based navigation approach. 
+Design a vision for [help.fitbit.com](http://help.fitbit.com) as a self-service platform to reduce incoming support calls. I bridged customer support and product design and began collaborating with the onboarding team. I met with stakeholders, created a service blueprint, conducted a site audit, and proposed a new, metrics-driven navigation approach. 
