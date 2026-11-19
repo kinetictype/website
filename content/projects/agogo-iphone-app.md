@@ -136,4 +136,4 @@ sections:
         caption: The Agogo app, with a color for each channel, including My Music.
         size: full
 ---
-It was a great experience to design for a startup in the heart of San Francisco. I was inspired by the entrepreneurial spirit of the founders and was driven to realize their vision. I explored the "My Music" channel, which pulls music from either your iPhone or a streaming music app. I designed user flows (iOS beta, success/error states) and wireframes for player, module, episodes, and related-bundles screens.
+It was a great experience designing for a startup in the heart of San Francisco. I was inspired by the founders' entrepreneurial spirit and driven to realize their vision. I explored the "My Music" channel, which pulls music from either your iPhone or a streaming music app. I designed user flows (iOS beta, success/error states) and wireframes for the player, module, episodes, and related-bundles screens.
