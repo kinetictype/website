@@ -117,8 +117,8 @@ sections:
         size: half
   - heading: A system map
     text: The new designs and overall user experience were well received by the Help
-      team and the extended stakeholders. I captured the artifacts in a
-      presentation for the team. In the end, due to competing priorities, Fitbit
+      team and the broader stakeholder group. I compiled the artifacts into a
+      presentation for the team. Ultimately, due to competing priorities, Fitbit
       put the CMS upgrade initiative on hold, and the project did not move
       forward. Two years later, Google acquired Fitbit.
     images:
