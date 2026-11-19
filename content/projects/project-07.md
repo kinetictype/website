@@ -99,7 +99,7 @@ sections:
           nearby actions, rate them, and track progress and currency earned."
         size: half-text
   - heading: Sketching the app
-    text: I sketched how a girl would discover actions, see which friends are
+    text: I sketched how a girl would discover actions, identify which friends are
       involved, prioritize what matters to her, and track the currency she
       earns. The sketches led to a prototype of the core screens.
     images:
