@@ -142,11 +142,11 @@ sections:
         sound: false
         size: full
   - heading: Service Design Moved the Project Forward
-    text: The Service Design Map combined with a prototype of the iPhone app helped
-      communicate the girl's journey with the client; they incorporated this
-      language to describe the touchpoints a girl would encounter within the
-      GirlEffect. Foundation. Additionally, the success of this project drove
-      the service design initiative with other projects like Weight Watchers
-      during a major rebrand.
+    text: The Service Design Map, combined with a prototype of the iPhone app,
+      helped communicate the girl's journey to the client; they incorporated
+      this language to describe the touchpoints a girl would encounter within
+      the GirlEffect Foundation. Additionally, the success of this project drove
+      the service design initiative, leading to other projects like Weight
+      Watchers during a major rebrand.
 ---
 Led the team at Wieden + Kennedy in using Service Design to identify the touchpoints a girl would encounter to benefit NGOs in developing countries. The project involved discovery to learn how the concept would work. Then explore a touchpoint, an iPhone app, that would help track actions a girl would take that would help them earn "Girl Coin", a digital currency focused around helping NGOs for this non-profit foundation.
