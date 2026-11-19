@@ -40,15 +40,11 @@ sections:
         size: text-half
   - heading: Mapping the app
     text: >+
-      My goal was to make a lot of audio feel simple to browse and play.
-
-
-      - How might we let listeners move between channels, shows, and episodes
-      without losing what's playing?
-
-      - I mapped every screen, from load and registration to the home, player,
-      settings, and voice feedback screens, including the success and error
-      states for each.
+      My goal was to make a lot of audio feel simple to browse and play. How
+      might we let listeners move between channels, shows, and episodes without
+      losing what's playing? I mapped every screen, from load and registration
+      to the home, player, settings, and voice feedback screens, including the
+      success and error states for each.
 
     images:
       - image: /images/projects/02_beta-user-flow.png
