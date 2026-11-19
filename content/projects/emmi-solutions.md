@@ -28,7 +28,7 @@ drawer_image_alt: Emmi Solutions new program process diagram
 drawer_whole: false
 prototype_size: half
 sections:
-  - heading: A process only one person knew
+  - heading: Documenting a Process for a Wider Understanding
     text: "As the company developed partnerships, one question kept coming up: how
       is the software produced? The lead engineer, the system's architect, was
       the one person who knew the whole process, and he was leaving the
