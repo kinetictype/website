@@ -28,9 +28,9 @@ prototype_size: half
 sections:
   - heading: A newspaper, and an exposé
     text: One of its stories was Richard Parks's two-page article about the Lembi
-      Group, a family-owned company that had bought up a large share of San
+      Group, a family-owned company that had acquired a large share of San
       Francisco's rent-controlled apartment buildings. The article needed to
-      show the scale of the Lembi holdings. My job was to illustrate the
+      convey the scale of the Lembi holdings. My job was to illustrate the
       properties.
     images:
       - image: /images/projects/06_building-5.png
