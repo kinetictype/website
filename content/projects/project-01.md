@@ -67,10 +67,10 @@ sections:
         caption: The design of a new map helped us identify gaps in the process.
         size: half-text
   - heading: Solving for Opportunities
-    text: This project caught senior leadership's attention once we identified
-      opportunities in the Campaign Creation. The content designer and I
-      proposed a few ideas to move forward. As a short-term solution, we focused
-      on improving communication with customers.
+    text: This project caught senior leadership's attention after we identified
+      opportunities in Campaign Creation. The content designer and I proposed a
+      few ideas to move forward. As a short-term solution, we focused on
+      improving customer communication.
     images:
       - image: /images/projects/HowMightWe_CampaignFlow-2.png
         sound: false
