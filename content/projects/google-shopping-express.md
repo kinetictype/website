@@ -96,11 +96,12 @@ sections:
       - image: /images/projects/ServiceMap-1.png
         sound: false
         size: full
-  - heading: Learnings
-    text: I enjoyed bringing service design to the Google Shopping Express platform
-      to support the rebranding. As product costs skyrocketed on the platform,
-      Google noticed declining engagement and decided to rebrand the entire
-      service again.
+  - heading: Design of the Ecosystem
+    text: Looking at the Google Shopping Express platform through a service design
+      lens, we supported the rebrand. Working on the shopping taxonomy while
+      incorporating ideas for microinteractions in mobile shopping. As product
+      costs skyrocketed on the platform, Google noticed declining engagement and
+      decided to rebrand the entire service again.
 ---
 Google announced the transition from the old **Google Shopping to** **Google Express** in 2013, an evolved version of the platform that lets users buy products from different vendor websites & marketplaces directly on Google Express. Our team consulted with Google to propose a solution that would handle everything on its platform, from collecting payments to delivering the products themselves. At the time, it was mostly used for grocery shopping.
 
