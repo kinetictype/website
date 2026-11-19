@@ -40,10 +40,9 @@ sections:
         caption: I began with this map of the process from the Lead Engineer.
         size: text-half
   - heading: Mapping the production process
-    text: My goal was to capture the architect's understanding of the process before
-      he left, in a form the whole company could read. How might we show every
-      step, role, and handoff in producing a new Emmi program on a single page?
-      I worked with the departing architect to map the process, then shared the
+    text: My goal was to capture the architect's understanding of the process in a
+      form the whole company could read. How might we show every step, role, and
+      handoff in producing a new Emmi program on a single page? I shared the
       visualization across the company. Management used the diagram to plan
       staffing and process steps and to communicate with potential investors and
       shareholders.
