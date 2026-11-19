@@ -101,4 +101,4 @@ sections:
       high-fidelity wireframes. Through this process, my system diagrams
       facilitated clear thinking about how this product was built.
 ---
-Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product to help marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers, with little technical knowledge, could easily access and operate?” This was a highly technical product with "event learning" and "approve event attributes" that needed a clear message.
+Alliance Data wanted to redesign The Moment Engine, an enterprise white-label product that helps marketers plan loyalty and marketing campaigns. I was asked to help frame the challenge: “How might we create a product that marketers with little technical knowledge could easily access and operate?” This was a highly technical product with "event learning" and "approve event attributes" that required a clear message.
