@@ -76,7 +76,7 @@ sections:
           list."
         size: half
   - heading: A shared picture of the process
-    text: The documentation of the production process that outlasted the architect's
+    text: The documentation of the production process outlasted the architect's
       departure. Management used the diagram to plan staffing and process steps
       and to communicate with potential investors and shareholders.
 ---
