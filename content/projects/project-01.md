@@ -26,9 +26,9 @@ prototype_size: half
 sections:
   - heading: Learning About Campaign Creation
     text: The design team stepped in to collaborate with Marketing to understand the
-      Campaign Creation Process. We were a new team, and we approached the
+      Campaign Creation Process. We were a new team, so we approached the
       project as a learning opportunity. As the team described the process, we
-      uncovered several undocumented aspects of how campaigns were created.
+      uncovered several undocumented aspects of campaign creation.
     images:
       - image: /images/projects/image-asset.png
         sound: false
