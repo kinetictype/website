@@ -149,4 +149,4 @@ sections:
       the service design initiative, leading to other projects like Weight
       Watchers during a major rebrand.
 ---
-Led the team at Wieden + Kennedy in using Service Design to identify the touchpoints a girl would encounter to benefit NGOs in developing countries. The project involved discovery to learn how the concept would work. Then explore a touchpoint, an iPhone app, that would help track actions a girl would take that would help them earn "Girl Coin", a digital currency focused around helping NGOs for this non-profit foundation.
+Led the team at Wieden + Kennedy in using Service Design to identify the touchpoints a girl would encounter to benefit NGOs in developing countries. The project involved discovery to learn how the concept would work. Then explore a touchpoint, an iPhone app, that would help track actions a girl would take to earn "Girl Coin", a digital currency focused on helping NGOs for this non-profit foundation.
