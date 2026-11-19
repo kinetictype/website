@@ -81,4 +81,4 @@ sections:
           to collaborative online proofing.
         size: full
 ---
-Darwill, a commercial printer, had automated its prepress process and called it BreezeWay. For a brochure, the David James Group approached me to create a diagram explaining how BreezeWay works and why it is better than the traditional way. Create a diagram explaining Darwill's automated "BreezeWay" prepress process for a brochure.
+Darwill, a commercial printer, automated its prepress process and named it BreezeWay. For a brochure, the David James Group approached me to create a diagram explaining how BreezeWay works and why it is better than the traditional way. Create a diagram explaining Darwill's automated "BreezeWay" prepress process for a brochure.
