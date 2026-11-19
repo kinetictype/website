@@ -40,10 +40,10 @@ sections:
           left, prepress the BreezeWay on the right."
         size: half-text
   - heading: Making a complex process clear
-    text: My goal was a diagram that marketers could read at a glance, showing how
-      files move through Darwill's four tools and who is involved at each step.
-      How might we show the time BreezeWay saves, from days and weeks to minutes
-      and hours?
+    text: My goal was a diagram marketers could read at a glance, showing how files
+      move through Darwill's four tools and who is involved at each step. How
+      might we show the time BreezeWay saves, from days and weeks to minutes and
+      hours?
     images:
       - image: /images/projects/Artboard 3@2x-1.png
         sound: false
