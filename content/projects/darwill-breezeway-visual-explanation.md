@@ -61,7 +61,8 @@ sections:
   - heading: Pairing the diagram with a legend
     text: To keep the diagram uncluttered, I moved the detailed descriptions into
       color-coded panels, one for each tool. Each panel uses the same color as
-      its circle in the diagram, so readers can move between the two easily.
+      its corresponding circle in the diagram, making it easy for readers to
+      move between the two.
     images:
       - image: /images/projects/Artboard 6@2x.png
         sound: false
