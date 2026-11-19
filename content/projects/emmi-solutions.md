@@ -83,4 +83,4 @@ sections:
       departure. Management used the diagram to plan staffing and process steps
       and to communicate with potential investors and shareholders.
 ---
-Emmi Solutions made Emmi programs, interactive videos made with Flash, that help patients understand a medical procedure before they have it. Documented the production process for Emmi programs before the system's architect left, and restructured the scheduling pages in the Emmi Manager to improve the interface. 
+Emmi Solutions developed Emmi programs, interactive Flash videos that help patients understand a medical procedure before they undergo it. Documented the production process for Emmi programs before the system's architect left, and restructured the scheduling pages in the Emmi Manager to improve the interface. 
