@@ -50,9 +50,9 @@ sections:
         alt: v2
         size: text-half
   - heading: Developing the diagram in six steps
-    text: I developed the diagram over six steps. Early versions mapped the flow
-      with line art. Later versions added 3D rendering, a color for each tool,
-      and callouts that explain what happens at each point in the process.
+    text: I developed the diagram in six steps. Early versions mapped the flow with
+      line art. Later versions added 3D rendering, a color for each tool, and
+      callouts explaining what happens at each point in the process.
     images:
       - image: /images/projects/Artboard 4@2x-2.png
         sound: false
