@@ -47,10 +47,10 @@ sections:
         sound: false
         size: full
   - heading: From photographs to the page
-    text: Working from photographs, I simplified each facade to its lines, keeping
-      the details that make each building recognizable, such as the bay windows,
-      cornices, and fire escapes. The page designer then placed and colored the
-      drawings around the article.
+    text: Working from photographs, I simplified each facade to its essential lines,
+      preserving the details that make each building recognizable, such as bay
+      windows, cornices, and fire escapes. The page designer then placed and
+      colored the drawings around the article.
     images:
       - image: /images/projects/04_building-3.png
         sound: false
