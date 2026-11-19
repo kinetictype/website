@@ -65,11 +65,11 @@ sections:
   - heading: Finding order in the research
     text: "On the existing platform, customers who couldn't find an answer had to
       complete a multi-step questionnaire before they could call for help. My
-      goal was to get them to the right article before they reached that point.
-      How might we help customers narrow their search quickly without contacting
-      support? Fitbit had a large amount of quantitative data on how people used
-      the site, so the research started there: support email data, site
-      analytics, and heatmaps. "
+      goal was to direct them to the right article before they reached that
+      point. How might we help customers narrow their search quickly without
+      contacting support? Fitbit had a large amount of quantitative data on how
+      people used the site, so the research started there: support email data,
+      site analytics, and heatmaps. "
     images:
       - image: /images/projects/heatMaps-1.png
         sound: false
