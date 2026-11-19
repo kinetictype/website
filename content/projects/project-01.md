@@ -28,8 +28,7 @@ sections:
     text: The design team stepped in to collaborate with Marketing to understand the
       Campaign Creation Process. We were a new team, and we approached the
       project as a learning opportunity. As the team described the process, we
-      uncovered several undocumented aspects of how the campaign process
-      unfolded.
+      uncovered several undocumented aspects of how campaigns were created.
     images:
       - image: /images/projects/image-asset.png
         sound: false
