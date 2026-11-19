@@ -58,9 +58,9 @@ sections:
         size: full
   - heading: Restructuring Schedule an Emmi
     text: Alongside the documentation, I worked on the Emmi Manager interface. The
-      Schedule an Emmi screen packed patient details, doctor details, and
-      program search into one dense form. I reorganized it into clear groups,
-      patient information, doctor information, and programs available, and made
+      Schedule an Emmi screen packed patient and doctor details, along with
+      program search, into a dense form. I reorganized it into clear groups
+      (patient information, doctor information, and available programs) and made
       it easier to narrow the program list.
     images:
       - image: /images/projects/alberto1_before.jpg
