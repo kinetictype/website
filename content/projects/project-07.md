@@ -72,10 +72,10 @@ sections:
           different amounts.
         size: full
   - heading: Mapping the girl's journey
-    text: Service design helped us find every touchpoint a girl would encounter, not
-      just the app. We followed a 16- to 24-year-old girl named Anna from first
-      hearing about girl currency to seeing the difference she makes, and kept
-      the research and concepts on one wall as we worked.
+    text: Service design helped us identify every touchpoint a girl would encounter,
+      not just the app. We followed a 16- to 24-year-old girl named Anna from
+      first hearing about girl currency to seeing the difference she makes, and
+      kept the research and concepts on one wall throughout the process.
     images:
       - image: /images/projects/girl-effect/05_customer-journey-map.png
         sound: false
