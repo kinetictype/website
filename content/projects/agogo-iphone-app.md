@@ -31,10 +31,8 @@ sections:
       audio app that combines your favorite music, podcasts, and news. Before
       the beta release, the team needed a way to invite people and an interface
       with features to explore. An admin enters a tester's email, and Agogo
-      sends them a link. Testers set a password, connect Twitter, Facebook, and
-      MOG, and take a quiz to customize their content, or skip either step.
-      Approved testers receive an email with a link to download Agogo on their
-      iOS device.
+      sends them a link. I began by visualizing this process to guide the
+      product's features.
     images:
       - image: /images/projects/01_beta-user-flow-2.png
         sound: false
