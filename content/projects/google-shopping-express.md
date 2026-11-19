@@ -71,15 +71,13 @@ sections:
           Milk."
         size: text-half
   - heading: One cart, several stores
-    text: >+
-      A single order could come from several stores, which made the cart the
-      hardest screen to design. The team worked through how we would navigate
-      the hierarchy, beginning with category. For example, drill down by
-      department, from Grocery to Dairy to Milk. Items are grouped by store,
-      such as Nob Hill Foods and Target, with quantity and price for each. We
-      also encourage shoppers to consolidate deliveries to as few stores as
-      possible to save on delivery fees and reduce environmental impact.
-
+    text: A single order could come from several stores, making the cart the hardest
+      screen to design. The team worked through how we would navigate the
+      hierarchy, starting with category. For example, drill down by department,
+      from Grocery to Dairy to Milk. Items are grouped by store, such as Nob
+      Hill Foods and Target, with quantity and price for each. We also encourage
+      shoppers to consolidate deliveries to as few stores as possible to save on
+      delivery fees and reduce environmental impact.
     images:
       - image: /images/projects/Wireframes.png
         sound: false
