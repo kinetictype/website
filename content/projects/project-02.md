@@ -66,9 +66,9 @@ sections:
   - heading: Designing a Design System Library
     text: When I began working with the files, I realized the Developer Portal would
       benefit from a resource of components that are part of the visual system.
-      I enjoy documentation and making scalable products. The Developer Portal
-      used a different tech stack than the consumer-facing platform, my design
-      system library noted the differences between the systems for the next
+      I enjoy documentation and building scalable products. The Developer Portal
+      used a different tech stack than the consumer-facing platform. My design
+      system library documented the differences between the systems for the next
       iteration of the migration.
     images:
       - image: /images/projects/Screenshot 2026-10-31 at 15.24.23-1.png
