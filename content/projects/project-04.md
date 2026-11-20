@@ -31,7 +31,7 @@ prototype_size: half
 sections:
   - heading: Bringing Interactivity to Investment Research
     text: The Core UX Team partnered with Global Investment Research but often
-      lacked the bandwidth to create interactive graphics for the Firm. I began
+      lacked the bandwidth to produce interactive graphics for the Firm. I began
       learning how they worked with Research and the capabilities of the CMS
       Platform behind the Research Portal.
     images:
