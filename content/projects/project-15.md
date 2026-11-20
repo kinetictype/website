@@ -30,10 +30,10 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: Working wtih the Android Phone
-    text: "The Android had a trackball and hardware buttons which, at first, felt
-      like an extra flipper when you play pinball. It added another element to
+    text: The Android had a trackball and hardware buttons, which, at first, felt
+      like an extra flipper when playing pinball. It added another element to
       pay attention to. I began by auditing the existing app and competing apps,
-      then documented the system we were working with. "
+      then documented the system we were working with.
     images:
       - image: /images/projects/01_NEWuse-case-diagram.png
         sound: false
