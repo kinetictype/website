@@ -9,9 +9,9 @@ goals: Help customers find answers on help.fitbit.com instead of calling Fitbit,
   giving them a better experience while reducing the number of calls to the call
   center.
 outcome: A mobile-first, responsive help site built on a new, metrics-driven
-  navigation system, documented in scenario flows and a system map. The Help
-  team and extended stakeholders received it well, but the CMS upgrade was put
-  on hold and the redesign did not move forward.
+  navigation system, documented through scenario flows and a system map. The
+  Help team and extended stakeholders received it positively, but the CMS
+  upgrade was put on hold, and the redesign did not move forward.
 responsibilities: UX Design, research synthesis, framework, and vision.
 team: Worked directly with three stakeholders and a program manager.
 categories:
