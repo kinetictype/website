@@ -131,7 +131,7 @@ sections:
   - heading: What carried forward
     text: Although the redesign did not ship, a few things outlasted it. Mapping the
       customer journey gave three teams with competing priorities a shared
-      picture to work from. Reaching out to the product team also started
+      picture to work from. Reaching out to the product team also initiated
       cross-team meetings focused on product onboarding, which continued long
       after this project ended.
 ---
