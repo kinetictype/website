@@ -31,8 +31,8 @@ prototype_size: half
 sections:
   - heading: Mapping the whole experience
     text: "Google Shopping Express delivered products from local stores, often on
-      the same day. Working with Fluid, I mapped how a shopper moves between the
-      physical and digital parts of the service, from building a list to
+      the same day. Working with Fluid, I mapped the shopper's journey across
+      the physical and digital parts of the service, from building a list to
       receiving the package. The map follows the shopper through four stages:
       order, item suggestion, payment, and delivery. It raised questions for the
       team, such as how to discover a shopper's lifestyle to better target
