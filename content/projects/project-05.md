@@ -36,8 +36,8 @@ sections:
   - heading: How might we create a self-service platform?
     text: The Fitbit support site drew about 1.5 million visitors a month, most
       searching for answers to specific issues. Yet most visitors who filed a
-      support case had never tried self-service. We believed that if people
-      could find help on the website, fewer would need to call Fitbit. I had to
+      support case had never used self-service. We believed that if people could
+      find help on the website, fewer would need to call Fitbit. I had to
       rethink the site's navigation.
     images:
       - image: /images/projects/01_Improved_service-blueprint.png
