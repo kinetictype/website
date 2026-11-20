@@ -80,7 +80,7 @@ sections:
   - heading: Led a Migration of Components
     text: >+
       After I documented all the components, the Apiture consumer-facing Design
-      System lead for AUI began discussing migrating the Developer Portal
+      System lead for AUI began discussing the migration of the Developer Portal
       elements into a single system.
 
 
