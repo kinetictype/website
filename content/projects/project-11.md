@@ -65,12 +65,14 @@ sections:
         caption: Illustration at times took a forefront over visualizing data.
         size: half-text
   - heading: Working Within Tight Deadlines Daily
-    text: "As a visual journalist, the day begins at noon and ends once the paper is
-      sent to print. The paper is unique in that it has an omnipresent, ongoing
-      momentum. I enjoyed the rhythm. It is a constant cycle of feedback and
-      collaboration, which makes the work great. I quickly learned my limits so
-      I could meet deadlines. Unfortunately, that meant that sometimes an idea
-      could be great, but time constraints required a simpler solution. "
+    text: >+
+      As a visual journalist, the day begins at noon and ends once the paper is
+      sent to print. The paper is unique in its omnipresent, ongoing momentum. I
+      enjoyed the rhythm. It is a constant cycle of feedback and collaboration,
+      which makes the work great. I quickly learned my limits so I could meet
+      deadlines. Unfortunately, that meant that sometimes an idea could be
+      great, but time constraints required a simpler solution. 
+
     images:
       - image: /images/projects/ATT_Tribune.png
         sound: false
