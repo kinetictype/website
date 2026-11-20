@@ -111,4 +111,4 @@ sections:
       Managing Directors in the bank's Research arm was a highly rewarding
       experience. "
 ---
-Goldman Sachs was committed to providing interactive graphics for Investment Research stories to add value to insights and analysis in the equity, fixed income, currency, and commodities markets. I joined the firm to build engaging interactive data stories for the research portal during a global pandemic. I consulted with Managing Directors across the department, then designed and developed several interactive graphics throughout the year. 
+Goldman Sachs was committed to providing interactive graphics for Investment Research stories to add value to insights and analysis across the equity, fixed income, currency, and commodities markets. I joined the firm to build engaging interactive data stories for the research portal during a global pandemic. I consulted with Managing Directors across the department, then designed and developed several interactive graphics throughout the year. 
