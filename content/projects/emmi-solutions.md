@@ -28,10 +28,9 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: Documenting a Process for a Wider Understanding
-    text: "As the company developed partnerships, one question kept coming up: how
-      is the software produced? The lead engineer, the system's architect, was
-      the one person who knew the whole process, and he was leaving the
-      company."
+    text: "As the company formed partnerships, one question kept coming up: how is
+      the software produced? The lead engineer, the system's architect, was the
+      only person who knew the entire process, and he was leaving the company."
     images:
       - image: /images/projects/NEWdiagramBefore.png
         sound: false
