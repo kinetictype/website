@@ -107,4 +107,4 @@ sections:
       we were delivering to Intel, and wireframes for MyIntel, including the
       onboarding wizard and filtering options.
 ---
-Explained Intel's new content management system and designed parts of [MyIntel.com](http://MyIntel.com), a customized newsfeed filtered to user needs. I designed a Collections guide illustrating metadata, tagging, and modular "blades" to help our client visually understand the platform we were delivering. Also designed MyIntel wireframes, including an onboarding wizard and filtering options. 
+Explained Intel's new content management system and designed parts of [MyIntel.com](http://MyIntel.com), a customized newsfeed filtered to user needs. I designed a Collections guide illustrating metadata, tagging, and modular "blades" to help our client visually understand the platform we were delivering. I also designed MyIntel wireframes, including an onboarding wizard and filtering options. 
