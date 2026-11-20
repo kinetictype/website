@@ -29,12 +29,12 @@ prototype_size: half
 sections:
   - heading: Every Day a New Adventure
     text: Every day at the Chicago Tribune was a new adventure. Depending on the
-      news that day, I worked on 2-3 small visualizations or, if a breaking news
-      story broke, I worked with other artists to contribute to a larger data
-      story that took up an entire page. At times, I worked on a page-one story,
-      designing and illustrating a visualization while editors watched me work.
-      No matter the situation that day, I was thrilled to contribute to the team
-      and run with the news.
+      news of the day, I worked on 2-3 small visualizations, or, if a breaking
+      story broke, I collaborated with other artists to contribute to a larger
+      data story that filled an entire page. At times, I worked on a page-one
+      story, designing and illustrating a visualization while editors watched me
+      work. No matter the situation, I was thrilled to contribute to the team
+      and run with the stories.
     images:
       - image: /images/projects/artInstitute_o-1.png
         sound: false
