@@ -78,10 +78,10 @@ sections:
           an honor to help communicate it. 
 
   - heading: Opportunity to Clarify Complexity
-    text: One of my favorite parts of creating visualizations is the chance to learn
-      deeply about the subject and find insight along the way. It’s always
-      exciting to turn a complex concept into a clear message and tell its
-      story.
+    text: One of my favorite parts of creating visualizations is the opportunity to
+      learn deeply about the subject and uncover insight along the way. It’s
+      always exciting to turn a complex concept into a clear message and tell
+      its story.
     images:
       - video: /images/projects/HybridCloud-from-svg (1).mp4
         sound: false
