@@ -87,7 +87,7 @@ sections:
         caption: Interpolating the colors to find the right level of contrast for the
           patterns.
         size: half-text
-  - heading: Outcome
+  - heading: Color Interpolation
     text: >+
       ##### Based on legibility standards, I used color interpolation to blend
       the two values. This produced a set of high-contrast color and fill
