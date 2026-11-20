@@ -100,5 +100,4 @@ sections:
         caption: The final visual design of the Gardiner Family Facts page.
         size: full
 ---
-Improved the SEO landing flow to showcase the breadth and depth of Ancestry's content about ancestors and improve user acquisition in the sign-up flow. I drew flows, wireframes, and visual designs. This included a tab structure and data visualization that provided more context for family relationships.
-
+Improved the SEO landing flow to showcase the breadth and depth of Ancestry's content on ancestors and to improve user acquisition in the sign-up flow. I created flows, wireframes, and visual designs. This included a tab structure and data visualizations that provided more context for family relationships.
