@@ -54,9 +54,10 @@ sections:
         caption: I workshopped with the Product Manager to understand the goals.
         size: text-half
   - heading: Prototyping the experience
-    text: Building prototypes and having conversations is a great way to learn along
-      the way. Apiture's ease of communication made sharing work more fun. We
-      often reviewed work and moved toward the details that make a product work.
+    text: Building prototypes and having conversations are great ways to learn along
+      the way. Apiture's ease of communication made sharing work more enjoyable.
+      We often reviewed work and moved toward the details that make a product
+      work.
     images:
       - video: /images/projects/DevPortal_addNewcustomers_small.mp4
         sound: false
