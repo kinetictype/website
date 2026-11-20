@@ -106,9 +106,8 @@ sections:
         size: half-text
         text: "Placeholder: describe the design shown here and the decisions behind it."
   - heading: Working at Goldman Sachs
-    text: "I enjoyed being part of a group of thinkers that helped clients read the
+    text: "I enjoyed being part of a group of thinkers who helped clients read the
       road ahead. Designing and developing SVG graphics while collaborating with
-      Managing Directors in the bank's Research arm was a highly rewarding
-      experience. "
+      Managing Directors in the bank's Research arm was highly rewarding. "
 ---
 Goldman Sachs was committed to providing interactive graphics for Investment Research stories to add value to insights and analysis across the equity, fixed income, currency, and commodities markets. I joined the firm to build engaging interactive data stories for the research portal during a global pandemic. I consulted with Managing Directors across the department, then designed and developed several interactive graphics throughout the year. 
