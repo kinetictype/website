@@ -78,7 +78,7 @@ sections:
           structure.
         size: text-half
   - heading: Close Collaboration with Development
-    text: I worked with a codepen that the developer created to help me formulate
+    text: I worked with a CodePen that the developer created to help me formulate
       the color patterns.
     images:
       - image: /images/projects/FP_Interpolation (1).png
