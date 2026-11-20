@@ -28,29 +28,16 @@ drawer_whole: false
 prototype_size: half
 sections:
   - heading: A new CMS for Intel
-    text: >+
-      Intel was moving its websites onto a new content management system, CQ,
-      and Razorfish was delivering the platform. The content publishers who
-      would use it needed to understand how it worked, and Intel also wanted
+    text: Intel was moving its websites onto a new content management system, and
+      Razorfish was delivering the platform. The content publishers who would
+      use it needed to understand how it worked, and Intel also wanted
       MyIntel.com, a customized newsfeed filtered to each person's needs.
-
-
-      - Content in CQ surfaces through collections, search, and the content
-      library, and eventually through personalization in MyIntel.
-
-      - Collections and asset detail pages are built from modular content
-      elements called "blades."
-
   - heading: Explaining the platform
     text: >+
       My goal was to make an abstract system concrete for the people who would
-      publish content into it.
-
-
-      - How might we show publishers why the metadata they assign matters?
-
-      - I designed a 12-page Collections guide that illustrates metadata,
-      tagging, and modular blades.
+      publish content into it. How might we show publishers why the metadata
+      they assign matters? I designed a 12-page Collections guide that
+      illustrates metadata, tagging, and modular blades.
 
     images:
       - image: /images/projects/03_role-of-metadata.png
