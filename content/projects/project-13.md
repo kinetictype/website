@@ -40,10 +40,9 @@ sections:
           categorical data from an overview to specific data.
         size: half-text
   - heading: How might we translate a printed document to an interactive experience?
-    text: To achieve the outcome of what this product would look like, using
-      interactive data visualization, I categorized the wireframes to show an
-      overview, top insights, UX factors, tasks vs. competition, and struggle
-      areas.
+    text: To visualize what this product would look like, I used interactive data
+      visualization and categorized the wireframes to show an overview, top
+      insights, UX factors, tasks vs. competition, and struggle areas.
     images:
       - image: /images/projects/StoryElements-2.webp
         sound: false
