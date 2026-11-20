@@ -44,18 +44,12 @@ sections:
           sign-up.'
         size: text-half
   - heading: Showing what Ancestry knows
-    text: >+
-      My goal was to show visitors, in a glance, how much Ancestry could tell
-      them about their family before asking them to sign up.
-
-
-      - How might we turn a count of records into something that makes a visitor
-      curious about their own family?
-
-      - Each type of record could tell a different story: where the family
-      lived, what they did for a living, how long they lived, where they came
-      from, and whether they fought for the North or the South.
-
+    text: "My goal was to show visitors, in a glance, how much Ancestry could tell
+      them about their family before asking them to sign up. How might we turn a
+      record count into something that makes a visitor curious about their own
+      family? Each type of record could tell a different story: where the family
+      lived, what they did for a living, how long they lived, and where they
+      came from."
     images:
       - image: /images/projects/04_search-results-1.png
         sound: false
