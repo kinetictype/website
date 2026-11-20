@@ -7,9 +7,8 @@ timeline: 2007-2008
 goals: As Emmi Solutions was developing partnerships, one question kept coming
   up. How is the software produced? The lead engineer was leaving the company,
   so he could no longer field questions. We needed documentation.
-outcome: "Among User Interface work and marketing materials, I mapped out his
-  understanding of the process and shared the visualization across the company.
-  "
+outcome: "Across User Interface work and marketing materials, I mapped out his
+  understanding of the process and shared the visualization company-wide. "
 responsibilities: Visual Design, Interface Design, Design System management
 team: The departing system architect and the management team.
 categories:
