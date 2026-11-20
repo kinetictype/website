@@ -70,6 +70,13 @@ sections:
       - Sections for saved content, saved searches, recent activity, shared
       content, and community activity, with room to add new categories
 
+
+      - Content in CQ surfaces through collections, search, and the content
+      library, and eventually through personalization in MyIntel.
+
+      - Collections and asset detail pages are built from modular content
+      elements called "blades."
+
     images:
       - image: /images/projects/05_myintel-wireframe-1.png
         sound: false
