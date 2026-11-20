@@ -92,8 +92,8 @@ sections:
     text: >+
       In addition to designing and developing interactive Scalable Vector
       Graphics, I partnered with the Core UX Design System team to standardize
-      icons and create evergreen content to support future data stories and
-      ensure consistency across production.
+      icons and create evergreen content that supports future data stories and
+      ensures consistency across production.
 
 
       > *Kiera was a pleasure to work with. She not only created innovative data
