@@ -107,7 +107,7 @@ sections:
       ##### The new color schemes and fill patterns significantly improved
       accessibility across the platform, making it easier for a wider range of
       individuals to navigate and interact with charts in the Workday
-      enterprise. Patterns shipped, complied with usability/contrast standards,
+      enterprise. The patterns shipped, met usability and contrast standards,
       and were incorporated into the design system. The project was well
       received and improved accessibility across the platform.
 ---
