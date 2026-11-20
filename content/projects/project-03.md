@@ -37,9 +37,9 @@ sections:
       ##### We were a new team, and our product had several gaps. We wanted to
       move away from custom code, adopt the design system, incorporate research
       to drive engagement, and align with the rest of Business Banking. Our data
-      showed users were not exploring the content behind the Business Offers
-      dashboard. I proposed adding a tab structure to increase engagement with
-      the site's content.
+      showed that users were not exploring the content behind the Business
+      Offers dashboard. I proposed adding a tab structure to increase engagement
+      with the site's content.
 
     images:
       - image: /images/projects/beforeAfter_ChaseCI.png
