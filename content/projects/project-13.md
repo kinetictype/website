@@ -103,7 +103,7 @@ sections:
   - heading: Scoping the Vision from the Beginning
     text: When I joined the team at User Testing after nine months of discovery,
       management had begun looking in a different direction. They ultimately
-      decided to pivot. It was a thrill to bring data visualization skills to a
+      decided to pivot. It was exciting to bring data visualization skills to a
       talented team with a brand-new design system. I learned how crucial it is
       to have a design lead from the start to scope the vision.
 ---
