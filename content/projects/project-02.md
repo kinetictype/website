@@ -31,11 +31,11 @@ prototype_size: half
 prototype_title: Apiture Developer Portal clickable prototype
 sections:
   - heading: Understanding the Ecosystem
-    text: In the beginning, I explored the problem and mapped out the domain. We
-      focused on the dashboard, API Documentation, and "Try It" functionality. I
-      discussed the experience and goals with several engineers to better
-      understand the project's vision. Connecting research with strategy brings
-      a product to life.
+    text: Initially, I explored the problem and mapped the domain. We focused on the
+      dashboard, API documentation, and the "Try It" functionality. I discussed
+      the experience and goals with several engineers to better understand the
+      project's vision. Connecting research with strategy brings a product to
+      life.
     images:
       - image: /images/projects/Dev Portal-Context.png
         sound: false
