@@ -87,8 +87,9 @@ sections:
           with a single checkout.
         size: half-text
   - heading: Results & outcomes
-    text: The work documented the product ecosystem and its touchpoints on desktop
-      and mobile platforms. Google was pleased with the flows and wireframes.
+    text: The work documented the product ecosystem and its touchpoints across
+      desktop and mobile platforms. Google was pleased with the flows and
+      wireframes.
     images:
       - image: /images/projects/ServiceMap-1.png
         sound: false
