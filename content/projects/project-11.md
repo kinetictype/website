@@ -56,7 +56,7 @@ sections:
   - heading: Checks and Balances
     text: One of my favorite things about working in the newspaper business is the
       number of eyes on my work. When a graphic was ready for print, it traveled
-      the newsroom and went through several checks and balances to ensure
+      through the newsroom and underwent several checks and balances to ensure
       accuracy.
     images:
       - image: /images/projects/CocktailNerds_814.png
