@@ -55,11 +55,11 @@ sections:
         size: text-half
   - heading: Ideating with Managing Directors
     text: As I consulted with the firm's Managing Directors, I sketched as we
-      collaborated and discussed the subject and visual possibilities. We
-      partnered, exchanging ideas and arriving at a shared vision. Through this
-      process, I drew on my independent contractor experience to drive the
-      feedback loop and put on my visual journalist cap to estimate the design
-      and development time we would need before we could publish.
+      discussed the subject and visual possibilities. We partnered, exchanging
+      ideas and arriving at a shared vision. Through this process, I drew on my
+      independent contractor experience to drive the feedback loop and put on my
+      visual journalist cap to estimate the design and development time we would
+      need before we could publish.
     images:
       - image: /images/projects/hybrid_Sketch04.png
         sound: false
