@@ -68,8 +68,8 @@ sections:
         size: half-text
   - heading: Challenges
     text: This was new territory, and I developed a process for designing patterns
-      on my own and proposing them to my team. I looked at the foreground and
-      background to examine which contrast would be the most legible.
+      on my own and proposing them to my team. I examined the foreground and
+      background to determine which contrast would be the most legible.
     images:
       - image: /images/projects/FillPattern_logic.png
         sound: false
