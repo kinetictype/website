@@ -125,5 +125,5 @@ sections:
       business to enable efficient Figma updates and consistency across our
       files and, ultimately, Business Banking.
 ---
-##### My team at Offers and Shopping at JPMorgan helped merchants execute campaigns and monitor their business on our platform. I led a team of two designers and took over a new business line that was not yet connected to the design system. At first, the design was development-driven; then the design shifted toward holistic thinking rather than small, development-led improvements. After the changes went live in October 2022, we saw a 400% increase in user engagement.
+##### My team at Offers and Shopping at JPMorgan helped merchants execute campaigns and monitor their business on our platform. I led a team of two designers and took over a new business line that had not yet been connected to the design system. Initially, the design was development-driven; it later shifted toward holistic thinking rather than small, development-led improvements. After the changes went live in October 2022, we saw a 400% increase in user engagement.
 
