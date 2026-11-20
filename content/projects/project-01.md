@@ -107,9 +107,9 @@ sections:
         size: full
   - heading: Collaboration Led to Fruitful Outcomes
     text: It was a great opportunity to collaborate cross-functionally with the
-      Marketing team on this project to uncover opportunities in the Campaign
-      Creation process. I enjoy work that reveals processes to empower teams to
-      make clear decisions and move forward.
+      Marketing team on this project to uncover opportunities within the
+      Campaign Creation process. I enjoy work that reveals processes, empowering
+      teams to make clear decisions and move forward.
 ---
 ##### The Merchant Insights Campaign at JPMorgan Chase Bank found that enrollment in the Business sign-up for the Chase Offers program was not increasing. I was asked to work with the Marketing team to better understand the process. People were not following through with signing up to list their business on Offers and Shopping in Business Banking. Design dove deeper into the reasons for the lack of engagement and scheduled a series of collaborative workshops to brainstorm solutions.
 
