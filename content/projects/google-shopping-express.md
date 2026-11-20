@@ -96,7 +96,7 @@ sections:
         size: full
   - heading: Design of the Ecosystem
     text: Looking at the Google Shopping Express platform through a service design
-      lens, we supported the rebrand. Working on the shopping taxonomy while
+      lens, we supported the rebrand. We worked on the shopping taxonomy while
       incorporating ideas for microinteractions in mobile shopping. As product
       costs skyrocketed on the platform, Google noticed declining engagement and
       decided to rebrand the entire service again.
