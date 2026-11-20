@@ -60,9 +60,9 @@ sections:
         caption: The wireframes began to take shape and the design gained momentum.
         size: half-text
   - heading: Balancing Data Literacy with Clarity
-    text: The team, although based in the Bay Area, was mainly spread out and we
+    text: The team, although based in the Bay Area, was mostly spread out, and we
       held meetings remotely. I created critiques using Miro, a whiteboarding
-      confernce tool, to share my progress and gain feedback from the team.
+      conference tool, to share my progress and gather feedback from the team.
     images:
       - image: /images/projects/02_wireframe-critique.jpg
         sound: false
