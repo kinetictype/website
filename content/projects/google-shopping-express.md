@@ -62,7 +62,7 @@ sections:
   - heading: Drilling down to an item
     text: Grocery shopping meant deep categories. A slide-out menu lets shoppers
       drill down by department, from Grocery to Dairy to Milk, while products
-      remain in view beside the menu.
+      remain visible beside the menu.
     images:
       - image: /images/projects/Wireframes01.png
         sound: false
