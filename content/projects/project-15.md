@@ -5,10 +5,10 @@ client: Flip Video
 role: UX Designer
 timeline: 2009 – 2010
 goals: Develop a user interface custom-built for Android.
-outcome: For the Android app for Flipshare, I designed screens for downloading,
-  sharing, and viewing videos. The first drawer feature for the Android phone.
-  Visualized aspects of how the application works to communicate clearly within
-  the team.
+outcome: For the Flipshare Android app, I designed screens for downloading,
+  sharing, and viewing videos. I also designed the drawer feature for the
+  Android phone. I visualized aspects of how the application works to
+  communicate clearly within the team.
 responsibilities: "I worked on interaction design and concept design. "
 team: Reported to Cisco's principal UX designer, and worked with a product
   manager to review requirements.
