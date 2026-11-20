@@ -9,9 +9,9 @@ goals: The goal was to enable merchant acquisition and retention through
   onboarding and to increase engagement with the Customer Insights portal, where
   merchants run offer campaigns to Chase customers and monitor results
 outcome: Updated the Offers and Shopping business banking site to align with the
-  design system; created a line-of-business sub-component library extending the
-  Manhattan Design System; introduced a tab structure to provide access to the
-  portal's deep-dive pages.
+  design system; created a line-of-business subcomponent library that extends
+  the Manhattan Design System; introduced a tab structure to provide access to
+  the portal's deep-dive pages.
 responsibilities: Lead UX Designer; synthesized existing research, conducted
   competitive analysis, mapped the user journey, designed tablet and mobile
   experiences, and led the sub-library strategy; cross-team collaboration.
@@ -100,7 +100,7 @@ sections:
         size: text-half
   - heading: Building our Line-of-Business Components
     text: I worked across the organization to learn from more mature design teams,
-      such as Chase Travel, about how they managed product deployment. Then, I
+      such as Chase Travel, about how they managed product deployments. Then, I
       upskilled my team on Figma component libraries. The sub-library enabled
       reuse and scaling across teams and faster file delivery for developers.
     images:
@@ -112,7 +112,7 @@ sections:
         size: half-text
   - heading: Results Exceeded our Expectations
     text: The shipped redesign increased engagement by 400%. Our team worked hard to
-      turn Offers and Shopping into a unified part of the business banking
+      integrate Offers and Shopping into a unified part of the business banking
       platform.
     images:
       - image: /images/projects/Cover_EndScreen02.png
@@ -122,8 +122,8 @@ sections:
         size: full
   - heading: Driven to Create Unity
     text: We were a new team, and I built a component library for our line of
-      business to enable efficient Figma updates and consistency across our
-      files and, ultimately, Business Banking.
+      business to enable efficient Figma updates and ensure consistency across
+      our files and, ultimately, across Business Banking.
 ---
 ##### My team at Offers and Shopping at JPMorgan helped merchants execute campaigns and monitor their business on our platform. I led a team of two designers and took over a new business line that had not yet been connected to the design system. Initially, the design was development-driven; it later shifted toward holistic thinking rather than small, development-led improvements. After the changes went live in October 2022, we saw a 400% increase in user engagement.
 
