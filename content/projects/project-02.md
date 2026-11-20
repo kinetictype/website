@@ -102,7 +102,7 @@ sections:
         size: half-text
   - heading: Outcomes
     text: Although the Developer Portal used a different tech stack, the Design
-      System Library made it easier to convert the files we were building to a
+      System Library made it easier to migrate the files we were building to a
       new system.
     images:
       - image: /images/projects/Reset password_mock-2.png
