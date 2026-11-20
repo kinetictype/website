@@ -53,12 +53,11 @@ sections:
         sound: false
         size: text-half
   - heading: A drawer of actions
-    text: >+
-      I designed a new slide feature with the engineers at Flip that did not
+    text: I designed a new slide feature with the engineers at Flip that did not
       exist before. An action bar slides open from a handle on each video in a
-      channel, so every action is one tap away. Completing the interaction, a
-      confirmation such as "Added to Favorites" appears in the drawer.
-
+      channel, so every action is one tap away. After completing the
+      interaction, a confirmation such as "Added to Favorites" appears in the
+      drawer.
     images:
       - video: /images/projects/flipshare-channels-drawer.mp4
         sound: false
