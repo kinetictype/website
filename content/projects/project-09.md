@@ -90,8 +90,8 @@ sections:
   - heading: Outcome
     text: >+
       ##### Based on legibility standards, I used color interpolation to blend
-      between the two values. This produced a set of high-contrast color and
-      fill pattern pairs. This project created positive business value by
+      the two values. This produced a set of high-contrast color and fill
+      pattern pairs. This project created positive business value by
       incorporating accessibility and consistency into Workday's charting
       library. I created logic for how the patterns were displayed and connected
       it to the design system's colors.
