@@ -86,9 +86,9 @@ sections:
         size: half-text
   - heading: Viewing photos and video
     text: During video playback, an overlay displays the play controls, share, and
-      mark buttons, so every action is in one place. I surveyed the video player
-      landscape to identify new icons for the progress bar, forward, back, and
-      play.
+      mark buttons, keeping all actions in one place. I surveyed the video
+      player landscape to identify new icons for the progress bar, forward,
+      back, and play.
     images:
       - video: /images/projects/flipshare-photo-playback.mp4
         sound: false
