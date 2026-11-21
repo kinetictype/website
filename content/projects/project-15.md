@@ -73,8 +73,8 @@ sections:
         caption: Tap the star to add a video to Favorites; the icon stays highlighted.
         size: half
   - heading: Tap and hold
-    text: Tapping and holding a video opens a menu over a gray screen with the
-      video's thumbnail and title at the top, so the viewer keeps sight of the
+    text: Tapping and holding a video opens a menu over a gray screen, with the
+      video's thumbnail and title at the top so the viewer keeps sight of the
       item. The menu offers Favorite, Playlist, Slideshow, Download, and Share,
       and the Back key returns to the channel list.
     images:
