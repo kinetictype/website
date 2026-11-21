@@ -42,12 +42,12 @@ sections:
           videos through channels.
         size: half-text
   - heading: Designing for the way people share
-    text: My goal was an app that felt native to Android and made video sharing
-      simple. How might we let people download, share, and view video with a few
-      taps or a trackball roll? Interviews shaped the use-case diagrams for the
-      "channel" sharing system, which helped the team discuss it clearly. I
-      designed screens for favoriting, downloading, sharing, adding to a
-      playlist, and viewing video.
+    text: My goal was to build an app that felt native to Android and made video
+      sharing simple. How might we let people download, share, and view video
+      with a few taps or a trackball roll? Interviews shaped the use-case
+      diagrams for the "channel" sharing system, which helped the team discuss
+      it clearly. I designed screens for favoriting, downloading, sharing,
+      adding to a playlist, and viewing video.
     images:
       - image: /images/projects/flipshare-favorite.gif
         sound: false
