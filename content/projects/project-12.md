@@ -22,7 +22,7 @@ hidden: false
 description: Placeholder description of project 12 for search engines and link previews.
 cover: /images/logos/workdayColor.svg
 cover_alt: Workday
-drawer_image: /images/projects/WD_PA_MainImg.png
+drawer_image: /images/projects/thumbs/workday-people-analytics.webp
 drawer_image_alt: Workday Analytics Platform
 drawer_whole: false
 prototype_size: half

@@ -27,7 +27,7 @@ description: Redesigning help.fitbit.com as a self-service platform, using a
   calls.
 cover: /images/logos/fitbit.svg
 cover_alt: Fitbit logo
-drawer_image: /images/projects/project-05-fitbit/06_responsive-desktop-mobile-hd.webp
+drawer_image: /images/projects/thumbs/fitbit.webp
 drawer_image_alt: Responsive design for Fitbit help
 drawer_whole: false
 top_image_alt: Service blueprint and ecosystem/system map, Responsive, mobile-first designs

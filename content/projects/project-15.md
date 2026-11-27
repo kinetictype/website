@@ -24,7 +24,7 @@ description: Designing Flipshare for Android from scratch, with an audit,
   system.
 cover: /images/logos/FlipVideo.svg
 cover_alt: Flip Video logo
-drawer_image: /images/projects/flipshare-video-option-a-2.gif
+drawer_image: /images/projects/thumbs/flipshare.gif
 drawer_image_alt: Animated prototype of video playback in Flipshare for Android
 drawer_whole: false
 prototype_size: half

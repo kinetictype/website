@@ -22,7 +22,7 @@ hidden: false
 description: Placeholder description of project 04 for search engines and link previews.
 cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
-drawer_image: /images/projects/streamingTVService_LGwebpage_mock-1.png
+drawer_image: /images/projects/thumbs/goldman-sachs.webp
 drawer_whole: false
 prototype_url: |+
   

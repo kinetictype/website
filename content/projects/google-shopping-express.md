@@ -24,7 +24,7 @@ description: Service design and Android wireframes for Google Shopping Express,
   designed at Fluid, from the shopper's journey to the cart and delivery.
 cover: /images/logos/Google_Shopping.svg
 cover_alt: Google Shopping logo
-drawer_image: /images/projects/newServiceMap.png
+drawer_image: /images/projects/thumbs/google-express.webp
 drawer_image_alt: Service map of the Google Shopping Express Experience
 drawer_whole: false
 prototype_size: half
