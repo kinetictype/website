@@ -94,4 +94,4 @@ sections:
       and more understated, but exploring movable identity marks with Rick
       Valicenti was a career highlight.
 ---
-Merchandise Mart Properties was a vast building of showrooms that were constantly rearranged. Its modularity began the conceptualization of building an identity mark with block-themed variations and an animated version of the mark.
+Merchandise Mart Properties, an exhibition space, was a vast building of showrooms that were constantly rearranged. Its modularity led to the conceptualization of building an identity mark with block-themed variations and an animated version of the mark.
