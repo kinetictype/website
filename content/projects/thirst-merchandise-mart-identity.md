@@ -13,7 +13,7 @@ outcome: A concept presentation, color palette, variations on the block theme,
 responsibilities: Visual design, interaction design, concept design.
 team: Worked under the direction of Rick Valicenti.
 categories:
-  - "Visual & Motion"
+  - Visual & Motion
 years: "2008"
 section: work
 start_year: 2008
@@ -94,4 +94,4 @@ sections:
       and more understated, but exploring movable identity marks with Rick
       Valicenti was a career highlight.
 ---
-Merchandise Mart Properties was a vast building of showrooms and exhibition space that is constantly rearranged. Its modularity began the conceptualization of building an identity mark with block-themed variations and an animated version of the mark.
+Merchandise Mart Properties was a vast building of showrooms that were constantly rearranged. Its modularity began the conceptualization of building an identity mark with block-themed variations and an animated version of the mark.
