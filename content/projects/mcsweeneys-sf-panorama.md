@@ -43,7 +43,7 @@ sections:
       more than 100 Lembi properties, I time-traveled to 1910 as I brought them
       to ink. "
     images:
-      - image: /images/projects/01_panorama-spread2.png
+      - image: /images/projects/01_panorama-spread2-1.png
         sound: false
         size: full
   - heading: From photographs to the page
