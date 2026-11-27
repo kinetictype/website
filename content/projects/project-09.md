@@ -24,7 +24,7 @@ cover: /images/logos/workdayColor.svg
 cover_alt: Workday logo
 drawer_image: /images/projects/thumbs/workday-chart-accessibility.webp
 drawer_image_alt: Placeholder image for project 09
-drawer_whole: false
+drawer_whole: true
 prototype_size: half
 sections:
   - heading: Understanding the Context

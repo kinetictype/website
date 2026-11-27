@@ -29,7 +29,7 @@ cover: /images/logos/fitbit.svg
 cover_alt: Fitbit logo
 drawer_image: /images/projects/thumbs/fitbit.webp
 drawer_image_alt: Responsive design for Fitbit help
-drawer_whole: false
+drawer_whole: true
 top_image_alt: Service blueprint and ecosystem/system map, Responsive, mobile-first designs
 prototype_size: half
 sections:

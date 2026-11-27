@@ -21,7 +21,7 @@ hidden: false
 description: An information graphic for a Darwill brochure that explains the
   automated BreezeWay prepress process, developed in six steps.
 cover: /images/logos/darwill.svg
-drawer_image: /images/projects/thumbs/darwill.webp
+drawer_image: /images/projects/NEW_finalDiagram.png
 drawer_image_alt: The BreezeWay prepress diagram for Darwill
 drawer_whole: false
 prototype_size: half

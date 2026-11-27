@@ -24,7 +24,7 @@ cover: /images/logos/workdayColor.svg
 cover_alt: Workday
 drawer_image: /images/projects/thumbs/workday-people-analytics.webp
 drawer_image_alt: Workday Analytics Platform
-drawer_whole: false
+drawer_whole: true
 prototype_size: half
 sections:
   - heading: Decipher the Vision

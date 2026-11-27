@@ -63,7 +63,7 @@ content:
         options: { media: images, path: content/images/logos }
       - { name: cover_alt, label: Logo / cover description (alt text), type: string }
       - name: drawer_image
-        label: "Drop-down image — shown only when the row is opened in More projects (3:2 like 3000 × 2000, subject about 88% wide / 70% tall, centred; keep it in this project's folder in images/projects)"
+        label: "Drop-down image — shown only when the row is opened in More projects (photo or screenshot, 1600 × 1000; laptop mockups: 3:2 like 3000 × 2000 with the laptop about 88% wide, centred, and "show the whole image" on; keep it in this project's folder in images/projects)"
         type: image
         options: { media: images, path: content/images/projects }
       - { name: drawer_image_alt, label: Drop-down image description (alt text), type: string }

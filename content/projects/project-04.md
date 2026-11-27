@@ -23,7 +23,7 @@ description: Placeholder description of project 04 for search engines and link p
 cover: /images/logos/goldman-sachs.svg
 cover_alt: Goldman Sachs logo
 drawer_image: /images/projects/thumbs/goldman-sachs.webp
-drawer_whole: false
+drawer_whole: true
 prototype_url: |+
   
 
