@@ -21,7 +21,7 @@ hidden: false
 description: Documenting how Emmi Solutions produced its patient education
   programs, and restructuring the Schedule an Emmi screen in Emmi Manager.
 cover: /images/logos/emmi.svg
-drawer_image: /images/projects/Process_NewProgram_2021-1.png
+drawer_image: /images/projects/NEW_Emmi_process_diagram-1.png
 drawer_image_alt: Emmi Solutions new program process diagram
 drawer_whole: false
 prototype_size: half
