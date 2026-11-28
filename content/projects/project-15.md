@@ -97,8 +97,9 @@ sections:
   - heading: Cut my teeth on the Android phone
     text: The Android had a trackball and hardware buttons, which, at first, felt
       like an extra flipper when playing pinball. It added another element to my
-      toolbox as I was designing with hardware and software combined. I loved
-      prototyping the first sliding drawer with engineers at Flip.
+      toolbox as I was designing with hardware and software combined. In the
+      end, I worked with developers to prototype the first sliding drawer on
+      Android. Later that year, Cisco acquired Flip.
     images:
       - sound: false
         size: full
