@@ -29,11 +29,10 @@ drawer_image_alt: Animated prototype of video playback in Flipshare for Android
 drawer_whole: false
 prototype_size: half
 sections:
-  - heading: Working wtih the Android Phone
-    text: The Android had a trackball and hardware buttons, which, at first, felt
-      like an extra flipper when playing pinball. It added another element to
-      pay attention to. I began by auditing the existing app and competing apps,
-      then documented the system we were working with.
+  - heading: Documenting for Understanding
+    text: I began by auditing the existing app and competing apps, then documented
+      the system we were working with. While working with the Principal
+      Designer, I would visualize how aspects of the software worked.
     images:
       - image: /images/projects/01_NEWuse-case-diagram.png
         sound: false
@@ -96,11 +95,8 @@ sections:
         caption: Scroll with the trackball and tap a photo to select it.
         size: text-half
   - heading: Cut my teeth on the Android phone
-    text: I enjoy learning about new domains and wrapping my brain around their
-      intricacies. It was great to work with the Principal Designer while
-      learning how aspects of the software worked. Documenting while building
-      features is a practice that benefits the team. Later that year, Cisco
-      acquired Flip and canceled its projects.
+    text: I enjoy learning new domains and wrapping my brain around their
+      intricacies. Cisco acquired Flip
     images:
       - sound: false
         size: full
