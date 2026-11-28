@@ -95,8 +95,10 @@ sections:
         caption: Scroll with the trackball and tap a photo to select it.
         size: text-half
   - heading: Cut my teeth on the Android phone
-    text: I enjoy learning new domains and wrapping my brain around their
-      intricacies. Cisco acquired Flip
+    text: The Android had a trackball and hardware buttons, which, at first, felt
+      like an extra flipper when playing pinball. It added another element to my
+      toolbox as I was designing with hardware and software combined. I loved
+      prototyping the first sliding drawer with engineers at Flip.
     images:
       - sound: false
         size: full
