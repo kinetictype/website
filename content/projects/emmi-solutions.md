@@ -44,7 +44,7 @@ sections:
       staffing and process steps and to communicate with potential investors and
       shareholders.
     images:
-      - image: /images/projects/Process_NewProgram_2021.png
+      - image: /images/projects/NEW_Emmi_process_diagram.png
         sound: false
         alt: Emmi Solutions new program process diagram, with phases from prep and
           research through alpha, beta, testing, and deployment, and a row for
